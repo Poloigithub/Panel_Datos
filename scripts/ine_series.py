@@ -186,11 +186,13 @@ def candidatas_para(indice: dict[frozenset, list[dict]], obligatorio: set[str],
 
 
 def resuelve(indice: dict[frozenset, list[dict]], obligatorio: set[str],
-             etiqueta: str, extras: set[str] | None = None) -> tuple[dict[str, float], list[str]]:
+             etiqueta: str, extras: set[str] | None = None,
+             avisar: bool = True) -> tuple[dict[str, float], list[str]]:
     """Localiza y descarga la serie del total que encaja con lo pedido."""
     candidatas = candidatas_para(indice, obligatorio, extras)
     if not candidatas:
-        print(f"      sin serie para {etiqueta} ({sorted(obligatorio)})")
+        if avisar:
+            print(f"      sin serie para {etiqueta} ({sorted(obligatorio)})")
         return {}, []
     if len(candidatas) == 1:
         valores = descarga_serie(candidatas[0]["COD"])
