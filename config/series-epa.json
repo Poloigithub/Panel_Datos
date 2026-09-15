@@ -1,0 +1,80 @@
+{
+  "espana": {
+    "ambos": {
+      "ocupados": "EPA406500",
+      "parados": "EPA387803",
+      "activos": "EPA392921",
+      "tasa_actividad": "EPA388545",
+      "tasa_paro": "EPA424243",
+      "tasa_empleo": "EPA441060"
+    },
+    "hombres": {
+      "ocupados": "EPA401692",
+      "parados": "EPA728161",
+      "activos": "EPA388657",
+      "tasa_actividad": "EPA390132",
+      "tasa_paro": "EPA423488",
+      "tasa_empleo": "EPA442677"
+    },
+    "mujeres": {
+      "ocupados": "EPA396251",
+      "parados": "EPA425286",
+      "activos": "EPA394530",
+      "tasa_actividad": "EPA6213",
+      "tasa_paro": "EPA453340",
+      "tasa_empleo": "EPA77669"
+    }
+  },
+  "comunitat-valenciana": {
+    "ambos": {
+      "ocupados": "EPA433983",
+      "parados": "EPA433986",
+      "activos": "EPA433980",
+      "tasa_actividad": "EPA436417",
+      "tasa_paro": "EPA452513",
+      "tasa_empleo": "EPA441141"
+    },
+    "hombres": {
+      "ocupados": "EPA442412",
+      "parados": "EPA454505",
+      "activos": "EPA437940",
+      "tasa_actividad": "EPA438270",
+      "tasa_paro": "EPA453280",
+      "tasa_empleo": "EPA440854"
+    },
+    "mujeres": {
+      "ocupados": "EPA441672",
+      "parados": "EPA454657",
+      "activos": "EPA434313",
+      "tasa_actividad": "EPA436700",
+      "tasa_paro": "EPA452798",
+      "tasa_empleo": "EPA442827"
+    }
+  },
+  "castellon": {
+    "ambos": {
+      "ocupados": "EPA457252",
+      "parados": "EPA457255",
+      "activos": "EPA457249",
+      "tasa_actividad": "EPA459555",
+      "tasa_paro": "EPA459103",
+      "tasa_empleo": "EPA459452"
+    },
+    "hombres": {
+      "ocupados": "EPA458108",
+      "parados": "EPA458110",
+      "activos": "EPA458107",
+      "tasa_actividad": "EPA459693",
+      "tasa_paro": "EPA459243",
+      "tasa_empleo": "EPA459002"
+    },
+    "mujeres": {
+      "ocupados": "EPA457462",
+      "parados": "EPA457464",
+      "activos": "EPA457461",
+      "tasa_actividad": "EPA459799",
+      "tasa_paro": "EPA459347",
+      "tasa_empleo": "EPA459054"
+    }
+  }
+}
