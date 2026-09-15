@@ -41,11 +41,11 @@ AMBITOS = [
 BLOQUES = {
     "poblacion": {
         "titulo": "Población y estructura",
-        "operaciones": ["ECP", "IDB", "ADRH"],
+        "operaciones": ["ECP", "CP", "IDB", "ADRH"],
         "indicadores": {
             "poblacion": {
                 "titulo": "Población", "unidad": "personas", "decimales": 0,
-                "operacion": "ECP",
+                "operacion": ["ECP", "CP"],
                 "busquedas": [{"poblacion"}],
                 "por_sexo": True,
             },
@@ -64,6 +64,8 @@ BLOQUES = {
                 "titulo": "Población de 70 y más años", "unidad": "%", "decimales": 2,
                 "operacion": "IDB",
                 "busquedas": [
+                    {"indicadores de crecimiento y estructura de la poblacion",
+                     "proporcion de personas mayores de cierta edad", "70 y mas anos"},
                     {"proporcion de personas mayores de cierta edad", "70 y mas anos"},
                 ],
                 "por_sexo": False,
@@ -97,8 +99,9 @@ BLOQUES = {
                 "operacion": "IDB",
                 "busquedas": [
                     {"mortalidad", "esperanza de vida", "0 anos"},
-                    {"mortalidad", "esperanza de vida", "menos de 1 ano"},
-                    {"mortalidad", "esperanza de vida", "al nacimiento"},
+                    # La serie general de la tabla de mortalidad no lleva el
+                    # nombre del indicador en el nombre de la serie.
+                    {"mortalidad", "0 anos"},
                 ],
                 "por_sexo": True,
             },
@@ -127,7 +130,11 @@ BLOQUES = {
             "nacidos_por_defuncion": {
                 "titulo": "Nacidos por cada 1.000 defunciones", "unidad": "por mil",
                 "decimales": 1, "operacion": "IDB",
-                "busquedas": [{"nacidos por cada 1000 defunciones"}],
+                "busquedas": [
+                    {"indicadores de crecimiento y estructura de la poblacion",
+                     "nacidos por cada 1000 defunciones"},
+                    {"nacidos por cada 1000 defunciones"},
+                ],
                 "por_sexo": False,
             },
         },
@@ -205,7 +212,7 @@ SEXOS = {
 }
 
 
-def busca(indice, ambito, indicador, alias_sexo, etiqueta):
+def busca(indice, ambito, indicador, alias_sexo, etiqueta, avisar=True):
     """Primera formulación que dé datos, de entre las declaradas.
 
     Se prueban los alias del sexo y, al final, la variante sin sexo: hay
@@ -222,6 +229,8 @@ def busca(indice, ambito, indicador, alias_sexo, etiqueta):
 
     # Nada ha encajado: mostrar los conjuntos de segmentos más parecidos, que
     # es lo único que permite corregir la declaración sin adivinar.
+    if not avisar:
+        return {}, []
     buscado = set(indicador["busquedas"][0]) | {ambito["segmento"]}
     parecidos = sorted(
         ((len(buscado & segs), segs) for segs in indice),
@@ -258,11 +267,19 @@ def main() -> int:
             origen: dict[str, dict[str, list[str]]] = {}
 
             for clave, indicador in bloque["indicadores"].items():
-                indice = indices[indicador["operacion"]]
+                operaciones = indicador["operacion"]
+                if isinstance(operaciones, str):
+                    operaciones = [operaciones]
                 sexos = SEXOS if indicador["por_sexo"] else {"ambos": SEXOS["ambos"]}
                 for sexo, alias in sexos.items():
                     etiqueta = f"{clave}/{sexo}"
-                    valores, usados = busca(indice, ambito, indicador, alias, etiqueta)
+                    valores, usados = {}, []
+                    for operacion in operaciones:
+                        valores, usados = busca(indices[operacion], ambito, indicador,
+                                                alias, etiqueta,
+                                                avisar=(operacion == operaciones[-1]))
+                        if valores:
+                            break
                     if not valores:
                         faltantes.append(f"{nombre_bloque}/{ambito['id']}/{etiqueta}")
                         continue

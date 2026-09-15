@@ -32,6 +32,7 @@ import ine_api
 EXTRAS_ADMITIDOS = {
     "total", "totales", "ambos sexos", "de 16 y mas anos", "todas las edades",
     "valor absoluto", "dato base", "numero", "ambas nacionalidades", "anual",
+    "porcentaje", "no considerado", "total edades",
 }
 
 PERIODO = re.compile(r"^(\d{4})(?:([TSM])(\d{1,2}))?$")
