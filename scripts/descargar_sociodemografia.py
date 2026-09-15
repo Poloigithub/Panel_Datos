@@ -41,7 +41,7 @@ AMBITOS = [
 BLOQUES = {
     "poblacion": {
         "titulo": "Población y estructura",
-        "operaciones": ["ECP", "IDB"],
+        "operaciones": ["ECP", "IDB", "ADRH"],
         "indicadores": {
             "poblacion": {
                 "titulo": "Población", "unidad": "personas", "decimales": 0,
@@ -58,21 +58,23 @@ BLOQUES = {
                 ],
                 "por_sexo": True,
             },
-            "mayores_65": {
-                "titulo": "Población de 65 y más años", "unidad": "%", "decimales": 2,
+            # El INE publica esta proporción a partir de los 70 años, no de
+            # los 65: no hay serie de «65 y más» por provincia.
+            "mayores_70": {
+                "titulo": "Población de 70 y más años", "unidad": "%", "decimales": 2,
                 "operacion": "IDB",
                 "busquedas": [
-                    {"proporcion de personas mayores de cierta edad", "65 y mas anos"},
+                    {"proporcion de personas mayores de cierta edad", "70 y mas anos"},
                 ],
                 "por_sexo": False,
             },
-            "extranjeros": {
-                "titulo": "Población extranjera", "unidad": "%", "decimales": 2,
-                "operacion": "IDB",
-                "busquedas": [
-                    {"proporcion de poblacion extranjera", "total edades"},
-                    {"proporcion de poblacion extranjera", "todas las edades"},
-                ],
+            # La proporción de extranjeros de IDB sólo existe desglosada por
+            # edad; el Atlas de renta sí publica el porcentaje de población
+            # española, del que sale el complementario.
+            "espanoles": {
+                "titulo": "Población de nacionalidad española", "unidad": "%", "decimales": 2,
+                "operacion": "ADRH",
+                "busquedas": [{"porcentaje de poblacion espanola"}],
                 "por_sexo": False,
             },
             "crecimiento": {
@@ -95,60 +97,36 @@ BLOQUES = {
                 "operacion": "IDB",
                 "busquedas": [
                     {"mortalidad", "esperanza de vida", "0 anos"},
-                    {"esperanza de vida", "0 anos"},
+                    {"mortalidad", "esperanza de vida", "menos de 1 ano"},
+                    {"mortalidad", "esperanza de vida", "al nacimiento"},
                 ],
                 "por_sexo": True,
             },
-            "tasa_natalidad": {
-                "titulo": "Tasa bruta de natalidad", "unidad": "por mil", "decimales": 2,
-                "operacion": "IDB",
-                "busquedas": [
-                    {"natalidad", "tasa bruta de natalidad"},
-                    {"fecundidad", "tasa bruta de natalidad"},
-                    {"tasa bruta de natalidad"},
-                ],
-                "por_sexo": False,
-            },
-            "tasa_mortalidad": {
-                "titulo": "Tasa bruta de mortalidad", "unidad": "por mil", "decimales": 2,
-                "operacion": "IDB",
-                "busquedas": [
-                    {"mortalidad", "tasa bruta de mortalidad"},
-                    {"tasa bruta de mortalidad"},
-                ],
-                "por_sexo": False,
-            },
-            "hijos_por_mujer": {
-                "titulo": "Número medio de hijos por mujer", "unidad": "hijos", "decimales": 2,
-                "operacion": "IDB",
-                "busquedas": [
-                    {"fecundidad", "numero medio de hijos por mujer"},
-                    {"fecundidad", "indicador coyuntural de fecundidad"},
-                    {"numero medio de hijos por mujer"},
-                ],
-                "por_sexo": False,
+            "mortalidad_infantil": {
+                "titulo": "Mortalidad infantil (menores de 5 años)", "unidad": "por mil",
+                "decimales": 2, "operacion": "IDB",
+                "busquedas": [{"mortalidad", "tasa de mortalidad infantil de menores de 5 anos"}],
+                "por_sexo": True,
             },
             "edad_maternidad": {
-                "titulo": "Edad media a la maternidad", "unidad": "años", "decimales": 2,
+                # El INE sólo la publica por orden de nacimiento, así que se
+                # toma la del primer hijo, que es la que marca la tendencia.
+                "titulo": "Edad media al primer hijo", "unidad": "años", "decimales": 2,
                 "operacion": "IDB",
-                "busquedas": [
-                    {"fecundidad", "edad media a la maternidad"},
-                    {"edad media a la maternidad"},
-                ],
+                "busquedas": [{"fecundidad", "edad media a la maternidad", "primero"}],
                 "por_sexo": False,
             },
             "saldo_migratorio": {
-                "titulo": "Saldo migratorio", "unidad": "personas", "decimales": 0,
+                "titulo": "Saldo migratorio", "unidad": "por mil", "decimales": 2,
                 "operacion": "IDB",
                 "busquedas": [
                     {"indicadores de crecimiento y estructura de la poblacion", "saldo migratorio"},
-                    {"saldo migratorio"},
                 ],
                 "por_sexo": False,
             },
             "nacidos_por_defuncion": {
-                "titulo": "Nacidos por cada 1.000 defunciones", "unidad": "por mil", "decimales": 1,
-                "operacion": "IDB",
+                "titulo": "Nacidos por cada 1.000 defunciones", "unidad": "por mil",
+                "decimales": 1, "operacion": "IDB",
                 "busquedas": [{"nacidos por cada 1000 defunciones"}],
                 "por_sexo": False,
             },
@@ -241,6 +219,17 @@ def busca(indice, ambito, indicador, alias_sexo, etiqueta):
             valores, usados = motor.resuelve(indice, obligatorio, etiqueta, avisar=False)
             if valores:
                 return valores, usados
+
+    # Nada ha encajado: mostrar los conjuntos de segmentos más parecidos, que
+    # es lo único que permite corregir la declaración sin adivinar.
+    buscado = set(indicador["busquedas"][0]) | {ambito["segmento"]}
+    parecidos = sorted(
+        ((len(buscado & segs), segs) for segs in indice),
+        key=lambda t: -t[0],
+    )[:4]
+    print(f"      sin serie para {etiqueta}; lo más parecido:")
+    for comunes, segs in parecidos:
+        print(f"        ({comunes} coinciden) {sorted(segs)}")
     return {}, []
 
 
