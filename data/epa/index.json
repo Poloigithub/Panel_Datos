@@ -1,0 +1,27 @@
+{
+  "actualizado": "2026-09-15T20:32:47+00:00",
+  "ultimo_periodo": "2026T2",
+  "primer_periodo": "2002T1",
+  "fuente": {
+    "organismo": "Instituto Nacional de Estadística",
+    "operacion": "Encuesta de Población Activa (EPA)",
+    "api": "https://servicios.ine.es/wstempus/js/ES/"
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ]
+}
