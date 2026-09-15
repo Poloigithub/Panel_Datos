@@ -98,20 +98,28 @@ def esperado(sexo: str, ambito: dict, magnitud: str) -> set[str]:
 
 
 ROMANOS = {"I": "T1", "II": "T2", "III": "T3", "IV": "T4"}
+# Trimestres tal y como los numera Tempus 3 en FK_Periodo.
+FK_TRIMESTRES = {19: "T1", 20: "T2", 21: "T3", 22: "T4"}
 
 
 def periodo_de(dato: dict) -> str | None:
     """'2026T2' a partir de un punto de la serie.
 
-    Con tip=A el INE devuelve `Periodo` como objeto; sin él, un `FK_Periodo`
-    numérico. Se aceptan las dos formas.
+    La forma del periodo depende del nivel de detalle pedido: con det=2 llega
+    `NombrePeriodo` ya formateado, con tip=A un `T3_Periodo` ("T2") y a secas
+    un `FK_Periodo` numérico. Se aceptan las tres.
     """
+    nombre_directo = dato.get("NombrePeriodo")
+    if nombre_directo:
+        return str(nombre_directo).strip().upper()
+
     anyo = dato.get("Anyo") or dato.get("Anio")
     if not anyo:
         return None
 
     periodo = dato.get("Periodo")
     nombre = periodo.get("Nombre") if isinstance(periodo, dict) else periodo
+    nombre = nombre or dato.get("T3_Periodo")
     if nombre:
         nombre = str(nombre).strip().upper()
         if nombre.startswith("T") and nombre[1:].isdigit():
@@ -119,10 +127,8 @@ def periodo_de(dato: dict) -> str | None:
         if nombre in ROMANOS:
             return f"{anyo}{ROMANOS[nombre]}"
 
-    fk = dato.get("FK_Periodo")
-    if isinstance(fk, int) and 1 <= fk <= 4:
-        return f"{anyo}T{fk}"
-    return None
+    trimestre = FK_TRIMESTRES.get(dato.get("FK_Periodo"))
+    return f"{anyo}{trimestre}" if trimestre else None
 
 
 def orden_periodo(periodo: str) -> tuple[int, int]:
@@ -158,11 +164,16 @@ def resuelve_codigos(ambito: dict, cache: dict) -> dict:
             elif not candidatas:
                 print(f"      sin serie para {sexo}/{magnitud} ({sorted(clave)})")
             else:
-                # Varias series con los mismos metadatos: el INE mantiene
-                # versiones antiguas junto a la vigente. Gana la que llega más
-                # lejos en el tiempo y, a igualdad, la más larga.
+                # Varias series comparten metadatos: el INE publica la misma
+                # cifra en tablas distintas (mismo total desglosado por
+                # variables diferentes) y mantiene versiones antiguas. Se
+                # prueban primero las de nombre más simple y gana la que llega
+                # más lejos en el tiempo; a igualdad, la más larga.
+                orden_simplicidad = sorted(
+                    candidatas, key=lambda c: len(segmentos(c.get("Nombre", "")))
+                )[:6]
                 mejor, mejor_clave = None, None
-                for candidata in candidatas:
+                for candidata in orden_simplicidad:
                     valores = descarga_serie(candidata["COD"])
                     if not valores:
                         continue
@@ -184,7 +195,7 @@ def resuelve_codigos(ambito: dict, cache: dict) -> dict:
 
 def descarga_serie(codigo: str) -> dict[str, float | None]:
     """Serie completa (nult muy alto: el INE devuelve lo que tenga)."""
-    datos = ine_api.get("DATOS_SERIE", codigo, nult=400, tip="A")
+    datos = ine_api.get("DATOS_SERIE", codigo, nult=400, det=2)
     if isinstance(datos, list):
         datos = datos[0] if datos else {}
     valores: dict[str, float | None] = {}
