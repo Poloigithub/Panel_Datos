@@ -40,6 +40,19 @@ def magnitud(nombre: str) -> str:
     return (nombre or "").split(".")[0].strip()
 
 
+def periodo_de(dato: dict) -> str:
+    """El INE no siempre devuelve el periodo con la misma forma."""
+    anyo = dato.get("Anyo") or dato.get("Anio") or ""
+    periodo = dato.get("Periodo")
+    if isinstance(periodo, dict):
+        return f"{anyo}{periodo.get('Nombre') or periodo.get('Codigo') or ''}"
+    if periodo:
+        return f"{anyo}{periodo}"
+    if dato.get("Fecha"):
+        return str(dato["Fecha"])[:10]
+    return str(anyo)
+
+
 def main() -> int:
     SALIDA.mkdir(parents=True, exist_ok=True)
     lineas: list[str] = ["# Resumen del catálogo EPA del INE", ""]
@@ -66,14 +79,17 @@ def main() -> int:
     for tabla in CANDIDATAS:
         try:
             datos = ine_api.get("DATOS_TABLA", str(tabla), nult=500, tip="A")
-        except ine_api.INEError as exc:
+        except Exception as exc:  # noqa: BLE001 - el resumen no debe caerse por una tabla
             lineas.append(f"### {tabla} — ERROR: {exc}")
             continue
         if not datos:
             lineas.append(f"### {tabla} — sin series")
             continue
         primera = datos[0]
-        periodos = [f"{d['Anyo']}{d['Periodo']['Nombre']}" for d in primera.get("Data", [])]
+        if not isinstance(primera, dict):
+            lineas.append(f"### {tabla} — respuesta inesperada: {type(primera)}")
+            continue
+        periodos = [periodo_de(d) for d in primera.get("Data", [])]
         lineas += [
             f"### Tabla {tabla}",
             f"- series: {len(datos)}",
