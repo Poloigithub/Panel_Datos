@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-15T21:58:01+00:00",
+  "actualizado": "2026-09-15T22:04:00+00:00",
   "titulo": "Renta y desigualdad",
   "ultimo_periodo": "2023",
   "primer_periodo": "2015",
@@ -12,12 +12,6 @@
     },
     "renta_hogar": {
       "titulo": "Renta neta media por hogar",
-      "unidad": "euros",
-      "decimales": 0,
-      "por_sexo": false
-    },
-    "renta_mediana_hogar": {
-      "titulo": "Renta mediana por hogar",
       "unidad": "euros",
       "decimales": 0,
       "por_sexo": false

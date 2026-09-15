@@ -29,6 +29,9 @@
         ],
         "crecimiento": [
           "IDB87064"
+        ],
+        "poblacion": [
+          "derivado:hombres+mujeres"
         ]
       }
     },
@@ -106,9 +109,6 @@
   "demografia": {
     "espana": {
       "ambos": {
-        "esperanza_vida": [
-          "IDB47613"
-        ],
         "mortalidad_infantil": [
           "IDB361675"
         ],
@@ -123,17 +123,11 @@
         ]
       },
       "hombres": {
-        "esperanza_vida": [
-          "IDB48343"
-        ],
         "mortalidad_infantil": [
           "IDB361674"
         ]
       },
       "mujeres": {
-        "esperanza_vida": [
-          "IDB48742"
-        ],
         "mortalidad_infantil": [
           "IDB361673"
         ]
@@ -141,9 +135,6 @@
     },
     "comunitat-valenciana": {
       "ambos": {
-        "esperanza_vida": [
-          "IDB23477"
-        ],
         "mortalidad_infantil": [
           "IDB361645"
         ],
@@ -158,17 +149,11 @@
         ]
       },
       "hombres": {
-        "esperanza_vida": [
-          "IDB23498"
-        ],
         "mortalidad_infantil": [
           "IDB361644"
         ]
       },
       "mujeres": {
-        "esperanza_vida": [
-          "IDB20822"
-        ],
         "mortalidad_infantil": [
           "IDB361643"
         ]
@@ -176,9 +161,6 @@
     },
     "castellon": {
       "ambos": {
-        "esperanza_vida": [
-          "IDB23031"
-        ],
         "mortalidad_infantil": [
           "IDB361789"
         ],
@@ -193,17 +175,11 @@
         ]
       },
       "hombres": {
-        "esperanza_vida": [
-          "IDB23052"
-        ],
         "mortalidad_infantil": [
           "IDB361788"
         ]
       },
       "mujeres": {
-        "esperanza_vida": [
-          "IDB23201"
-        ],
         "mortalidad_infantil": [
           "IDB361787"
         ]
