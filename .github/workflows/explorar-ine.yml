@@ -1,31 +1,16 @@
 name: Explorar catálogo del INE
 
-# Herramienta de diagnóstico: vuelca el catálogo EPA de la API del INE para
-# poder fijar los identificadores de tabla en config/tablas-epa.json.
+# Herramienta de diagnóstico manual sobre la API del INE.
 on:
   workflow_dispatch:
-
-permissions:
-  contents: write
 
 jobs:
   explorar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
-      - name: Volcar resumen del catálogo
-        run: python scripts/explorar_epa4.py
-
-      - name: Commitear el resumen
-        if: always()
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f data/_catalogo/
-          git diff --staged --quiet || git commit -m "Resumen del catálogo EPA del INE [skip ci]"
-          git push
+      - name: Diagnóstico de DATOS_SERIE
+        run: python scripts/diagnostico_serie.py
