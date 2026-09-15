@@ -16,8 +16,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Descargar los bloques sociodemográficos
-        run: python scripts/descargar_sociodemografia.py 2>&1 | tee data/_catalogo/log-sociodemografia.txt
+      - name: Diagnóstico de las búsquedas fallidas
+        run: python scripts/diagnostico_sociodemografia.py
       - name: Commitear el resultado
         if: always()
         run: |
