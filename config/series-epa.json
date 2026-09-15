@@ -52,13 +52,15 @@
         "EPA394530"
       ],
       "tasa_actividad": [
-        "EPA6213"
+        "EPA6213",
+        "derivado:activos/poblacion (59 trimestres)"
       ],
       "tasa_paro": [
         "EPA453340"
       ],
       "tasa_empleo": [
-        "EPA77669"
+        "EPA77669",
+        "derivado:ocupados/poblacion (50 trimestres)"
       ]
     }
   },
