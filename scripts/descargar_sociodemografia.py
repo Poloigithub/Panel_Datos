@@ -64,6 +64,7 @@ BLOQUES = {
             # los 65: no hay serie de «65 y más» por provincia.
             "mayores_70": {
                 "titulo": "Población de 70 y más años", "unidad": "%", "decimales": 2,
+                "unidad_texto": "porcentaje de la población",
                 "rango": (0, 50),
                 "operacion": "IDB",
                 "busquedas": [
@@ -85,6 +86,7 @@ BLOQUES = {
             },
             "crecimiento": {
                 "titulo": "Crecimiento de la población", "unidad": "por mil", "decimales": 2,
+                "unidad_texto": "por cada mil habitantes",
                 "rango": (-100, 100),
                 "operacion": "IDB",
                 "busquedas": [
@@ -108,6 +110,7 @@ BLOQUES = {
             },
             "mortalidad_infantil": {
                 "rango": (0, 100),
+                "unidad_texto": "defunciones por cada mil nacidos",
                 "titulo": "Mortalidad infantil (menores de 5 años)", "unidad": "por mil",
                 "decimales": 2, "operacion": "IDB",
                 "busquedas": [{"mortalidad", "tasa de mortalidad infantil de menores de 5 anos"}],
@@ -124,6 +127,7 @@ BLOQUES = {
             },
             "saldo_migratorio": {
                 "titulo": "Saldo migratorio", "unidad": "por mil", "decimales": 2,
+                "unidad_texto": "por cada mil habitantes",
                 "operacion": "IDB",
                 "busquedas": [
                     {"indicadores de crecimiento y estructura de la poblacion", "saldo migratorio"},
@@ -131,6 +135,7 @@ BLOQUES = {
                 "por_sexo": False,
             },
             "nacidos_por_defuncion": {
+                "unidad_texto": "nacidos por cada mil defunciones",
                 "titulo": "Nacidos por cada 1.000 defunciones", "unidad": "por mil",
                 "decimales": 1, "operacion": "IDB",
                 "busquedas": [
@@ -166,6 +171,7 @@ BLOQUES = {
             },
             "gini": {
                 "titulo": "Índice de Gini", "unidad": "índice", "decimales": 2,
+                "unidad_texto": "índice de 0 a 100; a mayor valor, más desigualdad",
                 "rango": (0, 100),
                 "operacion": "ADRH",
                 "busquedas": [{"indice de gini"}],
@@ -173,12 +179,14 @@ BLOQUES = {
             },
             "p80p20": {
                 "titulo": "Distribución de la renta P80/P20", "unidad": "ratio", "decimales": 2,
+                "unidad_texto": "veces que la renta del 20 % más rico supera a la del 20 % más pobre",
                 "operacion": "ADRH",
                 "busquedas": [{"distribucion de la renta p80/p20"}],
                 "por_sexo": False,
             },
             "bajo_60": {
                 "titulo": "Población bajo el 60 % de la renta mediana", "unidad": "%", "decimales": 2,
+                "unidad_texto": "porcentaje de la población",
                 "operacion": "ADRH",
                 "busquedas": [
                     {"poblacion con ingresos por unidad de consumo por debajo 60% de la mediana"},
@@ -351,6 +359,7 @@ def main() -> int:
             "primer_periodo": periodos[0],
             "indicadores": {
                 clave: {"titulo": ind["titulo"], "unidad": ind["unidad"],
+                        "unidad_texto": ind.get("unidad_texto"),
                         "decimales": ind["decimales"], "por_sexo": ind["por_sexo"]}
                 for clave, ind in bloque["indicadores"].items()
             },

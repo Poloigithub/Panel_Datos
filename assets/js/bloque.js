@@ -175,11 +175,15 @@
     P.pintaTabla(caja, periodos, series, meta.titulo, meta.unidad, meta.decimales);
   }
 
-  function unidadLegible(unidad) {
-    if (unidad === '%') return 'porcentaje';
-    if (unidad === 'por mil') return 'por cada mil habitantes';
-    if (unidad === 'euros') return 'euros al año';
-    return unidad;
+  /* Cada indicador puede traer su propia leyenda de unidad: «por mil» no
+     significa lo mismo en un saldo migratorio que en los nacidos por cada mil
+     defunciones. */
+  function unidadLegible(meta) {
+    if (meta.unidad_texto) return meta.unidad_texto;
+    if (meta.unidad === '%') return 'porcentaje';
+    if (meta.unidad === 'por mil') return 'por cada mil habitantes';
+    if (meta.unidad === 'euros') return 'euros al año';
+    return meta.unidad;
   }
 
   function pintaIndicadores(periodos) {
@@ -197,7 +201,7 @@
       if (!conDatos.length) return;
 
       if (escalasComparables(clave, periodos)) {
-        var figura = tarjeta(meta.titulo, unidadLegible(meta.unidad));
+        var figura = tarjeta(meta.titulo, unidadLegible(meta));
         var canvas = lienzo(figura, '280px', 'Evolución de ' + meta.titulo + ' por ámbito territorial');
         var series = conDatos.map(function (a) {
           return { etiqueta: a.etiqueta, color: P.color(a.variable), valores: serie(a.id, clave, periodos) };
@@ -218,14 +222,14 @@
       var titulo = document.createElement('h3');
       titulo.className = 'text-sm font-semibold uppercase tracking-widest mb-3';
       titulo.style.color = P.color('--tinta-tenue');
-      titulo.textContent = meta.titulo + ' · ' + unidadLegible(meta.unidad);
+      titulo.textContent = meta.titulo + ' · ' + unidadLegible(meta);
       envoltorio.appendChild(titulo);
       var rejilla = document.createElement('div');
       rejilla.className = 'grid gap-5 lg:grid-cols-' + Math.min(3, conDatos.length);
       envoltorio.appendChild(rejilla);
 
       conDatos.forEach(function (a) {
-        var figura = tarjeta(a.etiqueta, meta.titulo + ', ' + unidadLegible(meta.unidad));
+        var figura = tarjeta(a.etiqueta, meta.titulo + ', ' + unidadLegible(meta));
         var canvas = lienzo(figura, '220px', meta.titulo + ' en ' + a.etiqueta);
         var series = [{ etiqueta: a.etiqueta, color: P.color(a.variable), valores: serie(a.id, clave, periodos) }];
         rejilla.appendChild(figura);

@@ -190,7 +190,12 @@
           border: { display: false },
           ticks: {
             color: color('--tinta-tenue'), font: { size: 11 }, padding: 8,
-            callback: function (valor) { return formatea(valor, decimales === 0 ? 0 : 1); }
+            // Con valores pequeños hacen falta los decimales del indicador o
+            // el eje repite la misma etiqueta varias veces.
+            callback: function (valor) {
+              if (Math.abs(valor) >= 1000) return formatea(valor, 0);
+              return formatea(valor, decimales);
+            }
           }
         }
       },
@@ -207,11 +212,16 @@
       data: {
         labels: periodos,
         datasets: series.map(function (s) {
+          // Una serie de tres o cuatro puntos dibuja una línea casi vertical
+          // que parece un error: se marcan los puntos para que se lea como lo
+          // que es, un tramo corto de datos.
+          var conDato = s.valores.filter(function (v) { return v !== null; }).length;
           return {
             label: s.etiqueta,
             data: s.valores,
             borderColor: s.color,
             backgroundColor: s.color,
+            pointRadius: conDato <= 12 ? 3 : 0,
             unidad: unidad,
             decimales: decimales,
             spanGaps: false

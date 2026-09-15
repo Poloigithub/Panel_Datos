@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Natalidad, mortalidad y migración · Panel de datos</title>
-<meta name="description" content="Esperanza de vida, mortalidad infantil, edad a la maternidad y saldo migratorio en España, la Comunitat Valenciana y Castellón.">
+<meta name="description" content="Mortalidad infantil, edad media al primer hijo, saldo migratorio y nacidos por defunción en España, la Comunitat Valenciana y Castellón.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,7 +100,12 @@
     <section class="mt-12 tarjeta p-5">
       <h2 class="text-sm font-semibold">Fuente y método</h2>
       <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
-        Indicadores Demográficos Básicos del INE, descargados de su API. Son indicadores anuales; el INE no publica todos ellos con el mismo detalle para las provincias.
+        Indicadores Demográficos Básicos del INE, descargados de su API. Son
+        indicadores anuales y el INE no publica todos con el mismo detalle para
+        las provincias: la esperanza de vida al nacer, por ejemplo, sólo aparece
+        en series desglosadas por edad y nivel educativo que no permiten
+        identificarla sin riesgo de confundirla con otra, así que se ha dejado
+        fuera antes que publicarla mal.
       </p>
       <p class="mt-2 text-sm" style="color: var(--tinta-suave)">
         Última actualización de los datos: <span data-actualizado class="font-medium"></span>.

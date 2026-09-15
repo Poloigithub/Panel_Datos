@@ -8,49 +8,57 @@
       "titulo": "Renta neta media por persona",
       "unidad": "euros",
       "decimales": 0,
-      "por_sexo": false
+      "por_sexo": false,
+      "unidad_texto": null
     },
     "renta_hogar": {
       "titulo": "Renta neta media por hogar",
       "unidad": "euros",
       "decimales": 0,
-      "por_sexo": false
+      "por_sexo": false,
+      "unidad_texto": null
     },
     "renta_uc": {
       "titulo": "Renta media por unidad de consumo",
       "unidad": "euros",
       "decimales": 0,
-      "por_sexo": false
+      "por_sexo": false,
+      "unidad_texto": null
     },
     "gini": {
       "titulo": "Índice de Gini",
       "unidad": "índice",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "unidad_texto": "índice de 0 a 100; a mayor valor, más desigualdad"
     },
     "p80p20": {
       "titulo": "Distribución de la renta P80/P20",
       "unidad": "ratio",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "unidad_texto": "veces que la renta del 20 % más rico supera a la del 20 % más pobre"
     },
     "bajo_60": {
       "titulo": "Población bajo el 60 % de la renta mediana",
       "unidad": "%",
       "decimales": 2,
-      "por_sexo": true
+      "por_sexo": true,
+      "unidad_texto": "porcentaje de la población"
     },
     "tamano_hogar": {
       "titulo": "Tamaño medio del hogar",
       "unidad": "personas",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "unidad_texto": null
     },
     "hogares_unipersonales": {
       "titulo": "Hogares unipersonales",
       "unidad": "%",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "unidad_texto": null
     }
   },
   "ambitos": [

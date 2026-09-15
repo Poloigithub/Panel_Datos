@@ -8,31 +8,36 @@
       "titulo": "Población",
       "unidad": "personas",
       "decimales": 0,
-      "por_sexo": true
+      "por_sexo": true,
+      "unidad_texto": null
     },
     "edad_media": {
       "titulo": "Edad media",
       "unidad": "años",
       "decimales": 1,
-      "por_sexo": true
+      "por_sexo": true,
+      "unidad_texto": null
     },
     "mayores_70": {
       "titulo": "Población de 70 y más años",
       "unidad": "%",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "unidad_texto": "porcentaje de la población"
     },
     "espanoles": {
       "titulo": "Población de nacionalidad española",
       "unidad": "%",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "unidad_texto": null
     },
     "crecimiento": {
       "titulo": "Crecimiento de la población",
       "unidad": "por mil",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "unidad_texto": "por cada mil habitantes"
     }
   },
   "ambitos": [
