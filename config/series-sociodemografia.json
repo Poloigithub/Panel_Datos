@@ -21,6 +21,9 @@
         "edad_media": [
           "IDB85660"
         ],
+        "espanoles": [
+          "ADRH10029915"
+        ],
         "crecimiento": [
           "IDB87064"
         ]
@@ -33,6 +36,9 @@
         ],
         "edad_media": [
           "IDB86203"
+        ],
+        "espanoles": [
+          "ADRH10029875"
         ],
         "crecimiento": [
           "IDB87074"
@@ -63,6 +69,9 @@
         "edad_media": [
           "IDB86344"
         ],
+        "espanoles": [
+          "ADRH10029695"
+        ],
         "crecimiento": [
           "IDB87121"
         ]
@@ -88,22 +97,70 @@
   "demografia": {
     "espana": {
       "ambos": {
+        "mortalidad_infantil": [
+          "IDB361675"
+        ],
+        "edad_maternidad": [
+          "IDB80626"
+        ],
         "saldo_migratorio": [
           "IDB475120"
+        ]
+      },
+      "hombres": {
+        "mortalidad_infantil": [
+          "IDB361674"
+        ]
+      },
+      "mujeres": {
+        "mortalidad_infantil": [
+          "IDB361673"
         ]
       }
     },
     "comunitat-valenciana": {
       "ambos": {
+        "mortalidad_infantil": [
+          "IDB361645"
+        ],
+        "edad_maternidad": [
+          "IDB80986"
+        ],
         "saldo_migratorio": [
           "IDB475110"
+        ]
+      },
+      "hombres": {
+        "mortalidad_infantil": [
+          "IDB361644"
+        ]
+      },
+      "mujeres": {
+        "mortalidad_infantil": [
+          "IDB361643"
         ]
       }
     },
     "castellon": {
       "ambos": {
+        "mortalidad_infantil": [
+          "IDB361789"
+        ],
+        "edad_maternidad": [
+          "IDB81802"
+        ],
         "saldo_migratorio": [
           "IDB475158"
+        ]
+      },
+      "hombres": {
+        "mortalidad_infantil": [
+          "IDB361788"
+        ]
+      },
+      "mujeres": {
+        "mortalidad_infantil": [
+          "IDB361787"
         ]
       }
     }

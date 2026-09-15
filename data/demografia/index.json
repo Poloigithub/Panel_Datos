@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-15T21:45:08+00:00",
+  "actualizado": "2026-09-15T21:52:55+00:00",
   "titulo": "Natalidad, mortalidad y migración",
   "ultimo_periodo": "2024",
-  "primer_periodo": "2021",
+  "primer_periodo": "1975",
   "indicadores": {
     "esperanza_vida": {
       "titulo": "Esperanza de vida al nacer",
@@ -10,34 +10,22 @@
       "decimales": 2,
       "por_sexo": true
     },
-    "tasa_natalidad": {
-      "titulo": "Tasa bruta de natalidad",
+    "mortalidad_infantil": {
+      "titulo": "Mortalidad infantil (menores de 5 años)",
       "unidad": "por mil",
       "decimales": 2,
-      "por_sexo": false
-    },
-    "tasa_mortalidad": {
-      "titulo": "Tasa bruta de mortalidad",
-      "unidad": "por mil",
-      "decimales": 2,
-      "por_sexo": false
-    },
-    "hijos_por_mujer": {
-      "titulo": "Número medio de hijos por mujer",
-      "unidad": "hijos",
-      "decimales": 2,
-      "por_sexo": false
+      "por_sexo": true
     },
     "edad_maternidad": {
-      "titulo": "Edad media a la maternidad",
+      "titulo": "Edad media al primer hijo",
       "unidad": "años",
       "decimales": 2,
       "por_sexo": false
     },
     "saldo_migratorio": {
       "titulo": "Saldo migratorio",
-      "unidad": "personas",
-      "decimales": 0,
+      "unidad": "por mil",
+      "decimales": 2,
       "por_sexo": false
     },
     "nacidos_por_defuncion": {

@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-15T21:45:08+00:00",
+  "actualizado": "2026-09-15T21:52:55+00:00",
   "titulo": "Población y estructura",
   "ultimo_periodo": "2026",
   "primer_periodo": "1971",
@@ -16,14 +16,14 @@
       "decimales": 1,
       "por_sexo": true
     },
-    "mayores_65": {
-      "titulo": "Población de 65 y más años",
+    "mayores_70": {
+      "titulo": "Población de 70 y más años",
       "unidad": "%",
       "decimales": 2,
       "por_sexo": false
     },
-    "extranjeros": {
-      "titulo": "Población extranjera",
+    "espanoles": {
+      "titulo": "Población de nacionalidad española",
       "unidad": "%",
       "decimales": 2,
       "por_sexo": false

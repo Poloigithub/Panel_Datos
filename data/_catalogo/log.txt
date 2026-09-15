@@ -1,0 +1,229 @@
+
+=== Población y estructura ===
+  · España
+      (ECP: 10000 series)
+      (IDB: 8526 series)
+      (ADRH: 188 series)
+      sin serie para poblacion/ambos; lo más parecido:
+        (2 coinciden) ['47 anos', 'apatridas', 'europa menos ue28', 'mujeres', 'numero', 'poblacion', 'total nacional']
+        (2 coinciden) ['86 anos', 'centro america y caribe', 'extranjera', 'mujeres', 'numero', 'poblacion', 'total nacional']
+        (2 coinciden) ['7 anos', 'extranjero', 'numero', 'pais de europa menos ue27_2020', 'poblacion', 'total', 'total nacional']
+        (2 coinciden) ['52 anos', 'europa menos ue28', 'extranjera', 'numero', 'poblacion', 'total', 'total nacional']
+      poblacion/hombres: 56 periodos (ECP319)
+      poblacion/mujeres: 25 periodos (ECP232293)
+      edad_media/ambos: 51 periodos (IDB85660)
+      edad_media/hombres: 51 periodos (IDB85659)
+      edad_media/mujeres: 51 periodos (IDB85658)
+      sin serie para mayores_70/ambos; lo más parecido:
+        (3 coinciden) ['70 y mas anos', 'anual', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad', 'total nacional']
+        (2 coinciden) ['85 y mas anos', 'anual', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad', 'total nacional']
+        (2 coinciden) ['100 y mas anos', 'anual', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad', 'total nacional']
+        (2 coinciden) ['70 y mas anos', 'dato base', 'divorcios', 'mujeres', 'tasa de divorcialidad', 'total nacional']
+      espanoles/ambos: 3 periodos (ADRH10029915)
+      crecimiento/ambos: 50 periodos (IDB87064)
+  · Comunitat Valenciana
+      (ECP: 3429 series)
+      (IDB: 7519 series)
+      (ADRH: 188 series)
+      poblacion/ambos: 56 periodos (ECP115493)
+      poblacion/hombres: 56 periodos (ECP113554)
+      poblacion/mujeres: 56 periodos (ECP111615)
+      edad_media/ambos: 51 periodos (IDB86203)
+      edad_media/hombres: 51 periodos (IDB86202)
+      edad_media/mujeres: 51 periodos (IDB86201)
+      sin serie para mayores_70/ambos; lo más parecido:
+        (3 coinciden) ['70 y mas anos', 'anual', 'comunitat valenciana', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
+        (2 coinciden) ['70 y mas anos', 'comunitat valenciana', 'dato base', 'divorcios', 'hombres', 'tasa de divorcialidad']
+        (2 coinciden) ['95 y mas anos', 'anual', 'comunitat valenciana', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
+        (2 coinciden) ['75 y mas anos', 'anual', 'comunitat valenciana', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
+      espanoles/ambos: 9 periodos (ADRH10029875)
+      crecimiento/ambos: 50 periodos (IDB87074)
+  · Castellón
+      (ECP: 3429 series)
+      (IDB: 3866 series)
+      (ADRH: 188 series)
+      poblacion/ambos: 56 periodos (ECP131400)
+      poblacion/hombres: 56 periodos (ECP126096)
+      poblacion/mujeres: 56 periodos (ECP120792)
+      edad_media/ambos: 51 periodos (IDB86344)
+      edad_media/hombres: 51 periodos (IDB86343)
+      edad_media/mujeres: 51 periodos (IDB86342)
+      sin serie para mayores_70/ambos; lo más parecido:
+        (3 coinciden) ['70 y mas anos', 'anual', 'castellon/castello', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
+        (2 coinciden) ['85 y mas anos', 'anual', 'castellon/castello', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
+        (2 coinciden) ['80 y mas anos', 'anual', 'castellon/castello', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
+        (2 coinciden) ['100 y mas anos', 'anual', 'castellon/castello', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
+      espanoles/ambos: 9 periodos (ADRH10029695)
+      crecimiento/ambos: 50 periodos (IDB87121)
+    escrito data/poblacion/espana.json
+    escrito data/poblacion/comunitat-valenciana.json
+    escrito data/poblacion/castellon.json
+  56 periodos: 1971 … 2026
+
+=== Natalidad, mortalidad y migración ===
+  · España
+      (IDB: 8526 series)
+      sin serie para esperanza_vida/ambos; lo más parecido:
+        (3 coinciden) ['0 anos', 'ambos sexos', 'mortalidad', 'total nacional']
+        (3 coinciden) ['0 anos', 'mortalidad', 'total nacional', 'varones']
+        (3 coinciden) ['0 anos', 'mortalidad', 'mujeres', 'total nacional']
+        (3 coinciden) ['90 anos', 'ambos sexos', 'anual', 'dato base', 'esperanza de vida', 'mortalidad', 'primera etapa de educacion secundaria y similar', 'total nacional']
+      sin serie para esperanza_vida/hombres; lo más parecido:
+        (3 coinciden) ['0 anos', 'ambos sexos', 'mortalidad', 'total nacional']
+        (3 coinciden) ['0 anos', 'mortalidad', 'total nacional', 'varones']
+        (3 coinciden) ['0 anos', 'mortalidad', 'mujeres', 'total nacional']
+        (3 coinciden) ['90 anos', 'ambos sexos', 'anual', 'dato base', 'esperanza de vida', 'mortalidad', 'primera etapa de educacion secundaria y similar', 'total nacional']
+      sin serie para esperanza_vida/mujeres; lo más parecido:
+        (3 coinciden) ['0 anos', 'ambos sexos', 'mortalidad', 'total nacional']
+        (3 coinciden) ['0 anos', 'mortalidad', 'total nacional', 'varones']
+        (3 coinciden) ['0 anos', 'mortalidad', 'mujeres', 'total nacional']
+        (3 coinciden) ['90 anos', 'ambos sexos', 'anual', 'dato base', 'esperanza de vida', 'mortalidad', 'primera etapa de educacion secundaria y similar', 'total nacional']
+      mortalidad_infantil/ambos: 50 periodos (IDB361675)
+      mortalidad_infantil/hombres: 50 periodos (IDB361674)
+      mortalidad_infantil/mujeres: 50 periodos (IDB361673)
+      edad_maternidad/ambos: 50 periodos (IDB80626)
+      saldo_migratorio/ambos: 4 periodos (IDB475120)
+      sin serie para nacidos_por_defuncion/ambos; lo más parecido:
+        (2 coinciden) ['anual', 'dato base', 'indicadores de crecimiento y estructura de la poblacion', 'nacidos por cada 1000 defunciones', 'no considerado', 'todas las edades', 'total', 'total nacional']
+        (1 coinciden) ['38 anos', 'ambas nacionalidades', 'mujeres', 'nupcialidad', 'total nacional']
+        (1 coinciden) ['23 anos', 'mortalidad', 'total nacional', 'varones']
+        (1 coinciden) ['28 anos', 'mortalidad', 'total nacional', 'varones']
+  · Comunitat Valenciana
+      (IDB: 7519 series)
+      sin serie para esperanza_vida/ambos; lo más parecido:
+        (3 coinciden) ['40 anos', 'anual', 'comunitat valenciana', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'primera etapa de educacion secundaria y similar']
+        (3 coinciden) ['55 anos', 'anual', 'comunitat valenciana', 'dato base', 'educacion primaria e inferior', 'esperanza de vida', 'mortalidad', 'mujeres']
+        (3 coinciden) ['30 anos', 'anual', 'comunitat valenciana', 'dato base', 'educacion superior', 'esperanza de vida', 'mortalidad', 'mujeres']
+        (3 coinciden) ['30 anos', 'anual', 'comunitat valenciana', 'dato base', 'esperanza de vida', 'mortalidad', 'mujeres', 'primera etapa de educacion secundaria y similar']
+      sin serie para esperanza_vida/hombres; lo más parecido:
+        (3 coinciden) ['40 anos', 'anual', 'comunitat valenciana', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'primera etapa de educacion secundaria y similar']
+        (3 coinciden) ['55 anos', 'anual', 'comunitat valenciana', 'dato base', 'educacion primaria e inferior', 'esperanza de vida', 'mortalidad', 'mujeres']
+        (3 coinciden) ['30 anos', 'anual', 'comunitat valenciana', 'dato base', 'educacion superior', 'esperanza de vida', 'mortalidad', 'mujeres']
+        (3 coinciden) ['30 anos', 'anual', 'comunitat valenciana', 'dato base', 'esperanza de vida', 'mortalidad', 'mujeres', 'primera etapa de educacion secundaria y similar']
+      sin serie para esperanza_vida/mujeres; lo más parecido:
+        (3 coinciden) ['40 anos', 'anual', 'comunitat valenciana', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'primera etapa de educacion secundaria y similar']
+        (3 coinciden) ['55 anos', 'anual', 'comunitat valenciana', 'dato base', 'educacion primaria e inferior', 'esperanza de vida', 'mortalidad', 'mujeres']
+        (3 coinciden) ['30 anos', 'anual', 'comunitat valenciana', 'dato base', 'educacion superior', 'esperanza de vida', 'mortalidad', 'mujeres']
+        (3 coinciden) ['30 anos', 'anual', 'comunitat valenciana', 'dato base', 'esperanza de vida', 'mortalidad', 'mujeres', 'primera etapa de educacion secundaria y similar']
+      mortalidad_infantil/ambos: 50 periodos (IDB361645)
+      mortalidad_infantil/hombres: 50 periodos (IDB361644)
+      mortalidad_infantil/mujeres: 50 periodos (IDB361643)
+      edad_maternidad/ambos: 50 periodos (IDB80986)
+      saldo_migratorio/ambos: 4 periodos (IDB475110)
+      sin serie para nacidos_por_defuncion/ambos; lo más parecido:
+        (2 coinciden) ['anual', 'comunitat valenciana', 'dato base', 'indicadores de crecimiento y estructura de la poblacion', 'nacidos por cada 1000 defunciones', 'no considerado', 'todas las edades', 'total']
+        (1 coinciden) ['comunitat valenciana', 'nupcialidad']
+        (1 coinciden) ['comunitat valenciana', 'mortalidad']
+        (1 coinciden) ['comunitat valenciana', 'fecundidad']
+  · Castellón
+      (IDB: 3866 series)
+      sin serie para esperanza_vida/ambos; lo más parecido:
+        (3 coinciden) ['40 anos', 'ambos sexos', 'anual', 'castellon/castello', 'dato base', 'educacion primaria e inferior', 'esperanza de vida', 'mortalidad']
+        (3 coinciden) ['30 anos', 'anual', 'castellon/castello', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'primera etapa de educacion secundaria y similar']
+        (3 coinciden) ['40 anos', 'ambos sexos', 'anual', 'castellon/castello', 'dato base', 'educacion superior', 'esperanza de vida', 'mortalidad']
+        (3 coinciden) ['70 anos', 'anual', 'castellon/castello', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'segunda etapa de educacion secundaria y educacion postsecundaria no superior']
+      sin serie para esperanza_vida/hombres; lo más parecido:
+        (3 coinciden) ['40 anos', 'ambos sexos', 'anual', 'castellon/castello', 'dato base', 'educacion primaria e inferior', 'esperanza de vida', 'mortalidad']
+        (3 coinciden) ['30 anos', 'anual', 'castellon/castello', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'primera etapa de educacion secundaria y similar']
+        (3 coinciden) ['40 anos', 'ambos sexos', 'anual', 'castellon/castello', 'dato base', 'educacion superior', 'esperanza de vida', 'mortalidad']
+        (3 coinciden) ['70 anos', 'anual', 'castellon/castello', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'segunda etapa de educacion secundaria y educacion postsecundaria no superior']
+      sin serie para esperanza_vida/mujeres; lo más parecido:
+        (3 coinciden) ['40 anos', 'ambos sexos', 'anual', 'castellon/castello', 'dato base', 'educacion primaria e inferior', 'esperanza de vida', 'mortalidad']
+        (3 coinciden) ['30 anos', 'anual', 'castellon/castello', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'primera etapa de educacion secundaria y similar']
+        (3 coinciden) ['40 anos', 'ambos sexos', 'anual', 'castellon/castello', 'dato base', 'educacion superior', 'esperanza de vida', 'mortalidad']
+        (3 coinciden) ['70 anos', 'anual', 'castellon/castello', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'segunda etapa de educacion secundaria y educacion postsecundaria no superior']
+      mortalidad_infantil/ambos: 50 periodos (IDB361789)
+      mortalidad_infantil/hombres: 50 periodos (IDB361788)
+      mortalidad_infantil/mujeres: 50 periodos (IDB361787)
+      edad_maternidad/ambos: 50 periodos (IDB81802)
+      saldo_migratorio/ambos: 4 periodos (IDB475158)
+      sin serie para nacidos_por_defuncion/ambos; lo más parecido:
+        (2 coinciden) ['anual', 'castellon/castello', 'dato base', 'indicadores de crecimiento y estructura de la poblacion', 'nacidos por cada 1000 defunciones', 'no considerado', 'todas las edades', 'total']
+        (1 coinciden) ['castellon/castello', 'mortalidad']
+        (1 coinciden) ['castellon/castello', 'fecundidad']
+        (1 coinciden) ['castellon/castello', 'nupcialidad']
+    escrito data/demografia/espana.json
+    escrito data/demografia/comunitat-valenciana.json
+    escrito data/demografia/castellon.json
+  50 periodos: 1975 … 2024
+
+=== Renta y desigualdad ===
+  · España
+      (ADRH: 188 series)
+      renta_persona/ambos: 3 periodos (ADRH9974440)
+      renta_hogar/ambos: 3 periodos (ADRH9974439)
+      renta_mediana_hogar/ambos: 0 periodos (ADRH9974436)
+      sin serie para renta_mediana_hogar/ambos; lo más parecido:
+        (2 coinciden) ['dato base', 'renta mediana por hogar', 'total nacional']
+        (1 coinciden) ['dato base', 'mujeres', 'poblacion con ingresos por unidad de consumo por encima 160% de la mediana', 'total nacional']
+        (1 coinciden) ['dato base', 'distribucion de la renta p80/p20', 'total nacional']
+        (1 coinciden) ['dato base', 'media de la renta por unidad de consumo', 'total nacional']
+      renta_uc/ambos: 3 periodos (ADRH9974438)
+      gini/ambos: 3 periodos (ADRH9974944)
+      p80p20/ambos: 3 periodos (ADRH9974943)
+      bajo_60/ambos: 3 periodos (ADRH9980986)
+      bajo_60/hombres: 3 periodos (ADRH9980980)
+      bajo_60/mujeres: 3 periodos (ADRH9980974)
+      tamano_hogar/ambos: 3 periodos (ADRH10030082)
+      hogares_unipersonales/ambos: 3 periodos (ADRH10029916)
+  · Comunitat Valenciana
+      (ADRH: 188 series)
+      renta_persona/ambos: 9 periodos (ADRH9974370)
+      renta_hogar/ambos: 9 periodos (ADRH9974369)
+      renta_mediana_hogar/ambos: 0 periodos (ADRH9974366)
+      sin serie para renta_mediana_hogar/ambos; lo más parecido:
+        (2 coinciden) ['comunitat valenciana', 'dato base', 'renta mediana por hogar']
+        (1 coinciden) ['000 euros', 'comunitat valenciana', 'dato base', 'espanola', 'mujeres', 'poblacion con ingresos por unidad de consumo por debajo de 5']
+        (1 coinciden) ['comunitat valenciana', 'dato base', 'de 18 a 64 anos', 'hombres', 'poblacion con ingresos por unidad de consumo por debajo 40% de la mediana']
+        (1 coinciden) ['000 euros', 'comunitat valenciana', 'dato base', 'espanola', 'mujeres', 'poblacion con ingresos por unidad de consumo por debajo de 10']
+      renta_uc/ambos: 9 periodos (ADRH9974368)
+      gini/ambos: 9 periodos (ADRH9974924)
+      p80p20/ambos: 9 periodos (ADRH9974923)
+      bajo_60/ambos: 9 periodos (ADRH9980806)
+      bajo_60/hombres: 9 periodos (ADRH9980800)
+      bajo_60/mujeres: 9 periodos (ADRH9980794)
+      tamano_hogar/ambos: 9 periodos (ADRH10030062)
+      hogares_unipersonales/ambos: 9 periodos (ADRH10029876)
+  · Castellón
+      (ADRH: 188 series)
+      renta_persona/ambos: 9 periodos (ADRH87745)
+      renta_hogar/ambos: 9 periodos (ADRH87744)
+      renta_mediana_hogar/ambos: 0 periodos (ADRH9974124)
+      sin serie para renta_mediana_hogar/ambos; lo más parecido:
+        (2 coinciden) ['castellon/castello', 'dato base', 'renta mediana por hogar']
+        (1 coinciden) ['castellon/castello', 'dato base', 'menos de 18 anos', 'poblacion con ingresos por unidad de consumo por debajo 40% de la mediana', 'total']
+        (1 coinciden) ['000 euros', 'castellon/castello', 'dato base', 'de 18 a 64 anos', 'mujeres', 'poblacion con ingresos por unidad de consumo por debajo de 5']
+        (1 coinciden) ['castellon/castello', 'dato base', 'hombres', 'poblacion con ingresos por unidad de consumo por encima 200% de la mediana']
+      renta_uc/ambos: 9 periodos (ADRH9974126)
+      gini/ambos: 9 periodos (ADRH9974834)
+      p80p20/ambos: 9 periodos (ADRH9974833)
+      bajo_60/ambos: 9 periodos (ADRH9979996)
+      bajo_60/hombres: 9 periodos (ADRH9979990)
+      bajo_60/mujeres: 9 periodos (ADRH9979984)
+      tamano_hogar/ambos: 9 periodos (ADRH10029972)
+      hogares_unipersonales/ambos: 9 periodos (ADRH10029696)
+    escrito data/renta/espana.json
+    escrito data/renta/comunitat-valenciana.json
+    escrito data/renta/castellon.json
+  9 periodos: 2015 … 2023
+
+No se ha encontrado serie para 19 combinaciones:
+  - poblacion/espana/poblacion/ambos
+  - poblacion/espana/mayores_70/ambos
+  - poblacion/comunitat-valenciana/mayores_70/ambos
+  - poblacion/castellon/mayores_70/ambos
+  - demografia/espana/esperanza_vida/ambos
+  - demografia/espana/esperanza_vida/hombres
+  - demografia/espana/esperanza_vida/mujeres
+  - demografia/espana/nacidos_por_defuncion/ambos
+  - demografia/comunitat-valenciana/esperanza_vida/ambos
+  - demografia/comunitat-valenciana/esperanza_vida/hombres
+  - demografia/comunitat-valenciana/esperanza_vida/mujeres
+  - demografia/comunitat-valenciana/nacidos_por_defuncion/ambos
+  - demografia/castellon/esperanza_vida/ambos
+  - demografia/castellon/esperanza_vida/hombres
+  - demografia/castellon/esperanza_vida/mujeres
+  - demografia/castellon/nacidos_por_defuncion/ambos
+  - renta/espana/renta_mediana_hogar/ambos
+  - renta/comunitat-valenciana/renta_mediana_hogar/ambos
+  - renta/castellon/renta_mediana_hogar/ambos
