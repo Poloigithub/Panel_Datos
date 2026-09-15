@@ -97,20 +97,36 @@ def esperado(sexo: str, ambito: dict, magnitud: str) -> set[str]:
     return partes
 
 
+ROMANOS = {"I": "T1", "II": "T2", "III": "T3", "IV": "T4"}
+
+
 def periodo_de(dato: dict) -> str | None:
-    """'2026T2' a partir de un punto de la serie."""
+    """'2026T2' a partir de un punto de la serie.
+
+    Con tip=A el INE devuelve `Periodo` como objeto; sin él, un `FK_Periodo`
+    numérico. Se aceptan las dos formas.
+    """
     anyo = dato.get("Anyo") or dato.get("Anio")
+    if not anyo:
+        return None
+
     periodo = dato.get("Periodo")
     nombre = periodo.get("Nombre") if isinstance(periodo, dict) else periodo
-    if not anyo or not nombre:
-        return None
-    nombre = str(nombre).strip().upper()
-    if nombre.startswith("T") and nombre[1:].isdigit():
-        return f"{anyo}{nombre}"
-    romanos = {"I": "T1", "II": "T2", "III": "T3", "IV": "T4"}
-    if nombre in romanos:
-        return f"{anyo}{romanos[nombre]}"
+    if nombre:
+        nombre = str(nombre).strip().upper()
+        if nombre.startswith("T") and nombre[1:].isdigit():
+            return f"{anyo}{nombre}"
+        if nombre in ROMANOS:
+            return f"{anyo}{ROMANOS[nombre]}"
+
+    fk = dato.get("FK_Periodo")
+    if isinstance(fk, int) and 1 <= fk <= 4:
+        return f"{anyo}T{fk}"
     return None
+
+
+def orden_periodo(periodo: str) -> tuple[int, int]:
+    return (int(periodo[:4]), int(periodo[5:]))
 
 
 def resuelve_codigos(ambito: dict, cache: dict) -> dict:
@@ -126,7 +142,7 @@ def resuelve_codigos(ambito: dict, cache: dict) -> dict:
         return guardado
 
     print(f"  · {ambito['nombre']}: resolviendo códigos contra la API…")
-    series = ine_api.get("SERIE_METADATAOPERACION", "EPA", g1=ambito["filtro"], det=2)
+    series = ine_api.get("SERIE_METADATAOPERACION", "EPA", g1=ambito["filtro"])
     porsegmentos: dict[frozenset, list[dict]] = {}
     for s in series:
         porsegmentos.setdefault(frozenset(segmentos(s.get("Nombre", ""))), []).append(s)
@@ -142,14 +158,35 @@ def resuelve_codigos(ambito: dict, cache: dict) -> dict:
             elif not candidatas:
                 print(f"      sin serie para {sexo}/{magnitud} ({sorted(clave)})")
             else:
-                print(f"      ¡ambiguo! {sexo}/{magnitud}: "
-                      f"{[c['COD'] for c in candidatas]}; se descarta")
+                # Varias series con los mismos metadatos: el INE mantiene
+                # versiones antiguas junto a la vigente. Gana la que llega más
+                # lejos en el tiempo y, a igualdad, la más larga.
+                mejor, mejor_clave = None, None
+                for candidata in candidatas:
+                    valores = descarga_serie(candidata["COD"])
+                    if not valores:
+                        continue
+                    orden = (max(orden_periodo(p) for p in valores), len(valores))
+                    if mejor_clave is None or orden > mejor_clave:
+                        mejor, mejor_clave = candidata["COD"], orden
+                if mejor:
+                    resuelto[sexo][magnitud] = mejor
+                    print(f"      {sexo}/{magnitud}: {len(candidatas)} candidatas, "
+                          f"se toma la más actual ({mejor})")
+                else:
+                    print(f"      ¡ambiguo y sin datos! {sexo}/{magnitud}: "
+                          f"{[c['COD'] for c in candidatas]}")
+    encontradas = sum(len(v) for v in resuelto.values())
+    print(f"    resueltas {encontradas} de {len(SEXOS) * len(MAGNITUDES)} series")
     cache[ambito["id"]] = resuelto
     return resuelto
 
 
 def descarga_serie(codigo: str) -> dict[str, float | None]:
-    datos = ine_api.get("DATOS_SERIE", codigo, nult=400)
+    """Serie completa (nult muy alto: el INE devuelve lo que tenga)."""
+    datos = ine_api.get("DATOS_SERIE", codigo, nult=400, tip="A")
+    if isinstance(datos, list):
+        datos = datos[0] if datos else {}
     valores: dict[str, float | None] = {}
     for punto in datos.get("Data", []):
         periodo = periodo_de(punto)
@@ -193,7 +230,7 @@ def main() -> int:
 
     # Rejilla temporal común: así todas las series comparten índice y la web
     # no tiene que alinear nada.
-    periodos = sorted(periodos_vistos, key=lambda p: (int(p[:4]), int(p[5:])))
+    periodos = sorted(periodos_vistos, key=orden_periodo)
 
     indice = {
         "actualizado": ahora,

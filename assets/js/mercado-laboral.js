@@ -666,7 +666,7 @@
         enlace.className = 'enlace-sutil';
         enlace.href = fuente.url;
         enlace.rel = 'noopener';
-        enlace.textContent = 'INE, tabla ' + fuente.tabla + ': ' + fuente.nombre;
+        enlace.textContent = fuente.nombre;
         li.appendChild(enlace);
         lista.appendChild(li);
       });
