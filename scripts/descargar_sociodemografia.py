@@ -45,12 +45,14 @@ BLOQUES = {
         "indicadores": {
             "poblacion": {
                 "titulo": "Población", "unidad": "personas", "decimales": 0,
+                "rango": (10000, 100000000),
                 "operacion": ["ECP", "CP"],
                 "busquedas": [{"poblacion"}],
                 "por_sexo": True,
             },
             "edad_media": {
                 "titulo": "Edad media", "unidad": "años", "decimales": 1,
+                "rango": (20, 60),
                 "operacion": "IDB",
                 "busquedas": [
                     {"indicadores de crecimiento y estructura de la poblacion", "edad media de la poblacion"},
@@ -62,6 +64,7 @@ BLOQUES = {
             # los 65: no hay serie de «65 y más» por provincia.
             "mayores_70": {
                 "titulo": "Población de 70 y más años", "unidad": "%", "decimales": 2,
+                "rango": (0, 50),
                 "operacion": "IDB",
                 "busquedas": [
                     {"indicadores de crecimiento y estructura de la poblacion",
@@ -75,12 +78,14 @@ BLOQUES = {
             # española, del que sale el complementario.
             "espanoles": {
                 "titulo": "Población de nacionalidad española", "unidad": "%", "decimales": 2,
+                "rango": (0, 100),
                 "operacion": "ADRH",
                 "busquedas": [{"porcentaje de poblacion espanola"}],
                 "por_sexo": False,
             },
             "crecimiento": {
-                "titulo": "Crecimiento de la población", "unidad": "%", "decimales": 2,
+                "titulo": "Crecimiento de la población", "unidad": "por mil", "decimales": 2,
+                "rango": (-100, 100),
                 "operacion": "IDB",
                 "busquedas": [
                     {"indicadores de crecimiento y estructura de la poblacion", "crecimiento de la poblacion"},
@@ -97,15 +102,12 @@ BLOQUES = {
             "esperanza_vida": {
                 "titulo": "Esperanza de vida al nacer", "unidad": "años", "decimales": 2,
                 "operacion": "IDB",
-                "busquedas": [
-                    {"mortalidad", "esperanza de vida", "0 anos"},
-                    # La serie general de la tabla de mortalidad no lleva el
-                    # nombre del indicador en el nombre de la serie.
-                    {"mortalidad", "0 anos"},
-                ],
+                "busquedas": [{"mortalidad", "esperanza de vida", "0 anos"}],
+                "rango": (50, 100),
                 "por_sexo": True,
             },
             "mortalidad_infantil": {
+                "rango": (0, 100),
                 "titulo": "Mortalidad infantil (menores de 5 años)", "unidad": "por mil",
                 "decimales": 2, "operacion": "IDB",
                 "busquedas": [{"mortalidad", "tasa de mortalidad infantil de menores de 5 anos"}],
@@ -115,6 +117,7 @@ BLOQUES = {
                 # El INE sólo la publica por orden de nacimiento, así que se
                 # toma la del primer hijo, que es la que marca la tendencia.
                 "titulo": "Edad media al primer hijo", "unidad": "años", "decimales": 2,
+                "rango": (20, 45),
                 "operacion": "IDB",
                 "busquedas": [{"fecundidad", "edad media a la maternidad", "primero"}],
                 "por_sexo": False,
@@ -155,12 +158,6 @@ BLOQUES = {
                 "busquedas": [{"renta neta media por hogar"}],
                 "por_sexo": False,
             },
-            "renta_mediana_hogar": {
-                "titulo": "Renta mediana por hogar", "unidad": "euros", "decimales": 0,
-                "operacion": "ADRH",
-                "busquedas": [{"renta mediana por hogar"}],
-                "por_sexo": False,
-            },
             "renta_uc": {
                 "titulo": "Renta media por unidad de consumo", "unidad": "euros", "decimales": 0,
                 "operacion": "ADRH",
@@ -169,6 +166,7 @@ BLOQUES = {
             },
             "gini": {
                 "titulo": "Índice de Gini", "unidad": "índice", "decimales": 2,
+                "rango": (0, 100),
                 "operacion": "ADRH",
                 "busquedas": [{"indice de gini"}],
                 "por_sexo": False,
@@ -210,6 +208,26 @@ SEXOS = {
     "hombres": {"hombres", "varones"},
     "mujeres": {"mujeres"},
 }
+
+
+def en_rango(valores, indicador, etiqueta) -> bool:
+    """¿La serie encontrada mide lo que creemos que mide?
+
+    Los nombres del INE se parecen entre sí y una búsqueda laxa puede acabar
+    en otra cosa -la esperanza de vida al nacer y la mortalidad infantil se
+    confundían así-. Un rango plausible lo detecta antes de publicarlo.
+    """
+    rango = indicador.get("rango")
+    if not rango:
+        return True
+    minimo, maximo = rango
+    ultimos = [v for _, v in sorted(valores.items())][-3:]
+    fuera = [v for v in ultimos if not (minimo <= v <= maximo)]
+    if fuera:
+        print(f"      {etiqueta}: descartada, los valores {fuera} quedan fuera "
+              f"del rango esperado {rango}")
+        return False
+    return True
 
 
 def busca(indice, ambito, indicador, alias_sexo, etiqueta, avisar=True):
@@ -273,19 +291,50 @@ def main() -> int:
                 sexos = SEXOS if indicador["por_sexo"] else {"ambos": SEXOS["ambos"]}
                 for sexo, alias in sexos.items():
                     etiqueta = f"{clave}/{sexo}"
+                    # Se juntan las operaciones: la Estadística Continua de
+                    # Población arranca en 2021 y Cifras de Población viene de
+                    # 1971, así que por separado ninguna da la serie entera.
                     valores, usados = {}, []
                     for operacion in operaciones:
-                        valores, usados = busca(indices[operacion], ambito, indicador,
-                                                alias, etiqueta,
-                                                avisar=(operacion == operaciones[-1]))
-                        if valores:
-                            break
+                        parciales, procedencia = busca(
+                            indices[operacion], ambito, indicador, alias, etiqueta,
+                            avisar=(operacion == operaciones[-1] and not valores))
+                        if not parciales:
+                            continue
+                        if not valores:
+                            valores, usados = dict(parciales), list(procedencia)
+                        elif motor.concuerdan(valores, parciales):
+                            nuevos = {p: v for p, v in parciales.items() if p not in valores}
+                            if nuevos:
+                                valores.update(nuevos)
+                                usados += procedencia
+
+                    if valores and not en_rango(valores, indicador, etiqueta):
+                        valores, usados = {}, []
                     if not valores:
                         faltantes.append(f"{nombre_bloque}/{ambito['id']}/{etiqueta}")
                         continue
                     series.setdefault(sexo, {})[clave] = valores
                     origen.setdefault(sexo, {})[clave] = usados
                     periodos_vistos.update(valores)
+
+            # La población total es la suma de los dos sexos: si el INE no
+            # publica la serie agregada para un ámbito, se compone.
+            if "poblacion" in bloque["indicadores"]:
+                hombres = series.get("hombres", {}).get("poblacion")
+                mujeres = series.get("mujeres", {}).get("poblacion")
+                ambos = series.setdefault("ambos", {}).get("poblacion")
+                if hombres and mujeres and not ambos:
+                    compuesta = {
+                        periodo: hombres[periodo] + mujeres[periodo]
+                        for periodo in hombres if periodo in mujeres
+                    }
+                    if compuesta:
+                        series["ambos"]["poblacion"] = compuesta
+                        origen.setdefault("ambos", {})["poblacion"] = ["derivado:hombres+mujeres"]
+                        periodos_vistos.update(compuesta)
+                        print(f"      poblacion/ambos: {len(compuesta)} periodos "
+                              f"sumando hombres y mujeres")
 
             por_ambito[ambito["id"]] = series
             procedencias[nombre_bloque][ambito["id"]] = origen
