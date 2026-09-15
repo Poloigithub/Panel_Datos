@@ -1,9 +1,9 @@
-"""Explorador del catálogo del INE para las operaciones sociodemográficas.
+"""Segunda ronda: qué series simples ofrece cada operación para Castellón.
 
-Diagnóstico de un solo uso: descubre qué operaciones existen, con qué variables
-territoriales trabajan y qué series ofrecen para España, la Comunitat
-Valenciana y la provincia de Castellón. El resultado se escribe a un fichero
-porque el log de Actions se trunca al leerlo.
+El INE nombra cada serie encadenando los valores de sus variables, así que las
+series «del total» son las de nombre más corto. Se vuelcan ordenadas por
+número de segmentos para poder escribir los descargadores contra nombres
+reales.
 """
 
 from __future__ import annotations
@@ -17,11 +17,19 @@ import ine_api  # noqa: E402
 
 SALIDA = Path(__file__).resolve().parents[1] / "data" / "_catalogo"
 
-# Lo que buscamos en el nombre de la operación.
-INTERESAN = (
-    "padron", "poblacion", "natural de la poblacion", "indicadores demograficos",
-    "migracion", "renta", "atlas", "hogares", "nacimientos", "defunciones",
-)
+VAR_PROVINCIAS, CASTELLON = 115, 13
+
+# operación -> palabras que deben aparecer para que la serie nos interese
+OPERACIONES = {
+    "ECP": ("poblacion",),
+    "IDB": ("edad media", "esperanza de vida", "indice de envejecimiento",
+            "tasa bruta", "numero medio de hijos", "edad media a la maternidad",
+            "crecimiento", "dependencia"),
+    "ADRH": ("renta", "gini", "mediana"),
+    "MNPN": ("nacidos", "nacimientos"),
+    "MNPD": ("defunciones", "fallecidos"),
+    "EMCR": ("saldo migratorio", "inmigracion", "emigracion"),
+}
 
 
 def normaliza(texto: str) -> str:
@@ -29,75 +37,42 @@ def normaliza(texto: str) -> str:
     return " ".join("".join(c for c in texto if not unicodedata.combining(c)).lower().split())
 
 
+def segmentos(nombre: str) -> list[str]:
+    partes = [normaliza(p) for p in (nombre or "").replace(",", ".").split(".")]
+    return [p for p in partes if p]
+
+
 def main() -> int:
     SALIDA.mkdir(parents=True, exist_ok=True)
-    lineas = ["# Operaciones sociodemográficas del INE", ""]
+    lineas = ["# Series simples por operación (provincia de Castellón)", ""]
 
-    operaciones = ine_api.get("OPERACIONES_DISPONIBLES")
-    lineas.append(f"Operaciones publicadas: {len(operaciones)}\n")
-
-    candidatas = []
-    for op in operaciones:
-        nombre = normaliza(op.get("Nombre", ""))
-        if any(clave in nombre for clave in INTERESAN):
-            candidatas.append(op)
-            lineas.append(f"- `{op.get('Codigo')}` (id {op.get('Id')}) — {op.get('Nombre')}")
-    lineas.append("")
-
-    # Para cada candidata: variables y disponibilidad territorial.
-    for op in candidatas:
-        codigo = op.get("Codigo")
-        if not codigo:
-            continue
-        lineas += [f"## {codigo} — {op.get('Nombre')}", ""]
+    for codigo, claves in OPERACIONES.items():
+        lineas += [f"## {codigo}", ""]
         try:
-            variables = ine_api.get("VARIABLES_OPERACION", codigo)
+            series = ine_api.get("SERIE_METADATAOPERACION", codigo,
+                                 g1=f"{VAR_PROVINCIAS}:{CASTELLON}")
         except Exception as exc:  # noqa: BLE001
-            lineas += [f"  ERROR al leer variables: {exc}", ""]
+            lineas += [f"ERROR: {exc}", ""]
             continue
 
-        territoriales = []
-        for v in variables:
-            n = normaliza(v.get("Nombre", ""))
-            if any(k in n for k in ("provincia", "comunidad", "nacional", "municipio", "sexo", "edad")):
-                territoriales.append(v)
-                lineas.append(f"- variable `{v.get('Id')}` — {v.get('Nombre')}")
-
-        for v in territoriales:
-            n = normaliza(v.get("Nombre", ""))
-            if not any(k in n for k in ("provincia", "comunidad", "nacional")):
+        elegidas = []
+        for s in series:
+            n = normaliza(s.get("Nombre", ""))
+            if not any(clave in n for clave in claves):
                 continue
-            try:
-                valores = ine_api.get("VALORES_VARIABLEOPERACION", f"{v.get('Id')}/{codigo}")
-            except Exception as exc:  # noqa: BLE001
-                lineas.append(f"    (sin valores para {v.get('Id')}: {exc})")
-                continue
-            interesantes = [
-                val for val in valores
-                if any(k in normaliza(val.get("Nombre", ""))
-                       for k in ("castell", "comunitat valenciana", "total nacional"))
-            ]
-            for val in interesantes:
-                lineas.append(f"    valor `{val.get('Id')}` — {val.get('Nombre')} "
-                              f"(variable {v.get('Id')})")
+            segs = segmentos(s.get("Nombre", ""))
+            if len(segs) <= 7:
+                elegidas.append((len(segs), s))
 
-            # ¿Cuántas series hay realmente para Castellón en esta operación?
-            castellon = next((val for val in interesantes
-                              if "castell" in normaliza(val.get("Nombre", ""))), None)
-            if castellon:
-                try:
-                    series = ine_api.get("SERIE_METADATAOPERACION", codigo,
-                                         g1=f"{v.get('Id')}:{castellon.get('Id')}")
-                    lineas.append(f"    → series para Castellón: {len(series)}")
-                    for s in series[:25]:
-                        lineas.append(f"        · {s.get('Nombre', '').strip()}")
-                except Exception as exc:  # noqa: BLE001
-                    lineas.append(f"    → error al pedir series de Castellón: {exc}")
+        elegidas.sort(key=lambda t: (t[0], t[1].get("Nombre", "")))
+        lineas.append(f"Series totales: {len(series)} · simples que encajan: {len(elegidas)}")
+        lineas.append("")
+        for nsegs, s in elegidas[:150]:
+            lineas.append(f"- `{s.get('COD')}` ({nsegs}) — {s.get('Nombre', '').strip()}")
         lineas.append("")
 
-    (SALIDA / "operaciones.md").write_text("\n".join(lineas), encoding="utf-8")
-    print(f"[{len(lineas)} líneas en data/_catalogo/operaciones.md]")
-    print("\n".join(lineas[:40]))
+    (SALIDA / "series_simples.md").write_text("\n".join(lineas), encoding="utf-8")
+    print(f"[{len(lineas)} líneas en data/_catalogo/series_simples.md]")
     return 0
 
 
