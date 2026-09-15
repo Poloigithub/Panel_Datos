@@ -149,7 +149,7 @@ def elige_mejor(candidatas: list[dict], etiqueta: str) -> str | None:
     a igualdad, la que llega más lejos en el tiempo. Se prueban antes las de
     nombre más simple, que suelen ser las series principales.
     """
-    orden = sorted(candidatas, key=lambda c: len(segmentos(c.get("Nombre", ""))))[:10]
+    orden = sorted(candidatas, key=lambda c: len(segmentos(c.get("Nombre", ""))))[:8]
     mejor, mejor_clave = None, None
     for candidata in orden:
         valores = {p: v for p, v in descarga_serie(candidata["COD"]).items() if v is not None}
@@ -190,21 +190,21 @@ def resuelve_codigos(ambito: dict, cache: dict) -> dict:
         for magnitud in MAGNITUDES:
             etiqueta = f"{sexo}/{magnitud}"
             clave = frozenset(esperado(sexo, ambito, magnitud))
-            candidatas = porsegmentos.get(clave, [])
 
-            if not candidatas:
-                # El INE no siempre nombra igual el total de una variable
-                # ("Total", "De 16 y más años"…). Segundo intento: la serie
-                # debe contener lo obligatorio y no añadir más que totales.
-                obligatorio = clave - EXTRAS_ADMITIDOS
-                candidatas = [
-                    serie
-                    for segs, grupo in porsegmentos.items()
-                    if obligatorio <= segs and (segs - obligatorio) <= EXTRAS_ADMITIDOS
-                    for serie in grupo
-                ]
-                if candidatas:
-                    print(f"      {etiqueta}: sin coincidencia exacta, se busca en sentido amplio")
+            # El INE no siempre nombra igual el total de una variable ("Total",
+            # "De 16 y más años"…), y la coincidencia exacta puede dar con una
+            # serie testimonial de dos trimestres. Se juntan las exactas y las
+            # que contienen lo obligatorio sin añadir más que totales, y se
+            # elige entre todas por cobertura.
+            obligatorio = clave - EXTRAS_ADMITIDOS
+            candidatas, vistos = [], set()
+            for segs, grupo in porsegmentos.items():
+                if not (obligatorio <= segs and (segs - obligatorio) <= EXTRAS_ADMITIDOS):
+                    continue
+                for serie in grupo:
+                    if serie["COD"] not in vistos:
+                        vistos.add(serie["COD"])
+                        candidatas.append(serie)
 
             if not candidatas:
                 print(f"      sin serie para {etiqueta} ({sorted(clave)})")
@@ -221,12 +221,18 @@ def resuelve_codigos(ambito: dict, cache: dict) -> dict:
     return resuelto
 
 
+_descargadas: dict[str, dict[str, float | None]] = {}
+
+
 def descarga_serie(codigo: str) -> dict[str, float | None]:
     """Serie completa (nult muy alto: el INE devuelve lo que tenga)."""
+    if codigo in _descargadas:
+        return _descargadas[codigo]
     try:
         datos = ine_api.get("DATOS_SERIE", codigo, nult=400, det=2)
     except ine_api.INEError as exc:
         print(f"      ! no se pudo descargar {codigo}: {exc}")
+        _descargadas[codigo] = {}
         return {}
     if isinstance(datos, list):
         datos = datos[0] if datos else {}
@@ -235,6 +241,7 @@ def descarga_serie(codigo: str) -> dict[str, float | None]:
         periodo = periodo_de(punto)
         if periodo:
             valores[periodo] = punto.get("Valor")
+    _descargadas[codigo] = valores
     return valores
 
 
