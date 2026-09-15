@@ -141,29 +141,34 @@ def orden_periodo(periodo: str) -> tuple[int, int]:
     return (int(periodo[:4]), int(periodo[5:]))
 
 
-def elige_mejor(candidatas: list[dict], etiqueta: str) -> str | None:
+def cobertura(codigo: str) -> tuple[int, tuple[int, int]]:
+    """(cuántos trimestres con dato, último trimestre) de una serie."""
+    valores = {p: v for p, v in descarga_serie(codigo).items() if v is not None}
+    if not valores:
+        return (0, (0, 0))
+    return (len(valores), max(orden_periodo(p) for p in valores))
+
+
+def elige_mejor(candidatas: list[dict], etiqueta: str, tope: int) -> tuple[str | None, int]:
     """De varias series equivalentes, la que mejor cubre la historia.
 
     El INE publica la misma cifra en tablas distintas y conserva versiones
-    antiguas, algunas con sólo un par de trimestres. Gana la de más datos y,
-    a igualdad, la que llega más lejos en el tiempo. Se prueban antes las de
+    antiguas, algunas con sólo un par de trimestres. Gana la de más datos y, a
+    igualdad, la que llega más lejos en el tiempo. Se prueban antes las de
     nombre más simple, que suelen ser las series principales.
     """
-    orden = sorted(candidatas, key=lambda c: len(segmentos(c.get("Nombre", ""))))[:8]
+    orden = sorted(candidatas, key=lambda c: len(segmentos(c.get("Nombre", ""))))[:tope]
     mejor, mejor_clave = None, None
     for candidata in orden:
-        valores = {p: v for p, v in descarga_serie(candidata["COD"]).items() if v is not None}
-        if not valores:
-            continue
-        clave = (len(valores), max(orden_periodo(p) for p in valores))
-        if mejor_clave is None or clave > mejor_clave:
+        clave = cobertura(candidata["COD"])
+        if clave[0] and (mejor_clave is None or clave > mejor_clave):
             mejor, mejor_clave = candidata["COD"], clave
-    if mejor:
-        print(f"      {etiqueta}: {len(candidatas)} candidatas, se toma {mejor} "
-              f"({mejor_clave[0]} trimestres)")
-    else:
+    if not mejor:
         print(f"      {etiqueta}: {len(candidatas)} candidatas, ninguna con datos")
-    return mejor
+        return None, 0
+    print(f"      {etiqueta}: {len(candidatas)} candidatas, se toma {mejor} "
+          f"({mejor_clave[0]} trimestres)")
+    return mejor, mejor_clave[0]
 
 
 def resuelve_codigos(ambito: dict, cache: dict) -> dict:
@@ -185,6 +190,9 @@ def resuelve_codigos(ambito: dict, cache: dict) -> dict:
         porsegmentos.setdefault(frozenset(segmentos(serie.get("Nombre", ""))), []).append(serie)
 
     resuelto: dict[str, dict[str, str]] = {}
+    candidatas_de: dict[tuple[str, str], list[dict]] = {}
+    cobertura_de: dict[tuple[str, str], int] = {}
+
     for sexo in SEXOS:
         resuelto[sexo] = {}
         for magnitud in MAGNITUDES:
@@ -193,9 +201,9 @@ def resuelve_codigos(ambito: dict, cache: dict) -> dict:
 
             # El INE no siempre nombra igual el total de una variable ("Total",
             # "De 16 y más años"…), y la coincidencia exacta puede dar con una
-            # serie testimonial de dos trimestres. Se juntan las exactas y las
+            # serie testimonial de dos trimestres. Se juntan todas las series
             # que contienen lo obligatorio sin añadir más que totales, y se
-            # elige entre todas por cobertura.
+            # elige entre ellas por cobertura.
             obligatorio = clave - EXTRAS_ADMITIDOS
             candidatas, vistos = [], set()
             for segs, grupo in porsegmentos.items():
@@ -206,14 +214,35 @@ def resuelve_codigos(ambito: dict, cache: dict) -> dict:
                         vistos.add(serie["COD"])
                         candidatas.append(serie)
 
+            candidatas_de[(sexo, magnitud)] = candidatas
             if not candidatas:
                 print(f"      sin serie para {etiqueta} ({sorted(clave)})")
-            elif len(candidatas) == 1:
+                continue
+            if len(candidatas) == 1:
                 resuelto[sexo][magnitud] = candidatas[0]["COD"]
-            else:
-                codigo = elige_mejor(candidatas, etiqueta)
-                if codigo:
-                    resuelto[sexo][magnitud] = codigo
+                cobertura_de[(sexo, magnitud)] = cobertura(candidatas[0]["COD"])[0]
+                continue
+
+            codigo, trimestres = elige_mejor(candidatas, etiqueta, tope=8)
+            if codigo:
+                resuelto[sexo][magnitud] = codigo
+                cobertura_de[(sexo, magnitud)] = trimestres
+
+    # Segunda pasada: si alguna serie se ha quedado corta frente a las demás
+    # del mismo ámbito, es que la buena no entró en las primeras candidatas.
+    if cobertura_de:
+        objetivo = max(cobertura_de.values())
+        cortas = [k for k, v in cobertura_de.items() if v < objetivo * 0.9]
+        for sexo, magnitud in cortas:
+            etiqueta = f"{sexo}/{magnitud}"
+            print(f"      {etiqueta}: sólo {cobertura_de[(sexo, magnitud)]} de ~{objetivo} "
+                  f"trimestres; se repasan todas las candidatas")
+            codigo, trimestres = elige_mejor(
+                candidatas_de[(sexo, magnitud)], etiqueta, tope=60
+            )
+            if codigo and trimestres > cobertura_de[(sexo, magnitud)]:
+                resuelto[sexo][magnitud] = codigo
+                cobertura_de[(sexo, magnitud)] = trimestres
 
     encontradas = sum(len(v) for v in resuelto.values())
     print(f"    resueltas {encontradas} de {len(SEXOS) * len(MAGNITUDES)} series")
