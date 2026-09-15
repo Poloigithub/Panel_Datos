@@ -1,0 +1,38 @@
+name: Actualizar datos del INE
+
+on:
+  schedule:
+    # La EPA se publica a finales de enero, abril, julio y octubre. Se mira en
+    # esa ventana y en los primeros días del mes siguiente, por si se retrasa.
+    - cron: '30 6 22-31 1,4,7,10 *'
+    - cron: '30 6 1-6 2,5,8,11 *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Descargar series de la EPA
+        run: python scripts/descargar_epa.py
+
+      - name: Commitear si hay datos nuevos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/epa
+          if git diff --staged --quiet; then
+            echo "El INE no ha publicado nada nuevo; no se toca el repositorio."
+            exit 0
+          fi
+          ULTIMO=$(python -c "import json;print(json.load(open('data/epa/index.json'))['ultimo_periodo'])")
+          git commit -m "Actualiza datos de la EPA (último periodo: ${ULTIMO})"
+          git push

@@ -35,7 +35,8 @@
 
   /* ---------------------------------------------------------------- utilidades */
 
-  const numero = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 1 });
+  // useGrouping 'always' para que 2.329 no se quede sin separador junto a 25.248,2.
+  const numero = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 1, useGrouping: 'always' });
   const numero2 = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
   function formatea(valor, magnitud) {
