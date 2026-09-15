@@ -21,6 +21,9 @@
         "edad_media": [
           "IDB85660"
         ],
+        "mayores_70": [
+          "IDB358642"
+        ],
         "espanoles": [
           "ADRH10029915"
         ],
@@ -36,6 +39,9 @@
         ],
         "edad_media": [
           "IDB86203"
+        ],
+        "mayores_70": [
+          "IDB358712"
         ],
         "espanoles": [
           "ADRH10029875"
@@ -69,6 +75,9 @@
         "edad_media": [
           "IDB86344"
         ],
+        "mayores_70": [
+          "IDB359041"
+        ],
         "espanoles": [
           "ADRH10029695"
         ],
@@ -97,6 +106,9 @@
   "demografia": {
     "espana": {
       "ambos": {
+        "esperanza_vida": [
+          "IDB47613"
+        ],
         "mortalidad_infantil": [
           "IDB361675"
         ],
@@ -105,14 +117,23 @@
         ],
         "saldo_migratorio": [
           "IDB475120"
+        ],
+        "nacidos_por_defuncion": [
+          "IDB85490"
         ]
       },
       "hombres": {
+        "esperanza_vida": [
+          "IDB48343"
+        ],
         "mortalidad_infantil": [
           "IDB361674"
         ]
       },
       "mujeres": {
+        "esperanza_vida": [
+          "IDB48742"
+        ],
         "mortalidad_infantil": [
           "IDB361673"
         ]
@@ -120,6 +141,9 @@
     },
     "comunitat-valenciana": {
       "ambos": {
+        "esperanza_vida": [
+          "IDB23477"
+        ],
         "mortalidad_infantil": [
           "IDB361645"
         ],
@@ -128,14 +152,23 @@
         ],
         "saldo_migratorio": [
           "IDB475110"
+        ],
+        "nacidos_por_defuncion": [
+          "IDB85480"
         ]
       },
       "hombres": {
+        "esperanza_vida": [
+          "IDB23498"
+        ],
         "mortalidad_infantil": [
           "IDB361644"
         ]
       },
       "mujeres": {
+        "esperanza_vida": [
+          "IDB20822"
+        ],
         "mortalidad_infantil": [
           "IDB361643"
         ]
@@ -143,6 +176,9 @@
     },
     "castellon": {
       "ambos": {
+        "esperanza_vida": [
+          "IDB23031"
+        ],
         "mortalidad_infantil": [
           "IDB361789"
         ],
@@ -151,14 +187,23 @@
         ],
         "saldo_migratorio": [
           "IDB475158"
+        ],
+        "nacidos_por_defuncion": [
+          "IDB84973"
         ]
       },
       "hombres": {
+        "esperanza_vida": [
+          "IDB23052"
+        ],
         "mortalidad_infantil": [
           "IDB361788"
         ]
       },
       "mujeres": {
+        "esperanza_vida": [
+          "IDB23201"
+        ],
         "mortalidad_infantil": [
           "IDB361787"
         ]

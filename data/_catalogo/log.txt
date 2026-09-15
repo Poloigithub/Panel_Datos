@@ -2,27 +2,25 @@
 === Población y estructura ===
   · España
       (ECP: 10000 series)
+      (CP: 10000 series)
       (IDB: 8526 series)
       (ADRH: 188 series)
       sin serie para poblacion/ambos; lo más parecido:
         (2 coinciden) ['47 anos', 'apatridas', 'europa menos ue28', 'mujeres', 'numero', 'poblacion', 'total nacional']
-        (2 coinciden) ['86 anos', 'centro america y caribe', 'extranjera', 'mujeres', 'numero', 'poblacion', 'total nacional']
-        (2 coinciden) ['7 anos', 'extranjero', 'numero', 'pais de europa menos ue27_2020', 'poblacion', 'total', 'total nacional']
-        (2 coinciden) ['52 anos', 'europa menos ue28', 'extranjera', 'numero', 'poblacion', 'total', 'total nacional']
+        (2 coinciden) ['55 anos', 'de asia', 'espana', 'mujeres', 'numero', 'poblacion', 'total nacional']
+        (2 coinciden) ['54 anos', 'de asia', 'hombres', 'numero', 'poblacion', 'total nacional', 'ue27_2020 sin espana']
+        (2 coinciden) ['109 anos', 'centro america y caribe', 'de centro america y caribe', 'mujeres', 'numero', 'poblacion', 'total nacional']
       poblacion/hombres: 56 periodos (ECP319)
       poblacion/mujeres: 25 periodos (ECP232293)
       edad_media/ambos: 51 periodos (IDB85660)
       edad_media/hombres: 51 periodos (IDB85659)
       edad_media/mujeres: 51 periodos (IDB85658)
-      sin serie para mayores_70/ambos; lo más parecido:
-        (3 coinciden) ['70 y mas anos', 'anual', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad', 'total nacional']
-        (2 coinciden) ['85 y mas anos', 'anual', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad', 'total nacional']
-        (2 coinciden) ['100 y mas anos', 'anual', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad', 'total nacional']
-        (2 coinciden) ['70 y mas anos', 'dato base', 'divorcios', 'mujeres', 'tasa de divorcialidad', 'total nacional']
+      mayores_70/ambos: 51 periodos (IDB358642)
       espanoles/ambos: 3 periodos (ADRH10029915)
       crecimiento/ambos: 50 periodos (IDB87064)
   · Comunitat Valenciana
       (ECP: 3429 series)
+      (CP: 5355 series)
       (IDB: 7519 series)
       (ADRH: 188 series)
       poblacion/ambos: 56 periodos (ECP115493)
@@ -31,15 +29,12 @@
       edad_media/ambos: 51 periodos (IDB86203)
       edad_media/hombres: 51 periodos (IDB86202)
       edad_media/mujeres: 51 periodos (IDB86201)
-      sin serie para mayores_70/ambos; lo más parecido:
-        (3 coinciden) ['70 y mas anos', 'anual', 'comunitat valenciana', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
-        (2 coinciden) ['70 y mas anos', 'comunitat valenciana', 'dato base', 'divorcios', 'hombres', 'tasa de divorcialidad']
-        (2 coinciden) ['95 y mas anos', 'anual', 'comunitat valenciana', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
-        (2 coinciden) ['75 y mas anos', 'anual', 'comunitat valenciana', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
+      mayores_70/ambos: 51 periodos (IDB358712)
       espanoles/ambos: 9 periodos (ADRH10029875)
       crecimiento/ambos: 50 periodos (IDB87074)
   · Castellón
       (ECP: 3429 series)
+      (CP: 5292 series)
       (IDB: 3866 series)
       (ADRH: 188 series)
       poblacion/ambos: 56 periodos (ECP131400)
@@ -48,11 +43,7 @@
       edad_media/ambos: 51 periodos (IDB86344)
       edad_media/hombres: 51 periodos (IDB86343)
       edad_media/mujeres: 51 periodos (IDB86342)
-      sin serie para mayores_70/ambos; lo más parecido:
-        (3 coinciden) ['70 y mas anos', 'anual', 'castellon/castello', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
-        (2 coinciden) ['85 y mas anos', 'anual', 'castellon/castello', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
-        (2 coinciden) ['80 y mas anos', 'anual', 'castellon/castello', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
-        (2 coinciden) ['100 y mas anos', 'anual', 'castellon/castello', 'indicadores de crecimiento y estructura de la poblacion', 'porcentaje', 'proporcion de personas mayores de cierta edad']
+      mayores_70/ambos: 51 periodos (IDB359041)
       espanoles/ambos: 9 periodos (ADRH10029695)
       crecimiento/ambos: 50 periodos (IDB87121)
     escrito data/poblacion/espana.json
@@ -63,85 +54,37 @@
 === Natalidad, mortalidad y migración ===
   · España
       (IDB: 8526 series)
-      sin serie para esperanza_vida/ambos; lo más parecido:
-        (3 coinciden) ['0 anos', 'ambos sexos', 'mortalidad', 'total nacional']
-        (3 coinciden) ['0 anos', 'mortalidad', 'total nacional', 'varones']
-        (3 coinciden) ['0 anos', 'mortalidad', 'mujeres', 'total nacional']
-        (3 coinciden) ['90 anos', 'ambos sexos', 'anual', 'dato base', 'esperanza de vida', 'mortalidad', 'primera etapa de educacion secundaria y similar', 'total nacional']
-      sin serie para esperanza_vida/hombres; lo más parecido:
-        (3 coinciden) ['0 anos', 'ambos sexos', 'mortalidad', 'total nacional']
-        (3 coinciden) ['0 anos', 'mortalidad', 'total nacional', 'varones']
-        (3 coinciden) ['0 anos', 'mortalidad', 'mujeres', 'total nacional']
-        (3 coinciden) ['90 anos', 'ambos sexos', 'anual', 'dato base', 'esperanza de vida', 'mortalidad', 'primera etapa de educacion secundaria y similar', 'total nacional']
-      sin serie para esperanza_vida/mujeres; lo más parecido:
-        (3 coinciden) ['0 anos', 'ambos sexos', 'mortalidad', 'total nacional']
-        (3 coinciden) ['0 anos', 'mortalidad', 'total nacional', 'varones']
-        (3 coinciden) ['0 anos', 'mortalidad', 'mujeres', 'total nacional']
-        (3 coinciden) ['90 anos', 'ambos sexos', 'anual', 'dato base', 'esperanza de vida', 'mortalidad', 'primera etapa de educacion secundaria y similar', 'total nacional']
+      esperanza_vida/ambos: 50 periodos (IDB47613)
+      esperanza_vida/hombres: 50 periodos (IDB48343)
+      esperanza_vida/mujeres: 50 periodos (IDB48742)
       mortalidad_infantil/ambos: 50 periodos (IDB361675)
       mortalidad_infantil/hombres: 50 periodos (IDB361674)
       mortalidad_infantil/mujeres: 50 periodos (IDB361673)
       edad_maternidad/ambos: 50 periodos (IDB80626)
       saldo_migratorio/ambos: 4 periodos (IDB475120)
-      sin serie para nacidos_por_defuncion/ambos; lo más parecido:
-        (2 coinciden) ['anual', 'dato base', 'indicadores de crecimiento y estructura de la poblacion', 'nacidos por cada 1000 defunciones', 'no considerado', 'todas las edades', 'total', 'total nacional']
-        (1 coinciden) ['38 anos', 'ambas nacionalidades', 'mujeres', 'nupcialidad', 'total nacional']
-        (1 coinciden) ['23 anos', 'mortalidad', 'total nacional', 'varones']
-        (1 coinciden) ['28 anos', 'mortalidad', 'total nacional', 'varones']
+      nacidos_por_defuncion/ambos: 50 periodos (IDB85490)
   · Comunitat Valenciana
       (IDB: 7519 series)
-      sin serie para esperanza_vida/ambos; lo más parecido:
-        (3 coinciden) ['40 anos', 'anual', 'comunitat valenciana', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'primera etapa de educacion secundaria y similar']
-        (3 coinciden) ['55 anos', 'anual', 'comunitat valenciana', 'dato base', 'educacion primaria e inferior', 'esperanza de vida', 'mortalidad', 'mujeres']
-        (3 coinciden) ['30 anos', 'anual', 'comunitat valenciana', 'dato base', 'educacion superior', 'esperanza de vida', 'mortalidad', 'mujeres']
-        (3 coinciden) ['30 anos', 'anual', 'comunitat valenciana', 'dato base', 'esperanza de vida', 'mortalidad', 'mujeres', 'primera etapa de educacion secundaria y similar']
-      sin serie para esperanza_vida/hombres; lo más parecido:
-        (3 coinciden) ['40 anos', 'anual', 'comunitat valenciana', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'primera etapa de educacion secundaria y similar']
-        (3 coinciden) ['55 anos', 'anual', 'comunitat valenciana', 'dato base', 'educacion primaria e inferior', 'esperanza de vida', 'mortalidad', 'mujeres']
-        (3 coinciden) ['30 anos', 'anual', 'comunitat valenciana', 'dato base', 'educacion superior', 'esperanza de vida', 'mortalidad', 'mujeres']
-        (3 coinciden) ['30 anos', 'anual', 'comunitat valenciana', 'dato base', 'esperanza de vida', 'mortalidad', 'mujeres', 'primera etapa de educacion secundaria y similar']
-      sin serie para esperanza_vida/mujeres; lo más parecido:
-        (3 coinciden) ['40 anos', 'anual', 'comunitat valenciana', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'primera etapa de educacion secundaria y similar']
-        (3 coinciden) ['55 anos', 'anual', 'comunitat valenciana', 'dato base', 'educacion primaria e inferior', 'esperanza de vida', 'mortalidad', 'mujeres']
-        (3 coinciden) ['30 anos', 'anual', 'comunitat valenciana', 'dato base', 'educacion superior', 'esperanza de vida', 'mortalidad', 'mujeres']
-        (3 coinciden) ['30 anos', 'anual', 'comunitat valenciana', 'dato base', 'esperanza de vida', 'mortalidad', 'mujeres', 'primera etapa de educacion secundaria y similar']
+      esperanza_vida/ambos: 50 periodos (IDB23477)
+      esperanza_vida/hombres: 50 periodos (IDB23498)
+      esperanza_vida/mujeres: 50 periodos (IDB20822)
       mortalidad_infantil/ambos: 50 periodos (IDB361645)
       mortalidad_infantil/hombres: 50 periodos (IDB361644)
       mortalidad_infantil/mujeres: 50 periodos (IDB361643)
       edad_maternidad/ambos: 50 periodos (IDB80986)
       saldo_migratorio/ambos: 4 periodos (IDB475110)
-      sin serie para nacidos_por_defuncion/ambos; lo más parecido:
-        (2 coinciden) ['anual', 'comunitat valenciana', 'dato base', 'indicadores de crecimiento y estructura de la poblacion', 'nacidos por cada 1000 defunciones', 'no considerado', 'todas las edades', 'total']
-        (1 coinciden) ['comunitat valenciana', 'nupcialidad']
-        (1 coinciden) ['comunitat valenciana', 'mortalidad']
-        (1 coinciden) ['comunitat valenciana', 'fecundidad']
+      nacidos_por_defuncion/ambos: 50 periodos (IDB85480)
   · Castellón
       (IDB: 3866 series)
-      sin serie para esperanza_vida/ambos; lo más parecido:
-        (3 coinciden) ['40 anos', 'ambos sexos', 'anual', 'castellon/castello', 'dato base', 'educacion primaria e inferior', 'esperanza de vida', 'mortalidad']
-        (3 coinciden) ['30 anos', 'anual', 'castellon/castello', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'primera etapa de educacion secundaria y similar']
-        (3 coinciden) ['40 anos', 'ambos sexos', 'anual', 'castellon/castello', 'dato base', 'educacion superior', 'esperanza de vida', 'mortalidad']
-        (3 coinciden) ['70 anos', 'anual', 'castellon/castello', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'segunda etapa de educacion secundaria y educacion postsecundaria no superior']
-      sin serie para esperanza_vida/hombres; lo más parecido:
-        (3 coinciden) ['40 anos', 'ambos sexos', 'anual', 'castellon/castello', 'dato base', 'educacion primaria e inferior', 'esperanza de vida', 'mortalidad']
-        (3 coinciden) ['30 anos', 'anual', 'castellon/castello', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'primera etapa de educacion secundaria y similar']
-        (3 coinciden) ['40 anos', 'ambos sexos', 'anual', 'castellon/castello', 'dato base', 'educacion superior', 'esperanza de vida', 'mortalidad']
-        (3 coinciden) ['70 anos', 'anual', 'castellon/castello', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'segunda etapa de educacion secundaria y educacion postsecundaria no superior']
-      sin serie para esperanza_vida/mujeres; lo más parecido:
-        (3 coinciden) ['40 anos', 'ambos sexos', 'anual', 'castellon/castello', 'dato base', 'educacion primaria e inferior', 'esperanza de vida', 'mortalidad']
-        (3 coinciden) ['30 anos', 'anual', 'castellon/castello', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'primera etapa de educacion secundaria y similar']
-        (3 coinciden) ['40 anos', 'ambos sexos', 'anual', 'castellon/castello', 'dato base', 'educacion superior', 'esperanza de vida', 'mortalidad']
-        (3 coinciden) ['70 anos', 'anual', 'castellon/castello', 'dato base', 'esperanza de vida', 'hombres', 'mortalidad', 'segunda etapa de educacion secundaria y educacion postsecundaria no superior']
+      esperanza_vida/ambos: 50 periodos (IDB23031)
+      esperanza_vida/hombres: 50 periodos (IDB23052)
+      esperanza_vida/mujeres: 50 periodos (IDB23201)
       mortalidad_infantil/ambos: 50 periodos (IDB361789)
       mortalidad_infantil/hombres: 50 periodos (IDB361788)
       mortalidad_infantil/mujeres: 50 periodos (IDB361787)
       edad_maternidad/ambos: 50 periodos (IDB81802)
       saldo_migratorio/ambos: 4 periodos (IDB475158)
-      sin serie para nacidos_por_defuncion/ambos; lo más parecido:
-        (2 coinciden) ['anual', 'castellon/castello', 'dato base', 'indicadores de crecimiento y estructura de la poblacion', 'nacidos por cada 1000 defunciones', 'no considerado', 'todas las edades', 'total']
-        (1 coinciden) ['castellon/castello', 'mortalidad']
-        (1 coinciden) ['castellon/castello', 'fecundidad']
-        (1 coinciden) ['castellon/castello', 'nupcialidad']
+      nacidos_por_defuncion/ambos: 50 periodos (IDB84973)
     escrito data/demografia/espana.json
     escrito data/demografia/comunitat-valenciana.json
     escrito data/demografia/castellon.json
@@ -207,23 +150,8 @@
     escrito data/renta/castellon.json
   9 periodos: 2015 … 2023
 
-No se ha encontrado serie para 19 combinaciones:
+No se ha encontrado serie para 4 combinaciones:
   - poblacion/espana/poblacion/ambos
-  - poblacion/espana/mayores_70/ambos
-  - poblacion/comunitat-valenciana/mayores_70/ambos
-  - poblacion/castellon/mayores_70/ambos
-  - demografia/espana/esperanza_vida/ambos
-  - demografia/espana/esperanza_vida/hombres
-  - demografia/espana/esperanza_vida/mujeres
-  - demografia/espana/nacidos_por_defuncion/ambos
-  - demografia/comunitat-valenciana/esperanza_vida/ambos
-  - demografia/comunitat-valenciana/esperanza_vida/hombres
-  - demografia/comunitat-valenciana/esperanza_vida/mujeres
-  - demografia/comunitat-valenciana/nacidos_por_defuncion/ambos
-  - demografia/castellon/esperanza_vida/ambos
-  - demografia/castellon/esperanza_vida/hombres
-  - demografia/castellon/esperanza_vida/mujeres
-  - demografia/castellon/nacidos_por_defuncion/ambos
   - renta/espana/renta_mediana_hogar/ambos
   - renta/comunitat-valenciana/renta_mediana_hogar/ambos
   - renta/castellon/renta_mediana_hogar/ambos
