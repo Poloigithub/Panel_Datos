@@ -1,0 +1,664 @@
+# Códigos de serie EPA candidatos
+
+## Castellón (provincia) (`g1=115:13`)
+
+Series totales: 128 · volcadas: 128
+
+- `EPA459451` (per None) — Tasa de empleo de la población. Castellón/Castelló. Ambos sexos. Total. 
+- `EPA736005` (per None) — Errores de muestreo relativos. Castellón/Castelló. Ambos sexos. Industria. 
+- `EPA457464` (per None) — Mujeres. Castellón/Castelló. Total. Parados. Valor absoluto. 
+- `EPA458483` (per None) — Distribución porcentual de la población por sector económico. Mujeres. Castellón/Castelló. Total. Activos. Porcentaje. 
+- `EPA510215` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. De 1 año a menos de 2 años. Parados. Porcentaje. 
+- `EPA459867` (per None) — Castellón/Castelló. Activos. Ambos sexos. De 25 a 54 años. Valor absoluto. 
+- `EPA16438` (per None) — Activos. Castellón/Castelló. Ambos sexos. Construcción. Valor absoluto. 
+- `EPA457255` (per None) — Castellón/Castelló. Parados. 
+- `EPA458377` (per None) — Distribución porcentual de la población por sector económico. Hombres. Castellón/Castelló. Total. Activos. Porcentaje. 
+- `EPA735005` (per None) — Distribución porcentual de la población por sector económico. Castellón/Castelló. Ambos sexos. Industria. Porcentaje. Activos. 
+- `EPA510214` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. De 6 meses a menos de 1 año. Parados. Porcentaje. 
+- `EPA461189` (per None) — Castellón/Castelló. Inactivos. Ambos sexos. Total. Valor absoluto. 
+- `EPA509800` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Total. Ocupados subempleados. Porcentaje. 
+- `EPA735004` (per None) — Distribución porcentual de la población por sector económico. Castellón/Castelló. Ambos sexos. Agricultura. Porcentaje. Activos. 
+- `EPA735524` (per None) — Distribución porcentual de la población por sector económico. Ocupados. Castellón/Castelló. Ambos sexos. Industria. Porcentaje. 
+- `EPA17457` (per None) — Errores de muestreo relativos de la población. Ocupados. Castellón/Castelló. Ambos sexos. Servicios. Porcentaje. 
+- `EPA735271` (per None) — Castellón/Castelló. Ocupados. Ambos sexos. Construcción. Valor absoluto. 
+- `EPA459555` (per None) — Castellón/Castelló. Tasa de actividad. 
+- `EPA12253` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Servicios. Ocupados. Porcentaje. 
+- `EPA735007` (per None) — Distribución porcentual de la población por sector económico. Castellón/Castelló. Ambos sexos. Servicios. Porcentaje. Activos. 
+- `EPA458809` (per None) — Distribución porcentual de la población por sector económico. Ambos sexos. Castellón/Castelló. Total. Ocupados. Porcentaje. 
+- `EPA458107` (per None) — Hombres. Castellón/Castelló. Total. Activos. Valor absoluto. 
+- `EPA735526` (per None) — Distribución porcentual de la población por sector económico. Ocupados. Castellón/Castelló. Ambos sexos. Servicios. Porcentaje. 
+- `EPA457257` (per None) — Ambos sexos. Castellón/Castelló. Total. Inactivos. Valor absoluto. 
+- `EPA459002` (per None) — Tasa de empleo de la población. Hombres. Castellón/Castelló. Total. 
+- `EPA735523` (per None) — Distribución porcentual de la población por sector económico. Ocupados. Castellón/Castelló. Ambos sexos. Agricultura. Porcentaje. 
+- `EPA510002` (per None) — Errores de muestreo relativos. Total. Castellón/Castelló. Ambos sexos. Activos. 
+- `EPA734701` (per None) — Castellón/Castelló. Activos. Ambos sexos. Total. Valor absoluto. 
+- `EPA16649` (per None) — Ocupados. Castellón/Castelló. Ambos sexos. Servicios. Valor absoluto. 
+- `EPA459868` (per None) — Castellón/Castelló. Activos. Ambos sexos. De 55 y más años. Valor absoluto. 
+- `EPA17154` (per None) — Distribución porcentual de la población por sector económico. Ocupados. Castellón/Castelló. Ambos sexos. Parados que buscan primer empleo o han dejado su último empleo hace más de 1 año. Porcentaje. 
+- `EPA16898` (per None) — Distribución porcentual de la población por sector económico. Activos. Castellón/Castelló. Ambos sexos. Agricultura. Porcentaje. 
+- `EPA461191` (per None) — Castellón/Castelló. Inactivos. Ambos sexos. Jubilado o pensionista. Valor absoluto. 
+- `EPA17459` (per None) — Errores de muestreo relativos de la población. Ocupados. Castellón/Castelló. Ambos sexos. Industria. Porcentaje. 
+- `EPA734697` (per None) — Castellón/Castelló. Activos. Ambos sexos. Agricultura. Valor absoluto. 
+- `EPA457467` (per None) — Mujeres. Castellón/Castelló. Total. Inactivos. Valor absoluto. 
+- `EPA736006` (per None) — Errores de muestreo relativos. Castellón/Castelló. Ambos sexos. Agricultura. 
+- `EPA457247` (per None) — Ambos sexos. Castellón/Castelló. Total. Total. Valor absoluto. 
+- `EPA509515` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Total. Parados que han trabajado anteriormente. Porcentaje. 
+- `EPA461192` (per None) — Castellón/Castelló. Inactivos. Ambos sexos. Labores del hogar. Valor absoluto. 
+- `EPA509513` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Total. Parados. Porcentaje. 
+- `EPA16896` (per None) — Distribución porcentual de la población por sector económico. Activos. Castellón/Castelló. Ambos sexos. Construcción. Porcentaje. 
+- `EPA459693` (per None) — Tasa de actividad. Hombres. Castellón/Castelló. Total. 
+- `EPA16437` (per None) — Activos. Castellón/Castelló. Ambos sexos. Servicios. Valor absoluto. 
+- `EPA458108` (per None) — Hombres. Castellón/Castelló. Total. Ocupados. Valor absoluto. 
+- `EPA457460` (per None) — Mujeres. Castellón/Castelló. Total. Total. Valor absoluto. 
+- `EPA510003` (per None) — Errores de muestreo relativos. Total. Castellón/Castelló. Ambos sexos. Ocupados subempleados. 
+- `EPA17460` (per None) — Errores de muestreo relativos de la población. Ocupados. Castellón/Castelló. Ambos sexos. Agricultura. Porcentaje. 
+- `EPA16652` (per None) — Ocupados. Castellón/Castelló. Ambos sexos. Agricultura. Valor absoluto. 
+- `EPA458598` (per None) — Distribución porcentual de la población por sector económico. Hombres. Castellón/Castelló. Total. Parados. Porcentaje. 
+- `EPA12255` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Industria. Ocupados. Porcentaje. 
+- `EPA459553` (per None) — Tasa de actividad. Castellón/Castelló. Ambos sexos. Total. 
+- `EPA461194` (per None) — Castellón/Castelló. Inactivos. Ambos sexos. Otra. Valor absoluto. 
+- `EPA458271` (per None) — Distribución porcentual de la población por sector económico. Ambos sexos. Castellón/Castelló. Total. Activos. Porcentaje. 
+- `EPA510216` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. 2 años o más. Parados. Porcentaje. 
+- `EPA458484` (per None) — Distribución porcentual de la población por sector económico. Mujeres. Castellón/Castelló. Total. Inactivos. Porcentaje. 
+- `EPA509511` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Total. Activos. Porcentaje. 
+- `EPA509516` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Total. Inactivos. Porcentaje. 
+- `EPA459054` (per None) — Tasa de empleo de la población. Mujeres. Castellón/Castelló. Total. 
+- `EPA16650` (per None) — Ocupados. Castellón/Castelló. Ambos sexos. Construcción. Valor absoluto. 
+- `EPA458110` (per None) — Hombres. Castellón/Castelló. Total. Parados. Valor absoluto. 
+- `EPA16895` (per None) — Distribución porcentual de la población por sector económico. Activos. Castellón/Castelló. Ambos sexos. Servicios. Porcentaje. 
+- `EPA10125` (per None) — Castellón/Castelló. Inactivos. Ambos sexos. Jubilado. Valor absoluto. 
+- `EPA16651` (per None) — Ocupados. Castellón/Castelló. Ambos sexos. Industria. Valor absoluto. 
+- `EPA458112` (per None) — Hombres. Castellón/Castelló. Total. Parados que buscan primer empleo. Valor absoluto. 
+- `EPA509512` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Total. Ocupados. Porcentaje. 
+- `EPA510213` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Menos de 6 meses. Parados. Porcentaje. 
+- `EPA12254` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Construcción. Ocupados. Porcentaje. 
+- `EPA118901` (per None) — Errores de muestreo relativos. Castellón/Castelló. Ambos sexos. Industria. 
+- `EPA457461` (per None) — Mujeres. Castellón/Castelló. Total. Activos. Valor absoluto. 
+- `EPA461190` (per None) — Castellón/Castelló. Inactivos. Ambos sexos. Estudiante. Valor absoluto. 
+- `EPA458704` (per None) — Distribución porcentual de la población por sector económico. Mujeres. Castellón/Castelló. Total. Parados. Porcentaje. 
+- `EPA735269` (per None) — Castellón/Castelló. Ocupados. Ambos sexos. Agricultura. Valor absoluto. 
+- `EPA459799` (per None) — Tasa de actividad. Mujeres. Castellón/Castelló. Total. 
+- `EPA459347` (per None) — Tasa de paro de la población. Mujeres. Castellón/Castelló. Total. 
+- `EPA457248` (per None) — Ambos sexos. Castellón/Castelló. Total. Activos. Valor absoluto. 
+- `EPA510217` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Ya ha encontrado empleo. Parados. Porcentaje. 
+- `EPA17157` (per None) — Distribución porcentual de la población por sector económico. Ocupados. Castellón/Castelló. Ambos sexos. Industria. Porcentaje. 
+- `EPA736003` (per None) — Errores de muestreo relativos. Castellón/Castelló. Ambos sexos. Servicios. 
+- `EPA458113` (per None) — Hombres. Castellón/Castelló. Total. Inactivos. Valor absoluto. 
+- `EPA735006` (per None) — Distribución porcentual de la población por sector económico. Castellón/Castelló. Ambos sexos. Construcción. Porcentaje. Activos. 
+- `EPA735525` (per None) — Distribución porcentual de la población por sector económico. Ocupados. Castellón/Castelló. Ambos sexos. Construcción. Porcentaje. 
+- `EPA458703` (per None) — Distribución porcentual de la población por sector económico. Mujeres. Castellón/Castelló. Total. Ocupados. Porcentaje. 
+- `EPA16439` (per None) — Activos. Castellón/Castelló. Ambos sexos. Industria. Valor absoluto. 
+- `EPA510004` (per None) — Errores de muestreo relativos. Total. Castellón/Castelló. Ambos sexos. Resto de ocupados. 
+- `EPA460135` (per None) — Castellón/Castelló. Activos. Ambos sexos. Parados que buscan primer empleo o han dejado su último empleo hace más de 1 año. Valor absoluto. 
+- `EPA17156` (per None) — Distribución porcentual de la población por sector económico. Ocupados. Castellón/Castelló. Ambos sexos. Construcción. Porcentaje. 
+- `EPA510212` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Total. Parados. Porcentaje. 
+- `EPA16440` (per None) — Activos. Castellón/Castelló. Ambos sexos. Agricultura. Valor absoluto. 
+- `EPA735272` (per None) — Castellón/Castelló. Ocupados. Ambos sexos. Servicios. Valor absoluto. 
+- `EPA458378` (per None) — Distribución porcentual de la población por sector económico. Hombres. Castellón/Castelló. Total. Inactivos. Porcentaje. 
+- `EPA510006` (per None) — Errores de muestreo relativos. Total. Castellón/Castelló. Ambos sexos. Parados que han trabajado anteriormente. 
+- `EPA16897` (per None) — Distribución porcentual de la población por sector económico. Activos. Castellón/Castelló. Ambos sexos. Industria. Porcentaje. 
+- `EPA17155` (per None) — Distribución porcentual de la población por sector económico. Ocupados. Castellón/Castelló. Ambos sexos. Servicios. Porcentaje. 
+- `EPA735273` (per None) — Castellón/Castelló. Ocupados. Ambos sexos. Total. Valor absoluto. 
+- `EPA734700` (per None) — Castellón/Castelló. Activos. Ambos sexos. Servicios. Valor absoluto. 
+- `EPA734698` (per None) — Castellón/Castelló. Activos. Ambos sexos. Industria. Valor absoluto. 
+- `EPA459101` (per None) — Tasa de paro de la población. Castellón/Castelló. Ambos sexos. Total. 
+- `EPA457466` (per None) — Mujeres. Castellón/Castelló. Total. Parados que buscan primer empleo. Valor absoluto. 
+- `EPA12256` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Agricultura. Ocupados. Porcentaje. 
+- `EPA457256` (per None) — Ambos sexos. Castellón/Castelló. Total. Parados que buscan primer empleo. Valor absoluto. 
+- `EPA458810` (per None) — Distribución porcentual de la población por sector económico. Ambos sexos. Castellón/Castelló. Total. Parados. Porcentaje. 
+- `EPA457253` (per None) — Ambos sexos. Castellón/Castelló. Total. Parados. Valor absoluto. 
+- `EPA510007` (per None) — Errores de muestreo relativos. Total. Castellón/Castelló. Ambos sexos. Inactivos. 
+- `EPA459243` (per None) — Tasa de paro de la población. Hombres. Castellón/Castelló. Total. 
+- `EPA460579` (per None) — Distribución porcentual de la población por sector económico. Castellón/Castelló. Ambos sexos. Parados que buscan primer empleo o han dejado su último empleo hace más de 1 año. Porcentaje. Activos. 
+- `EPA118899` (per None) — Errores de muestreo relativos. Castellón/Castelló. Ambos sexos. Servicios. 
+- `EPA461193` (per None) — Castellón/Castelló. Inactivos. Ambos sexos. Incapacitado permanente. Valor absoluto. 
+- `EPA509801` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Total. Resto de ocupados. Porcentaje. 
+- `EPA457250` (per None) — Ambos sexos. Castellón/Castelló. Total. Ocupados. Valor absoluto. 
+- `EPA118900` (per None) — Errores de muestreo relativos. Castellón/Castelló. Ambos sexos. Construcción. 
+- `EPA457462` (per None) — Mujeres. Castellón/Castelló. Total. Ocupados. Valor absoluto. 
+- `EPA459866` (per None) — Castellón/Castelló. Activos. Ambos sexos. De 20 a 24 años. Valor absoluto. 
+- `EPA458272` (per None) — Distribución porcentual de la población por sector económico. Ambos sexos. Castellón/Castelló. Total. Inactivos. Porcentaje. 
+- `EPA509514` (per None) — Errores de muestreo relativos de la población. Castellón/Castelló. Ambos sexos. Total. Parados que buscan primer empleo. Porcentaje. 
+- `EPA736004` (per None) — Errores de muestreo relativos. Castellón/Castelló. Ambos sexos. Construcción. 
+- `EPA459452` (per None) — Castellón/Castelló. Tasa de empleo de la población. 
+- `EPA458597` (per None) — Distribución porcentual de la población por sector económico. Hombres. Castellón/Castelló. Total. Ocupados. Porcentaje. 
+- `EPA734699` (per None) — Castellón/Castelló. Activos. Ambos sexos. Construcción. Valor absoluto. 
+- `EPA17158` (per None) — Distribución porcentual de la población por sector económico. Ocupados. Castellón/Castelló. Ambos sexos. Agricultura. Porcentaje. 
+- `EPA17458` (per None) — Errores de muestreo relativos de la población. Ocupados. Castellón/Castelló. Ambos sexos. Construcción. Porcentaje. 
+- `EPA457252` (per None) — Castellón/Castelló. Ocupados. 
+- `EPA457249` (per None) — Castellón/Castelló. Activos. 
+- `EPA459865` (per None) — Castellón/Castelló. Activos. Ambos sexos. De 16 a 19 años. Valor absoluto. 
+- `EPA510005` (per None) — Errores de muestreo relativos. Total. Castellón/Castelló. Ambos sexos. Parados que buscan primer empleo. 
+- `EPA458106` (per None) — Hombres. Castellón/Castelló. Total. Total. Valor absoluto. 
+- `EPA459103` (per None) — Castellón/Castelló. Tasa de paro de la población. 
+- `EPA735270` (per None) — Castellón/Castelló. Ocupados. Ambos sexos. Industria. Valor absoluto. 
+
+## Comunitat Valenciana (`g1=70:9006`)
+
+Series totales: 7972 · volcadas: 1593
+
+- `EPA87769` (per None) — Parados. Mujeres. Comunitat Valenciana. Analfabetos. Porcentaje. 
+- `EPA117509` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Industria. Porcentaje. 
+- `EPA94999` (per None) — Activos. Mujeres. Comunitat Valenciana. Extranjera: No pertenecientes a la Unión Europea. Valor absoluto. 
+- `EPA15088` (per None) — Ocupados. Comunitat Valenciana. Ambos sexos. Agricultura. Total. Valor absoluto. 
+- `EPA440854` (per None) — Tasa de empleo de la población. Comunitat Valenciana. Hombres. Total. 
+- `EPA99735` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Técnicos y profesionales científicos e intelectuales. Valor absoluto. 
+- `EPA436274` (per None) — Activos. Mujeres. Comunitat Valenciana. De 35 a 44 años. Porcentaje. 
+- `EPA435990` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Total. Porcentaje. 
+- `EPA78687` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Analfabetos. Porcentaje. 
+- `EPA87768` (per None) — Parados. Mujeres. Comunitat Valenciana. Educación primaria. Porcentaje. 
+- `EPA445618` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Trabajador por cuenta propia. Valor absoluto. 
+- `EPA454355` (per None) — Parados. Ambos sexos. Comunitat Valenciana. Menos de 1 mes. Valor absoluto. 
+- `EPA95299` (per None) — Tasa de actividad. Mujeres. Comunitat Valenciana. Extranjera: No pertenecientes a la Unión Europea. 
+- `EPA15068` (per None) — Ocupados. Comunitat Valenciana. Hombres. Agricultura. Total. Valor absoluto. 
+- `EPA453044` (per None) — Tasa de paro de la población. Mujeres. Comunitat Valenciana. Extranjera: Unión Europea. 
+- `EPA453887` (per None) — Parados. Ambos sexos. Comunitat Valenciana. Segunda etapa de educación secundaria con orientación profesional (incluye educación postsecundaria no superior). Porcentaje. 
+- `EPA87291` (per None) — Parados. Mujeres. Comunitat Valenciana. Educación primaria. Valor absoluto. 
+- `EPA437237` (per None) — Activos. Mujeres. Comunitat Valenciana. Educación superior. Valor absoluto. 
+- `EPA117668` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Construcción. Porcentaje. 
+- `EPA438943` (per None) — Ocupados. Mujeres. Comunitat Valenciana. De 35 a 44 años. Valor absoluto. 
+- `EPA99730` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Artesanos y trabajadores cualificados de las industrias manufactureras, la construcción, y la minería, excepto los  operadores de instalaciones y maquinaria. Valor absoluto. 
+- `EPA78522` (per None) — Ocupados. Hombres. Comunitat Valenciana. Educación superior, excepto doctorado. Porcentaje. 
+- `EPA445816` (per None) — Ocupados. Hombres. Comunitat Valenciana. Otra situación. Valor absoluto. 
+- `EPA75712` (per None) — Activos. Hombres. Comunitat Valenciana. Educación superior, excepto doctorado. Valor absoluto. 
+- `EPA95501` (per None) — Tasa de actividad. Ambos sexos. Comunitat Valenciana. Extranjera: Total. 
+- `EPA453164` (per None) — Tasa de paro de la población. Ambos sexos. Comunitat Valenciana. Extranjera: Unión Europea. 
+- `EPA118003` (per None) — Ocupados. Hombres. Comunitat Valenciana. Intermediación financiera, actividades inmobiliarias y servicios empresariales. Valor absoluto. 
+- `EPA117348` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Construcción. Valor absoluto. 
+- `EPA730985` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA437715` (per None) — Activos. Mujeres. Comunitat Valenciana. Segunda etapa de educación secundaria, con orientación general. Porcentaje. 
+- `EPA117507` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Servicios. Porcentaje. 
+- `EPA442827` (per None) — Tasa de empleo de la población. Mujeres. Comunitat Valenciana. Total. 
+- `EPA101988` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Total. Técnicos y profesionales de apoyo. Porcentaje. 
+- `EPA95401` (per None) — Tasa de actividad. Hombres. Comunitat Valenciana. Extranjera: Total. 
+- `EPA436134` (per None) — Activos. Hombres. Comunitat Valenciana. De 35 a 44 años. Porcentaje. 
+- `EPA117430` (per None) — Ocupados. Hombres. Comunitat Valenciana. Agricultura. Valor absoluto. 
+- `EPA730982` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Industria. Valor absoluto. 
+- `EPA74968` (per None) — Tasa de actividad. Mujeres. Comunitat Valenciana. Total. 
+- `EPA454981` (per None) — Parados. Hombres. Comunitat Valenciana. De 3 meses a menos de 6 meses. Porcentaje. 
+- `EPA95203` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA731183` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Construcción. Porcentaje. 
+- `EPA444420` (per None) — Ocupados. Hombres. Comunitat Valenciana. Trabajadores cualificados en el sector agrícola, ganadero, forestal y pesquero. Valor absoluto. 
+- `EPA454048` (per None) — Parados. Hombres. Comunitat Valenciana. Educación superior. Porcentaje. 
+- `EPA78527` (per None) — Ocupados. Hombres. Comunitat Valenciana. Analfabetos. Porcentaje. 
+- `EPA454664` (per None) — Parados. Mujeres. Comunitat Valenciana. 2 años o más. Valor absoluto. 
+- `EPA436911` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Analfabetos. Valor absoluto. 
+- `EPA731723` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Construcción. Valor absoluto. 
+- `EPA730785` (per None) — Ocupados. Hombres. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA87923` (per None) — Parados. Hombres. Comunitat Valenciana. Educación superior, excepto doctorado. Porcentaje. 
+- `EPA454512` (per None) — Parados. Hombres. Comunitat Valenciana. 2 años o más. Valor absoluto. 
+- `EPA15061` (per None) — Ocupados. Comunitat Valenciana. Hombres. Industria. Ayuda en la empresa o negocio familiar. Valor absoluto. 
+- `EPA731983` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Construcción. Valor absoluto. 
+- `EPA454204` (per None) — Parados. Mujeres. Comunitat Valenciana. Educación primaria. Porcentaje. 
+- `EPA454205` (per None) — Parados. Mujeres. Comunitat Valenciana. Primera etapa de Educación Secundaria y similar. Porcentaje. 
+- `EPA454657` (per None) — Parados. Mujeres. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA446342` (per None) — Ocupados. Hombres. Comunitat Valenciana. Otra situación. Porcentaje. 
+- `EPA76033` (per None) — Activos. Mujeres. Comunitat Valenciana. Formación e inserción laboral con título de secundaria (2ª etapa). Porcentaje. 
+- `EPA442313` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Extranjera: Total. Valor absoluto. 
+- `EPA437551` (per None) — Activos. Hombres. Comunitat Valenciana. Analfabetos. Porcentaje. 
+- `EPA78682` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Educación superior, excepto doctorado. Porcentaje. 
+- `EPA444914` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Total. Directores y gerentes. Porcentaje. 
+- `EPA95400` (per None) — Tasa de actividad. Hombres. Comunitat Valenciana. Extranjera: Unión Europea. 
+- `EPA731182` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Industria. Porcentaje. 
+- `EPA446533` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Total. Porcentaje. 
+- `EPA117669` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Industria. Porcentaje. 
+- `EPA87289` (per None) — Parados. Mujeres. Comunitat Valenciana. Educación secundaria segunda etapa y formación e inserción laboral correspondiente. Valor absoluto. 
+- `EPA445621` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Miembro de una cooperativa. Valor absoluto. 
+- `EPA437940` (per None) — Activos. Hombres. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA95201` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Extranjera: Total. Valor absoluto. 
+- `EPA445137` (per None) — Ocupados. Hombres. Comunitat Valenciana. Total. Empleados contables, administrativos y otros empleados de oficina. Porcentaje. 
+- `EPA453285` (per None) — Tasa de paro de la población. Hombres. Comunitat Valenciana. Extranjera: No pertenecientes a la Unión Europea. 
+- `EPA87605` (per None) — Parados. Ambos sexos. Comunitat Valenciana. Educación superior, excepto doctorado. Valor absoluto. 
+- `EPA102187` (per None) — Ocupados. Hombres. Comunitat Valenciana. Total. Empleados de tipo administrativo. Porcentaje. 
+- `EPA444627` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Empleados contables, administrativos y otros empleados de oficina. Valor absoluto. 
+- `EPA13923` (per None) — Ocupados. Comunitat Valenciana. Ambos sexos. Total. Industria. Valor absoluto. 
+- `EPA439174` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Total. Porcentaje. 
+- `EPA87286` (per None) — Parados. Mujeres. Comunitat Valenciana. Doctorado. Valor absoluto. 
+- `EPA15029` (per None) — Ocupados. Comunitat Valenciana. Mujeres. Servicios. Otra situación. Valor absoluto. 
+- `EPA442728` (per None) — Tasa de empleo de la población. Hombres. Comunitat Valenciana. Española. 
+- `EPA437075` (per None) — Activos. Hombres. Comunitat Valenciana. Segunda etapa de educación secundaria, con orientación general. Valor absoluto. 
+- `EPA78364` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Educación secundaria segunda etapa y formación e inserción laboral correspondiente. Porcentaje. 
+- `EPA118002` (per None) — Ocupados. Hombres. Comunitat Valenciana. Administración pública, educación, actividades sanitarias y veterinarias; servicios sociales. Valor absoluto. 
+- `EPA437393` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Educación primaria. Porcentaje. 
+- `EPA13924` (per None) — Ocupados. Comunitat Valenciana. Ambos sexos. Total. Agricultura. Valor absoluto. 
+- `EPA454818` (per None) — Parados. Ambos sexos. Comunitat Valenciana. Ya ha encontrado empleo. Porcentaje. 
+- `EPA15051` (per None) — Ocupados. Comunitat Valenciana. Hombres. Servicios. Ayuda en la empresa o negocio familiar. Valor absoluto. 
+- `EPA95000` (per None) — Activos. Mujeres. Comunitat Valenciana. Extranjera: Unión Europea. Valor absoluto. 
+- `EPA452798` (per None) — Tasa de paro de la población. Mujeres. Comunitat Valenciana. Total. 
+- `EPA454507` (per None) — Parados. Hombres. Comunitat Valenciana. Menos de 1 mes. Valor absoluto. 
+- `EPA95099` (per None) — Activos. Hombres. Comunitat Valenciana. Extranjera: No pertenecientes a la Unión Europea. Valor absoluto. 
+- `EPA435771` (per None) — Activos. Ambos sexos. Comunitat Valenciana. De 35 a 44 años. Valor absoluto. 
+- `EPA15054` (per None) — Ocupados. Comunitat Valenciana. Hombres. Construcción. Otra situación. Valor absoluto. 
+- `EPA102389` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Total. Técnicos y profesionales científicos e intelectuales. Porcentaje. 
+- `EPA15072` (per None) — Ocupados. Comunitat Valenciana. Ambos sexos. Servicios. Empresario o miembro de cooperativa. Valor absoluto. 
+- `EPA78204` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Educación secundaria segunda etapa y formación e inserción laboral correspondiente. Valor absoluto. 
+- `EPA117347` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Servicios. Valor absoluto. 
+- `EPA78201` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Doctorado. Valor absoluto. 
+- `EPA438044` (per None) — Activos. Mujeres. Comunitat Valenciana. Extranjera: No pertenecientes a la Unión Europea. Valor absoluto. 
+- `EPA87292` (per None) — Parados. Mujeres. Comunitat Valenciana. Analfabetos. Valor absoluto. 
+- `EPA6183` (per None) — Tasa de actividad. Comunitat Valenciana. Mujeres. 
+- `EPA78526` (per None) — Ocupados. Hombres. Comunitat Valenciana. Educación primaria. Porcentaje. 
+- `EPA117589` (per None) — Ocupados. Hombres. Comunitat Valenciana. Industria. Porcentaje. 
+- `EPA95901` (per None) — Tasa de empleo de la población. Mujeres. Comunitat Valenciana. Extranjera: Total. 
+- `EPA95101` (per None) — Activos. Hombres. Comunitat Valenciana. Extranjera: Total. Valor absoluto. 
+- `EPA15036` (per None) — Ocupados. Comunitat Valenciana. Mujeres. Construcción. Ayuda en la empresa o negocio familiar. Valor absoluto. 
+- `EPA441677` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Segunda etapa de educación secundaria, con orientación general. Valor absoluto. 
+- `EPA454983` (per None) — Parados. Hombres. Comunitat Valenciana. De 1 año a menos de 2 años. Porcentaje. 
+- `EPA448389` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Total. Porcentaje. 
+- `EPA437843` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Extranjera: Unión Europea. Valor absoluto. 
+- `EPA437941` (per None) — Activos. Hombres. Comunitat Valenciana. Española. Valor absoluto. 
+- `EPA731083` (per None) — Ocupados. Hombres. Comunitat Valenciana. Construcción. Porcentaje. 
+- `EPA454977` (per None) — Parados. Hombres. Comunitat Valenciana. Total. Porcentaje. 
+- `EPA454509` (per None) — Parados. Hombres. Comunitat Valenciana. De 3 meses a menos de 6 meses. Valor absoluto. 
+- `EPA96301` (per None) — Tasa de paro de la población. Hombres. Comunitat Valenciana. Extranjera: Total. 
+- `EPA442412` (per None) — Ocupados. Hombres. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA118206` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Industrias extractivas; refino de petróleo; industria química; transformación de caucho, metalurgia; energía y agua. Valor absoluto. 
+- `EPA455141` (per None) — Parados. Mujeres. Comunitat Valenciana. De 3 meses a menos de 6 meses. Porcentaje. 
+- `EPA436416` (per None) — Tasa de actividad. Comunitat Valenciana. Ambos sexos. Total. 
+- `EPA435994` (per None) — Activos. Ambos sexos. Comunitat Valenciana. De 35 a 44 años. Porcentaje. 
+- `EPA102382` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Total. Trabajadores no cualificados. Porcentaje. 
+- `EPA15042` (per None) — Ocupados. Comunitat Valenciana. Mujeres. Industria. Empresario o miembro de cooperativa. Valor absoluto. 
+- `EPA436915` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Segunda etapa de educación secundaria, con orientación general. Valor absoluto. 
+- `EPA87449` (per None) — Parados. Hombres. Comunitat Valenciana. Educación secundaria primera etapa y formación e inserción laboral correspondiente. Valor absoluto. 
+- `EPA78203` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Formación e inserción laboral con título de secundaria (2ª etapa). Valor absoluto. 
+- `EPA437844` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Extranjera: No pertenecientes a la Unión Europea. Valor absoluto. 
+- `EPA95602` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Española. Valor absoluto. 
+- `EPA446338` (per None) — Ocupados. Hombres. Comunitat Valenciana. Ayuda en la empresa o negocio familiar. Porcentaje. 
+- `EPA731463` (per None) — Ocupados. Hombres. Comunitat Valenciana. Construcción. Valor absoluto. 
+- `EPA441512` (per None) — Ocupados. Hombres. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA445354` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Total. Directores y gerentes. Porcentaje. 
+- `EPA95002` (per None) — Activos. Mujeres. Comunitat Valenciana. Española. Valor absoluto. 
+- `EPA96000` (per None) — Tasa de empleo de la población. Hombres. Comunitat Valenciana. Extranjera: Unión Europea. 
+- `EPA454041` (per None) — Parados. Hombres. Comunitat Valenciana. Total. Porcentaje. 
+- `EPA78363` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Formación e inserción laboral con título de secundaria (2ª etapa). Porcentaje. 
+- `EPA441915` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Educación superior. Porcentaje. 
+- `EPA99921` (per None) — Ocupados. Hombres. Comunitat Valenciana. Trabajadores cualificados en la agricultura y en la pesca. Valor absoluto. 
+- `EPA442044` (per None) — Ocupados. Hombres. Comunitat Valenciana. Educación superior. Porcentaje. 
+- `EPA99917` (per None) — Ocupados. Hombres. Comunitat Valenciana. Fuerzas armadas. Valor absoluto. 
+- `EPA77885` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Educación secundaria primera etapa y formación e inserción laboral correspondiente. Valor absoluto. 
+- `EPA15058` (per None) — Ocupados. Comunitat Valenciana. Hombres. Construcción. Total. Valor absoluto. 
+- `EPA118205` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Construcción de maquinaria, material eléctrico, material de transporte  e industrias manufactureras diversas. Valor absoluto. 
+- `EPA453721` (per None) — Parados. Mujeres. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA442314` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Extranjera: Unión Europea. Valor absoluto. 
+- `EPA437841` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Española. Valor absoluto. 
+- `EPA454658` (per None) — Parados. Mujeres. Comunitat Valenciana. Ya ha encontrado empleo. Valor absoluto. 
+- `EPA95703` (per None) — Ocupados. Hombres. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA453722` (per None) — Parados. Mujeres. Comunitat Valenciana. Analfabetos. Valor absoluto. 
+- `EPA435891` (per None) — Activos. Mujeres. Comunitat Valenciana. De 35 a 44 años. Valor absoluto. 
+- `EPA731473` (per None) — Ocupados. Hombres. Comunitat Valenciana. Actividades de edición, radiodifusión y producción y distribución de contenidos; telecomunicaciones, programación informática, consultoría, infraestructura informática y otros servicios de información. Valor absoluto. 
+- `EPA438150` (per None) — Tasa de actividad. Ambos sexos. Comunitat Valenciana. Total. 
+- `EPA99925` (per None) — Ocupados. Hombres. Comunitat Valenciana. Técnicos y profesionales científicos e intelectuales. Valor absoluto. 
+- `EPA78521` (per None) — Ocupados. Hombres. Comunitat Valenciana. Doctorado. Porcentaje. 
+- `EPA445358` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Total. Trabajadores de los servicios de restauración, personales, protección y vendedores. Porcentaje. 
+- `EPA75715` (per None) — Activos. Hombres. Comunitat Valenciana. Educación secundaria primera etapa y formación e inserción laboral correspondiente. Valor absoluto. 
+- `EPA437840` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA442037` (per None) — Ocupados. Hombres. Comunitat Valenciana. Total. Porcentaje. 
+- `EPA99922` (per None) — Ocupados. Hombres. Comunitat Valenciana. Trabajadores de los servicios de restauración, personales, protección y vendedores de los comercios. Valor absoluto. 
+- `EPA95903` (per None) — Tasa de empleo de la población. Mujeres. Comunitat Valenciana. Total. 
+- `EPA454511` (per None) — Parados. Hombres. Comunitat Valenciana. De 1 año a menos de 2 años. Valor absoluto. 
+- `EPA445617` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA439318` (per None) — Ocupados. Hombres. Comunitat Valenciana. De 35 a 44 años. Porcentaje. 
+- `EPA731984` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Actividades financieras y de seguros. Valor absoluto. 
+- `EPA441352` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA731284` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Servicios. Porcentaje. 
+- `EPA438270` (per None) — Tasa de actividad. Hombres. Comunitat Valenciana. Total. 
+- `EPA445808` (per None) — Ocupados. Hombres. Comunitat Valenciana. Trabajador por cuenta propia. Valor absoluto. 
+- `EPA437233` (per None) — Activos. Mujeres. Comunitat Valenciana. Educación primaria. Valor absoluto. 
+- `EPA441672` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA731989` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Actividades profesionales, científicas y técnicas; actividades administrativas y servicios auxiliares. Valor absoluto. 
+- `EPA442202` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Segunda etapa de educación secundaria, con orientación general. Porcentaje. 
+- `EPA95503` (per None) — Tasa de actividad. Ambos sexos. Comunitat Valenciana. Total. 
+- `EPA102185` (per None) — Ocupados. Hombres. Comunitat Valenciana. Total. Trabajadores cualificados en la agricultura y en la pesca. Porcentaje. 
+- `EPA75717` (per None) — Activos. Hombres. Comunitat Valenciana. Analfabetos. Valor absoluto. 
+- `EPA446006` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Otra situación. Valor absoluto. 
+- `EPA87290` (per None) — Parados. Mujeres. Comunitat Valenciana. Educación secundaria primera etapa y formación e inserción laboral correspondiente. Valor absoluto. 
+- `EPA437396` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Segunda etapa de educación secundaria con orientación profesional (incluye educación postsecundaria no superior). Porcentaje. 
+- `EPA102182` (per None) — Ocupados. Hombres. Comunitat Valenciana. Total. Trabajadores no cualificados. Porcentaje. 
+- `EPA444628` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Trabajadores de los servicios de restauración, personales, protección y vendedores. Valor absoluto. 
+- `EPA443624` (per None) — Ocupados. Hombres. Comunitat Valenciana. Información y comunicaciones. Valor absoluto. 
+- `EPA118007` (per None) — Ocupados. Hombres. Comunitat Valenciana. Industrias extractivas; refino de petróleo; industria química; transformación de caucho, metalurgia; energía y agua. Valor absoluto. 
+- `EPA87445` (per None) — Parados. Hombres. Comunitat Valenciana. Doctorado. Valor absoluto. 
+- `EPA77689` (per None) — Tasa de empleo de la población. Hombres. Comunitat Valenciana. Total. 
+- `EPA78525` (per None) — Ocupados. Hombres. Comunitat Valenciana. Educación secundaria primera etapa y formación e inserción laboral correspondiente. Porcentaje. 
+- `EPA453570` (per None) — Parados. Hombres. Comunitat Valenciana. Analfabetos. Valor absoluto. 
+- `EPA75871` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Doctorado. Valor absoluto. 
+- `EPA731462` (per None) — Ocupados. Hombres. Comunitat Valenciana. Industria manufacturera. Valor absoluto. 
+- `EPA437235` (per None) — Activos. Mujeres. Comunitat Valenciana. Segunda etapa de educación secundaria, con orientación general. Valor absoluto. 
+- `EPA101984` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Total. Artesanos y trabajadores cualificados de las industrias manufactureras, la construcción, y la minería, excepto los  operadores de instalaciones y maquinaria. Porcentaje. 
+- `EPA445999` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Empleador. Valor absoluto. 
+- `EPA117803` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Administración pública, educación, actividades sanitarias y veterinarias; servicios sociales. Valor absoluto. 
+- `EPA95800` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Extranjera: Unión Europea. Valor absoluto. 
+- `EPA445812` (per None) — Ocupados. Hombres. Comunitat Valenciana. Ayuda en la empresa o negocio familiar. Valor absoluto. 
+- `EPA95600` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Extranjera: Unión Europea. Valor absoluto. 
+- `EPA88087` (per None) — Parados. Ambos sexos. Comunitat Valenciana. Analfabetos. Porcentaje. 
+- `EPA75876` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Educación primaria. Valor absoluto. 
+- `EPA96302` (per None) — Tasa de paro de la población. Hombres. Comunitat Valenciana. Española. 
+- `EPA445136` (per None) — Ocupados. Hombres. Comunitat Valenciana. Total. Técnicos; profesionales de apoyo. Porcentaje. 
+- `EPA437842` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Extranjera: Total. Valor absoluto. 
+- `EPA455142` (per None) — Parados. Mujeres. Comunitat Valenciana. De 6 meses a menos de 1 año. Porcentaje. 
+- `EPA437391` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Analfabetos. Porcentaje. 
+- `EPA118000` (per None) — Ocupados. Hombres. Comunitat Valenciana. Construcción. Valor absoluto. 
+- `EPA730783` (per None) — Ocupados. Hombres. Comunitat Valenciana. Construcción. Valor absoluto. 
+- `EPA96299` (per None) — Tasa de paro de la población. Hombres. Comunitat Valenciana. Extranjera: No pertenecientes a la Unión Europea. 
+- `EPA453727` (per None) — Parados. Mujeres. Comunitat Valenciana. Segunda etapa de educación secundaria con orientación profesional (incluye educación postsecundaria no superior). Valor absoluto. 
+- `EPA102381` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Total. Fuerzas armadas. Porcentaje. 
+- `EPA87609` (per None) — Parados. Ambos sexos. Comunitat Valenciana. Educación primaria. Valor absoluto. 
+- `EPA454357` (per None) — Parados. Ambos sexos. Comunitat Valenciana. De 3 meses a menos de 6 meses. Valor absoluto. 
+- `EPA78041` (per None) — Ocupados. Hombres. Comunitat Valenciana. Doctorado. Valor absoluto. 
+- `EPA75874` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Educación secundaria segunda etapa y formación e inserción laboral correspondiente. Valor absoluto. 
+- `EPA87766` (per None) — Parados. Mujeres. Comunitat Valenciana. Educación secundaria segunda etapa y formación e inserción laboral correspondiente. Porcentaje. 
+- `EPA444061` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Comercio al por mayor y al por menor; reparación de vehículos de motor y motocicletas; transporte y almacenamiento; hostelería. Valor absoluto. 
+- `EPA437074` (per None) — Activos. Hombres. Comunitat Valenciana. Primera etapa de Educación Secundaria y similar. Valor absoluto. 
+- `EPA75714` (per None) — Activos. Hombres. Comunitat Valenciana. Educación secundaria segunda etapa y formación e inserción laboral correspondiente. Valor absoluto. 
+- `EPA78042` (per None) — Ocupados. Hombres. Comunitat Valenciana. Educación superior, excepto doctorado. Valor absoluto. 
+- `EPA75557` (per None) — Activos. Mujeres. Comunitat Valenciana. Analfabetos. Valor absoluto. 
+- `EPA454202` (per None) — Parados. Mujeres. Comunitat Valenciana. Analfabetos. Porcentaje. 
+- `EPA117804` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Intermediación financiera, actividades inmobiliarias y servicios empresariales. Valor absoluto. 
+- `EPA731465` (per None) — Ocupados. Hombres. Comunitat Valenciana. Actividades inmobiliarias. Valor absoluto. 
+- `EPA102384` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Total. Artesanos y trabajadores cualificados de las industrias manufactureras, la construcción, y la minería, excepto los  operadores de instalaciones y maquinaria. Porcentaje. 
+- `EPA446334` (per None) — Ocupados. Hombres. Comunitat Valenciana. Trabajador por cuenta propia. Porcentaje. 
+- `EPA87451` (per None) — Parados. Hombres. Comunitat Valenciana. Analfabetos. Valor absoluto. 
+- `EPA446142` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Otra situación. Porcentaje. 
+- `EPA95500` (per None) — Tasa de actividad. Ambos sexos. Comunitat Valenciana. Extranjera: Unión Europea. 
+- `EPA448149` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Total. Porcentaje. 
+- `EPA438041` (per None) — Activos. Mujeres. Comunitat Valenciana. Española. Valor absoluto. 
+- `EPA455137` (per None) — Parados. Mujeres. Comunitat Valenciana. Total. Porcentaje. 
+- `EPA454820` (per None) — Parados. Ambos sexos. Comunitat Valenciana. De 1 mes a menos de 3 meses. Porcentaje. 
+- `EPA453728` (per None) — Parados. Mujeres. Comunitat Valenciana. Educación superior. Valor absoluto. 
+- `EPA15048` (per None) — Ocupados. Comunitat Valenciana. Mujeres. Agricultura. Total. Valor absoluto. 
+- `EPA444626` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Técnicos; profesionales de apoyo. Valor absoluto. 
+- `EPA441517` (per None) — Ocupados. Hombres. Comunitat Valenciana. Segunda etapa de educación secundaria, con orientación general. Valor absoluto. 
+- `EPA96400` (per None) — Tasa de paro de la población. Ambos sexos. Comunitat Valenciana. Extranjera: Unión Europea. 
+- `EPA442197` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Total. Porcentaje. 
+- `EPA6125` (per None) — Tasa de paro de la población. Comunitat Valenciana. Ambos sexos. 
+- `EPA442512` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA13283` (per None) — Parados. Comunitat Valenciana. Ambos sexos. Industria. Valor absoluto. 
+- `EPA87928` (per None) — Parados. Hombres. Comunitat Valenciana. Analfabetos. Porcentaje. 
+- `EPA436270` (per None) — Activos. Mujeres. Comunitat Valenciana. Total. Porcentaje. 
+- `EPA76357` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Analfabetos. Porcentaje. 
+- `EPA13204` (per None) — Ocupados. Comunitat Valenciana. Ambos sexos. Agricultura. Valor absoluto. 
+- `EPA437231` (per None) — Activos. Mujeres. Comunitat Valenciana. Analfabetos. Valor absoluto. 
+- `EPA100112` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Trabajadores de los servicios de restauración, personales, protección y vendedores de los comercios. Valor absoluto. 
+- `EPA101981` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Total. Fuerzas armadas. Porcentaje. 
+- `EPA731733` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Actividades de edición, radiodifusión y producción y distribución de contenidos; telecomunicaciones, programación informática, consultoría, infraestructura informática y otros servicios de información. Valor absoluto. 
+- `EPA453417` (per None) — Parados. Ambos sexos. Comunitat Valenciana. Total. Valor absoluto. 
+- `EPA15053` (per None) — Ocupados. Comunitat Valenciana. Hombres. Servicios. Total. Valor absoluto. 
+- `EPA442629` (per None) — Tasa de empleo de la población. Ambos sexos. Comunitat Valenciana. Extranjera: Total. 
+- `EPA454823` (per None) — Parados. Ambos sexos. Comunitat Valenciana. De 1 año a menos de 2 años. Porcentaje. 
+- `EPA441673` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Analfabetos. Valor absoluto. 
+- `EPA99919` (per None) — Ocupados. Hombres. Comunitat Valenciana. Operadores de instalaciones y maquinaria, y montadores. Valor absoluto. 
+- `EPA77887` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Analfabetos. Valor absoluto. 
+- `EPA78046` (per None) — Ocupados. Hombres. Comunitat Valenciana. Educación primaria. Valor absoluto. 
+- `EPA76355` (per None) — Activos. Ambos sexos. Comunitat Valenciana. Educación secundaria primera etapa y formación e inserción laboral correspondiente. Porcentaje. 
+- `EPA453280` (per None) — Tasa de paro de la población. Hombres. Comunitat Valenciana. Total. 
+- `EPA99736` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Dirección de las empresas y de las administraciones públicas. Valor absoluto. 
+- `EPA731081` (per None) — Ocupados. Hombres. Comunitat Valenciana. Agricultura. Porcentaje. 
+- `EPA441355` (per None) — Ocupados. Ambos sexos. Comunitat Valenciana. Educación primaria. Valor absoluto. 
+- `EPA437554` (per None) — Activos. Hombres. Comunitat Valenciana. Primera etapa de Educación Secundaria y similar. Porcentaje. 
+- `EPA78366` (per None) — Ocupados. Mujeres. Comunitat Valenciana. Educación primaria. Porcentaje. 
+- `EPA15062` (per None) — Ocupados. Comunitat Valenciana. Hombres. Industria. Empresario o miembro de cooperativa. Valor absoluto. 
+
+## Total Nacional (`g1=349:16473`)
+
+Series totales: 10000 · volcadas: 3184
+
+- `EPA96844` (per None) — Activos. Total Nacional. Mujeres. Trabajadores cualificados de industrias de artes gráficas, textil y de la confección, de la elaboración de alimentos, ebanistas, artesanos y otros asimilados. Valor absoluto. 
+- `EPA393275` (per None) — Activos. Total Nacional. Hombres. Peones del transporte, descargadores y reponedores. Valor absoluto. 
+- `EPA718658` (per None) — Ocupados. Total Nacional. Mujeres. De 2 a menos de 3 años. Agricultura, ganadería, silvicultura y pesca. Valor absoluto. 
+- `EPA24472` (per None) — Activos. Total Nacional. Ambos sexos. Analfabetos. Extranjera: Unión Europea. Valor absoluto. 
+- `EPA24589` (per None) — Tasa de actividad. Total Nacional. Hombres. Educación primaria. Extranjera: Resto del mundo y apátrida. 
+- `EPA395550` (per None) — Activos. Total Nacional. Ambos sexos. Otra situación. Extranjera: Total. Valor absoluto. 
+- `EPA274797` (per None) — Parados. Total Nacional. Mujeres. Comercio; reparación de vehículos de motor, motocicletas y ciclomotores y artículos personales y de uso doméstico. Valor absoluto. 
+- `EPA714615` (per None) — Ocupados. Total Nacional. Hombres. Actividades de descontaminación y otros servicios de gestión de residuos. Valor absoluto. 
+- `EPA282069` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Mujeres. Otros motivos. Administración pública, defensa y seguridad social obligatoria. Valor absoluto. 
+- `EPA53512` (per None) — Ocupados. Total Nacional. Ambos sexos. De 10 a 19 horas. Agricultura, ganadería, silvicultura y pesca. Valor absoluto. 
+- `EPA395361` (per None) — Activos. Total Nacional. Mujeres. De 35 a 39 años. Parados que buscan primer empleo. Porcentaje. 
+- `EPA397825` (per None) — Ocupados. Total Nacional. Hombres. De 40 a 49 años. Educación primaria. Valor absoluto. 
+- `EPA274103` (per None) — Parados. Total Nacional. Hombres. Ha mirado o ha escuchado algún anuncio u oferta de empleo (incluido Internet). Porcentaje. 
+- `EPA423880` (per None) — Tasa de paro de la población. Total Nacional. Ambos sexos. De 60 a 64 años. Separados/Separadas o Divorciados/Divorciadas. 
+- `EPA105567` (per None) — Activos. Total Nacional. Ambos sexos. Industria manufacturera. Porcentaje. 
+- `EPA106755` (per None) — Ocupados. Total Nacional. Ambos sexos. Administración pública, defensa y seguridad social obligatoria. Valor absoluto. 
+- `EPA392533` (per None) — Activos. Total Nacional. Ambos sexos. De 40 a 44 años. Actividades de organizaciones y organismos extraterritoriales. Valor absoluto. 
+- `EPA398438` (per None) — Ocupados. Total Nacional. Mujeres. Actividades de programación y emisión de radio y televisión. Valor absoluto. 
+- `EPA283335` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Hombres. Permiso por nacimiento de hijo/a. Actividades profesionales, científicas y técnicas. Valor absoluto. 
+- `EPA97054` (per None) — Activos. Total Nacional. Hombres. Artesanos y trabajadores cualificados de las industrias manufactureras, la construcción, y la minería, excepto los  operadores de instalaciones y maquinaria. Valor absoluto. 
+- `EPA110377` (per None) — Tasa de salarización. Total Nacional. Ambos sexos. Industrias de otros productos minerales no metálicos. 
+- `EPA27927` (per None) — Activos. Total Nacional. Ambos sexos. De 60 a 69 años. No sigue ninguno. Valor absoluto. 
+- `EPA394533` (per None) — Activos. Total Nacional. Mujeres. Total. Técnicos; profesionales de apoyo. Valor absoluto. 
+- `EPA406419` (per None) — Ocupados. Total Nacional. Mujeres. Total. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria). Valor absoluto. 
+- `EPA390167` (per None) — Tasa de actividad. Total Nacional. Mujeres. Educación primaria. No casados/casadas. 
+- `EPA12891` (per None) — Ocupados. Total Nacional. Ambos sexos. Industria. Total. Valor absoluto. 
+- `EPA62510` (per None) — Ocupados subempleados. Total Nacional. Ambos sexos. De 35 a 44 años. Educación primaria. Valor absoluto. 
+- `EPA28744` (per None) — Activos. Total Nacional. Ambos sexos. Programas oficiales de especialización profesinal. Total. Valor absoluto. 
+- `EPA423616` (per None) — Parados que buscan primer empleo. Total Nacional. Hombres. De 65 a 69 años. Porcentaje. 
+- `EPA282144` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Mujeres. Paro parcial por razones técnicas o económicas. Transporte, almacenamiento y comunicaciones. Valor absoluto. 
+- `EPA401253` (per None) — Ocupados. Total Nacional. Mujeres. De 65 a 69 años. Directores y gerentes. Valor absoluto. 
+- `EPA282562` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Ambos sexos. No sabe. Producción y distribución de energía eléctrica, gas y agua. Valor absoluto. 
+- `EPA108544` (per None) — Ocupados. Que no han trabajado en la semana de referencia. Total Nacional. Hombres. Miembro de una cooperativa. Administración pública, defensa y seguridad social obligatoria. Valor absoluto. 
+- `EPA393030` (per None) — Activos. Total Nacional. Ambos sexos. Trabajadores cualificados en actividades agrícolas. Porcentaje. 
+- `EPA101247` (per None) — Ocupados. Total Nacional. Hombres. Total. Fuerzas armadas. Porcentaje. 
+- `EPA109355` (per None) — Ocupados. Total Nacional. Mujeres. Total. Agricultura, ganadería, caza y selvicultura. Valor absoluto. 
+- `EPA412869` (per None) — Ocupados subempleados. Total Nacional. Ambos sexos. De 35 a 44 años. Educación superior. Valor absoluto. 
+- `EPA93698` (per None) — Ocupados. Total Nacional. Ambos sexos. Educación secundaria primera etapa y formación e inserción laboral correspondiente. Extranjera: Resto del mundo y apátrida. Valor absoluto. 
+- `EPA437477` (per None) — Activos. Hombres. Total Nacional. Educación superior. Porcentaje. 
+- `EPA53443` (per None) — Ocupados. Total Nacional. Ambos sexos. De 40 a 49 horas. Suministro de energía eléctrica, gas, vapor y aire acondicionado. Valor absoluto. 
+- `EPA24963` (per None) — Activos. Total Nacional. Mujeres. De 30 a 34 años. Títulos propios (no homologados) de Universidades. Valor absoluto. 
+- `EPA425820` (per None) — Parados que han trabajado anteriormente. Total Nacional. Ambos sexos. Total. De 6 meses a menos de 1 año. Han dejado su último empleo hace más de 1 año. Valor absoluto. 
+- `EPA283706` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Hombres. Servicios. Horas extraordinarias. Valor absoluto. 
+- `EPA400721` (per None) — Ocupados. Total Nacional. Mujeres. Conductores y operadores de maquinaria móvil. Valor absoluto. 
+- `EPA400715` (per None) — Ocupados. Total Nacional. Mujeres. Operadores de instalaciones y maquinaria fijas, y montadores. Valor absoluto. 
+- `EPA106885` (per None) — Ocupados. Total Nacional. Ambos sexos. Industria manufacturera. Valor absoluto. 
+- `EPA400853` (per None) — Ocupados. Total Nacional. Ambos sexos. Total. Operadores de instalaciones y maquinaria, y montadores. Valor absoluto. 
+- `EPA116190` (per None) — Ocupados subempleados. Total Nacional. Ambos sexos. Industria. Otra situación. Valor absoluto. 
+- `EPA105487` (per None) — Activos. Total Nacional. Ambos sexos. Fabricación de equipo e instrumentos médico-quirúrgicos, de precisión, óptica y relojería. Porcentaje. 
+- `EPA62022` (per None) — Ocupados. Que buscan otro empleo. Total Nacional. Mujeres. De 30 a 34. A tiempo completo pero aceptaría a tiempo parcial. Valor absoluto. 
+- `EPA99422` (per None) — Ocupados que han trabajado en la semana de referencia. Que han trabajado en la semana de referencia. Total Nacional. Hombres. Otra situación. Trabajadores de los servicios de restauración, personales, protección y vendedores de los comercios. Valor absoluto. 
+- `EPA107914` (per None) — Ocupados. Que han trabajado en la semana de referencia. Total Nacional. Mujeres. Trabajador por cuenta propia. Educación. Valor absoluto. 
+- `EPA274751` (per None) — Ocupados. Total Nacional. Ambos sexos. Ninguna hora. Pesca. Valor absoluto. 
+- `EPA98811` (per None) — Ocupados. Total Nacional. Hombres. Poder ejecutivo y legislativo y dirección de las administraciones públicas; dirección de organizaciones de interés. Porcentaje. 
+- `EPA97673` (per None) — Activos. Total Nacional. Mujeres. De 65 a 69 años. Técnicos y profesionales científicos e intelectuales. Porcentaje. 
+- `EPA718428` (per None) — Ocupados. Total Nacional. Hombres. De 6 a 11 meses. Agricultura, ganadería, silvicultura y pesca. Valor absoluto. 
+- `EPA283712` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Hombres. Construcción. Horario variable o flexible. Valor absoluto. 
+- `EPA393247` (per None) — Activos. Total Nacional. Hombres. Montadores y ensambladores en fábricas. Valor absoluto. 
+- `EPA102739` (per None) — Ocupados subempleados. Total Nacional. Mujeres. Otra situación. Técnicos y profesionales científicos e intelectuales. Valor absoluto. 
+- `EPA93977` (per None) — Ocupados. Total Nacional. Hombres. Miembro de una cooperativa. Total. Valor absoluto. 
+- `EPA401432` (per None) — Ocupados. Total Nacional. Hombres. Miembro de una cooperativa. Empleados contables, administrativos y otros empleados de oficina. Valor absoluto. 
+- `EPA65995` (per None) — Parados. Total Nacional. Hombres. De 40 a 44 años. Total. Valor absoluto. 
+- `EPA712863` (per None) — Activos. Total Nacional. Hombres. Reparación, mantenimiento e instalación de maquinaria y equipos. Porcentaje. 
+- `EPA400758` (per None) — Ocupados. Total Nacional. Ambos sexos. Directores y gerentes. Porcentaje. 
+- `EPA62397` (per None) — Ocupados subempleados. Total Nacional. Mujeres. De 35 a 44 años. Educación secundaria primera etapa y formación e inserción laboral correspondiente. Valor absoluto. 
+- `EPA406489` (per None) — Ocupados. Total Nacional. Mujeres. 6 años o más. Total. Valor absoluto. 
+- `EPA404247` (per None) — Ocupados. Que no han trabajado en la semana de referencia. Total Nacional. Mujeres. Miembro de una cooperativa. No clasificable. Valor absoluto. 
+- `EPA67436` (per None) — Parados que han trabajado anteriormente. Total Nacional. Ambos sexos. Total. Doctorado. De 1 mes a menos de 3 meses. Valor absoluto. 
+- `EPA393009` (per None) — Activos. Total Nacional. Ambos sexos. Vendedores (excepto en tiendas y almacenes). Valor absoluto. 
+- `EPA396840` (per None) — Ocupados. Total Nacional. Ambos sexos. De 40 a 44 años. Total. Valor absoluto. 
+- `EPA94120` (per None) — Ocupados. Total Nacional. Mujeres. Extranjera: Resto de Europa. Técnicos y profesionales científicos e intelectuales. Valor absoluto. 
+- `EPA101756` (per None) — Parados que han trabajado anteriormente. Total Nacional. Mujeres. De 6 a 12 meses. Trabajadores de los servicios de restauración, personales, protección y vendedores de los comercios. Valor absoluto. 
+- `EPA96978` (per None) — Activos. Total Nacional. Hombres. Fuerzas armadas. Valor absoluto. 
+- `EPA108289` (per None) — Ocupados. Que no han trabajado en la semana de referencia. Total Nacional. Mujeres. Otra situación. Administración pública, defensa y seguridad social obligatoria. Valor absoluto. 
+- `EPA98895` (per None) — Ocupados. Total Nacional. Ambos sexos. Pescadores y trabajadores cualificados en actividades piscícolas. Porcentaje. 
+- `EPA25292` (per None) — Activos. Total Nacional. Hombres. De 30 a 34 años. Enseñanzas de grado medio de música y danza. Valor absoluto. 
+- `EPA26563` (per None) — Tasa de actividad. Total Nacional. Ambos sexos. De 35 a 39 años. Títulos propios (no homologados) de Universidades. 
+- `EPA393056` (per None) — Activos. Total Nacional. Ambos sexos. Trabajadores de la industria de la alimentación, bebidas y tabaco. Porcentaje. 
+- `EPA104124` (per None) — Ocupados. Total Nacional. Mujeres. Ninguna hora. Artesanos y trabajadores cualificados de las industrias manufactureras, la construcción, y la minería, excepto los  operadores de instalaciones y maquinaria. Valor absoluto. 
+- `EPA53775` (per None) — Ocupados. Total Nacional. Ambos sexos. 50 o más horas. Miembro de una cooperativa. Valor absoluto. 
+- `EPA116728` (per None) — Parados. Total Nacional. Mujeres. Industrias manufactureras diversas. Porcentaje. 
+- `EPA724785` (per None) — Tasa de salarización. Total Nacional. Hombres. Transporte marítimo y por vías navegables interiores. 
+- `EPA282786` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Ambos sexos. Total. Otras actividades sociales y de servicios prestados a la comunidad; servicios personales. Valor absoluto. 
+- `EPA64495` (per None) — Tasa de paro de la población. Total Nacional. Hombres. Total. Educación primaria. 
+- `EPA389235` (per None) — Tasa de actividad. Total Nacional. Hombres. Segunda etapa de educación secundaria, con orientación general. Extranjera: Unión Europea. 
+- `EPA728450` (per None) — Parados. Total Nacional. Mujeres. Industrias extractivas. Porcentaje. 
+- `EPA282808` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Mujeres. No sabe. Administración Pública y defensa; Seguridad Social obligatoria. Valor absoluto. 
+- `EPA97378` (per None) — Activos. Total Nacional. Mujeres. Extranjera: Resto de Europa. Trabajadores no cualificados. Valor absoluto. 
+- `EPA719371` (per None) — Ocupados. Total Nacional. Ambos sexos. De 1 a 9 horas. Agricultura, ganadería, silvicultura y pesca. Valor absoluto. 
+- `EPA116940` (per None) — Parados. Total Nacional. Mujeres. Industria del papel; edición, artes gráficas y reproducción de soportes grabados. Porcentaje. 
+- `EPA105282` (per None) — Activos. Total Nacional. Hombres. Comercio al por menor, excepto el comercio de vehículos de motor, motocicletas y ciclomotores; reparación de efectos personales y enseres domésticos. Valor absoluto. 
+- `EPA34660` (per None) — Ocupados. Total Nacional. Hombres. De 35 a 39 años. Enseñanzas universitarias de primer y segundo ciclo, de sólo segundo ciclo y equivalentes. Valor absoluto. 
+- `EPA64493` (per None) — Tasa de paro de la población. Total Nacional. Hombres. Total. Educación secundaria segunda etapa y formación e inserción laboral correspondiente. 
+- `EPA117132` (per None) — Parados que han trabajado anteriormente. Total Nacional. Mujeres. Agricultura. De 1 año a menos de 2 años. Valor absoluto. 
+- `EPA400821` (per None) — Ocupados. Total Nacional. Ambos sexos. Empleados de bibliotecas, servicios de correos y afines. Valor absoluto. 
+- `EPA106241` (per None) — Activos. Total Nacional. Mujeres. Servicios. Extranjera: Unión Europea. Valor absoluto. 
+- `EPA92464` (per None) — Tasa de actividad. Total Nacional. Hombres. Educación secundaria primera etapa y formación e inserción laboral correspondiente. Extranjera: Resto del mundo y apátrida. 
+- `EPA400908` (per None) — Ocupados. Total Nacional. Ambos sexos. De 35 a 39 años. Operadores de instalaciones y maquinaria, y montadores. Valor absoluto. 
+- `EPA274322` (per None) — Ocupados. Total Nacional. Mujeres. De 40 a 49 horas. Organismos extraterritoriales. Valor absoluto. 
+- `EPA426601` (per None) — Parados que han trabajado anteriormente. Total Nacional. Ambos sexos. Trabajador por cuenta propia. Porcentaje. 
+- `EPA28408` (per None) — Activos. Total Nacional. Mujeres. Enseñanzas técnico-profesionales de grado medio. Total. Valor absoluto. 
+- `EPA106667` (per None) — Ocupados. Total Nacional. Hombres. Pesca, acuicultura y actividades de los servicios relacionados con las mismas. Valor absoluto. 
+- `EPA92170` (per None) — Activos. Total Nacional. Ambos sexos. Total. Extranjera: Resto de Europa. Valor absoluto. 
+- `EPA24925` (per None) — Activos. Total Nacional. Mujeres. De 40 a 44 años. Primera etapa de educación secundaria. Valor absoluto. 
+- `EPA36243` (per None) — Ocupados. Total Nacional. Hombres. De 60 a 69 años. Educación secundaria primera etapa y formación e inserción laboral correspondiente. Valor absoluto. 
+- `EPA394525` (per None) — Activos. Total Nacional. Hombres. Extranjera: Resto del mundo y apátrida. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria). Valor absoluto. 
+- `EPA66109` (per None) — Parados. Total Nacional. Ambos sexos. De 30 a 34 años. No sabe. Valor absoluto. 
+- `EPA393838` (per None) — Activos. Total Nacional. Hombres. De 35 a 39 años. Técnicos y profesionales científicos e intelectuales. Valor absoluto. 
+- `EPA714123` (per None) — Activos. Total Nacional. Ambos sexos. De 50 a 54 años. Suministro de agua, actividades de saneamiento, gestión de residuos y descontaminación. Valor absoluto. 
+- `EPA92805` (per None) — Activos. Total Nacional. Ambos sexos. Construcción. Extranjera: Total. Valor absoluto. 
+- `EPA106779` (per None) — Ocupados. Total Nacional. Ambos sexos. Transporte marítimo, de cabotaje y por vías de navegación interiores. Valor absoluto. 
+- `EPA26130` (per None) — Tasa de actividad. Total Nacional. Hombres. De 60 a 64 años. Analfabetos. 
+- `EPA24308` (per None) — Activos. Total Nacional. Mujeres. Educación superior, excepto doctorado. Total. Valor absoluto. 
+- `EPA393921` (per None) — Activos. Total Nacional. Hombres. De 50 a 54 años. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria). Porcentaje. 
+- `EPA93790` (per None) — Ocupados. Total Nacional. Hombres. Industria. Extranjera: Total. Valor absoluto. 
+- `EPA102754` (per None) — Ocupados subempleados. Total Nacional. Mujeres. Trabajador por cuenta propia. Artesanos y trabajadores cualificados de las industrias manufactureras, la construcción, y la minería, excepto los  operadores de instalaciones y maquinaria. Valor absoluto. 
+- `EPA388503` (per None) — Tasa de actividad. Total Nacional. Ambos sexos. De 40 a 44 años. Casados/Casadas. 
+- `EPA401099` (per None) — Ocupados. Total Nacional. Hombres. De 60 a 64 años. Directores y gerentes. Valor absoluto. 
+- `EPA425173` (per None) — Parados. Total Nacional. Ambos sexos. De 65 a 69 años. 2 años o más. Valor absoluto. 
+- `EPA24388` (per None) — Activos. Total Nacional. Hombres. Educación secundaria segunda etapa y formación e inserción laboral correspondiente. Total. Valor absoluto. 
+- `EPA712903` (per None) — Activos. Total Nacional. Hombres. Suministro de energía eléctrica, gas, vapor y aire acondicionado. Porcentaje. 
+- `EPA392973` (per None) — Activos. Total Nacional. Ambos sexos. Representantes, agentes comerciales y afines. Valor absoluto. 
+- `EPA34514` (per None) — Ocupados. Total Nacional. Hombres. De 65 a 69 años. Títulos propios (no homologados) de Universidades. Valor absoluto. 
+- `EPA717968` (per None) — Ocupados. Total Nacional. Hombres. Total. Administración pública y defensa; seguridad social obligatoria. Porcentaje. 
+- `EPA426237` (per None) — Parados que han trabajado anteriormente. Total Nacional. Ambos sexos. Menos de 3 meses. Segunda etapa de educación secundaria con orientación profesional (incluye educación postsecundaria no superior). Valor absoluto. 
+- `EPA94273` (per None) — Ocupados. Total Nacional. Ambos sexos. Extranjera: Resto del mundo y apátrida. Técnicos y profesionales de apoyo. Valor absoluto. 
+- `EPA97897` (per None) — Activos. Total Nacional. Mujeres. Total. Fuerzas armadas. Porcentaje. 
+- `EPA400530` (per None) — Ocupados. Total Nacional. Hombres. Trabajadores de la industria de la alimentación, bebidas y tabaco. Porcentaje. 
+- `EPA118103` (per None) — Ocupados. Hombres. Total Nacional. Transporte, almacenamiento y comunicaciones. Valor absoluto. 
+- `EPA388447` (per None) — Tasa de actividad. Total Nacional. Hombres. De 60 a 64 años. Solteros/Solteras. 
+- `EPA717831` (per None) — Ocupados. Que no han trabajado en la semana de referencia. Total Nacional. Mujeres. Total. No sabe. Valor absoluto. 
+- `EPA389155` (per None) — Tasa de actividad. Total Nacional. Ambos sexos. Educación primaria. Extranjera: Unión Europea. 
+- `EPA92704` (per None) — Activos. Total Nacional. Mujeres. Industria. Total. Valor absoluto. 
+- `EPA101551` (per None) — Parados que han trabajado anteriormente. Total Nacional. Mujeres. Total. Menos de 1 mes. Fuerzas armadas. Valor absoluto. 
+- `EPA392933` (per None) — Activos. Total Nacional. Ambos sexos. Directores y gerentes de empresas de alojamiento, restauración y comercio. Valor absoluto. 
+- `EPA714385` (per None) — Activos. Total Nacional. Hombres. Construcción. Extranjera: Resto de Europa. Valor absoluto. 
+- `EPA108812` (per None) — Ocupados. Que no han trabajado en la semana de referencia. Total Nacional. Mujeres. Construcción. Vacaciones o días de permiso. Valor absoluto. 
+- `EPA406302` (per None) — Ocupados. Total Nacional. Ambos sexos. De 3 a menos de 6 años. Total. Valor absoluto. 
+- `EPA388905` (per None) — Activos. Total Nacional. Mujeres. Total. Extranjera: América Latina. Valor absoluto. 
+- `EPA34873` (per None) — Ocupados. Total Nacional. Ambos sexos. De 60 a 64 años. Garantía social/Iniciación profesional. Valor absoluto. 
+- `EPA282784` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Ambos sexos. Total. Organismos extraterritoriales. Valor absoluto. 
+- `EPA105468` (per None) — Activos. Total Nacional. Ambos sexos. Comercio al por menor, excepto el comercio de vehículos de motor, motocicletas y ciclomotores; reparación de efectos personales y enseres domésticos. Valor absoluto. 
+- `EPA93147` (per None) — Activos. Total Nacional. Mujeres. Total. Extranjera: Resto de Europa. Valor absoluto. 
+- `EPA399995` (per None) — Ocupados. Total Nacional. Hombres. Trabajador por cuenta propia. Extranjera: Unión Europea. Valor absoluto. 
+- `EPA712940` (per None) — Activos. Total Nacional. Hombres. Total. Valor absoluto. 
+- `EPA716031` (per None) — Ocupados. Total Nacional. Hombres. Total. Extranjera: Resto del mundo y apátrida. Valor absoluto. 
+- `EPA105420` (per None) — Activos. Total Nacional. Ambos sexos. Extracción de productos energéticos. Valor absoluto. 
+- `EPA398365` (per None) — Ocupados. Total Nacional. Mujeres. Metalurgia; fabricación de productos de hierro, acero y ferroaleaciones. Porcentaje. 
+- `EPA424055` (per None) — Parados. Total Nacional. Mujeres. Persona no emparentada. Valor absoluto. 
+- `EPA396549` (per None) — Ocupados. Total Nacional. Mujeres. De 35 a 39 años. Educación superior. Valor absoluto. 
+- `EPA117202` (per None) — Parados que han trabajado anteriormente. Total Nacional. Ambos sexos. Agricultura. Total. Valor absoluto. 
+- `EPA102717` (per None) — Ocupados. Total Nacional. Ambos sexos. Menos de 3 meses. Empleados de tipo administrativo. Valor absoluto. 
+- `EPA717883` (per None) — Ocupados. Que no han trabajado en la semana de referencia. Total Nacional. Ambos sexos. Total. Otros motivos. Valor absoluto. 
+- `EPA436837` (per None) — Activos. Ambos sexos. Total Nacional. Educación superior. Valor absoluto. 
+- `EPA398519` (per None) — Ocupados. Total Nacional. Mujeres. Reparación de ordenadores, efectos personales y artículos de uso doméstico. Porcentaje. 
+- `EPA106856` (per None) — Ocupados. Total Nacional. Ambos sexos. Agricultura, ganadería, caza y actividades de los servicios relacionados con las mismas. Porcentaje. 
+- `EPA109624` (per None) — Ocupados. Total Nacional. Ambos sexos. Total. Industria manufacturera. Valor absoluto. 
+- `EPA40391` (per None) — Ocupados. Total Nacional. Hombres. Industria. Directores y jefes de explotaciones agrarias. Valor absoluto. 
+- `EPA282179` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Mujeres. Fin, comienzo o cambio de empleo. Intermediación financiera. Valor absoluto. 
+- `EPA716432` (per None) — Ocupados. Que han trabajado en la semana de referencia. Total Nacional. Hombres. Empleador. Actividades inmobiliarias. Valor absoluto. 
+- `EPA407097` (per None) — Ocupados. Total Nacional. Ambos sexos. De 40 a 49 horas. Actividades artísticas, recreativas y de entretenimiento. Valor absoluto. 
+- `EPA724769` (per None) — Tasa de salarización. Total Nacional. Hombres. Otras actividades profesionales, científicas y técnicas. 
+- `EPA282285` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Mujeres. Total. Administración pública, defensa y seguridad social obligatoria. Valor absoluto. 
+- `EPA28228` (per None) — Activos. Total Nacional. Mujeres. Educación primaria. Total. Valor absoluto. 
+- `EPA92908` (per None) — Activos. Total Nacional. Mujeres. Española. Operadores de instalaciones y maquinaria, y montadores. Valor absoluto. 
+- `EPA96252` (per None) — Tasa de paro de la población. Mujeres. Total Nacional. Española. 
+- `EPA105900` (per None) — Activos. Total Nacional. Hombres. De 35 a 39 años. Otras actividades sociales y de servicios prestados a la comunidad; servicios personales. Valor absoluto. 
+- `EPA99063` (per None) — Ocupados. Total Nacional. Mujeres. Miembro de una cooperativa. Empleados de tipo administrativo. Valor absoluto. 
+- `EPA98204` (per None) — Activos. Total Nacional. Ambos sexos. De 60 a 64 años. Artesanos y trabajadores cualificados de las industrias manufactureras, la construcción, y la minería, excepto los  operadores de instalaciones y maquinaria. Valor absoluto. 
+- `EPA717772` (per None) — Ocupados. Que no han trabajado en la semana de referencia. Total Nacional. Hombres. Servicios. Total. Valor absoluto. 
+- `EPA274708` (per None) — Ocupados. Total Nacional. Ambos sexos. De 10 a 19 horas. Transporte, almacenamiento y comunicaciones. Valor absoluto. 
+- `EPA393293` (per None) — Activos. Total Nacional. Mujeres. Directores de departamentos administrativos y comerciales. Valor absoluto. 
+- `EPA404539` (per None) — Ocupados. Total Nacional. Mujeres. De 30 a 34 años. Total. Porcentaje. 
+- `EPA101407` (per None) — Parados que han trabajado anteriormente. Total Nacional. Hombres. Artesanos y trabajadores cualificados de las industrias manufactureras, la construcción, y la minería, excepto los  operadores de instalaciones y maquinaria. Porcentaje. 
+- `EPA282652` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Ambos sexos. Paro parcial por razones técnicas o económicas. Producción y distribución de energía eléctrica, gas y agua. Valor absoluto. 
+- `EPA105067` (per None) — Activos. Total Nacional. Mujeres. Otras actividades empresariales. Porcentaje. 
+- `EPA100806` (per None) — Ocupados. Total Nacional. Ambos sexos. Extranjera: Total. Dirección de las empresas y de las administraciones públicas. Valor absoluto. 
+- `EPA426150` (per None) — Parados que han trabajado anteriormente. Total Nacional. Hombres. De 35 a 39 años. De 3 a 5 meses. Valor absoluto. 
+- `EPA283184` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Hombres. Regulación de empleo. Actividades sanitarias y de servicios sociales. Valor absoluto. 
+- `EPA388261` (per None) — Activos. Total Nacional. Ambos sexos. De 30 a 34 años. Solteros/Solteras. Valor absoluto. 
+- `EPA105245` (per None) — Activos. Total Nacional. Hombres. Actividades de saneamiento público. Porcentaje. 
+- `EPA106104` (per None) — Activos. Total Nacional. Ambos sexos. De 40 a 44 años. Otras actividades sociales y de servicios prestados a la comunidad; servicios personales. Valor absoluto. 
+- `EPA96933` (per None) — Activos. Total Nacional. Mujeres. Profesiones asociadas a una titulación de 1er ciclo universitario en ciencias físicas, químicas, matemáticas, ingeniería y asimilados. Porcentaje. 
+- `EPA98691` (per None) — Ocupados. Total Nacional. Hombres. Encargados en la metalurgia y jefes de talleres mecánicos. Porcentaje. 
+- `EPA283579` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Ambos sexos. Enfermedad, accidente o incapacidad temporal. Actividades de organizaciones y organismos extraterritoriales. Valor absoluto. 
+- `EPA399936` (per None) — Ocupados. Total Nacional. Ambos sexos. Miembro de una cooperativa. Española. Valor absoluto. 
+- `EPA714271` (per None) — Activos. Total Nacional. Ambos sexos. De 30 a 34 años. Industria manufacturera. Valor absoluto. 
+- `EPA92066` (per None) — Tasa de actividad. Total Nacional. Ambos sexos. De 35 a 44 años. Extranjera: Resto de Europa. 
+- `EPA391943` (per None) — Activos. Total Nacional. Hombres. De 50 a 54 años. Comercio al por mayor y al por menor; reparación de vehículos de motor y motocicletas. Valor absoluto. 
+- `EPA117034` (per None) — Parados que han trabajado anteriormente. Total Nacional. Mujeres. Parados que han dejado su último empleo hace más de 1 año. De 3 a 5 meses. Valor absoluto. 
+- `EPA425565` (per None) — Parados que han trabajado anteriormente. Total Nacional. Mujeres. Total. Total. De 1 año a menos de 2 años. Valor absoluto. 
+- `EPA406581` (per None) — Ocupados. Total Nacional. Hombres. Total. Menos de 3 meses. Valor absoluto. 
+- `EPA404217` (per None) — Ocupados. Que no han trabajado en la semana de referencia. Total Nacional. Mujeres. Trabajador por cuenta propia. No clasificable. Valor absoluto. 
+- `EPA407583` (per None) — Ocupados. Total Nacional. Mujeres. De 40 a 49 horas. Otra situación. Valor absoluto. 
+- `EPA717394` (per None) — Ocupados. Que no han trabajado en la semana de referencia. Total Nacional. Mujeres. Miembro de una cooperativa. Suministro de agua, actividades de saneamiento, gestión de residuos y descontaminación. Valor absoluto. 
+- `EPA400019` (per None) — Ocupados. Total Nacional. Hombres. Miembro de una cooperativa. Extranjera: Unión Europea. Valor absoluto. 
+- `EPA109325` (per None) — Ocupados. Total Nacional. Mujeres. Menos de 3 meses. Actividades sanitarias y veterinarias; servicios sociales. Valor absoluto. 
+- `EPA718840` (per None) — Ocupados. Total Nacional. Ambos sexos. De 1 a menos de 2 años. Organismos extraterritoriales. Valor absoluto. 
+- `EPA401846` (per None) — Ocupados. Total Nacional. Mujeres. Extranjera: América Latina. Total. Valor absoluto. 
+- `EPA444805` (per None) — Ocupados. Ambos sexos. Total Nacional. Total. Técnicos y profesionales científicos e intelectuales. Porcentaje. 
+- `EPA392884` (per None) — Activos. Total Nacional. Mujeres. Montadores y ensambladores en fábricas. Porcentaje. 
+- `EPA96990` (per None) — Activos. Total Nacional. Hombres. Peones de la minería. Valor absoluto. 
+- `EPA426223` (per None) — Parados que han trabajado anteriormente. Total Nacional. Ambos sexos. Total. Total. Valor absoluto. 
+- `EPA102814` (per None) — Ocupados subempleados. Total Nacional. Ambos sexos. Otra situación. Artesanos y trabajadores cualificados de las industrias manufactureras, la construcción, y la minería, excepto los  operadores de instalaciones y maquinaria. Valor absoluto. 
+- `EPA401300` (per None) — Ocupados. Total Nacional. Ambos sexos. Empleador. Empleados contables, administrativos y otros empleados de oficina. Valor absoluto. 
+- `EPA34066` (per None) — Ocupados. Total Nacional. Ambos sexos. Analfabetos. Extranjera: Total. Valor absoluto. 
+- `EPA389883` (per None) — Tasa de actividad. Total Nacional. Hombres. De 40 a 44 años. Educación superior. 
+- `EPA426671` (per None) — Parados que han trabajado anteriormente. Total Nacional. Ambos sexos. Técnicos y profesionales científicos e intelectuales. Porcentaje. 
+- `EPA93245` (per None) — Ocupados. Total Nacional. Hombres. No casados/casadas. Extranjera: Total. Valor absoluto. 
+- `EPA64851` (per None) — Parados que han trabajado anteriormente. Total Nacional. Ambos sexos. Analfabetos. Valor absoluto. 
+- `EPA24807` (per None) — Activos. Total Nacional. Mujeres. De 60 a 64 años. Enseñanza universitaria de tercer ciclo. Valor absoluto. 
+- `EPA716187` (per None) — Ocupados. Total Nacional. Mujeres. Construcción. Ayuda en la empresa o negocio familiar. Valor absoluto. 
+- `EPA78607` (per None) — Ocupados. Hombres. Total Nacional. Analfabetos. Porcentaje. 
+- `EPA714195` (per None) — Activos. Total Nacional. Ambos sexos. De 65 a 69 años. Industrias extractivas. Valor absoluto. 
+- `EPA425377` (per None) — Parados que han trabajado anteriormente. Total Nacional. Hombres. 2 años o más. Porcentaje. 
+- `EPA116933` (per None) — Parados. Total Nacional. Mujeres. Industria de material y equipo eléctrico, electrónico y óptico. Porcentaje. 
+- `EPA35030` (per None) — Ocupados. Total Nacional. Ambos sexos. De 30 a 34 años. Educación primaria. Valor absoluto. 
+- `EPA395678` (per None) — Ocupados. Total Nacional. Hombres. De 65 a 69 años. Casados/Casadas. Valor absoluto. 
+- `EPA402643` (per None) — Ocupados. Que han trabajado en la semana de referencia. Total Nacional. Hombres. Total. Trabajadores de los servicios de restauración, personales, protección y vendedores. Valor absoluto. 
+- `EPA105408` (per None) — Activos. Total Nacional. Ambos sexos. Industria del papel; edición, artes gráficas y reproducción de soportes grabados. Valor absoluto. 
+- `EPA715589` (per None) — Ocupados. Total Nacional. Mujeres. De 60 a 64 años. Transporte y almacenamiento. Valor absoluto. 
+- `EPA283476` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Ambos sexos. Regulación de empleo. Otros servicios. Valor absoluto. 
+- `EPA288876` (per None) — Ocupados. Total Nacional. Ambos sexos. De 30 a 39 años. Programas no formales de preparación para las pruebas de acceso y para la obtención de títulos oficiales del sistema educativo; Programas de carácter no formal del sistema educativo. Valor absoluto. 
+- `EPA107735` (per None) — Ocupados. Total Nacional. Ambos sexos. Industria. Profesionales de las fuerzas armadas. Valor absoluto. 
+- `EPA713339` (per None) — Activos. Total Nacional. Ambos sexos. Actividades de creación artística y artes escénicas. Porcentaje. 
+- `EPA92257` (per None) — Activos. Total Nacional. Hombres. Formación e inserción laboral con título de secundaria (2ª etapa). Extranjera: América Latina. Valor absoluto. 
+- `EPA718797` (per None) — Ocupados. Total Nacional. Ambos sexos. De 6 a 11 meses. Industrias extractivas. Valor absoluto. 
+- `EPA98684` (per None) — Ocupados. Total Nacional. Hombres. Trabajadores cualificados de industrias de artes gráficas, textil y de la confección, de la elaboración de alimentos, ebanistas, artesanos y otros asimilados. Valor absoluto. 
+- `EPA104047` (per None) — Ocupados subempleados. Total Nacional. Ambos sexos. Total. Empleados de tipo administrativo. Número medio de horas que desearían trabajar habitualmente. 
+- `EPA424276` (per None) — Tasa de paro de la población. Total Nacional. Ambos sexos. De 30 a 44 años. Analfabetos. 
+- `EPA716652` (per None) — Ocupados. Que han trabajado en la semana de referencia. Total Nacional. Mujeres. Ayuda en la empresa o negocio familiar. Organismos extraterritoriales. Valor absoluto. 
+- `EPA395165` (per None) — Activos. Total Nacional. Hombres. De 60 a 64 años. Ayuda en la empresa o negocio familiar. Valor absoluto. 
+- `EPA99507` (per None) — Ocupados que han trabajado en la semana de referencia. Que han trabajado en la semana de referencia. Total Nacional. Hombres. Trabajador por cuenta propia. Operadores de instalaciones y maquinaria, y montadores. Valor absoluto. 
+- `EPA110372` (per None) — Tasa de salarización. Total Nacional. Ambos sexos. Industrias manufactureras diversas. 
+- `EPA53787` (per None) — Ocupados. Total Nacional. Ambos sexos. De 40 a 49 horas. Empleador. Valor absoluto. 
+- `EPA394490` (per None) — Activos. Total Nacional. Hombres. Extranjera: Unión Europea. Operadores de instalaciones y maquinaria, y montadores. Valor absoluto. 
+- `EPA717413` (per None) — Ocupados. Que no han trabajado en la semana de referencia. Total Nacional. Mujeres. Otra situación. Agricultura, ganadería, silvicultura y pesca. Valor absoluto. 
+- `EPA106490` (per None) — Ocupados. Total Nacional. Mujeres. Otras actividades sociales y de servicios prestados a la comunidad; servicios personales. Porcentaje. 
+- `EPA108697` (per None) — Ocupados. Que no han trabajado en la semana de referencia. Total Nacional. Ambos sexos. Ayuda en la empresa o negocio familiar. Administración pública, defensa y seguridad social obligatoria. Valor absoluto. 
+- `EPA390141` (per None) — Tasa de actividad. Total Nacional. Hombres. Educación primaria. Total. 
+- `EPA446034` (per None) — Ocupados. Total Nacional. Ambos sexos. Trabajador por cuenta propia. Porcentaje. 
+- `EPA381960` (per None) — Ocupados. Que se han ausentado de su empleo en la semana de referencia. Total Nacional. Ambos sexos. Otros motivos. Hasta un día de ausencia. Valor absoluto. 
+- `EPA53236` (per None) — Ocupados. Total Nacional. Hombres. De 40 a 49 horas. Actividades profesionales, científicas y técnicas. Valor absoluto. 
+- `EPA283686` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Mujeres. Servicios. Horas extraordinarias. Valor absoluto. 
+- `EPA283236` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Hombres. Mal tiempo. Comercio al por mayor y al por menor; reparación de vehículos de motor y motocicletas. Valor absoluto. 
+- `EPA96872` (per None) — Activos. Total Nacional. Mujeres. Trabajadores cualificados en actividades agrícolas. Valor absoluto. 
+- `EPA405806` (per None) — Ocupados. Total Nacional. Ambos sexos. De 1 a menos de 2 años. Información y comunicaciones. Valor absoluto. 
+- `EPA104909` (per None) — Ocupados. Total Nacional. Ambos sexos. Trabajador por cuenta propia. Técnicos y profesionales científicos e intelectuales. Número medio de horas habitualmente trabajadas. 
+- `EPA108198` (per None) — Ocupados. Que han trabajado en la semana de referencia. Total Nacional. Ambos sexos. Ayuda en la empresa o negocio familiar. Agricultura, ganadería, caza y selvicultura. Valor absoluto. 
+- `EPA401408` (per None) — Ocupados. Total Nacional. Hombres. Empleador. Técnicos y profesionales científicos e intelectuales. Valor absoluto. 
+- `EPA104804` (per None) — Ocupados. Total Nacional. Hombres. Trabajador por cuenta propia. Artesanos y trabajadores cualificados de las industrias manufactureras, la construcción, y la minería, excepto los  operadores de instalaciones y maquinaria. Número medio de horas habitualmente trabajadas. 
+- `EPA423882` (per None) — Tasa de paro de la población. Total Nacional. Ambos sexos. De 65 a 69 años. Solteros/Solteras. 
+- `EPA282535` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Hombres. Total. Actividades sanitarias y veterinarias; servicios sociales. Valor absoluto. 
+- `EPA283689` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Mujeres. Construcción. No sabe. Valor absoluto. 
+- `EPA108619` (per None) — Ocupados. Que no han trabajado en la semana de referencia. Total Nacional. Hombres. Total. Producción y distribución de energía eléctrica, gas y agua. Valor absoluto. 
+- `EPA61728` (per None) — Ocupados. Que buscan otro empleo. Total Nacional. Mujeres. De 3 a menos de 6 años. Total. Valor absoluto. 
+- `EPA282294` (per None) — Ocupados. Que han trabajado menos horas de las habituales. Total Nacional. Mujeres. Total. Industrias extractivas. Valor absoluto. 
+- `EPA388430` (per None) — Tasa de actividad. Total Nacional. Hombres. De 40 a 44 años. Separados/Separadas o Divorciados/Divorciadas. 
+- `EPA716555` (per None) — Ocupados. Que han trabajado en la semana de referencia. Total Nacional. Hombres. Trabajador por cuenta propia. Comercio al por mayor y al por menor. Valor absoluto. 
+- `EPA407778` (per None) — Ocupados. Total Nacional. Mujeres. 50 o más horas. Empleados contables, administrativos y otros empleados de oficina. Valor absoluto. 
