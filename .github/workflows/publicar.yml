@@ -40,7 +40,11 @@ jobs:
             echo "::warning::assets/css/app.css no coincide con el compilado; se publica el recién compilado."
           fi
 
+      # enablement activa Pages en el repositorio la primera vez, para no
+      # tener que configurarlo a mano en los ajustes.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
