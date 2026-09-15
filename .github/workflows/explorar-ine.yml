@@ -15,8 +15,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Volcar catálogo EPA
-        run: python scripts/explorar_epa.py
+      - name: Volcar series por ámbito territorial
+        run: python scripts/explorar_epa2.py
 
       - name: Subir catálogo como artifact
         if: always()
