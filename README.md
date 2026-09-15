@@ -57,7 +57,7 @@ python3 scripts/descargar_epa.py
 | `assets/js/mercado-laboral.js` | Filtros, gráficas y tablas de esa sección |
 | `assets/js/tema.js` | Alternancia de tema claro/oscuro |
 | `src/tailwind.css` | Fuente de la hoja de estilos (tokens y componentes) |
-| `config/series-epa.json` | Códigos de las series del INE que se descargan |
+| `config/series-epa.json` | Procedencia de cada serie: de qué códigos del INE sale |
 | `scripts/descargar_epa.py` | Descargador de la EPA |
 | `scripts/ine_api.py` | Cliente mínimo de la API del INE |
 | `data/epa/` | Series descargadas, en JSON |

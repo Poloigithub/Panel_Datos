@@ -29,7 +29,7 @@ import ine_api  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parents[1]
 DESTINO = RAIZ / "data" / "epa"
-CONFIG = RAIZ / "config" / "series-epa.json"
+CONFIG = RAIZ / "config" / "series-epa.json"  # procedencia de cada serie
 
 # Identificadores descubiertos en la API (VARIABLES_OPERACION/EPA).
 VAR_NACIONAL, VAR_CCAA, VAR_PROVINCIAS = 349, 70, 115
@@ -141,69 +141,83 @@ def orden_periodo(periodo: str) -> tuple[int, int]:
     return (int(periodo[:4]), int(periodo[5:]))
 
 
-def cobertura(codigo: str) -> tuple[int, tuple[int, int]]:
-    """(cuántos trimestres con dato, último trimestre) de una serie."""
-    valores = {p: v for p, v in descarga_serie(codigo).items() if v is not None}
-    if not valores:
-        return (0, (0, 0))
-    return (len(valores), max(orden_periodo(p) for p in valores))
+def cobertura(codigo: str) -> dict[str, float]:
+    """Trimestres con dato de una serie."""
+    return {p: v for p, v in descarga_serie(codigo).items() if v is not None}
 
 
-def elige_mejor(candidatas: list[dict], etiqueta: str, tope: int) -> tuple[str | None, int]:
-    """De varias series equivalentes, la que mejor cubre la historia.
+def concuerdan(a: dict[str, float], b: dict[str, float]) -> bool:
+    """¿Dos series miden lo mismo allí donde se solapan?
 
-    El INE publica la misma cifra en tablas distintas y conserva versiones
-    antiguas, algunas con sólo un par de trimestres. Gana la de más datos y, a
-    igualdad, la que llega más lejos en el tiempo. Se prueban antes las de
-    nombre más simple, que suelen ser las series principales.
+    Sin solape no se puede afirmar que lo hagan, y mezclarlas podría encadenar
+    metodologías distintas, así que se responde que no.
+    """
+    comunes = set(a) & set(b)
+    if not comunes:
+        return False
+    for periodo in comunes:
+        referencia = max(abs(a[periodo]), abs(b[periodo]), 1e-9)
+        if abs(a[periodo] - b[periodo]) / referencia > 0.01:
+            return False
+    return True
+
+
+def fusiona(candidatas: list[dict], etiqueta: str, tope: int = 12) -> tuple[dict[str, float], list[str]]:
+    """Reúne en una sola serie las candidatas que miden lo mismo.
+
+    El INE reparte la misma cifra entre varias series -y a veces estrena una
+    serie nueva con dos trimestres mientras la histórica sigue publicándose
+    aparte-, así que se parte de la más completa y se rellenan sus huecos con
+    las demás, pero sólo con aquellas cuyos valores coinciden en los
+    trimestres compartidos.
     """
     orden = sorted(candidatas, key=lambda c: len(segmentos(c.get("Nombre", ""))))[:tope]
-    mejor, mejor_clave = None, None
-    for candidata in orden:
-        clave = cobertura(candidata["COD"])
-        if clave[0] and (mejor_clave is None or clave > mejor_clave):
-            mejor, mejor_clave = candidata["COD"], clave
-    if not mejor:
+    descargadas = [(c["COD"], cobertura(c["COD"])) for c in orden]
+    descargadas = [(codigo, valores) for codigo, valores in descargadas if valores]
+    if not descargadas:
         print(f"      {etiqueta}: {len(candidatas)} candidatas, ninguna con datos")
-        return None, 0
-    print(f"      {etiqueta}: {len(candidatas)} candidatas, se toma {mejor} "
-          f"({mejor_clave[0]} trimestres)")
-    return mejor, mejor_clave[0]
+        return {}, []
+
+    descargadas.sort(key=lambda t: (len(t[1]), max(orden_periodo(p) for p in t[1])), reverse=True)
+    base_codigo, fusionada = descargadas[0]
+    usados = [base_codigo]
+
+    for codigo, valores in descargadas[1:]:
+        nuevos = {p: v for p, v in valores.items() if p not in fusionada}
+        if not nuevos or not concuerdan(fusionada, valores):
+            continue
+        fusionada.update(nuevos)
+        usados.append(codigo)
+
+    if len(usados) > 1:
+        print(f"      {etiqueta}: {len(fusionada)} trimestres uniendo {len(usados)} series "
+              f"({', '.join(usados)})")
+    else:
+        print(f"      {etiqueta}: {len(fusionada)} trimestres ({base_codigo})")
+    return fusionada, usados
 
 
-def resuelve_codigos(ambito: dict, cache: dict) -> dict:
-    """Devuelve {sexo: {magnitud: código}} para un ámbito territorial."""
-    guardado = cache.get(ambito["id"])
-    completo = guardado and all(
-        magnitud in (guardado.get(sexo) or {})
-        for sexo in SEXOS
-        for magnitud in MAGNITUDES
-    )
-    if completo:
-        print(f"  · {ambito['nombre']}: códigos en caché")
-        return guardado
-
-    print(f"  · {ambito['nombre']}: resolviendo códigos contra la API…")
+def resuelve_ambito(ambito: dict) -> tuple[dict[str, dict[str, dict[str, float]]], dict]:
+    """Series de un ámbito: {sexo: {magnitud: {periodo: valor}}} y su procedencia."""
+    print(f"  · {ambito['nombre']}: buscando series…")
     series = ine_api.get("SERIE_METADATAOPERACION", "EPA", g1=ambito["filtro"])
     porsegmentos: dict[frozenset, list[dict]] = {}
     for serie in series:
         porsegmentos.setdefault(frozenset(segmentos(serie.get("Nombre", ""))), []).append(serie)
 
-    resuelto: dict[str, dict[str, str]] = {}
-    candidatas_de: dict[tuple[str, str], list[dict]] = {}
-    cobertura_de: dict[tuple[str, str], int] = {}
+    datos: dict[str, dict[str, dict[str, float]]] = {}
+    procedencia: dict[str, dict[str, list[str]]] = {}
 
     for sexo in SEXOS:
-        resuelto[sexo] = {}
+        datos[sexo] = {}
+        procedencia[sexo] = {}
         for magnitud in MAGNITUDES:
             etiqueta = f"{sexo}/{magnitud}"
             clave = frozenset(esperado(sexo, ambito, magnitud))
 
             # El INE no siempre nombra igual el total de una variable ("Total",
-            # "De 16 y más años"…), y la coincidencia exacta puede dar con una
-            # serie testimonial de dos trimestres. Se juntan todas las series
-            # que contienen lo obligatorio sin añadir más que totales, y se
-            # elige entre ellas por cobertura.
+            # "De 16 y más años"…), así que se admite cualquier serie que
+            # contenga lo obligatorio y no añada más que totales.
             obligatorio = clave - EXTRAS_ADMITIDOS
             candidatas, vistos = [], set()
             for segs, grupo in porsegmentos.items():
@@ -214,40 +228,60 @@ def resuelve_codigos(ambito: dict, cache: dict) -> dict:
                         vistos.add(serie["COD"])
                         candidatas.append(serie)
 
-            candidatas_de[(sexo, magnitud)] = candidatas
             if not candidatas:
                 print(f"      sin serie para {etiqueta} ({sorted(clave)})")
                 continue
-            if len(candidatas) == 1:
-                resuelto[sexo][magnitud] = candidatas[0]["COD"]
-                cobertura_de[(sexo, magnitud)] = cobertura(candidatas[0]["COD"])[0]
+
+            valores, usados = fusiona(candidatas, etiqueta)
+            if valores:
+                datos[sexo][magnitud] = valores
+                procedencia[sexo][magnitud] = usados
+
+    return datos, procedencia
+
+
+def completa_derivando(datos: dict[str, dict[str, dict[str, float]]], procedencia: dict) -> None:
+    """Rellena lo que el INE no publica como serie propia.
+
+    Ocupados, parados y activos son las tres caras de la misma identidad, así
+    que basta con dos para tener la tercera. Se aplica trimestre a trimestre y
+    sólo donde falta el dato, nunca sobre lo publicado.
+    """
+    identidades = [
+        ("parados", "activos", "ocupados"),   # parados  = activos - ocupados
+        ("ocupados", "activos", "parados"),   # ocupados = activos - parados
+    ]
+    for sexo, magnitudes in datos.items():
+        for destino, menos, sustraendo in identidades:
+            if menos not in magnitudes or sustraendo not in magnitudes:
                 continue
+            actual = magnitudes.setdefault(destino, {})
+            derivados = 0
+            for periodo, valor in magnitudes[menos].items():
+                if periodo in actual or periodo not in magnitudes[sustraendo]:
+                    continue
+                actual[periodo] = round(valor - magnitudes[sustraendo][periodo], 3)
+                derivados += 1
+            if derivados:
+                procedencia[sexo].setdefault(destino, [])
+                procedencia[sexo][destino].append(f"derivado:{menos}-{sustraendo}")
+                print(f"      {sexo}/{destino}: {derivados} trimestres derivados "
+                      f"de {menos} − {sustraendo}")
 
-            codigo, trimestres = elige_mejor(candidatas, etiqueta, tope=8)
-            if codigo:
-                resuelto[sexo][magnitud] = codigo
-                cobertura_de[(sexo, magnitud)] = trimestres
-
-    # Segunda pasada: si alguna serie se ha quedado corta frente a las demás
-    # del mismo ámbito, es que la buena no entró en las primeras candidatas.
-    if cobertura_de:
-        objetivo = max(cobertura_de.values())
-        cortas = [k for k, v in cobertura_de.items() if v < objetivo * 0.9]
-        for sexo, magnitud in cortas:
-            etiqueta = f"{sexo}/{magnitud}"
-            print(f"      {etiqueta}: sólo {cobertura_de[(sexo, magnitud)]} de ~{objetivo} "
-                  f"trimestres; se repasan todas las candidatas")
-            codigo, trimestres = elige_mejor(
-                candidatas_de[(sexo, magnitud)], etiqueta, tope=60
-            )
-            if codigo and trimestres > cobertura_de[(sexo, magnitud)]:
-                resuelto[sexo][magnitud] = codigo
-                cobertura_de[(sexo, magnitud)] = trimestres
-
-    encontradas = sum(len(v) for v in resuelto.values())
-    print(f"    resueltas {encontradas} de {len(SEXOS) * len(MAGNITUDES)} series")
-    cache[ambito["id"]] = resuelto
-    return resuelto
+        # activos = ocupados + parados
+        if "ocupados" in magnitudes and "parados" in magnitudes:
+            actual = magnitudes.setdefault("activos", {})
+            derivados = 0
+            for periodo, valor in magnitudes["ocupados"].items():
+                if periodo in actual or periodo not in magnitudes["parados"]:
+                    continue
+                actual[periodo] = round(valor + magnitudes["parados"][periodo], 3)
+                derivados += 1
+            if derivados:
+                procedencia[sexo].setdefault("activos", [])
+                procedencia[sexo]["activos"].append("derivado:ocupados+parados")
+                print(f"      {sexo}/activos: {derivados} trimestres derivados "
+                      f"de ocupados + parados")
 
 
 _descargadas: dict[str, dict[str, float | None]] = {}
@@ -277,38 +311,28 @@ def descarga_serie(codigo: str) -> dict[str, float | None]:
 def main() -> int:
     DESTINO.mkdir(parents=True, exist_ok=True)
     CONFIG.parent.mkdir(parents=True, exist_ok=True)
-
-    cache = json.loads(CONFIG.read_text(encoding="utf-8")) if CONFIG.exists() else {}
     ahora = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
 
-    print("Resolviendo series…")
-    codigos = {a["id"]: resuelve_codigos(a, cache) for a in AMBITOS}
-    CONFIG.write_text(json.dumps(cache, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-    print("\nDescargando datos…")
-    crudo: dict[str, dict[str, dict[str, dict[str, float | None]]]] = {}
+    print("Buscando y descargando series de la EPA…")
+    por_ambito: dict[str, dict] = {}
+    procedencias: dict[str, dict] = {}
     periodos_vistos: set[str] = set()
 
     for ambito in AMBITOS:
-        crudo[ambito["id"]] = {}
-        for sexo in SEXOS:
-            crudo[ambito["id"]][sexo] = {}
-            for magnitud in MAGNITUDES:
-                codigo = codigos[ambito["id"]][sexo].get(magnitud)
-                if not codigo:
-                    continue
-                valores = descarga_serie(codigo)
-                crudo[ambito["id"]][sexo][magnitud] = valores
+        datos, procedencia = resuelve_ambito(ambito)
+        completa_derivando(datos, procedencia)
+        por_ambito[ambito["id"]] = datos
+        procedencias[ambito["id"]] = procedencia
+        for magnitudes in datos.values():
+            for valores in magnitudes.values():
                 periodos_vistos.update(valores)
-                print(f"  {ambito['id']:22s} {sexo:8s} {magnitud:16s} "
-                      f"{len(valores):4d} periodos ({codigo})")
 
     if not periodos_vistos:
         print("No se ha descargado ningún dato; no se toca nada.")
         return 1
 
-    # Rejilla temporal común: así todas las series comparten índice y la web
-    # no tiene que alinear nada.
+    # Rejilla temporal común: así todas las series comparten índice y la web no
+    # tiene que alinear nada.
     periodos = sorted(periodos_vistos, key=orden_periodo)
 
     indice = {
@@ -323,15 +347,21 @@ def main() -> int:
         "ambitos": [],
     }
 
+    print("\nEscribiendo ficheros…")
     for ambito in AMBITOS:
+        datos = por_ambito[ambito["id"]]
         series: dict[str, dict[str, list]] = {}
         for sexo in SEXOS:
             series[sexo] = {}
             for magnitud in MAGNITUDES:
-                valores = crudo[ambito["id"]][sexo].get(magnitud)
-                if valores is None:
+                valores = datos.get(sexo, {}).get(magnitud)
+                if not valores:
                     continue
                 series[sexo][magnitud] = [valores.get(p) for p in periodos]
+                huecos = sum(1 for p in periodos if p not in valores)
+                if huecos:
+                    print(f"  aviso: {ambito['id']}/{sexo}/{magnitud} "
+                          f"tiene {huecos} trimestres sin dato")
 
         contenido = {
             "ambito": {"id": ambito["id"], "nombre": ambito["nombre"], "tipo": ambito["tipo"]},
@@ -339,7 +369,7 @@ def main() -> int:
             "periodos": periodos,
             "series": series,
             "unidades": UNIDADES,
-            "codigos_serie": codigos[ambito["id"]],
+            "series_origen": procedencias[ambito["id"]],
             "fuentes": [{
                 "tabla": "EPA",
                 "nombre": f"Encuesta de Población Activa · {ambito['nombre']}",
@@ -354,13 +384,15 @@ def main() -> int:
         indice["ambitos"].append({
             "id": ambito["id"], "nombre": ambito["nombre"], "fichero": fichero
         })
-        print(f"  escrito data/epa/{fichero}")
+        print(f"  data/epa/{fichero}")
 
     (DESTINO / "index.json").write_text(
         json.dumps(indice, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    print(f"\nListo: {len(periodos)} trimestres, "
-          f"de {periodos[0]} a {periodos[-1]}.")
+    CONFIG.write_text(
+        json.dumps(procedencias, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    print(f"\nListo: {len(periodos)} trimestres, de {periodos[0]} a {periodos[-1]}.")
     return 0
 
 

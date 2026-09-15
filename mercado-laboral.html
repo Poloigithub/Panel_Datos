@@ -184,7 +184,14 @@
       <ul data-fuentes class="mt-3 space-y-1 text-xs"></ul>
       <p class="mt-3 text-xs leading-relaxed" style="color: var(--tinta-tenue)">
         Cuando el INE no publica un dato para un ámbito y trimestre, la serie
-        aparece cortada en lugar de interpolarse: el hueco es información.
+        aparece cortada en lugar de interpolarse: el hueco es información. El
+        INE reparte una misma cifra entre varias series y a veces estrena una
+        con pocos trimestres mientras la histórica sigue aparte, así que la
+        descarga las une comprobando que coinciden donde se solapan. Cuando
+        falta un dato de ocupados, parados o activos y los otros dos están
+        publicados, se completa con la identidad que los liga
+        (activos = ocupados + parados); la procedencia de cada serie queda
+        anotada en <code class="rounded px-1 py-0.5 text-[0.8em]" style="background-color: var(--superficie-2)">config/series-epa.json</code>.
       </p>
     </section>
 
