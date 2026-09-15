@@ -25,11 +25,18 @@ no depender de un CDN.
 
 ## Puesta en marcha
 
-1. En **Settings → Pages**, elige como origen **GitHub Actions**.
-2. Lanza a mano el workflow *Actualizar datos del INE* para la primera descarga
-   (o espera a la siguiente publicación de la EPA).
-3. El workflow *Publicar en GitHub Pages* se dispara en cada push a la rama por
-   defecto.
+1. En **Settings → Pages**, elige como origen **GitHub Actions**. El workflow
+   intenta activarlo solo, pero el token de Actions no siempre tiene permiso
+   para hacerlo, así que puede hacer falta este paso a mano una única vez.
+2. Vuelve a lanzar *Publicar en GitHub Pages* desde la pestaña Actions. El
+   sitio queda en `https://<usuario>.github.io/Panel_Datos/`.
+3. A partir de ahí se publica solo en cada push a la rama por defecto del
+   repositorio (ojo: sólo esa rama publica; si cambias cuál es la principal,
+   acuérdate de fusionar en ella).
+
+Los datos ya están descargados y versionados, así que el panel funciona desde
+el primer despliegue. Para forzar una actualización, lanza *Actualizar datos
+del INE*.
 
 ## Desarrollo en local
 
