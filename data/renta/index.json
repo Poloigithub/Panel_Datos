@@ -1,0 +1,79 @@
+{
+  "actualizado": "2026-09-15T21:45:08+00:00",
+  "titulo": "Renta y desigualdad",
+  "ultimo_periodo": "2023",
+  "primer_periodo": "2015",
+  "indicadores": {
+    "renta_persona": {
+      "titulo": "Renta neta media por persona",
+      "unidad": "euros",
+      "decimales": 0,
+      "por_sexo": false
+    },
+    "renta_hogar": {
+      "titulo": "Renta neta media por hogar",
+      "unidad": "euros",
+      "decimales": 0,
+      "por_sexo": false
+    },
+    "renta_mediana_hogar": {
+      "titulo": "Renta mediana por hogar",
+      "unidad": "euros",
+      "decimales": 0,
+      "por_sexo": false
+    },
+    "renta_uc": {
+      "titulo": "Renta media por unidad de consumo",
+      "unidad": "euros",
+      "decimales": 0,
+      "por_sexo": false
+    },
+    "gini": {
+      "titulo": "Índice de Gini",
+      "unidad": "índice",
+      "decimales": 2,
+      "por_sexo": false
+    },
+    "p80p20": {
+      "titulo": "Distribución de la renta P80/P20",
+      "unidad": "ratio",
+      "decimales": 2,
+      "por_sexo": false
+    },
+    "bajo_60": {
+      "titulo": "Población bajo el 60 % de la renta mediana",
+      "unidad": "%",
+      "decimales": 2,
+      "por_sexo": true
+    },
+    "tamano_hogar": {
+      "titulo": "Tamaño medio del hogar",
+      "unidad": "personas",
+      "decimales": 2,
+      "por_sexo": false
+    },
+    "hogares_unipersonales": {
+      "titulo": "Hogares unipersonales",
+      "unidad": "%",
+      "decimales": 2,
+      "por_sexo": false
+    }
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "actualizado": "2026-09-15T21:45:08+00:00",
+  "titulo": "Natalidad, mortalidad y migración",
+  "ultimo_periodo": "2024",
+  "primer_periodo": "2021",
+  "indicadores": {
+    "esperanza_vida": {
+      "titulo": "Esperanza de vida al nacer",
+      "unidad": "años",
+      "decimales": 2,
+      "por_sexo": true
+    },
+    "tasa_natalidad": {
+      "titulo": "Tasa bruta de natalidad",
+      "unidad": "por mil",
+      "decimales": 2,
+      "por_sexo": false
+    },
+    "tasa_mortalidad": {
+      "titulo": "Tasa bruta de mortalidad",
+      "unidad": "por mil",
+      "decimales": 2,
+      "por_sexo": false
+    },
+    "hijos_por_mujer": {
+      "titulo": "Número medio de hijos por mujer",
+      "unidad": "hijos",
+      "decimales": 2,
+      "por_sexo": false
+    },
+    "edad_maternidad": {
+      "titulo": "Edad media a la maternidad",
+      "unidad": "años",
+      "decimales": 2,
+      "por_sexo": false
+    },
+    "saldo_migratorio": {
+      "titulo": "Saldo migratorio",
+      "unidad": "personas",
+      "decimales": 0,
+      "por_sexo": false
+    },
+    "nacidos_por_defuncion": {
+      "titulo": "Nacidos por cada 1.000 defunciones",
+      "unidad": "por mil",
+      "decimales": 1,
+      "por_sexo": false
+    }
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ]
+}

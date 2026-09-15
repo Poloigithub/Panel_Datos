@@ -1,0 +1,55 @@
+{
+  "actualizado": "2026-09-15T21:45:08+00:00",
+  "titulo": "Población y estructura",
+  "ultimo_periodo": "2026",
+  "primer_periodo": "1971",
+  "indicadores": {
+    "poblacion": {
+      "titulo": "Población",
+      "unidad": "personas",
+      "decimales": 0,
+      "por_sexo": true
+    },
+    "edad_media": {
+      "titulo": "Edad media",
+      "unidad": "años",
+      "decimales": 1,
+      "por_sexo": true
+    },
+    "mayores_65": {
+      "titulo": "Población de 65 y más años",
+      "unidad": "%",
+      "decimales": 2,
+      "por_sexo": false
+    },
+    "extranjeros": {
+      "titulo": "Población extranjera",
+      "unidad": "%",
+      "decimales": 2,
+      "por_sexo": false
+    },
+    "crecimiento": {
+      "titulo": "Crecimiento de la población",
+      "unidad": "%",
+      "decimales": 2,
+      "por_sexo": false
+    }
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "poblacion": {
+    "espana": {
+      "hombres": {
+        "poblacion": [
+          "ECP319"
+        ],
+        "edad_media": [
+          "IDB85659"
+        ]
+      },
+      "mujeres": {
+        "poblacion": [
+          "ECP232293"
+        ],
+        "edad_media": [
+          "IDB85658"
+        ]
+      },
+      "ambos": {
+        "edad_media": [
+          "IDB85660"
+        ],
+        "crecimiento": [
+          "IDB87064"
+        ]
+      }
+    },
+    "comunitat-valenciana": {
+      "ambos": {
+        "poblacion": [
+          "ECP115493"
+        ],
+        "edad_media": [
+          "IDB86203"
+        ],
+        "crecimiento": [
+          "IDB87074"
+        ]
+      },
+      "hombres": {
+        "poblacion": [
+          "ECP113554"
+        ],
+        "edad_media": [
+          "IDB86202"
+        ]
+      },
+      "mujeres": {
+        "poblacion": [
+          "ECP111615"
+        ],
+        "edad_media": [
+          "IDB86201"
+        ]
+      }
+    },
+    "castellon": {
+      "ambos": {
+        "poblacion": [
+          "ECP131400"
+        ],
+        "edad_media": [
+          "IDB86344"
+        ],
+        "crecimiento": [
+          "IDB87121"
+        ]
+      },
+      "hombres": {
+        "poblacion": [
+          "ECP126096"
+        ],
+        "edad_media": [
+          "IDB86343"
+        ]
+      },
+      "mujeres": {
+        "poblacion": [
+          "ECP120792"
+        ],
+        "edad_media": [
+          "IDB86342"
+        ]
+      }
+    }
+  },
+  "demografia": {
+    "espana": {
+      "ambos": {
+        "saldo_migratorio": [
+          "IDB475120"
+        ]
+      }
+    },
+    "comunitat-valenciana": {
+      "ambos": {
+        "saldo_migratorio": [
+          "IDB475110"
+        ]
+      }
+    },
+    "castellon": {
+      "ambos": {
+        "saldo_migratorio": [
+          "IDB475158"
+        ]
+      }
+    }
+  },
+  "renta": {
+    "espana": {
+      "ambos": {
+        "renta_persona": [
+          "ADRH9974440"
+        ],
+        "renta_hogar": [
+          "ADRH9974439"
+        ],
+        "renta_uc": [
+          "ADRH9974438"
+        ],
+        "gini": [
+          "ADRH9974944"
+        ],
+        "p80p20": [
+          "ADRH9974943"
+        ],
+        "bajo_60": [
+          "ADRH9980986"
+        ],
+        "tamano_hogar": [
+          "ADRH10030082"
+        ],
+        "hogares_unipersonales": [
+          "ADRH10029916"
+        ]
+      },
+      "hombres": {
+        "bajo_60": [
+          "ADRH9980980"
+        ]
+      },
+      "mujeres": {
+        "bajo_60": [
+          "ADRH9980974"
+        ]
+      }
+    },
+    "comunitat-valenciana": {
+      "ambos": {
+        "renta_persona": [
+          "ADRH9974370"
+        ],
+        "renta_hogar": [
+          "ADRH9974369"
+        ],
+        "renta_uc": [
+          "ADRH9974368"
+        ],
+        "gini": [
+          "ADRH9974924"
+        ],
+        "p80p20": [
+          "ADRH9974923"
+        ],
+        "bajo_60": [
+          "ADRH9980806"
+        ],
+        "tamano_hogar": [
+          "ADRH10030062"
+        ],
+        "hogares_unipersonales": [
+          "ADRH10029876"
+        ]
+      },
+      "hombres": {
+        "bajo_60": [
+          "ADRH9980800"
+        ]
+      },
+      "mujeres": {
+        "bajo_60": [
+          "ADRH9980794"
+        ]
+      }
+    },
+    "castellon": {
+      "ambos": {
+        "renta_persona": [
+          "ADRH87745"
+        ],
+        "renta_hogar": [
+          "ADRH87744"
+        ],
+        "renta_uc": [
+          "ADRH9974126"
+        ],
+        "gini": [
+          "ADRH9974834"
+        ],
+        "p80p20": [
+          "ADRH9974833"
+        ],
+        "bajo_60": [
+          "ADRH9979996"
+        ],
+        "tamano_hogar": [
+          "ADRH10029972"
+        ],
+        "hogares_unipersonales": [
+          "ADRH10029696"
+        ]
+      },
+      "hombres": {
+        "bajo_60": [
+          "ADRH9979990"
+        ]
+      },
+      "mujeres": {
+        "bajo_60": [
+          "ADRH9979984"
+        ]
+      }
+    }
+  }
+}
