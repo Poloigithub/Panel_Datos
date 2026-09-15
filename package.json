@@ -1,0 +1,16 @@
+{
+  "name": "panel-datos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Panel de datos con fuentes oficiales, publicado en GitHub Pages",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/app.css --minify",
+    "dev:css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/app.css --watch",
+    "serve": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "chart.js": "^4.5.1",
+    "tailwindcss": "^4.3.3"
+  }
+}

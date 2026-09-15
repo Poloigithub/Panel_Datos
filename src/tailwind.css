@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@source "../*.html";
+@source "../assets/js/*.js";
+
+/* ---------------------------------------------------------------------------
+   Tokens del panel.
+
+   Los colores de serie salen de una paleta validada para daltonismo: los tres
+   primeros slots (azul, naranja, aqua) son los únicos que superan los umbrales
+   de separación con todos los pares en juego, que es justo lo que necesitamos
+   para los tres ámbitos territoriales.
+   --------------------------------------------------------------------------- */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --color-lienzo: #fcfcfb;
+  --color-superficie: #ffffff;
+  --color-borde: #e5e4e0;
+  --color-tinta: #0b0b0b;
+  --color-tinta-suave: #52514e;
+  --color-tinta-tenue: #85837d;
+
+  --color-serie-1: #2a78d6;
+  --color-serie-2: #eb6834;
+  --color-serie-3: #1baf7a;
+
+  --color-acento: #2a78d6;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+
+    --lienzo: #fcfcfb;
+    --superficie: #ffffff;
+    --superficie-2: #f5f4f1;
+    --borde: #e5e4e0;
+    --tinta: #0b0b0b;
+    --tinta-suave: #52514e;
+    --tinta-tenue: #85837d;
+    --rejilla: #eceae5;
+
+    --serie-1: #2a78d6;
+    --serie-2: #eb6834;
+    --serie-3: #1baf7a;
+    --acento: #2a78d6;
+  }
+
+  /* El tema oscuro son pasos propios de las mismas rampas, elegidos contra la
+     superficie oscura. No es una inversión automática. */
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+
+      --lienzo: #141413;
+      --superficie: #1a1a19;
+      --superficie-2: #232322;
+      --borde: #34342f;
+      --tinta: #ffffff;
+      --tinta-suave: #c3c2b7;
+      --tinta-tenue: #8f8e85;
+      --rejilla: #2b2b28;
+
+      --serie-1: #3987e5;
+      --serie-2: #d95926;
+      --serie-3: #199e70;
+      --acento: #3987e5;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+
+    --lienzo: #141413;
+    --superficie: #1a1a19;
+    --superficie-2: #232322;
+    --borde: #34342f;
+    --tinta: #ffffff;
+    --tinta-suave: #c3c2b7;
+    --tinta-tenue: #8f8e85;
+    --rejilla: #2b2b28;
+
+    --serie-1: #3987e5;
+    --serie-2: #d95926;
+    --serie-3: #199e70;
+    --acento: #3987e5;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--lienzo);
+    color: var(--tinta);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--acento);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .tarjeta {
+    background-color: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 0.875rem;
+  }
+
+  .control {
+    background-color: var(--superficie);
+    border: 1px solid var(--borde);
+    color: var(--tinta);
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  /* Grupo de botones de segmento: la opción activa se marca con relleno y
+     peso, nunca sólo con color. */
+  .segmento {
+    display: inline-flex;
+    border: 1px solid var(--borde);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: var(--superficie);
+  }
+
+  .segmento > button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.875rem;
+    color: var(--tinta-suave);
+    border-right: 1px solid var(--borde);
+  }
+
+  .segmento > button:last-child {
+    border-right: 0;
+  }
+
+  .segmento > button[aria-pressed="true"] {
+    background-color: var(--superficie-2);
+    color: var(--tinta);
+    font-weight: 600;
+  }
+
+  .enlace-sutil {
+    color: var(--tinta-suave);
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--borde);
+  }
+
+  .enlace-sutil:hover {
+    color: var(--tinta);
+    text-decoration-color: var(--tinta-tenue);
+  }
+}

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es" class="h-full">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mercado laboral · Panel de datos</title>
+<meta name="description" content="Ocupados, parados, tasa de actividad y tasa de paro en España, la Comunitat Valenciana y la provincia de Castellón, según la Encuesta de Población Activa del INE.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<script>
+  try {
+    const guardado = localStorage.getItem('panel-tema');
+    if (guardado) document.documentElement.dataset.theme = guardado;
+  } catch (_) {}
+</script>
+</head>
+<body class="min-h-full antialiased">
+
+<header class="border-b" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+    <a href="./" class="flex items-center gap-2.5 font-semibold tracking-tight">
+      <span aria-hidden="true" class="grid h-8 w-8 place-items-center rounded-lg text-white text-sm" style="background-color: var(--acento)">PD</span>
+      <span>Panel de datos</span>
+    </a>
+    <button type="button" data-tema class="control" aria-label="Cambiar entre tema claro y oscuro">
+      <span data-tema-texto>Tema</span>
+    </button>
+  </div>
+</header>
+
+<main class="mx-auto max-w-6xl px-4 sm:px-6 py-8 sm:py-10">
+
+  <nav aria-label="Ruta" class="text-xs" style="color: var(--tinta-tenue)">
+    <a class="enlace-sutil" href="./">Panel</a> <span aria-hidden="true">/</span> Mercado laboral
+  </nav>
+
+  <h1 class="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Mercado laboral</h1>
+  <p class="mt-3 max-w-3xl text-base leading-relaxed" style="color: var(--tinta-suave)">
+    Encuesta de Población Activa del INE. Serie trimestral de ocupados, parados,
+    tasa de actividad y tasa de paro en tres ámbitos: España, la Comunitat
+    Valenciana y la provincia de Castellón.
+  </p>
+
+  <!-- Estado de carga / error ------------------------------------------- -->
+  <p data-estado role="status" class="mt-6 text-sm" style="color: var(--tinta-suave)">Cargando datos…</p>
+
+  <div data-panel hidden>
+
+    <!-- Filtros: una sola fila, por encima de todo lo que condicionan ----- -->
+    <section aria-labelledby="filtros-titulo" class="mt-8 tarjeta p-4">
+      <h2 id="filtros-titulo" class="sr-only">Filtros</h2>
+      <div class="flex flex-wrap items-end gap-x-6 gap-y-4">
+
+        <fieldset>
+          <legend class="text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Periodo</legend>
+          <div class="mt-1.5 segmento" data-grupo="periodo" role="group" aria-label="Periodo mostrado">
+            <button type="button" data-valor="todo" aria-pressed="true">Serie completa</button>
+            <button type="button" data-valor="20" aria-pressed="false">20 años</button>
+            <button type="button" data-valor="10" aria-pressed="false">10 años</button>
+            <button type="button" data-valor="5" aria-pressed="false">5 años</button>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Sexo</legend>
+          <div class="mt-1.5 segmento" data-grupo="sexo" role="group" aria-label="Desglose por sexo">
+            <button type="button" data-valor="ambos" aria-pressed="true">Ambos</button>
+            <button type="button" data-valor="hombres" aria-pressed="false">Hombres</button>
+            <button type="button" data-valor="mujeres" aria-pressed="false">Mujeres</button>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Ámbitos</legend>
+          <div class="mt-1.5 flex flex-wrap gap-x-4 gap-y-2" data-grupo="ambitos"></div>
+        </fieldset>
+
+        <div class="ml-auto flex items-center gap-2">
+          <button type="button" data-csv class="control" title="Descargar la selección actual en CSV">Descargar CSV</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resumen del último trimestre -------------------------------------- -->
+    <section aria-labelledby="resumen-titulo" class="mt-8">
+      <div class="flex flex-wrap items-baseline justify-between gap-2">
+        <h2 id="resumen-titulo" class="text-lg font-semibold tracking-tight">
+          Último dato disponible: <span data-ultimo-periodo class="font-bold"></span>
+        </h2>
+        <p class="text-xs" style="color: var(--tinta-tenue)">La variación es interanual (frente al mismo trimestre del año anterior).</p>
+      </div>
+      <div class="mt-3 tarjeta overflow-x-auto">
+        <table class="w-full text-sm">
+          <caption class="sr-only">Ocupados, parados, tasa de actividad y tasa de paro en el último trimestre publicado, con su variación interanual</caption>
+          <thead>
+            <tr class="text-left" style="color: var(--tinta-tenue)">
+              <th scope="col" class="px-4 py-2.5 font-medium">Ámbito</th>
+              <th scope="col" class="px-4 py-2.5 font-medium text-right">Ocupados</th>
+              <th scope="col" class="px-4 py-2.5 font-medium text-right">Parados</th>
+              <th scope="col" class="px-4 py-2.5 font-medium text-right">Tasa de actividad</th>
+              <th scope="col" class="px-4 py-2.5 font-medium text-right">Tasa de paro</th>
+            </tr>
+          </thead>
+          <tbody data-resumen class="align-top"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Tasas: comparables entre territorios, van juntas ------------------- -->
+    <section class="mt-10 grid gap-5 lg:grid-cols-2">
+      <figure class="tarjeta p-5 m-0">
+        <figcaption>
+          <h2 class="font-semibold tracking-tight">Tasa de paro</h2>
+          <p class="mt-0.5 text-xs" style="color: var(--tinta-tenue)">Parados sobre activos, en %</p>
+        </figcaption>
+        <div class="mt-4 relative" style="height: 300px">
+          <canvas data-grafica="tasa_paro" role="img" aria-label="Evolución trimestral de la tasa de paro por ámbito territorial"></canvas>
+        </div>
+        <div data-leyenda="tasa_paro" class="mt-3 flex flex-wrap gap-x-4 gap-y-1.5 text-xs"></div>
+        <details class="mt-3 text-xs">
+          <summary class="cursor-pointer" style="color: var(--tinta-suave)">Ver tabla de datos</summary>
+          <div data-tabla="tasa_paro" class="mt-2 max-h-72 overflow-auto"></div>
+        </details>
+      </figure>
+
+      <figure class="tarjeta p-5 m-0">
+        <figcaption>
+          <h2 class="font-semibold tracking-tight">Tasa de actividad</h2>
+          <p class="mt-0.5 text-xs" style="color: var(--tinta-tenue)">Activos sobre población de 16 y más años, en %</p>
+        </figcaption>
+        <div class="mt-4 relative" style="height: 300px">
+          <canvas data-grafica="tasa_actividad" role="img" aria-label="Evolución trimestral de la tasa de actividad por ámbito territorial"></canvas>
+        </div>
+        <div data-leyenda="tasa_actividad" class="mt-3 flex flex-wrap gap-x-4 gap-y-1.5 text-xs"></div>
+        <details class="mt-3 text-xs">
+          <summary class="cursor-pointer" style="color: var(--tinta-suave)">Ver tabla de datos</summary>
+          <div data-tabla="tasa_actividad" class="mt-2 max-h-72 overflow-auto"></div>
+        </details>
+      </figure>
+    </section>
+
+    <!-- Absolutos: escalas incomparables, así que paneles propios ---------- -->
+    <section class="mt-10">
+      <div class="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <h2 class="text-lg font-semibold tracking-tight">Ocupados y parados</h2>
+          <p class="mt-1 max-w-2xl text-sm" style="color: var(--tinta-suave)">
+            España, la Comunitat Valenciana y Castellón se mueven en escalas muy
+            distintas, así que cada ámbito tiene su propio panel. Para comparar
+            la evolución entre ellos, cambia a índice.
+          </p>
+        </div>
+        <div class="segmento" data-grupo="modo" role="group" aria-label="Forma de mostrar los valores absolutos">
+          <button type="button" data-valor="absoluto" aria-pressed="true">Miles de personas</button>
+          <button type="button" data-valor="indice" aria-pressed="false">Índice 100</button>
+        </div>
+      </div>
+
+      <div class="mt-4 grid gap-5" data-bloque="ocupados">
+        <h3 class="text-sm font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Ocupados</h3>
+        <div data-paneles="ocupados" class="grid gap-5 lg:grid-cols-3"></div>
+      </div>
+
+      <div class="mt-8 grid gap-5" data-bloque="parados">
+        <h3 class="text-sm font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Parados</h3>
+        <div data-paneles="parados" class="grid gap-5 lg:grid-cols-3"></div>
+      </div>
+    </section>
+
+    <!-- Procedencia -------------------------------------------------------- -->
+    <section class="mt-12 tarjeta p-5">
+      <h2 class="text-sm font-semibold">Fuente y método</h2>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Datos de la Encuesta de Población Activa (EPA) del Instituto Nacional de
+        Estadística, descargados de su API. Los valores absolutos están en miles
+        de personas y las tasas en porcentaje, tal y como los publica el INE.
+      </p>
+      <p class="mt-2 text-sm" style="color: var(--tinta-suave)">
+        Última actualización de los datos: <span data-actualizado class="font-medium"></span>.
+      </p>
+      <ul data-fuentes class="mt-3 space-y-1 text-xs"></ul>
+      <p class="mt-3 text-xs leading-relaxed" style="color: var(--tinta-tenue)">
+        Nota: la EPA publica para las provincias las tasas y, según la tabla,
+        los valores absolutos. Cuando un dato no está publicado para un ámbito
+        y trimestre, la serie aparece cortada en lugar de interpolarse.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="border-t mt-8" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-6 text-xs flex flex-wrap gap-x-6 gap-y-2 justify-between" style="color: var(--tinta-tenue)">
+    <p>Datos: <a class="enlace-sutil" href="https://www.ine.es/" rel="noopener">INE</a>. Elaboración propia.</p>
+    <p><a class="enlace-sutil" href="https://github.com/Poloigithub/Panel_Datos" rel="noopener">Código en GitHub</a></p>
+  </div>
+</footer>
+
+<!-- Chart.js 4.5.1, servido desde el propio repositorio para no depender de un CDN -->
+<script src="assets/vendor/chart.umd.js"></script>
+<script src="assets/js/tema.js"></script>
+<script src="assets/js/mercado-laboral.js"></script>
+</body>
+</html>

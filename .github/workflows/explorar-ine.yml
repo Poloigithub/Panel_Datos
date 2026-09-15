@@ -5,6 +5,9 @@ name: Explorar catálogo del INE
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   explorar:
     runs-on: ubuntu-latest
@@ -15,13 +18,13 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Volcar series por ámbito territorial
-        run: python scripts/explorar_epa2.py
+      - name: Volcar resumen del catálogo
+        run: python scripts/explorar_epa3.py
 
-      - name: Subir catálogo como artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: catalogo-epa
-          path: data/_catalogo/
-          if-no-files-found: warn
+      - name: Commitear el resumen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/_catalogo/resumen.md
+          git diff --staged --quiet || git commit -m "Resumen del catálogo EPA del INE [skip ci]"
+          git push

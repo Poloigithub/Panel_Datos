@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es" class="h-full">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panel de datos</title>
+<meta name="description" content="Panel de acceso a datos de fuentes oficiales: mercado laboral, demografía y economía de España, la Comunitat Valenciana y la provincia de Castellón.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<script>
+  // Antes de pintar, para que no haya destello de tema equivocado.
+  try {
+    const guardado = localStorage.getItem('panel-tema');
+    if (guardado) document.documentElement.dataset.theme = guardado;
+  } catch (_) {}
+</script>
+</head>
+<body class="min-h-full antialiased">
+
+<header class="border-b" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+    <a href="./" class="flex items-center gap-2.5 font-semibold tracking-tight">
+      <span aria-hidden="true" class="grid h-8 w-8 place-items-center rounded-lg text-white text-sm" style="background-color: var(--acento)">PD</span>
+      <span>Panel de datos</span>
+    </a>
+    <button type="button" data-tema class="control" aria-label="Cambiar entre tema claro y oscuro">
+      <span data-tema-texto>Tema</span>
+    </button>
+  </div>
+</header>
+
+<main class="mx-auto max-w-5xl px-4 sm:px-6 py-10 sm:py-14">
+
+  <section class="max-w-2xl">
+    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Datos oficiales, a un clic</h1>
+    <p class="mt-4 text-base leading-relaxed" style="color: var(--tinta-suave)">
+      Panel de acceso a series estadísticas publicadas por organismos oficiales.
+      Los datos se descargan automáticamente de sus APIs y se guardan en este
+      repositorio, así que cada cifra es trazable hasta su fuente.
+    </p>
+  </section>
+
+  <h2 class="mt-12 text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Secciones</h2>
+
+  <div class="mt-4 grid gap-4 sm:grid-cols-2">
+
+    <a href="mercado-laboral.html" class="tarjeta group block p-5 transition hover:shadow-sm focus-visible:shadow-sm">
+      <div class="flex items-start justify-between gap-3">
+        <div class="grid h-10 w-10 shrink-0 place-items-center rounded-lg" style="background-color: var(--superficie-2)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" style="color: var(--serie-1)" aria-hidden="true">
+            <path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m7 14 3.5-3.5 3 3L20 7"/>
+          </svg>
+        </div>
+        <span aria-hidden="true" class="mt-1 transition group-hover:translate-x-0.5" style="color: var(--tinta-tenue)">→</span>
+      </div>
+      <h3 class="mt-4 font-semibold">Mercado laboral</h3>
+      <p class="mt-1.5 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Ocupados, parados, tasa de actividad y tasa de paro en España, la
+        Comunitat Valenciana y la provincia de Castellón. Serie trimestral
+        completa, con desglose por sexo.
+      </p>
+      <p class="mt-3 text-xs" style="color: var(--tinta-tenue)">Fuente: EPA · INE</p>
+    </a>
+
+    <div class="tarjeta p-5 opacity-70">
+      <div class="grid h-10 w-10 place-items-center rounded-lg" style="background-color: var(--superficie-2)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" style="color: var(--tinta-tenue)" aria-hidden="true">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+        </svg>
+      </div>
+      <h3 class="mt-4 font-semibold">Población</h3>
+      <p class="mt-1.5 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Padrón, estructura por edades y movimiento natural. Pendiente de añadir.
+      </p>
+      <p class="mt-3 text-xs" style="color: var(--tinta-tenue)">En preparación</p>
+    </div>
+
+  </div>
+
+  <section class="mt-14 tarjeta p-5">
+    <h2 class="text-sm font-semibold">Cómo se actualiza</h2>
+    <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+      Una tarea programada consulta la API del INE, guarda las series en
+      <code class="rounded px-1 py-0.5 text-[0.8em]" style="background-color: var(--superficie-2)">data/</code>
+      y publica el panel. Si el INE no ha publicado nada nuevo, no se toca nada.
+      El histórico de cambios de cada cifra queda en el propio historial de git.
+    </p>
+  </section>
+
+</main>
+
+<footer class="border-t mt-8" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 py-6 text-xs flex flex-wrap gap-x-6 gap-y-2 justify-between" style="color: var(--tinta-tenue)">
+    <p>Datos: <a class="enlace-sutil" href="https://www.ine.es/" rel="noopener">INE</a>. Elaboración propia.</p>
+    <p><a class="enlace-sutil" href="https://github.com/Poloigithub/Panel_Datos" rel="noopener">Código en GitHub</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/tema.js"></script>
+</body>
+</html>
