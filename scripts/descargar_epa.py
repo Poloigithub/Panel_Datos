@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 import sys
 import unicodedata
 from pathlib import Path
@@ -59,6 +60,10 @@ AMBITOS = [
 
 SEXOS = {"ambos": "ambos sexos", "hombres": "hombres", "mujeres": "mujeres"}
 
+# Segmentos que pueden sobrar en el nombre de una serie sin cambiar lo que mide:
+# son formas de decir «el total» de una variable.
+EXTRAS_ADMITIDOS = {"total", "de 16 y mas anos", "ambos sexos", "valor absoluto"}
+
 # magnitud -> (segmento que la identifica, es_tasa)
 MAGNITUDES = {
     "ocupados": ("ocupados", False),
@@ -97,6 +102,7 @@ def esperado(sexo: str, ambito: dict, magnitud: str) -> set[str]:
     return partes
 
 
+TRIMESTRE = re.compile(r"\d{4}T[1-4]")
 ROMANOS = {"I": "T1", "II": "T2", "III": "T3", "IV": "T4"}
 # Trimestres tal y como los numera Tempus 3 en FK_Periodo.
 FK_TRIMESTRES = {19: "T1", 20: "T2", 21: "T3", 22: "T4"}
@@ -110,7 +116,7 @@ def periodo_de(dato: dict) -> str | None:
     un `FK_Periodo` numérico. Se aceptan las tres.
     """
     nombre_directo = dato.get("NombrePeriodo")
-    if nombre_directo:
+    if nombre_directo and TRIMESTRE.fullmatch(str(nombre_directo).strip().upper()):
         return str(nombre_directo).strip().upper()
 
     anyo = dato.get("Anyo") or dato.get("Anio")
@@ -122,7 +128,7 @@ def periodo_de(dato: dict) -> str | None:
     nombre = nombre or dato.get("T3_Periodo")
     if nombre:
         nombre = str(nombre).strip().upper()
-        if nombre.startswith("T") and nombre[1:].isdigit():
+        if nombre in ("T1", "T2", "T3", "T4"):
             return f"{anyo}{nombre}"
         if nombre in ROMANOS:
             return f"{anyo}{ROMANOS[nombre]}"
@@ -162,7 +168,23 @@ def resuelve_codigos(ambito: dict, cache: dict) -> dict:
             if len(candidatas) == 1:
                 resuelto[sexo][magnitud] = candidatas[0]["COD"]
             elif not candidatas:
-                print(f"      sin serie para {sexo}/{magnitud} ({sorted(clave)})")
+                # El INE no siempre nombra igual el total de una variable
+                # ("Total", "De 16 y más años"…). Segundo intento: la serie
+                # debe contener lo esperado y no añadir más que totales.
+                obligatorio = clave - EXTRAS_ADMITIDOS
+                laxas = [
+                    serie
+                    for segs, grupo in porsegmentos.items()
+                    if obligatorio <= segs and (segs - obligatorio) <= EXTRAS_ADMITIDOS
+                    for serie in grupo
+                ]
+                if laxas:
+                    elegida = min(laxas, key=lambda c: len(segmentos(c.get("Nombre", ""))))
+                    resuelto[sexo][magnitud] = elegida["COD"]
+                    print(f"      {sexo}/{magnitud}: sin coincidencia exacta, "
+                          f"se toma «{elegida.get('Nombre', '').strip()}»")
+                else:
+                    print(f"      sin serie para {sexo}/{magnitud} ({sorted(clave)})")
             else:
                 # Varias series comparten metadatos: el INE publica la misma
                 # cifra en tablas distintas (mismo total desglosado por
@@ -195,7 +217,11 @@ def resuelve_codigos(ambito: dict, cache: dict) -> dict:
 
 def descarga_serie(codigo: str) -> dict[str, float | None]:
     """Serie completa (nult muy alto: el INE devuelve lo que tenga)."""
-    datos = ine_api.get("DATOS_SERIE", codigo, nult=400, det=2)
+    try:
+        datos = ine_api.get("DATOS_SERIE", codigo, nult=400, det=2)
+    except ine_api.INEError as exc:
+        print(f"      ! no se pudo descargar {codigo}: {exc}")
+        return {}
     if isinstance(datos, list):
         datos = datos[0] if datos else {}
     valores: dict[str, float | None] = {}
