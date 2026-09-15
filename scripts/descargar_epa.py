@@ -141,6 +141,31 @@ def orden_periodo(periodo: str) -> tuple[int, int]:
     return (int(periodo[:4]), int(periodo[5:]))
 
 
+def elige_mejor(candidatas: list[dict], etiqueta: str) -> str | None:
+    """De varias series equivalentes, la que mejor cubre la historia.
+
+    El INE publica la misma cifra en tablas distintas y conserva versiones
+    antiguas, algunas con sólo un par de trimestres. Gana la de más datos y,
+    a igualdad, la que llega más lejos en el tiempo. Se prueban antes las de
+    nombre más simple, que suelen ser las series principales.
+    """
+    orden = sorted(candidatas, key=lambda c: len(segmentos(c.get("Nombre", ""))))[:10]
+    mejor, mejor_clave = None, None
+    for candidata in orden:
+        valores = {p: v for p, v in descarga_serie(candidata["COD"]).items() if v is not None}
+        if not valores:
+            continue
+        clave = (len(valores), max(orden_periodo(p) for p in valores))
+        if mejor_clave is None or clave > mejor_clave:
+            mejor, mejor_clave = candidata["COD"], clave
+    if mejor:
+        print(f"      {etiqueta}: {len(candidatas)} candidatas, se toma {mejor} "
+              f"({mejor_clave[0]} trimestres)")
+    else:
+        print(f"      {etiqueta}: {len(candidatas)} candidatas, ninguna con datos")
+    return mejor
+
+
 def resuelve_codigos(ambito: dict, cache: dict) -> dict:
     """Devuelve {sexo: {magnitud: código}} para un ámbito territorial."""
     guardado = cache.get(ambito["id"])
@@ -156,59 +181,40 @@ def resuelve_codigos(ambito: dict, cache: dict) -> dict:
     print(f"  · {ambito['nombre']}: resolviendo códigos contra la API…")
     series = ine_api.get("SERIE_METADATAOPERACION", "EPA", g1=ambito["filtro"])
     porsegmentos: dict[frozenset, list[dict]] = {}
-    for s in series:
-        porsegmentos.setdefault(frozenset(segmentos(s.get("Nombre", ""))), []).append(s)
+    for serie in series:
+        porsegmentos.setdefault(frozenset(segmentos(serie.get("Nombre", ""))), []).append(serie)
 
     resuelto: dict[str, dict[str, str]] = {}
     for sexo in SEXOS:
         resuelto[sexo] = {}
         for magnitud in MAGNITUDES:
+            etiqueta = f"{sexo}/{magnitud}"
             clave = frozenset(esperado(sexo, ambito, magnitud))
             candidatas = porsegmentos.get(clave, [])
-            if len(candidatas) == 1:
-                resuelto[sexo][magnitud] = candidatas[0]["COD"]
-            elif not candidatas:
+
+            if not candidatas:
                 # El INE no siempre nombra igual el total de una variable
                 # ("Total", "De 16 y más años"…). Segundo intento: la serie
-                # debe contener lo esperado y no añadir más que totales.
+                # debe contener lo obligatorio y no añadir más que totales.
                 obligatorio = clave - EXTRAS_ADMITIDOS
-                laxas = [
+                candidatas = [
                     serie
                     for segs, grupo in porsegmentos.items()
                     if obligatorio <= segs and (segs - obligatorio) <= EXTRAS_ADMITIDOS
                     for serie in grupo
                 ]
-                if laxas:
-                    elegida = min(laxas, key=lambda c: len(segmentos(c.get("Nombre", ""))))
-                    resuelto[sexo][magnitud] = elegida["COD"]
-                    print(f"      {sexo}/{magnitud}: sin coincidencia exacta, "
-                          f"se toma «{elegida.get('Nombre', '').strip()}»")
-                else:
-                    print(f"      sin serie para {sexo}/{magnitud} ({sorted(clave)})")
+                if candidatas:
+                    print(f"      {etiqueta}: sin coincidencia exacta, se busca en sentido amplio")
+
+            if not candidatas:
+                print(f"      sin serie para {etiqueta} ({sorted(clave)})")
+            elif len(candidatas) == 1:
+                resuelto[sexo][magnitud] = candidatas[0]["COD"]
             else:
-                # Varias series comparten metadatos: el INE publica la misma
-                # cifra en tablas distintas (mismo total desglosado por
-                # variables diferentes) y mantiene versiones antiguas. Se
-                # prueban primero las de nombre más simple y gana la que llega
-                # más lejos en el tiempo; a igualdad, la más larga.
-                orden_simplicidad = sorted(
-                    candidatas, key=lambda c: len(segmentos(c.get("Nombre", "")))
-                )[:6]
-                mejor, mejor_clave = None, None
-                for candidata in orden_simplicidad:
-                    valores = descarga_serie(candidata["COD"])
-                    if not valores:
-                        continue
-                    orden = (max(orden_periodo(p) for p in valores), len(valores))
-                    if mejor_clave is None or orden > mejor_clave:
-                        mejor, mejor_clave = candidata["COD"], orden
-                if mejor:
-                    resuelto[sexo][magnitud] = mejor
-                    print(f"      {sexo}/{magnitud}: {len(candidatas)} candidatas, "
-                          f"se toma la más actual ({mejor})")
-                else:
-                    print(f"      ¡ambiguo y sin datos! {sexo}/{magnitud}: "
-                          f"{[c['COD'] for c in candidatas]}")
+                codigo = elige_mejor(candidatas, etiqueta)
+                if codigo:
+                    resuelto[sexo][magnitud] = codigo
+
     encontradas = sum(len(v) for v in resuelto.values())
     print(f"    resueltas {encontradas} de {len(SEXOS) * len(MAGNITUDES)} series")
     cache[ambito["id"]] = resuelto
