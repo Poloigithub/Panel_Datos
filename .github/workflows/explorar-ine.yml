@@ -1,0 +1,27 @@
+name: Explorar catálogo del INE
+
+# Herramienta de diagnóstico: vuelca el catálogo EPA de la API del INE para
+# poder fijar los identificadores de tabla en config/tablas-epa.json.
+on:
+  workflow_dispatch:
+
+jobs:
+  explorar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Volcar catálogo EPA
+        run: python scripts/explorar_epa.py
+
+      - name: Subir catálogo como artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalogo-epa
+          path: data/_catalogo/
+          if-no-files-found: warn
