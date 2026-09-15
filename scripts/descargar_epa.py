@@ -197,6 +197,85 @@ def fusiona(candidatas: list[dict], etiqueta: str, tope: int = 12) -> tuple[dict
     return fusionada, usados
 
 
+def poblacion_desde(magnitudes: dict[str, dict[str, float]]) -> dict[str, float]:
+    """Población de 16 y más años implícita en una tasa y su numerador.
+
+    La EPA no publica la población como serie de esta descarga, pero cualquier
+    tasa la lleva dentro: tasa de actividad = activos / población × 100.
+    """
+    for magnitud, numerador in (("tasa_actividad", "activos"), ("tasa_empleo", "ocupados")):
+        tasas, valores = magnitudes.get(magnitud), magnitudes.get(numerador)
+        if not tasas or not valores:
+            continue
+        return {
+            periodo: valores[periodo] / tasa * 100
+            for periodo, tasa in tasas.items()
+            if tasa and periodo in valores
+        }
+    return {}
+
+
+def completa_tasas(datos: dict[str, dict[str, dict[str, float]]], procedencia: dict) -> None:
+    """Rellena las tasas que el INE deja sin publicar para un sexo.
+
+    La población de un sexo es la del total menos la del otro, y con ella las
+    tasas salen de su definición. Antes de aplicarlo se comprueba contra los
+    trimestres que sí están publicados: si no reproduce el dato oficial, se
+    deja el hueco.
+    """
+    poblaciones = {sexo: poblacion_desde(m) for sexo, m in datos.items()}
+    if not poblaciones.get("ambos"):
+        return
+
+    for sexo, otro in (("mujeres", "hombres"), ("hombres", "mujeres")):
+        magnitudes = datos.get(sexo)
+        if not magnitudes:
+            continue
+        faltan = [m for m in ("tasa_actividad", "tasa_empleo")
+                  if len(magnitudes.get(m, {})) < len(poblaciones["ambos"])]
+        if not faltan:
+            continue
+
+        poblacion = {
+            periodo: valor - poblaciones[otro][periodo]
+            for periodo, valor in poblaciones["ambos"].items()
+            if periodo in poblaciones.get(otro, {})
+        }
+        if not poblacion:
+            continue
+
+        for magnitud, numerador in (("tasa_actividad", "activos"), ("tasa_empleo", "ocupados")):
+            if magnitud not in faltan or numerador not in magnitudes:
+                continue
+            publicadas = magnitudes.get(magnitud, {})
+            calculadas = {
+                periodo: round(magnitudes[numerador][periodo] / poblacion[periodo] * 100, 2)
+                for periodo in poblacion
+                if periodo in magnitudes[numerador] and poblacion[periodo] > 0
+            }
+
+            # Control: donde el INE publica el dato, el cálculo debe reproducirlo.
+            comunes = set(publicadas) & set(calculadas)
+            if comunes:
+                error = max(abs(publicadas[p] - calculadas[p]) for p in comunes)
+                if error > 0.1:
+                    print(f"      {sexo}/{magnitud}: no se deriva "
+                          f"(se desvía {error:.2f} p.p. de lo publicado)")
+                    continue
+                print(f"      {sexo}/{magnitud}: derivación validada contra "
+                      f"{len(comunes)} trimestres publicados (desviación máxima {error:.2f} p.p.)")
+
+            nuevos = {p: v for p, v in calculadas.items() if p not in publicadas}
+            if not nuevos:
+                continue
+            magnitudes.setdefault(magnitud, {}).update(nuevos)
+            procedencia[sexo].setdefault(magnitud, []).append(
+                f"derivado:{numerador}/poblacion ({len(nuevos)} trimestres)"
+            )
+            print(f"      {sexo}/{magnitud}: {len(nuevos)} trimestres derivados "
+                  f"de {numerador} y la población")
+
+
 def resuelve_ambito(ambito: dict) -> tuple[dict[str, dict[str, dict[str, float]]], dict]:
     """Series de un ámbito: {sexo: {magnitud: {periodo: valor}}} y su procedencia."""
     print(f"  · {ambito['nombre']}: buscando series…")
@@ -321,6 +400,7 @@ def main() -> int:
     for ambito in AMBITOS:
         datos, procedencia = resuelve_ambito(ambito)
         completa_derivando(datos, procedencia)
+        completa_tasas(datos, procedencia)
         por_ambito[ambito["id"]] = datos
         procedencias[ambito["id"]] = procedencia
         for magnitudes in datos.values():
