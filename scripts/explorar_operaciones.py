@@ -1,9 +1,8 @@
-"""Segunda ronda: qué series simples ofrece cada operación para Castellón.
+"""Tercera ronda: qué conceptos publica cada operación para Castellón.
 
-El INE nombra cada serie encadenando los valores de sus variables, así que las
-series «del total» son las de nombre más corto. Se vuelcan ordenadas por
-número de segmentos para poder escribir los descargadores contra nombres
-reales.
+Volcar series una a una se llena de desgloses por edad, así que se agrupan por
+concepto -el nombre sin territorio, sexo ni muletillas- y se muestra un
+ejemplo de cada uno.
 """
 
 from __future__ import annotations
@@ -16,20 +15,19 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import ine_api  # noqa: E402
 
 SALIDA = Path(__file__).resolve().parents[1] / "data" / "_catalogo"
-
 VAR_PROVINCIAS, CASTELLON = 115, 13
 
-# operación -> palabras que deben aparecer para que la serie nos interese
-OPERACIONES = {
-    "ECP": ("poblacion",),
-    "IDB": ("edad media", "esperanza de vida", "indice de envejecimiento",
-            "tasa bruta", "numero medio de hijos", "edad media a la maternidad",
-            "crecimiento", "dependencia"),
-    "ADRH": ("renta", "gini", "mediana"),
-    "MNPN": ("nacidos", "nacimientos"),
-    "MNPD": ("defunciones", "fallecidos"),
-    "EMCR": ("saldo migratorio", "inmigracion", "emigracion"),
+OPERACIONES = ("IDB", "MNPN", "MNPD", "ECP", "ADRH", "EMCR")
+
+# Segmentos que no distinguen un concepto de otro.
+RUIDO = {
+    "castellon/castello", "ambos sexos", "hombres", "mujeres", "total", "anual",
+    "dato base", "numero", "porcentaje", "ambas nacionalidades", "espanola",
+    "extranjera", "todas las edades", "totales",
 }
+# Un desglose por edad no crea concepto nuevo.
+EDAD = ("anos", "ano", "y mas", "menos de", "de 1", "de 2", "de 3", "de 4",
+        "de 5", "de 6", "de 7", "de 8", "de 9", "de 0")
 
 
 def normaliza(texto: str) -> str:
@@ -37,16 +35,23 @@ def normaliza(texto: str) -> str:
     return " ".join("".join(c for c in texto if not unicodedata.combining(c)).lower().split())
 
 
-def segmentos(nombre: str) -> list[str]:
+def concepto(nombre: str) -> tuple[str, ...]:
     partes = [normaliza(p) for p in (nombre or "").replace(",", ".").split(".")]
-    return [p for p in partes if p]
+    limpias = []
+    for p in partes:
+        if not p or p in RUIDO:
+            continue
+        if any(p.endswith(s) or p.startswith(s) for s in EDAD):
+            continue
+        limpias.append(p)
+    return tuple(limpias)
 
 
 def main() -> int:
     SALIDA.mkdir(parents=True, exist_ok=True)
-    lineas = ["# Series simples por operación (provincia de Castellón)", ""]
+    lineas = ["# Conceptos por operación (provincia de Castellón)", ""]
 
-    for codigo, claves in OPERACIONES.items():
+    for codigo in OPERACIONES:
         lineas += [f"## {codigo}", ""]
         try:
             series = ine_api.get("SERIE_METADATAOPERACION", codigo,
@@ -55,24 +60,25 @@ def main() -> int:
             lineas += [f"ERROR: {exc}", ""]
             continue
 
-        elegidas = []
+        conceptos: dict[tuple[str, ...], dict] = {}
         for s in series:
-            n = normaliza(s.get("Nombre", ""))
-            if not any(clave in n for clave in claves):
+            clave = concepto(s.get("Nombre", ""))
+            if not clave or len(clave) > 4:
                 continue
-            segs = segmentos(s.get("Nombre", ""))
-            if len(segs) <= 7:
-                elegidas.append((len(segs), s))
+            anterior = conceptos.get(clave)
+            # nos quedamos con el ejemplo de nombre más corto
+            if anterior is None or len(s.get("Nombre", "")) < len(anterior.get("Nombre", "")):
+                conceptos[clave] = s
 
-        elegidas.sort(key=lambda t: (t[0], t[1].get("Nombre", "")))
-        lineas.append(f"Series totales: {len(series)} · simples que encajan: {len(elegidas)}")
+        lineas.append(f"Series: {len(series)} · conceptos distintos: {len(conceptos)}")
         lineas.append("")
-        for nsegs, s in elegidas[:150]:
-            lineas.append(f"- `{s.get('COD')}` ({nsegs}) — {s.get('Nombre', '').strip()}")
+        for clave in sorted(conceptos):
+            s = conceptos[clave]
+            lineas.append(f"- `{s.get('COD')}` — {s.get('Nombre', '').strip()}")
         lineas.append("")
 
-    (SALIDA / "series_simples.md").write_text("\n".join(lineas), encoding="utf-8")
-    print(f"[{len(lineas)} líneas en data/_catalogo/series_simples.md]")
+    (SALIDA / "conceptos.md").write_text("\n".join(lineas), encoding="utf-8")
+    print(f"[{len(lineas)} líneas en data/_catalogo/conceptos.md]")
     return 0
 
 
