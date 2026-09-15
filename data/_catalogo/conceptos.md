@@ -1,0 +1,3956 @@
+# Conceptos por operación (provincia de Castellón)
+
+## IDB
+
+Series: 3866 · conceptos distintos: 93
+
+- `IDB352978` — Castellón/Castelló. Divorcios. Edad Media al Divorcio. Mujeres. Dato base.
+- `IDB352851` — Castellón/Castelló. Divorcios. Indicador Coyuntural de Divorcialidad. Mujeres. Dato base.
+- `IDB348226` — Divorcios. Tasa Bruta de Divorcios. Dato base. Castellón/Castelló.
+- `IDB356499` — Castellón/Castelló. Divorcios. Hombres. Tasa de Divorcialidad. 75 y más años. Dato base.
+- `IDB79695` — Fecundidad. Castellón/Castelló.
+- `IDB81799` — Castellón/Castelló, Fecundidad, Edad media a la maternidad                                     , Total, Todas las edades, Anual, Dato base, Total, Cuarto y más
+- `IDB81802` — Castellón/Castelló, Fecundidad, Edad media a la maternidad                                     , Total, Todas las edades, Anual, Dato base, Total, Primero
+- `IDB81801` — Castellón/Castelló, Fecundidad, Edad media a la maternidad                                     , Total, Todas las edades, Anual, Dato base, Total, Segundo
+- `IDB81800` — Castellón/Castelló, Fecundidad, Edad media a la maternidad                                     , Total, Todas las edades, Anual, Dato base, Total, Tercero
+- `IDB80455` — Castellón/Castelló, Fecundidad, Porcentaje de nacidos , Total, Todas las edades, Dato base, Anual, Total, Cuarto y más
+- `IDB80458` — Castellón/Castelló, Fecundidad, Porcentaje de nacidos , Total, Todas las edades, Dato base, Anual, Total, Primero
+- `IDB80457` — Castellón/Castelló, Fecundidad, Porcentaje de nacidos , Total, Todas las edades, Dato base, Anual, Total, Segundo
+- `IDB80456` — Castellón/Castelló, Fecundidad, Porcentaje de nacidos , Total, Todas las edades, Dato base, Anual, Total, Tercero
+- `IDB72499` — Fecundidad. Castellón/Castelló. Primero.
+- `IDB82017` — Castellón/Castelló, Fecundidad, Ratio de masculinidad, Total, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB72500` — Fecundidad. Castellón/Castelló. Segundo.
+- `IDB360503` — Castellón/Castelló. Fecundidad. Tasa de fecundidad. 50 y más años. Anual. Dato base. Española. Todos.
+- `IDB72501` — Fecundidad. Castellón/Castelló. Tercero.
+- `IDB53270` — Indicadores de crecimiento y estructura de la población. Castellón/Castelló.
+- `IDB87121` — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Crecimiento de la población. Anual. Dato base.
+- `IDB86343` — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Edad media de la población. Hombres. Anual. Dato base.
+- `IDB85178` — Castellón/Castelló, Indicadores de crecimiento y estructura de la población, Edad mediana a la población, Total, Todas las edades, Anual, Porcentaje, Total, No considerado
+- `IDB85177` — Castellón/Castelló, Indicadores de crecimiento y estructura de la población, Edad mediana a la población, Varones, Todas las edades, Anual, Porcentaje, Total, No considerado
+- `IDB84973` — Castellón/Castelló, Indicadores de crecimiento y estructura de la población, Nacidos por cada 1000 defunciones, Total, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB359038` — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de personas mayores de cierta edad. 85 y más años. Anual. Porcentaje.
+- `IDB174673` — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Mujeres. 1 año. Anual. Porcentaje.
+- `IDB135572` — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población nacida en el extranjero. Hombres. 1 año. Anual. Porcentaje. Española.
+- `IDB85045` — Castellón/Castelló, Indicadores de crecimiento y estructura de la población, Ratio de masculinidad, Total, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB475158` — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Saldo migratorio. Anual. Dato base.
+- `IDB462429` — Castellón/Castelló. Indicadores de migraciones. Edad media a la emigración. Mujeres. Anual. Dato base. Ambas nacionalidades.
+- `IDB459466` — Castellón/Castelló. Indicadores de migraciones. Edad media de los inmigrantes. Hombres. Anual. Dato base. Ambas nacionalidades.
+- `IDB462274` — Castellón/Castelló. Indicadores de migraciones. Indicador Coyuntural de Emigración con destino al extranjero. Hombres. Anual. Dato base. Ambas nacionalidades.
+- `IDB474953` — Castellón/Castelló. Indicadores de migraciones. Indicador Coyuntural de Emigración Interprovincial. Hombres. Anual. Dato base. Ambas nacionalidades.
+- `IDB274726` — Castellón/Castelló. Indicadores de migraciones. Tasa de Emigración con destino al extranjero. Hombres. 1 año. Anual. Dato base. Ambas nacionalidades.
+- `IDB461445` — Castellón/Castelló. Indicadores de migraciones. Tasa de Emigración con destino al extranjero. Hombres. Total edades. Anual. Dato base. Ambas nacionalidades.
+- `IDB335841` — Castellón/Castelló. Indicadores de migraciones. Tasa de Emigración Interprovincial. Hombres. 1 año. Anual. Dato base. Ambas nacionalidades.
+- `IDB474107` — Castellón/Castelló. Indicadores de migraciones. Tasa de Emigración Interprovincial. Mujeres. Total edades. Anual. Dato base. Ambas nacionalidades.
+- `IDB290452` — Castellón/Castelló. Indicadores de migraciones. Tasa de Inmigración Interprovincial. Hombres. 1 año. Anual. Dato base. Ambas nacionalidades.
+- `IDB471472` — Castellón/Castelló. Indicadores de migraciones. Tasa de Inmigración Interprovincial. Hombres. Total edades. Anual. Dato base. Ambas nacionalidades.
+- `IDB243742` — Castellón/Castelló. Indicadores de migraciones. Tasa de Inmigración procedente del extranjero. Hombres. 1 año. Anual. Dato base. Ambas nacionalidades.
+- `IDB458637` — Castellón/Castelló. Indicadores de migraciones. Tasa de Inmigración procedente del extranjero. Hombres. Total edades. Anual. Dato base. Ambas nacionalidades.
+- `IDB462511` — Castellón/Castelló. Indicadores de migraciones. Tasa de Migración Bruta con el extranjero. Ambos sexos. Total edades. Anual. Dato base. Ambas nacionalidades.
+- `IDB475034` — Castellón/Castelló. Indicadores de migraciones. Tasa de Migración Interprovincial Bruta. Ambos sexos. Total edades. Anual. Dato base. Ambas nacionalidades.
+- `IDB475086` — Castellón/Castelló. Indicadores de migraciones. Tasa de Migración Interprovincial Neta. Ambos sexos. Total edades. Anual. Dato base. Ambas nacionalidades.
+- `IDB462563` — Castellón/Castelló. Indicadores de migraciones. Tasa de Migración Neta con el extranjero. Ambos sexos. Total edades. Anual. Dato base. Ambas nacionalidades.
+- `IDB73010` — Mortalidad. Castellón/Castelló.
+- `IDB445108` — Castellón/Castelló. Mortalidad. Esperanza de vida. Mujeres. 25 años. Anual. Dato base. Total.
+- `IDB445052` — Castellón/Castelló. Mortalidad. Esperanza de vida. Mujeres. 80 años. Anual. Dato base. Educación primaria e inferior.
+- `IDB445134` — Castellón/Castelló. Mortalidad. Esperanza de vida. Hombres. 65 años. Anual. Dato base. Educación superior.
+- `IDB445171` — Castellón/Castelló. Mortalidad. Esperanza de vida. Hombres. 30 años. Anual. Dato base. Primera etapa de Educación Secundaria y similar.
+- `IDB445130` — Castellón/Castelló. Mortalidad. Esperanza de vida. Hombres. 70 años. Anual. Dato base. Segunda etapa de Educación Secundaria y Educación Postsecundaria no Superior.
+- `IDB342220` — Castellón/Castelló. Mortalidad. Fallecidos. Mujeres. Menos de 7 días. Anual. Porcentaje respecto a las defunciones de menores de 1 año.
+- `IDB342376` — Castellón/Castelló. Mortalidad. Fallecidos. Mujeres. Menos de 7 días. Anual. Porcentaje respecto a las defunciones de menores de 28 días.
+- `IDB341908` — Castellón/Castelló. Mortalidad. Fallecidos. Mujeres. Menos de 7 días. Anual. Porcentaje respecto a las defunciones totales.
+- `IDB83938` — Castellón/Castelló, Mortalidad, Fallecidos menores de 1 mes, Total, Todas las edades, Anual, Porcentaje, Total, Fallecidos menores de 1 año
+- `IDB84874` — Castellón/Castelló, Mortalidad, Fallecidos menores de 1 mes, Total, Todas las edades, Anual, Porcentaje, Total, Fallecidos totales
+- `IDB83937` — Castellón/Castelló, Mortalidad, Fallecidos menores de 1 mes, Varones, Todas las edades, Anual, Porcentaje, Total, Fallecidos menores de 1 año
+- `IDB84873` — Castellón/Castelló, Mortalidad, Fallecidos menores de 1 mes, Varones, Todas las edades, Anual, Porcentaje, Total, Fallecidos totales
+- `IDB84430` — Castellón/Castelló, Mortalidad, Fallecidos menores de 1 semana, Total, Todas las edades, Anual, Porcentaje, Total, Fallecidos menores de 1 año
+- `IDB84646` — Castellón/Castelló, Mortalidad, Fallecidos menores de 1 semana, Total, Todas las edades, Anual, Porcentaje, Total, Fallecidos menores de 1 mes
+- `IDB84157` — Castellón/Castelló, Mortalidad, Fallecidos menores de 1 semana, Total, Todas las edades, Anual, Porcentaje, Total, Fallecidos totales
+- `IDB84429` — Castellón/Castelló, Mortalidad, Fallecidos menores de 1 semana, Varones, Todas las edades, Anual, Porcentaje, Total, Fallecidos menores de 1 año
+- `IDB84645` — Castellón/Castelló, Mortalidad, Fallecidos menores de 1 semana, Varones, Todas las edades, Anual, Porcentaje, Total, Fallecidos menores de 1 mes
+- `IDB84156` — Castellón/Castelló, Mortalidad, Fallecidos menores de 1 semana, Varones, Todas las edades, Anual, Porcentaje, Total, Fallecidos totales
+- `IDB83722` — Castellón/Castelló, Mortalidad, Fallecidos menores de 1 año, Total, Todas las edades, Anual, Porcentaje, Total, Fallecidos totales
+- `IDB84744` — Castellón/Castelló, Mortalidad, Ratio de masculinidad, Total, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB344514` — Castellón/Castelló. Mortalidad. Tasa de mortalidad. Mujeres. 80 y más años. Anual. Dato base.
+- `IDB433672` — Castellón/Castelló. Mortalidad. Tasa de mortalidad. Mujeres. 90 y más años. Anual. Dato base. Educación primaria e inferior.
+- `IDB433669` — Castellón/Castelló. Mortalidad. Tasa de mortalidad. Mujeres. 90 y más años. Anual. Dato base. Educación superior.
+- `IDB433756` — Castellón/Castelló. Mortalidad. Tasa de mortalidad. Hombres. 95 y más años. Anual. Dato base. Primera etapa de Educación Secundaria y similar.
+- `IDB433675` — Castellón/Castelló. Mortalidad. Tasa de mortalidad. Mujeres. 95 y más años. Anual. Dato base. Segunda etapa de Educación Secundaria y Educación Postsecundaria no Superior.
+- `IDB83287` — Castellón/Castelló, Mortalidad, Tasa de mortalidad fetal tardía, Total, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB83286` — Castellón/Castelló, Mortalidad, Tasa de mortalidad fetal tardía, Varones, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB82423` — Castellón/Castelló, Mortalidad, Tasa de mortalidad infantil neonatal, Total, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB82422` — Castellón/Castelló, Mortalidad, Tasa de mortalidad infantil neonatal, Varones, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB82855` — Castellón/Castelló, Mortalidad, Tasa de mortalidad infantil neonatal tardía, Total, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB82854` — Castellón/Castelló, Mortalidad, Tasa de mortalidad infantil neonatal tardía, Varones, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB82639` — Castellón/Castelló, Mortalidad, Tasa de mortalidad infantil neonatal temprana, Total, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB82638` — Castellón/Castelló, Mortalidad, Tasa de mortalidad infantil neonatal temprana, Varones, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB83071` — Castellón/Castelló, Mortalidad, Tasa de mortalidad infantil postneonatal, Total, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB83070` — Castellón/Castelló, Mortalidad, Tasa de mortalidad infantil postneonatal, Varones, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB83503` — Castellón/Castelló, Mortalidad, Tasa de mortalidad perinatal, Total, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB83502` — Castellón/Castelló, Mortalidad, Tasa de mortalidad perinatal, Varones, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB85429` — Castellón/Castelló, Mortalidad, Tasas de mortalidad, Mujeres, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB85430` — Castellón/Castelló, Mortalidad, Tasas de mortalidad, Varones, Todas las edades, Anual, Dato base, Total, No considerado
+- `IDB55896` — Mortalidad. Castellón/Castelló. Varones.
+- `IDB83721` — Castellón/Castelló, Mortalidad, Fallecidos menores de 1 año, Varones, Todas las edades, Anual, Porcentaje, Total, Fallecidos totales
+- `IDB79153` — Nupcialidad. Castellón/Castelló.
+- `IDB86650` — Castellón/Castelló. Mujeres. 55 y más años. Anual. Dato base. Ambas nacionalidades. Nupcialidad. Tasa de nupcialidad, casados.
+- `IDB86968` — Castellón/Castelló. Mujeres. 55 y más años. Anual. Dato base. Ambas nacionalidades. Nupcialidad. Tasa de primo-nupcialidad.
+- `IDB665` — Nupcialidad. Castellón/Castelló. Varones.
+- `IDB349054` — De 1 año. Proporción de divorcios. Divorcios. Dato base. Castellón/Castelló.
+- `IDB349180` — Castellón/Castelló. Mujeres. Tasa de Divorcialidad. Divorcios. Dato base.
+
+## MNPN
+
+Series: 10000 · conceptos distintos: 1408
+
+- `MNP78099483` — Castellón/Castelló. Alemania. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099502` — Castellón/Castelló. Alemania. Bulgaria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099507` — Castellón/Castelló. Alemania. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099505` — Castellón/Castelló. Alemania. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493225` — Castellón/Castelló. Alemania. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099496` — Castellón/Castelló. Alemania. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099486` — Castellón/Castelló. Alemania. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099468` — Castellón/Castelló. Alemania. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518237` — Castellón/Castelló. América del Norte. De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518232` — Castellón/Castelló. América del Norte. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518240` — Castellón/Castelló. América del Norte. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518253` — Castellón/Castelló. Extranjera. América del Norte. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098874` — Castellón/Castelló. Argelia. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098839` — Castellón/Castelló. Argelia. Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098847` — Castellón/Castelló. Argelia. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493211` — Castellón/Castelló. Argelia. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098866` — Castellón/Castelló. Argelia. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098861` — Castellón/Castelló. Argelia. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098664` — Castellón/Castelló. Argentina. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098643` — Castellón/Castelló. Argentina. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098630` — Castellón/Castelló. Argentina. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098640` — Castellón/Castelló. Argentina. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099652` — Castellón/Castelló. Total. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493206` — Castellón/Castelló. Argentina. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098657` — Castellón/Castelló. Argentina. Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098635` — Castellón/Castelló. Argentina. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098627` — Castellón/Castelló. Argentina. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098634` — Castellón/Castelló. Argentina. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099437` — Castellón/Castelló. Bélgica. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099458` — Castellón/Castelló. Bélgica. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099433` — Castellón/Castelló. Bélgica. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099450` — Castellón/Castelló. Bélgica. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098580` — Castellón/Castelló. Bolivia. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098559` — Castellón/Castelló. Bolivia. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098557` — Castellón/Castelló. Bolivia. Chile. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098556` — Castellón/Castelló. Bolivia. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098566` — Castellón/Castelló. Bolivia. De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098547` — Castellón/Castelló. Bolivia. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098583` — Castellón/Castelló. Bolivia. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098581` — Castellón/Castelló. Bolivia. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098576` — Castellón/Castelló. Bolivia. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099650` — Castellón/Castelló. Total. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098571` — Castellón/Castelló. Bolivia. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098551` — Castellón/Castelló. Bolivia. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098621` — Castellón/Castelló. Brasil. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098601` — Castellón/Castelló. Brasil. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098617` — Castellón/Castelló. Brasil. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099567` — Castellón/Castelló. Extranjera. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493205` — Castellón/Castelló. Brasil. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098615` — Castellón/Castelló. Brasil. Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098590` — Castellón/Castelló. Brasil. Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098586` — Castellón/Castelló. Brasil. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099398` — Castellón/Castelló. Bulgaria. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099406` — Castellón/Castelló. Bulgaria. De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099394` — Castellón/Castelló. Bulgaria. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099423` — Castellón/Castelló. Bulgaria. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099421` — Castellón/Castelló. Bulgaria. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099417` — Castellón/Castelló. Bulgaria. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099422` — Castellón/Castelló. Bulgaria. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493224` — Castellón/Castelló. Bulgaria. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099412` — Castellón/Castelló. Bulgaria. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099383` — Castellón/Castelló. Bulgaria. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099408` — Castellón/Castelló. Bulgaria. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099390` — Castellón/Castelló. Bulgaria. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099389` — Castellón/Castelló. Bulgaria. Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518221` — Castellón/Castelló. Centro América y Caribe. Sudamérica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098517` — Castellón/Castelló. Chile. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098514` — Castellón/Castelló. Chile. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098519` — Castellón/Castelló. Chile. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098520` — Castellón/Castelló. Chile. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098508` — Castellón/Castelló. Chile. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098507` — Castellón/Castelló. Chile. Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098053` — Castellón/Castelló. China. Chile. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098042` — Castellón/Castelló. China. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098072` — Castellón/Castelló. China. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098044` — Castellón/Castelló. China. Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098064` — Castellón/Castelló. China. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098046` — Castellón/Castelló. China. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098476` — Castellón/Castelló. Colombia. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098470` — Castellón/Castelló. Colombia. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098480` — Castellón/Castelló. Colombia. Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098469` — Castellón/Castelló. Colombia. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493202` — Castellón/Castelló. Colombia. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098489` — Castellón/Castelló. Colombia. Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098488` — Castellón/Castelló. Colombia. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098464` — Castellón/Castelló. Colombia. Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098483` — Castellón/Castelló. Colombia. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098459` — Castellón/Castelló. Colombia. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098454` — Castellón/Castelló. Cuba. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098434` — Castellón/Castelló. Cuba. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098430` — Castellón/Castelló. Cuba. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098440` — Castellón/Castelló. Cuba. De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098421` — Castellón/Castelló. Cuba. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098428` — Castellón/Castelló. Cuba. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098436` — Castellón/Castelló. Cuba. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098422` — Castellón/Castelló. Cuba. Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098418` — Castellón/Castelló. Cuba. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098897` — Castellón/Castelló. De Africa. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098883` — Castellón/Castelló. De Africa. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419786` — Castellón/Castelló. De Africa. De Asia. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78419788` — Castellón/Castelló. De Africa. De Centro América y Caribe. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78419787` — Castellón/Castelló. De Africa. De Sudamérica. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098912` — Castellón/Castelló. De Africa. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098900` — Castellón/Castelló. De Africa. Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098920` — Castellón/Castelló. De Africa. Total. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419827` — Castellón/Castelló. Extranjera. De Africa. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451939` — Castellón/Castelló. Extranjera. De Africa. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78098889` — Castellón/Castelló. De Africa. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419793` — Castellón/Castelló. De Africa. País de la UE28 sin España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098888` — Castellón/Castelló. De Africa. Perú. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098907` — Castellón/Castelló. De Africa. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098887` — Castellón/Castelló. De Africa. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098905` — Castellón/Castelló. De Africa. Rusia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518245` — Castellón/Castelló. De Africa. Sudamérica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098684` — Castellón/Castelló. De América. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098685` — Castellón/Castelló. De América. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098687` — Castellón/Castelló. De América. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419775` — Castellón/Castelló. De América. De Sudamérica. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098707` — Castellón/Castelló. De América. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098701` — Castellón/Castelló. De América. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419826` — Castellón/Castelló. Extranjera. De América. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451938` — Castellón/Castelló. Extranjera. De América. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419777` — Castellón/Castelló. De América. País de América del Norte. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098697` — Castellón/Castelló. De América. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098670` — Castellón/Castelló. De América. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419773` — Castellón/Castelló. De América. Resto de países. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80518242` — Castellón/Castelló. De América. Sudamérica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098675` — Castellón/Castelló. De América. Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419766` — Castellón/Castelló. De América del Norte. De América. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78419762` — Castellón/Castelló. De América del Norte. De Asia. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80644991` — Castellón/Castelló. De América del Norte. Europa (sin España). Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78419772` — Castellón/Castelló. De América del Norte. Total. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451882` — Castellón/Castelló. De América del Norte. Extranjera. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451877` — Castellón/Castelló. De América del Norte. País de América del Norte. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451880` — Castellón/Castelló. De América del Norte. País de Europa menos UE28. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78098103` — Castellón/Castelló. De Asia. Argelia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098117` — Castellón/Castelló. De Asia. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098097` — Castellón/Castelló. De Asia. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518204` — Castellón/Castelló. De Asia. Centro América y Caribe. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098084` — Castellón/Castelló. De Asia. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098094` — Castellón/Castelló. De Asia. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098099` — Castellón/Castelló. De Asia. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78451838` — Castellón/Castelló. De Asia. De Asia. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451840` — Castellón/Castelló. De Asia. De Centro América y Caribe. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78098092` — Castellón/Castelló. De Asia. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78451847` — Castellón/Castelló. De Asia. España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78098119` — Castellón/Castelló. De Asia. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80644985` — Castellón/Castelló. De Asia. Europa (sin España). Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80647273` — Castellón/Castelló. De Asia. Europa (sin España). Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78098083` — Castellón/Castelló. De Asia. Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099555` — Castellón/Castelló. Extranjera. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419736` — Castellón/Castelló. De Asia. Total. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80644984` — Castellón/Castelló. De Asia. No consta (extranjera). Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78419732` — Castellón/Castelló. De Asia. País de Europa menos UE28. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098089` — Castellón/Castelló. De Asia. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098081` — Castellón/Castelló. De Asia. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518203` — Castellón/Castelló. De Asia. Sudamérica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78451864` — Castellón/Castelló. De Centro América y Caribe. De Centro América y Caribe. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419760` — Castellón/Castelló. De Centro América y Caribe. Total. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451960` — Castellón/Castelló. Total. De Centro América y Caribe. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451868` — Castellón/Castelló. De Centro América y Caribe. País de Europa menos UE28. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419743` — Castellón/Castelló. De Sudamérica. De Africa. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78419739` — Castellón/Castelló. De Sudamérica. De Sudamérica. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451959` — Castellón/Castelló. Total. De Sudamérica. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419741` — Castellón/Castelló. De Sudamérica. País de América del Norte. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451857` — Castellón/Castelló. De Sudamérica. País de la UE28 sin España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419737` — Castellón/Castelló. De Sudamérica. Resto de países. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098392` — Castellón/Castelló. Ecuador. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098415` — Castellón/Castelló. Ecuador. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098413` — Castellón/Castelló. Ecuador. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098409` — Castellón/Castelló. Ecuador. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098407` — Castellón/Castelló. Ecuador. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493200` — Castellón/Castelló. Ecuador. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098403` — Castellón/Castelló. Ecuador. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098383` — Castellón/Castelló. Ecuador. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098382` — Castellón/Castelló. Ecuador. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099608` — Castellón/Castelló. España. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78451950` — Castellón/Castelló. España. De América. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419836` — Castellón/Castelló. España. De Centro América y Caribe. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78099604` — Castellón/Castelló. España. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419843` — Castellón/Castelló. España. España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451955` — Castellón/Castelló. España. España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78099626` — Castellón/Castelló. España. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099625` — Castellón/Castelló. España. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099591` — Castellón/Castelló. Extranjera. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493228` — Castellón/Castelló. España. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80647298` — Castellón/Castelló. España. No consta (extranjera). Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451953` — Castellón/Castelló. España. País de la UE28 sin España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78099622` — Castellón/Castelló. España. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099601` — Castellón/Castelló. España. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099612` — Castellón/Castelló. España. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099618` — Castellón/Castelló. España. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518249` — Castellón/Castelló. Europa (sin España). Centro América y Caribe. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099512` — Castellón/Castelló. Europa (sin España). China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099522` — Castellón/Castelló. Europa (sin España). Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099521` — Castellón/Castelló. Europa (sin España). Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099527` — Castellón/Castelló. Europa (sin España). De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80647286` — Castellón/Castelló. Europa (sin España). De Asia. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP80645000` — Castellón/Castelló. Europa (sin España). De Centro América y Caribe. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80644999` — Castellón/Castelló. Europa (sin España). De Sudamérica. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80645006` — Castellón/Castelló. Europa (sin España). España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80645004` — Castellón/Castelló. Europa (sin España). Europa (sin España). Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78099541` — Castellón/Castelló. Europa (sin España). Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099530` — Castellón/Castelló. Europa (sin España). Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099550` — Castellón/Castelló. Europa (sin España). Total. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80644996` — Castellón/Castelló. Europa (sin España). No consta (extranjera). Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80645001` — Castellón/Castelló. Europa (sin España). País de América del Norte. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80647289` — Castellón/Castelló. Europa (sin España). País de América del Norte. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78099540` — Castellón/Castelló. Europa (sin España). Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099539` — Castellón/Castelló. Europa (sin España). Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099517` — Castellón/Castelló. Europa (sin España). República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099528` — Castellón/Castelló. Europa (sin España). Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099514` — Castellón/Castelló. Europa (sin España). Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80644997` — Castellón/Castelló. Europa (sin España). Resto de países. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098033` — Castellón/Castelló. Filipinas. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098013` — Castellón/Castelló. Filipinas. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098010` — Castellón/Castelló. Filipinas. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098015` — Castellón/Castelló. Filipinas. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098035` — Castellón/Castelló. Filipinas. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098031` — Castellón/Castelló. Filipinas. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098030` — Castellón/Castelló. Filipinas. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099637` — Castellón/Castelló. Total. Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098007` — Castellón/Castelló. Filipinas. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098028` — Castellón/Castelló. Filipinas. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098026` — Castellón/Castelló. Filipinas. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098025` — Castellón/Castelló. Filipinas. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098004` — Castellón/Castelló. Filipinas. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099344` — Castellón/Castelló. Francia. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099353` — Castellón/Castelló. Francia. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099379` — Castellón/Castelló. Francia. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099343` — Castellón/Castelló. Francia. Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099380` — Castellón/Castelló. Francia. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099361` — Castellón/Castelló. Francia. Nigeria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099371` — Castellón/Castelló. Francia. Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099369` — Castellón/Castelló. Francia. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099360` — Castellón/Castelló. Francia. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099341` — Castellón/Castelló. Francia. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099367` — Castellón/Castelló. Francia. Rusia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099316` — Castellón/Castelló. Irlanda. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099335` — Castellón/Castelló. Irlanda. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099314` — Castellón/Castelló. Irlanda. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099312` — Castellón/Castelló. Irlanda. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099303` — Castellón/Castelló. Irlanda. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099339` — Castellón/Castelló. Irlanda. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099584` — Castellón/Castelló. Extranjera. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099330` — Castellón/Castelló. Irlanda. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099328` — Castellón/Castelló. Irlanda. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099326` — Castellón/Castelló. Irlanda. Rumanía. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099324` — Castellón/Castelló. Irlanda. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099305` — Castellón/Castelló. Irlanda. Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099273` — Castellón/Castelló. Italia. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099269` — Castellón/Castelló. Italia. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099268` — Castellón/Castelló. Italia. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099259` — Castellón/Castelló. Italia. Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099289` — Castellón/Castelló. Italia. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099278` — Castellón/Castelló. Italia. Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099265` — Castellón/Castelló. Italia. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099264` — Castellón/Castelló. Italia. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP77844100` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 54 años. Hombres. Total.
+- `MNP78188151` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Extranjera. África.
+- `MNP78187529` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Brasil.
+- `MNP78187548` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Bulgaria.
+- `MNP78187526` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Colombia.
+- `MNP82962136` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Europa menos UE28.
+- `MNP78187546` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Irlanda.
+- `MNP78187543` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Polonia.
+- `MNP78187521` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. República Dominicana.
+- `MNP78187532` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Resto de África.
+- `MNP82962137` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. UE28 sin España.
+- `MNP78187520` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Uruguay.
+- `MNP78188086` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Total.
+- `MNP78188069` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. África.
+- `MNP78188068` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Argelia.
+- `MNP78188063` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Argentina.
+- `MNP78188062` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Brasil.
+- `MNP78188060` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Chile.
+- `MNP78188085` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. España.
+- `MNP78188066` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Nigeria.
+- `MNP82999356` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. No consta.
+- `MNP78188065` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Resto de África.
+- `MNP78188070` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Resto de Europa.
+- `MNP78188071` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Ucrania.
+- `MNP78187344` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Alemania.
+- `MNP78187326` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. América.
+- `MNP78187323` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Bolivia.
+- `MNP78187324` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Brasil.
+- `MNP78187343` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Bulgaria.
+- `MNP78187320` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Cuba.
+- `MNP78187342` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Francia.
+- `MNP78187318` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. México.
+- `MNP78187328` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Nigeria.
+- `MNP78187339` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Países Bajos.
+- `MNP78187327` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Resto de África.
+- `MNP78187313` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Resto de América.
+- `MNP78187335` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Rumanía.
+- `MNP78187314` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Venezuela.
+- `MNP82962121` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América del Norte. América.
+- `MNP82962119` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América del Norte. Centro América y Caribe.
+- `MNP82962126` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América del Norte. España.
+- `MNP82962123` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América del Norte. Europa menos UE28.
+- `MNP83006462` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América del Norte. No consta.
+- `MNP82962124` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América del Norte. UE28 sin España.
+- `MNP78188232` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Argelia.
+- `MNP78187508` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. Alemania.
+- `MNP78187490` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. América.
+- `MNP78187476` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. Asia.
+- `MNP78187507` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. Bulgaria.
+- `MNP78187475` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. China.
+- `MNP78187483` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. Ecuador.
+- `MNP82999342` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. No consta.
+- `MNP78187501` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. Portugal.
+- `MNP78187498` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. Rusia.
+- `MNP78188145` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Extranjera. Argentina.
+- `MNP78187290` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. África.
+- `MNP78187303` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Alemania.
+- `MNP78187285` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. América.
+- `MNP78187302` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Bulgaria.
+- `MNP78187281` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Chile.
+- `MNP78187280` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Colombia.
+- `MNP78187278` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Ecuador.
+- `MNP78187269` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Filipinas.
+- `MNP78187301` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Francia.
+- `MNP78187299` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Italia.
+- `MNP82987512` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. No consta (Extranjero).
+- `MNP78187291` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Resto de Europa.
+- `MNP77878689` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Mujeres. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria).
+- `MNP80674839` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria). Directores y gerentes.
+- `MNP80674838` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria). Técnicos y profesionales científicos e intelectuales.
+- `MNP78186772` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Extranjera.
+- `MNP82962089` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. América del Norte.
+- `MNP78186738` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Asia.
+- `MNP82962090` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Europa menos UE28.
+- `MNP78186736` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Filipinas.
+- `MNP82999324` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. No consta.
+- `MNP78186765` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Países Bajos.
+- `MNP78186743` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Perú.
+- `MNP78186753` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Resto de África.
+- `MNP78186739` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Resto de América.
+- `MNP78186741` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Uruguay.
+- `MNP82999335` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bolivia. No consta.
+- `MNP78187194` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bolivia. Perú.
+- `MNP78187204` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bolivia. Resto de África.
+- `MNP78187190` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bolivia. Resto de América.
+- `MNP78188226` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Brasil.
+- `MNP78187230` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Asia.
+- `MNP78187261` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Bulgaria.
+- `MNP78187229` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. China.
+- `MNP78187228` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Filipinas.
+- `MNP78187258` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Italia.
+- `MNP78187236` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. México.
+- `MNP78187246` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Nigeria.
+- `MNP78187235` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Perú.
+- `MNP78187256` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Polonia.
+- `MNP78187245` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Resto de África.
+- `MNP78187253` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Rumanía.
+- `MNP78187251` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Ucrania.
+- `MNP78188027` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Argelia.
+- `MNP78188009` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Asia.
+- `MNP78188018` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Colombia.
+- `MNP78188038` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Irlanda.
+- `MNP82999355` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. No consta.
+- `MNP78188014` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Perú.
+- `MNP78188034` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Portugal.
+- `MNP78188024` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Resto de África.
+- `MNP78188031` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Rusia.
+- `MNP78188030` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Ucrania.
+- `MNP82962109` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Centro América y Caribe. América.
+- `MNP82962108` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Centro América y Caribe. América del Norte.
+- `MNP78188224` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Chile.
+- `MNP78187156` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Cuba.
+- `MNP78187176` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Italia.
+- `MNP82987509` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. No consta (Extranjero).
+- `MNP78187174` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Polonia.
+- `MNP78187168` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Resto de Europa.
+- `MNP78187171` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Rumanía.
+- `MNP78187169` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Ucrania.
+- `MNP78187151` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Uruguay.
+- `MNP78186731` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. Extranjera.
+- `MNP78186707` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. Chile.
+- `MNP78186706` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. Colombia.
+- `MNP78186704` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. Ecuador.
+- `MNP78186703` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. México.
+- `MNP78186694` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. Resto de Asia.
+- `MNP78186720` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. Rumanía.
+- `MNP78187143` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Total.
+- `MNP78187121` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. América.
+- `MNP78187125` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Argelia.
+- `MNP78187107` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Asia.
+- `MNP78187119` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Brasil.
+- `MNP78187114` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Ecuador.
+- `MNP78187142` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. España.
+- `MNP78187136` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Irlanda.
+- `MNP78187113` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. México.
+- `MNP78187123` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Nigeria.
+- `MNP82987508` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. No consta (Extranjero).
+- `MNP78187133` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Polonia.
+- `MNP78187131` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Reino Unido.
+- `MNP78187127` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Resto de Europa.
+- `MNP78187130` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Rumanía.
+- `MNP78187110` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Uruguay.
+- `MNP78187085` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. África.
+- `MNP78187066` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Asia.
+- `MNP78187076` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Chile.
+- `MNP78187065` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. China.
+- `MNP78187073` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Ecuador.
+- `MNP78187101` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. España.
+- `MNP78187099` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Europa (sin España).
+- `MNP78187093` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Países Bajos.
+- `MNP78187071` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Perú.
+- `MNP78187092` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Polonia.
+- `MNP78187090` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Reino Unido.
+- `MNP78187081` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Resto de África.
+- `MNP78187088` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Rusia.
+- `MNP78479192` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De Africa. Hombres. Total.
+- `MNP78479184` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De América. Hombres. Total.
+- `MNP77878683` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 15 a 19 años. Hombres. Directores y gerentes.
+- `MNP80674911` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Directores y gerentes. Directores y gerentes.
+- `MNP80674903` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Directores y gerentes. Ocupaciones elementales.
+- `MNP80674910` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Directores y gerentes. Técnicos y profesionales científicos e intelectuales.
+- `MNP77844349` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 22 años. Mujeres. Divorciados/Divorciadas.
+- `MNP80723826` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Doctorado universitario. Total.
+- `MNP80723819` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Doctorado universitario. Educación postsecundaria no superior.
+- `MNP80723823` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Doctorado universitario. Educación primaria.
+- `MNP78187044` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. África.
+- `MNP78187043` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Argelia.
+- `MNP78187056` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Bulgaria.
+- `MNP78187034` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Colombia.
+- `MNP78187033` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Cuba.
+- `MNP78187060` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. España.
+- `MNP78187023` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Filipinas.
+- `MNP82987506` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. No consta (Extranjero).
+- `MNP78187052` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Países Bajos.
+- `MNP78187021` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Resto de países.
+- `MNP78187048` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Rumanía.
+- `MNP78187046` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Ucrania.
+- `MNP78187028` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Uruguay.
+- `MNP78187027` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Venezuela.
+- `MNP77942028` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 55 a 59 años. Mujeres. Educación postsecundaria no superior.
+- `MNP80723890` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Educación postsecundaria no superior. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP77942283` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Mujeres. Educación primaria.
+- `MNP80723946` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Educación primaria. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP80723951` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Educación primaria. Sin estudios.
+- `MNP77878608` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 30 a 34 años. Hombres. Empleados contables, administrativos y otros empleados de oficina.
+- `MNP77942251` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 15 a 19 años. Mujeres. Enseñanzas de formación profesional, artes plásticas y diseño y deportivas de grado superior y equivalentes; títulos propios universitarios que precisan del título de bachiller, de duración igual o superior a 2 años.
+- `MNP78188205` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Alemania.
+- `MNP78188173` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Asia.
+- `MNP78188183` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Chile.
+- `MNP78188208` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. España.
+- `MNP78188206` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Europa (sin España).
+- `MNP78188200` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Países Bajos.
+- `MNP78188199` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Polonia.
+- `MNP78188174` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Resto de América.
+- `MNP78188195` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Rusia.
+- `MNP82962167` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Sudamérica.
+- `MNP82962171` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. UE28 sin España.
+- `MNP80729452` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Estudiante.
+- `MNP77942298` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Hombres. Estudios primarios incompletos.
+- `MNP80723954` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Estudios primarios incompletos. Doctorado universitario.
+- `MNP80723959` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Estudios primarios incompletos. Educación postsecundaria no superior.
+- `MNP80723964` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Estudios primarios incompletos. Estudios primarios incompletos.
+- `MNP80723953` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Estudios primarios incompletos. No consta.
+- `MNP80723962` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Estudios primarios incompletos. Primera etapa de Educación Secundaria y similar.
+- `MNP80723965` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Estudios primarios incompletos. Sin estudios.
+- `MNP78188110` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). África.
+- `MNP78188105` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). América.
+- `MNP83072941` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Centro América y Caribe.
+- `MNP78188098` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Ecuador.
+- `MNP82996635` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). No consta.
+- `MNP78188092` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Resto de América.
+- `MNP78188088` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Resto de Asia.
+- `MNP78188111` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Resto de Europa.
+- `MNP78188114` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Rumanía.
+- `MNP78188094` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Uruguay.
+- `MNP78188093` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Venezuela.
+- `MNP82962138` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa menos UE28. Resto de países.
+- `MNP78186663` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. Ecuador.
+- `MNP78186691` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. España.
+- `MNP78186686` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. Francia.
+- `MNP78186673` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. Marruecos.
+- `MNP78186681` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. Portugal.
+- `MNP78186671` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. Resto de África.
+- `MNP78186652` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. Resto de países.
+- `MNP78188004` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Total.
+- `MNP78187987` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. África.
+- `MNP78188000` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Alemania.
+- `MNP78187982` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. América.
+- `MNP78187967` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. China.
+- `MNP78188003` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. España.
+- `MNP78188001` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Europa (sin España).
+- `MNP78187966` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Filipinas.
+- `MNP78187998` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Francia.
+- `MNP78187996` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Italia.
+- `MNP78187995` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Países Bajos.
+- `MNP78187994` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Polonia.
+- `MNP78187992` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Reino Unido.
+- `MNP78187991` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Rumanía.
+- `MNP78187970` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Venezuela.
+- `MNP80723984` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Grados universitarios de más de 240 créditos ECTS, licenciados y equivalentes.
+- `MNP78001073` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 25 a 29 años. Hombres. Invalidez permanente.
+- `MNP80729431` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Invalidez permanente. Invalidez permanente.
+- `MNP80729429` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Invalidez permanente. Otra situación de inactividad.
+- `MNP78187961` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Extranjera.
+- `MNP78187946` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. África.
+- `MNP78187959` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Alemania.
+- `MNP78187941` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. América.
+- `MNP78187940` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Argentina.
+- `MNP78187939` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Brasil.
+- `MNP78187937` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Chile.
+- `MNP78187936` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Colombia.
+- `MNP78187962` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. España.
+- `MNP78187933` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. México.
+- `MNP78187932` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Perú.
+- `MNP78187928` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Resto de América.
+- `MNP78187930` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Uruguay.
+- `MNP78187905` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. África.
+- `MNP78187899` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Argentina.
+- `MNP78187894` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Cuba.
+- `MNP78187884` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Filipinas.
+- `MNP78187915` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Irlanda.
+- `MNP78187914` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Italia.
+- `MNP78187913` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Países Bajos.
+- `MNP78187890` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. República Dominicana.
+- `MNP78187887` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Resto de América.
+- `MNP78187909` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Rumanía.
+- `MNP78187471` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Marruecos. Total.
+- `MNP78187449` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Marruecos. América.
+- `MNP78187465` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Marruecos. Francia.
+- `MNP78187463` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Marruecos. Italia.
+- `MNP78187437` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Marruecos. Venezuela.
+- `MNP77942276` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Mujeres. Másteres, especialidades en Ciencias de la Salud por el sistema de residencia y similares.
+- `MNP80582061` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Hombres. Matrimonios civiles.
+- `MNP80582034` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 40 a 44 años. Mujeres. Matrimonios religiosos.
+- `MNP78187020` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Total.
+- `MNP78186984` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Asia.
+- `MNP78186995` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Bolivia.
+- `MNP78186994` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Chile.
+- `MNP78187014` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Francia.
+- `MNP78186990` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. México.
+- `MNP78187011` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Países Bajos.
+- `MNP78187009` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Portugal.
+- `MNP78187430` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Total.
+- `MNP78187429` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. España.
+- `MNP78187421` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Países Bajos.
+- `MNP78187419` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Portugal.
+- `MNP78187418` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Reino Unido.
+- `MNP78187395` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Resto de América.
+- `MNP78187391` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Resto de Asia.
+- `MNP78187397` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Uruguay.
+- `MNP82999357` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Extranjera. No consta.
+- `MNP83004507` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. América del Norte.
+- `MNP82996568` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Brasil.
+- `MNP82996564` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Cuba.
+- `MNP80729399` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Invalidez permanente.
+- `MNP82996585` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Irlanda.
+- `MNP80729395` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. No consta.
+- `MNP82996551` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. No consta (Extranjero).
+- `MNP80729401` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Ocupado/a.
+- `MNP80729397` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Otra situación de inactividad.
+- `MNP82996580` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Reino Unido.
+- `MNP82996576` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Resto de Europa.
+- `MNP82996579` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Rumanía.
+- `MNP80723806` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP82996558` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Venezuela.
+- `MNP82996632` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Extranjera.
+- `MNP82996612` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). América.
+- `MNP82996616` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Argelia.
+- `MNP82996611` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Argentina.
+- `MNP82996609` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Bolivia.
+- `MNP82996629` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Bulgaria.
+- `MNP82996608` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Chile.
+- `MNP82996602` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). República Dominicana.
+- `MNP82996599` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Resto de América.
+- `MNP82996595` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Resto de Asia.
+- `MNP82996594` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Resto de países.
+- `MNP82996621` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Rumanía.
+- `MNP82996620` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Rusia.
+- `MNP80674792` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta ocupados. Total.
+- `MNP80674781` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta ocupados. No consta ocupados.
+- `MNP80674816` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones elementales. Total.
+- `MNP80674805` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones elementales. No consta ocupados.
+- `MNP82834626` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones elementales. Otras situaciones.
+- `MNP80674804` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones militares. Total.
+- `MNP80674793` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones militares. No consta ocupados.
+- `MNP80674794` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones militares. Ocupaciones militares.
+- `MNP80674801` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones militares. Técnicos; profesionales de apoyo.
+- `MNP80729457` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Ocupado/a.
+- `MNP80674916` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Operadores de instalaciones y maquinaria, y montadores.
+- `MNP78001015` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 40 a 44 años. Mujeres. Otra situación de inactividad.
+- `MNP80729415` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Otra situación de inactividad. Invalidez permanente.
+- `MNP80729417` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Otra situación de inactividad. Ocupado/a.
+- `MNP80729416` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Otra situación de inactividad. Parado/a.
+- `MNP82834665` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Otras situaciones. Ocupaciones elementales.
+- `MNP78187877` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Alemania.
+- `MNP78187858` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Argentina.
+- `MNP78187845` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Asia.
+- `MNP78187856` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Bolivia.
+- `MNP78187857` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Brasil.
+- `MNP78187843` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Filipinas.
+- `MNP78187874` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Irlanda.
+- `MNP78187873` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Italia.
+- `MNP78187849` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. República Dominicana.
+- `MNP78187860` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Resto de África.
+- `MNP78187846` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Resto de América.
+- `MNP78187865` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Resto de Europa.
+- `MNP78187868` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Rumanía.
+- `MNP78187867` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Rusia.
+- `MNP78001018` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 40 a 44 años. Mujeres. Parado/a.
+- `MNP80729426` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Pensionista de jubilación o prejubilación. Total.
+- `MNP80729419` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Pensionista de jubilación o prejubilación. No consta.
+- `MNP80729425` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Pensionista de jubilación o prejubilación. Ocupado/a.
+- `MNP80729422` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Pensionista de jubilación o prejubilación. Pensionista de jubilación o prejubilación.
+- `MNP78186942` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. China.
+- `MNP78186952` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. Colombia.
+- `MNP78186978` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. España.
+- `MNP78186941` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. Filipinas.
+- `MNP78186970` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. Países Bajos.
+- `MNP78186947` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. República Dominicana.
+- `MNP78186958` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. Resto de África.
+- `MNP78186939` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. Resto de países.
+- `MNP78186946` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. Uruguay.
+- `MNP78187822` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. Argelia.
+- `MNP78187810` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. México.
+- `MNP82999350` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. No consta.
+- `MNP82987525` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. No consta (Extranjero).
+- `MNP78187809` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. Perú.
+- `MNP78187800` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. Resto de países.
+- `MNP78187827` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. Rumanía.
+- `MNP78187799` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Total.
+- `MNP78187763` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Asia.
+- `MNP78187774` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Bolivia.
+- `MNP78187775` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Brasil.
+- `MNP78187762` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. China.
+- `MNP78187770` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Ecuador.
+- `MNP78187796` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Europa (sin España).
+- `MNP78187791` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Italia.
+- `MNP78187769` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. México.
+- `MNP82999349` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. No consta.
+- `MNP78187768` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Perú.
+- `MNP78187788` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Portugal.
+- `MNP78187784` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Ucrania.
+- `MNP77942114` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 40 a 44 años. Mujeres. Primera etapa de Educación Secundaria y similar.
+- `MNP80723931` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Primera etapa de Educación Secundaria y similar. Educación postsecundaria no superior.
+- `MNP80723925` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Primera etapa de Educación Secundaria y similar. No consta.
+- `MNP78187756` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Extranjera.
+- `MNP78187732` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Chile.
+- `MNP78187738` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Nigeria.
+- `MNP82987523` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. No consta (Extranjero).
+- `MNP78187749` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Países Bajos.
+- `MNP78187727` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Perú.
+- `MNP78187719` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Resto de Asia.
+- `MNP78187718` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Resto de países.
+- `MNP78187724` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Venezuela.
+- `MNP78186938` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Total.
+- `MNP78186934` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Alemania.
+- `MNP78186911` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Colombia.
+- `MNP78186935` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Europa (sin España).
+- `MNP78186930` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Italia.
+- `MNP78186908` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. México.
+- `MNP78186929` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Países Bajos.
+- `MNP78186903` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Resto de América.
+- `MNP78186922` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Resto de Europa.
+- `MNP78186905` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Uruguay.
+- `MNP78186904` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Venezuela.
+- `MNP78187387` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de África. Extranjera.
+- `MNP78187363` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de África. Chile.
+- `MNP78187359` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de África. México.
+- `MNP78187355` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de África. Venezuela.
+- `MNP78186813` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. Extranjera.
+- `MNP78186798` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. África.
+- `MNP78186797` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. Argelia.
+- `MNP78186814` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. España.
+- `MNP78186808` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. Irlanda.
+- `MNP82987500` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. No consta (Extranjero).
+- `MNP78186780` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. Resto de América.
+- `MNP78186775` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. Resto de países.
+- `MNP78186802` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. Rumanía.
+- `MNP78188211` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Resto de Asia.
+- `MNP78186628` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Argentina.
+- `MNP78186615` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Asia.
+- `MNP78186625` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Chile.
+- `MNP78186614` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. China.
+- `MNP78186624` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Colombia.
+- `MNP78186648` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Europa (sin España).
+- `MNP78186613` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Filipinas.
+- `MNP78186644` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Irlanda.
+- `MNP78186632` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Marruecos.
+- `MNP82999321` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. No consta.
+- `MNP78186642` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Países Bajos.
+- `MNP78186640` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Portugal.
+- `MNP78186637` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Rusia.
+- `MNP78187594` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Total.
+- `MNP78187577` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. África.
+- `MNP78187590` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Alemania.
+- `MNP78187558` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Asia.
+- `MNP78187569` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Bolivia.
+- `MNP78187570` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Brasil.
+- `MNP78187589` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Bulgaria.
+- `MNP78187565` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Ecuador.
+- `MNP78187587` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Irlanda.
+- `MNP78187575` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Marruecos.
+- `MNP78187562` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. República Dominicana.
+- `MNP78186608` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Extranjera.
+- `MNP78186606` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Alemania.
+- `MNP78186586` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Brasil.
+- `MNP78186584` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Chile.
+- `MNP78186609` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. España.
+- `MNP82962085` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Europa menos UE28.
+- `MNP78186604` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Francia.
+- `MNP78186603` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Irlanda.
+- `MNP78186570` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Resto de países.
+- `MNP78186597` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Rumanía.
+- `MNP78186577` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Uruguay.
+- `MNP78187716` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rumanía. España.
+- `MNP78187714` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rumanía. Europa (sin España).
+- `MNP78187697` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rumanía. Nigeria.
+- `MNP82987522` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rumanía. No consta (Extranjero).
+- `MNP78187705` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rumanía. Reino Unido.
+- `MNP78187659` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. África.
+- `MNP78187651` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. Bolivia.
+- `MNP78187638` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. Filipinas.
+- `MNP78187670` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. Francia.
+- `MNP82999346` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. No consta.
+- `MNP78187666` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. Polonia.
+- `MNP78187655` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. Resto de África.
+- `MNP78187662` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. Rusia.
+- `MNP77942295` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Hombres. Segunda etapa de educación secundaria, con orientación general.
+- `MNP77942231` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 20 a 24 años. Hombres. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP80723980` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Sin estudios. Total.
+- `MNP80723978` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Sin estudios. Estudios primarios incompletos.
+- `MNP77844311` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 27 años. Mujeres. Solteros/Solteras.
+- `MNP82962103` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Sudamérica. Total.
+- `MNP82962097` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Sudamérica. América.
+- `MNP82962093` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Sudamérica. Asia.
+- `MNP82962102` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Sudamérica. España.
+- `MNP77878706` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Hombres. Técnicos y profesionales científicos e intelectuales.
+- `MNP82834528` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos y profesionales científicos e intelectuales. Otras situaciones.
+- `MNP82834529` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos y profesionales científicos e intelectuales. Total ocupados.
+- `MNP77878693` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Mujeres. Técnicos; profesionales de apoyo.
+- `MNP80674887` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos; profesionales de apoyo. Directores y gerentes.
+- `MNP80674879` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos; profesionales de apoyo. Ocupaciones elementales.
+- `MNP82834542` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos; profesionales de apoyo. Otras situaciones.
+- `MNP80674885` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos; profesionales de apoyo. Técnicos; profesionales de apoyo.
+- `MNP82834543` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos; profesionales de apoyo. Total ocupados.
+- `MNP82834671` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total ocupados. Directores y gerentes.
+- `MNP82834681` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total ocupados. No consta ocupados.
+- `MNP78188153` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Extranjera. Ucrania.
+- `MNP78187618` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. África.
+- `MNP78187613` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. América.
+- `MNP78187617` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Argelia.
+- `MNP78187609` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Chile.
+- `MNP78187632` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Europa (sin España).
+- `MNP78187597` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Filipinas.
+- `MNP82987520` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. No consta (Extranjero).
+- `MNP78187625` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Polonia.
+- `MNP78187600` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Resto de América.
+- `MNP78187619` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Resto de Europa.
+- `MNP82962161` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. UE28 sin España. Total.
+- `MNP82962155` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. UE28 sin España. América.
+- `MNP82962151` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. UE28 sin España. Asia.
+- `MNP82990253` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. UE28 sin España. No consta (Extranjero).
+- `MNP78188217` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Uruguay.
+- `MNP78186880` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. África.
+- `MNP78186874` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Argentina.
+- `MNP78186861` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Asia.
+- `MNP78186873` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Brasil.
+- `MNP78186892` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Bulgaria.
+- `MNP78186860` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. China.
+- `MNP78186870` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Colombia.
+- `MNP78186896` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. España.
+- `MNP78186894` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Europa (sin España).
+- `MNP78186891` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Francia.
+- `MNP78186890` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Irlanda.
+- `MNP78186867` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. México.
+- `MNP82987502` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. No consta (Extranjero).
+- `MNP78186888` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Países Bajos.
+- `MNP78186866` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Perú.
+- `MNP78186865` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. República Dominicana.
+- `MNP78186876` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Resto de África.
+- `MNP78186858` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Resto de Asia.
+- `MNP78186883` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Rusia.
+- `MNP78186863` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Venezuela.
+- `MNP78186856` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Total.
+- `MNP78186839` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. África.
+- `MNP78186834` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. América.
+- `MNP78186851` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Bulgaria.
+- `MNP78186830` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Chile.
+- `MNP78186829` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Colombia.
+- `MNP78186828` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Cuba.
+- `MNP78186845` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Portugal.
+- `MNP78186821` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Resto de América.
+- `MNP78186816` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Resto de países.
+- `MNP78186841` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Ucrania.
+- `MNP78186823` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Uruguay.
+- `MNP77844122` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 51 años. Hombres. Viudos/Viudas.
+- `MNP78330017` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria). No consta ocupados.
+- `MNP78330100` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Directores y gerentes. Total.
+- `MNP78330091` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Directores y gerentes. Ocupaciones elementales.
+- `MNP78242728` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total. Doctorado universitario.
+- `MNP78242569` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Doctorado universitario. Educación primaria.
+- `MNP78242566` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Doctorado universitario. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP78242639` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Educación postsecundaria no superior. Educación primaria.
+- `MNP78242640` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Educación postsecundaria no superior. Estudios primarios incompletos.
+- `MNP78242691` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Educación primaria. Educación postsecundaria no superior.
+- `MNP78242685` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Educación primaria. No consta.
+- `MNP78330064` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Empleados contables, administrativos y otros empleados de oficina. Total.
+- `MNP78242732` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total. Enseñanzas de formación profesional, artes plásticas y diseño y deportivas de grado superior y equivalentes; títulos propios universitarios que precisan del título de bachiller, de duración igual o superior a 2 años.
+- `MNP78387884` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Estudiante. Pensionista de jubilación o prejubilación.
+- `MNP78242712` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Estudios primarios incompletos. Total.
+- `MNP78387929` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total. No consta.
+- `MNP78387874` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. No consta. Estudiante.
+- `MNP78387877` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. No consta. Invalidez permanente.
+- `MNP78387879` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. No consta. Ocupado/a.
+- `MNP78387876` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. No consta. Pensionista de jubilación o prejubilación.
+- `MNP78329969` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. No consta ocupados. No consta ocupados.
+- `MNP78329978` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. No consta ocupados. Técnicos y profesionales científicos e intelectuales.
+- `MNP78329993` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Ocupaciones elementales. No consta ocupados.
+- `MNP78329994` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Ocupaciones elementales. Ocupaciones militares.
+- `MNP82867358` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Ocupaciones elementales. Otras situaciones.
+- `MNP78330102` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total. Ocupaciones militares.
+- `MNP78387924` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Ocupado/a. Pensionista de jubilación o prejubilación.
+- `MNP78387896` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Otra situación de inactividad. Total.
+- `MNP82867395` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Otras situaciones. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria).
+- `MNP78387917` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Parado/a. Invalidez permanente.
+- `MNP78387913` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Parado/a. No consta.
+- `MNP78387915` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Parado/a. Otra situación de inactividad.
+- `MNP78387898` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Pensionista de jubilación o prejubilación. Estudiante.
+- `MNP78387901` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Pensionista de jubilación o prejubilación. Invalidez permanente.
+- `MNP78242677` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Primera etapa de Educación Secundaria y similar. Educación postsecundaria no superior.
+- `MNP78242678` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Primera etapa de Educación Secundaria y similar. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP78242683` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Primera etapa de Educación Secundaria y similar. Sin estudios.
+- `MNP78242735` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total. Segunda etapa de educación secundaria, con orientación general.
+- `MNP78242649` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Segunda etapa de educación secundaria con orientación profesional. Educación postsecundaria no superior.
+- `MNP78242739` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total. Sin estudios.
+- `MNP78242724` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Sin estudios. Estudios primarios incompletos.
+- `MNP78242725` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Sin estudios. Sin estudios.
+- `MNP82867260` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Técnicos y profesionales científicos e intelectuales. Otras situaciones.
+- `MNP78330065` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Técnicos; profesionales de apoyo. No consta ocupados.
+- `MNP78330073` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Técnicos; profesionales de apoyo. Técnicos; profesionales de apoyo.
+- `MNP82867402` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total ocupados. Total.
+- `MNP82867412` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total ocupados. Ocupaciones militares.
+- `MNP82867415` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total ocupados. Total ocupados.
+- `MNP78257048` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Total.
+- `MNP78337505` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria). No consta ocupados.
+- `MNP82877914` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria). Otras situaciones.
+- `MNP78337579` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Directores y gerentes. Ocupaciones elementales.
+- `MNP78256880` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Doctorado universitario. Total.
+- `MNP78256877` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Doctorado universitario. Educación primaria.
+- `MNP78256938` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Educación postsecundaria no superior. Doctorado universitario.
+- `MNP78256949` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Educación postsecundaria no superior. Sin estudios.
+- `MNP78256993` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Educación primaria. No consta.
+- `MNP78257000` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Educación primaria. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP78337552` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Empleados contables, administrativos y otros empleados de oficina. Total.
+- `MNP78391216` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Estudiante. Total.
+- `MNP78391211` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Estudiante. Otra situación de inactividad.
+- `MNP78391214` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Estudiante. Parado/a.
+- `MNP78257020` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Estudios primarios incompletos. Total.
+- `MNP78257018` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Estudios primarios incompletos. Estudios primarios incompletos.
+- `MNP78257007` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Estudios primarios incompletos. No consta.
+- `MNP78256908` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Grados universitarios de más de 240 créditos ECTS, licenciados y equivalentes. Total.
+- `MNP78391237` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Invalidez permanente. Invalidez permanente.
+- `MNP78391233` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Invalidez permanente. No consta.
+- `MNP78257035` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. No consta.
+- `MNP78256854` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. No consta. Doctorado universitario.
+- `MNP78256864` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. No consta. Estudios primarios incompletos.
+- `MNP78391207` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. No consta. Ocupado/a.
+- `MNP78337461` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. No consta ocupados. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria).
+- `MNP78337457` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. No consta ocupados. No consta ocupados.
+- `MNP78337466` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. No consta ocupados. Técnicos y profesionales científicos e intelectuales.
+- `MNP78337483` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupaciones elementales. Ocupaciones elementales.
+- `MNP78337482` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupaciones elementales. Ocupaciones militares.
+- `MNP78337489` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupaciones elementales. Técnicos; profesionales de apoyo.
+- `MNP78337590` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Ocupaciones militares.
+- `MNP78337470` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupaciones militares. Ocupaciones militares.
+- `MNP82877956` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupaciones militares. Otras situaciones.
+- `MNP78391253` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupado/a. Invalidez permanente.
+- `MNP78391252` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupado/a. Pensionista de jubilación o prejubilación.
+- `MNP78391259` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Otra situación de inactividad.
+- `MNP78391217` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Otra situación de inactividad. No consta.
+- `MNP78391220` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Otra situación de inactividad. Pensionista de jubilación o prejubilación.
+- `MNP82877983` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Otras situaciones. No consta ocupados.
+- `MNP78391260` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Pensionista de jubilación o prejubilación.
+- `MNP78391228` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Pensionista de jubilación o prejubilación. Pensionista de jubilación o prejubilación.
+- `MNP78256979` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Primera etapa de Educación Secundaria y similar. No consta.
+- `MNP78257042` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP78256952` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Segunda etapa de educación secundaria con orientación profesional. Doctorado universitario.
+- `MNP78256963` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Segunda etapa de educación secundaria con orientación profesional. Sin estudios.
+- `MNP78257047` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Sin estudios.
+- `MNP78257033` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Sin estudios. Sin estudios.
+- `MNP78337576` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Técnicos y profesionales científicos e intelectuales. Total.
+- `MNP82877844` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Técnicos y profesionales científicos e intelectuales. Otras situaciones.
+- `MNP78337597` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Técnicos; profesionales de apoyo.
+- `MNP78337555` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Técnicos; profesionales de apoyo. Ocupaciones elementales.
+- `MNP82877988` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total ocupados. Técnicos y profesionales científicos e intelectuales.
+- `MNP78098830` — Castellón/Castelló. Marruecos. Bulgaria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098798` — Castellón/Castelló. Marruecos. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098799` — Castellón/Castelló. Marruecos. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098834` — Castellón/Castelló. Marruecos. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493210` — Castellón/Castelló. Marruecos. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098802` — Castellón/Castelló. Marruecos. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098801` — Castellón/Castelló. Marruecos. Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP32616` — Castellón/Castelló. Matrimonio diferente sexo. Lugar de celebración. Dato base.
+- `MNP32543` — Castellón/Castelló. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP76790242` — Castellón/Castelló. 33 años. 48 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Abril.
+- `MNP76796855` — Castellón/Castelló. 23 años. 19 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Agosto.
+- `MNP76792535` — Castellón/Castelló. 30 años. 15 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Diciembre.
+- `MNP76780885` — Castellón/Castelló. 48 años. 48 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Enero.
+- `MNP76781560` — Castellón/Castelló. 47 años. 44 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Febrero.
+- `MNP76782530` — Castellón/Castelló. 46 años. 17 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Julio.
+- `MNP76782284` — Castellón/Castelló. 46 años. 36 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Junio.
+- `MNP76799785` — Castellón/Castelló. 18 años. 34 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Marzo.
+- `MNP76796234` — Castellón/Castelló. 24 años. 19 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Mayo.
+- `MNP76774193` — Castellón/Castelló. 59 años. 34 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Noviembre.
+- `MNP76785231` — Castellón/Castelló. 41 años. 49 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Octubre.
+- `MNP76796594` — Castellón/Castelló. 23 años. 39 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Septiembre.
+- `MNP27771` — Castellón/Castelló. Matrimonio diferente sexo. Mujeres. 42 años. Solteros/Solteras. Lugar de residencia. Dato base.
+- `MNP80609382` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia.
+- `MNP78652014` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Abril.
+- `MNP82974966` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. África. Total.
+- `MNP82974955` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. África. Resto de países.
+- `MNP82974957` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. África. Sudamérica.
+- `MNP78652018` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Agosto.
+- `MNP82974953` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. América. España.
+- `MNP82974952` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. América. Extranjero.
+- `MNP82974943` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. América. Resto de países.
+- `MNP82974941` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. América del Norte. España.
+- `MNP82974938` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. América del Norte. Europa menos UE28.
+- `MNP82974901` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Asia. África.
+- `MNP83075005` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Asia. Europa (sin España).
+- `MNP82974904` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Asia. Extranjero.
+- `MNP82974925` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Centro América y Caribe. África.
+- `MNP82974926` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Centro América y Caribe. Europa menos UE28.
+- `MNP82974921` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Centro América y Caribe. Sudamérica.
+- `MNP78652802` — Castellón/Castelló. De 35 a 39 años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Diciembre.
+- `MNP78652115` — Castellón/Castelló. 60 y más años. De 20 a 24 años. Matrimonio entre hombres. Dato base. Lugar de residencia. Enero.
+- `MNP82975025` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Total. España.
+- `MNP82975007` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. España. América del Norte.
+- `MNP83075025` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. España. Europa (sin España).
+- `MNP83075026` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Total. Europa (sin España).
+- `MNP83075018` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Europa (sin España). América.
+- `MNP83075017` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Europa (sin España). América del Norte.
+- `MNP83075012` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Europa (sin España). No consta (Extranjero).
+- `MNP82974978` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Europa menos UE28. Total.
+- `MNP82974976` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Europa menos UE28. Extranjero.
+- `MNP82974975` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Europa menos UE28. UE28 sin España.
+- `MNP82974997` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Extranjero. África.
+- `MNP82974996` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Extranjero. América.
+- `MNP83010749` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Extranjero. No consta (Extranjero).
+- `MNP82974991` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Extranjero. Resto de países.
+- `MNP82974999` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Extranjero. UE28 sin España.
+- `MNP78652090` — Castellón/Castelló. 60 y más años. De 30 a 34 años. Matrimonio entre hombres. Dato base. Lugar de residencia. Febrero.
+- `MNP78652797` — Castellón/Castelló. De 35 a 39 años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Julio.
+- `MNP78652042` — Castellón/Castelló. 60 y más años. De 50 a 54 años. Matrimonio entre hombres. Dato base. Lugar de residencia. Junio.
+- `MNP78652065` — Castellón/Castelló. 60 y más años. De 40 a 44 años. Matrimonio entre hombres. Dato base. Lugar de residencia. Marzo.
+- `MNP78652015` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Mayo.
+- `MNP83009492` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. No consta. Europa menos UE28.
+- `MNP83009509` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. No consta (Extranjero). Total.
+- `MNP83009507` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. No consta (Extranjero). Extranjero.
+- `MNP83009500` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. No consta (Extranjero). Sudamérica.
+- `MNP78652021` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Noviembre.
+- `MNP78652644` — Castellón/Castelló. De 40 a 44 años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Octubre.
+- `MNP83075004` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Resto de países. Europa (sin España).
+- `MNP82974890` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Resto de países. Europa menos UE28.
+- `MNP83010732` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Resto de países. No consta.
+- `MNP82974883` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Resto de países. Resto de países.
+- `MNP78652487` — Castellón/Castelló. De 45 a 49 años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Septiembre.
+- `MNP82974917` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Sudamérica. España.
+- `MNP83010736` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Sudamérica. No consta.
+- `MNP82974984` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. UE28 sin España. América.
+- `MNP82974983` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. UE28 sin España. América del Norte.
+- `MNP82974979` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. UE28 sin España. Resto de países.
+- `MNP78451968` — Castellón/Castelló. Total. Total. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78788722` — Castellón/Castelló. 60 y más años. De 40 a 44 años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Abril.
+- `MNP82982447` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. África. América del Norte.
+- `MNP82982446` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. África. Centro América y Caribe.
+- `MNP82982453` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. África. España.
+- `MNP82982452` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. África. Extranjero.
+- `MNP83013397` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. África. No consta (Extranjero).
+- `MNP82982443` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. África. Resto de países.
+- `MNP78788986` — Castellón/Castelló. De 50 a 54 años. 60 y más años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Agosto.
+- `MNP82982436` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América. América.
+- `MNP82982435` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América. América del Norte.
+- `MNP82982441` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América. España.
+- `MNP83013394` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América. No consta.
+- `MNP82982431` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América. Resto de países.
+- `MNP82982429` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América del Norte. España.
+- `MNP82982428` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América del Norte. Extranjero.
+- `MNP82982427` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América del Norte. UE28 sin España.
+- `MNP82982504` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Total. Asia.
+- `MNP82982388` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Asia. América.
+- `MNP82982387` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Asia. América del Norte.
+- `MNP82982393` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Asia. España.
+- `MNP82982390` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Asia. Europa menos UE28.
+- `MNP82982383` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Asia. Resto de países.
+- `MNP82982413` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Centro América y Caribe. África.
+- `MNP83013390` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Centro América y Caribe. No consta.
+- `MNP82982407` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Centro América y Caribe. Resto de países.
+- `MNP82982415` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Centro América y Caribe. UE28 sin España.
+- `MNP78788782` — Castellón/Castelló. 60 y más años. De 20 a 24 años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Diciembre.
+- `MNP78788784` — Castellón/Castelló. 60 y más años. De 15 a 19 años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Enero.
+- `MNP82982497` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. España. África.
+- `MNP83013403` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. España. No consta (Extranjero).
+- `MNP83076326` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Total. Europa (sin España).
+- `MNP83076322` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Europa (sin España). España.
+- `MNP83076321` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Europa (sin España). Extranjero.
+- `MNP83076313` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Europa (sin España). Resto de países.
+- `MNP82982466` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Europa menos UE28. Total.
+- `MNP82982456` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Europa menos UE28. Asia.
+- `MNP82982462` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Europa menos UE28. Europa menos UE28.
+- `MNP82982512` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Total. Extranjero.
+- `MNP83076324` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Extranjero. Europa (sin España).
+- `MNP82982488` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Extranjero. Extranjero.
+- `MNP78788759` — Castellón/Castelló. 60 y más años. De 25 a 29 años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Febrero.
+- `MNP78788712` — Castellón/Castelló. 60 y más años. De 45 a 49 años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Julio.
+- `MNP78788828` — Castellón/Castelló. De 55 a 59 años. 60 y más años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Junio.
+- `MNP78789605` — Castellón/Castelló. De 30 a 34 años. 60 y más años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Marzo.
+- `MNP78790231` — Castellón/Castelló. Menos de 15 años. 60 y más años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Mayo.
+- `MNP83013404` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Total. No consta.
+- `MNP83012138` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta. Asia.
+- `MNP83012144` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta. Europa menos UE28.
+- `MNP83012135` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta. No consta.
+- `MNP83012139` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta. Sudamérica.
+- `MNP83012145` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta. UE28 sin España.
+- `MNP83012154` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta (Extranjero). América del Norte.
+- `MNP83012157` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta (Extranjero). Europa menos UE28.
+- `MNP83012150` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta (Extranjero). Resto de países.
+- `MNP83012152` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta (Extranjero). Sudamérica.
+- `MNP78788677` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Noviembre.
+- `MNP78788676` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Octubre.
+- `MNP82982377` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Resto de países. África.
+- `MNP83013384` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Resto de países. No consta.
+- `MNP82982379` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Resto de países. UE28 sin España.
+- `MNP78788766` — Castellón/Castelló. 60 y más años. De 25 a 29 años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Septiembre.
+- `MNP82982400` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Sudamérica. América.
+- `MNP82982398` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Sudamérica. Centro América y Caribe.
+- `MNP83076306` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Sudamérica. Europa (sin España).
+- `MNP83013388` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Sudamérica. No consta.
+- `MNP82982511` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Total. UE28 sin España.
+- `MNP82982473` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. UE28 sin España. África.
+- `MNP82982474` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. UE28 sin España. Europa menos UE28.
+- `MNP80477091` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Agosto. Matrimonios civiles.
+- `MNP75644149` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Agosto. Matrimonios entre hombres.
+- `MNP80647955` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Al menos un cónyuge extranjero.
+- `MNP75644132` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Diciembre. Total.
+- `MNP75644129` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Diciembre. Matrimonios entre hombres.
+- `MNP75644187` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Enero. Total.
+- `MNP75644183` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Enero. Matrimonios entre mujeres.
+- `MNP75644182` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Febrero. Total.
+- `MNP80477103` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Febrero. Matrimonios civiles.
+- `MNP75644179` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Febrero. Matrimonios entre hombres.
+- `MNP80477102` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Febrero. Matrimonios religiosos.
+- `MNP75640862` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Julio. Total.
+- `MNP75644153` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Julio. Matrimonios entre mujeres.
+- `MNP75644161` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Junio. Entre personas de distinto sexo.
+- `MNP75640878` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Marzo. Total.
+- `MNP75644176` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Marzo. Entre personas de distinto sexo.
+- `MNP75644174` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Marzo. Matrimonios entre hombres.
+- `MNP80477100` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Marzo. Matrimonios religiosos.
+- `MNP80477106` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Total. Matrimonios religiosos.
+- `MNP75640870` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Mayo. Total.
+- `MNP75644165` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Mayo. Entre personas del mismo sexo.
+- `MNP75640846` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Noviembre. Total.
+- `MNP75644136` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Noviembre. Entre personas de distinto sexo.
+- `MNP75644142` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Octubre. Total.
+- `MNP75644140` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Octubre. Entre personas del mismo sexo.
+- `MNP75644139` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Octubre. Matrimonios entre hombres.
+- `MNP75644145` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Septiembre. Entre personas del mismo sexo.
+- `MNP80477089` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Septiembre. Matrimonios civiles.
+- `MNP78098346` — Castellón/Castelló. México. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098344` — Castellón/Castelló. México. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098373` — Castellón/Castelló. México. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098365` — Castellón/Castelló. México. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098374` — Castellón/Castelló. México. Total. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098357` — Castellón/Castelló. México. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098359` — Castellón/Castelló. México. Rusia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098756` — Castellón/Castelló. Nigeria. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098771` — Castellón/Castelló. Nigeria. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098764` — Castellón/Castelló. Nigeria. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098791` — Castellón/Castelló. Nigeria. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098787` — Castellón/Castelló. Nigeria. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098785` — Castellón/Castelló. Nigeria. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098794` — Castellón/Castelló. Nigeria. Total. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098784` — Castellón/Castelló. Nigeria. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098761` — Castellón/Castelló. Nigeria. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098758` — Castellón/Castelló. Nigeria. Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098777` — Castellón/Castelló. Nigeria. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098753` — Castellón/Castelló. Nigeria. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518199` — Castellón/Castelló. No consta (extranjera). América del Norte. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493165` — Castellón/Castelló. No consta (extranjera). Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493163` — Castellón/Castelló. No consta (extranjera). Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493171` — Castellón/Castelló. No consta (extranjera). De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80647261` — Castellón/Castelló. No consta (extranjera). De Sudamérica. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP80493159` — Castellón/Castelló. No consta (extranjera). Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80647266` — Castellón/Castelló. No consta (extranjera). Europa (sin España). Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP80493150` — Castellón/Castelló. No consta (extranjera). Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80645008` — Castellón/Castelló. Extranjera. No consta (extranjera). Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80493168` — Castellón/Castelló. No consta (extranjera). Nigeria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493147` — Castellón/Castelló. No consta (extranjera). No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493176` — Castellón/Castelló. No consta (extranjera). Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493167` — Castellón/Castelló. No consta (extranjera). Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493153` — Castellón/Castelló. No consta (extranjera). Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493172` — Castellón/Castelló. No consta (extranjera). Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493154` — Castellón/Castelló. No consta (extranjera). Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP3951369` — Castellón/Castelló. Otros. Total. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951365` — Castellón/Castelló. Otros. Española. Total. Matrimonio diferente sexo.
+- `MNP3951852` — Castellón/Castelló. Extranjera. Otros. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951911` — Castellón/Castelló. Española. Otros. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951311` — Castellón/Castelló. Otros. Otros. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951342` — Castellón/Castelló. Otros. País de Africa. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951341` — Castellón/Castelló. Otros. País de Africa. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951339` — Castellón/Castelló. Otros. País de América. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951328` — Castellón/Castelló. Otros. País de América Central  y Caribe. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951333` — Castellón/Castelló. Otros. País de América del Norte. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951355` — Castellón/Castelló. Otros. País de la UE28 sin España. Total. Matrimonio diferente sexo.
+- `MNP3951325` — Castellón/Castelló. Otros. País de Sudamérica. Total. Matrimonio diferente sexo.
+- `MNP3951322` — Castellón/Castelló. Otros. País de Sudamérica. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951321` — Castellón/Castelló. Otros. País de Sudamérica. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951944` — Castellón/Castelló. Española. País de Africa. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951718` — Castellón/Castelló. País de Africa. Extranjera. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951730` — Castellón/Castelló. País de Africa. Total. Total. Matrimonio diferente sexo.
+- `MNP3951941` — Castellón/Castelló. Española. País de Africa. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951703` — Castellón/Castelló. País de Africa. País de Africa. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951702` — Castellón/Castelló. País de Africa. País de Africa. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951698` — Castellón/Castelló. País de Africa. País de América. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951689` — Castellón/Castelló. País de Africa. País de América Central  y Caribe. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951688` — Castellón/Castelló. País de Africa. País de América Central  y Caribe. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951686` — Castellón/Castelló. País de Africa. País de América Central  y Caribe. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951693` — Castellón/Castelló. País de Africa. País de América del Norte. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951695` — Castellón/Castelló. País de Africa. País de América del Norte. Total. Matrimonio diferente sexo.
+- `MNP3951676` — Castellón/Castelló. País de Africa. País de Asia. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951709` — Castellón/Castelló. País de Africa. País de Europa menos UE28. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951708` — Castellón/Castelló. País de Africa. País de Europa menos UE28. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951713` — Castellón/Castelló. País de Africa. País de la UE28 sin España. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951715` — Castellón/Castelló. País de Africa. País de la UE28 sin España. Total. Matrimonio diferente sexo.
+- `MNP3951684` — Castellón/Castelló. País de Africa. País de Sudamérica. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951940` — Castellón/Castelló. Española. País de América. Total. Matrimonio diferente sexo.
+- `MNP3951937` — Castellón/Castelló. Española. País de América. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951996` — Castellón/Castelló. Total. País de América. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951614` — Castellón/Castelló. País de América. Otros. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951612` — Castellón/Castelló. País de América. Otros. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951643` — Castellón/Castelló. País de América. País de Africa. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951645` — Castellón/Castelló. País de América. País de Africa. Total. Matrimonio diferente sexo.
+- `MNP3951627` — Castellón/Castelló. País de América. País de América Central  y Caribe. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951635` — Castellón/Castelló. País de América. País de América del Norte. Total. Matrimonio diferente sexo.
+- `MNP3951618` — Castellón/Castelló. País de América. País de Asia. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951620` — Castellón/Castelló. País de América. País de Asia. Total. Matrimonio diferente sexo.
+- `MNP3951646` — Castellón/Castelló. País de América. País de Europa menos UE28. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951651` — Castellón/Castelló. País de América. País de la UE28 sin España. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951549` — Castellón/Castelló. País de América Central  y Caribe. Total. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951543` — Castellón/Castelló. País de América Central  y Caribe. Española. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951870` — Castellón/Castelló. Extranjera. País de América Central  y Caribe. Total. Matrimonio diferente sexo.
+- `MNP3951926` — Castellón/Castelló. Española. País de América Central  y Caribe. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951495` — Castellón/Castelló. País de América Central  y Caribe. Otros. Total. Matrimonio diferente sexo.
+- `MNP3951518` — Castellón/Castelló. País de América Central  y Caribe. País de América. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951520` — Castellón/Castelló. País de América Central  y Caribe. País de América. Total. Matrimonio diferente sexo.
+- `MNP3951517` — Castellón/Castelló. País de América Central  y Caribe. País de América. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951516` — Castellón/Castelló. País de América Central  y Caribe. País de América. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951498` — Castellón/Castelló. País de América Central  y Caribe. País de Asia. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951497` — Castellón/Castelló. País de América Central  y Caribe. País de Asia. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951526` — Castellón/Castelló. País de América Central  y Caribe. País de Europa menos UE28. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951504` — Castellón/Castelló. País de América Central  y Caribe. País de Sudamérica. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951503` — Castellón/Castelló. País de América Central  y Caribe. País de Sudamérica. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951993` — Castellón/Castelló. Total. País de América del Norte. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951610` — Castellón/Castelló. País de América del Norte. Total. Total. Matrimonio diferente sexo.
+- `MNP3951931` — Castellón/Castelló. Española. País de América del Norte. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951555` — Castellón/Castelló. País de América del Norte. Otros. Total. Matrimonio diferente sexo.
+- `MNP3951580` — Castellón/Castelló. País de América del Norte. País de América. Total. Matrimonio diferente sexo.
+- `MNP3951576` — Castellón/Castelló. País de América del Norte. País de América. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951569` — Castellón/Castelló. País de América del Norte. País de América Central  y Caribe. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951570` — Castellón/Castelló. País de América del Norte. País de América Central  y Caribe. Total. Matrimonio diferente sexo.
+- `MNP3951559` — Castellón/Castelló. País de América del Norte. País de Asia. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951558` — Castellón/Castelló. País de América del Norte. País de Asia. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951556` — Castellón/Castelló. País de América del Norte. País de Asia. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951588` — Castellón/Castelló. País de América del Norte. País de Europa menos UE28. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951592` — Castellón/Castelló. País de América del Norte. País de la UE28 sin España. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951919` — Castellón/Castelló. Española. País de Asia. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951918` — Castellón/Castelló. Española. País de Asia. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951860` — Castellón/Castelló. Extranjera. País de Asia. Total. Matrimonio diferente sexo.
+- `MNP3951422` — Castellón/Castelló. País de Asia. Española. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951976` — Castellón/Castelló. Total. País de Asia. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951373` — Castellón/Castelló. País de Asia. Otros. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951398` — Castellón/Castelló. País de Asia. País de América. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951397` — Castellón/Castelló. País de Asia. País de América. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951395` — Castellón/Castelló. País de Asia. País de América del Norte. Total. Matrimonio diferente sexo.
+- `MNP3951377` — Castellón/Castelló. País de Asia. País de Asia. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951408` — Castellón/Castelló. País de Asia. País de Europa menos UE28. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951406` — Castellón/Castelló. País de Asia. País de Europa menos UE28. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951415` — Castellón/Castelló. País de Asia. País de la UE28 sin España. Total. Matrimonio diferente sexo.
+- `MNP3951384` — Castellón/Castelló. País de Asia. País de Sudamérica. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP78419802` — Castellón/Castelló. País de Europa menos UE28. De América. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451911` — Castellón/Castelló. País de Europa menos UE28. De Sudamérica. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419807` — Castellón/Castelló. País de Europa menos UE28. España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451919` — Castellón/Castelló. País de Europa menos UE28. España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451920` — Castellón/Castelló. País de Europa menos UE28. Total. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP3951734` — Castellón/Castelló. País de Europa menos UE28. Otros. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951764` — Castellón/Castelló. País de Europa menos UE28. País de Africa. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951758` — Castellón/Castelló. País de Europa menos UE28. País de América. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951749` — Castellón/Castelló. País de Europa menos UE28. País de América Central  y Caribe. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951746` — Castellón/Castelló. País de Europa menos UE28. País de América Central  y Caribe. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP78451916` — Castellón/Castelló. País de Europa menos UE28. País de Europa menos UE28. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP3951772` — Castellón/Castelló. País de Europa menos UE28. País de la UE28 sin España. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951744` — Castellón/Castelló. País de Europa menos UE28. País de Sudamérica. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951743` — Castellón/Castelló. País de Europa menos UE28. País de Sudamérica. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951742` — Castellón/Castelló. País de Europa menos UE28. País de Sudamérica. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP78419814` — Castellón/Castelló. País de la UE28 sin España. De América. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451926` — Castellón/Castelló. País de la UE28 sin España. De América. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451922` — Castellón/Castelló. País de la UE28 sin España. De Asia. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP3951839` — Castellón/Castelló. País de la UE28 sin España. Extranjera. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951843` — Castellón/Castelló. País de la UE28 sin España. Española. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP78419819` — Castellón/Castelló. País de la UE28 sin España. España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP3952015` — Castellón/Castelló. Total. País de la UE28 sin España. Total. Matrimonio diferente sexo.
+- `MNP78419853` — Castellón/Castelló. Total. País de la UE28 sin España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451965` — Castellón/Castelló. Total. País de la UE28 sin España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP3951836` — Castellón/Castelló. País de la UE28 sin España. Extranjera. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951795` — Castellón/Castelló. País de la UE28 sin España. Otros. Total. Matrimonio diferente sexo.
+- `MNP3951821` — Castellón/Castelló. País de la UE28 sin España. País de Africa. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951819` — Castellón/Castelló. País de la UE28 sin España. País de América. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951808` — Castellón/Castelló. País de la UE28 sin España. País de América Central  y Caribe. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951812` — Castellón/Castelló. País de la UE28 sin España. País de América del Norte. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP78419817` — Castellón/Castelló. País de la UE28 sin España. País de la UE28 sin España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP3951831` — Castellón/Castelló. País de la UE28 sin España. País de la UE28 sin España. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP78451921` — Castellón/Castelló. País de la UE28 sin España. Resto de países. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP3951984` — Castellón/Castelló. Total. País de Sudamérica. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951923` — Castellón/Castelló. Española. País de Sudamérica. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951925` — Castellón/Castelló. Española. País de Sudamérica. Total. Matrimonio diferente sexo.
+- `MNP3951487` — Castellón/Castelló. País de Sudamérica. Total. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951921` — Castellón/Castelló. Española. País de Sudamérica. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951465` — Castellón/Castelló. País de Sudamérica. País de Africa. Total. Matrimonio diferente sexo.
+- `MNP3951458` — Castellón/Castelló. País de Sudamérica. País de América. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951456` — Castellón/Castelló. País de Sudamérica. País de América. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951447` — Castellón/Castelló. País de Sudamérica. País de América Central  y Caribe. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951454` — Castellón/Castelló. País de Sudamérica. País de América del Norte. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951453` — Castellón/Castelló. País de Sudamérica. País de América del Norte. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951451` — Castellón/Castelló. País de Sudamérica. País de América del Norte. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951437` — Castellón/Castelló. País de Sudamérica. País de Asia. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951469` — Castellón/Castelló. País de Sudamérica. País de Europa menos UE28. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951466` — Castellón/Castelló. País de Sudamérica. País de Europa menos UE28. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951474` — Castellón/Castelló. País de Sudamérica. País de la UE28 sin España. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951471` — Castellón/Castelló. País de Sudamérica. País de la UE28 sin España. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951444` — Castellón/Castelló. País de Sudamérica. País de Sudamérica. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951441` — Castellón/Castelló. País de Sudamérica. País de Sudamérica. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP78099231` — Castellón/Castelló. Países Bajos. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099228` — Castellón/Castelló. Países Bajos. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099226` — Castellón/Castelló. Países Bajos. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099255` — Castellón/Castelló. Países Bajos. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099217` — Castellón/Castelló. Países Bajos. Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099249` — Castellón/Castelló. Países Bajos. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493220` — Castellón/Castelló. Países Bajos. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099215` — Castellón/Castelló. Países Bajos. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098308` — Castellón/Castelló. Perú. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098327` — Castellón/Castelló. Perú. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098306` — Castellón/Castelló. Perú. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098303` — Castellón/Castelló. Perú. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098295` — Castellón/Castelló. Perú. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098329` — Castellón/Castelló. Perú. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098325` — Castellón/Castelló. Perú. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098312` — Castellón/Castelló. Perú. Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098311` — Castellón/Castelló. Perú. Nigeria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098320` — Castellón/Castelló. Perú. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098299` — Castellón/Castelló. Perú. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098310` — Castellón/Castelló. Perú. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098297` — Castellón/Castelló. Perú. Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099209` — Castellón/Castelló. Polonia. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099188` — Castellón/Castelló. Polonia. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099185` — Castellón/Castelló. Polonia. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099194` — Castellón/Castelló. Polonia. Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099212` — Castellón/Castelló. Polonia. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099204` — Castellón/Castelló. Polonia. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099202` — Castellón/Castelló. Polonia. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099181` — Castellón/Castelló. Polonia. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099174` — Castellón/Castelló. Polonia. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099173` — Castellón/Castelló. Polonia. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099200` — Castellón/Castelló. Polonia. Rumanía. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099168` — Castellón/Castelló. Portugal. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099146` — Castellón/Castelló. Portugal. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099147` — Castellón/Castelló. Portugal. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099166` — Castellón/Castelló. Portugal. Bulgaria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099134` — Castellón/Castelló. Portugal. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099143` — Castellón/Castelló. Portugal. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099154` — Castellón/Castelló. Portugal. De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099135` — Castellón/Castelló. Portugal. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099142` — Castellón/Castelló. Portugal. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099164` — Castellón/Castelló. Portugal. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099170` — Castellón/Castelló. Portugal. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099162` — Castellón/Castelló. Portugal. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099160` — Castellón/Castelló. Portugal. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099131` — Castellón/Castelló. Portugal. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099158` — Castellón/Castelló. Portugal. Rumanía. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099157` — Castellón/Castelló. Portugal. Rusia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099125` — Castellón/Castelló. Reino Unido. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099122` — Castellón/Castelló. Reino Unido. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099121` — Castellón/Castelló. Reino Unido. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099128` — Castellón/Castelló. Reino Unido. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098286` — Castellón/Castelló. República Dominicana. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098271` — Castellón/Castelló. República Dominicana. Argelia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098266` — Castellón/Castelló. República Dominicana. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098265` — Castellón/Castelló. República Dominicana. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098284` — Castellón/Castelló. República Dominicana. Bulgaria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098272` — Castellón/Castelló. República Dominicana. De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098267` — Castellón/Castelló. República Dominicana. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098260` — Castellón/Castelló. República Dominicana. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098269` — Castellón/Castelló. República Dominicana. Nigeria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098280` — Castellón/Castelló. República Dominicana. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098257` — Castellón/Castelló. República Dominicana. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098249` — Castellón/Castelló. República Dominicana. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098256` — Castellón/Castelló. República Dominicana. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098728` — Castellón/Castelló. Resto de África. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098724` — Castellón/Castelló. Resto de África. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098723` — Castellón/Castelló. Resto de África. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098744` — Castellón/Castelló. Resto de África. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098743` — Castellón/Castelló. Resto de África. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098750` — Castellón/Castelló. Resto de África. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098742` — Castellón/Castelló. Resto de África. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098720` — Castellón/Castelló. Resto de África. Perú. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098730` — Castellón/Castelló. Resto de África. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098159` — Castellón/Castelló. Resto de América. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098158` — Castellón/Castelló. Resto de América. Bulgaria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098135` — Castellón/Castelló. Resto de América. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098127` — Castellón/Castelló. Resto de América. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098163` — Castellón/Castelló. Resto de América. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098155` — Castellón/Castelló. Resto de América. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098133` — Castellón/Castelló. Resto de América. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493194` — Castellón/Castelló. Resto de América. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098154` — Castellón/Castelló. Resto de América. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098153` — Castellón/Castelló. Resto de América. Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098152` — Castellón/Castelló. Resto de América. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098124` — Castellón/Castelló. Resto de América. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098150` — Castellón/Castelló. Resto de América. Rumanía. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097992` — Castellón/Castelló. Resto de Asia. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097977` — Castellón/Castelló. Resto de Asia. Argelia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097972` — Castellón/Castelló. Resto de Asia. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097968` — Castellón/Castelló. Resto de Asia. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097989` — Castellón/Castelló. Resto de Asia. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097994` — Castellón/Castelló. Resto de Asia. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097963` — Castellón/Castelló. Resto de Asia. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098936` — Castellón/Castelló. Resto de Europa. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098961` — Castellón/Castelló. Resto de Europa. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098955` — Castellón/Castelló. Resto de Europa. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099659` — Castellón/Castelló. Total. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098941` — Castellón/Castelló. Resto de Europa. Nigeria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098928` — Castellón/Castelló. Resto de Europa. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518202` — Castellón/Castelló. Resto de países. América del Norte. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097935` — Castellón/Castelló. Resto de países. Argelia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097949` — Castellón/Castelló. Resto de países. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097916` — Castellón/Castelló. Resto de países. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097926` — Castellón/Castelló. Resto de países. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097931` — Castellón/Castelló. Resto de países. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419718` — Castellón/Castelló. Resto de países. De América. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78097953` — Castellón/Castelló. Resto de países. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78451835` — Castellón/Castelló. Resto de países. España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78097951` — Castellón/Castelló. Resto de países. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097923` — Castellón/Castelló. Resto de países. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80647270` — Castellón/Castelló. Resto de países. No consta (extranjera). Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451829` — Castellón/Castelló. Resto de países. País de América del Norte. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419720` — Castellón/Castelló. Resto de países. País de Europa menos UE28. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78097944` — Castellón/Castelló. Resto de países. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097942` — Castellón/Castelló. Resto de países. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097941` — Castellón/Castelló. Resto de países. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097937` — Castellón/Castelló. Resto de países. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78451825` — Castellón/Castelló. Resto de países. Resto de países. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78099062` — Castellón/Castelló. Rumanía. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099057` — Castellón/Castelló. Rumanía. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099077` — Castellón/Castelló. Rumanía. Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099075` — Castellón/Castelló. Rumanía. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099066` — Castellón/Castelló. Rumanía. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099048` — Castellón/Castelló. Rumanía. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099071` — Castellón/Castelló. Rumanía. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099022` — Castellón/Castelló. Rusia. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099023` — Castellón/Castelló. Rusia. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099009` — Castellón/Castelló. Rusia. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099037` — Castellón/Castelló. Rusia. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099577` — Castellón/Castelló. Extranjera. Rusia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099036` — Castellón/Castelló. Rusia. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099029` — Castellón/Castelló. Rusia. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099032` — Castellón/Castelló. Rusia. Rumanía. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099012` — Castellón/Castelló. Rusia. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518212` — Castellón/Castelló. Sudamérica. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518208` — Castellón/Castelló. Sudamérica. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518215` — Castellón/Castelló. Sudamérica. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099000` — Castellón/Castelló. Ucrania. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098985` — Castellón/Castelló. Ucrania. Argelia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098980` — Castellón/Castelló. Ucrania. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098978` — Castellón/Castelló. Ucrania. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098979` — Castellón/Castelló. Ucrania. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098981` — Castellón/Castelló. Ucrania. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098974` — Castellón/Castelló. Ucrania. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098997` — Castellón/Castelló. Ucrania. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098984` — Castellón/Castelló. Ucrania. Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099660` — Castellón/Castelló. Total. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098994` — Castellón/Castelló. Ucrania. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098992` — Castellón/Castelló. Ucrania. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098991` — Castellón/Castelló. Ucrania. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098971` — Castellón/Castelló. Ucrania. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098963` — Castellón/Castelló. Ucrania. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098988` — Castellón/Castelló. Ucrania. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098244` — Castellón/Castelló. Uruguay. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098243` — Castellón/Castelló. Uruguay. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098246` — Castellón/Castelló. Uruguay. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098227` — Castellón/Castelló. Uruguay. Nigeria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098208` — Castellón/Castelló. Uruguay. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098234` — Castellón/Castelló. Uruguay. Rumanía. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098201` — Castellón/Castelló. Venezuela. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098179` — Castellón/Castelló. Venezuela. Chile. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098183` — Castellón/Castelló. Venezuela. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098199` — Castellón/Castelló. Venezuela. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098193` — Castellón/Castelló. Venezuela. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098173` — Castellón/Castelló. Venezuela. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098166` — Castellón/Castelló. Venezuela. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098165` — Castellón/Castelló. Venezuela. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+
+## MNPD
+
+Series: 10000 · conceptos distintos: 1408
+
+- `MNP78099483` — Castellón/Castelló. Alemania. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099502` — Castellón/Castelló. Alemania. Bulgaria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099507` — Castellón/Castelló. Alemania. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099505` — Castellón/Castelló. Alemania. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493225` — Castellón/Castelló. Alemania. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099496` — Castellón/Castelló. Alemania. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099486` — Castellón/Castelló. Alemania. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099468` — Castellón/Castelló. Alemania. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518237` — Castellón/Castelló. América del Norte. De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518232` — Castellón/Castelló. América del Norte. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518240` — Castellón/Castelló. América del Norte. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518253` — Castellón/Castelló. Extranjera. América del Norte. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098874` — Castellón/Castelló. Argelia. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098839` — Castellón/Castelló. Argelia. Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098847` — Castellón/Castelló. Argelia. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493211` — Castellón/Castelló. Argelia. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098866` — Castellón/Castelló. Argelia. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098861` — Castellón/Castelló. Argelia. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098664` — Castellón/Castelló. Argentina. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098643` — Castellón/Castelló. Argentina. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098630` — Castellón/Castelló. Argentina. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098640` — Castellón/Castelló. Argentina. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099652` — Castellón/Castelló. Total. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493206` — Castellón/Castelló. Argentina. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098657` — Castellón/Castelló. Argentina. Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098635` — Castellón/Castelló. Argentina. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098627` — Castellón/Castelló. Argentina. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098634` — Castellón/Castelló. Argentina. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099437` — Castellón/Castelló. Bélgica. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099458` — Castellón/Castelló. Bélgica. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099433` — Castellón/Castelló. Bélgica. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099450` — Castellón/Castelló. Bélgica. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098580` — Castellón/Castelló. Bolivia. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098559` — Castellón/Castelló. Bolivia. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098557` — Castellón/Castelló. Bolivia. Chile. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098556` — Castellón/Castelló. Bolivia. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098566` — Castellón/Castelló. Bolivia. De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098547` — Castellón/Castelló. Bolivia. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098583` — Castellón/Castelló. Bolivia. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098581` — Castellón/Castelló. Bolivia. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098576` — Castellón/Castelló. Bolivia. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099650` — Castellón/Castelló. Total. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098571` — Castellón/Castelló. Bolivia. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098551` — Castellón/Castelló. Bolivia. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098621` — Castellón/Castelló. Brasil. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098601` — Castellón/Castelló. Brasil. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098617` — Castellón/Castelló. Brasil. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099567` — Castellón/Castelló. Extranjera. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493205` — Castellón/Castelló. Brasil. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098615` — Castellón/Castelló. Brasil. Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098590` — Castellón/Castelló. Brasil. Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098586` — Castellón/Castelló. Brasil. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099398` — Castellón/Castelló. Bulgaria. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099406` — Castellón/Castelló. Bulgaria. De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099394` — Castellón/Castelló. Bulgaria. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099423` — Castellón/Castelló. Bulgaria. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099421` — Castellón/Castelló. Bulgaria. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099417` — Castellón/Castelló. Bulgaria. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099422` — Castellón/Castelló. Bulgaria. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493224` — Castellón/Castelló. Bulgaria. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099412` — Castellón/Castelló. Bulgaria. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099383` — Castellón/Castelló. Bulgaria. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099408` — Castellón/Castelló. Bulgaria. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099390` — Castellón/Castelló. Bulgaria. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099389` — Castellón/Castelló. Bulgaria. Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518221` — Castellón/Castelló. Centro América y Caribe. Sudamérica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098517` — Castellón/Castelló. Chile. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098514` — Castellón/Castelló. Chile. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098519` — Castellón/Castelló. Chile. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098520` — Castellón/Castelló. Chile. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098508` — Castellón/Castelló. Chile. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098507` — Castellón/Castelló. Chile. Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098053` — Castellón/Castelló. China. Chile. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098042` — Castellón/Castelló. China. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098072` — Castellón/Castelló. China. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098044` — Castellón/Castelló. China. Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098064` — Castellón/Castelló. China. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098046` — Castellón/Castelló. China. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098476` — Castellón/Castelló. Colombia. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098470` — Castellón/Castelló. Colombia. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098480` — Castellón/Castelló. Colombia. Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098469` — Castellón/Castelló. Colombia. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493202` — Castellón/Castelló. Colombia. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098489` — Castellón/Castelló. Colombia. Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098488` — Castellón/Castelló. Colombia. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098464` — Castellón/Castelló. Colombia. Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098483` — Castellón/Castelló. Colombia. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098459` — Castellón/Castelló. Colombia. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098454` — Castellón/Castelló. Cuba. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098434` — Castellón/Castelló. Cuba. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098430` — Castellón/Castelló. Cuba. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098440` — Castellón/Castelló. Cuba. De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098421` — Castellón/Castelló. Cuba. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098428` — Castellón/Castelló. Cuba. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098436` — Castellón/Castelló. Cuba. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098422` — Castellón/Castelló. Cuba. Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098418` — Castellón/Castelló. Cuba. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098897` — Castellón/Castelló. De Africa. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098883` — Castellón/Castelló. De Africa. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419786` — Castellón/Castelló. De Africa. De Asia. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78419788` — Castellón/Castelló. De Africa. De Centro América y Caribe. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78419787` — Castellón/Castelló. De Africa. De Sudamérica. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098912` — Castellón/Castelló. De Africa. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098900` — Castellón/Castelló. De Africa. Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098920` — Castellón/Castelló. De Africa. Total. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419827` — Castellón/Castelló. Extranjera. De Africa. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451939` — Castellón/Castelló. Extranjera. De Africa. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78098889` — Castellón/Castelló. De Africa. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419793` — Castellón/Castelló. De Africa. País de la UE28 sin España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098888` — Castellón/Castelló. De Africa. Perú. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098907` — Castellón/Castelló. De Africa. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098887` — Castellón/Castelló. De Africa. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098905` — Castellón/Castelló. De Africa. Rusia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518245` — Castellón/Castelló. De Africa. Sudamérica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098684` — Castellón/Castelló. De América. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098685` — Castellón/Castelló. De América. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098687` — Castellón/Castelló. De América. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419775` — Castellón/Castelló. De América. De Sudamérica. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098707` — Castellón/Castelló. De América. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098701` — Castellón/Castelló. De América. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419826` — Castellón/Castelló. Extranjera. De América. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451938` — Castellón/Castelló. Extranjera. De América. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419777` — Castellón/Castelló. De América. País de América del Norte. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098697` — Castellón/Castelló. De América. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098670` — Castellón/Castelló. De América. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419773` — Castellón/Castelló. De América. Resto de países. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80518242` — Castellón/Castelló. De América. Sudamérica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098675` — Castellón/Castelló. De América. Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419766` — Castellón/Castelló. De América del Norte. De América. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78419762` — Castellón/Castelló. De América del Norte. De Asia. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80644991` — Castellón/Castelló. De América del Norte. Europa (sin España). Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78419772` — Castellón/Castelló. De América del Norte. Total. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451882` — Castellón/Castelló. De América del Norte. Extranjera. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451877` — Castellón/Castelló. De América del Norte. País de América del Norte. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451880` — Castellón/Castelló. De América del Norte. País de Europa menos UE28. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78098103` — Castellón/Castelló. De Asia. Argelia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098117` — Castellón/Castelló. De Asia. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098097` — Castellón/Castelló. De Asia. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518204` — Castellón/Castelló. De Asia. Centro América y Caribe. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098084` — Castellón/Castelló. De Asia. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098094` — Castellón/Castelló. De Asia. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098099` — Castellón/Castelló. De Asia. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78451838` — Castellón/Castelló. De Asia. De Asia. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451840` — Castellón/Castelló. De Asia. De Centro América y Caribe. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78098092` — Castellón/Castelló. De Asia. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78451847` — Castellón/Castelló. De Asia. España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78098119` — Castellón/Castelló. De Asia. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80644985` — Castellón/Castelló. De Asia. Europa (sin España). Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80647273` — Castellón/Castelló. De Asia. Europa (sin España). Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78098083` — Castellón/Castelló. De Asia. Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099555` — Castellón/Castelló. Extranjera. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419736` — Castellón/Castelló. De Asia. Total. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80644984` — Castellón/Castelló. De Asia. No consta (extranjera). Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78419732` — Castellón/Castelló. De Asia. País de Europa menos UE28. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098089` — Castellón/Castelló. De Asia. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098081` — Castellón/Castelló. De Asia. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518203` — Castellón/Castelló. De Asia. Sudamérica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78451864` — Castellón/Castelló. De Centro América y Caribe. De Centro América y Caribe. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419760` — Castellón/Castelló. De Centro América y Caribe. Total. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451960` — Castellón/Castelló. Total. De Centro América y Caribe. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451868` — Castellón/Castelló. De Centro América y Caribe. País de Europa menos UE28. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419743` — Castellón/Castelló. De Sudamérica. De Africa. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78419739` — Castellón/Castelló. De Sudamérica. De Sudamérica. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451959` — Castellón/Castelló. Total. De Sudamérica. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419741` — Castellón/Castelló. De Sudamérica. País de América del Norte. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451857` — Castellón/Castelló. De Sudamérica. País de la UE28 sin España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419737` — Castellón/Castelló. De Sudamérica. Resto de países. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098392` — Castellón/Castelló. Ecuador. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098415` — Castellón/Castelló. Ecuador. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098413` — Castellón/Castelló. Ecuador. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098409` — Castellón/Castelló. Ecuador. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098407` — Castellón/Castelló. Ecuador. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493200` — Castellón/Castelló. Ecuador. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098403` — Castellón/Castelló. Ecuador. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098383` — Castellón/Castelló. Ecuador. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098382` — Castellón/Castelló. Ecuador. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099608` — Castellón/Castelló. España. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78451950` — Castellón/Castelló. España. De América. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419836` — Castellón/Castelló. España. De Centro América y Caribe. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78099604` — Castellón/Castelló. España. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419843` — Castellón/Castelló. España. España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451955` — Castellón/Castelló. España. España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78099626` — Castellón/Castelló. España. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099625` — Castellón/Castelló. España. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099591` — Castellón/Castelló. Extranjera. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493228` — Castellón/Castelló. España. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80647298` — Castellón/Castelló. España. No consta (extranjera). Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451953` — Castellón/Castelló. España. País de la UE28 sin España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78099622` — Castellón/Castelló. España. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099601` — Castellón/Castelló. España. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099612` — Castellón/Castelló. España. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099618` — Castellón/Castelló. España. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518249` — Castellón/Castelló. Europa (sin España). Centro América y Caribe. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099512` — Castellón/Castelló. Europa (sin España). China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099522` — Castellón/Castelló. Europa (sin España). Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099521` — Castellón/Castelló. Europa (sin España). Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099527` — Castellón/Castelló. Europa (sin España). De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80647286` — Castellón/Castelló. Europa (sin España). De Asia. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP80645000` — Castellón/Castelló. Europa (sin España). De Centro América y Caribe. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80644999` — Castellón/Castelló. Europa (sin España). De Sudamérica. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80645006` — Castellón/Castelló. Europa (sin España). España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80645004` — Castellón/Castelló. Europa (sin España). Europa (sin España). Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78099541` — Castellón/Castelló. Europa (sin España). Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099530` — Castellón/Castelló. Europa (sin España). Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099550` — Castellón/Castelló. Europa (sin España). Total. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80644996` — Castellón/Castelló. Europa (sin España). No consta (extranjera). Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80645001` — Castellón/Castelló. Europa (sin España). País de América del Norte. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80647289` — Castellón/Castelló. Europa (sin España). País de América del Norte. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78099540` — Castellón/Castelló. Europa (sin España). Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099539` — Castellón/Castelló. Europa (sin España). Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099517` — Castellón/Castelló. Europa (sin España). República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099528` — Castellón/Castelló. Europa (sin España). Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099514` — Castellón/Castelló. Europa (sin España). Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80644997` — Castellón/Castelló. Europa (sin España). Resto de países. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78098033` — Castellón/Castelló. Filipinas. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098013` — Castellón/Castelló. Filipinas. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098010` — Castellón/Castelló. Filipinas. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098015` — Castellón/Castelló. Filipinas. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098035` — Castellón/Castelló. Filipinas. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098031` — Castellón/Castelló. Filipinas. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098030` — Castellón/Castelló. Filipinas. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099637` — Castellón/Castelló. Total. Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098007` — Castellón/Castelló. Filipinas. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098028` — Castellón/Castelló. Filipinas. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098026` — Castellón/Castelló. Filipinas. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098025` — Castellón/Castelló. Filipinas. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098004` — Castellón/Castelló. Filipinas. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099344` — Castellón/Castelló. Francia. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099353` — Castellón/Castelló. Francia. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099379` — Castellón/Castelló. Francia. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099343` — Castellón/Castelló. Francia. Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099380` — Castellón/Castelló. Francia. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099361` — Castellón/Castelló. Francia. Nigeria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099371` — Castellón/Castelló. Francia. Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099369` — Castellón/Castelló. Francia. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099360` — Castellón/Castelló. Francia. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099341` — Castellón/Castelló. Francia. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099367` — Castellón/Castelló. Francia. Rusia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099316` — Castellón/Castelló. Irlanda. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099335` — Castellón/Castelló. Irlanda. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099314` — Castellón/Castelló. Irlanda. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099312` — Castellón/Castelló. Irlanda. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099303` — Castellón/Castelló. Irlanda. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099339` — Castellón/Castelló. Irlanda. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099584` — Castellón/Castelló. Extranjera. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099330` — Castellón/Castelló. Irlanda. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099328` — Castellón/Castelló. Irlanda. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099326` — Castellón/Castelló. Irlanda. Rumanía. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099324` — Castellón/Castelló. Irlanda. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099305` — Castellón/Castelló. Irlanda. Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099273` — Castellón/Castelló. Italia. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099269` — Castellón/Castelló. Italia. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099268` — Castellón/Castelló. Italia. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099259` — Castellón/Castelló. Italia. Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099289` — Castellón/Castelló. Italia. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099278` — Castellón/Castelló. Italia. Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099265` — Castellón/Castelló. Italia. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099264` — Castellón/Castelló. Italia. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP77844100` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 54 años. Hombres. Total.
+- `MNP78188151` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Extranjera. África.
+- `MNP78187529` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Brasil.
+- `MNP78187548` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Bulgaria.
+- `MNP78187526` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Colombia.
+- `MNP82962136` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Europa menos UE28.
+- `MNP78187546` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Irlanda.
+- `MNP78187543` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Polonia.
+- `MNP78187521` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. República Dominicana.
+- `MNP78187532` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Resto de África.
+- `MNP82962137` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. UE28 sin España.
+- `MNP78187520` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. África. Uruguay.
+- `MNP78188086` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Total.
+- `MNP78188069` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. África.
+- `MNP78188068` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Argelia.
+- `MNP78188063` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Argentina.
+- `MNP78188062` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Brasil.
+- `MNP78188060` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Chile.
+- `MNP78188085` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. España.
+- `MNP78188066` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Nigeria.
+- `MNP82999356` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. No consta.
+- `MNP78188065` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Resto de África.
+- `MNP78188070` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Resto de Europa.
+- `MNP78188071` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Alemania. Ucrania.
+- `MNP78187344` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Alemania.
+- `MNP78187326` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. América.
+- `MNP78187323` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Bolivia.
+- `MNP78187324` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Brasil.
+- `MNP78187343` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Bulgaria.
+- `MNP78187320` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Cuba.
+- `MNP78187342` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Francia.
+- `MNP78187318` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. México.
+- `MNP78187328` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Nigeria.
+- `MNP78187339` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Países Bajos.
+- `MNP78187327` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Resto de África.
+- `MNP78187313` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Resto de América.
+- `MNP78187335` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Rumanía.
+- `MNP78187314` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América. Venezuela.
+- `MNP82962121` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América del Norte. América.
+- `MNP82962119` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América del Norte. Centro América y Caribe.
+- `MNP82962126` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América del Norte. España.
+- `MNP82962123` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América del Norte. Europa menos UE28.
+- `MNP83006462` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América del Norte. No consta.
+- `MNP82962124` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. América del Norte. UE28 sin España.
+- `MNP78188232` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Argelia.
+- `MNP78187508` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. Alemania.
+- `MNP78187490` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. América.
+- `MNP78187476` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. Asia.
+- `MNP78187507` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. Bulgaria.
+- `MNP78187475` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. China.
+- `MNP78187483` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. Ecuador.
+- `MNP82999342` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. No consta.
+- `MNP78187501` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. Portugal.
+- `MNP78187498` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argelia. Rusia.
+- `MNP78188145` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Extranjera. Argentina.
+- `MNP78187290` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. África.
+- `MNP78187303` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Alemania.
+- `MNP78187285` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. América.
+- `MNP78187302` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Bulgaria.
+- `MNP78187281` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Chile.
+- `MNP78187280` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Colombia.
+- `MNP78187278` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Ecuador.
+- `MNP78187269` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Filipinas.
+- `MNP78187301` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Francia.
+- `MNP78187299` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Italia.
+- `MNP82987512` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. No consta (Extranjero).
+- `MNP78187291` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Argentina. Resto de Europa.
+- `MNP77878689` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Mujeres. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria).
+- `MNP80674839` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria). Directores y gerentes.
+- `MNP80674838` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria). Técnicos y profesionales científicos e intelectuales.
+- `MNP78186772` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Extranjera.
+- `MNP82962089` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. América del Norte.
+- `MNP78186738` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Asia.
+- `MNP82962090` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Europa menos UE28.
+- `MNP78186736` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Filipinas.
+- `MNP82999324` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. No consta.
+- `MNP78186765` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Países Bajos.
+- `MNP78186743` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Perú.
+- `MNP78186753` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Resto de África.
+- `MNP78186739` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Resto de América.
+- `MNP78186741` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Asia. Uruguay.
+- `MNP82999335` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bolivia. No consta.
+- `MNP78187194` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bolivia. Perú.
+- `MNP78187204` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bolivia. Resto de África.
+- `MNP78187190` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bolivia. Resto de América.
+- `MNP78188226` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Brasil.
+- `MNP78187230` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Asia.
+- `MNP78187261` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Bulgaria.
+- `MNP78187229` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. China.
+- `MNP78187228` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Filipinas.
+- `MNP78187258` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Italia.
+- `MNP78187236` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. México.
+- `MNP78187246` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Nigeria.
+- `MNP78187235` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Perú.
+- `MNP78187256` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Polonia.
+- `MNP78187245` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Resto de África.
+- `MNP78187253` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Rumanía.
+- `MNP78187251` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Brasil. Ucrania.
+- `MNP78188027` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Argelia.
+- `MNP78188009` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Asia.
+- `MNP78188018` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Colombia.
+- `MNP78188038` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Irlanda.
+- `MNP82999355` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. No consta.
+- `MNP78188014` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Perú.
+- `MNP78188034` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Portugal.
+- `MNP78188024` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Resto de África.
+- `MNP78188031` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Rusia.
+- `MNP78188030` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Bulgaria. Ucrania.
+- `MNP82962109` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Centro América y Caribe. América.
+- `MNP82962108` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Centro América y Caribe. América del Norte.
+- `MNP78188224` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Chile.
+- `MNP78187156` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Cuba.
+- `MNP78187176` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Italia.
+- `MNP82987509` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. No consta (Extranjero).
+- `MNP78187174` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Polonia.
+- `MNP78187168` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Resto de Europa.
+- `MNP78187171` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Rumanía.
+- `MNP78187169` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Ucrania.
+- `MNP78187151` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Chile. Uruguay.
+- `MNP78186731` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. Extranjera.
+- `MNP78186707` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. Chile.
+- `MNP78186706` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. Colombia.
+- `MNP78186704` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. Ecuador.
+- `MNP78186703` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. México.
+- `MNP78186694` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. Resto de Asia.
+- `MNP78186720` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. China. Rumanía.
+- `MNP78187143` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Total.
+- `MNP78187121` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. América.
+- `MNP78187125` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Argelia.
+- `MNP78187107` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Asia.
+- `MNP78187119` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Brasil.
+- `MNP78187114` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Ecuador.
+- `MNP78187142` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. España.
+- `MNP78187136` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Irlanda.
+- `MNP78187113` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. México.
+- `MNP78187123` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Nigeria.
+- `MNP82987508` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. No consta (Extranjero).
+- `MNP78187133` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Polonia.
+- `MNP78187131` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Reino Unido.
+- `MNP78187127` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Resto de Europa.
+- `MNP78187130` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Rumanía.
+- `MNP78187110` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Colombia. Uruguay.
+- `MNP78187085` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. África.
+- `MNP78187066` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Asia.
+- `MNP78187076` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Chile.
+- `MNP78187065` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. China.
+- `MNP78187073` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Ecuador.
+- `MNP78187101` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. España.
+- `MNP78187099` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Europa (sin España).
+- `MNP78187093` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Países Bajos.
+- `MNP78187071` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Perú.
+- `MNP78187092` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Polonia.
+- `MNP78187090` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Reino Unido.
+- `MNP78187081` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Resto de África.
+- `MNP78187088` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Cuba. Rusia.
+- `MNP78479192` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De Africa. Hombres. Total.
+- `MNP78479184` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De América. Hombres. Total.
+- `MNP77878683` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 15 a 19 años. Hombres. Directores y gerentes.
+- `MNP80674911` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Directores y gerentes. Directores y gerentes.
+- `MNP80674903` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Directores y gerentes. Ocupaciones elementales.
+- `MNP80674910` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Directores y gerentes. Técnicos y profesionales científicos e intelectuales.
+- `MNP77844349` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 22 años. Mujeres. Divorciados/Divorciadas.
+- `MNP80723826` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Doctorado universitario. Total.
+- `MNP80723819` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Doctorado universitario. Educación postsecundaria no superior.
+- `MNP80723823` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Doctorado universitario. Educación primaria.
+- `MNP78187044` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. África.
+- `MNP78187043` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Argelia.
+- `MNP78187056` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Bulgaria.
+- `MNP78187034` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Colombia.
+- `MNP78187033` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Cuba.
+- `MNP78187060` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. España.
+- `MNP78187023` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Filipinas.
+- `MNP82987506` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. No consta (Extranjero).
+- `MNP78187052` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Países Bajos.
+- `MNP78187021` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Resto de países.
+- `MNP78187048` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Rumanía.
+- `MNP78187046` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Ucrania.
+- `MNP78187028` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Uruguay.
+- `MNP78187027` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ecuador. Venezuela.
+- `MNP77942028` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 55 a 59 años. Mujeres. Educación postsecundaria no superior.
+- `MNP80723890` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Educación postsecundaria no superior. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP77942283` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Mujeres. Educación primaria.
+- `MNP80723946` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Educación primaria. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP80723951` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Educación primaria. Sin estudios.
+- `MNP77878608` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 30 a 34 años. Hombres. Empleados contables, administrativos y otros empleados de oficina.
+- `MNP77942251` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 15 a 19 años. Mujeres. Enseñanzas de formación profesional, artes plásticas y diseño y deportivas de grado superior y equivalentes; títulos propios universitarios que precisan del título de bachiller, de duración igual o superior a 2 años.
+- `MNP78188205` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Alemania.
+- `MNP78188173` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Asia.
+- `MNP78188183` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Chile.
+- `MNP78188208` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. España.
+- `MNP78188206` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Europa (sin España).
+- `MNP78188200` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Países Bajos.
+- `MNP78188199` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Polonia.
+- `MNP78188174` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Resto de América.
+- `MNP78188195` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Rusia.
+- `MNP82962167` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. Sudamérica.
+- `MNP82962171` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. España. UE28 sin España.
+- `MNP80729452` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Estudiante.
+- `MNP77942298` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Hombres. Estudios primarios incompletos.
+- `MNP80723954` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Estudios primarios incompletos. Doctorado universitario.
+- `MNP80723959` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Estudios primarios incompletos. Educación postsecundaria no superior.
+- `MNP80723964` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Estudios primarios incompletos. Estudios primarios incompletos.
+- `MNP80723953` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Estudios primarios incompletos. No consta.
+- `MNP80723962` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Estudios primarios incompletos. Primera etapa de Educación Secundaria y similar.
+- `MNP80723965` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Estudios primarios incompletos. Sin estudios.
+- `MNP78188110` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). África.
+- `MNP78188105` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). América.
+- `MNP83072941` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Centro América y Caribe.
+- `MNP78188098` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Ecuador.
+- `MNP82996635` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). No consta.
+- `MNP78188092` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Resto de América.
+- `MNP78188088` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Resto de Asia.
+- `MNP78188111` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Resto de Europa.
+- `MNP78188114` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Rumanía.
+- `MNP78188094` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Uruguay.
+- `MNP78188093` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa (sin España). Venezuela.
+- `MNP82962138` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Europa menos UE28. Resto de países.
+- `MNP78186663` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. Ecuador.
+- `MNP78186691` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. España.
+- `MNP78186686` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. Francia.
+- `MNP78186673` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. Marruecos.
+- `MNP78186681` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. Portugal.
+- `MNP78186671` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. Resto de África.
+- `MNP78186652` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Filipinas. Resto de países.
+- `MNP78188004` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Total.
+- `MNP78187987` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. África.
+- `MNP78188000` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Alemania.
+- `MNP78187982` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. América.
+- `MNP78187967` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. China.
+- `MNP78188003` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. España.
+- `MNP78188001` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Europa (sin España).
+- `MNP78187966` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Filipinas.
+- `MNP78187998` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Francia.
+- `MNP78187996` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Italia.
+- `MNP78187995` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Países Bajos.
+- `MNP78187994` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Polonia.
+- `MNP78187992` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Reino Unido.
+- `MNP78187991` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Rumanía.
+- `MNP78187970` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Francia. Venezuela.
+- `MNP80723984` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Grados universitarios de más de 240 créditos ECTS, licenciados y equivalentes.
+- `MNP78001073` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 25 a 29 años. Hombres. Invalidez permanente.
+- `MNP80729431` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Invalidez permanente. Invalidez permanente.
+- `MNP80729429` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Invalidez permanente. Otra situación de inactividad.
+- `MNP78187961` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Extranjera.
+- `MNP78187946` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. África.
+- `MNP78187959` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Alemania.
+- `MNP78187941` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. América.
+- `MNP78187940` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Argentina.
+- `MNP78187939` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Brasil.
+- `MNP78187937` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Chile.
+- `MNP78187936` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Colombia.
+- `MNP78187962` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. España.
+- `MNP78187933` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. México.
+- `MNP78187932` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Perú.
+- `MNP78187928` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Resto de América.
+- `MNP78187930` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Irlanda. Uruguay.
+- `MNP78187905` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. África.
+- `MNP78187899` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Argentina.
+- `MNP78187894` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Cuba.
+- `MNP78187884` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Filipinas.
+- `MNP78187915` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Irlanda.
+- `MNP78187914` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Italia.
+- `MNP78187913` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Países Bajos.
+- `MNP78187890` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. República Dominicana.
+- `MNP78187887` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Resto de América.
+- `MNP78187909` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Italia. Rumanía.
+- `MNP78187471` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Marruecos. Total.
+- `MNP78187449` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Marruecos. América.
+- `MNP78187465` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Marruecos. Francia.
+- `MNP78187463` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Marruecos. Italia.
+- `MNP78187437` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Marruecos. Venezuela.
+- `MNP77942276` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Mujeres. Másteres, especialidades en Ciencias de la Salud por el sistema de residencia y similares.
+- `MNP80582061` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Hombres. Matrimonios civiles.
+- `MNP80582034` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 40 a 44 años. Mujeres. Matrimonios religiosos.
+- `MNP78187020` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Total.
+- `MNP78186984` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Asia.
+- `MNP78186995` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Bolivia.
+- `MNP78186994` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Chile.
+- `MNP78187014` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Francia.
+- `MNP78186990` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. México.
+- `MNP78187011` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Países Bajos.
+- `MNP78187009` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. México. Portugal.
+- `MNP78187430` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Total.
+- `MNP78187429` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. España.
+- `MNP78187421` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Países Bajos.
+- `MNP78187419` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Portugal.
+- `MNP78187418` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Reino Unido.
+- `MNP78187395` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Resto de América.
+- `MNP78187391` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Resto de Asia.
+- `MNP78187397` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Nigeria. Uruguay.
+- `MNP82999357` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Extranjera. No consta.
+- `MNP83004507` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. América del Norte.
+- `MNP82996568` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Brasil.
+- `MNP82996564` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Cuba.
+- `MNP80729399` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Invalidez permanente.
+- `MNP82996585` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Irlanda.
+- `MNP80729395` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. No consta.
+- `MNP82996551` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. No consta (Extranjero).
+- `MNP80729401` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Ocupado/a.
+- `MNP80729397` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Otra situación de inactividad.
+- `MNP82996580` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Reino Unido.
+- `MNP82996576` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Resto de Europa.
+- `MNP82996579` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Rumanía.
+- `MNP80723806` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP82996558` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta. Venezuela.
+- `MNP82996632` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Extranjera.
+- `MNP82996612` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). América.
+- `MNP82996616` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Argelia.
+- `MNP82996611` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Argentina.
+- `MNP82996609` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Bolivia.
+- `MNP82996629` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Bulgaria.
+- `MNP82996608` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Chile.
+- `MNP82996602` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). República Dominicana.
+- `MNP82996599` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Resto de América.
+- `MNP82996595` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Resto de Asia.
+- `MNP82996594` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Resto de países.
+- `MNP82996621` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Rumanía.
+- `MNP82996620` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta (Extranjero). Rusia.
+- `MNP80674792` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta ocupados. Total.
+- `MNP80674781` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. No consta ocupados. No consta ocupados.
+- `MNP80674816` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones elementales. Total.
+- `MNP80674805` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones elementales. No consta ocupados.
+- `MNP82834626` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones elementales. Otras situaciones.
+- `MNP80674804` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones militares. Total.
+- `MNP80674793` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones militares. No consta ocupados.
+- `MNP80674794` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones militares. Ocupaciones militares.
+- `MNP80674801` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ocupaciones militares. Técnicos; profesionales de apoyo.
+- `MNP80729457` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Ocupado/a.
+- `MNP80674916` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Operadores de instalaciones y maquinaria, y montadores.
+- `MNP78001015` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 40 a 44 años. Mujeres. Otra situación de inactividad.
+- `MNP80729415` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Otra situación de inactividad. Invalidez permanente.
+- `MNP80729417` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Otra situación de inactividad. Ocupado/a.
+- `MNP80729416` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Otra situación de inactividad. Parado/a.
+- `MNP82834665` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Otras situaciones. Ocupaciones elementales.
+- `MNP78187877` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Alemania.
+- `MNP78187858` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Argentina.
+- `MNP78187845` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Asia.
+- `MNP78187856` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Bolivia.
+- `MNP78187857` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Brasil.
+- `MNP78187843` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Filipinas.
+- `MNP78187874` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Irlanda.
+- `MNP78187873` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Italia.
+- `MNP78187849` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. República Dominicana.
+- `MNP78187860` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Resto de África.
+- `MNP78187846` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Resto de América.
+- `MNP78187865` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Resto de Europa.
+- `MNP78187868` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Rumanía.
+- `MNP78187867` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Países Bajos. Rusia.
+- `MNP78001018` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 40 a 44 años. Mujeres. Parado/a.
+- `MNP80729426` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Pensionista de jubilación o prejubilación. Total.
+- `MNP80729419` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Pensionista de jubilación o prejubilación. No consta.
+- `MNP80729425` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Pensionista de jubilación o prejubilación. Ocupado/a.
+- `MNP80729422` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Pensionista de jubilación o prejubilación. Pensionista de jubilación o prejubilación.
+- `MNP78186942` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. China.
+- `MNP78186952` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. Colombia.
+- `MNP78186978` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. España.
+- `MNP78186941` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. Filipinas.
+- `MNP78186970` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. Países Bajos.
+- `MNP78186947` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. República Dominicana.
+- `MNP78186958` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. Resto de África.
+- `MNP78186939` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. Resto de países.
+- `MNP78186946` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Perú. Uruguay.
+- `MNP78187822` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. Argelia.
+- `MNP78187810` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. México.
+- `MNP82999350` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. No consta.
+- `MNP82987525` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. No consta (Extranjero).
+- `MNP78187809` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. Perú.
+- `MNP78187800` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. Resto de países.
+- `MNP78187827` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Polonia. Rumanía.
+- `MNP78187799` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Total.
+- `MNP78187763` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Asia.
+- `MNP78187774` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Bolivia.
+- `MNP78187775` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Brasil.
+- `MNP78187762` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. China.
+- `MNP78187770` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Ecuador.
+- `MNP78187796` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Europa (sin España).
+- `MNP78187791` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Italia.
+- `MNP78187769` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. México.
+- `MNP82999349` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. No consta.
+- `MNP78187768` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Perú.
+- `MNP78187788` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Portugal.
+- `MNP78187784` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Portugal. Ucrania.
+- `MNP77942114` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 40 a 44 años. Mujeres. Primera etapa de Educación Secundaria y similar.
+- `MNP80723931` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Primera etapa de Educación Secundaria y similar. Educación postsecundaria no superior.
+- `MNP80723925` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Primera etapa de Educación Secundaria y similar. No consta.
+- `MNP78187756` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Extranjera.
+- `MNP78187732` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Chile.
+- `MNP78187738` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Nigeria.
+- `MNP82987523` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. No consta (Extranjero).
+- `MNP78187749` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Países Bajos.
+- `MNP78187727` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Perú.
+- `MNP78187719` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Resto de Asia.
+- `MNP78187718` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Resto de países.
+- `MNP78187724` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Reino Unido. Venezuela.
+- `MNP78186938` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Total.
+- `MNP78186934` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Alemania.
+- `MNP78186911` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Colombia.
+- `MNP78186935` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Europa (sin España).
+- `MNP78186930` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Italia.
+- `MNP78186908` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. México.
+- `MNP78186929` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Países Bajos.
+- `MNP78186903` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Resto de América.
+- `MNP78186922` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Resto de Europa.
+- `MNP78186905` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Uruguay.
+- `MNP78186904` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. República Dominicana. Venezuela.
+- `MNP78187387` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de África. Extranjera.
+- `MNP78187363` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de África. Chile.
+- `MNP78187359` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de África. México.
+- `MNP78187355` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de África. Venezuela.
+- `MNP78186813` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. Extranjera.
+- `MNP78186798` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. África.
+- `MNP78186797` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. Argelia.
+- `MNP78186814` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. España.
+- `MNP78186808` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. Irlanda.
+- `MNP82987500` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. No consta (Extranjero).
+- `MNP78186780` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. Resto de América.
+- `MNP78186775` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. Resto de países.
+- `MNP78186802` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de América. Rumanía.
+- `MNP78188211` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Resto de Asia.
+- `MNP78186628` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Argentina.
+- `MNP78186615` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Asia.
+- `MNP78186625` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Chile.
+- `MNP78186614` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. China.
+- `MNP78186624` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Colombia.
+- `MNP78186648` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Europa (sin España).
+- `MNP78186613` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Filipinas.
+- `MNP78186644` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Irlanda.
+- `MNP78186632` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Marruecos.
+- `MNP82999321` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. No consta.
+- `MNP78186642` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Países Bajos.
+- `MNP78186640` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Portugal.
+- `MNP78186637` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Asia. Rusia.
+- `MNP78187594` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Total.
+- `MNP78187577` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. África.
+- `MNP78187590` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Alemania.
+- `MNP78187558` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Asia.
+- `MNP78187569` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Bolivia.
+- `MNP78187570` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Brasil.
+- `MNP78187589` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Bulgaria.
+- `MNP78187565` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Ecuador.
+- `MNP78187587` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Irlanda.
+- `MNP78187575` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. Marruecos.
+- `MNP78187562` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de Europa. República Dominicana.
+- `MNP78186608` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Extranjera.
+- `MNP78186606` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Alemania.
+- `MNP78186586` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Brasil.
+- `MNP78186584` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Chile.
+- `MNP78186609` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. España.
+- `MNP82962085` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Europa menos UE28.
+- `MNP78186604` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Francia.
+- `MNP78186603` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Irlanda.
+- `MNP78186570` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Resto de países.
+- `MNP78186597` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Rumanía.
+- `MNP78186577` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Resto de países. Uruguay.
+- `MNP78187716` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rumanía. España.
+- `MNP78187714` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rumanía. Europa (sin España).
+- `MNP78187697` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rumanía. Nigeria.
+- `MNP82987522` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rumanía. No consta (Extranjero).
+- `MNP78187705` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rumanía. Reino Unido.
+- `MNP78187659` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. África.
+- `MNP78187651` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. Bolivia.
+- `MNP78187638` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. Filipinas.
+- `MNP78187670` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. Francia.
+- `MNP82999346` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. No consta.
+- `MNP78187666` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. Polonia.
+- `MNP78187655` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. Resto de África.
+- `MNP78187662` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Rusia. Rusia.
+- `MNP77942295` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Hombres. Segunda etapa de educación secundaria, con orientación general.
+- `MNP77942231` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. De 20 a 24 años. Hombres. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP80723980` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Sin estudios. Total.
+- `MNP80723978` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Sin estudios. Estudios primarios incompletos.
+- `MNP77844311` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 27 años. Mujeres. Solteros/Solteras.
+- `MNP82962103` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Sudamérica. Total.
+- `MNP82962097` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Sudamérica. América.
+- `MNP82962093` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Sudamérica. Asia.
+- `MNP82962102` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Sudamérica. España.
+- `MNP77878706` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Hombres. Técnicos y profesionales científicos e intelectuales.
+- `MNP82834528` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos y profesionales científicos e intelectuales. Otras situaciones.
+- `MNP82834529` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos y profesionales científicos e intelectuales. Total ocupados.
+- `MNP77878693` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 60 y más años. Mujeres. Técnicos; profesionales de apoyo.
+- `MNP80674887` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos; profesionales de apoyo. Directores y gerentes.
+- `MNP80674879` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos; profesionales de apoyo. Ocupaciones elementales.
+- `MNP82834542` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos; profesionales de apoyo. Otras situaciones.
+- `MNP80674885` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos; profesionales de apoyo. Técnicos; profesionales de apoyo.
+- `MNP82834543` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Técnicos; profesionales de apoyo. Total ocupados.
+- `MNP82834671` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total ocupados. Directores y gerentes.
+- `MNP82834681` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total ocupados. No consta ocupados.
+- `MNP78188153` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Extranjera. Ucrania.
+- `MNP78187618` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. África.
+- `MNP78187613` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. América.
+- `MNP78187617` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Argelia.
+- `MNP78187609` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Chile.
+- `MNP78187632` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Europa (sin España).
+- `MNP78187597` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Filipinas.
+- `MNP82987520` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. No consta (Extranjero).
+- `MNP78187625` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Polonia.
+- `MNP78187600` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Resto de América.
+- `MNP78187619` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Ucrania. Resto de Europa.
+- `MNP82962161` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. UE28 sin España. Total.
+- `MNP82962155` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. UE28 sin España. América.
+- `MNP82962151` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. UE28 sin España. Asia.
+- `MNP82990253` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. UE28 sin España. No consta (Extranjero).
+- `MNP78188217` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Total. Uruguay.
+- `MNP78186880` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. África.
+- `MNP78186874` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Argentina.
+- `MNP78186861` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Asia.
+- `MNP78186873` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Brasil.
+- `MNP78186892` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Bulgaria.
+- `MNP78186860` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. China.
+- `MNP78186870` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Colombia.
+- `MNP78186896` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. España.
+- `MNP78186894` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Europa (sin España).
+- `MNP78186891` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Francia.
+- `MNP78186890` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Irlanda.
+- `MNP78186867` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. México.
+- `MNP82987502` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. No consta (Extranjero).
+- `MNP78186888` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Países Bajos.
+- `MNP78186866` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Perú.
+- `MNP78186865` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. República Dominicana.
+- `MNP78186876` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Resto de África.
+- `MNP78186858` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Resto de Asia.
+- `MNP78186883` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Rusia.
+- `MNP78186863` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Uruguay. Venezuela.
+- `MNP78186856` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Total.
+- `MNP78186839` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. África.
+- `MNP78186834` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. América.
+- `MNP78186851` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Bulgaria.
+- `MNP78186830` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Chile.
+- `MNP78186829` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Colombia.
+- `MNP78186828` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Cuba.
+- `MNP78186845` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Portugal.
+- `MNP78186821` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Resto de América.
+- `MNP78186816` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Resto de países.
+- `MNP78186841` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Ucrania.
+- `MNP78186823` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. Venezuela. Uruguay.
+- `MNP77844122` — Castellón/Castelló. Lugar de residencia. Matrimonio diferente sexo. Dato base. 51 años. Hombres. Viudos/Viudas.
+- `MNP78330017` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria). No consta ocupados.
+- `MNP78330100` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Directores y gerentes. Total.
+- `MNP78330091` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Directores y gerentes. Ocupaciones elementales.
+- `MNP78242728` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total. Doctorado universitario.
+- `MNP78242569` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Doctorado universitario. Educación primaria.
+- `MNP78242566` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Doctorado universitario. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP78242639` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Educación postsecundaria no superior. Educación primaria.
+- `MNP78242640` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Educación postsecundaria no superior. Estudios primarios incompletos.
+- `MNP78242691` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Educación primaria. Educación postsecundaria no superior.
+- `MNP78242685` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Educación primaria. No consta.
+- `MNP78330064` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Empleados contables, administrativos y otros empleados de oficina. Total.
+- `MNP78242732` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total. Enseñanzas de formación profesional, artes plásticas y diseño y deportivas de grado superior y equivalentes; títulos propios universitarios que precisan del título de bachiller, de duración igual o superior a 2 años.
+- `MNP78387884` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Estudiante. Pensionista de jubilación o prejubilación.
+- `MNP78242712` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Estudios primarios incompletos. Total.
+- `MNP78387929` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total. No consta.
+- `MNP78387874` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. No consta. Estudiante.
+- `MNP78387877` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. No consta. Invalidez permanente.
+- `MNP78387879` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. No consta. Ocupado/a.
+- `MNP78387876` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. No consta. Pensionista de jubilación o prejubilación.
+- `MNP78329969` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. No consta ocupados. No consta ocupados.
+- `MNP78329978` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. No consta ocupados. Técnicos y profesionales científicos e intelectuales.
+- `MNP78329993` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Ocupaciones elementales. No consta ocupados.
+- `MNP78329994` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Ocupaciones elementales. Ocupaciones militares.
+- `MNP82867358` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Ocupaciones elementales. Otras situaciones.
+- `MNP78330102` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total. Ocupaciones militares.
+- `MNP78387924` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Ocupado/a. Pensionista de jubilación o prejubilación.
+- `MNP78387896` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Otra situación de inactividad. Total.
+- `MNP82867395` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Otras situaciones. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria).
+- `MNP78387917` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Parado/a. Invalidez permanente.
+- `MNP78387913` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Parado/a. No consta.
+- `MNP78387915` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Parado/a. Otra situación de inactividad.
+- `MNP78387898` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Pensionista de jubilación o prejubilación. Estudiante.
+- `MNP78387901` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Pensionista de jubilación o prejubilación. Invalidez permanente.
+- `MNP78242677` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Primera etapa de Educación Secundaria y similar. Educación postsecundaria no superior.
+- `MNP78242678` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Primera etapa de Educación Secundaria y similar. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP78242683` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Primera etapa de Educación Secundaria y similar. Sin estudios.
+- `MNP78242735` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total. Segunda etapa de educación secundaria, con orientación general.
+- `MNP78242649` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Segunda etapa de educación secundaria con orientación profesional. Educación postsecundaria no superior.
+- `MNP78242739` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total. Sin estudios.
+- `MNP78242724` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Sin estudios. Estudios primarios incompletos.
+- `MNP78242725` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Sin estudios. Sin estudios.
+- `MNP82867260` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Técnicos y profesionales científicos e intelectuales. Otras situaciones.
+- `MNP78330065` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Técnicos; profesionales de apoyo. No consta ocupados.
+- `MNP78330073` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Técnicos; profesionales de apoyo. Técnicos; profesionales de apoyo.
+- `MNP82867402` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total ocupados. Total.
+- `MNP82867412` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total ocupados. Ocupaciones militares.
+- `MNP82867415` — Castellón/Castelló. Lugar de residencia. Matrimonio entre hombres. Dato base. Total ocupados. Total ocupados.
+- `MNP78257048` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Total.
+- `MNP78337505` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria). No consta ocupados.
+- `MNP82877914` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria). Otras situaciones.
+- `MNP78337579` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Directores y gerentes. Ocupaciones elementales.
+- `MNP78256880` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Doctorado universitario. Total.
+- `MNP78256877` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Doctorado universitario. Educación primaria.
+- `MNP78256938` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Educación postsecundaria no superior. Doctorado universitario.
+- `MNP78256949` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Educación postsecundaria no superior. Sin estudios.
+- `MNP78256993` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Educación primaria. No consta.
+- `MNP78257000` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Educación primaria. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP78337552` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Empleados contables, administrativos y otros empleados de oficina. Total.
+- `MNP78391216` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Estudiante. Total.
+- `MNP78391211` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Estudiante. Otra situación de inactividad.
+- `MNP78391214` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Estudiante. Parado/a.
+- `MNP78257020` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Estudios primarios incompletos. Total.
+- `MNP78257018` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Estudios primarios incompletos. Estudios primarios incompletos.
+- `MNP78257007` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Estudios primarios incompletos. No consta.
+- `MNP78256908` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Grados universitarios de más de 240 créditos ECTS, licenciados y equivalentes. Total.
+- `MNP78391237` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Invalidez permanente. Invalidez permanente.
+- `MNP78391233` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Invalidez permanente. No consta.
+- `MNP78257035` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. No consta.
+- `MNP78256854` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. No consta. Doctorado universitario.
+- `MNP78256864` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. No consta. Estudios primarios incompletos.
+- `MNP78391207` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. No consta. Ocupado/a.
+- `MNP78337461` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. No consta ocupados. Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria).
+- `MNP78337457` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. No consta ocupados. No consta ocupados.
+- `MNP78337466` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. No consta ocupados. Técnicos y profesionales científicos e intelectuales.
+- `MNP78337483` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupaciones elementales. Ocupaciones elementales.
+- `MNP78337482` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupaciones elementales. Ocupaciones militares.
+- `MNP78337489` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupaciones elementales. Técnicos; profesionales de apoyo.
+- `MNP78337590` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Ocupaciones militares.
+- `MNP78337470` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupaciones militares. Ocupaciones militares.
+- `MNP82877956` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupaciones militares. Otras situaciones.
+- `MNP78391253` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupado/a. Invalidez permanente.
+- `MNP78391252` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Ocupado/a. Pensionista de jubilación o prejubilación.
+- `MNP78391259` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Otra situación de inactividad.
+- `MNP78391217` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Otra situación de inactividad. No consta.
+- `MNP78391220` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Otra situación de inactividad. Pensionista de jubilación o prejubilación.
+- `MNP82877983` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Otras situaciones. No consta ocupados.
+- `MNP78391260` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Pensionista de jubilación o prejubilación.
+- `MNP78391228` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Pensionista de jubilación o prejubilación. Pensionista de jubilación o prejubilación.
+- `MNP78256979` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Primera etapa de Educación Secundaria y similar. No consta.
+- `MNP78257042` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Segunda etapa de educación secundaria con orientación profesional.
+- `MNP78256952` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Segunda etapa de educación secundaria con orientación profesional. Doctorado universitario.
+- `MNP78256963` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Segunda etapa de educación secundaria con orientación profesional. Sin estudios.
+- `MNP78257047` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Sin estudios.
+- `MNP78257033` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Sin estudios. Sin estudios.
+- `MNP78337576` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Técnicos y profesionales científicos e intelectuales. Total.
+- `MNP82877844` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Técnicos y profesionales científicos e intelectuales. Otras situaciones.
+- `MNP78337597` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total. Técnicos; profesionales de apoyo.
+- `MNP78337555` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Técnicos; profesionales de apoyo. Ocupaciones elementales.
+- `MNP82877988` — Castellón/Castelló. Lugar de residencia. Matrimonio entre mujeres. Dato base. Total ocupados. Técnicos y profesionales científicos e intelectuales.
+- `MNP78098830` — Castellón/Castelló. Marruecos. Bulgaria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098798` — Castellón/Castelló. Marruecos. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098799` — Castellón/Castelló. Marruecos. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098834` — Castellón/Castelló. Marruecos. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493210` — Castellón/Castelló. Marruecos. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098802` — Castellón/Castelló. Marruecos. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098801` — Castellón/Castelló. Marruecos. Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP32616` — Castellón/Castelló. Matrimonio diferente sexo. Lugar de celebración. Dato base.
+- `MNP32543` — Castellón/Castelló. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP76790242` — Castellón/Castelló. 33 años. 48 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Abril.
+- `MNP76796855` — Castellón/Castelló. 23 años. 19 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Agosto.
+- `MNP76792535` — Castellón/Castelló. 30 años. 15 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Diciembre.
+- `MNP76780885` — Castellón/Castelló. 48 años. 48 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Enero.
+- `MNP76781560` — Castellón/Castelló. 47 años. 44 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Febrero.
+- `MNP76782530` — Castellón/Castelló. 46 años. 17 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Julio.
+- `MNP76782284` — Castellón/Castelló. 46 años. 36 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Junio.
+- `MNP76799785` — Castellón/Castelló. 18 años. 34 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Marzo.
+- `MNP76796234` — Castellón/Castelló. 24 años. 19 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Mayo.
+- `MNP76774193` — Castellón/Castelló. 59 años. 34 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Noviembre.
+- `MNP76785231` — Castellón/Castelló. 41 años. 49 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Octubre.
+- `MNP76796594` — Castellón/Castelló. 23 años. 39 años. Matrimonio diferente sexo. Dato base. Lugar de residencia. Septiembre.
+- `MNP27771` — Castellón/Castelló. Matrimonio diferente sexo. Mujeres. 42 años. Solteros/Solteras. Lugar de residencia. Dato base.
+- `MNP80609382` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia.
+- `MNP78652014` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Abril.
+- `MNP82974966` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. África. Total.
+- `MNP82974955` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. África. Resto de países.
+- `MNP82974957` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. África. Sudamérica.
+- `MNP78652018` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Agosto.
+- `MNP82974953` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. América. España.
+- `MNP82974952` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. América. Extranjero.
+- `MNP82974943` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. América. Resto de países.
+- `MNP82974941` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. América del Norte. España.
+- `MNP82974938` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. América del Norte. Europa menos UE28.
+- `MNP82974901` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Asia. África.
+- `MNP83075005` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Asia. Europa (sin España).
+- `MNP82974904` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Asia. Extranjero.
+- `MNP82974925` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Centro América y Caribe. África.
+- `MNP82974926` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Centro América y Caribe. Europa menos UE28.
+- `MNP82974921` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Centro América y Caribe. Sudamérica.
+- `MNP78652802` — Castellón/Castelló. De 35 a 39 años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Diciembre.
+- `MNP78652115` — Castellón/Castelló. 60 y más años. De 20 a 24 años. Matrimonio entre hombres. Dato base. Lugar de residencia. Enero.
+- `MNP82975025` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Total. España.
+- `MNP82975007` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. España. América del Norte.
+- `MNP83075025` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. España. Europa (sin España).
+- `MNP83075026` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Total. Europa (sin España).
+- `MNP83075018` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Europa (sin España). América.
+- `MNP83075017` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Europa (sin España). América del Norte.
+- `MNP83075012` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Europa (sin España). No consta (Extranjero).
+- `MNP82974978` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Europa menos UE28. Total.
+- `MNP82974976` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Europa menos UE28. Extranjero.
+- `MNP82974975` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Europa menos UE28. UE28 sin España.
+- `MNP82974997` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Extranjero. África.
+- `MNP82974996` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Extranjero. América.
+- `MNP83010749` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Extranjero. No consta (Extranjero).
+- `MNP82974991` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Extranjero. Resto de países.
+- `MNP82974999` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Extranjero. UE28 sin España.
+- `MNP78652090` — Castellón/Castelló. 60 y más años. De 30 a 34 años. Matrimonio entre hombres. Dato base. Lugar de residencia. Febrero.
+- `MNP78652797` — Castellón/Castelló. De 35 a 39 años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Julio.
+- `MNP78652042` — Castellón/Castelló. 60 y más años. De 50 a 54 años. Matrimonio entre hombres. Dato base. Lugar de residencia. Junio.
+- `MNP78652065` — Castellón/Castelló. 60 y más años. De 40 a 44 años. Matrimonio entre hombres. Dato base. Lugar de residencia. Marzo.
+- `MNP78652015` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Mayo.
+- `MNP83009492` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. No consta. Europa menos UE28.
+- `MNP83009509` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. No consta (Extranjero). Total.
+- `MNP83009507` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. No consta (Extranjero). Extranjero.
+- `MNP83009500` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. No consta (Extranjero). Sudamérica.
+- `MNP78652021` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Noviembre.
+- `MNP78652644` — Castellón/Castelló. De 40 a 44 años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Octubre.
+- `MNP83075004` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Resto de países. Europa (sin España).
+- `MNP82974890` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Resto de países. Europa menos UE28.
+- `MNP83010732` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Resto de países. No consta.
+- `MNP82974883` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Resto de países. Resto de países.
+- `MNP78652487` — Castellón/Castelló. De 45 a 49 años. 60 y más años. Matrimonio entre hombres. Dato base. Lugar de residencia. Septiembre.
+- `MNP82974917` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Sudamérica. España.
+- `MNP83010736` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. Sudamérica. No consta.
+- `MNP82974984` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. UE28 sin España. América.
+- `MNP82974983` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. UE28 sin España. América del Norte.
+- `MNP82974979` — Castellón/Castelló. Matrimonio entre hombres. Lugar de residencia. Dato base. UE28 sin España. Resto de países.
+- `MNP78451968` — Castellón/Castelló. Total. Total. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78788722` — Castellón/Castelló. 60 y más años. De 40 a 44 años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Abril.
+- `MNP82982447` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. África. América del Norte.
+- `MNP82982446` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. África. Centro América y Caribe.
+- `MNP82982453` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. África. España.
+- `MNP82982452` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. África. Extranjero.
+- `MNP83013397` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. África. No consta (Extranjero).
+- `MNP82982443` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. África. Resto de países.
+- `MNP78788986` — Castellón/Castelló. De 50 a 54 años. 60 y más años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Agosto.
+- `MNP82982436` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América. América.
+- `MNP82982435` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América. América del Norte.
+- `MNP82982441` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América. España.
+- `MNP83013394` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América. No consta.
+- `MNP82982431` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América. Resto de países.
+- `MNP82982429` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América del Norte. España.
+- `MNP82982428` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América del Norte. Extranjero.
+- `MNP82982427` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. América del Norte. UE28 sin España.
+- `MNP82982504` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Total. Asia.
+- `MNP82982388` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Asia. América.
+- `MNP82982387` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Asia. América del Norte.
+- `MNP82982393` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Asia. España.
+- `MNP82982390` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Asia. Europa menos UE28.
+- `MNP82982383` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Asia. Resto de países.
+- `MNP82982413` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Centro América y Caribe. África.
+- `MNP83013390` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Centro América y Caribe. No consta.
+- `MNP82982407` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Centro América y Caribe. Resto de países.
+- `MNP82982415` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Centro América y Caribe. UE28 sin España.
+- `MNP78788782` — Castellón/Castelló. 60 y más años. De 20 a 24 años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Diciembre.
+- `MNP78788784` — Castellón/Castelló. 60 y más años. De 15 a 19 años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Enero.
+- `MNP82982497` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. España. África.
+- `MNP83013403` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. España. No consta (Extranjero).
+- `MNP83076326` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Total. Europa (sin España).
+- `MNP83076322` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Europa (sin España). España.
+- `MNP83076321` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Europa (sin España). Extranjero.
+- `MNP83076313` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Europa (sin España). Resto de países.
+- `MNP82982466` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Europa menos UE28. Total.
+- `MNP82982456` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Europa menos UE28. Asia.
+- `MNP82982462` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Europa menos UE28. Europa menos UE28.
+- `MNP82982512` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Total. Extranjero.
+- `MNP83076324` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Extranjero. Europa (sin España).
+- `MNP82982488` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Extranjero. Extranjero.
+- `MNP78788759` — Castellón/Castelló. 60 y más años. De 25 a 29 años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Febrero.
+- `MNP78788712` — Castellón/Castelló. 60 y más años. De 45 a 49 años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Julio.
+- `MNP78788828` — Castellón/Castelló. De 55 a 59 años. 60 y más años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Junio.
+- `MNP78789605` — Castellón/Castelló. De 30 a 34 años. 60 y más años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Marzo.
+- `MNP78790231` — Castellón/Castelló. Menos de 15 años. 60 y más años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Mayo.
+- `MNP83013404` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Total. No consta.
+- `MNP83012138` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta. Asia.
+- `MNP83012144` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta. Europa menos UE28.
+- `MNP83012135` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta. No consta.
+- `MNP83012139` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta. Sudamérica.
+- `MNP83012145` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta. UE28 sin España.
+- `MNP83012154` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta (Extranjero). América del Norte.
+- `MNP83012157` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta (Extranjero). Europa menos UE28.
+- `MNP83012150` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta (Extranjero). Resto de países.
+- `MNP83012152` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. No consta (Extranjero). Sudamérica.
+- `MNP78788677` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Noviembre.
+- `MNP78788676` — Castellón/Castelló. 60 y más años. 60 y más años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Octubre.
+- `MNP82982377` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Resto de países. África.
+- `MNP83013384` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Resto de países. No consta.
+- `MNP82982379` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Resto de países. UE28 sin España.
+- `MNP78788766` — Castellón/Castelló. 60 y más años. De 25 a 29 años. Matrimonio entre mujeres. Dato base. Lugar de residencia. Septiembre.
+- `MNP82982400` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Sudamérica. América.
+- `MNP82982398` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Sudamérica. Centro América y Caribe.
+- `MNP83076306` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Sudamérica. Europa (sin España).
+- `MNP83013388` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Sudamérica. No consta.
+- `MNP82982511` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. Total. UE28 sin España.
+- `MNP82982473` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. UE28 sin España. África.
+- `MNP82982474` — Castellón/Castelló. Matrimonio entre mujeres. Lugar de residencia. Dato base. UE28 sin España. Europa menos UE28.
+- `MNP80477091` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Agosto. Matrimonios civiles.
+- `MNP75644149` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Agosto. Matrimonios entre hombres.
+- `MNP80647955` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Al menos un cónyuge extranjero.
+- `MNP75644132` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Diciembre. Total.
+- `MNP75644129` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Diciembre. Matrimonios entre hombres.
+- `MNP75644187` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Enero. Total.
+- `MNP75644183` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Enero. Matrimonios entre mujeres.
+- `MNP75644182` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Febrero. Total.
+- `MNP80477103` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Febrero. Matrimonios civiles.
+- `MNP75644179` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Febrero. Matrimonios entre hombres.
+- `MNP80477102` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Febrero. Matrimonios religiosos.
+- `MNP75640862` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Julio. Total.
+- `MNP75644153` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Julio. Matrimonios entre mujeres.
+- `MNP75644161` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Junio. Entre personas de distinto sexo.
+- `MNP75640878` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Marzo. Total.
+- `MNP75644176` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Marzo. Entre personas de distinto sexo.
+- `MNP75644174` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Marzo. Matrimonios entre hombres.
+- `MNP80477100` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Marzo. Matrimonios religiosos.
+- `MNP80477106` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Total. Matrimonios religiosos.
+- `MNP75640870` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Mayo. Total.
+- `MNP75644165` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Mayo. Entre personas del mismo sexo.
+- `MNP75640846` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Noviembre. Total.
+- `MNP75644136` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Noviembre. Entre personas de distinto sexo.
+- `MNP75644142` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Octubre. Total.
+- `MNP75644140` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Octubre. Entre personas del mismo sexo.
+- `MNP75644139` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Octubre. Matrimonios entre hombres.
+- `MNP75644145` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Septiembre. Entre personas del mismo sexo.
+- `MNP80477089` — Castellón/Castelló. Matrimonio; mismo y distinto sexo. Dato base. Lugar de residencia. Septiembre. Matrimonios civiles.
+- `MNP78098346` — Castellón/Castelló. México. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098344` — Castellón/Castelló. México. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098373` — Castellón/Castelló. México. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098365` — Castellón/Castelló. México. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098374` — Castellón/Castelló. México. Total. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098357` — Castellón/Castelló. México. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098359` — Castellón/Castelló. México. Rusia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098756` — Castellón/Castelló. Nigeria. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098771` — Castellón/Castelló. Nigeria. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098764` — Castellón/Castelló. Nigeria. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098791` — Castellón/Castelló. Nigeria. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098787` — Castellón/Castelló. Nigeria. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098785` — Castellón/Castelló. Nigeria. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098794` — Castellón/Castelló. Nigeria. Total. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098784` — Castellón/Castelló. Nigeria. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098761` — Castellón/Castelló. Nigeria. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098758` — Castellón/Castelló. Nigeria. Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098777` — Castellón/Castelló. Nigeria. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098753` — Castellón/Castelló. Nigeria. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518199` — Castellón/Castelló. No consta (extranjera). América del Norte. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493165` — Castellón/Castelló. No consta (extranjera). Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493163` — Castellón/Castelló. No consta (extranjera). Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493171` — Castellón/Castelló. No consta (extranjera). De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80647261` — Castellón/Castelló. No consta (extranjera). De Sudamérica. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP80493159` — Castellón/Castelló. No consta (extranjera). Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80647266` — Castellón/Castelló. No consta (extranjera). Europa (sin España). Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP80493150` — Castellón/Castelló. No consta (extranjera). Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80645008` — Castellón/Castelló. Extranjera. No consta (extranjera). Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP80493168` — Castellón/Castelló. No consta (extranjera). Nigeria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493147` — Castellón/Castelló. No consta (extranjera). No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493176` — Castellón/Castelló. No consta (extranjera). Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493167` — Castellón/Castelló. No consta (extranjera). Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493153` — Castellón/Castelló. No consta (extranjera). Resto de América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493172` — Castellón/Castelló. No consta (extranjera). Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493154` — Castellón/Castelló. No consta (extranjera). Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP3951369` — Castellón/Castelló. Otros. Total. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951365` — Castellón/Castelló. Otros. Española. Total. Matrimonio diferente sexo.
+- `MNP3951852` — Castellón/Castelló. Extranjera. Otros. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951911` — Castellón/Castelló. Española. Otros. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951311` — Castellón/Castelló. Otros. Otros. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951342` — Castellón/Castelló. Otros. País de Africa. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951341` — Castellón/Castelló. Otros. País de Africa. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951339` — Castellón/Castelló. Otros. País de América. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951328` — Castellón/Castelló. Otros. País de América Central  y Caribe. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951333` — Castellón/Castelló. Otros. País de América del Norte. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951355` — Castellón/Castelló. Otros. País de la UE28 sin España. Total. Matrimonio diferente sexo.
+- `MNP3951325` — Castellón/Castelló. Otros. País de Sudamérica. Total. Matrimonio diferente sexo.
+- `MNP3951322` — Castellón/Castelló. Otros. País de Sudamérica. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951321` — Castellón/Castelló. Otros. País de Sudamérica. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951944` — Castellón/Castelló. Española. País de Africa. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951718` — Castellón/Castelló. País de Africa. Extranjera. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951730` — Castellón/Castelló. País de Africa. Total. Total. Matrimonio diferente sexo.
+- `MNP3951941` — Castellón/Castelló. Española. País de Africa. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951703` — Castellón/Castelló. País de Africa. País de Africa. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951702` — Castellón/Castelló. País de Africa. País de Africa. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951698` — Castellón/Castelló. País de Africa. País de América. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951689` — Castellón/Castelló. País de Africa. País de América Central  y Caribe. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951688` — Castellón/Castelló. País de Africa. País de América Central  y Caribe. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951686` — Castellón/Castelló. País de Africa. País de América Central  y Caribe. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951693` — Castellón/Castelló. País de Africa. País de América del Norte. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951695` — Castellón/Castelló. País de Africa. País de América del Norte. Total. Matrimonio diferente sexo.
+- `MNP3951676` — Castellón/Castelló. País de Africa. País de Asia. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951709` — Castellón/Castelló. País de Africa. País de Europa menos UE28. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951708` — Castellón/Castelló. País de Africa. País de Europa menos UE28. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951713` — Castellón/Castelló. País de Africa. País de la UE28 sin España. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951715` — Castellón/Castelló. País de Africa. País de la UE28 sin España. Total. Matrimonio diferente sexo.
+- `MNP3951684` — Castellón/Castelló. País de Africa. País de Sudamérica. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951940` — Castellón/Castelló. Española. País de América. Total. Matrimonio diferente sexo.
+- `MNP3951937` — Castellón/Castelló. Española. País de América. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951996` — Castellón/Castelló. Total. País de América. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951614` — Castellón/Castelló. País de América. Otros. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951612` — Castellón/Castelló. País de América. Otros. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951643` — Castellón/Castelló. País de América. País de Africa. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951645` — Castellón/Castelló. País de América. País de Africa. Total. Matrimonio diferente sexo.
+- `MNP3951627` — Castellón/Castelló. País de América. País de América Central  y Caribe. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951635` — Castellón/Castelló. País de América. País de América del Norte. Total. Matrimonio diferente sexo.
+- `MNP3951618` — Castellón/Castelló. País de América. País de Asia. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951620` — Castellón/Castelló. País de América. País de Asia. Total. Matrimonio diferente sexo.
+- `MNP3951646` — Castellón/Castelló. País de América. País de Europa menos UE28. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951651` — Castellón/Castelló. País de América. País de la UE28 sin España. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951549` — Castellón/Castelló. País de América Central  y Caribe. Total. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951543` — Castellón/Castelló. País de América Central  y Caribe. Española. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951870` — Castellón/Castelló. Extranjera. País de América Central  y Caribe. Total. Matrimonio diferente sexo.
+- `MNP3951926` — Castellón/Castelló. Española. País de América Central  y Caribe. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951495` — Castellón/Castelló. País de América Central  y Caribe. Otros. Total. Matrimonio diferente sexo.
+- `MNP3951518` — Castellón/Castelló. País de América Central  y Caribe. País de América. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951520` — Castellón/Castelló. País de América Central  y Caribe. País de América. Total. Matrimonio diferente sexo.
+- `MNP3951517` — Castellón/Castelló. País de América Central  y Caribe. País de América. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951516` — Castellón/Castelló. País de América Central  y Caribe. País de América. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951498` — Castellón/Castelló. País de América Central  y Caribe. País de Asia. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951497` — Castellón/Castelló. País de América Central  y Caribe. País de Asia. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951526` — Castellón/Castelló. País de América Central  y Caribe. País de Europa menos UE28. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951504` — Castellón/Castelló. País de América Central  y Caribe. País de Sudamérica. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951503` — Castellón/Castelló. País de América Central  y Caribe. País de Sudamérica. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951993` — Castellón/Castelló. Total. País de América del Norte. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951610` — Castellón/Castelló. País de América del Norte. Total. Total. Matrimonio diferente sexo.
+- `MNP3951931` — Castellón/Castelló. Española. País de América del Norte. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951555` — Castellón/Castelló. País de América del Norte. Otros. Total. Matrimonio diferente sexo.
+- `MNP3951580` — Castellón/Castelló. País de América del Norte. País de América. Total. Matrimonio diferente sexo.
+- `MNP3951576` — Castellón/Castelló. País de América del Norte. País de América. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951569` — Castellón/Castelló. País de América del Norte. País de América Central  y Caribe. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951570` — Castellón/Castelló. País de América del Norte. País de América Central  y Caribe. Total. Matrimonio diferente sexo.
+- `MNP3951559` — Castellón/Castelló. País de América del Norte. País de Asia. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951558` — Castellón/Castelló. País de América del Norte. País de Asia. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951556` — Castellón/Castelló. País de América del Norte. País de Asia. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951588` — Castellón/Castelló. País de América del Norte. País de Europa menos UE28. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951592` — Castellón/Castelló. País de América del Norte. País de la UE28 sin España. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951919` — Castellón/Castelló. Española. País de Asia. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951918` — Castellón/Castelló. Española. País de Asia. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951860` — Castellón/Castelló. Extranjera. País de Asia. Total. Matrimonio diferente sexo.
+- `MNP3951422` — Castellón/Castelló. País de Asia. Española. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951976` — Castellón/Castelló. Total. País de Asia. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951373` — Castellón/Castelló. País de Asia. Otros. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951398` — Castellón/Castelló. País de Asia. País de América. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951397` — Castellón/Castelló. País de Asia. País de América. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951395` — Castellón/Castelló. País de Asia. País de América del Norte. Total. Matrimonio diferente sexo.
+- `MNP3951377` — Castellón/Castelló. País de Asia. País de Asia. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951408` — Castellón/Castelló. País de Asia. País de Europa menos UE28. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951406` — Castellón/Castelló. País de Asia. País de Europa menos UE28. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951415` — Castellón/Castelló. País de Asia. País de la UE28 sin España. Total. Matrimonio diferente sexo.
+- `MNP3951384` — Castellón/Castelló. País de Asia. País de Sudamérica. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP78419802` — Castellón/Castelló. País de Europa menos UE28. De América. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451911` — Castellón/Castelló. País de Europa menos UE28. De Sudamérica. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419807` — Castellón/Castelló. País de Europa menos UE28. España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451919` — Castellón/Castelló. País de Europa menos UE28. España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451920` — Castellón/Castelló. País de Europa menos UE28. Total. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP3951734` — Castellón/Castelló. País de Europa menos UE28. Otros. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951764` — Castellón/Castelló. País de Europa menos UE28. País de Africa. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951758` — Castellón/Castelló. País de Europa menos UE28. País de América. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951749` — Castellón/Castelló. País de Europa menos UE28. País de América Central  y Caribe. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951746` — Castellón/Castelló. País de Europa menos UE28. País de América Central  y Caribe. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP78451916` — Castellón/Castelló. País de Europa menos UE28. País de Europa menos UE28. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP3951772` — Castellón/Castelló. País de Europa menos UE28. País de la UE28 sin España. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951744` — Castellón/Castelló. País de Europa menos UE28. País de Sudamérica. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951743` — Castellón/Castelló. País de Europa menos UE28. País de Sudamérica. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951742` — Castellón/Castelló. País de Europa menos UE28. País de Sudamérica. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP78419814` — Castellón/Castelló. País de la UE28 sin España. De América. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451926` — Castellón/Castelló. País de la UE28 sin España. De América. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451922` — Castellón/Castelló. País de la UE28 sin España. De Asia. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP3951839` — Castellón/Castelló. País de la UE28 sin España. Extranjera. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951843` — Castellón/Castelló. País de la UE28 sin España. Española. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP78419819` — Castellón/Castelló. País de la UE28 sin España. España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP3952015` — Castellón/Castelló. Total. País de la UE28 sin España. Total. Matrimonio diferente sexo.
+- `MNP78419853` — Castellón/Castelló. Total. País de la UE28 sin España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78451965` — Castellón/Castelló. Total. País de la UE28 sin España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP3951836` — Castellón/Castelló. País de la UE28 sin España. Extranjera. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951795` — Castellón/Castelló. País de la UE28 sin España. Otros. Total. Matrimonio diferente sexo.
+- `MNP3951821` — Castellón/Castelló. País de la UE28 sin España. País de Africa. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951819` — Castellón/Castelló. País de la UE28 sin España. País de América. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951808` — Castellón/Castelló. País de la UE28 sin España. País de América Central  y Caribe. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951812` — Castellón/Castelló. País de la UE28 sin España. País de América del Norte. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP78419817` — Castellón/Castelló. País de la UE28 sin España. País de la UE28 sin España. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP3951831` — Castellón/Castelló. País de la UE28 sin España. País de la UE28 sin España. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP78451921` — Castellón/Castelló. País de la UE28 sin España. Resto de países. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP3951984` — Castellón/Castelló. Total. País de Sudamérica. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951923` — Castellón/Castelló. Española. País de Sudamérica. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951925` — Castellón/Castelló. Española. País de Sudamérica. Total. Matrimonio diferente sexo.
+- `MNP3951487` — Castellón/Castelló. País de Sudamérica. Total. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951921` — Castellón/Castelló. Española. País de Sudamérica. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951465` — Castellón/Castelló. País de Sudamérica. País de Africa. Total. Matrimonio diferente sexo.
+- `MNP3951458` — Castellón/Castelló. País de Sudamérica. País de América. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951456` — Castellón/Castelló. País de Sudamérica. País de América. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951447` — Castellón/Castelló. País de Sudamérica. País de América Central  y Caribe. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951454` — Castellón/Castelló. País de Sudamérica. País de América del Norte. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951453` — Castellón/Castelló. País de Sudamérica. País de América del Norte. Entre personas del mismo sexo. Matrimonio diferente sexo.
+- `MNP3951451` — Castellón/Castelló. País de Sudamérica. País de América del Norte. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951437` — Castellón/Castelló. País de Sudamérica. País de Asia. Matrimonios entre hombres. Matrimonio diferente sexo.
+- `MNP3951469` — Castellón/Castelló. País de Sudamérica. País de Europa menos UE28. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951466` — Castellón/Castelló. País de Sudamérica. País de Europa menos UE28. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951474` — Castellón/Castelló. País de Sudamérica. País de la UE28 sin España. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951471` — Castellón/Castelló. País de Sudamérica. País de la UE28 sin España. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP3951444` — Castellón/Castelló. País de Sudamérica. País de Sudamérica. Entre personas de distinto sexo. Matrimonio diferente sexo.
+- `MNP3951441` — Castellón/Castelló. País de Sudamérica. País de Sudamérica. Matrimonios entre mujeres. Matrimonio diferente sexo.
+- `MNP78099231` — Castellón/Castelló. Países Bajos. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099228` — Castellón/Castelló. Países Bajos. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099226` — Castellón/Castelló. Países Bajos. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099255` — Castellón/Castelló. Países Bajos. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099217` — Castellón/Castelló. Países Bajos. Filipinas. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099249` — Castellón/Castelló. Países Bajos. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493220` — Castellón/Castelló. Países Bajos. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099215` — Castellón/Castelló. Países Bajos. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098308` — Castellón/Castelló. Perú. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098327` — Castellón/Castelló. Perú. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098306` — Castellón/Castelló. Perú. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098303` — Castellón/Castelló. Perú. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098295` — Castellón/Castelló. Perú. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098329` — Castellón/Castelló. Perú. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098325` — Castellón/Castelló. Perú. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098312` — Castellón/Castelló. Perú. Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098311` — Castellón/Castelló. Perú. Nigeria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098320` — Castellón/Castelló. Perú. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098299` — Castellón/Castelló. Perú. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098310` — Castellón/Castelló. Perú. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098297` — Castellón/Castelló. Perú. Venezuela. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099209` — Castellón/Castelló. Polonia. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099188` — Castellón/Castelló. Polonia. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099185` — Castellón/Castelló. Polonia. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099194` — Castellón/Castelló. Polonia. Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099212` — Castellón/Castelló. Polonia. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099204` — Castellón/Castelló. Polonia. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099202` — Castellón/Castelló. Polonia. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099181` — Castellón/Castelló. Polonia. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099174` — Castellón/Castelló. Polonia. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099173` — Castellón/Castelló. Polonia. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099200` — Castellón/Castelló. Polonia. Rumanía. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099168` — Castellón/Castelló. Portugal. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099146` — Castellón/Castelló. Portugal. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099147` — Castellón/Castelló. Portugal. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099166` — Castellón/Castelló. Portugal. Bulgaria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099134` — Castellón/Castelló. Portugal. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099143` — Castellón/Castelló. Portugal. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099154` — Castellón/Castelló. Portugal. De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099135` — Castellón/Castelló. Portugal. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099142` — Castellón/Castelló. Portugal. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099164` — Castellón/Castelló. Portugal. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099170` — Castellón/Castelló. Portugal. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099162` — Castellón/Castelló. Portugal. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099160` — Castellón/Castelló. Portugal. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099131` — Castellón/Castelló. Portugal. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099158` — Castellón/Castelló. Portugal. Rumanía. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099157` — Castellón/Castelló. Portugal. Rusia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099125` — Castellón/Castelló. Reino Unido. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099122` — Castellón/Castelló. Reino Unido. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099121` — Castellón/Castelló. Reino Unido. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099128` — Castellón/Castelló. Reino Unido. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098286` — Castellón/Castelló. República Dominicana. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098271` — Castellón/Castelló. República Dominicana. Argelia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098266` — Castellón/Castelló. República Dominicana. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098265` — Castellón/Castelló. República Dominicana. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098284` — Castellón/Castelló. República Dominicana. Bulgaria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098272` — Castellón/Castelló. República Dominicana. De Africa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098267` — Castellón/Castelló. República Dominicana. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098260` — Castellón/Castelló. República Dominicana. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098269` — Castellón/Castelló. República Dominicana. Nigeria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098280` — Castellón/Castelló. República Dominicana. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098257` — Castellón/Castelló. República Dominicana. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098249` — Castellón/Castelló. República Dominicana. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098256` — Castellón/Castelló. República Dominicana. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098728` — Castellón/Castelló. Resto de África. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098724` — Castellón/Castelló. Resto de África. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098723` — Castellón/Castelló. Resto de África. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098744` — Castellón/Castelló. Resto de África. Irlanda. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098743` — Castellón/Castelló. Resto de África. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098750` — Castellón/Castelló. Resto de África. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098742` — Castellón/Castelló. Resto de África. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098720` — Castellón/Castelló. Resto de África. Perú. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098730` — Castellón/Castelló. Resto de África. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098159` — Castellón/Castelló. Resto de América. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098158` — Castellón/Castelló. Resto de América. Bulgaria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098135` — Castellón/Castelló. Resto de América. Cuba. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098127` — Castellón/Castelló. Resto de América. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098163` — Castellón/Castelló. Resto de América. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098155` — Castellón/Castelló. Resto de América. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098133` — Castellón/Castelló. Resto de América. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80493194` — Castellón/Castelló. Resto de América. No consta (extranjera). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098154` — Castellón/Castelló. Resto de América. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098153` — Castellón/Castelló. Resto de América. Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098152` — Castellón/Castelló. Resto de América. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098124` — Castellón/Castelló. Resto de América. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098150` — Castellón/Castelló. Resto de América. Rumanía. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097992` — Castellón/Castelló. Resto de Asia. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097977` — Castellón/Castelló. Resto de Asia. Argelia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097972` — Castellón/Castelló. Resto de Asia. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097968` — Castellón/Castelló. Resto de Asia. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097989` — Castellón/Castelló. Resto de Asia. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097994` — Castellón/Castelló. Resto de Asia. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097963` — Castellón/Castelló. Resto de Asia. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098936` — Castellón/Castelló. Resto de Europa. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098961` — Castellón/Castelló. Resto de Europa. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098955` — Castellón/Castelló. Resto de Europa. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099659` — Castellón/Castelló. Total. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098941` — Castellón/Castelló. Resto de Europa. Nigeria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098928` — Castellón/Castelló. Resto de Europa. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518202` — Castellón/Castelló. Resto de países. América del Norte. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097935` — Castellón/Castelló. Resto de países. Argelia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097949` — Castellón/Castelló. Resto de países. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097916` — Castellón/Castelló. Resto de países. China. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097926` — Castellón/Castelló. Resto de países. Colombia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097931` — Castellón/Castelló. Resto de países. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78419718` — Castellón/Castelló. Resto de países. De América. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78097953` — Castellón/Castelló. Resto de países. España. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78451835` — Castellón/Castelló. Resto de países. España. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78097951` — Castellón/Castelló. Resto de países. Europa (sin España). Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097923` — Castellón/Castelló. Resto de países. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80647270` — Castellón/Castelló. Resto de países. No consta (extranjera). Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78451829` — Castellón/Castelló. Resto de países. País de América del Norte. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78419720` — Castellón/Castelló. Resto de países. País de Europa menos UE28. Matrimonio entre hombres. Lugar de residencia. Dato base.
+- `MNP78097944` — Castellón/Castelló. Resto de países. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097942` — Castellón/Castelló. Resto de países. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097941` — Castellón/Castelló. Resto de países. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78097937` — Castellón/Castelló. Resto de países. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78451825` — Castellón/Castelló. Resto de países. Resto de países. Matrimonio entre mujeres. Lugar de residencia. Dato base.
+- `MNP78099062` — Castellón/Castelló. Rumanía. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099057` — Castellón/Castelló. Rumanía. México. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099077` — Castellón/Castelló. Rumanía. Polonia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099075` — Castellón/Castelló. Rumanía. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099066` — Castellón/Castelló. Rumanía. Resto de África. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099048` — Castellón/Castelló. Rumanía. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099071` — Castellón/Castelló. Rumanía. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099022` — Castellón/Castelló. Rusia. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099023` — Castellón/Castelló. Rusia. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099009` — Castellón/Castelló. Rusia. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099037` — Castellón/Castelló. Rusia. Italia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099577` — Castellón/Castelló. Extranjera. Rusia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099036` — Castellón/Castelló. Rusia. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099029` — Castellón/Castelló. Rusia. Resto de Europa. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099032` — Castellón/Castelló. Rusia. Rumanía. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099012` — Castellón/Castelló. Rusia. Uruguay. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518212` — Castellón/Castelló. Sudamérica. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518208` — Castellón/Castelló. Sudamérica. De Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP80518215` — Castellón/Castelló. Sudamérica. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099000` — Castellón/Castelló. Ucrania. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098985` — Castellón/Castelló. Ucrania. Argelia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098980` — Castellón/Castelló. Ucrania. Argentina. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098978` — Castellón/Castelló. Ucrania. Bolivia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098979` — Castellón/Castelló. Ucrania. Brasil. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098981` — Castellón/Castelló. Ucrania. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098974` — Castellón/Castelló. Ucrania. Ecuador. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098997` — Castellón/Castelló. Ucrania. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098984` — Castellón/Castelló. Ucrania. Marruecos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78099660` — Castellón/Castelló. Total. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098994` — Castellón/Castelló. Ucrania. Países Bajos. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098992` — Castellón/Castelló. Ucrania. Portugal. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098991` — Castellón/Castelló. Ucrania. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098971` — Castellón/Castelló. Ucrania. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098963` — Castellón/Castelló. Ucrania. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098988` — Castellón/Castelló. Ucrania. Ucrania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098244` — Castellón/Castelló. Uruguay. Alemania. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098243` — Castellón/Castelló. Uruguay. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098246` — Castellón/Castelló. Uruguay. Extranjera. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098227` — Castellón/Castelló. Uruguay. Nigeria. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098208` — Castellón/Castelló. Uruguay. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098234` — Castellón/Castelló. Uruguay. Rumanía. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098201` — Castellón/Castelló. Venezuela. Bélgica. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098179` — Castellón/Castelló. Venezuela. Chile. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098183` — Castellón/Castelló. Venezuela. De América. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098199` — Castellón/Castelló. Venezuela. Francia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098193` — Castellón/Castelló. Venezuela. Reino Unido. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098173` — Castellón/Castelló. Venezuela. República Dominicana. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098166` — Castellón/Castelló. Venezuela. Resto de Asia. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+- `MNP78098165` — Castellón/Castelló. Venezuela. Resto de países. Matrimonio diferente sexo. Lugar de residencia. Dato base.
+
+## ECP
+
+Series: 3429 · conceptos distintos: 326
+
+- `ECP355837` — Castellón/Castelló. 1. Hogares en viviendas familiares. Número.
+- `ECP355836` — Castellón/Castelló. 2. Hogares en viviendas familiares. Número.
+- `ECP355835` — Castellón/Castelló. 3. Hogares en viviendas familiares. Número.
+- `ECP328321` — Castellón/Castelló. África. Flujo de emigraciones con destino el extranjero.
+- `ECP320989` — Castellón/Castelló. África. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305971` — Total. Castellón/Castelló. Total. África. Población. Número.
+- `ECP324679` — Castellón/Castelló. Alemania. Flujo de emigraciones con destino el extranjero.
+- `ECP317347` — Castellón/Castelló. Alemania. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328310` — Castellón/Castelló. América del Norte. Flujo de emigraciones con destino el extranjero.
+- `ECP320978` — Castellón/Castelló. América del Norte. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305970` — Total. Castellón/Castelló. Total. América del Norte. Población. Número.
+- `ECP305815` — Total. Castellón/Castelló. Apátridas. África. Población. Número.
+- `ECP305814` — Total. Castellón/Castelló. Apátridas. América del Norte. Población. Número.
+- `ECP305811` — Total. Castellón/Castelló. Apátridas. Asia. Población. Número.
+- `ECP305813` — Total. Castellón/Castelló. Apátridas. Centro América y Caribe. Población. Número.
+- `ECP305820` — Total. Castellón/Castelló. Apátridas. España. Población. Número.
+- `ECP305817` — Total. Castellón/Castelló. Apátridas. Europa menos UE27_2020. Población. Número.
+- `ECP305816` — Total. Castellón/Castelló. Apátridas. Europa menos UE28. Población. Número.
+- `ECP305809` — Total. Castellón/Castelló. Apátridas. Extranjero. Población. Número.
+- `ECP324623` — Castellón/Castelló. Apátridas. Flujo de emigraciones con destino el extranjero.
+- `ECP317291` — Castellón/Castelló. Apátridas. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305810` — Total. Castellón/Castelló. Apátridas. Oceanía. Población. Número.
+- `ECP305821` — Total. Castellón/Castelló. Apátridas. Total. Población. Número.
+- `ECP305812` — Total. Castellón/Castelló. Apátridas. Sudamérica. Población. Número.
+- `ECP305819` — Total. Castellón/Castelló. Apátridas. UE27_2020 sin España. Población. Número.
+- `ECP305818` — Total. Castellón/Castelló. Apátridas. UE28 sin España. Población. Número.
+- `ECP324664` — Castellón/Castelló. Argelia. Flujo de emigraciones con destino el extranjero.
+- `ECP317332` — Castellón/Castelló. Argelia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324642` — Castellón/Castelló. Argentina. Flujo de emigraciones con destino el extranjero.
+- `ECP317310` — Castellón/Castelló. Argentina. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328290` — Castellón/Castelló. Asia. Flujo de emigraciones con destino el extranjero.
+- `ECP320958` — Castellón/Castelló. Asia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305967` — Total. Castellón/Castelló. Total. Asia. Población. Número.
+- `ECP324630` — Castellón/Castelló. Bangladesh. Flujo de emigraciones con destino el extranjero.
+- `ECP317298` — Castellón/Castelló. Bangladesh. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328343` — Castellón/Castelló. Bélgica. Flujo de emigraciones con destino el extranjero.
+- `ECP317357` — Castellón/Castelló. Bélgica. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324641` — Castellón/Castelló. Bolivia. Flujo de emigraciones con destino el extranjero.
+- `ECP317309` — Castellón/Castelló. Bolivia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324640` — Castellón/Castelló. Brasil. Flujo de emigraciones con destino el extranjero.
+- `ECP317308` — Castellón/Castelló. Brasil. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324688` — Castellón/Castelló. Bulgaria. Flujo de emigraciones con destino el extranjero.
+- `ECP321010` — Castellón/Castelló. Bulgaria. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324650` — Castellón/Castelló. Canadá. Flujo de emigraciones con destino el extranjero.
+- `ECP320975` — Castellón/Castelló. Canadá. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328306` — Castellón/Castelló. Centro América y Caribe. Flujo de emigraciones con destino el extranjero.
+- `ECP320974` — Castellón/Castelló. Centro América y Caribe. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305969` — Total. Castellón/Castelló. Total. Centro América y Caribe. Población. Número.
+- `ECP328296` — Castellón/Castelló. Chile. Flujo de emigraciones con destino el extranjero.
+- `ECP320964` — Castellón/Castelló. Chile. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324629` — Castellón/Castelló. China. Flujo de emigraciones con destino el extranjero.
+- `ECP317297` — Castellón/Castelló. China. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328297` — Castellón/Castelló. Colombia. Flujo de emigraciones con destino el extranjero.
+- `ECP317307` — Castellón/Castelló. Colombia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328305` — Castellón/Castelló. Cuba. Flujo de emigraciones con destino el extranjero.
+- `ECP320973` — Castellón/Castelló. Cuba. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305893` — Total. Castellón/Castelló. De Africa. África. Población. Número.
+- `ECP305892` — Total. Castellón/Castelló. De Africa. América del Norte. Población. Número.
+- `ECP305889` — Total. Castellón/Castelló. De Africa. Asia. Población. Número.
+- `ECP305891` — Total. Castellón/Castelló. De Africa. Centro América y Caribe. Población. Número.
+- `ECP305898` — Total. Castellón/Castelló. De Africa. España. Población. Número.
+- `ECP305895` — Total. Castellón/Castelló. De Africa. Europa menos UE27_2020. Población. Número.
+- `ECP305894` — Total. Castellón/Castelló. De Africa. Europa menos UE28. Población. Número.
+- `ECP305887` — Total. Castellón/Castelló. De Africa. Extranjero. Población. Número.
+- `ECP324665` — Castellón/Castelló. De Africa. Flujo de emigraciones con destino el extranjero.
+- `ECP317333` — Castellón/Castelló. De Africa. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305888` — Total. Castellón/Castelló. De Africa. Oceanía. Población. Número.
+- `ECP305899` — Total. Castellón/Castelló. De Africa. Total. Población. Número.
+- `ECP305890` — Total. Castellón/Castelló. De Africa. Sudamérica. Población. Número.
+- `ECP305897` — Total. Castellón/Castelló. De Africa. UE27_2020 sin España. Población. Número.
+- `ECP305896` — Total. Castellón/Castelló. De Africa. UE28 sin España. Población. Número.
+- `ECP305880` — Total. Castellón/Castelló. De América del Norte. África. Población. Número.
+- `ECP305879` — Total. Castellón/Castelló. De América del Norte. América del Norte. Población. Número.
+- `ECP305876` — Total. Castellón/Castelló. De América del Norte. Asia. Población. Número.
+- `ECP305878` — Total. Castellón/Castelló. De América del Norte. Centro América y Caribe. Población. Número.
+- `ECP305885` — Total. Castellón/Castelló. De América del Norte. España. Población. Número.
+- `ECP305882` — Total. Castellón/Castelló. De América del Norte. Europa menos UE27_2020. Población. Número.
+- `ECP305881` — Total. Castellón/Castelló. De América del Norte. Europa menos UE28. Población. Número.
+- `ECP305874` — Total. Castellón/Castelló. De América del Norte. Extranjero. Población. Número.
+- `ECP324653` — Castellón/Castelló. De América del Norte. Flujo de emigraciones con destino el extranjero.
+- `ECP317321` — Castellón/Castelló. De América del Norte. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305875` — Total. Castellón/Castelló. De América del Norte. Oceanía. Población. Número.
+- `ECP305886` — Total. Castellón/Castelló. De América del Norte. Total. Población. Número.
+- `ECP305877` — Total. Castellón/Castelló. De América del Norte. Sudamérica. Población. Número.
+- `ECP305884` — Total. Castellón/Castelló. De América del Norte. UE27_2020 sin España. Población. Número.
+- `ECP305883` — Total. Castellón/Castelló. De América del Norte. UE28 sin España. Población. Número.
+- `ECP305841` — Total. Castellón/Castelló. De Asia. África. Población. Número.
+- `ECP305840` — Total. Castellón/Castelló. De Asia. América del Norte. Población. Número.
+- `ECP305837` — Total. Castellón/Castelló. De Asia. Asia. Población. Número.
+- `ECP305839` — Total. Castellón/Castelló. De Asia. Centro América y Caribe. Población. Número.
+- `ECP305846` — Total. Castellón/Castelló. De Asia. España. Población. Número.
+- `ECP305843` — Total. Castellón/Castelló. De Asia. Europa menos UE27_2020. Población. Número.
+- `ECP305842` — Total. Castellón/Castelló. De Asia. Europa menos UE28. Población. Número.
+- `ECP305835` — Total. Castellón/Castelló. De Asia. Extranjero. Población. Número.
+- `ECP324631` — Castellón/Castelló. De Asia. Flujo de emigraciones con destino el extranjero.
+- `ECP317299` — Castellón/Castelló. De Asia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305836` — Total. Castellón/Castelló. De Asia. Oceanía. Población. Número.
+- `ECP305847` — Total. Castellón/Castelló. De Asia. Total. Población. Número.
+- `ECP305838` — Total. Castellón/Castelló. De Asia. Sudamérica. Población. Número.
+- `ECP305845` — Total. Castellón/Castelló. De Asia. UE27_2020 sin España. Población. Número.
+- `ECP305844` — Total. Castellón/Castelló. De Asia. UE28 sin España. Población. Número.
+- `ECP305867` — Total. Castellón/Castelló. De Centro América y Caribe. África. Población. Número.
+- `ECP305866` — Total. Castellón/Castelló. De Centro América y Caribe. América del Norte. Población. Número.
+- `ECP305863` — Total. Castellón/Castelló. De Centro América y Caribe. Asia. Población. Número.
+- `ECP305865` — Total. Castellón/Castelló. De Centro América y Caribe. Centro América y Caribe. Población. Número.
+- `ECP305872` — Total. Castellón/Castelló. De Centro América y Caribe. España. Población. Número.
+- `ECP305869` — Total. Castellón/Castelló. De Centro América y Caribe. Europa menos UE27_2020. Población. Número.
+- `ECP305868` — Total. Castellón/Castelló. De Centro América y Caribe. Europa menos UE28. Población. Número.
+- `ECP305861` — Total. Castellón/Castelló. De Centro América y Caribe. Extranjero. Población. Número.
+- `ECP324649` — Castellón/Castelló. De Centro América y Caribe. Flujo de emigraciones con destino el extranjero.
+- `ECP317317` — Castellón/Castelló. De Centro América y Caribe. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305862` — Total. Castellón/Castelló. De Centro América y Caribe. Oceanía. Población. Número.
+- `ECP305873` — Total. Castellón/Castelló. De Centro América y Caribe. Total. Población. Número.
+- `ECP305864` — Total. Castellón/Castelló. De Centro América y Caribe. Sudamérica. Población. Número.
+- `ECP305871` — Total. Castellón/Castelló. De Centro América y Caribe. UE27_2020 sin España. Población. Número.
+- `ECP305870` — Total. Castellón/Castelló. De Centro América y Caribe. UE28 sin España. Población. Número.
+- `ECP305828` — Total. Castellón/Castelló. De Oceanía. África. Población. Número.
+- `ECP305827` — Total. Castellón/Castelló. De Oceanía. América del Norte. Población. Número.
+- `ECP305824` — Total. Castellón/Castelló. De Oceanía. Asia. Población. Número.
+- `ECP305826` — Total. Castellón/Castelló. De Oceanía. Centro América y Caribe. Población. Número.
+- `ECP305833` — Total. Castellón/Castelló. De Oceanía. España. Población. Número.
+- `ECP305830` — Total. Castellón/Castelló. De Oceanía. Europa menos UE27_2020. Población. Número.
+- `ECP305829` — Total. Castellón/Castelló. De Oceanía. Europa menos UE28. Población. Número.
+- `ECP305822` — Total. Castellón/Castelló. De Oceanía. Extranjero. Población. Número.
+- `ECP324624` — Castellón/Castelló. De Oceanía. Flujo de emigraciones con destino el extranjero.
+- `ECP317292` — Castellón/Castelló. De Oceanía. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305823` — Total. Castellón/Castelló. De Oceanía. Oceanía. Población. Número.
+- `ECP305834` — Total. Castellón/Castelló. De Oceanía. Total. Población. Número.
+- `ECP305825` — Total. Castellón/Castelló. De Oceanía. Sudamérica. Población. Número.
+- `ECP305832` — Total. Castellón/Castelló. De Oceanía. UE27_2020 sin España. Población. Número.
+- `ECP305831` — Total. Castellón/Castelló. De Oceanía. UE28 sin España. Población. Número.
+- `ECP305854` — Total. Castellón/Castelló. De Sudamérica. África. Población. Número.
+- `ECP305853` — Total. Castellón/Castelló. De Sudamérica. América del Norte. Población. Número.
+- `ECP305850` — Total. Castellón/Castelló. De Sudamérica. Asia. Población. Número.
+- `ECP305852` — Total. Castellón/Castelló. De Sudamérica. Centro América y Caribe. Población. Número.
+- `ECP305859` — Total. Castellón/Castelló. De Sudamérica. España. Población. Número.
+- `ECP305856` — Total. Castellón/Castelló. De Sudamérica. Europa menos UE27_2020. Población. Número.
+- `ECP305855` — Total. Castellón/Castelló. De Sudamérica. Europa menos UE28. Población. Número.
+- `ECP305848` — Total. Castellón/Castelló. De Sudamérica. Extranjero. Población. Número.
+- `ECP324643` — Castellón/Castelló. De Sudamérica. Flujo de emigraciones con destino el extranjero.
+- `ECP317311` — Castellón/Castelló. De Sudamérica. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305849` — Total. Castellón/Castelló. De Sudamérica. Oceanía. Población. Número.
+- `ECP305860` — Total. Castellón/Castelló. De Sudamérica. Total. Población. Número.
+- `ECP305851` — Total. Castellón/Castelló. De Sudamérica. Sudamérica. Población. Número.
+- `ECP305858` — Total. Castellón/Castelló. De Sudamérica. UE27_2020 sin España. Población. Número.
+- `ECP305857` — Total. Castellón/Castelló. De Sudamérica. UE28 sin España. Población. Número.
+- `ECP324687` — Castellón/Castelló. Dinamarca. Flujo de emigraciones con destino el extranjero.
+- `ECP321009` — Castellón/Castelló. Dinamarca. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324637` — Castellón/Castelló. Ecuador. Flujo de emigraciones con destino el extranjero.
+- `ECP317305` — Castellón/Castelló. Ecuador. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328346` — Castellón/Castelló. España. Flujo de emigraciones con destino el extranjero.
+- `ECP321014` — Castellón/Castelló. España. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305976` — Total. Castellón/Castelló. Total. España. Población. Número.
+- `ECP352945` — Castellón/Castelló. España. De 0 a 4 años. Total. Población en viviendas familiares. Número.
+- `ECP328309` — Castellón/Castelló. Estados Unidos de América. Flujo de emigraciones con destino el extranjero.
+- `ECP320977` — Castellón/Castelló. Estados Unidos de América. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328329` — Castellón/Castelló. Europa menos UE27_2020. Flujo de emigraciones con destino el extranjero.
+- `ECP320997` — Castellón/Castelló. Europa menos UE27_2020. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305973` — Total. Castellón/Castelló. Total. Europa menos UE27_2020. Población. Número.
+- `ECP328327` — Castellón/Castelló. Europa menos UE28. Flujo de emigraciones con destino el extranjero.
+- `ECP320995` — Castellón/Castelló. Europa menos UE28. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305972` — Total. Castellón/Castelló. Total. Europa menos UE28. Población. Número.
+- `ECP305965` — Total. Castellón/Castelló. Total. Extranjero. Población. Número.
+- `ECP352882` — Castellón/Castelló. Extranjero. De 5 a 9 años. Total. Población en viviendas familiares. Número.
+- `ECP328287` — Castellón/Castelló. Filipinas. Flujo de emigraciones con destino el extranjero.
+- `ECP320955` — Castellón/Castelló. Filipinas. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324686` — Castellón/Castelló. Finlandia. Flujo de emigraciones con destino el extranjero.
+- `ECP317354` — Castellón/Castelló. Finlandia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328347` — Castellón/Castelló. Total. Flujo de emigraciones con destino el extranjero.
+- `ECP317361` — Castellón/Castelló. Total. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328339` — Castellón/Castelló. Francia. Flujo de emigraciones con destino el extranjero.
+- `ECP317353` — Castellón/Castelló. Francia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324663` — Castellón/Castelló. Gambia. Flujo de emigraciones con destino el extranjero.
+- `ECP317331` — Castellón/Castelló. Gambia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324662` — Castellón/Castelló. Ghana. Flujo de emigraciones con destino el extranjero.
+- `ECP320986` — Castellón/Castelló. Ghana. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328317` — Castellón/Castelló. Guinea. Flujo de emigraciones con destino el extranjero.
+- `ECP320985` — Castellón/Castelló. Guinea. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324660` — Castellón/Castelló. Guinea Ecuatorial. Flujo de emigraciones con destino el extranjero.
+- `ECP317328` — Castellón/Castelló. Guinea Ecuatorial. Flujo de inmigraciones procedentes del extranjero.
+- `ECP355838` — Castellón/Castelló. Total. Hogares en viviendas familiares. Número.
+- `ECP328304` — Castellón/Castelló. Honduras. Flujo de emigraciones con destino el extranjero.
+- `ECP320972` — Castellón/Castelló. Honduras. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324627` — Castellón/Castelló. India. Flujo de emigraciones con destino el extranjero.
+- `ECP317295` — Castellón/Castelló. India. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324684` — Castellón/Castelló. Irlanda. Flujo de emigraciones con destino el extranjero.
+- `ECP317352` — Castellón/Castelló. Irlanda. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324683` — Castellón/Castelló. Italia. Flujo de emigraciones con destino el extranjero.
+- `ECP317351` — Castellón/Castelló. Italia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324676` — Castellón/Castelló. Lituania. Flujo de emigraciones con destino el extranjero.
+- `ECP320998` — Castellón/Castelló. Lituania. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324659` — Castellón/Castelló. Mali. Flujo de emigraciones con destino el extranjero.
+- `ECP317327` — Castellón/Castelló. Mali. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328314` — Castellón/Castelló. Marruecos. Flujo de emigraciones con destino el extranjero.
+- `ECP317326` — Castellón/Castelló. Marruecos. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328313` — Castellón/Castelló. Mauritania. Flujo de emigraciones con destino el extranjero.
+- `ECP320981` — Castellón/Castelló. Mauritania. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328308` — Castellón/Castelló. México. Flujo de emigraciones con destino el extranjero.
+- `ECP317319` — Castellón/Castelló. México. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328323` — Castellón/Castelló. Moldavia. Flujo de emigraciones con destino el extranjero.
+- `ECP320991` — Castellón/Castelló. Moldavia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324646` — Castellón/Castelló. Nicaragua. Flujo de emigraciones con destino el extranjero.
+- `ECP317314` — Castellón/Castelló. Nicaragua. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328312` — Castellón/Castelló. Nigeria. Flujo de emigraciones con destino el extranjero.
+- `ECP320980` — Castellón/Castelló. Nigeria. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324671` — Castellón/Castelló. Noruega. Flujo de emigraciones con destino el extranjero.
+- `ECP320994` — Castellón/Castelló. Noruega. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328284` — Castellón/Castelló. Oceanía. Flujo de emigraciones con destino el extranjero.
+- `ECP320952` — Castellón/Castelló. Oceanía. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305966` — Total. Castellón/Castelló. Total. Oceanía. Población. Número.
+- `ECP328281` — Castellón/Castelló. Otro país de África. Flujo de emigraciones con destino el extranjero.
+- `ECP317322` — Castellón/Castelló. Otro país de África. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328278` — Castellón/Castelló. Otro país de Asia. Flujo de emigraciones con destino el extranjero.
+- `ECP320946` — Castellón/Castelló. Otro país de Asia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328283` — Castellón/Castelló. Otro país de la Unión Europea sin España. Flujo de emigraciones con destino el extranjero.
+- `ECP317343` — Castellón/Castelló. Otro país de la Unión Europea sin España. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324632` — Castellón/Castelló. Otro país de Sudamérica. Flujo de emigraciones con destino el extranjero.
+- `ECP317300` — Castellón/Castelló. Otro país de Sudamérica. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324666` — Castellón/Castelló. Otro país del resto de Europa. Flujo de emigraciones con destino el extranjero.
+- `ECP320950` — Castellón/Castelló. Otro país del resto de Europa. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328280` — Castellón/Castelló. Otros países de Centro América y Caribe. Flujo de emigraciones con destino el extranjero.
+- `ECP320948` — Castellón/Castelló. Otros países de Centro América y Caribe. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305919` — Total. Castellón/Castelló. País de Europa menos UE27_2020. África. Población. Número.
+- `ECP305918` — Total. Castellón/Castelló. País de Europa menos UE27_2020. América del Norte. Población. Número.
+- `ECP305915` — Total. Castellón/Castelló. País de Europa menos UE27_2020. Asia. Población. Número.
+- `ECP305917` — Total. Castellón/Castelló. País de Europa menos UE27_2020. Centro América y Caribe. Población. Número.
+- `ECP305924` — Total. Castellón/Castelló. País de Europa menos UE27_2020. España. Población. Número.
+- `ECP305921` — Total. Castellón/Castelló. País de Europa menos UE27_2020. Europa menos UE27_2020. Población. Número.
+- `ECP305920` — Total. Castellón/Castelló. País de Europa menos UE27_2020. Europa menos UE28. Población. Número.
+- `ECP305913` — Total. Castellón/Castelló. País de Europa menos UE27_2020. Extranjero. Población. Número.
+- `ECP324674` — Castellón/Castelló. País de Europa menos UE27_2020. Flujo de emigraciones con destino el extranjero.
+- `ECP317342` — Castellón/Castelló. País de Europa menos UE27_2020. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305914` — Total. Castellón/Castelló. País de Europa menos UE27_2020. Oceanía. Población. Número.
+- `ECP305925` — Total. Castellón/Castelló. País de Europa menos UE27_2020. Total. Población. Número.
+- `ECP305916` — Total. Castellón/Castelló. País de Europa menos UE27_2020. Sudamérica. Población. Número.
+- `ECP305923` — Total. Castellón/Castelló. País de Europa menos UE27_2020. UE27_2020 sin España. Población. Número.
+- `ECP305922` — Total. Castellón/Castelló. País de Europa menos UE27_2020. UE28 sin España. Población. Número.
+- `ECP305906` — Total. Castellón/Castelló. País de Europa menos UE28. África. Población. Número.
+- `ECP305905` — Total. Castellón/Castelló. País de Europa menos UE28. América del Norte. Población. Número.
+- `ECP305902` — Total. Castellón/Castelló. País de Europa menos UE28. Asia. Población. Número.
+- `ECP305904` — Total. Castellón/Castelló. País de Europa menos UE28. Centro América y Caribe. Población. Número.
+- `ECP305911` — Total. Castellón/Castelló. País de Europa menos UE28. España. Población. Número.
+- `ECP305908` — Total. Castellón/Castelló. País de Europa menos UE28. Europa menos UE27_2020. Población. Número.
+- `ECP305907` — Total. Castellón/Castelló. País de Europa menos UE28. Europa menos UE28. Población. Número.
+- `ECP305900` — Total. Castellón/Castelló. País de Europa menos UE28. Extranjero. Población. Número.
+- `ECP324672` — Castellón/Castelló. País de Europa menos UE28. Flujo de emigraciones con destino el extranjero.
+- `ECP317340` — Castellón/Castelló. País de Europa menos UE28. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305901` — Total. Castellón/Castelló. País de Europa menos UE28. Oceanía. Población. Número.
+- `ECP305912` — Total. Castellón/Castelló. País de Europa menos UE28. Total. Población. Número.
+- `ECP305903` — Total. Castellón/Castelló. País de Europa menos UE28. Sudamérica. Población. Número.
+- `ECP305910` — Total. Castellón/Castelló. País de Europa menos UE28. UE27_2020 sin España. Población. Número.
+- `ECP305909` — Total. Castellón/Castelló. País de Europa menos UE28. UE28 sin España. Población. Número.
+- `ECP305945` — Total. Castellón/Castelló. País de la UE27_2020 sin España. África. Población. Número.
+- `ECP305944` — Total. Castellón/Castelló. País de la UE27_2020 sin España. América del Norte. Población. Número.
+- `ECP305941` — Total. Castellón/Castelló. País de la UE27_2020 sin España. Asia. Población. Número.
+- `ECP305943` — Total. Castellón/Castelló. País de la UE27_2020 sin España. Centro América y Caribe. Población. Número.
+- `ECP305950` — Total. Castellón/Castelló. País de la UE27_2020 sin España. España. Población. Número.
+- `ECP305947` — Total. Castellón/Castelló. País de la UE27_2020 sin España. Europa menos UE27_2020. Población. Número.
+- `ECP305946` — Total. Castellón/Castelló. País de la UE27_2020 sin España. Europa menos UE28. Población. Número.
+- `ECP305939` — Total. Castellón/Castelló. País de la UE27_2020 sin España. Extranjero. Población. Número.
+- `ECP324691` — Castellón/Castelló. País de la UE27_2020 sin España. Flujo de emigraciones con destino el extranjero.
+- `ECP317359` — Castellón/Castelló. País de la UE27_2020 sin España. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305940` — Total. Castellón/Castelló. País de la UE27_2020 sin España. Oceanía. Población. Número.
+- `ECP305951` — Total. Castellón/Castelló. País de la UE27_2020 sin España. Total. Población. Número.
+- `ECP305942` — Total. Castellón/Castelló. País de la UE27_2020 sin España. Sudamérica. Población. Número.
+- `ECP305949` — Total. Castellón/Castelló. País de la UE27_2020 sin España. UE27_2020 sin España. Población. Número.
+- `ECP305948` — Total. Castellón/Castelló. País de la UE27_2020 sin España. UE28 sin España. Población. Número.
+- `ECP305932` — Total. Castellón/Castelló. País de la UE28 sin España. África. Población. Número.
+- `ECP305931` — Total. Castellón/Castelló. País de la UE28 sin España. América del Norte. Población. Número.
+- `ECP305928` — Total. Castellón/Castelló. País de la UE28 sin España. Asia. Población. Número.
+- `ECP305930` — Total. Castellón/Castelló. País de la UE28 sin España. Centro América y Caribe. Población. Número.
+- `ECP305937` — Total. Castellón/Castelló. País de la UE28 sin España. España. Población. Número.
+- `ECP305934` — Total. Castellón/Castelló. País de la UE28 sin España. Europa menos UE27_2020. Población. Número.
+- `ECP305933` — Total. Castellón/Castelló. País de la UE28 sin España. Europa menos UE28. Población. Número.
+- `ECP305926` — Total. Castellón/Castelló. País de la UE28 sin España. Extranjero. Población. Número.
+- `ECP324690` — Castellón/Castelló. País de la UE28 sin España. Flujo de emigraciones con destino el extranjero.
+- `ECP317358` — Castellón/Castelló. País de la UE28 sin España. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305927` — Total. Castellón/Castelló. País de la UE28 sin España. Oceanía. Población. Número.
+- `ECP305938` — Total. Castellón/Castelló. País de la UE28 sin España. Total. Población. Número.
+- `ECP305929` — Total. Castellón/Castelló. País de la UE28 sin España. Sudamérica. Población. Número.
+- `ECP305936` — Total. Castellón/Castelló. País de la UE28 sin España. UE27_2020 sin España. Población. Número.
+- `ECP305935` — Total. Castellón/Castelló. País de la UE28 sin España. UE28 sin España. Población. Número.
+- `ECP324682` — Castellón/Castelló. Países Bajos. Flujo de emigraciones con destino el extranjero.
+- `ECP317350` — Castellón/Castelló. Países Bajos. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328285` — Castellón/Castelló. Pakistán. Flujo de emigraciones con destino el extranjero.
+- `ECP320953` — Castellón/Castelló. Pakistán. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328294` — Castellón/Castelló. Paraguay. Flujo de emigraciones con destino el extranjero.
+- `ECP317304` — Castellón/Castelló. Paraguay. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324635` — Castellón/Castelló. Perú. Flujo de emigraciones con destino el extranjero.
+- `ECP317303` — Castellón/Castelló. Perú. Flujo de inmigraciones procedentes del extranjero.
+- `ECP148025` — 1 año. Castellón/Castelló. Total. Población. Número.
+- `ECP343642` — Castellón/Castelló. Total. De 5 a 9 años. Total. Población en viviendas familiares. Número.
+- `ECP328335` — Castellón/Castelló. Polonia. Flujo de emigraciones con destino el extranjero.
+- `ECP321003` — Castellón/Castelló. Polonia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328334` — Castellón/Castelló. Portugal. Flujo de emigraciones con destino el extranjero.
+- `ECP317348` — Castellón/Castelló. Portugal. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324673` — Castellón/Castelló. Reino Unido. Flujo de emigraciones con destino el extranjero.
+- `ECP317341` — Castellón/Castelló. Reino Unido. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328302` — Castellón/Castelló. República Dominicana. Flujo de emigraciones con destino el extranjero.
+- `ECP320970` — Castellón/Castelló. República Dominicana. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324678` — Castellón/Castelló. Rumanía. Flujo de emigraciones con destino el extranjero.
+- `ECP321000` — Castellón/Castelló. Rumanía. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328322` — Castellón/Castelló. Rusia. Flujo de emigraciones con destino el extranjero.
+- `ECP317335` — Castellón/Castelló. Rusia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328311` — Castellón/Castelló. Senegal. Flujo de emigraciones con destino el extranjero.
+- `ECP317323` — Castellón/Castelló. Senegal. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328301` — Castellón/Castelló. Sudamérica. Flujo de emigraciones con destino el extranjero.
+- `ECP320969` — Castellón/Castelló. Sudamérica. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305968` — Total. Castellón/Castelló. Total. Sudamérica. Población. Número.
+- `ECP328331` — Castellón/Castelló. Suecia. Flujo de emigraciones con destino el extranjero.
+- `ECP320999` — Castellón/Castelló. Suecia. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328325` — Castellón/Castelló. Suiza. Flujo de emigraciones con destino el extranjero.
+- `ECP320993` — Castellón/Castelló. Suiza. Flujo de inmigraciones procedentes del extranjero.
+- `ECP355946` — Castellón/Castelló. Tamaño medio del hogar. Número.
+- `ECP328324` — Castellón/Castelló. Ucrania. Flujo de emigraciones con destino el extranjero.
+- `ECP317337` — Castellón/Castelló. Ucrania. Flujo de inmigraciones procedentes del extranjero.
+- `ECP328345` — Castellón/Castelló. UE27_2020 sin España. Flujo de emigraciones con destino el extranjero.
+- `ECP321013` — Castellón/Castelló. UE27_2020 sin España. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305975` — Total. Castellón/Castelló. Total. UE27_2020 sin España. Población. Número.
+- `ECP328344` — Castellón/Castelló. UE28 sin España. Flujo de emigraciones con destino el extranjero.
+- `ECP321012` — Castellón/Castelló. UE28 sin España. Flujo de inmigraciones procedentes del extranjero.
+- `ECP305974` — Total. Castellón/Castelló. Total. UE28 sin España. Población. Número.
+- `ECP324634` — Castellón/Castelló. Uruguay. Flujo de emigraciones con destino el extranjero.
+- `ECP320960` — Castellón/Castelló. Uruguay. Flujo de inmigraciones procedentes del extranjero.
+- `ECP324633` — Castellón/Castelló. Venezuela. Flujo de emigraciones con destino el extranjero.
+- `ECP320959` — Castellón/Castelló. Venezuela. Flujo de inmigraciones procedentes del extranjero.
+
+## ADRH
+
+Series: 188 · conceptos distintos: 28
+
+- `ADRH9975327` — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por debajo de 5.000 Euros. Dato base.
+- `ADRH9975326` — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por debajo de 7.500 Euros. Dato base.
+- `ADRH9974833` — Castellón/Castelló. Dato base. Distribución de la renta P80/P20.
+- `ADRH10030109` — Castellón/Castelló. Edad media de la población. Dato base.
+- `ADRH9974522` — Castellón/Castelló. Dato base. Fuente de ingreso: otras prestaciones.
+- `ADRH9974521` — Castellón/Castelló. Dato base. Fuente de ingreso: otros ingresos.
+- `ADRH9974524` — Castellón/Castelló. Dato base. Fuente de ingreso: pensiones.
+- `ADRH9974523` — Castellón/Castelló. Dato base. Fuente de ingreso: prestaciones por desempleo.
+- `ADRH9974525` — Castellón/Castelló. Dato base. Fuente de ingreso: salario.
+- `ADRH9974834` — Castellón/Castelló. Dato base. Índice de Gini.
+- `ADRH9974126` — Castellón/Castelló. Dato base. Media de la renta por unidad de consumo.
+- `ADRH9974125` — Castellón/Castelló. Dato base. Mediana de la renta por unidad de consumo.
+- `ADRH10029971` — Castellón/Castelló. Población. Dato base.
+- `ADRH9979998` — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9979997` — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9979996` — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9975325` — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por debajo de 10.000 Euros. Dato base.
+- `ADRH9979995` — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9979994` — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9979993` — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH10029696` — Castellón/Castelló. Porcentaje de hogares unipersonales. Dato base.
+- `ADRH10029695` — Castellón/Castelló. Porcentaje de población española. Dato base.
+- `ADRH9974122` — Castellón/Castelló. Dato base. Renta bruta media por hogar.
+- `ADRH9974123` — Castellón/Castelló. Dato base. Renta bruta media por persona.
+- `ADRH9974124` — Castellón/Castelló. Dato base. Renta mediana por hogar.
+- `ADRH87744` — Castellón/Castelló. Dato base. Renta neta media por hogar.
+- `ADRH87745` — Castellón/Castelló. Dato base. Renta neta media por persona.
+- `ADRH10029972` — Castellón/Castelló. Tamaño medio del hogar. Dato base.
+
+## EMCR
+
+Series: 10000 · conceptos distintos: 662
+
+- `EM750400` — Mujeres. Albacete. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM999790` — Mujeres. Castellón/Castelló. Alemania. Saldo de migración interprovincial.
+- `EM1120904` — Mujeres. Castellón/Castelló. Apátridas. Saldo de migración interprovincial. Total.
+- `EM854222` — Mujeres. Castellón/Castelló. Apátridas. Saldo de migración interprovincial. África.
+- `EM972181` — Ambos sexos. Castellón/Castelló. Apátridas. Saldo de migración interprovincial. América del Norte.
+- `EM1021506` — Mujeres. Castellón/Castelló. Apátridas. Saldo de migración interprovincial. Asia.
+- `EM1245778` — Hombres. Castellón/Castelló. Apátridas. Saldo de migración interprovincial. Centro América y Caribe.
+- `EM979760` — Ambos sexos. Castellón/Castelló. Apátridas. Saldo de migración interprovincial. Europa menos UE28.
+- `EM1252367` — Hombres. Castellón/Castelló. Apátridas. Saldo de migración interprovincial. Sudamérica.
+- `EM888996` — Castellón/Castelló. Argentina. Flujo de inmigraciones procedentes del extranjero.
+- `EM1241778` — Mujeres. Castellón/Castelló. Argentina. Saldo de migración interprovincial.
+- `EM1255099` — Mujeres. Ávila. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM1190203` — Mujeres. Castellón/Castelló. Bangladesh. Saldo de migración interprovincial.
+- `EM729060` — Hombres. Barcelona. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM1042836` — Hombres. Castellón/Castelló. Bélgica. Saldo de migración interprovincial.
+- `EM1015675` — Hombres. Bizkaia. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM972294` — Castellón/Castelló. Bolivia. Saldo con el extranjero.
+- `EM735066` — Castellón/Castelló. Brasil. Flujo de inmigraciones procedentes del extranjero.
+- `EM826771` — Mujeres. Cáceres. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM989684` — Mujeres. Castellón/Castelló. China. Saldo de migración interprovincial.
+- `EM752981` — Castellón/Castelló. Colombia. Saldo con el extranjero.
+- `EM1086853` — Ambos sexos. Córdoba. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM810493` — Castellón/Castelló. Cuba. Saldo con el extranjero.
+- `EM738010` — Ambos sexos. Castellón/Castelló. Cuba. Saldo de migración interprovincial.
+- `EM806252` — Mujeres. Castellón/Castelló. De Africa. Saldo de migración interprovincial. Total.
+- `EM1122224` — Ambos sexos. Castellón/Castelló. De Africa. Saldo de migración interprovincial. Asia.
+- `EM749963` — Mujeres. Castellón/Castelló. De Africa. Saldo de migración interprovincial. España.
+- `EM933590` — Ambos sexos. Castellón/Castelló. De Africa. Saldo de migración interprovincial. Oceanía.
+- `EM861800` — Mujeres. Castellón/Castelló. De Africa. Saldo de migración interprovincial. Sudamérica.
+- `EM1001385` — Mujeres. Castellón/Castelló. De América del Norte. Saldo de migración interprovincial. Total.
+- `EM1275173` — Ambos sexos. Castellón/Castelló. De América del Norte. Saldo de migración interprovincial. Centro América y Caribe.
+- `EM1045622` — Hombres. Castellón/Castelló. De América del Norte. Saldo de migración interprovincial. Oceanía.
+- `EM745579` — Ambos sexos. Castellón/Castelló. De América del Norte. Saldo de migración interprovincial. Sudamérica.
+- `EM1017695` — Hombres. Castellón/Castelló. De Asia. Saldo de migración interprovincial. Total.
+- `EM854046` — Mujeres. Castellón/Castelló. De Asia. Saldo de migración interprovincial. África.
+- `EM1023979` — Mujeres. Castellón/Castelló. De Asia. Saldo de migración interprovincial. Centro América y Caribe.
+- `EM1082884` — Mujeres. Castellón/Castelló. De Asia. Saldo de migración interprovincial. Europa menos UE28.
+- `EM965139` — Mujeres. Castellón/Castelló. De Asia. Saldo de migración interprovincial. Sudamérica.
+- `EM980646` — Mujeres. Castellón/Castelló. De Asia. Saldo de migración interprovincial. UE28 sin España.
+- `EM1029965` — Ambos sexos. Castellón/Castelló. De Centro América y Caribe. Saldo de migración interprovincial. Total.
+- `EM1277300` — Mujeres. Castellón/Castelló. De Centro América y Caribe. Saldo de migración interprovincial. África.
+- `EM1028951` — Mujeres. Castellón/Castelló. De Centro América y Caribe. Saldo de migración interprovincial. Centro América y Caribe.
+- `EM702632` — Ambos sexos. Castellón/Castelló. De Centro América y Caribe. Saldo de migración interprovincial. Europa menos UE28.
+- `EM847630` — Ambos sexos. Castellón/Castelló. De Centro América y Caribe. Saldo de migración interprovincial. Oceanía.
+- `EM1276053` — Mujeres. Castellón/Castelló. De Sudamérica. Saldo de migración interprovincial. Total.
+- `EM877628` — Hombres. Castellón/Castelló. De Sudamérica. Saldo de migración interprovincial. África.
+- `EM753149` — Mujeres. Castellón/Castelló. De Sudamérica. Saldo de migración interprovincial. América del Norte.
+- `EM1271093` — Mujeres. Castellón/Castelló. De Sudamérica. Saldo de migración interprovincial. Asia.
+- `EM944591` — Ambos sexos. Castellón/Castelló. De Sudamérica. Saldo de migración interprovincial. Centro América y Caribe.
+- `EM887911` — Castellón/Castelló. Ecuador. Flujo de inmigraciones procedentes del extranjero.
+- `EM749909` — Mujeres. Castellón/Castelló. Ecuador. Saldo de migración interprovincial.
+- `EM1764453` — Castellón/Castelló. España. Flujo de emigraciones con destino el extranjero. No consta.
+- `EM1760577` — Castellón/Castelló. España. Flujo de inmigraciones procedentes del extranjero. Primera etapa de Educación Secundaria y similar.
+- `EM1177363` — Ambos sexos. Castellón/Castelló. Estados Unidos de América. Saldo de migración interprovincial.
+- `EM1194568` — Hombres. Castellón/Castelló. Extranjero. Flujo de emigraciones con destino el extranjero. Total.
+- `EM1763512` — Castellón/Castelló. Extranjero. Flujo de emigraciones con destino el extranjero. Educación superior.
+- `EM1764450` — Castellón/Castelló. Extranjero. Flujo de emigraciones con destino el extranjero. Primera etapa de Educación Secundaria y similar.
+- `EM1760573` — Castellón/Castelló. Extranjero. Flujo de inmigraciones procedentes del extranjero. Total.
+- `EM1760571` — Castellón/Castelló. Extranjero. Flujo de inmigraciones procedentes del extranjero. Primera etapa de Educación Secundaria y similar.
+- `EM889078` — Hombres. Castellón/Castelló. Extranjero. Saldo con el extranjero. De 5 a 9 años.
+- `EM973086` — Castellón/Castelló. Filipinas. Saldo con el extranjero.
+- `EM754260` — Hombres. Castellón/Castelló. Filipinas. Saldo de migración interprovincial.
+- `EM736775` — Castellón/Castelló. Finlandia. Flujo de inmigraciones procedentes del extranjero.
+- `EM200216` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Total.
+- `EM1607048` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2001 o antes.
+- `EM1607047` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2002.
+- `EM1607046` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2003.
+- `EM1607045` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2004.
+- `EM1607044` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2005.
+- `EM1607043` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2006.
+- `EM1607042` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2007.
+- `EM1607041` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2008.
+- `EM1607040` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2009.
+- `EM1607039` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2010.
+- `EM1607038` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2011.
+- `EM1607037` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2012.
+- `EM1607036` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2013.
+- `EM1607035` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2014.
+- `EM1607034` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2015.
+- `EM1607033` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2016.
+- `EM1607032` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2017.
+- `EM1607031` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2018.
+- `EM1607030` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2019.
+- `EM1607029` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2020.
+- `EM1764915` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2021.
+- `EM1382285` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. África.
+- `EM1389598` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Alemania.
+- `EM1382284` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. América del Norte.
+- `EM1389550` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Apátridas.
+- `EM1389587` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Argelia.
+- `EM1389568` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Argentina.
+- `EM1382281` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Asia.
+- `EM1389557` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Bangladesh.
+- `EM200215` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Bélgica.
+- `EM1389567` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Bolivia.
+- `EM1389566` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Brasil.
+- `EM1389609` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Bulgaria.
+- `EM1389574` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Canadá.
+- `EM1382283` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Centro América y Caribe.
+- `EM200174` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Chile.
+- `EM1389556` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. China.
+- `EM200175` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Colombia.
+- `EM200182` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Cuba.
+- `EM1387141` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. De Africa.
+- `EM1387140` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. De América del Norte.
+- `EM1387137` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. De Asia.
+- `EM1387139` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. De Centro América y Caribe.
+- `EM1387138` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. De Sudamérica.
+- `EM1389608` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Dinamarca.
+- `EM1389563` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Ecuador.
+- `EM1763521` — Castellón/Castelló. Española. Flujo de emigraciones con destino el extranjero. Educación primaria e inferior.
+- `EM1763518` — Castellón/Castelló. Española. Flujo de emigraciones con destino el extranjero. Educación superior.
+- `EM200212` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. España.
+- `EM200184` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Estados Unidos de América.
+- `EM1698075` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Europa menos UE27_2020.
+- `EM1382286` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Europa menos UE28.
+- `EM195278` — Castellón/Castelló. Hombres. Flujo de emigraciones con destino el extranjero. Extranjero. Total.
+- `EM200166` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Filipinas.
+- `EM1389606` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Finlandia.
+- `EM200210` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Francia.
+- `EM1389586` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Gambia.
+- `EM1389585` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Ghana.
+- `EM200191` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Guinea.
+- `EM1389583` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Guinea Ecuatorial.
+- `EM200181` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Honduras.
+- `EM1389554` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. India.
+- `EM1389604` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Irlanda.
+- `EM1389603` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Italia.
+- `EM1389595` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Lituania.
+- `EM1389582` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Mali.
+- `EM200188` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Marruecos.
+- `EM200187` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Mauritania.
+- `EM200183` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. México.
+- `EM200196` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Moldavia.
+- `EM1389571` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Nicaragua.
+- `EM200186` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Nigeria.
+- `EM1607049` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. No aplicable: siempre ha vivido en España.
+- `EM1762587` — Castellón/Castelló. Ambos sexos. Flujo de emigraciones con destino el extranjero. No consta.
+- `EM1389593` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Noruega.
+- `EM1387136` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Oceanía.
+- `EM200160` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país de África.
+- `EM200156` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país de Asia.
+- `EM200162` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país de la Unión Europea sin España.
+- `EM1389558` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país de Sudamérica.
+- `EM1389588` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país del resto de Europa.
+- `EM200158` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otros países de Centro América y Caribe.
+- `EM200163` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otros países o territorios de Oceanía.
+- `EM1697971` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. País de Europa menos UE27_2020.
+- `EM1387142` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. País de Europa menos UE28.
+- `EM1697972` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. País de la UE27_2020 sin España.
+- `EM1387143` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. País de la UE28 sin España.
+- `EM1389602` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Países Bajos.
+- `EM200164` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Pakistán.
+- `EM200172` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Paraguay.
+- `EM1389561` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Perú.
+- `EM200206` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Polonia.
+- `EM200205` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Portugal.
+- `EM1762590` — Castellón/Castelló. Ambos sexos. Flujo de emigraciones con destino el extranjero. Primera etapa de Educación Secundaria y similar.
+- `EM1389599` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Reino Unido.
+- `EM200179` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. República Dominicana.
+- `EM1389597` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Rumanía.
+- `EM200195` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Rusia.
+- `EM1764461` — Castellón/Castelló. Total. Flujo de emigraciones con destino el extranjero. Segunda etapa de Educación Secundaria y Educación Postsecundaria no Superior.
+- `EM200185` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Senegal.
+- `EM1382282` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Sudamérica.
+- `EM200201` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Suecia.
+- `EM200198` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Suiza.
+- `EM200197` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Ucrania.
+- `EM1698076` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. UE27_2020 sin España.
+- `EM1382287` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. UE28 sin España.
+- `EM1389560` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Uruguay.
+- `EM1389559` — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Venezuela.
+- `EM184498` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Total.
+- `EM1381869` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. África.
+- `EM184485` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Alemania.
+- `EM1381868` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. América del Norte.
+- `EM184437` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Apátridas.
+- `EM184474` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Argelia.
+- `EM184455` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Argentina.
+- `EM1381865` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Asia.
+- `EM184444` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Bangladesh.
+- `EM184497` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Bélgica.
+- `EM184454` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Bolivia.
+- `EM184453` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Brasil.
+- `EM187682` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Bulgaria.
+- `EM187627` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Canadá.
+- `EM1381867` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Centro América y Caribe.
+- `EM187642` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Chile.
+- `EM184443` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. China.
+- `EM184452` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Colombia.
+- `EM187650` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Cuba.
+- `EM1386565` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. De Africa.
+- `EM1386564` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. De América del Norte.
+- `EM1386561` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. De Asia.
+- `EM1386563` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. De Centro América y Caribe.
+- `EM1386562` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. De Sudamérica.
+- `EM187681` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Dinamarca.
+- `EM184450` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Ecuador.
+- `EM1760581` — Castellón/Castelló. Total. Flujo de inmigraciones procedentes del extranjero. Educación superior.
+- `EM187680` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. España.
+- `EM187652` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Estados Unidos de América.
+- `EM1697866` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Europa menos UE27_2020.
+- `EM1381870` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Europa menos UE28.
+- `EM1629136` — Castellón/Castelló. Hombres. Flujo de inmigraciones procedentes del extranjero. Extranjero. Total.
+- `EM187634` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Filipinas.
+- `EM184493` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Finlandia.
+- `EM184492` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Francia.
+- `EM184473` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Gambia.
+- `EM187660` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Ghana.
+- `EM187659` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Guinea.
+- `EM184470` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Guinea Ecuatorial.
+- `EM187649` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Honduras.
+- `EM184441` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. India.
+- `EM184491` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Irlanda.
+- `EM184490` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Italia.
+- `EM187668` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Lituania.
+- `EM184469` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Mali.
+- `EM184468` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Marruecos.
+- `EM187655` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Mauritania.
+- `EM184462` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. México.
+- `EM187664` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Moldavia.
+- `EM184458` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Nicaragua.
+- `EM187654` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Nigeria.
+- `EM1760580` — Castellón/Castelló. Total. Flujo de inmigraciones procedentes del extranjero. No consta.
+- `EM187667` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Noruega.
+- `EM1381864` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Oceanía.
+- `EM184464` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Otro país de África.
+- `EM187624` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Otro país de Asia.
+- `EM184481` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Otro país de la Unión Europea sin España.
+- `EM184445` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Otro país de Sudamérica.
+- `EM187629` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Otro país del resto de Europa.
+- `EM187626` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Otros países de Centro América y Caribe.
+- `EM187631` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Otros países o territorios de Oceanía.
+- `EM1697762` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. País de Europa menos UE27_2020.
+- `EM1386566` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. País de Europa menos UE28.
+- `EM1697763` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. País de la UE27_2020 sin España.
+- `EM1386567` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. País de la UE28 sin España.
+- `EM184489` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Países Bajos.
+- `EM187632` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Pakistán.
+- `EM184449` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Paraguay.
+- `EM184448` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Perú.
+- `EM187674` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Polonia.
+- `EM184487` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Portugal.
+- `EM1759647` — Castellón/Castelló. Total. Flujo de inmigraciones procedentes del extranjero. Primera etapa de Educación Secundaria y similar.
+- `EM184486` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Reino Unido.
+- `EM187647` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. República Dominicana.
+- `EM187670` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Rumanía.
+- `EM184476` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Rusia.
+- `EM184465` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Senegal.
+- `EM1381866` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Sudamérica.
+- `EM187669` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Suecia.
+- `EM187666` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Suiza.
+- `EM184478` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Ucrania.
+- `EM1697867` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. UE27_2020 sin España.
+- `EM1381871` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. UE28 sin España.
+- `EM187638` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Uruguay.
+- `EM187637` — Castellón/Castelló. Flujo de inmigraciones procedentes del extranjero. Venezuela.
+- `EM579795` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Castellón/Castelló.
+- `EM577000` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Albacete.
+- `EM576999` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Alicante/Alacant.
+- `EM579807` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Almería.
+- `EM576997` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Araba/Álava.
+- `EM579805` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Asturias.
+- `EM576995` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Ávila.
+- `EM579803` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Badajoz.
+- `EM576993` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Balears, Illes.
+- `EM579801` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Barcelona.
+- `EM579800` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Bizkaia.
+- `EM579799` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Burgos.
+- `EM576989` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Cáceres.
+- `EM579797` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Cádiz.
+- `EM576987` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Cantabria.
+- `EM576950` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Ceuta.
+- `EM576985` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Ciudad Real.
+- `EM579793` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Córdoba.
+- `EM579792` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Coruña, A.
+- `EM576982` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Cuenca.
+- `EM576981` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Gipuzkoa.
+- `EM576980` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Girona.
+- `EM576979` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Granada.
+- `EM579787` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Guadalajara.
+- `EM579786` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Huelva.
+- `EM576976` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Huesca.
+- `EM579784` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Jaén.
+- `EM579783` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. León.
+- `EM579782` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Lleida.
+- `EM576972` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Lugo.
+- `EM576971` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Madrid.
+- `EM576970` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Málaga.
+- `EM579758` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Melilla.
+- `EM579778` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Murcia.
+- `EM576968` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Navarra.
+- `EM579776` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Ourense.
+- `EM576966` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Palencia.
+- `EM576965` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Palmas, Las.
+- `EM576964` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Pontevedra.
+- `EM579772` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Rioja, La.
+- `EM579771` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Salamanca.
+- `EM576961` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Santa Cruz de Tenerife.
+- `EM579769` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Segovia.
+- `EM579768` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Sevilla.
+- `EM576958` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Soria.
+- `EM579766` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Tarragona.
+- `EM579765` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Teruel.
+- `EM576955` — Mujeres. Flujo de migraciones interprovinciales. Castellón/Castelló. Toledo.
+- `EM579810` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Total Nacional.
+- `EM579763` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Valencia/València.
+- `EM579762` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Valladolid.
+- `EM579761` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Zamora.
+- `EM579760` — Hombres. Flujo de migraciones interprovinciales. Castellón/Castelló. Zaragoza.
+- `EM653366` — Castellón/Castelló. Francia. Flujo de inmigraciones procedentes del extranjero.
+- `EM1082061` — Castellón/Castelló. Gambia. Flujo de inmigraciones procedentes del extranjero.
+- `EM747327` — Hombres. Castellón/Castelló. Gambia. Saldo de migración interprovincial.
+- `EM1090841` — Ambos sexos. Castellón/Castelló. Ghana. Saldo de migración interprovincial.
+- `EM1044433` — Ambos sexos. Gipuzkoa. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM1237863` — Mujeres. Granada. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM1055433` — Ambos sexos. Guadalajara. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM1291971` — Hombres. Huelva. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM1134674` — Ambos sexos. Huesca. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM732552` — Castellón/Castelló. India. Flujo de inmigraciones procedentes del extranjero.
+- `EM862352` — Hombres. Castellón/Castelló. India. Saldo de migración interprovincial.
+- `EM873877` — Castellón/Castelló. Italia. Flujo de inmigraciones procedentes del extranjero.
+- `EM1136825` — Hombres. Jaén. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM1008513` — Ambos sexos. León. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM1017476` — Castellón/Castelló. Lituania. Saldo con el extranjero.
+- `EM1294559` — Hombres. Lleida. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM946196` — Mujeres. Madrid. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM1216536` — Castellón/Castelló. Mali. Flujo de inmigraciones procedentes del extranjero.
+- `EM1046679` — Mujeres. Castellón/Castelló. Mali. Saldo de migración interprovincial.
+- `EM1046506` — Castellón/Castelló. Marruecos. Flujo de inmigraciones procedentes del extranjero.
+- `EM972273` — Mujeres. Castellón/Castelló. Marruecos. Saldo de migración interprovincial.
+- `EM947778` — Ambos sexos. Castellón/Castelló. Mauritania. Saldo de migración interprovincial.
+- `EM734619` — Ambos sexos. Castellón/Castelló. México. Saldo de migración interprovincial.
+- `EM1115399` — Castellón/Castelló. Nicaragua. Flujo de inmigraciones procedentes del extranjero.
+- `EM1270590` — Hombres. Castellón/Castelló. Nicaragua. Saldo de migración interprovincial.
+- `EM735245` — Mujeres. Castellón/Castelló. Oceanía. Saldo de migración interprovincial. De 0 a 4 años.
+- `EM1094259` — Ambos sexos. Castellón/Castelló. Oceanía. Saldo de migración interprovincial. América del Norte.
+- `EM790380` — Hombres. Castellón/Castelló. Oceanía. Saldo de migración interprovincial. Asia.
+- `EM767926` — Hombres. Castellón/Castelló. Oceanía. Saldo de migración interprovincial. Sudamérica.
+- `EM845196` — Ambos sexos. Castellón/Castelló. Oceanía. Saldo de migración interprovincial. UE28 sin España.
+- `EM1262404` — Mujeres. Castellón/Castelló. Otro país de Sudamérica. Saldo de migración interprovincial.
+- `EM1277849` — Castellón/Castelló. Otros países de Centro América y Caribe. Saldo con el extranjero.
+- `EM1249231` — Mujeres. Castellón/Castelló. Otros países o territorios de Oceanía. Saldo de migración interprovincial.
+- `EM1122257` — Ambos sexos. Ourense. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM1172056` — Mujeres. Castellón/Castelló. País de Europa menos UE28. Saldo de migración interprovincial. Total.
+- `EM879815` — Hombres. Castellón/Castelló. País de Europa menos UE28. Saldo de migración interprovincial. África.
+- `EM1270669` — Hombres. Castellón/Castelló. País de Europa menos UE28. Saldo de migración interprovincial. América del Norte.
+- `EM702524` — Mujeres. Castellón/Castelló. País de Europa menos UE28. Saldo de migración interprovincial. Asia.
+- `EM1223420` — Mujeres. Castellón/Castelló. País de Europa menos UE28. Saldo de migración interprovincial. Centro América y Caribe.
+- `EM1051987` — Mujeres. Castellón/Castelló. País de Europa menos UE28. Saldo de migración interprovincial. España.
+- `EM955676` — Mujeres. Castellón/Castelló. País de Europa menos UE28. Saldo de migración interprovincial. Europa menos UE28.
+- `EM907281` — Hombres. Castellón/Castelló. País de Europa menos UE28. Saldo de migración interprovincial. Oceanía.
+- `EM756919` — Mujeres. Castellón/Castelló. País de Europa menos UE28. Saldo de migración interprovincial. UE28 sin España.
+- `EM1122148` — Mujeres. Castellón/Castelló. País de la UE28 sin España. Saldo de migración interprovincial. Total.
+- `EM1184924` — Ambos sexos. Castellón/Castelló. País de la UE28 sin España. Saldo de migración interprovincial. Asia.
+- `EM853981` — Hombres. Castellón/Castelló. País de la UE28 sin España. Saldo de migración interprovincial. Centro América y Caribe.
+- `EM856263` — Hombres. Castellón/Castelló. País de la UE28 sin España. Saldo de migración interprovincial. Europa menos UE28.
+- `EM1068559` — Ambos sexos. Castellón/Castelló. País de la UE28 sin España. Saldo de migración interprovincial. Oceanía.
+- `EM920493` — Mujeres. Castellón/Castelló. País de la UE28 sin España. Saldo de migración interprovincial. UE28 sin España.
+- `EM694709` — Hombres. Castellón/Castelló. Pakistán. Saldo de migración interprovincial.
+- `EM696127` — Ambos sexos. Palencia. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM806292` — Ambos sexos. Palmas, Las. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM1096802` — Hombres. Castellón/Castelló. Perú. Saldo de migración interprovincial.
+- `EM1024319` — Mujeres. Pontevedra. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM692698` — Hombres. Castellón/Castelló. Portugal. Saldo de migración interprovincial.
+- `EM1066492` — Castellón/Castelló. Reino Unido. Saldo con el extranjero.
+- `EM1295558` — Hombres. Castellón/Castelló. República Dominicana. Saldo de migración interprovincial.
+- `EM1269810` — Hombres. Rioja, La. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM672214` — Mujeres. Castellón/Castelló. Rumanía. Saldo de migración interprovincial.
+- `EM920443` — Castellón/Castelló. Rusia. Saldo con el extranjero.
+- `EM978905` — Hombres. Salamanca. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM212786` — Castellón/Castelló. Saldo con el extranjero. Total.
+- `EM1382701` — Castellón/Castelló. Saldo con el extranjero. África.
+- `EM212773` — Castellón/Castelló. Saldo con el extranjero. Alemania.
+- `EM1382700` — Castellón/Castelló. Saldo con el extranjero. América del Norte.
+- `EM212725` — Castellón/Castelló. Saldo con el extranjero. Apátridas.
+- `EM215950` — Castellón/Castelló. Saldo con el extranjero. Argelia.
+- `EM215934` — Castellón/Castelló. Saldo con el extranjero. Argentina.
+- `EM1382697` — Castellón/Castelló. Saldo con el extranjero. Asia.
+- `EM212732` — Castellón/Castelló. Saldo con el extranjero. Bangladesh.
+- `EM215971` — Castellón/Castelló. Saldo con el extranjero. Bélgica.
+- `EM212742` — Castellón/Castelló. Saldo con el extranjero. Bolivia.
+- `EM215932` — Castellón/Castelló. Saldo con el extranjero. Brasil.
+- `EM215970` — Castellón/Castelló. Saldo con el extranjero. Bulgaria.
+- `EM212749` — Castellón/Castelló. Saldo con el extranjero. Canadá.
+- `EM1382699` — Castellón/Castelló. Saldo con el extranjero. Centro América y Caribe.
+- `EM215930` — Castellón/Castelló. Saldo con el extranjero. Chile.
+- `EM212731` — Castellón/Castelló. Saldo con el extranjero. China.
+- `EM212740` — Castellón/Castelló. Saldo con el extranjero. Colombia.
+- `EM212748` — Castellón/Castelló. Saldo con el extranjero. Cuba.
+- `EM1385989` — Castellón/Castelló. Saldo con el extranjero. De Africa.
+- `EM1385988` — Castellón/Castelló. Saldo con el extranjero. De América del Norte.
+- `EM1385985` — Castellón/Castelló. Saldo con el extranjero. De Asia.
+- `EM1385987` — Castellón/Castelló. Saldo con el extranjero. De Centro América y Caribe.
+- `EM1385986` — Castellón/Castelló. Saldo con el extranjero. De Sudamérica.
+- `EM215969` — Castellón/Castelló. Saldo con el extranjero. Dinamarca.
+- `EM212738` — Castellón/Castelló. Saldo con el extranjero. Ecuador.
+- `EM215968` — Castellón/Castelló. Saldo con el extranjero. España.
+- `EM212751` — Castellón/Castelló. Saldo con el extranjero. Estados Unidos de América.
+- `EM1698283` — Castellón/Castelló. Saldo con el extranjero. Europa menos UE27_2020.
+- `EM1382702` — Castellón/Castelló. Saldo con el extranjero. Europa menos UE28.
+- `EM1647796` — Castellón/Castelló. Mujeres. Saldo con el extranjero. Extranjero. Total.
+- `EM212730` — Castellón/Castelló. Saldo con el extranjero. Filipinas.
+- `EM215967` — Castellón/Castelló. Saldo con el extranjero. Finlandia.
+- `EM212780` — Castellón/Castelló. Saldo con el extranjero. Francia.
+- `EM215949` — Castellón/Castelló. Saldo con el extranjero. Gambia.
+- `EM215948` — Castellón/Castelló. Saldo con el extranjero. Ghana.
+- `EM215947` — Castellón/Castelló. Saldo con el extranjero. Guinea.
+- `EM215946` — Castellón/Castelló. Saldo con el extranjero. Guinea Ecuatorial.
+- `EM212747` — Castellón/Castelló. Saldo con el extranjero. Honduras.
+- `EM212729` — Castellón/Castelló. Saldo con el extranjero. India.
+- `EM212779` — Castellón/Castelló. Saldo con el extranjero. Irlanda.
+- `EM215964` — Castellón/Castelló. Saldo con el extranjero. Italia.
+- `EM212770` — Castellón/Castelló. Saldo con el extranjero. Lituania.
+- `EM215945` — Castellón/Castelló. Saldo con el extranjero. Mali.
+- `EM212756` — Castellón/Castelló. Saldo con el extranjero. Marruecos.
+- `EM215943` — Castellón/Castelló. Saldo con el extranjero. Mauritania.
+- `EM215939` — Castellón/Castelló. Saldo con el extranjero. México.
+- `EM212765` — Castellón/Castelló. Saldo con el extranjero. Moldavia.
+- `EM215936` — Castellón/Castelló. Saldo con el extranjero. Nicaragua.
+- `EM212754` — Castellón/Castelló. Saldo con el extranjero. Nigeria.
+- `EM215955` — Castellón/Castelló. Saldo con el extranjero. Noruega.
+- `EM1385984` — Castellón/Castelló. Saldo con el extranjero. Oceanía.
+- `EM215916` — Castellón/Castelló. Saldo con el extranjero. Otro país de África.
+- `EM212727` — Castellón/Castelló. Saldo con el extranjero. Otro país de Asia.
+- `EM212769` — Castellón/Castelló. Saldo con el extranjero. Otro país de la Unión Europea sin España.
+- `EM215913` — Castellón/Castelló. Saldo con el extranjero. Otro país de Sudamérica.
+- `EM215917` — Castellón/Castelló. Saldo con el extranjero. Otro país del resto de Europa.
+- `EM212744` — Castellón/Castelló. Saldo con el extranjero. Otros países de Centro América y Caribe.
+- `EM212726` — Castellón/Castelló. Saldo con el extranjero. Otros países o territorios de Oceanía.
+- `EM1698179` — Castellón/Castelló. Saldo con el extranjero. País de Europa menos UE27_2020.
+- `EM1385990` — Castellón/Castelló. Saldo con el extranjero. País de Europa menos UE28.
+- `EM1698180` — Castellón/Castelló. Saldo con el extranjero. País de la UE27_2020 sin España.
+- `EM1385991` — Castellón/Castelló. Saldo con el extranjero. País de la UE28 sin España.
+- `EM212777` — Castellón/Castelló. Saldo con el extranjero. Países Bajos.
+- `EM212728` — Castellón/Castelló. Saldo con el extranjero. Pakistán.
+- `EM212737` — Castellón/Castelló. Saldo con el extranjero. Paraguay.
+- `EM215927` — Castellón/Castelló. Saldo con el extranjero. Perú.
+- `EM215962` — Castellón/Castelló. Saldo con el extranjero. Polonia.
+- `EM215961` — Castellón/Castelló. Saldo con el extranjero. Portugal.
+- `EM212774` — Castellón/Castelló. Saldo con el extranjero. Reino Unido.
+- `EM212745` — Castellón/Castelló. Saldo con el extranjero. República Dominicana.
+- `EM212772` — Castellón/Castelló. Saldo con el extranjero. Rumanía.
+- `EM212764` — Castellón/Castelló. Saldo con el extranjero. Rusia.
+- `EM215941` — Castellón/Castelló. Saldo con el extranjero. Senegal.
+- `EM1382698` — Castellón/Castelló. Saldo con el extranjero. Sudamérica.
+- `EM212771` — Castellón/Castelló. Saldo con el extranjero. Suecia.
+- `EM212767` — Castellón/Castelló. Saldo con el extranjero. Suiza.
+- `EM215953` — Castellón/Castelló. Saldo con el extranjero. Ucrania.
+- `EM1698284` — Castellón/Castelló. Saldo con el extranjero. UE27_2020 sin España.
+- `EM1382703` — Castellón/Castelló. Saldo con el extranjero. UE28 sin España.
+- `EM215926` — Castellón/Castelló. Saldo con el extranjero. Uruguay.
+- `EM212734` — Castellón/Castelló. Saldo con el extranjero. Venezuela.
+- `EM1521755` — Castellón/Castelló. Saldo de migración interprovincial. Total.
+- `EM1525371` — Castellón/Castelló. Saldo de migración interprovincial. África.
+- `EM644493` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. África. Apátridas.
+- `EM644609` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. África. De Africa.
+- `EM644498` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. África. De América del Norte.
+- `EM644495` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. África. De Asia.
+- `EM644497` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. África. De Centro América y Caribe.
+- `EM644606` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. África. De Sudamérica.
+- `EM644494` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. África. Oceanía.
+- `EM1753010` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. África. País de Europa menos UE27_2020.
+- `EM644610` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. África. País de Europa menos UE28.
+- `EM1753011` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. África. País de la UE27_2020 sin España.
+- `EM644501` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. África. País de la UE28 sin España.
+- `EM1521742` — Castellón/Castelló. Saldo de migración interprovincial. Alemania.
+- `EM1525370` — Castellón/Castelló. Saldo de migración interprovincial. América del Norte.
+- `EM644592` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. América del Norte. Apátridas.
+- `EM644598` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. América del Norte. De Africa.
+- `EM644487` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. América del Norte. De América del Norte.
+- `EM644594` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. América del Norte. De Asia.
+- `EM644596` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. América del Norte. De Centro América y Caribe.
+- `EM644485` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. América del Norte. De Sudamérica.
+- `EM644483` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. América del Norte. Oceanía.
+- `EM1752988` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. América del Norte. País de Europa menos UE27_2020.
+- `EM644599` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. América del Norte. País de Europa menos UE28.
+- `EM1753009` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. América del Norte. País de la UE27_2020 sin España.
+- `EM644600` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. América del Norte. País de la UE28 sin España.
+- `EM1521694` — Castellón/Castelló. Saldo de migración interprovincial. Apátridas.
+- `EM1525405` — Castellón/Castelló. Saldo de migración interprovincial. Argelia.
+- `EM1525389` — Castellón/Castelló. Saldo de migración interprovincial. Argentina.
+- `EM1525367` — Castellón/Castelló. Saldo de migración interprovincial. Asia.
+- `EM644449` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Asia. Apátridas.
+- `EM644455` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Asia. De Africa.
+- `EM644454` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Asia. De América del Norte.
+- `EM644451` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Asia. De Asia.
+- `EM644453` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Asia. De Centro América y Caribe.
+- `EM644452` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Asia. De Sudamérica.
+- `EM644560` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Asia. Oceanía.
+- `EM1753002` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Asia. País de Europa menos UE27_2020.
+- `EM644456` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Asia. País de Europa menos UE28.
+- `EM1753003` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Asia. País de la UE27_2020 sin España.
+- `EM644567` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Asia. País de la UE28 sin España.
+- `EM1521701` — Castellón/Castelló. Saldo de migración interprovincial. Bangladesh.
+- `EM1521754` — Castellón/Castelló. Saldo de migración interprovincial. Bélgica.
+- `EM1525388` — Castellón/Castelló. Saldo de migración interprovincial. Bolivia.
+- `EM1525387` — Castellón/Castelló. Saldo de migración interprovincial. Brasil.
+- `EM1525425` — Castellón/Castelló. Saldo de migración interprovincial. Bulgaria.
+- `EM1521718` — Castellón/Castelló. Saldo de migración interprovincial. Canadá.
+- `EM1525369` — Castellón/Castelló. Saldo de migración interprovincial. Centro América y Caribe.
+- `EM644581` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Centro América y Caribe. Apátridas.
+- `EM644477` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Centro América y Caribe. De Africa.
+- `EM644586` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Centro América y Caribe. De América del Norte.
+- `EM644473` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Centro América y Caribe. De Asia.
+- `EM644475` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Centro América y Caribe. De Centro América y Caribe.
+- `EM644474` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Centro América y Caribe. De Sudamérica.
+- `EM644582` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Centro América y Caribe. Oceanía.
+- `EM1752986` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Centro América y Caribe. País de Europa menos UE27_2020.
+- `EM644478` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Centro América y Caribe. País de Europa menos UE28.
+- `EM1752987` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Centro América y Caribe. País de la UE27_2020 sin España.
+- `EM644589` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Centro América y Caribe. País de la UE28 sin España.
+- `EM1521708` — Castellón/Castelló. Saldo de migración interprovincial. Chile.
+- `EM1521700` — Castellón/Castelló. Saldo de migración interprovincial. China.
+- `EM1525386` — Castellón/Castelló. Saldo de migración interprovincial. Colombia.
+- `EM1525393` — Castellón/Castelló. Saldo de migración interprovincial. Cuba.
+- `EM1521691` — Castellón/Castelló. Saldo de migración interprovincial. De Africa.
+- `EM1521690` — Castellón/Castelló. Saldo de migración interprovincial. De América del Norte.
+- `EM1521687` — Castellón/Castelló. Saldo de migración interprovincial. De Asia.
+- `EM1521689` — Castellón/Castelló. Saldo de migración interprovincial. De Centro América y Caribe.
+- `EM1521688` — Castellón/Castelló. Saldo de migración interprovincial. De Sudamérica.
+- `EM1521752` — Castellón/Castelló. Saldo de migración interprovincial. Dinamarca.
+- `EM1525384` — Castellón/Castelló. Saldo de migración interprovincial. Ecuador.
+- `EM1525423` — Castellón/Castelló. Saldo de migración interprovincial. España.
+- `EM644526` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. España. Apátridas.
+- `EM644532` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. España. De Africa.
+- `EM644641` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. España. De América del Norte.
+- `EM644528` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. España. De Asia.
+- `EM644640` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. España. De Centro América y Caribe.
+- `EM644639` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. España. De Sudamérica.
+- `EM644637` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. España. Oceanía.
+- `EM1753016` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. España. País de Europa menos UE27_2020.
+- `EM644533` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. España. País de Europa menos UE28.
+- `EM1753017` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. España. País de la UE27_2020 sin España.
+- `EM644644` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. España. País de la UE28 sin España.
+- `EM1525395` — Castellón/Castelló. Saldo de migración interprovincial. Estados Unidos de América.
+- `EM1754058` — Castellón/Castelló. Saldo de migración interprovincial. Europa menos UE27_2020.
+- `EM1749590` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Europa menos UE27_2020. Apátridas.
+- `EM1749622` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Europa menos UE27_2020. De Africa.
+- `EM1749595` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Europa menos UE27_2020. De América del Norte.
+- `EM1749618` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Europa menos UE27_2020. De Asia.
+- `EM1749620` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Europa menos UE27_2020. De Centro América y Caribe.
+- `EM1749593` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Europa menos UE27_2020. De Sudamérica.
+- `EM1749591` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Europa menos UE27_2020. Oceanía.
+- `EM1749624` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Europa menos UE27_2020. País de Europa menos UE27_2020.
+- `EM1749597` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Europa menos UE27_2020. País de Europa menos UE28.
+- `EM1749600` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Europa menos UE27_2020. País de la UE27_2020 sin España.
+- `EM1749625` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Europa menos UE27_2020. País de la UE28 sin España.
+- `EM1525372` — Castellón/Castelló. Saldo de migración interprovincial. Europa menos UE28.
+- `EM644614` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Europa menos UE28. Apátridas.
+- `EM644620` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Europa menos UE28. De Africa.
+- `EM644619` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Europa menos UE28. De América del Norte.
+- `EM644506` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Europa menos UE28. De Asia.
+- `EM644508` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Europa menos UE28. De Centro América y Caribe.
+- `EM644507` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Europa menos UE28. De Sudamérica.
+- `EM644505` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Europa menos UE28. Oceanía.
+- `EM1752992` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Europa menos UE28. País de Europa menos UE27_2020.
+- `EM644511` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Europa menos UE28. País de Europa menos UE28.
+- `EM1753013` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Europa menos UE28. País de la UE27_2020 sin España.
+- `EM644622` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Europa menos UE28. País de la UE28 sin España.
+- `EM1521699` — Castellón/Castelló. Saldo de migración interprovincial. Filipinas.
+- `EM1521750` — Castellón/Castelló. Saldo de migración interprovincial. Finlandia.
+- `EM1521749` — Castellón/Castelló. Saldo de migración interprovincial. Francia.
+- `EM1521730` — Castellón/Castelló. Saldo de migración interprovincial. Gambia.
+- `EM1525403` — Castellón/Castelló. Saldo de migración interprovincial. Ghana.
+- `EM1521728` — Castellón/Castelló. Saldo de migración interprovincial. Guinea.
+- `EM1525401` — Castellón/Castelló. Saldo de migración interprovincial. Guinea Ecuatorial.
+- `EM1525392` — Castellón/Castelló. Saldo de migración interprovincial. Honduras.
+- `EM1521698` — Castellón/Castelló. Saldo de migración interprovincial. India.
+- `EM1521748` — Castellón/Castelló. Saldo de migración interprovincial. Irlanda.
+- `EM1525419` — Castellón/Castelló. Saldo de migración interprovincial. Italia.
+- `EM1525411` — Castellón/Castelló. Saldo de migración interprovincial. Lituania.
+- `EM1525400` — Castellón/Castelló. Saldo de migración interprovincial. Mali.
+- `EM1521725` — Castellón/Castelló. Saldo de migración interprovincial. Marruecos.
+- `EM1525398` — Castellón/Castelló. Saldo de migración interprovincial. Mauritania.
+- `EM1525394` — Castellón/Castelló. Saldo de migración interprovincial. México.
+- `EM1525407` — Castellón/Castelló. Saldo de migración interprovincial. Moldavia.
+- `EM1525391` — Castellón/Castelló. Saldo de migración interprovincial. Nicaragua.
+- `EM1525397` — Castellón/Castelló. Saldo de migración interprovincial. Nigeria.
+- `EM1521737` — Castellón/Castelló. Saldo de migración interprovincial. Noruega.
+- `EM1525366` — Castellón/Castelló. Saldo de migración interprovincial. Oceanía.
+- `EM644438` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Oceanía. Apátridas.
+- `EM644554` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Oceanía. De Africa.
+- `EM644553` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Oceanía. De América del Norte.
+- `EM644550` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Oceanía. De Asia.
+- `EM644552` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Oceanía. De Centro América y Caribe.
+- `EM644441` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Oceanía. De Sudamérica.
+- `EM644549` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Oceanía. Oceanía.
+- `EM1752980` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Oceanía. País de Europa menos UE27_2020.
+- `EM644555` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Oceanía. País de Europa menos UE28.
+- `EM1752981` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Oceanía. País de la UE27_2020 sin España.
+- `EM644556` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Oceanía. País de la UE28 sin España.
+- `EM1521721` — Castellón/Castelló. Saldo de migración interprovincial. Otro país de África.
+- `EM1521696` — Castellón/Castelló. Saldo de migración interprovincial. Otro país de Asia.
+- `EM1521738` — Castellón/Castelló. Saldo de migración interprovincial. Otro país de la Unión Europea sin España.
+- `EM1525360` — Castellón/Castelló. Saldo de migración interprovincial. Otro país de Sudamérica.
+- `EM1525364` — Castellón/Castelló. Saldo de migración interprovincial. Otro país del resto de Europa.
+- `EM1521713` — Castellón/Castelló. Saldo de migración interprovincial. Otros países de Centro América y Caribe.
+- `EM1521695` — Castellón/Castelló. Saldo de migración interprovincial. Otros países o territorios de Oceanía.
+- `EM1753954` — Castellón/Castelló. Saldo de migración interprovincial. País de Europa menos UE27_2020.
+- `EM1521692` — Castellón/Castelló. Saldo de migración interprovincial. País de Europa menos UE28.
+- `EM1753955` — Castellón/Castelló. Saldo de migración interprovincial. País de la UE27_2020 sin España.
+- `EM1521693` — Castellón/Castelló. Saldo de migración interprovincial. País de la UE28 sin España.
+- `EM1525418` — Castellón/Castelló. Saldo de migración interprovincial. Países Bajos.
+- `EM1525374` — Castellón/Castelló. Saldo de migración interprovincial. Pakistán.
+- `EM1525383` — Castellón/Castelló. Saldo de migración interprovincial. Paraguay.
+- `EM1525382` — Castellón/Castelló. Saldo de migración interprovincial. Perú.
+- `EM1521745` — Castellón/Castelló. Saldo de migración interprovincial. Polonia.
+- `EM1525416` — Castellón/Castelló. Saldo de migración interprovincial. Portugal.
+- `EM1525415` — Castellón/Castelló. Saldo de migración interprovincial. Reino Unido.
+- `EM1521714` — Castellón/Castelló. Saldo de migración interprovincial. República Dominicana.
+- `EM1525413` — Castellón/Castelló. Saldo de migración interprovincial. Rumanía.
+- `EM1521733` — Castellón/Castelló. Saldo de migración interprovincial. Rusia.
+- `EM1525396` — Castellón/Castelló. Saldo de migración interprovincial. Senegal.
+- `EM1525368` — Castellón/Castelló. Saldo de migración interprovincial. Sudamérica.
+- `EM644570` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Sudamérica. Apátridas.
+- `EM644466` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Sudamérica. De Africa.
+- `EM644575` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Sudamérica. De América del Norte.
+- `EM644462` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Sudamérica. De Asia.
+- `EM644574` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Sudamérica. De Centro América y Caribe.
+- `EM644573` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Sudamérica. De Sudamérica.
+- `EM644571` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Sudamérica. Oceanía.
+- `EM1753004` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Sudamérica. País de Europa menos UE27_2020.
+- `EM644467` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. Sudamérica. País de Europa menos UE28.
+- `EM1753005` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Sudamérica. País de la UE27_2020 sin España.
+- `EM644578` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. Sudamérica. País de la UE28 sin España.
+- `EM1525412` — Castellón/Castelló. Saldo de migración interprovincial. Suecia.
+- `EM1521736` — Castellón/Castelló. Saldo de migración interprovincial. Suiza.
+- `EM1521735` — Castellón/Castelló. Saldo de migración interprovincial. Ucrania.
+- `EM1754059` — Castellón/Castelló. Saldo de migración interprovincial. UE27_2020 sin España.
+- `EM1749629` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE27_2020 sin España. Apátridas.
+- `EM1749609` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. UE27_2020 sin España. De Africa.
+- `EM1749634` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE27_2020 sin España. De América del Norte.
+- `EM1749631` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE27_2020 sin España. De Asia.
+- `EM1749633` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE27_2020 sin España. De Centro América y Caribe.
+- `EM1749632` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE27_2020 sin España. De Sudamérica.
+- `EM1749604` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. UE27_2020 sin España. Oceanía.
+- `EM1749637` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE27_2020 sin España. País de Europa menos UE27_2020.
+- `EM1749610` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. UE27_2020 sin España. País de Europa menos UE28.
+- `EM1749639` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE27_2020 sin España. País de la UE27_2020 sin España.
+- `EM1749638` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE27_2020 sin España. País de la UE28 sin España.
+- `EM1525373` — Castellón/Castelló. Saldo de migración interprovincial. UE28 sin España.
+- `EM644625` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE28 sin España. Apátridas.
+- `EM644521` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. UE28 sin España. De Africa.
+- `EM644630` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE28 sin España. De América del Norte.
+- `EM644517` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. UE28 sin España. De Asia.
+- `EM644629` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE28 sin España. De Centro América y Caribe.
+- `EM644628` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE28 sin España. De Sudamérica.
+- `EM644626` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE28 sin España. Oceanía.
+- `EM1752994` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. UE28 sin España. País de Europa menos UE27_2020.
+- `EM644522` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. UE28 sin España. País de Europa menos UE28.
+- `EM1753015` — Castellón/Castelló. Hombres. Saldo de migración interprovincial. UE28 sin España. País de la UE27_2020 sin España.
+- `EM644523` — Castellón/Castelló. Mujeres. Saldo de migración interprovincial. UE28 sin España. País de la UE28 sin España.
+- `EM1525381` — Castellón/Castelló. Saldo de migración interprovincial. Uruguay.
+- `EM1521703` — Castellón/Castelló. Saldo de migración interprovincial. Venezuela.
+- `EM853954` — Castellón/Castelló. Senegal. Flujo de inmigraciones procedentes del extranjero.
+- `EM783021` — Castellón/Castelló. Suecia. Flujo de inmigraciones procedentes del extranjero.
+- `EM1153954` — Ambos sexos. Tarragona. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM1008630` — Hombres. Teruel. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM1034795` — Ambos sexos. Castellón/Castelló. Ucrania. Saldo de migración interprovincial.
+- `EM795015` — Ambos sexos. Valencia/València. Castellón/Castelló. Flujo de migraciones interprovinciales.
+- `EM828894` — Castellón/Castelló. Venezuela. Saldo con el extranjero.
