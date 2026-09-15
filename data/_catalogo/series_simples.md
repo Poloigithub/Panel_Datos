@@ -1,0 +1,598 @@
+# Series simples por operación (provincia de Castellón)
+
+## ECP
+
+Series totales: 3429 · simples que encajan: 3141
+
+- `ECP148180` (5) — 0 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP148179` (5) — 0 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP148181` (5) — 0 años. Castellón/Castelló. Total. Población. Número.
+- `ECP148024` (5) — 1 año. Castellón/Castelló. Hombres. Población. Número.
+- `ECP148023` (5) — 1 año. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP148025` (5) — 1 año. Castellón/Castelló. Total. Población. Número.
+- `ECP146620` (5) — 10 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP146619` (5) — 10 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP146621` (5) — 10 años. Castellón/Castelló. Total. Población. Número.
+- `ECP132577` (5) — 100 y más años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP132576` (5) — 100 y más años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP132578` (5) — 100 y más años. Castellón/Castelló. Total. Población. Número.
+- `ECP146464` (5) — 11 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP146463` (5) — 11 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP146465` (5) — 11 años. Castellón/Castelló. Total. Población. Número.
+- `ECP146308` (5) — 12 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP146307` (5) — 12 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP146309` (5) — 12 años. Castellón/Castelló. Total. Población. Número.
+- `ECP146152` (5) — 13 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP146151` (5) — 13 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP146153` (5) — 13 años. Castellón/Castelló. Total. Población. Número.
+- `ECP145996` (5) — 14 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP145995` (5) — 14 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP145997` (5) — 14 años. Castellón/Castelló. Total. Población. Número.
+- `ECP145840` (5) — 15 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP145839` (5) — 15 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP145841` (5) — 15 años. Castellón/Castelló. Total. Población. Número.
+- `ECP145684` (5) — 16 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP145683` (5) — 16 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP145685` (5) — 16 años. Castellón/Castelló. Total. Población. Número.
+- `ECP145528` (5) — 17 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP145527` (5) — 17 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP145529` (5) — 17 años. Castellón/Castelló. Total. Población. Número.
+- `ECP145372` (5) — 18 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP145371` (5) — 18 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP145373` (5) — 18 años. Castellón/Castelló. Total. Población. Número.
+- `ECP145216` (5) — 19 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP145215` (5) — 19 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP145217` (5) — 19 años. Castellón/Castelló. Total. Población. Número.
+- `ECP147868` (5) — 2 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP147867` (5) — 2 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP147869` (5) — 2 años. Castellón/Castelló. Total. Población. Número.
+- `ECP145060` (5) — 20 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP145059` (5) — 20 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP145061` (5) — 20 años. Castellón/Castelló. Total. Población. Número.
+- `ECP144904` (5) — 21 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP144903` (5) — 21 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP144905` (5) — 21 años. Castellón/Castelló. Total. Población. Número.
+- `ECP144748` (5) — 22 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP144747` (5) — 22 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP144749` (5) — 22 años. Castellón/Castelló. Total. Población. Número.
+- `ECP144592` (5) — 23 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP144591` (5) — 23 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP144593` (5) — 23 años. Castellón/Castelló. Total. Población. Número.
+- `ECP144436` (5) — 24 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP144435` (5) — 24 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP144437` (5) — 24 años. Castellón/Castelló. Total. Población. Número.
+- `ECP144280` (5) — 25 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP144279` (5) — 25 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP144281` (5) — 25 años. Castellón/Castelló. Total. Población. Número.
+- `ECP144124` (5) — 26 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP144123` (5) — 26 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP144125` (5) — 26 años. Castellón/Castelló. Total. Población. Número.
+- `ECP143968` (5) — 27 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP143967` (5) — 27 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP143969` (5) — 27 años. Castellón/Castelló. Total. Población. Número.
+- `ECP143812` (5) — 28 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP143811` (5) — 28 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP143813` (5) — 28 años. Castellón/Castelló. Total. Población. Número.
+- `ECP143656` (5) — 29 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP143655` (5) — 29 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP143657` (5) — 29 años. Castellón/Castelló. Total. Población. Número.
+- `ECP147712` (5) — 3 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP147711` (5) — 3 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP147713` (5) — 3 años. Castellón/Castelló. Total. Población. Número.
+- `ECP143500` (5) — 30 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP143499` (5) — 30 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP143501` (5) — 30 años. Castellón/Castelló. Total. Población. Número.
+- `ECP143344` (5) — 31 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP143343` (5) — 31 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP143345` (5) — 31 años. Castellón/Castelló. Total. Población. Número.
+- `ECP143188` (5) — 32 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP143187` (5) — 32 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP143189` (5) — 32 años. Castellón/Castelló. Total. Población. Número.
+- `ECP143032` (5) — 33 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP143031` (5) — 33 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP143033` (5) — 33 años. Castellón/Castelló. Total. Población. Número.
+- `ECP142876` (5) — 34 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP142875` (5) — 34 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP142877` (5) — 34 años. Castellón/Castelló. Total. Población. Número.
+- `ECP142720` (5) — 35 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP142719` (5) — 35 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP142721` (5) — 35 años. Castellón/Castelló. Total. Población. Número.
+- `ECP142564` (5) — 36 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP142563` (5) — 36 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP142565` (5) — 36 años. Castellón/Castelló. Total. Población. Número.
+- `ECP142408` (5) — 37 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP142407` (5) — 37 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP142409` (5) — 37 años. Castellón/Castelló. Total. Población. Número.
+- `ECP142252` (5) — 38 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP142251` (5) — 38 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP142253` (5) — 38 años. Castellón/Castelló. Total. Población. Número.
+- `ECP142096` (5) — 39 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP142095` (5) — 39 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP142097` (5) — 39 años. Castellón/Castelló. Total. Población. Número.
+- `ECP147556` (5) — 4 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP147555` (5) — 4 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP147557` (5) — 4 años. Castellón/Castelló. Total. Población. Número.
+- `ECP141940` (5) — 40 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP141939` (5) — 40 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP141941` (5) — 40 años. Castellón/Castelló. Total. Población. Número.
+- `ECP141784` (5) — 41 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP141783` (5) — 41 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP141785` (5) — 41 años. Castellón/Castelló. Total. Población. Número.
+- `ECP141628` (5) — 42 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP141627` (5) — 42 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP141629` (5) — 42 años. Castellón/Castelló. Total. Población. Número.
+- `ECP141472` (5) — 43 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP141471` (5) — 43 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP141473` (5) — 43 años. Castellón/Castelló. Total. Población. Número.
+- `ECP141316` (5) — 44 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP141315` (5) — 44 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP141317` (5) — 44 años. Castellón/Castelló. Total. Población. Número.
+- `ECP141160` (5) — 45 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP141159` (5) — 45 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP141161` (5) — 45 años. Castellón/Castelló. Total. Población. Número.
+- `ECP141004` (5) — 46 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP141003` (5) — 46 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP141005` (5) — 46 años. Castellón/Castelló. Total. Población. Número.
+- `ECP140848` (5) — 47 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP140847` (5) — 47 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP140849` (5) — 47 años. Castellón/Castelló. Total. Población. Número.
+- `ECP140692` (5) — 48 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP140691` (5) — 48 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP140693` (5) — 48 años. Castellón/Castelló. Total. Población. Número.
+- `ECP140536` (5) — 49 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP140535` (5) — 49 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP140537` (5) — 49 años. Castellón/Castelló. Total. Población. Número.
+- `ECP147400` (5) — 5 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP147399` (5) — 5 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP147401` (5) — 5 años. Castellón/Castelló. Total. Población. Número.
+- `ECP140380` (5) — 50 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP140379` (5) — 50 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP140381` (5) — 50 años. Castellón/Castelló. Total. Población. Número.
+- `ECP140224` (5) — 51 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP140223` (5) — 51 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP140225` (5) — 51 años. Castellón/Castelló. Total. Población. Número.
+- `ECP140068` (5) — 52 años. Castellón/Castelló. Hombres. Población. Número.
+- `ECP140067` (5) — 52 años. Castellón/Castelló. Mujeres. Población. Número.
+- `ECP140069` (5) — 52 años. Castellón/Castelló. Total. Población. Número.
+
+## IDB
+
+Series totales: 3866 · simples que encajan: 331
+
+- `IDB53270` (2) — Indicadores de crecimiento y estructura de la población. Castellón/Castelló.
+- `IDB53277` (2) — Indicadores de crecimiento y estructura de la población. Castellón/Castelló.
+- `IDB55940` (2) — Indicadores de crecimiento y estructura de la población. Castellón/Castelló.
+- `IDB55742` (2) — Indicadores de crecimiento y estructura de la población. Castellón/Castelló.
+- `IDB54014` (2) — Indicadores de crecimiento y estructura de la población. Castellón/Castelló.
+- `IDB55552` (2) — Indicadores de crecimiento y estructura de la población. Castellón/Castelló.
+- `IDB348226` (4) — Divorcios. Tasa Bruta de Divorcios. Dato base. Castellón/Castelló.
+- `IDB352980` (5) — Castellón/Castelló. Divorcios. Edad Media al Divorcio. Ambos sexos. Dato base.
+- `IDB352979` (5) — Castellón/Castelló. Divorcios. Edad Media al Divorcio. Hombres. Dato base.
+- `IDB352978` (5) — Castellón/Castelló. Divorcios. Edad Media al Divorcio. Mujeres. Dato base.
+- `IDB87121` (5) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Crecimiento de la población. Anual. Dato base.
+- `IDB475158` (5) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Saldo migratorio. Anual. Dato base.
+- `IDB86344` (6) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Edad media de la población. Ambos sexos. Anual. Dato base.
+- `IDB86343` (6) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Edad media de la población. Hombres. Anual. Dato base.
+- `IDB86342` (6) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Edad media de la población. Mujeres. Anual. Dato base.
+- `IDB359035` (6) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de personas mayores de cierta edad. 100 y más años. Anual. Porcentaje.
+- `IDB359041` (6) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de personas mayores de cierta edad. 70 y más años. Anual. Porcentaje.
+- `IDB359040` (6) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de personas mayores de cierta edad. 75 y más años. Anual. Porcentaje.
+- `IDB359039` (6) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de personas mayores de cierta edad. 80 y más años. Anual. Porcentaje.
+- `IDB359038` (6) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de personas mayores de cierta edad. 85 y más años. Anual. Porcentaje.
+- `IDB359037` (6) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de personas mayores de cierta edad. 90 y más años. Anual. Porcentaje.
+- `IDB359036` (6) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de personas mayores de cierta edad. 95 y más años. Anual. Porcentaje.
+- `IDB174876` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 0 años. Anual. Porcentaje.
+- `IDB174875` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 1 año. Anual. Porcentaje.
+- `IDB174866` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 10 años. Anual. Porcentaje.
+- `IDB174776` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 100 y más años. Anual. Porcentaje.
+- `IDB174865` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 11 años. Anual. Porcentaje.
+- `IDB174864` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 12 años. Anual. Porcentaje.
+- `IDB174863` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 13 años. Anual. Porcentaje.
+- `IDB174862` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 14 años. Anual. Porcentaje.
+- `IDB174861` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 15 años. Anual. Porcentaje.
+- `IDB174860` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 16 años. Anual. Porcentaje.
+- `IDB174859` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 17 años. Anual. Porcentaje.
+- `IDB174858` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 18 años. Anual. Porcentaje.
+- `IDB174857` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 19 años. Anual. Porcentaje.
+- `IDB174874` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 2 años. Anual. Porcentaje.
+- `IDB174856` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 20 años. Anual. Porcentaje.
+- `IDB174855` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 21 años. Anual. Porcentaje.
+- `IDB174854` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 22 años. Anual. Porcentaje.
+- `IDB174853` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 23 años. Anual. Porcentaje.
+- `IDB174852` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 24 años. Anual. Porcentaje.
+- `IDB174851` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 25 años. Anual. Porcentaje.
+- `IDB174850` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 26 años. Anual. Porcentaje.
+- `IDB174849` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 27 años. Anual. Porcentaje.
+- `IDB174848` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 28 años. Anual. Porcentaje.
+- `IDB174847` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 29 años. Anual. Porcentaje.
+- `IDB174873` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 3 años. Anual. Porcentaje.
+- `IDB174846` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 30 años. Anual. Porcentaje.
+- `IDB174845` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 31 años. Anual. Porcentaje.
+- `IDB174844` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 32 años. Anual. Porcentaje.
+- `IDB174843` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 33 años. Anual. Porcentaje.
+- `IDB174842` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 34 años. Anual. Porcentaje.
+- `IDB174841` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 35 años. Anual. Porcentaje.
+- `IDB174840` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 36 años. Anual. Porcentaje.
+- `IDB174839` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 37 años. Anual. Porcentaje.
+- `IDB174838` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 38 años. Anual. Porcentaje.
+- `IDB174837` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 39 años. Anual. Porcentaje.
+- `IDB174872` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 4 años. Anual. Porcentaje.
+- `IDB174836` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 40 años. Anual. Porcentaje.
+- `IDB174835` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 41 años. Anual. Porcentaje.
+- `IDB174834` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 42 años. Anual. Porcentaje.
+- `IDB174833` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 43 años. Anual. Porcentaje.
+- `IDB174832` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 44 años. Anual. Porcentaje.
+- `IDB174831` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 45 años. Anual. Porcentaje.
+- `IDB174830` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 46 años. Anual. Porcentaje.
+- `IDB174829` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 47 años. Anual. Porcentaje.
+- `IDB174828` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 48 años. Anual. Porcentaje.
+- `IDB174827` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 49 años. Anual. Porcentaje.
+- `IDB174871` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 5 años. Anual. Porcentaje.
+- `IDB174826` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 50 años. Anual. Porcentaje.
+- `IDB174825` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 51 años. Anual. Porcentaje.
+- `IDB174824` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 52 años. Anual. Porcentaje.
+- `IDB174823` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 53 años. Anual. Porcentaje.
+- `IDB174822` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 54 años. Anual. Porcentaje.
+- `IDB174821` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 55 años. Anual. Porcentaje.
+- `IDB174820` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 56 años. Anual. Porcentaje.
+- `IDB174819` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 57 años. Anual. Porcentaje.
+- `IDB174818` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 58 años. Anual. Porcentaje.
+- `IDB174817` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 59 años. Anual. Porcentaje.
+- `IDB174870` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 6 años. Anual. Porcentaje.
+- `IDB174816` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 60 años. Anual. Porcentaje.
+- `IDB174815` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 61 años. Anual. Porcentaje.
+- `IDB174814` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 62 años. Anual. Porcentaje.
+- `IDB174813` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 63 años. Anual. Porcentaje.
+- `IDB174812` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 64 años. Anual. Porcentaje.
+- `IDB174811` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 65 años. Anual. Porcentaje.
+- `IDB174810` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 66 años. Anual. Porcentaje.
+- `IDB174809` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 67 años. Anual. Porcentaje.
+- `IDB174808` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 68 años. Anual. Porcentaje.
+- `IDB174807` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 69 años. Anual. Porcentaje.
+- `IDB174869` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 7 años. Anual. Porcentaje.
+- `IDB174806` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 70 años. Anual. Porcentaje.
+- `IDB174805` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 71 años. Anual. Porcentaje.
+- `IDB174804` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 72 años. Anual. Porcentaje.
+- `IDB174803` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 73 años. Anual. Porcentaje.
+- `IDB174802` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 74 años. Anual. Porcentaje.
+- `IDB174801` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 75 años. Anual. Porcentaje.
+- `IDB174800` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 76 años. Anual. Porcentaje.
+- `IDB174799` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 77 años. Anual. Porcentaje.
+- `IDB174798` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 78 años. Anual. Porcentaje.
+- `IDB174797` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 79 años. Anual. Porcentaje.
+- `IDB174868` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 8 años. Anual. Porcentaje.
+- `IDB174796` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 80 años. Anual. Porcentaje.
+- `IDB174795` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 81 años. Anual. Porcentaje.
+- `IDB174794` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 82 años. Anual. Porcentaje.
+- `IDB174793` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 83 años. Anual. Porcentaje.
+- `IDB174792` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 84 años. Anual. Porcentaje.
+- `IDB174791` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 85 años. Anual. Porcentaje.
+- `IDB174790` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 86 años. Anual. Porcentaje.
+- `IDB174789` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 87 años. Anual. Porcentaje.
+- `IDB174788` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 88 años. Anual. Porcentaje.
+- `IDB174787` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 89 años. Anual. Porcentaje.
+- `IDB174867` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 9 años. Anual. Porcentaje.
+- `IDB174786` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 90 años. Anual. Porcentaje.
+- `IDB174785` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 91 años. Anual. Porcentaje.
+- `IDB174784` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 92 años. Anual. Porcentaje.
+- `IDB174783` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 93 años. Anual. Porcentaje.
+- `IDB174782` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 94 años. Anual. Porcentaje.
+- `IDB174781` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 95 años. Anual. Porcentaje.
+- `IDB174780` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 96 años. Anual. Porcentaje.
+- `IDB174779` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 97 años. Anual. Porcentaje.
+- `IDB174778` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 98 años. Anual. Porcentaje.
+- `IDB174777` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Ambos sexos. 99 años. Anual. Porcentaje.
+- `IDB174775` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 0 años. Anual. Porcentaje.
+- `IDB174774` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 1 año. Anual. Porcentaje.
+- `IDB174765` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 10 años. Anual. Porcentaje.
+- `IDB174675` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 100 y más años. Anual. Porcentaje.
+- `IDB174764` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 11 años. Anual. Porcentaje.
+- `IDB174763` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 12 años. Anual. Porcentaje.
+- `IDB174762` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 13 años. Anual. Porcentaje.
+- `IDB174761` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 14 años. Anual. Porcentaje.
+- `IDB174760` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 15 años. Anual. Porcentaje.
+- `IDB174759` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 16 años. Anual. Porcentaje.
+- `IDB174758` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 17 años. Anual. Porcentaje.
+- `IDB174757` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 18 años. Anual. Porcentaje.
+- `IDB174756` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 19 años. Anual. Porcentaje.
+- `IDB174773` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 2 años. Anual. Porcentaje.
+- `IDB174755` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 20 años. Anual. Porcentaje.
+- `IDB174754` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 21 años. Anual. Porcentaje.
+- `IDB174753` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 22 años. Anual. Porcentaje.
+- `IDB174752` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 23 años. Anual. Porcentaje.
+- `IDB174751` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 24 años. Anual. Porcentaje.
+- `IDB174750` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 25 años. Anual. Porcentaje.
+- `IDB174749` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 26 años. Anual. Porcentaje.
+- `IDB174748` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 27 años. Anual. Porcentaje.
+- `IDB174747` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 28 años. Anual. Porcentaje.
+- `IDB174746` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 29 años. Anual. Porcentaje.
+- `IDB174772` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 3 años. Anual. Porcentaje.
+- `IDB174745` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 30 años. Anual. Porcentaje.
+- `IDB174744` (7) — Castellón/Castelló. Indicadores de crecimiento y estructura de la población. Proporción de población extranjera. Hombres. 31 años. Anual. Porcentaje.
+
+## ADRH
+
+Series totales: 188 · simples que encajan: 117
+
+- `ADRH9974833` (3) — Castellón/Castelló. Dato base. Distribución de la renta P80/P20.
+- `ADRH9974126` (3) — Castellón/Castelló. Dato base. Media de la renta por unidad de consumo.
+- `ADRH9974125` (3) — Castellón/Castelló. Dato base. Mediana de la renta por unidad de consumo.
+- `ADRH9974122` (3) — Castellón/Castelló. Dato base. Renta bruta media por hogar.
+- `ADRH9974123` (3) — Castellón/Castelló. Dato base. Renta bruta media por persona.
+- `ADRH9974124` (3) — Castellón/Castelló. Dato base. Renta mediana por hogar.
+- `ADRH87744` (3) — Castellón/Castelló. Dato base. Renta neta media por hogar.
+- `ADRH87745` (3) — Castellón/Castelló. Dato base. Renta neta media por persona.
+- `ADRH9974834` (3) — Castellón/Castelló. Dato base. Índice de Gini.
+- `ADRH9979992` (4) — Castellón/Castelló. Hombres. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9979991` (4) — Castellón/Castelló. Hombres. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9979990` (4) — Castellón/Castelló. Hombres. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9979989` (4) — Castellón/Castelló. Hombres. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9979988` (4) — Castellón/Castelló. Hombres. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9979987` (4) — Castellón/Castelló. Hombres. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9979986` (4) — Castellón/Castelló. Mujeres. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9979985` (4) — Castellón/Castelló. Mujeres. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9979984` (4) — Castellón/Castelló. Mujeres. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9979983` (4) — Castellón/Castelló. Mujeres. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9979982` (4) — Castellón/Castelló. Mujeres. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9979981` (4) — Castellón/Castelló. Mujeres. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9979998` (4) — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9979997` (4) — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9979996` (4) — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9979995` (4) — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9979994` (4) — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9979993` (4) — Castellón/Castelló. Total. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9982422` (5) — Castellón/Castelló. Hombres. 65 y más años. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9982421` (5) — Castellón/Castelló. Hombres. 65 y más años. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9982420` (5) — Castellón/Castelló. Hombres. 65 y más años. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9982419` (5) — Castellón/Castelló. Hombres. 65 y más años. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9982418` (5) — Castellón/Castelló. Hombres. 65 y más años. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9982417` (5) — Castellón/Castelló. Hombres. 65 y más años. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9982416` (5) — Castellón/Castelló. Hombres. De 18 a 64 años. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9982415` (5) — Castellón/Castelló. Hombres. De 18 a 64 años. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9982414` (5) — Castellón/Castelló. Hombres. De 18 a 64 años. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9982413` (5) — Castellón/Castelló. Hombres. De 18 a 64 años. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9982412` (5) — Castellón/Castelló. Hombres. De 18 a 64 años. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9982411` (5) — Castellón/Castelló. Hombres. De 18 a 64 años. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9986376` (5) — Castellón/Castelló. Hombres. Española. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9986375` (5) — Castellón/Castelló. Hombres. Española. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9986374` (5) — Castellón/Castelló. Hombres. Española. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9986373` (5) — Castellón/Castelló. Hombres. Española. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9986372` (5) — Castellón/Castelló. Hombres. Española. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9986371` (5) — Castellón/Castelló. Hombres. Española. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9986370` (5) — Castellón/Castelló. Hombres. Extranjera. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9986369` (5) — Castellón/Castelló. Hombres. Extranjera. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9986368` (5) — Castellón/Castelló. Hombres. Extranjera. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9986367` (5) — Castellón/Castelló. Hombres. Extranjera. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9986366` (5) — Castellón/Castelló. Hombres. Extranjera. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9986365` (5) — Castellón/Castelló. Hombres. Extranjera. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9982428` (5) — Castellón/Castelló. Hombres. Menos de 18 años. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9982427` (5) — Castellón/Castelló. Hombres. Menos de 18 años. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9982426` (5) — Castellón/Castelló. Hombres. Menos de 18 años. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9982425` (5) — Castellón/Castelló. Hombres. Menos de 18 años. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9982424` (5) — Castellón/Castelló. Hombres. Menos de 18 años. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9982423` (5) — Castellón/Castelló. Hombres. Menos de 18 años. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9982404` (5) — Castellón/Castelló. Mujeres. 65 y más años. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9982403` (5) — Castellón/Castelló. Mujeres. 65 y más años. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9982402` (5) — Castellón/Castelló. Mujeres. 65 y más años. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9982401` (5) — Castellón/Castelló. Mujeres. 65 y más años. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9982400` (5) — Castellón/Castelló. Mujeres. 65 y más años. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9982399` (5) — Castellón/Castelló. Mujeres. 65 y más años. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9982398` (5) — Castellón/Castelló. Mujeres. De 18 a 64 años. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9982397` (5) — Castellón/Castelló. Mujeres. De 18 a 64 años. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9982396` (5) — Castellón/Castelló. Mujeres. De 18 a 64 años. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9982395` (5) — Castellón/Castelló. Mujeres. De 18 a 64 años. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9982394` (5) — Castellón/Castelló. Mujeres. De 18 a 64 años. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9982393` (5) — Castellón/Castelló. Mujeres. De 18 a 64 años. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9986364` (5) — Castellón/Castelló. Mujeres. Española. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9986363` (5) — Castellón/Castelló. Mujeres. Española. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9986362` (5) — Castellón/Castelló. Mujeres. Española. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9986361` (5) — Castellón/Castelló. Mujeres. Española. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9986360` (5) — Castellón/Castelló. Mujeres. Española. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9986359` (5) — Castellón/Castelló. Mujeres. Española. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9986358` (5) — Castellón/Castelló. Mujeres. Extranjera. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9986357` (5) — Castellón/Castelló. Mujeres. Extranjera. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9986356` (5) — Castellón/Castelló. Mujeres. Extranjera. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9986355` (5) — Castellón/Castelló. Mujeres. Extranjera. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9986354` (5) — Castellón/Castelló. Mujeres. Extranjera. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9986353` (5) — Castellón/Castelló. Mujeres. Extranjera. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9982410` (5) — Castellón/Castelló. Mujeres. Menos de 18 años. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9982409` (5) — Castellón/Castelló. Mujeres. Menos de 18 años. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9982408` (5) — Castellón/Castelló. Mujeres. Menos de 18 años. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9982407` (5) — Castellón/Castelló. Mujeres. Menos de 18 años. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9982406` (5) — Castellón/Castelló. Mujeres. Menos de 18 años. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9982405` (5) — Castellón/Castelló. Mujeres. Menos de 18 años. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9982440` (5) — Castellón/Castelló. Total. 65 y más años. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9982439` (5) — Castellón/Castelló. Total. 65 y más años. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9982438` (5) — Castellón/Castelló. Total. 65 y más años. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9982437` (5) — Castellón/Castelló. Total. 65 y más años. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9982436` (5) — Castellón/Castelló. Total. 65 y más años. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9982435` (5) — Castellón/Castelló. Total. 65 y más años. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9982434` (5) — Castellón/Castelló. Total. De 18 a 64 años. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9982433` (5) — Castellón/Castelló. Total. De 18 a 64 años. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9982432` (5) — Castellón/Castelló. Total. De 18 a 64 años. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9982431` (5) — Castellón/Castelló. Total. De 18 a 64 años. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9982430` (5) — Castellón/Castelló. Total. De 18 a 64 años. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9982429` (5) — Castellón/Castelló. Total. De 18 a 64 años. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9986388` (5) — Castellón/Castelló. Total. Española. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9986387` (5) — Castellón/Castelló. Total. Española. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9986386` (5) — Castellón/Castelló. Total. Española. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9986385` (5) — Castellón/Castelló. Total. Española. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9986384` (5) — Castellón/Castelló. Total. Española. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9986383` (5) — Castellón/Castelló. Total. Española. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9986382` (5) — Castellón/Castelló. Total. Extranjera. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9986381` (5) — Castellón/Castelló. Total. Extranjera. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9986380` (5) — Castellón/Castelló. Total. Extranjera. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9986379` (5) — Castellón/Castelló. Total. Extranjera. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9986378` (5) — Castellón/Castelló. Total. Extranjera. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9986377` (5) — Castellón/Castelló. Total. Extranjera. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+- `ADRH9982446` (5) — Castellón/Castelló. Total. Menos de 18 años. Población con ingresos por unidad de consumo por debajo 40% de la mediana. Dato base.
+- `ADRH9982445` (5) — Castellón/Castelló. Total. Menos de 18 años. Población con ingresos por unidad de consumo por debajo 50% de la mediana. Dato base.
+- `ADRH9982444` (5) — Castellón/Castelló. Total. Menos de 18 años. Población con ingresos por unidad de consumo por debajo 60% de la mediana. Dato base.
+- `ADRH9982443` (5) — Castellón/Castelló. Total. Menos de 18 años. Población con ingresos por unidad de consumo por encima 140% de la mediana. Dato base.
+- `ADRH9982442` (5) — Castellón/Castelló. Total. Menos de 18 años. Población con ingresos por unidad de consumo por encima 160% de la mediana. Dato base.
+- `ADRH9982441` (5) — Castellón/Castelló. Total. Menos de 18 años. Población con ingresos por unidad de consumo por encima 200% de la mediana. Dato base.
+
+## MNPN
+
+Series totales: 10000 · simples que encajan: 0
+
+
+## MNPD
+
+Series totales: 10000 · simples que encajan: 0
+
+
+## EMCR
+
+Series totales: 10000 · simples que encajan: 1268
+
+- `EM888996` (3) — Castellón/Castelló. Argentina. Flujo de inmigraciones procedentes del extranjero.
+- `EM735066` (3) — Castellón/Castelló. Brasil. Flujo de inmigraciones procedentes del extranjero.
+- `EM887911` (3) — Castellón/Castelló. Ecuador. Flujo de inmigraciones procedentes del extranjero.
+- `EM1208655` (3) — Castellón/Castelló. Española. Flujo de inmigraciones procedentes del extranjero.
+- `EM736775` (3) — Castellón/Castelló. Finlandia. Flujo de inmigraciones procedentes del extranjero.
+- `EM1607048` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2001 o antes.
+- `EM1607047` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2002.
+- `EM1611645` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2002.
+- `EM1607046` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2003.
+- `EM1607045` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2004.
+- `EM1607044` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2005.
+- `EM1607043` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2006.
+- `EM1607042` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2007.
+- `EM1607041` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2008.
+- `EM1607040` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2009.
+- `EM1607039` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2010.
+- `EM1607038` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2011.
+- `EM1607037` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2012.
+- `EM1607036` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2013.
+- `EM1611634` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2013.
+- `EM1607035` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2014.
+- `EM1607034` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2015.
+- `EM1607033` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2016.
+- `EM1607032` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2017.
+- `EM1607031` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2018.
+- `EM1607030` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2019.
+- `EM1611628` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2019.
+- `EM1607029` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2020.
+- `EM1764915` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. 2021.
+- `EM1389598` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Alemania.
+- `EM200203` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Alemania.
+- `EM1382284` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. América del Norte.
+- `EM1389550` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Apátridas.
+- `EM1389587` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Argelia.
+- `EM200194` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Argelia.
+- `EM1389568` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Argentina.
+- `EM200178` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Argentina.
+- `EM1507166` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Argentina.
+- `EM1382281` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Asia.
+- `EM1389557` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Bangladesh.
+- `EM200168` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Bangladesh.
+- `EM1389567` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Bolivia.
+- `EM200177` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Bolivia.
+- `EM1389566` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Brasil.
+- `EM200176` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Brasil.
+- `EM1507164` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Brasil.
+- `EM1389609` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Bulgaria.
+- `EM200214` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Bulgaria.
+- `EM200215` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Bélgica.
+- `EM1389610` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Bélgica.
+- `EM1389574` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Canadá.
+- `EM200159` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Canadá.
+- `EM1507172` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Canadá.
+- `EM1382283` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Centro América y Caribe.
+- `EM1395971` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Centro América y Caribe.
+- `EM200174` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Chile.
+- `EM1389564` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Chile.
+- `EM1389556` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. China.
+- `EM200167` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. China.
+- `EM1507154` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. China.
+- `EM200175` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Colombia.
+- `EM1389565` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Colombia.
+- `EM200182` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Cuba.
+- `EM1389573` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Cuba.
+- `EM783086` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Cuba.
+- `EM1387141` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. De Africa.
+- `EM1387140` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. De América del Norte.
+- `EM1387137` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. De Asia.
+- `EM1387139` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. De Centro América y Caribe.
+- `EM1387138` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. De Sudamérica.
+- `EM1389608` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Dinamarca.
+- `EM200213` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Dinamarca.
+- `EM1507206` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Dinamarca.
+- `EM1389563` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Ecuador.
+- `EM200173` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Ecuador.
+- `EM200212` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. España.
+- `EM1389607` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Española.
+- `EM200184` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Estados Unidos de América.
+- `EM1389576` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Estados Unidos de América.
+- `EM855473` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Estados Unidos de América.
+- `EM1698075` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Europa menos UE27_2020.
+- `EM1382286` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Europa menos UE28.
+- `EM200166` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Filipinas.
+- `EM1389555` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Filipinas.
+- `EM921744` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Filipinas.
+- `EM1507153` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Filipinas.
+- `EM1389606` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Finlandia.
+- `EM200211` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Finlandia.
+- `EM200210` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Francia.
+- `EM1389605` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Francia.
+- `EM1389586` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Gambia.
+- `EM200193` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Gambia.
+- `EM1389585` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Ghana.
+- `EM200192` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Ghana.
+- `EM1507183` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Ghana.
+- `EM1389583` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Guinea Ecuatorial.
+- `EM200190` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Guinea Ecuatorial.
+- `EM1507181` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Guinea Ecuatorial.
+- `EM200191` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Guinea.
+- `EM1389584` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Guinea.
+- `EM1176222` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Guinea.
+- `EM200181` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Honduras.
+- `EM1389572` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Honduras.
+- `EM1277794` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Honduras.
+- `EM1389554` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. India.
+- `EM200165` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. India.
+- `EM1389604` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Irlanda.
+- `EM200209` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Irlanda.
+- `EM1507202` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Irlanda.
+- `EM1389603` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Italia.
+- `EM200208` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Italia.
+- `EM1389595` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Lituania.
+- `EM200200` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Lituania.
+- `EM1389582` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Mali.
+- `EM200189` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Mali.
+- `EM200188` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Marruecos.
+- `EM1389581` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Marruecos.
+- `EM1194387` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Marruecos.
+- `EM200187` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Mauritania.
+- `EM1389580` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Mauritania.
+- `EM733041` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Mauritania.
+- `EM200196` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Moldavia.
+- `EM1389590` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Moldavia.
+- `EM200183` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. México.
+- `EM1389575` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. México.
+- `EM918168` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. México.
+- `EM1389571` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Nicaragua.
+- `EM200180` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Nicaragua.
+- `EM200186` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Nigeria.
+- `EM1389579` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Nigeria.
+- `EM1607049` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. No aplicable: siempre ha vivido en España.
+- `EM1389593` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Noruega.
+- `EM200199` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Noruega.
+- `EM1507191` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Noruega.
+- `EM1387136` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Oceanía.
+- `EM1382280` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Oceanía.
+- `EM200156` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país de Asia.
+- `EM1389552` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país de Asia.
+- `EM1389558` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país de Sudamérica.
+- `EM200157` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país de Sudamérica.
+- `EM1507156` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país de Sudamérica.
+- `EM200162` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país de la Unión Europea sin España.
+- `EM1389594` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país de la Unión Europea sin España.
+- `EM200160` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país de África.
+- `EM1389577` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país de África.
+- `EM1389588` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país del resto de Europa.
+- `EM200161` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país del resto de Europa.
+- `EM1507186` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otro país del resto de Europa.
+- `EM200158` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otros países de Centro América y Caribe.
+- `EM1389569` (3) — Castellón/Castelló. Flujo de emigraciones con destino el extranjero. Otros países de Centro América y Caribe.
