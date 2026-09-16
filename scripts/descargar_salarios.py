@@ -90,9 +90,13 @@ BLOQUE = {
             "titulo": "Salario bruto anual", "unidad": "euros", "decimales": 0,
             "unidad_texto": "euros brutos al año por trabajador",
             "rango": (5_000, 120_000), "operacion": "EAES",
+            # «Salario medio anual» es la serie canónica y la que tiene
+            # historia; el desglose por componentes del salario bruto sólo
+            # trae los dos últimos años y para España ni siquiera publica el
+            # total de ambos sexos. Queda de reserva.
             "busquedas": [
+                {"salario medio anual"},
                 {"componente del salario bruto anual", "salario bruto"},
-                {"ganancia media anual por trabajador"},
             ],
             "sin_ambitos": SOLO_COMUNIDAD, "nota": AVISO_COMUNIDAD,
             "por_sexo": True,
