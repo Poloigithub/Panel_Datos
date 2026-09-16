@@ -55,6 +55,11 @@ el descargador ha dejado de encontrarla.
 `data/cobertura.json` guarda cuántos periodos tiene cada serie y es la
 referencia de esa última comprobación, así que se versiona con el resto.
 
+Al **retirar un indicador a propósito**, hay que quitar sus entradas de ese
+fichero en el mismo commit; si no, la validación lo dará por desaparecido y
+parará la publicación, que es justo lo que debe hacer cuando la desaparición
+no es intencionada.
+
 ## Desarrollo en local
 
 ```bash
