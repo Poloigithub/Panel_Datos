@@ -29,7 +29,9 @@ VAR_NACIONAL, VAR_CCAA, VAR_PROVINCIAS = 349, 70, 115
 
 AMBITOS = [
     {"id": "espana", "nombre": "España", "tipo": "Nacional",
-     "filtro": f"{VAR_NACIONAL}:16473", "segmento": "total nacional"},
+     "filtro": f"{VAR_NACIONAL}:16473", "segmento": "total nacional",
+     # El IPC nombra el ámbito nacional «Nacional» a secas.
+     "segmentos_alternativos": ["nacional"]},
     {"id": "comunitat-valenciana", "nombre": "Comunitat Valenciana", "tipo": "Comunidad autónoma",
      "filtro": f"{VAR_CCAA}:9006", "segmento": "comunitat valenciana"},
     {"id": "castellon", "nombre": "Castellón", "tipo": "Provincia",
@@ -147,6 +149,58 @@ BLOQUES = {
             },
         },
     },
+    "precios": {
+        "titulo": "Precios",
+        "operaciones": ["IPC"],
+        "indicadores": {
+            "ipc_general": {
+                "titulo": "IPC, índice general", "unidad": "índice", "decimales": 2,
+                "unidad_texto": "índice, base 2021 = 100",
+                "rango": (50, 200),
+                "operacion": "IPC",
+                "busquedas": [{"indice general", "indice"}],
+                "por_sexo": False,
+            },
+            "ipc_variacion": {
+                "titulo": "Inflación interanual", "unidad": "%", "decimales": 2,
+                "unidad_texto": "variación del IPC respecto al mismo mes del año anterior",
+                "rango": (-30, 60),
+                "operacion": "IPC",
+                "busquedas": [{"indice general", "variacion anual"}],
+                "por_sexo": False,
+            },
+            "ipc_alimentos": {
+                "titulo": "Alimentos", "unidad": "%", "decimales": 2,
+                "unidad_texto": "variación interanual del grupo",
+                "rango": (-30, 60),
+                "operacion": "IPC",
+                "busquedas": [
+                    {"alimentos y bebidas no alcoholicas", "variacion anual"},
+                    {"alimentos", "variacion anual"},
+                ],
+                "por_sexo": False,
+            },
+            "ipc_vivienda": {
+                "titulo": "Vivienda, agua y energía", "unidad": "%", "decimales": 2,
+                "unidad_texto": "variación interanual del grupo",
+                "rango": (-40, 80),
+                "operacion": "IPC",
+                "busquedas": [
+                    {"vivienda, agua, electricidad, gas y otros combustibles", "variacion anual"},
+                    {"vivienda", "variacion anual"},
+                ],
+                "por_sexo": False,
+            },
+            "ipc_transporte": {
+                "titulo": "Transporte", "unidad": "%", "decimales": 2,
+                "unidad_texto": "variación interanual del grupo",
+                "rango": (-40, 60),
+                "operacion": "IPC",
+                "busquedas": [{"transporte", "variacion anual"}],
+                "por_sexo": False,
+            },
+        },
+    },
     "renta": {
         "titulo": "Renta y desigualdad",
         "operaciones": ["ADRH"],
@@ -218,6 +272,63 @@ SEXOS = {
 }
 
 
+# Indicadores de renta que tienen versión en euros constantes.
+DEFLACTABLES = ("renta_persona", "renta_hogar", "renta_uc")
+
+
+def descarga_deflactor(ambito: dict) -> dict[str, float]:
+    """Media anual del IPC del ámbito, que es lo que deflacta una serie anual.
+
+    No se publica como indicador: sólo sirve para convertir la renta a euros
+    constantes, y mezclar una serie anual con el IPC mensual llenaría el
+    bloque de precios de huecos.
+    """
+    indice = motor.indexa_por_segmentos("IPC", ambito["filtro"])
+    for territorio in [ambito["segmento"]] + ambito.get("segmentos_alternativos", []):
+        valores, _ = motor.resuelve(
+            indice, {territorio, "indice general", "media anual"},
+            f"deflactor/{ambito['id']}", avisar=False)
+        if valores:
+            # Sólo interesan los años completos, en formato «2023».
+            return {p: v for p, v in valores.items() if p.isdigit()}
+    print(f"      sin deflactor para {ambito['id']}: la renta se queda en euros corrientes")
+    return {}
+
+
+def deflacta(series: dict, deflactor: dict[str, float], procedencia: dict) -> str | None:
+    """Añade las series de renta en euros del último año disponible.
+
+    Renta real = renta nominal × (IPC del año base / IPC del año del dato). El
+    año base es el último con IPC, de modo que la serie se lee «en euros de
+    hoy», que es como la gente piensa el dinero.
+    """
+    if not deflactor:
+        return None
+    base = max(deflactor, key=lambda a: int(a))
+    if not deflactor.get(base):
+        return None
+
+    convertidas = 0
+    for sexo, magnitudes in list(series.items()):
+        for clave in DEFLACTABLES:
+            nominal = magnitudes.get(clave)
+            if not nominal:
+                continue
+            real = {
+                periodo: round(valor * deflactor[base] / deflactor[periodo], 2)
+                for periodo, valor in nominal.items()
+                if deflactor.get(periodo)
+            }
+            if not real:
+                continue
+            magnitudes[clave + "_real"] = real
+            procedencia.setdefault(sexo, {})[clave + "_real"] = [
+                f"deflactado con el IPC medio anual, base {base}"
+            ]
+            convertidas += 1
+    return base if convertidas else None
+
+
 def en_rango(valores, indicador, etiqueta) -> bool:
     """¿La serie encontrada mide lo que creemos que mide?
 
@@ -246,12 +357,14 @@ def busca(indice, ambito, indicador, alias_sexo, etiqueta, avisar=True):
     variable en el nombre.
     """
     intentos = [{a} for a in sorted(alias_sexo)] + [set()]
+    territorios = [ambito["segmento"]] + ambito.get("segmentos_alternativos", [])
     for busqueda in indicador["busquedas"]:
-        for alias in intentos:
-            obligatorio = set(busqueda) | {ambito["segmento"]} | alias
-            valores, usados = motor.resuelve(indice, obligatorio, etiqueta, avisar=False)
-            if valores:
-                return valores, usados
+        for territorio in territorios:
+            for alias in intentos:
+                obligatorio = set(busqueda) | {territorio} | alias
+                valores, usados = motor.resuelve(indice, obligatorio, etiqueta, avisar=False)
+                if valores:
+                    return valores, usados
 
     # Nada ha encajado: mostrar los conjuntos de segmentos más parecidos, que
     # es lo único que permite corregir la declaración sin adivinar.
@@ -266,6 +379,34 @@ def busca(indice, ambito, indicador, alias_sexo, etiqueta, avisar=True):
     for comunes, segs in parecidos:
         print(f"        ({comunes} coinciden) {sorted(segs)}")
     return {}, []
+
+
+def describe_indicadores(bloque: dict, por_ambito: dict) -> dict:
+    """Metadatos de cada indicador, incluidos los derivados al vuelo."""
+    descripcion = {
+        clave: {"titulo": ind["titulo"], "unidad": ind["unidad"],
+                "unidad_texto": ind.get("unidad_texto"),
+                "decimales": ind["decimales"], "por_sexo": ind["por_sexo"]}
+        for clave, ind in bloque["indicadores"].items()
+    }
+
+    # Las series en euros constantes se generan durante la descarga, así que
+    # su ficha se compone a partir de la del indicador nominal.
+    publicados = {clave for series in por_ambito.values()
+                  for magnitudes in series.values() for clave in magnitudes}
+    for clave in sorted(publicados - set(descripcion)):
+        if not clave.endswith("_real"):
+            continue
+        origen = descripcion.get(clave[: -len("_real")])
+        if not origen:
+            continue
+        descripcion[clave] = dict(
+            origen,
+            titulo=origen["titulo"] + " (euros constantes)",
+            unidad_texto="euros del último año disponible, descontada la inflación",
+            nominal=clave[: -len("_real")],
+        )
+    return descripcion
 
 
 def main() -> int:
@@ -326,6 +467,16 @@ def main() -> int:
                     origen.setdefault(sexo, {})[clave] = usados
                     periodos_vistos.update(valores)
 
+            if nombre_bloque == "renta":
+                base = deflacta(series, descarga_deflactor(ambito), origen)
+                if base:
+                    print(f"      renta en euros constantes de {base}")
+                    for clave in DEFLACTABLES:
+                        for magnitudes in series.values():
+                            valores_reales = magnitudes.get(clave + "_real")
+                            if valores_reales:
+                                periodos_vistos.update(valores_reales)
+
             # La población total es la suma de los dos sexos: si el INE no
             # publica la serie agregada para un ámbito, se compone.
             if "poblacion" in bloque["indicadores"]:
@@ -357,12 +508,7 @@ def main() -> int:
             "titulo": bloque["titulo"],
             "ultimo_periodo": periodos[-1],
             "primer_periodo": periodos[0],
-            "indicadores": {
-                clave: {"titulo": ind["titulo"], "unidad": ind["unidad"],
-                        "unidad_texto": ind.get("unidad_texto"),
-                        "decimales": ind["decimales"], "por_sexo": ind["por_sexo"]}
-                for clave, ind in bloque["indicadores"].items()
-            },
+            "indicadores": describe_indicadores(bloque, por_ambito),
             "ambitos": [],
         }
 

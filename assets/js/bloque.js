@@ -10,7 +10,10 @@
   var bloque = document.body.dataset.bloque;
   var RUTA = 'data/' + bloque + '/';
 
-  var estado = { periodo: 'todo', sexo: 'ambos', ambitos: new Set(P.AMBITOS.map(function (a) { return a.id; })) };
+  var estado = {
+    periodo: 'todo', sexo: 'ambos', euros: 'corrientes',
+    ambitos: new Set(P.AMBITOS.map(function (a) { return a.id; }))
+  };
   var indice = null;
   var datos = {};
 
@@ -40,6 +43,28 @@
       var i = posicion.get(p);
       var v = i === undefined ? null : valores[i];
       return v === undefined ? null : v;
+    });
+  }
+
+  /* Algunos indicadores tienen gemelo en euros constantes. El conmutador no
+     añade gráficas: sustituye cada serie nominal por su versión deflactada. */
+  function indicadoresVisibles() {
+    var todos = Object.keys(indice.indicadores);
+    var reales = {};
+    todos.forEach(function (clave) {
+      var nominal = indice.indicadores[clave].nominal;
+      if (nominal) reales[nominal] = clave;
+    });
+    return todos.filter(function (clave) {
+      return !indice.indicadores[clave].nominal;
+    }).map(function (clave) {
+      return estado.euros === 'constantes' && reales[clave] ? reales[clave] : clave;
+    });
+  }
+
+  function hayEurosConstantes() {
+    return Object.keys(indice.indicadores).some(function (k) {
+      return indice.indicadores[k].nominal;
     });
   }
 
@@ -89,7 +114,7 @@
       cabecera.appendChild(th);
     });
 
-    Object.keys(indice.indicadores).forEach(function (clave) {
+    indicadoresVisibles().forEach(function (clave) {
       var meta = indice.indicadores[clave];
       var fila = document.createElement('tr');
       fila.style.borderTop = '1px solid ' + P.color('--borde');
@@ -193,7 +218,7 @@
 
     var activos = ambitosActivos();
 
-    Object.keys(indice.indicadores).forEach(function (clave) {
+    indicadoresVisibles().forEach(function (clave) {
       var meta = indice.indicadores[clave];
       var conDatos = activos.filter(function (a) {
         return serie(a.id, clave, periodos).some(function (v) { return v !== null; });
@@ -307,7 +332,7 @@
     var periodos = periodosVisibles();
     var columnas = [];
     ambitosActivos().forEach(function (a) {
-      Object.keys(indice.indicadores).forEach(function (clave) {
+      indicadoresVisibles().forEach(function (clave) {
         columnas.push({ clave: a.id + '_' + clave, valores: serie(a.id, clave, periodos) });
       });
     });
@@ -340,6 +365,9 @@
       });
       var filtroSexo = document.querySelector('[data-filtro-sexo]');
       if (filtroSexo && !hayPorSexo) filtroSexo.hidden = true;
+
+      var filtroEuros = document.querySelector('[data-filtro-euros]');
+      if (filtroEuros && hayEurosConstantes()) filtroEuros.hidden = false;
 
       var fecha = new Date(indice.actualizado);
       var nodoFecha = document.querySelector('[data-actualizado]');

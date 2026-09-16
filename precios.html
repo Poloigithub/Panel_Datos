@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Renta y desigualdad · Panel de datos</title>
-<meta name="description" content="Renta media por persona y hogar, índice de Gini y población bajo el umbral de pobreza en España, la Comunitat Valenciana y Castellón.">
+<title>Precios · Panel de datos</title>
+<meta name="description" content="IPC e inflación interanual en España, la Comunitat Valenciana y la provincia de Castellón, con el detalle de alimentos, vivienda y transporte.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
   } catch (_) {}
 </script>
 </head>
-<body class="min-h-full antialiased" data-bloque="renta">
+<body class="min-h-full antialiased" data-bloque="precios">
 
 <header class="border-b" style="border-color: var(--borde)">
   <div class="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
@@ -34,12 +34,15 @@
 <main class="mx-auto max-w-6xl px-4 sm:px-6 py-8 sm:py-10">
 
   <nav aria-label="Ruta" class="text-xs" style="color: var(--tinta-tenue)">
-    <a class="enlace-sutil" href="./">Panel</a> <span aria-hidden="true">/</span> Renta y desigualdad
+    <a class="enlace-sutil" href="./">Panel</a> <span aria-hidden="true">/</span> Precios
   </nav>
 
-  <h1 class="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Renta y desigualdad</h1>
+  <h1 class="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Precios</h1>
   <p class="mt-3 max-w-3xl text-base leading-relaxed" style="color: var(--tinta-suave)">
-    Cuánto ingresan los hogares y cómo se reparte: renta media y mediana, desigualdad medida con el índice de Gini y población por debajo del umbral de pobreza relativa.
+    Cómo suben los precios en cada territorio. El IPC es una de las pocas
+    estadísticas que el INE publica con dato propio de provincia y con
+    frecuencia mensual, así que Castellón no depende aquí de la media
+    autonómica.
   </p>
 
   <p data-estado role="status" class="mt-6 text-sm" style="color: var(--tinta-suave)">Cargando datos…</p>
@@ -108,7 +111,11 @@
     <section class="mt-12 tarjeta p-5">
       <h2 class="text-sm font-semibold">Fuente y método</h2>
       <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
-        Atlas de Distribución de Renta de los Hogares del INE, elaborado a partir de datos tributarios. Es anual y la serie nacional arranca más tarde que la de las provincias.
+        Índice de Precios de Consumo del INE, mensual y con dato provincial.
+        El índice general está en base 2021 = 100; la inflación es la variación
+        respecto al mismo mes del año anterior. El INE mantiene series con
+        bases antiguas que no son comparables con la actual: aquí sólo se usa
+        la vigente, de ahí que la serie no se remonte más atrás.
       </p>
       <p class="mt-2 text-sm" style="color: var(--tinta-suave)">
         Última actualización de los datos: <span data-actualizado class="font-medium"></span>.

@@ -55,6 +55,15 @@ RANGOS = {
     "bajo_60": (0, 100),
     "tamano_hogar": (1, 10),
     "hogares_unipersonales": (0, 100),
+    "renta_persona_real": (1_000, 200_000),
+    "renta_hogar_real": (1_000, 400_000),
+    "renta_uc_real": (1_000, 300_000),
+    # precios
+    "ipc_general": (50, 200),
+    "ipc_variacion": (-30, 60),
+    "ipc_alimentos": (-30, 60),
+    "ipc_vivienda": (-40, 80),
+    "ipc_transporte": (-40, 60),
 }
 
 # Relaciones que se cumplen por definición, con la holgura del redondeo del
@@ -163,7 +172,10 @@ def revisa_continuidad(bloque: str, ambito: str, contenido: dict, informe: Infor
         for clave, valores in magnitudes.items():
             for i in range(1, len(valores)):
                 anterior, actual = valores[i - 1], valores[i]
-                if anterior is None or actual is None or abs(anterior) < 1:
+                # Con valores pequeños, o que cruzan el cero, la variación
+                # relativa se dispara sin que signifique nada: la inflación
+                # pasando de 0,2 % a 1 % no es un salto sospechoso.
+                if anterior is None or actual is None or abs(anterior) < 5:
                     continue
                 cambio = abs(actual - anterior) / abs(anterior)
                 if cambio > 3:
