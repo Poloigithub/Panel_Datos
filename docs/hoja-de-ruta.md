@@ -255,6 +255,31 @@ partir de sus propios datos: ficheros idénticos.
 
 ## Fase 5 · Salarios y poder adquisitivo
 
+**Sondeada antes de empezar** (`sondeos/salarios.md`), y la respuesta obliga a
+reescribirla: de las seis operaciones salariales del INE -índice de coste
+laboral armonizado, encuesta cuatrienal y anual de estructura salarial,
+encuesta anual y trimestral de coste laboral-, **ninguna tiene la variable de
+provincias**. Castellón se quedaría sin cifra en su propia página, que es justo
+lo que el panel no hace.
+
+Lo que sí hay, y no estaba en el plan:
+
+- El **Atlas de renta** publica la distribución por fuente de ingreso -salario,
+  pensiones, prestaciones por desempleo, otras prestaciones, otros ingresos-
+  **por provincia y por municipio**. No es el salario medio, pero sí dice qué
+  parte de la renta de un territorio viene del trabajo, y baja hasta el
+  municipio.
+- La **Agencia Tributaria** publica «Mercado de Trabajo y Pensiones en las
+  Fuentes Tributarias», que sí trae salario medio por provincia. Está en el
+  catálogo de datos.gob.es con una dirección por año
+  (`.../sites/mercado/2023/home.html`), así que falta un sondeo más para ver si
+  las tablas se pueden leer sin manos.
+
+Con eso, la fase 5 pasa de «una página donde Castellón no aparece» a otra cosa.
+
+### Lo planeado originalmente
+
+
 **Qué hay.** La Encuesta de Estructura Salarial y la Encuesta Trimestral de
 Coste Laboral son **autonómicas**: no hay salario medio provincial. La sección
 tiene que decirlo desde el principio en vez de dar a entender un detalle que
@@ -271,20 +296,34 @@ si los salarios ganan o pierden frente a los precios.
 
 ---
 
-## Fase 6 · El panel como producto
+## Fase 6 · El panel como producto · en marcha
 
 Cosas que no son datos nuevos pero multiplican lo que ya hay:
 
-- **Enlaces permanentes**: que el estado de los filtros viaje en la URL, para
-  poder compartir «la tasa de paro de Castellón desde 2008» con un enlace.
-- **Portada con titulares**: los últimos datos en cifras, no solo tarjetas de
-  sección.
+- ✅ **Enlaces permanentes**: el estado de los filtros viaja en la URL y hay un
+  botón para copiarla, así que «la tasa de paro de Castellón desde 2008» se
+  puede compartir con un enlace. Sólo viaja lo que se ha cambiado y lo que
+  llega se valida, porque una URL la escribe cualquiera.
+- ✅ **Portada con titulares**: las ocho secciones enseñan su última cifra en
+  los tres ámbitos, con la variación en un año y la cadencia de su fuente. Los
+  compone el propio script de actualización en `data/portada.json`.
+- ✅ **Fuentes y calendario**: página con lo que publica cada organismo, cada
+  cuánto, y las advertencias que hasta ahora vivían sueltas por el panel.
+- ✅ **Aviso si una fuente se apaga**: comprobación de frescura al final de la
+  tarea diaria.
 - **Buscador de indicadores**, cuando haya suficientes para que haga falta.
 - **Página de novedades**: qué dato cambió y cuándo, generada desde el
   historial de git, que ya guarda cada revisión.
 - **Descarga completa** del conjunto de datos en un solo archivo.
 
-**Coste**: se puede picotear; cada punto es independiente.
+**Y el calendario cambió con esto.** Antes la tarea miraba en unas pocas fechas
+al año, calcadas del calendario de la EPA. Ahora mira **todos los días**: nueve
+organismos publican cada uno por su lado y perseguir sus calendarios por
+separado es mantener nueve calendarios y equivocarse cuando uno cambie. Mirar a
+diario cuesta un cuarto de hora de máquina y garantiza que un dato aparezca
+como mucho un día después de publicarse; si no hay nada nuevo, el run termina
+sin tocar el repositorio. Lo municipal, que tarda diez minutos por descarga y
+viene de fuentes anuales, se revisa una vez al mes.
 
 ---
 
