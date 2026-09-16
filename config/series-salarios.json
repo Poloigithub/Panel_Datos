@@ -22,6 +22,22 @@
       "gini_salarial": [
         "EAES234"
       ]
+    },
+    "hombres": {
+      "salario_bruto": [
+        "EAES33740"
+      ],
+      "salario_bruto_real": [
+        "deflactado con el IPC medio anual, base 2025"
+      ]
+    },
+    "mujeres": {
+      "salario_bruto": [
+        "EAES33816"
+      ],
+      "salario_bruto_real": [
+        "deflactado con el IPC medio anual, base 2025"
+      ]
     }
   },
   "comunitat-valenciana": {
