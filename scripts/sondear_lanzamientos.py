@@ -6,15 +6,16 @@ reparte entre una cosa y otra son los **lanzamientos practicados**, que publica
 el Consejo General del Poder Judicial separando los derivados de la Ley
 Hipotecaria de los derivados de la Ley de Arrendamientos Urbanos.
 
-Este sondeo busca esa fuente en tres sitios, porque no se sabe de antemano cuál
-da un fichero estable y provincial: el catálogo de datos.gob.es, las
-direcciones del propio CGPJ, y -por si acaso- el INE, que podría publicar algo
-equivalente bajo otro nombre.
+La primera versión de este sondeo miró el catálogo de datos.gob.es, que no
+tiene nada con ese nombre, y las portadas del CGPJ, de las que sólo leyó los
+primeros kilobytes. Esta rastrea el portal de estadística judicial dos niveles
+en busca de hojas de cálculo, que es como el CGPJ publica sus datos.
 """
 
 from __future__ import annotations
 
-import json
+import html
+import re
 import sys
 import urllib.error
 import urllib.parse
@@ -23,113 +24,105 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "scripts"))
-import ine_api  # noqa: E402
-import ine_series as motor  # noqa: E402
 
 SALIDA = RAIZ / "sondeos"
 CABECERAS = {"User-Agent": "Panel_Datos/1.0 (+https://github.com/Poloigithub/Panel_Datos)"}
 
-BUSQUEDAS = [
-    "lanzamientos", "desahucios", "ejecuciones hipotecarias",
-    "efectos de la crisis en los organos judiciales", "estadistica judicial",
-]
-
-# El CGPJ publica los datos de coyuntura en su portal de estadística; se
-# prueban las formas en que los ha ido sirviendo.
-DIRECTAS = [
-    "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/Estadistica-por-temas/Datos-penales--civiles-y-laborales/Series-y-Temas/Efecto-de-la-Crisis-en-los-organos-judiciales/",
+SEMILLAS = [
     "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/",
-    "https://www.poderjudicial.es/portal/site/cgpj/",
-    "https://datos.gob.es/apidata/catalog/publisher",
+    "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/Estadistica-por-temas/",
+    "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/Datos-abiertos/",
 ]
 
-PALABRAS_INE = ("lanzamiento", "desahucio", "arrendamiento", "judicial")
+# Qué se busca en el texto de un enlace para decidir si merece la pena seguirlo.
+INTERESANTES = ("lanzamiento", "crisis", "desahucio", "hipotecari", "arrendamiento",
+                "civil", "dato", "abierto", "efecto")
+FICHEROS = (".xlsx", ".xls", ".csv", ".zip", ".px")
+TOPE_PETICIONES = 30
+
+ENLACE = re.compile(r'<a\b[^>]*href="([^"]+)"[^>]*>(.*?)</a>', re.I | re.S)
+ETIQUETAS = re.compile(r"<[^>]+>")
 
 
-def sondea(url: str, limite: int = 4000):
+def descarga(url: str, limite: int = 600_000):
     try:
         peticion = urllib.request.Request(url, headers=CABECERAS)
         with urllib.request.urlopen(peticion, timeout=90) as respuesta:
-            trozo = respuesta.read(limite)
+            bruto = respuesta.read(limite)
+            tipo = respuesta.headers.get("Content-Type", "?")
             for codificacion in ("utf-8", "latin-1"):
                 try:
-                    return (respuesta.status, respuesta.headers.get("Content-Type", "?"),
-                            trozo.decode(codificacion))
+                    return respuesta.status, tipo, bruto.decode(codificacion)
                 except UnicodeDecodeError:
                     continue
-            return respuesta.status, "binario", repr(trozo[:120])
+            return respuesta.status, tipo, ""
     except urllib.error.HTTPError as exc:
         return exc.code, "-", str(exc.reason)
     except Exception as exc:  # noqa: BLE001
         return 0, "-", f"{type(exc).__name__}: {exc}"
 
 
-def del_catalogo(consulta: str) -> list[str]:
-    url = ("https://datos.gob.es/apidata/catalog/dataset/title/"
-           + urllib.parse.quote(consulta) + "?_pageSize=15&_page=0")
-    codigo, _, cuerpo = sondea(url, 200_000)
-    lineas = [f"## «{consulta}» → {codigo}"]
-    if codigo != 200:
-        return lineas + [f"- {cuerpo[:200]}", ""]
-    try:
-        items = (json.loads(cuerpo).get("result") or {}).get("items") or []
-    except json.JSONDecodeError:
-        return lineas + ["- respuesta no JSON", ""]
-    if not items:
-        return lineas + ["- sin resultados", ""]
-    for item in items[:10]:
-        titulos = item.get("title")
-        titulo = (next((t.get("_value") for t in titulos if t.get("_lang") in (None, "es")),
-                       titulos[0].get("_value")) if isinstance(titulos, list) else titulos)
-        editor = item.get("publisher")
-        lineas.append(f"- **{titulo}**  ·  {editor}")
-        distribuciones = item.get("distribution") or []
-        if isinstance(distribuciones, dict):
-            distribuciones = [distribuciones]
-        for dist in distribuciones[:5]:
-            if isinstance(dist, dict):
-                lineas.append(f"    - {dist.get('format', {}).get('value', '?')} "
-                              f"{dist.get('accessURL')}")
-    return lineas + [""]
+def enlaces_de(base: str, cuerpo: str) -> list[tuple[str, str]]:
+    encontrados = []
+    for href, texto in ENLACE.findall(cuerpo):
+        limpio = html.unescape(ETIQUETAS.sub(" ", texto))
+        limpio = " ".join(limpio.split())
+        encontrados.append((urllib.parse.urljoin(base, html.unescape(href)), limpio))
+    return encontrados
 
 
 def main() -> int:
     SALIDA.mkdir(parents=True, exist_ok=True)
-    lineas = ["# Sondeo de lanzamientos (hipoteca y alquiler)", ""]
+    lineas = ["# Sondeo de lanzamientos (hipoteca y alquiler)", "",
+              "Rastreo del portal de estadística judicial del CGPJ en busca de los",
+              "ficheros de lanzamientos practicados, que separan los derivados de la Ley",
+              "Hipotecaria de los de la Ley de Arrendamientos Urbanos.", ""]
 
-    lineas += ["# Catálogo de datos.gob.es", ""]
-    for consulta in BUSQUEDAS:
-        print(f"· catálogo: {consulta}")
-        lineas += del_catalogo(consulta)
+    por_visitar = [(u, "semilla", 0) for u in SEMILLAS]
+    vistos: set[str] = set()
+    ficheros: list[tuple[str, str, str]] = []
+    peticiones = 0
 
-    lineas += ["# Direcciones del CGPJ", ""]
-    for url in DIRECTAS:
-        print(f"· directa: {url}")
-        codigo, tipo, cuerpo = sondea(url)
-        lineas += [f"## {url}", f"- {codigo} · {tipo}"]
-        if codigo == 200:
-            # Interesa saber si la página enlaza ficheros descargables.
-            enlaces = [t for t in cuerpo.split('"') if t.lower().endswith((".xlsx", ".xls", ".csv"))]
-            lineas.append(f"- {len(enlaces)} enlaces a hoja de cálculo en los primeros 4 KB")
-            for enlace in enlaces[:6]:
-                lineas.append(f"    - {enlace}")
-        else:
-            lineas.append(f"- {cuerpo[:200]}")
-        lineas.append("")
+    while por_visitar and peticiones < TOPE_PETICIONES:
+        url, etiqueta, nivel = por_visitar.pop(0)
+        if url in vistos:
+            continue
+        vistos.add(url)
+        peticiones += 1
+        codigo, tipo, cuerpo = descarga(url)
+        print(f"  [{peticiones}] {codigo} {url}")
+        lineas.append(f"- `{codigo}` nivel {nivel} · **{etiqueta}** · {url}")
+        if codigo != 200 or "html" not in tipo:
+            continue
 
-    lineas += ["# Operaciones del INE que suenen a esto", ""]
-    try:
-        operaciones = ine_api.get("OPERACIONES_DISPONIBLES")
-        for operacion in operaciones:
-            nombre = motor.normaliza(operacion.get("Nombre", ""))
-            if any(palabra in nombre for palabra in PALABRAS_INE):
-                lineas.append(f"- `{operacion.get('Codigo')}` · {operacion.get('Nombre')}")
-    except ine_api.INEError as exc:
-        lineas.append(f"- no se ha podido consultar el INE: {exc}")
-    lineas.append("")
+        for destino, texto in enlaces_de(url, cuerpo):
+            bajo = (destino + " " + texto).lower()
+            if destino.lower().endswith(FICHEROS):
+                if destino not in [f[0] for f in ficheros]:
+                    ficheros.append((destino, texto, url))
+                continue
+            if nivel >= 1 or "poderjudicial.es" not in destino:
+                continue
+            if any(p in bajo for p in INTERESANTES):
+                por_visitar.append((destino, texto[:60], nivel + 1))
+
+    lineas += ["", f"## {len(ficheros)} ficheros descargables encontrados", ""]
+    for destino, texto, desde in ficheros:
+        lineas.append(f"- **{texto or '(sin texto)'}**")
+        lineas.append(f"    - {destino}")
+        lineas.append(f"    - enlazado desde {desde}")
+
+    interesantes = [f for f in ficheros
+                    if any(p in (f[0] + " " + f[1]).lower()
+                           for p in ("lanzamiento", "crisis", "hipotecari", "arrendamiento"))]
+    lineas += ["", f"## De ésos, {len(interesantes)} suenan a lanzamientos", ""]
+    for destino, texto, _ in interesantes:
+        codigo, tipo, _ = descarga(destino, 2000)
+        lineas.append(f"- `{codigo}` {tipo} · {texto} · {destino}")
 
     (SALIDA / "lanzamientos.md").write_text("\n".join(lineas) + "\n", encoding="utf-8")
-    print(f"escrito sondeos/lanzamientos.md ({len(lineas)} líneas)")
+    print(f"escrito sondeos/lanzamientos.md ({len(lineas)} líneas, "
+          f"{peticiones} peticiones, {len(ficheros)} ficheros)")
     return 0
 
 
