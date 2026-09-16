@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-15T22:04:00+00:00",
+  "actualizado": "2026-09-16T07:20:57+00:00",
   "titulo": "Natalidad, mortalidad y migración",
   "ultimo_periodo": "2024",
   "primer_periodo": "1975",
@@ -7,37 +7,37 @@
     "esperanza_vida": {
       "titulo": "Esperanza de vida al nacer",
       "unidad": "años",
+      "unidad_texto": null,
       "decimales": 2,
-      "por_sexo": true,
-      "unidad_texto": null
+      "por_sexo": true
     },
     "mortalidad_infantil": {
       "titulo": "Mortalidad infantil (menores de 5 años)",
       "unidad": "por mil",
+      "unidad_texto": "defunciones por cada mil nacidos",
       "decimales": 2,
-      "por_sexo": true,
-      "unidad_texto": "defunciones por cada mil nacidos"
+      "por_sexo": true
     },
     "edad_maternidad": {
       "titulo": "Edad media al primer hijo",
       "unidad": "años",
+      "unidad_texto": null,
       "decimales": 2,
-      "por_sexo": false,
-      "unidad_texto": null
+      "por_sexo": false
     },
     "saldo_migratorio": {
       "titulo": "Saldo migratorio",
       "unidad": "por mil",
+      "unidad_texto": "por cada mil habitantes",
       "decimales": 2,
-      "por_sexo": false,
-      "unidad_texto": "por cada mil habitantes"
+      "por_sexo": false
     },
     "nacidos_por_defuncion": {
       "titulo": "Nacidos por cada 1.000 defunciones",
       "unidad": "por mil",
+      "unidad_texto": "nacidos por cada mil defunciones",
       "decimales": 1,
-      "por_sexo": false,
-      "unidad_texto": "nacidos por cada mil defunciones"
+      "por_sexo": false
     }
   },
   "ambitos": [

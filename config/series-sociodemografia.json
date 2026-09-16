@@ -186,6 +186,56 @@
       }
     }
   },
+  "precios": {
+    "espana": {
+      "ambos": {
+        "ipc_variacion": [
+          "IPC290750"
+        ],
+        "ipc_alimentos": [
+          "IPC290754"
+        ],
+        "ipc_transporte": [
+          "IPC290774"
+        ]
+      }
+    },
+    "comunitat-valenciana": {
+      "ambos": {
+        "ipc_general": [
+          "IPC294164"
+        ],
+        "ipc_variacion": [
+          "IPC294163"
+        ],
+        "ipc_alimentos": [
+          "IPC294167"
+        ],
+        "ipc_vivienda": [
+          "IPC79242"
+        ],
+        "ipc_transporte": [
+          "IPC294187"
+        ]
+      }
+    },
+    "castellon": {
+      "ambos": {
+        "ipc_general": [
+          "IPC306360"
+        ],
+        "ipc_variacion": [
+          "IPC306359"
+        ],
+        "ipc_alimentos": [
+          "IPC306363"
+        ],
+        "ipc_transporte": [
+          "IPC306383"
+        ]
+      }
+    }
+  },
   "renta": {
     "espana": {
       "ambos": {
@@ -212,6 +262,15 @@
         ],
         "hogares_unipersonales": [
           "ADRH10029916"
+        ],
+        "renta_persona_real": [
+          "deflactado con el IPC medio anual, base 2025"
+        ],
+        "renta_hogar_real": [
+          "deflactado con el IPC medio anual, base 2025"
+        ],
+        "renta_uc_real": [
+          "deflactado con el IPC medio anual, base 2025"
         ]
       },
       "hombres": {
@@ -250,6 +309,15 @@
         ],
         "hogares_unipersonales": [
           "ADRH10029876"
+        ],
+        "renta_persona_real": [
+          "deflactado con el IPC medio anual, base 2025"
+        ],
+        "renta_hogar_real": [
+          "deflactado con el IPC medio anual, base 2025"
+        ],
+        "renta_uc_real": [
+          "deflactado con el IPC medio anual, base 2025"
         ]
       },
       "hombres": {
@@ -288,6 +356,15 @@
         ],
         "hogares_unipersonales": [
           "ADRH10029696"
+        ],
+        "renta_persona_real": [
+          "deflactado con el IPC medio anual, base 2025"
+        ],
+        "renta_hogar_real": [
+          "deflactado con el IPC medio anual, base 2025"
+        ],
+        "renta_uc_real": [
+          "deflactado con el IPC medio anual, base 2025"
         ]
       },
       "hombres": {

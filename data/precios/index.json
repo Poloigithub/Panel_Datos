@@ -1,0 +1,60 @@
+{
+  "actualizado": "2026-09-16T07:20:57+00:00",
+  "titulo": "Precios",
+  "ultimo_periodo": "2026M08",
+  "primer_periodo": "2002M01",
+  "indicadores": {
+    "ipc_general": {
+      "titulo": "IPC, índice general",
+      "unidad": "índice",
+      "unidad_texto": "índice, base 2021 = 100",
+      "decimales": 2,
+      "por_sexo": false
+    },
+    "ipc_variacion": {
+      "titulo": "Inflación interanual",
+      "unidad": "%",
+      "unidad_texto": "variación del IPC respecto al mismo mes del año anterior",
+      "decimales": 2,
+      "por_sexo": false
+    },
+    "ipc_alimentos": {
+      "titulo": "Alimentos",
+      "unidad": "%",
+      "unidad_texto": "variación interanual del grupo",
+      "decimales": 2,
+      "por_sexo": false
+    },
+    "ipc_vivienda": {
+      "titulo": "Vivienda, agua y energía",
+      "unidad": "%",
+      "unidad_texto": "variación interanual del grupo",
+      "decimales": 2,
+      "por_sexo": false
+    },
+    "ipc_transporte": {
+      "titulo": "Transporte",
+      "unidad": "%",
+      "unidad_texto": "variación interanual del grupo",
+      "decimales": 2,
+      "por_sexo": false
+    }
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ]
+}
