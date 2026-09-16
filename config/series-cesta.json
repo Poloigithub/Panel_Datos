@@ -44,13 +44,19 @@
         "IPC292275"
       ],
       "azucar": [
-        "IPC291731"
+        "IPC292271"
       ],
       "preparados": [
         "IPC291143"
       ],
       "agua": [
         "IPC292279"
+      ],
+      "restaurantes": [
+        "IPC291379"
+      ],
+      "restauracion": [
+        "IPC290795"
       ]
     }
   },
@@ -98,8 +104,14 @@
       "cafe": [
         "IPC300744"
       ],
+      "azucar": [
+        "IPC300740"
+      ],
       "agua": [
         "IPC300748"
+      ],
+      "restauracion": [
+        "IPC294208"
       ]
     }
   },
@@ -107,6 +119,9 @@
     "ambos": {
       "alimentos": [
         "IPC306364"
+      ],
+      "restauracion": [
+        "IPC306404"
       ]
     }
   }

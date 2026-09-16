@@ -21,18 +21,23 @@
       hortalizas/ambos: 296 periodos (IPC292263)
       patatas/ambos: 296 periodos (IPC292375)
       cafe/ambos: 296 periodos (IPC292275)
+      azucar/ambos: 296 periodos (IPC292271)
       azucar/ambos: 296 periodos (IPC291731)
-      preparados/ambos: 116 periodos (IPC291751)
+      azucar/ambos: 296 periodos (IPC291139)
+      azucar/ambos: descartada una serie que se queda en 2026M08 (IPC291731)
+      azucar/ambos: descartada una serie que se queda en 2026M08 (IPC291139)
       preparados/ambos: 296 periodos (IPC291143)
+      preparados/ambos: 116 periodos (IPC291751)
       preparados/ambos: descartada una serie que se queda en 2026M08 (IPC291751)
       agua/ambos: 108 periodos (IPC252858)
       agua/ambos: 296 periodos (IPC292279)
       agua/ambos: descartada una serie que se queda en 2025M12 (IPC252858)
-      sin serie para restaurantes/ambos; lo más parecido:
-        (2 coinciden) ['base 2011', 'general', 'indice', 'total', 'total nacional']
-        (1 coinciden) ['educacion infantil y primaria', 'indice', 'nacional']
-        (1 coinciden) ['alquiler', 'indice', 'mantenimiento y reparacion de grandes equipos duraderos para fines recreativos', 'nacional']
-        (1 coinciden) ['indice', 'mantenimiento y reparacion de vehiculos personales', 'nacional']
+      restaurantes/ambos: 236 periodos (IPC291379)
+      restaurantes/ambos: 116 periodos (IPC292143)
+      restaurantes/ambos: descartada una serie que se queda en 2026M08 (IPC292143)
+      restauracion/ambos: 296 periodos (IPC290795)
+      restauracion/ambos: 288 periodos (IPC251842)
+      restauracion/ambos: descartada una serie que se queda en 2025M12 (IPC251842)
   · Comunitat Valenciana
       (IPC: 4450 series)
       alimentos/ambos: 296 periodos (IPC294168)
@@ -49,30 +54,17 @@
       hortalizas/ambos: 296 periodos (IPC300732)
       patatas/ambos: 296 periodos (IPC300844)
       cafe/ambos: 296 periodos (IPC300744)
-      sin serie para azucar/ambos; lo más parecido:
-        (3 coinciden) ['azucar', 'comunitat valenciana', 'indice']
-        (3 coinciden) ['azucar', 'base 2011', 'comunitat valenciana', 'indice', 'total']
-        (2 coinciden) ['base 2011', 'bienes industriales duraderos', 'comunitat valenciana', 'indice', 'total']
-        (2 coinciden) ['azucar', 'comunitat valenciana', 'variacion anual']
-      sin serie para preparados/ambos; lo más parecido:
-        (2 coinciden) ['base 2011', 'bienes industriales duraderos', 'comunitat valenciana', 'indice', 'total']
-        (2 coinciden) ['comunitat valenciana', 'herramientas y equipos para el hogar y el jardin', 'indice']
-        (2 coinciden) ['azucar', 'comunitat valenciana', 'indice']
-        (2 coinciden) ['base 2011', 'comunitat valenciana', 'general sin alimentos ni bebidas ni tabaco ni carburantes ni combustibles', 'indice', 'total']
+      azucar/ambos: 296 periodos (IPC300740)
       agua/ambos: 296 periodos (IPC300748)
-      sin serie para restaurantes/ambos; lo más parecido:
-        (2 coinciden) ['base 2011', 'bienes industriales duraderos', 'comunitat valenciana', 'indice', 'total']
-        (2 coinciden) ['comunitat valenciana', 'herramientas y equipos para el hogar y el jardin', 'indice']
-        (2 coinciden) ['azucar', 'comunitat valenciana', 'indice']
-        (2 coinciden) ['base 2011', 'comunitat valenciana', 'general sin alimentos ni bebidas ni tabaco ni carburantes ni combustibles', 'indice', 'total']
+      restauracion/ambos: 296 periodos (IPC294208)
+      restauracion/ambos: 288 periodos (IPC256209)
+      restauracion/ambos: descartada una serie que se queda en 2025M12 (IPC256209)
   · Castellón
       (IPC: 1865 series)
       alimentos/ambos: 296 periodos (IPC306364)
-      sin serie para restaurantes/ambos; lo más parecido:
-        (2 coinciden) ['base 2011', 'castellon/castello', 'indice', 'menaje', 'total']
-        (2 coinciden) ['base 2011', 'castellon/castello', 'general', 'indice', 'total']
-        (2 coinciden) ['castellon/castello', 'cristaleria', 'indice', 'vajilla y utensilios para el hogar']
-        (2 coinciden) ['bares y cafeterias', 'base 2011', 'castellon/castello', 'indice', 'restaurantes', 'total']
+      restauracion/ambos: 296 periodos (IPC306404)
+      restauracion/ambos: 288 periodos (IPC266516)
+      restauracion/ambos: descartada una serie que se queda en 2025M12 (IPC266516)
   el índice está en base 2025 = 100
     escrito data/cesta/espana.json
     escrito data/cesta/comunitat-valenciana.json
@@ -86,10 +78,3 @@
   hortalizas: +39.8 % desde 2021 (último: 2026M08)
   pescado: +35.6 % desde 2021 (último: 2026M08)
   alimentos: +34.8 % desde 2021 (último: 2026M08)
-
-No se ha encontrado serie para 5 combinaciones:
-  - cesta/espana/restaurantes/ambos
-  - cesta/comunitat-valenciana/azucar/ambos
-  - cesta/comunitat-valenciana/preparados/ambos
-  - cesta/comunitat-valenciana/restaurantes/ambos
-  - cesta/castellon/restaurantes/ambos

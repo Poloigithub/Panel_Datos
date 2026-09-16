@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T20:12:22+00:00",
+  "actualizado": "2026-09-16T20:19:47+00:00",
   "titulo": "La cesta de la compra",
   "ultimo_periodo": "2026M08",
   "primer_periodo": "2002M01",
@@ -131,7 +131,7 @@
       "sobre_total": null
     },
     "azucar": {
-      "titulo": "Azúcar, chocolate y confitería",
+      "titulo": "Azúcar",
       "unidad": "índice",
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
@@ -140,12 +140,12 @@
       "sobre_total": null
     },
     "preparados": {
-      "titulo": "Alimentos preparados",
+      "titulo": "Alimentos preparados y otros",
       "unidad": "índice",
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "De esta categoría el INE sólo publica índice nacional; el detalle autonómico no baja hasta ahí.",
       "sobre_total": null
     },
     "agua": {
@@ -155,6 +155,24 @@
       "decimales": 3,
       "por_sexo": false,
       "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "sobre_total": null
+    },
+    "restaurantes": {
+      "titulo": "Restaurantes, cafés y comida rápida",
+      "unidad": "índice",
+      "unidad_texto": "índice, base 2025 = 100",
+      "decimales": 3,
+      "por_sexo": false,
+      "nota": "De esta categoría el INE sólo publica índice nacional; el detalle autonómico no baja hasta ahí.",
+      "sobre_total": null
+    },
+    "restauracion": {
+      "titulo": "Restaurantes y alojamiento",
+      "unidad": "índice",
+      "unidad_texto": "índice, base 2025 = 100",
+      "decimales": 3,
+      "por_sexo": false,
+      "nota": "Es el grupo entero, así que dentro va también el alojamiento: hoteles, apartamentos y similares. Es el único de comer fuera que el INE publica por provincia.",
       "sobre_total": null
     }
   },
