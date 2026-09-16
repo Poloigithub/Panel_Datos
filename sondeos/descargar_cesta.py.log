@@ -2,6 +2,7 @@
 === La cesta de la compra ===
   · España
       (IPC: 7804 series)
+      alimentos/ambos: descartadas por sus valores IPC200916
       alimentos/ambos: 296 periodos (IPC290755)
       aceite_oliva/ambos: 296 periodos (IPC292563)
       leche/ambos: 296 periodos (IPC292247)
@@ -12,7 +13,11 @@
       carne_ave/ambos: 296 periodos (IPC292235)
       carne_porcino/ambos: 296 periodos (IPC292231)
       pescado/ambos: 296 periodos (IPC292363)
+      frutas/ambos: 288 periodos (IPC252518)
       frutas/ambos: 288 periodos (IPC252762)
+      frutas/ambos: 296 periodos (IPC292259)
+      frutas/ambos: descartada una serie que se queda en 2025M12 (IPC252518)
+      frutas/ambos: descartada una serie que se queda en 2025M12 (IPC252762)
       hortalizas/ambos: 296 periodos (IPC292263)
       patatas/ambos: 296 periodos (IPC292375)
       cafe/ambos: 296 periodos (IPC292275)
