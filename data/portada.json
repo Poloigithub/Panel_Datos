@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-16T14:19:44+00:00",
+ "actualizado": "2026-09-16T14:34:34+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -176,7 +176,7 @@
    "enlace": "vivienda.html",
    "fuente": "INE y CGPJ",
    "cadencia": "Mensual las compraventas y las hipotecas; trimestral el precio y los lanzamientos; anual el alquiler.",
-   "actualizado": "2026-09-16T13:57:40+00:00",
+   "actualizado": "2026-09-16T14:31:42+00:00",
    "ultimo_periodo": "2026M06",
    "destacados": [
     {

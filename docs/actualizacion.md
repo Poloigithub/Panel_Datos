@@ -34,9 +34,14 @@ la mitad, la EPA a finales de enero, abril, julio y octubre, y el CGPJ los
 lanzamientos por trimestres. Perseguir cada calendario con su propio `cron`
 significa mantener nueve calendarios y equivocarse cuando uno cambie.
 
-Mirar todos los días cuesta unos diez minutos de máquina y quita el problema
-de encima: **el dato aparece en la web como mucho un día después** de que su
-organismo lo publique. Si no hay nada nuevo, los descargadores escriben
+Mirar todos los días cuesta entre diez y veinte minutos de máquina —gratis en
+un repositorio público— y quita el problema de encima: **el dato aparece en la
+web como mucho un día después** de que su organismo lo publique.
+
+El INE limita el ritmo si se le piden muchas series seguidas, así que una
+ejecución puede tardar bastante más de lo normal si se ha estado trabajando
+contra su API ese mismo día. El descargador reintenta con esperas crecientes,
+de modo que eso alarga el run pero no lo rompe. Si no hay nada nuevo, los descargadores escriben
 exactamente lo mismo que ya estaba, `git diff` no encuentra cambios y el run
 termina sin tocar el repositorio. No hay commits de relleno.
 
