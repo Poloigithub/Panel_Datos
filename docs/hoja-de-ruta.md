@@ -322,7 +322,7 @@ si los salarios ganan o pierden frente a los precios.
 
 ---
 
-## Fase 6 · El panel como producto · en marcha
+## Fase 6 · El panel como producto ✅ hecha
 
 Cosas que no son datos nuevos pero multiplican lo que ya hay:
 
@@ -337,10 +337,14 @@ Cosas que no son datos nuevos pero multiplican lo que ya hay:
   cuánto, y las advertencias que hasta ahora vivían sueltas por el panel.
 - ✅ **Aviso si una fuente se apaga**: comprobación de frescura al final de la
   tarea diaria.
-- **Buscador de indicadores**, cuando haya suficientes para que haga falta.
-- **Página de novedades**: qué dato cambió y cuándo, generada desde el
-  historial de git, que ya guarda cada revisión.
-- **Descarga completa** del conjunto de datos en un solo archivo.
+- ✅ **Buscador de indicadores**: los 87 publicados, con la sección en que
+  viven, los ámbitos para los que existen -66 de 87 tienen dato de Castellón- y
+  desde cuándo. Arrastra consigo las advertencias de cada indicador.
+- ✅ **Página de novedades**: el historial de git leído al revés, con enlace al
+  cambio exacto. Se genera después de commitear, porque si no la actualización
+  de hoy no aparecería en su propio registro.
+- ✅ **Descarga completa**: el panel entero en un CSV en formato largo, 50.006
+  filas.
 
 **Y el calendario cambió con esto.** Antes la tarea miraba en unas pocas fechas
 al año, calcadas del calendario de la EPA. Ahora mira **todos los días**: nueve
@@ -350,6 +354,47 @@ diario cuesta un cuarto de hora de máquina y garantiza que un dato aparezca
 como mucho un día después de publicarse; si no hay nada nuevo, el run termina
 sin tocar el repositorio. Lo municipal, que tarda diez minutos por descarga y
 viene de fuentes anuales, se revisa una vez al mes.
+
+---
+
+---
+
+## Fase 7 · La cesta de la compra ✅ hecha
+
+**De dónde sale.** De una pregunta concreta: cuánto ha subido la comida estos
+años. El panel tenía el grupo entero de alimentos, que sirve para decir «ha
+subido» y poco más.
+
+**Qué hay.** El sondeo marca el límite de un vistazo: España publica 125
+productos distintos, la Comunitat 73, y **Castellón sólo el grupo entero**. Por
+debajo del grupo no hay IPC provincial. Con eso se montan catorce productos:
+aceite de oliva, leche, huevos, pan, cereales, tres carnes, pescado, fruta,
+hortalizas, patatas y café.
+
+**Resultado.** Desde agosto de 2021: huevos +84 %, carne de vacuno +60 %, leche
+y café +46 %, patatas +41 %, hortalizas +40 %, el conjunto de los alimentos
++34,8 %. El aceite de oliva, emblema de la subida, se queda en +25,6 % porque
+ya ha bajado desde su máximo.
+
+**Lo que costó, y es lo interesante.** Tres errores del motor que sólo se ven
+cuando una fuente cambia por debajo:
+
+1. *El panel decía «base 2021 = 100» cuando el índice ya estaba en base 2025.*
+   El INE rebasa el IPC cada pocos años y una etiqueta escrita a mano sobrevive
+   al cambio sin que nadie lo note. Ahora la base se deduce de los propios
+   datos: es, por definición, el año cuya media vale 100.
+2. *El filtro de rango juzgaba la serie entera* y no el tramo que se publica,
+   así que descartaba el índice de la fruta por lo que valía en los noventa,
+   cuando estaba en otra base. Es el mismo error de la fase 1 visto del revés:
+   allí miraba de menos y se colaban series en otra escala; aquí miraba de más
+   y tiraba series buenas.
+3. *Al fusionar candidatas mandaba la longitud*, y la serie descatalogada en la
+   base vieja es más larga que la vigente: se publicaba una serie muerta. Ahora
+   gana la que llega más lejos en el tiempo, con una salvaguarda para que un
+   estreno testimonial de dos trimestres no desbanque a noventa.
+
+Ninguno de los tres se habría visto sin una fuente que cambiara de base
+mientras el panel estaba en marcha.
 
 ---
 
