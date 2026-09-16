@@ -30,6 +30,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "scripts"))
+import red_ministerio as red  # noqa: E402
 from xlsx import Libro  # noqa: E402
 
 SALIDA = RAIZ / "sondeos"
@@ -76,8 +77,12 @@ def codifica(url: str) -> str:
 
 
 def descarga(url: str, limite: int = 12_000_000) -> tuple[int, str, bytes]:
+    """El ministerio necesita que se le complete la cadena; los demás no."""
+    destino = codifica(url)
+    if "mites.gob.es" in urllib.parse.urlsplit(destino).netloc:
+        return red.abre(destino, limite=limite)
     try:
-        peticion = urllib.request.Request(codifica(url), headers=CABECERAS)
+        peticion = urllib.request.Request(destino, headers=CABECERAS)
         with urllib.request.urlopen(peticion, timeout=120) as respuesta:
             return (respuesta.status, respuesta.headers.get("Content-Type", "?"),
                     respuesta.read(limite))
