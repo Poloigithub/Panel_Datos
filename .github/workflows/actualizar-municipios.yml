@@ -1,0 +1,49 @@
+name: Actualizar datos municipales
+
+# Aparte de la actualización diaria porque estas dos descargas tardan diez
+# minutos cada una -hay que resolver las series de 135 municipios, uno a uno- y
+# sus fuentes son anuales: el padrón y el Atlas de renta del INE. Revisarlas
+# una vez al mes llega de sobra.
+on:
+  schedule:
+    - cron: '0 4 5 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-datos
+  cancel-in-progress: false
+
+jobs:
+  municipios:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Población de los municipios de Castellón
+        run: python scripts/descargar_municipios.py
+
+      - name: Renta municipal del Atlas
+        run: python scripts/descargar_renta_municipal.py
+
+      - name: Validar los datos descargados
+        run: python scripts/validar_datos.py
+
+      - name: Commitear si hay datos nuevos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "El INE no ha publicado nada nuevo de los municipios."
+            exit 0
+          fi
+          git commit -m "Actualiza los datos municipales"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push

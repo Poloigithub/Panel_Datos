@@ -17,7 +17,9 @@ Busca cuatro cosas distintas:
 
 from __future__ import annotations
 
+import datetime as dt
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -142,6 +144,104 @@ IDENTIDADES = [
      lambda m, i, n: min(abs(m - i * 1000 / n), abs(m - i / n)) if n else 0.0,
      0.5),
 ]
+
+
+# Cada cuánto publica cada fuente y cuánto se puede tardar en notarlo. El
+# margen es generoso a propósito: cuenta desde el final del periodo, no desde
+# el día de publicación, e incluye el retraso normal del organismo. Lo que
+# detecta no es que una fuente vaya lenta, sino que ha dejado de llegar.
+FRESCURA = {
+    "epa": ("trimestral", 6),
+    "paro-registrado": ("mensual", 3),
+    "contratos": ("mensual", 3),
+    "precios": ("mensual", 3),
+    "vivienda": ("mensual", 6),
+    "poblacion": ("anual o trimestral, según el indicador", 15),
+    "demografia": ("anual", 30),
+    "renta": ("anual", 36),
+}
+
+# Los ficheros municipales no son bloques -no tienen índice- pero también
+# pueden quedarse atrás sin que nadie se entere.
+FRESCURA_MUNICIPAL = {
+    "municipios/poblacion-castellon.json": ("anual", 24),
+    "municipios/renta-castellon.json": ("anual", 36),
+    "paro-registrado/municipios-castellon.json": ("mensual", 3),
+}
+
+PERIODO = re.compile(r"^(\d{4})(?:([TSM])(\d{1,2}))?$")
+
+
+def fin_de_periodo(periodo: str) -> dt.date | None:
+    """El último día del periodo, que es desde cuando se puede esperar el dato."""
+    coincidencia = PERIODO.match(periodo or "")
+    if not coincidencia:
+        return None
+    anyo, letra, numero = coincidencia.groups()
+    anyo = int(anyo)
+    if not letra:
+        return dt.date(anyo, 12, 31)
+    numero = int(numero)
+    ultimo_mes = {"M": numero, "T": numero * 3, "S": numero * 6}.get(letra)
+    if not ultimo_mes or not 1 <= ultimo_mes <= 12:
+        return None
+    siguiente = dt.date(anyo + ultimo_mes // 12, ultimo_mes % 12 + 1, 1)
+    return siguiente - dt.timedelta(days=1)
+
+
+def meses_desde(fecha: dt.date, hoy: dt.date) -> float:
+    return (hoy - fecha).days / 30.44
+
+
+def revisa_frescura(informe: Informe, hoy: dt.date | None = None) -> None:
+    """¿Sigue llegando lo que se descarga?
+
+    La validación de cobertura detecta que una serie pierda periodos, no que
+    deje de ganarlos. Sin esto, una fuente puede morirse en silencio: el
+    descargador de lanzamientos, por ejemplo, publica el bloque sin ellos si un
+    día no encuentra el fichero del CGPJ, y eso es lo que se quiere -que una
+    fuente caída no tumbe el resto- pero hay que enterarse.
+    """
+    hoy = hoy or dt.date.today()
+
+    for nombre, (cadencia, margen) in sorted(FRESCURA.items()):
+        indice = DATOS / nombre / "index.json"
+        if not indice.exists():
+            informe.error(f"{nombre}: no hay datos publicados")
+            continue
+        ultimo = carga(indice).get("ultimo_periodo")
+        fecha = fin_de_periodo(ultimo)
+        if not fecha:
+            informe.error(f"{nombre}: no se entiende el último periodo ({ultimo!r})")
+            continue
+        retraso = meses_desde(fecha, hoy)
+        estado = "✓" if retraso <= margen else "✗"
+        print(f"  {estado} {nombre}: {ultimo} ({cadencia}), {retraso:.1f} meses "
+              f"del margen de {margen}")
+        if retraso > margen:
+            informe.error(
+                f"{nombre}: el último dato es de {ultimo}, hace {retraso:.0f} meses, "
+                f"y es una fuente {cadencia}; o el organismo ha dejado de publicar "
+                f"o el descargador ha dejado de encontrarlo")
+
+    for ruta, (cadencia, margen) in sorted(FRESCURA_MUNICIPAL.items()):
+        fichero = DATOS / ruta
+        if not fichero.exists():
+            informe.error(f"{ruta}: no está publicado")
+            continue
+        periodos = carga(fichero).get("periodos") or []
+        fecha = fin_de_periodo(periodos[-1]) if periodos else None
+        if not fecha:
+            informe.error(f"{ruta}: sin periodos legibles")
+            continue
+        retraso = meses_desde(fecha, hoy)
+        estado = "✓" if retraso <= margen else "✗"
+        print(f"  {estado} {ruta}: {periodos[-1]} ({cadencia}), {retraso:.1f} meses "
+              f"del margen de {margen}")
+        if retraso > margen:
+            informe.error(
+                f"{ruta}: el último dato es de {periodos[-1]}, hace {retraso:.0f} meses, "
+                f"y es una fuente {cadencia}")
 
 
 class Informe:
@@ -336,6 +436,21 @@ def main() -> int:
     if not DATOS.exists():
         print("No hay carpeta data/; nada que validar.")
         return 1
+
+    # La frescura se comprueba aparte, después de publicar: que una fuente se
+    # haya quedado atrás no es motivo para no publicar lo que sí ha llegado,
+    # pero sí para que el run salga en rojo y se entere alguien.
+    if "--frescura" in sys.argv:
+        informe = Informe()
+        print("== frescura ==")
+        revisa_frescura(informe)
+        if informe.errores:
+            print(f"\n{len(informe.errores)} fuentes se han quedado atrás:")
+            for error in informe.errores:
+                print(f"  ✗ {error}")
+            return 1
+        print("\nTodas las fuentes están al día.")
+        return 0
 
     informe = Informe()
     cobertura: dict[str, int] = {}

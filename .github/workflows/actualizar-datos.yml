@@ -1,18 +1,23 @@
-name: Actualizar datos del INE
+name: Actualizar datos
 
+# Se mira todos los días de madrugada. Las fuentes publican cada una por su
+# lado -el SEPE a principios de mes, el INE a mitad, el CGPJ por trimestres- y
+# mirar a diario es lo único que hace que un dato aparezca aquí al día
+# siguiente de salir sin que nadie tenga que acordarse de nada. Si no hay nada
+# nuevo, el run no toca el repositorio: los descargadores escriben lo mismo y
+# el commit no llega a hacerse.
 on:
   schedule:
-    # La EPA se publica a finales de enero, abril, julio y octubre. Se mira en
-    # esa ventana y en los primeros días del mes siguiente, por si se retrasa.
-    - cron: '30 6 22-31 1,4,7,10 *'
-    - cron: '30 6 1-6 2,5,8,11 *'
-    # Los bloques sociodemográficos son anuales y cada uno sale por su cuenta,
-    # así que además se repasa una vez al mes.
-    - cron: '0 5 3 * *'
+    - cron: '30 5 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+# Dos actualizaciones a la vez se pisarían al commitear.
+concurrency:
+  group: actualizar-datos
+  cancel-in-progress: false
 
 jobs:
   actualizar:
@@ -35,14 +40,11 @@ jobs:
       - name: Descargar el bloque de vivienda
         run: python scripts/descargar_vivienda.py
 
-      - name: Descargar el paro registrado del SEPE
+      - name: Descargar el paro registrado y los contratos del SEPE
         run: python scripts/descargar_paro.py
 
-      - name: Actualizar la población municipal
-        run: python scripts/descargar_municipios.py
-
-      - name: Actualizar la renta municipal del Atlas
-        run: python scripts/descargar_renta_municipal.py
+      - name: Componer los titulares de la portada
+        run: python scripts/generar_portada.py
 
       # Si algo no cuadra, el run se para aquí y no se publica nada.
       - name: Validar los datos descargados
@@ -54,9 +56,15 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/ config/
           if git diff --staged --quiet; then
-            echo "El INE no ha publicado nada nuevo; no se toca el repositorio."
+            echo "Ningún organismo ha publicado nada nuevo; no se toca el repositorio."
             exit 0
           fi
           ULTIMO=$(python -c "import json;print(json.load(open('data/epa/index.json'))['ultimo_periodo'])")
-          git commit -m "Actualiza datos de la EPA (último periodo: ${ULTIMO})"
+          git commit -m "Actualiza los datos (EPA: ${ULTIMO})"
+          git pull --rebase origin ${{ github.ref_name }}
           git push
+
+      # Va al final y aparte: que una fuente se haya quedado atrás no debe
+      # impedir publicar lo que sí ha llegado, pero sí tiene que hacer ruido.
+      - name: Comprobar que ninguna fuente se ha quedado atrás
+        run: python scripts/validar_datos.py --frescura

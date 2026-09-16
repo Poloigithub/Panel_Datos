@@ -6,13 +6,29 @@
 (function () {
   'use strict';
 
-  var numero = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 2 });
+  var numero = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 2,
+                                               useGrouping: 'always' });
 
+  // useGrouping 'always' para que 2.495,8 no se quede sin separador al lado de
+  // 22.779,0: en español el separador de millar se pone también en cuatro
+  // cifras, y el navegador no lo hace por su cuenta.
   function formatea(valor, decimales) {
     if (valor === null || valor === undefined) return '—';
     return new Intl.NumberFormat('es-ES', {
-      minimumFractionDigits: decimales, maximumFractionDigits: decimales
+      minimumFractionDigits: decimales, maximumFractionDigits: decimales,
+      useGrouping: 'always'
     }).format(valor);
+  }
+
+  // Unidades que ya se leen en el título del indicador y que repetirlas sólo
+  // alargaría: «Contratos del mes, contratos».
+  var SOBREENTENDIDAS = ['personas', 'contratos', 'operaciones', 'lanzamientos',
+                         'hipotecas', 'euros', '%'];
+
+  function sufijo(unidad) {
+    if (unidad === '%') return ' %';
+    if (unidad === 'euros') return ' €';
+    return '';
   }
 
   function etiquetaPeriodo(periodo) {
@@ -71,8 +87,7 @@
     valor.className = 'mt-0.5 text-lg font-semibold tracking-tight';
     valor.style.fontVariantNumeric = 'tabular-nums';
     var bruto = destacado.valores[ambito.id];
-    valor.textContent = formatea(bruto, destacado.decimales) +
-      (destacado.unidad === '%' ? ' %' : '');
+    valor.textContent = formatea(bruto, destacado.decimales) + sufijo(destacado.unidad);
     caja.appendChild(valor);
 
     // Si el indicador es parte de un total, el porcentaje dice más que la
@@ -124,7 +139,10 @@
       var nombre = document.createElement('div');
       nombre.className = 'text-xs font-medium uppercase tracking-widest';
       nombre.style.color = color('--tinta-suave');
-      nombre.textContent = destacado.titulo + ' · ' + etiquetaPeriodo(destacado.periodo);
+      var unidad = SOBREENTENDIDAS.indexOf(destacado.unidad) >= 0
+        ? '' : ', ' + destacado.unidad;
+      nombre.textContent = destacado.titulo + unidad + ' · ' +
+        etiquetaPeriodo(destacado.periodo);
       bloque.appendChild(nombre);
 
       var rejilla = document.createElement('div');
