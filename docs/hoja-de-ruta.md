@@ -10,7 +10,7 @@ siguiente exista.
 
 ---
 
-## Fase 0 · Cimientos: que los datos rotos hagan ruido
+## Fase 0 · Cimientos: que los datos rotos hagan ruido ✅ hecha
 
 **Por qué primero.** El panel ya publicó una vez «esperanza de vida: 3,01
 años» porque una búsqueda acabó en la serie de mortalidad infantil. Se detectó
@@ -42,11 +42,14 @@ renombra una serie, el indicador desaparece sin que nadie se entere.
 **Hecho cuando** el workflow falla si se rompe un indicador, y los tests pasan
 en local sin instalar nada.
 
-**Coste**: una sesión corta. **Riesgo**: ninguno; no toca datos publicados.
+**Resultado.** `scripts/validar_datos.py` y 26 pruebas en `tests/`. Se comprobó
+que detecta los cuatro fallos que le tocan corrompiendo los datos a propósito:
+valor fuera de rango, identidad rota, serie desaparecida y serie encogida. En
+la fase 1 paró la publicación tres veces, todas con razón.
 
 ---
 
-## Fase 1 · IPC provincial y renta real
+## Fase 1 · IPC provincial y renta real ✅ hecha
 
 **Por qué.** Es lo que más rinde por lo que cuesta: el IPC del INE es
 **provincial y mensual**, así que Castellón tiene dato propio, y el motor
@@ -72,9 +75,20 @@ real: no cuánto ingresas, sino cuánto te da de sí.
 **Hecho cuando** la renta se puede leer en euros constantes y el cálculo está
 documentado en la propia página.
 
-**Coste**: una sesión. **Riesgo a vigilar**: el IPC cambia de base (2021=100)
-y hay series enlazadas; hay que comprobar que se toma la enlazada y no un
-tramo suelto. La validación de continuidad de la fase 0 lo detectaría.
+**Resultado.** Sección *Precios* con índice general, inflación interanual y
+los grupos de alimentos y transporte, mensual desde 2002 y con dato propio de
+provincia. La renta del Atlas se deflacta con la media anual del IPC y la
+sección de renta tiene conmutador entre euros corrientes y constantes.
+
+El riesgo que estaba anotado se materializó: el índice de España llegó con
+valores de 8,18 porque el INE conserva el índice en bases antiguas. El
+validador lo paró tres veces seguidas y hicieron falta tres arreglos —filtrar
+candidatas por rango durante la búsqueda, comprobar el rango en toda la serie
+y no sólo en su cola, y acotar el bloque al enlace de la base vigente— hasta
+que salió limpio. Sin la fase 0, eso se habría publicado.
+
+**Lo que no entró**: el grupo de vivienda y energía del IPC, que sólo aparece
+en un ámbito de tres y con serie corta.
 
 ---
 

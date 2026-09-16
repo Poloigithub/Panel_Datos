@@ -41,11 +41,19 @@
     return getComputedStyle(document.documentElement).getPropertyValue(variable).trim();
   }
 
-  /* '2026T2' -> '2T 2026'; '2024S1' -> '1S 2024'; '2023' -> '2023'. */
+  var MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun',
+               'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+
+  /* '2026T2' -> '2T 2026'; '2024S1' -> '1S 2024'; '2026M08' -> 'ago 2026';
+     '2023' -> '2023'. */
   function etiquetaPeriodo(periodo) {
     var m = /^(\d{4})([TSM])(\d{1,2})$/.exec(periodo || '');
     if (!m) return periodo;
-    return m[3] + m[2] + ' ' + m[1];
+    if (m[2] === 'M') {
+      var mes = MESES[parseInt(m[3], 10) - 1];
+      return mes ? mes + ' ' + m[1] : periodo;
+    }
+    return parseInt(m[3], 10) + m[2] + ' ' + m[1];
   }
 
   function ordenPeriodo(periodo) {
