@@ -46,7 +46,9 @@
       explicacion: 'Renta neta media por persona del Atlas de Distribución de Renta del ' +
                    'INE, única fuente que baja de la provincia. Es anual y va con un ' +
                    'par de años de retraso respecto al paro, así que se muestra el ' +
-                   'último año publicado hasta el mes elegido.'
+                   'último año publicado hasta el mes elegido. Los pueblos más pequeños ' +
+                   'comparten un valor de grupo: quince de ellos, todos por debajo de ' +
+                   'los 110 habitantes, repiten exactamente la misma cifra.'
     },
   };
 
@@ -364,7 +366,9 @@
     pintaMapa();
     pintaRanking();
     if (estado.municipio) pintaFicha();
-    document.querySelector('[data-mes-actual]').textContent = P.etiquetaPeriodo(estado.periodo);
+    // El rótulo del mapa lleva el periodo del dato, no el del selector: la
+    // renta es de hace dos años aunque se esté mirando el mes de este verano.
+    document.querySelector('[data-mes-actual]').textContent = periodoDelIndicador();
   }
 
   async function carga(ruta) {
