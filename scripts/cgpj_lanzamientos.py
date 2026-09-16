@@ -31,6 +31,7 @@ from __future__ import annotations
 import html
 import re
 import sys
+import time
 import unicodedata
 import urllib.error
 import urllib.parse
@@ -79,10 +80,21 @@ def codifica(url: str) -> str:
     ))
 
 
-def descarga(url: str, limite: int = 20_000_000) -> bytes:
-    peticion = urllib.request.Request(codifica(url), headers=CABECERAS)
-    with urllib.request.urlopen(peticion, timeout=180) as respuesta:
-        return respuesta.read(limite)
+def descarga(url: str, limite: int = 20_000_000, reintentos: int = 4) -> bytes:
+    """GET con reintentos: el servidor del CGPJ corta conexiones a ratos."""
+    ultimo: Exception | None = None
+    for intento in range(reintentos):
+        try:
+            peticion = urllib.request.Request(codifica(url), headers=CABECERAS)
+            with urllib.request.urlopen(peticion, timeout=180) as respuesta:
+                return respuesta.read(limite)
+        except (urllib.error.URLError, TimeoutError) as exc:
+            ultimo = exc
+            if intento < reintentos - 1:
+                espera = 2 ** (intento + 1)
+                print(f"      ! {url.split('/')[-1][:50]}: {exc}; reintento en {espera}s")
+                time.sleep(espera)
+    raise RuntimeError(f"no se ha podido descargar {url}: {ultimo}")
 
 
 def localiza_fichero(pagina: str = PAGINA) -> tuple[str, str]:
