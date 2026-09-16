@@ -1,0 +1,33 @@
+name: Probar el aviso de fallo
+
+# Provoca un fallo a propósito para comprobar que el aviso llega. Un aviso sin
+# probar no es un aviso. Se lanza a mano y se borra cuando ya se sabe que
+# funciona.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  fallar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fallar a propósito
+        run: |
+          echo "Esto es una prueba del aviso: el paso falla adrede."
+          exit 1
+
+      - name: Avisar si algo ha fallado
+        if: failure()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAREA: Prueba del aviso de fallo
+        run: |
+          FECHA=$(date -u '+%d/%m/%Y a las %H:%M UTC') python scripts/avisar_fallo.py
