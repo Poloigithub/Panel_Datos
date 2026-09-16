@@ -122,16 +122,26 @@ def filtro_de_rango(indicador):
     Aplicarlo durante la búsqueda, y no sólo al final, evita quedarse con una
     serie del mismo indicador en otra base: el IPC de España llegaba con
     valores de 8,18 porque el INE conserva el índice con bases viejas.
+
+    Se mira exactamente el tramo que se va a publicar, no la serie entera. Si un
+    bloque declara que sus datos empiezan en 2002, lo anterior no se juzga: el
+    índice de la fruta se estaba descartando por lo que valía en los noventa,
+    cuando lo que iba a publicarse era perfectamente normal.
     """
     rango = indicador.get("rango")
     if not rango:
         return None
     minimo, maximo = rango
+    desde = indicador.get("desde")
 
     def acepta(valores: dict) -> bool:
-        # Toda la serie, no sólo la cola: el índice de España terminaba en
+        publicables = [v for p, v in valores.items()
+                       if not desde or motor.orden_periodo(p)[0] >= desde]
+        if not publicables:
+            return False
+        # Todo el tramo, no sólo la cola: el índice de España terminaba en
         # valores correctos y arrancaba en otra escala.
-        return all(minimo <= v <= maximo for v in valores.values())
+        return all(minimo <= v <= maximo for v in publicables)
 
     return acepta
 
@@ -260,6 +270,8 @@ def descarga_bloque(nombre: str, bloque: dict, posproceso=None):
         origen: dict[str, dict[str, list[str]]] = {}
 
         for clave, indicador in bloque["indicadores"].items():
+            # El corte del bloque también acota qué valores juzga el rango.
+            indicador.setdefault("desde", bloque.get("desde"))
             operaciones = indicador["operacion"]
             if isinstance(operaciones, str):
                 operaciones = [operaciones]

@@ -62,7 +62,7 @@ PRODUCTOS = [
 # probar varias formulaciones: la fruta es «frescas o refrigeradas» en la base
 # nueva y «frescas» en la anterior.
 ALTERNATIVAS = {
-    "frutas": [{"frutas frescas o refrigeradas"}, {"frutas"}, {"frutas frescas"}],
+    "frutas": [{"frutas"}, {"frutas frescas o refrigeradas"}, {"frutas frescas"}],
     "hortalizas": [{"legumbres y hortalizas frescas"},
                    {"legumbres y hortalizas frescas o refrigeradas"}],
 }

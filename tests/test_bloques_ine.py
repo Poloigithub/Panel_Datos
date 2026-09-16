@@ -45,3 +45,25 @@ class BaseDelIndice(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class FiltroDeRango(unittest.TestCase):
+    """El rango juzga sólo el tramo que se va a publicar."""
+
+    def test_lo_anterior_al_corte_no_descarta_una_serie(self):
+        """La fruta se descartaba por lo que valía en los noventa."""
+        acepta = bloques.filtro_de_rango({"rango": (30, 400), "desde": 2002})
+        valores = {"1995M01": 12.0, "2002M01": 55.0, "2026M08": 129.6}
+        self.assertTrue(acepta(valores))
+
+    def test_dentro_del_tramo_sigue_mandando_el_rango(self):
+        acepta = bloques.filtro_de_rango({"rango": (30, 400), "desde": 2002})
+        self.assertFalse(acepta({"2002M01": 8.18, "2026M08": 104.0}))
+
+    def test_sin_corte_se_juzga_la_serie_entera(self):
+        acepta = bloques.filtro_de_rango({"rango": (30, 400)})
+        self.assertFalse(acepta({"1995M01": 12.0, "2026M08": 129.6}))
+
+    def test_una_serie_que_se_queda_sin_tramo_no_vale(self):
+        acepta = bloques.filtro_de_rango({"rango": (30, 400), "desde": 2002})
+        self.assertFalse(acepta({"1995M01": 55.0}))
