@@ -1,9 +1,11 @@
 {
   "series": {
     "cesta/castellon/ambos/alimentos": 296,
+    "cesta/castellon/ambos/restauracion": 296,
     "cesta/comunitat-valenciana/ambos/aceite_oliva": 296,
     "cesta/comunitat-valenciana/ambos/agua": 296,
     "cesta/comunitat-valenciana/ambos/alimentos": 296,
+    "cesta/comunitat-valenciana/ambos/azucar": 296,
     "cesta/comunitat-valenciana/ambos/cafe": 296,
     "cesta/comunitat-valenciana/ambos/carne_ave": 296,
     "cesta/comunitat-valenciana/ambos/carne_porcino": 296,
@@ -16,6 +18,7 @@
     "cesta/comunitat-valenciana/ambos/pan": 296,
     "cesta/comunitat-valenciana/ambos/patatas": 296,
     "cesta/comunitat-valenciana/ambos/pescado": 296,
+    "cesta/comunitat-valenciana/ambos/restauracion": 296,
     "cesta/espana/ambos/aceite_oliva": 296,
     "cesta/espana/ambos/agua": 296,
     "cesta/espana/ambos/alimentos": 296,
@@ -33,6 +36,8 @@
     "cesta/espana/ambos/patatas": 296,
     "cesta/espana/ambos/pescado": 296,
     "cesta/espana/ambos/preparados": 296,
+    "cesta/espana/ambos/restauracion": 296,
+    "cesta/espana/ambos/restaurantes": 236,
     "contratos/castellon/ambos/contratos_agricultura": 238,
     "contratos/castellon/ambos/contratos_construccion": 238,
     "contratos/castellon/ambos/contratos_convertidos": 238,

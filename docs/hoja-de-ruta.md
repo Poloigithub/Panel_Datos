@@ -367,9 +367,11 @@ subido» y poco más.
 
 **Qué hay.** El sondeo marca el límite de un vistazo: España publica 125
 productos distintos, la Comunitat 73, y **Castellón sólo el grupo entero**. Por
-debajo del grupo no hay IPC provincial. Con eso se montan catorce productos:
+debajo del grupo no hay IPC provincial. Con eso se montan veinte categorías:
 aceite de oliva, leche, huevos, pan, cereales, tres carnes, pescado, fruta,
-hortalizas, patatas y café.
+hortalizas, patatas, café, azúcar, alimentos preparados, agua mineral y comer
+fuera, esto último en dos alturas porque el INE no lo publica a la misma en
+todas partes.
 
 **Resultado.** Desde agosto de 2021: huevos +84 %, carne de vacuno +60 %, leche
 y café +46 %, patatas +41 %, hortalizas +40 %, el conjunto de los alimentos
@@ -395,6 +397,29 @@ cuando una fuente cambia por debajo:
 
 Ninguno de los tres se habría visto sin una fuente que cambiara de base
 mientras el panel estaba en marcha.
+
+**La segunda vuelta: comer fuera y el sueldo.** Al ampliar la cesta quedaron
+cinco combinaciones sin serie, y el sondeo general no servía para resolverlas
+porque filtraba por palabras de comida y cortaba la lista en sesenta
+productos. Un sondeo a medida (`sondear_restauracion.py`) enseñó que el INE no
+nombra lo mismo en cada ámbito: el azúcar es «azúcar» a secas en la Comunitat
+y una subclase dentro de «azúcar, confitería y postres» en España, y comer
+fuera sólo baja de grupo en el dato nacional. Lo que no existe en un ámbito se
+declara como que no existe, para que el aviso diario no cante una ausencia sin
+arreglo.
+
+Y encima de todo, la pregunta que de verdad importa: **¿ha subido más la
+comida o el sueldo?** Entre 2021 y 2024 -hasta donde llega la encuesta
+salarial- la comida subió un 29,1 % en España y el salario bruto medio un
+14,1 %: quince puntos de diferencia. Los dos se pintan juntos con el año de
+partida a 100, que es la única forma honesta de comparar un índice de precios
+con unos euros al año. De Castellón no puede hacerse y la sección lo dice, en
+vez de quedarse vacía.
+
+Un fallo que sólo se ve mirando la página: pintar las evoluciones destruye
+todas las gráficas vivas, así que el cruce, que se dibujaba antes, se quedaba
+en un lienzo en blanco. La prueba de humo con navegador lo cazó midiendo
+cuántos píxeles había pintado el lienzo.
 
 ---
 

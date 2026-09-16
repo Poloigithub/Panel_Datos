@@ -364,8 +364,10 @@
   function render() {
     var filas = subidas();
     pintaRanking(filas);
-    pintaCruce();
+    // El cruce va después de las evoluciones porque pintarlas destruye todas
+    // las gráficas vivas, y la del cruce es una de ellas.
     pintaSeries(filas);
+    pintaCruce();
 
     var titular = document.querySelector('[data-titular]');
     if (titular && filas.length) {

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-16T20:17:48+00:00",
+ "actualizado": "2026-09-16T20:22:15+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -769,7 +769,7 @@
   },
   {
    "clave": "azucar",
-   "titulo": "Azúcar, chocolate y confitería",
+   "titulo": "Azúcar",
    "seccion": "La cesta de la compra",
    "seccion_id": "cesta",
    "enlace": "cesta.html",
@@ -779,21 +779,22 @@
    "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
    "por_sexo": false,
    "ambitos": [
-    "espana"
+    "espana",
+    "comunitat-valenciana"
    ],
    "desde": "2002M01",
    "hasta": "2026M08"
   },
   {
    "clave": "preparados",
-   "titulo": "Alimentos preparados",
+   "titulo": "Alimentos preparados y otros",
    "seccion": "La cesta de la compra",
    "seccion_id": "cesta",
    "enlace": "cesta.html",
    "fuente": "IPC · INE",
    "unidad": "índice",
    "unidad_texto": "índice, base 2025 = 100",
-   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "nota": "De esta categoría el INE sólo publica índice nacional; el detalle autonómico no baja hasta ahí.",
    "por_sexo": false,
    "ambitos": [
     "espana"
@@ -815,6 +816,42 @@
    "ambitos": [
     "espana",
     "comunitat-valenciana"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "restaurantes",
+   "titulo": "Restaurantes, cafés y comida rápida",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "De esta categoría el INE sólo publica índice nacional; el detalle autonómico no baja hasta ahí.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2007M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "restauracion",
+   "titulo": "Restaurantes y alojamiento",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "Es el grupo entero, así que dentro va también el alojamiento: hoteles, apartamentos y similares. Es el único de comer fuera que el INE publica por provincia.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
    ],
    "desde": "2002M01",
    "hasta": "2026M08"
