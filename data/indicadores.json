@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-16T19:19:10+00:00",
+ "actualizado": "2026-09-16T19:43:56+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -510,6 +510,259 @@
     "espana",
     "comunitat-valenciana",
     "castellon"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "alimentos",
+   "titulo": "Alimentos y bebidas no alcohólicas",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "aceite_oliva",
+   "titulo": "Aceite de oliva",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "leche",
+   "titulo": "Leche",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "huevos",
+   "titulo": "Huevos",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "pan",
+   "titulo": "Pan",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "cereales",
+   "titulo": "Cereales y derivados",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "carne_vacuno",
+   "titulo": "Carne de vacuno",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "carne_ave",
+   "titulo": "Carne de ave",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "carne_porcino",
+   "titulo": "Carne de porcino",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "pescado",
+   "titulo": "Pescado fresco y congelado",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "frutas",
+   "titulo": "Frutas frescas",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "hortalizas",
+   "titulo": "Legumbres y hortalizas frescas",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "patatas",
+   "titulo": "Patatas y sus preparados",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "cafe",
+   "titulo": "Café, cacao e infusiones",
+   "seccion": "La cesta de la compra",
+   "seccion_id": "cesta",
+   "enlace": "cesta.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2025 = 100",
+   "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
    ],
    "desde": "2002M01",
    "hasta": "2026M08"

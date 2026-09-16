@@ -57,6 +57,7 @@ tarea diaria.
 | Paro registrado | SEPE | Mensual | 2.º día hábil del mes siguiente |
 | Contratación | SEPE | Mensual | igual que el paro registrado |
 | Precios | IPC · INE | Mensual | ~13 del mes siguiente |
+| Cesta de la compra | IPC · INE | Mensual | a la vez que el IPC |
 | Población | ECP y Cifras de Población · INE | Trimestral y anual | ~2 meses |
 | Natalidad y mortalidad | Indicadores Demográficos Básicos · INE | Anual | ~1 año |
 | Renta | Atlas de Distribución de Renta · INE | Anual | ~2 años |

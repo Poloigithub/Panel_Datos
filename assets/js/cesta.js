@@ -25,6 +25,11 @@
   var indice = null;
   var datos = {};
 
+  // Un decimal siempre: «+84 %» al lado de «+60,1 %» parece otra precisión.
+  var porcentaje = new Intl.NumberFormat('es-ES', {
+    minimumFractionDigits: 1, maximumFractionDigits: 1, useGrouping: 'always'
+  });
+
   function contenido() {
     return datos[estado.ambito];
   }
@@ -133,7 +138,7 @@
       valor.className = 'px-3 py-2 text-right font-semibold whitespace-nowrap';
       valor.style.fontVariantNumeric = 'tabular-nums';
       valor.textContent = (fila.variacion >= 0 ? '+' : '−') +
-        P.formatea(Math.abs(fila.variacion), 1) + ' %';
+        porcentaje.format(Math.abs(fila.variacion)) + ' %';
       tr.appendChild(valor);
 
       var cuando = document.createElement('td');
@@ -212,7 +217,7 @@
       var primera = filas[0];
       titular.textContent = primera.titulo + ', lo que más ha subido: ' +
         (primera.variacion >= 0 ? '+' : '−') +
-        P.formatea(Math.abs(primera.variacion), 1) + ' % ' + textoDesde(primera) +
+        porcentaje.format(Math.abs(primera.variacion)) + ' % ' + textoDesde(primera) +
         ' (último dato, ' + P.etiquetaPeriodo(primera.ultimo.periodo) + ').';
     }
 
