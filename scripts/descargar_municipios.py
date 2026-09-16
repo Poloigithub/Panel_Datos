@@ -73,17 +73,28 @@ def main() -> int:
     for i, municipio in enumerate(municipios, 1):
         indice = motor.indexa_por_segmentos(operacion, f"{VAR_MUNICIPIOS}:{municipio['id']}")
         etiqueta = f"{municipio['codigo']} {municipio['nombre']}"
-        valores, _ = motor.resuelve(
-            indice,
+
+        # Se prueban varias formulaciones: el INE nombra estas series de
+        # maneras distintas según la operación.
+        intentos = [
             {motor.normaliza(municipio["nombre"]), "poblacion"},
-            etiqueta,
-            avisar=False,
-        )
-        if not valores:
-            # Algunos municipios llevan el nombre con variantes; basta la magnitud.
-            valores, _ = motor.resuelve(indice, {"poblacion"}, etiqueta, avisar=False)
+            {"poblacion"},
+            {motor.normaliza(municipio["nombre"])},
+            {"total"},
+        ]
+        valores = {}
+        for obligatorio in intentos:
+            valores, _ = motor.resuelve(indice, obligatorio, etiqueta, avisar=False)
+            if valores:
+                break
+
         if not valores:
             sin_serie.append(etiqueta)
+            # Con los primeros basta para ver cómo se llaman de verdad.
+            if len(sin_serie) <= 2:
+                print(f"    {etiqueta}: {len(indice)} conjuntos de segmentos; ejemplos:")
+                for segs in list(indice)[:6]:
+                    print(f"      {sorted(segs)}")
             continue
         series[municipio["codigo"]] = valores
         nombres[municipio["codigo"]] = municipio["nombre"]

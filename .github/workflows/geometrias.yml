@@ -17,9 +17,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Recortar los municipios de Castellón
-        run: python scripts/descargar_geometrias.py
-
       - name: Población municipal
         run: python scripts/descargar_municipios.py
       - name: Commitear
