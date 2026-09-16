@@ -55,6 +55,7 @@
           <legend class="text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Indicador</legend>
           <div class="mt-1.5 segmento" data-grupo="indicador" role="group" aria-label="Indicador del mapa">
             <button type="button" data-valor="variacion" aria-pressed="true">Variación en un año</button>
+            <button type="button" data-valor="tasa" aria-pressed="false">Paro por 100 hab.</button>
             <button type="button" data-valor="paro" aria-pressed="false">Paro registrado</button>
           </div>
         </fieldset>
@@ -119,18 +120,17 @@
     <section class="mt-12 tarjeta p-5">
       <h2 class="text-sm font-semibold">Fuente y método</h2>
       <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
-        Paro registrado del SEPE. Los contornos municipales vienen de GISCO
-        (Eurostat), que publica las unidades administrativas locales de la UE
-        con los códigos del INE; están simplificados para que el fichero pese
-        poco.
+        Paro registrado del SEPE y padrón del INE. Los contornos municipales
+        vienen de GISCO (Eurostat), que publica las unidades administrativas
+        locales de la UE con los códigos del INE; están simplificados para que
+        el fichero pese poco.
       </p>
       <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
-        El mapa muestra la variación interanual porque es lo que se puede
-        comparar entre municipios de tamaños muy distintos. Falta el paro por
-        habitante, que exige la población de cada municipio: el INE la publica,
-        pero sus series municipales todavía no se han podido resolver, y
-        preferimos no publicar una tasa antes de estar seguros de su
-        denominador.
+        El «paro por cada 100 habitantes» divide entre la población total, no
+        entre la activa: <strong>no es la tasa de paro</strong> y sale bastante
+        más bajo que ella. Sirve para comparar municipios entre sí, no para
+        ponerlo al lado de la tasa de paro de la EPA. El padrón es anual, así
+        que para cada mes se usa la población del año correspondiente.
       </p>
     </section>
 
@@ -139,7 +139,7 @@
 
 <footer class="border-t mt-8" style="border-color: var(--borde)">
   <div class="mx-auto max-w-6xl px-4 sm:px-6 py-6 text-xs flex flex-wrap gap-x-6 gap-y-2 justify-between" style="color: var(--tinta-tenue)">
-    <p>Datos: <a class="enlace-sutil" href="https://www.sepe.es/" rel="noopener">SEPE</a> y <a class="enlace-sutil" href="https://ec.europa.eu/eurostat/web/gisco" rel="noopener">GISCO</a>.</p>
+    <p>Datos: <a class="enlace-sutil" href="https://www.sepe.es/" rel="noopener">SEPE</a>, <a class="enlace-sutil" href="https://www.ine.es/" rel="noopener">INE</a> y <a class="enlace-sutil" href="https://ec.europa.eu/eurostat/web/gisco" rel="noopener">GISCO</a>.</p>
     <p><a class="enlace-sutil" href="https://github.com/Poloigithub/Panel_Datos" rel="noopener">Código en GitHub</a></p>
   </div>
 </footer>

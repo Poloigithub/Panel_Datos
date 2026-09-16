@@ -143,7 +143,7 @@ visualización es el mapa de la fase 3.
 
 ---
 
-## Fase 3 · Municipios y mapa
+## Fase 3 · Municipios y mapa ✅ hecha
 
 **Por qué.** Es lo que hace que un panel se mire en vez de consultarse, y los
 datos ya están al alcance: el Padrón y el Atlas de renta llegan a municipio
@@ -162,11 +162,32 @@ mismas operaciones que ya se usan.
    porque un mapa nunca puede ser la única forma de leer el dato.
 4. **Ficha por municipio**: una página por municipio con sus indicadores.
 
-**Hecho cuando** se puede ver la renta media de cada municipio en un mapa y
-abrir la ficha de cualquiera de ellos.
+**Resultado.** Página de municipios con mapa coroplético de los 135 términos
+de la provincia, ranking ordenado y ficha de cada uno con su serie mensual
+completa. Tres indicadores: variación del paro en un año, paro por cada cien
+habitantes y paro registrado.
 
-**Coste**: dos sesiones. **Riesgo**: el peso de las geometrías; hay que
-simplificarlas y medir la carga en móvil.
+Las geometrías salen de GISCO (Eurostat), con los códigos del INE: encajan
+exactamente con los 135 municipios del SEPE. Simplificadas con Douglas-Peucker
+quedan en 126 KB y 3.037 vértices, así que el riesgo del peso no llegó a
+materializarse. El mapa va sin librería de cartografía: una proyección
+equirectangular corregida por la latitud media basta para una provincia.
+
+**Lo que costó.** Dos cosas, ninguna prevista en el plan:
+
+1. *La población municipal no aparecía.* El INE la publica, pero la magnitud
+   no se llama «Población» sino «Total habitantes», y el nombre del municipio
+   se parte en varios segmentos cuando lleva artículo pospuesto («Pobla de
+   Benifassà, la»). Hizo falta que el descargador enseñara los segmentos
+   reales para verlo. Hasta resolverlo, el mapa salió a flote con la variación
+   interanual, que no necesita denominador.
+2. *El ruido de los municipios pequeños.* Comparando meses sueltos, Catí
+   pasaba de 10 a 17 parados y encabezaba el mapa con un +70 % que no
+   significa nada. Comparando medias de doce meses los extremos bajan a ±34 %
+   y el mapa enseña la tendencia en vez del azar.
+
+**Queda pendiente** la renta por municipio del Atlas, que llega hasta sección
+censal y daría un segundo mapa.
 
 ---
 

@@ -10,7 +10,7 @@
   var P = window.Panel;
 
   var estado = { indicador: 'variacion', periodo: null, municipio: null };
-  var geo = null, paro = null;
+  var geo = null, paro = null, poblacion = null;
 
   var INDICADORES = {
     variacion: {
@@ -23,14 +23,42 @@
                    'sueltos porque en pueblos pequeños unos pocos parados más darían ' +
                    'saltos enormes que no significan nada.'
     },
+    tasa: {
+      titulo: 'Paro por cada 100 habitantes',
+      unidad: '%',
+      decimales: 1,
+      explicacion: 'Personas apuntadas al paro por cada cien habitantes. No es la tasa ' +
+                   'de paro -el denominador es la población total, no la activa- pero ' +
+                   'sí permite comparar municipios de distinto tamaño.'
+    },
     paro: {
-      titulo: 'Paro registrado',
       unidad: 'personas',
       decimales: 0,
       explicacion: 'Personas apuntadas en las oficinas de empleo. En valores absolutos, ' +
                    'el mapa señala sobre todo dónde vive más gente.'
     },
   };
+
+  /* La población es anual y el paro mensual: para un mes dado se toma el dato
+     del mismo año, o el más reciente que exista. */
+  function poblacionDe(codigo, periodo) {
+    if (!poblacion) return null;
+    var municipio = poblacion.municipios[codigo];
+    if (!municipio) return null;
+    var objetivo = parseInt((periodo || '').slice(0, 4), 10);
+    var mejor = null, mejorAnyo = -Infinity, ultimo = null;
+    poblacion.periodos.forEach(function (p, i) {
+      var valor = municipio.poblacion[i];
+      if (valor === null || valor === undefined) return;
+      ultimo = valor;
+      var anyo = parseInt(p.slice(0, 4), 10);
+      if (anyo <= objetivo && anyo > mejorAnyo) {
+        mejor = valor;
+        mejorAnyo = anyo;
+      }
+    });
+    return mejor !== null ? mejor : ultimo;
+  }
 
   /* Mismo mes del año anterior: '2026M07' -> '2025M07'. */
   function haceUnAnyo(periodo) {
@@ -72,6 +100,12 @@
 
   function valorDe(codigo, periodo) {
     if (estado.indicador === 'paro') return paroDe(codigo, periodo);
+    if (estado.indicador === 'tasa') {
+      var parados = paroDe(codigo, periodo);
+      var habitantes = poblacionDe(codigo, periodo);
+      if (parados === null || !habitantes) return null;
+      return (parados / habitantes) * 100;
+    }
     var ahora = mediaAnual(codigo, periodo);
     var antes = mediaAnual(codigo, haceUnAnyo(periodo));
     if (ahora === null || !antes) return null;
@@ -88,7 +122,8 @@
   }
 
   function nombreDe(codigo) {
-    return (paro.municipios[codigo] || {}).nombre || codigo;
+    return (paro.municipios[codigo] || {}).nombre ||
+           ((poblacion && poblacion.municipios[codigo]) || {}).nombre || codigo;
   }
 
   function textoDe(codigo) {
@@ -199,7 +234,11 @@
     resumen.replaceChildren();
     var media = mediaAnual(codigo, estado.periodo);
     var mediaPrevia = mediaAnual(codigo, haceUnAnyo(estado.periodo));
-    [['Paro registrado', paroDe(codigo, estado.periodo), 'personas', 0],
+    var parados = paroDe(codigo, estado.periodo);
+    var habitantes = poblacionDe(codigo, estado.periodo);
+    [['Paro registrado', parados, 'personas', 0],
+     ['Habitantes', habitantes, 'personas', 0],
+     ['Paro por 100 hab.', parados !== null && habitantes ? (parados / habitantes) * 100 : null, '%', 1],
      ['Media de 12 meses', media, 'personas', 0],
      ['Variación en un año',
       media !== null && mediaPrevia ? ((media - mediaPrevia) / mediaPrevia) * 100 : null, '%', 1]
@@ -274,6 +313,14 @@
     try {
       geo = await carga('data/geo/municipios-castellon.geojson');
       paro = await carga('data/paro-registrado/municipios-castellon.json');
+      try {
+        poblacion = await carga('data/municipios/poblacion-castellon.json');
+      } catch (_) {
+        // Sin población no hay tasa, pero el resto del mapa sigue sirviendo.
+        poblacion = null;
+        var boton = document.querySelector('button[data-valor="tasa"]');
+        if (boton) boton.disabled = true;
+      }
 
       estado.periodo = paro.periodos[paro.periodos.length - 1];
       estadoNodo.hidden = true;
