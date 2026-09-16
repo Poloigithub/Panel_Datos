@@ -132,11 +132,26 @@ def concuerdan(a: dict[str, float], b: dict[str, float]) -> bool:
     return True
 
 
-def fusiona(candidatas: list[dict], etiqueta: str, tope: int = 12) -> tuple[dict[str, float], list[str]]:
-    """Reúne en una sola serie las candidatas que miden lo mismo."""
+def fusiona(candidatas: list[dict], etiqueta: str, tope: int = 12,
+            acepta=None) -> tuple[dict[str, float], list[str]]:
+    """Reúne en una sola serie las candidatas que miden lo mismo.
+
+    `acepta` filtra candidatas por sus valores antes de elegir ninguna. Hace
+    falta porque el INE conserva versiones de un índice con bases distintas:
+    miden lo mismo conceptualmente pero en escalas que no se pueden mezclar, y
+    la más larga no es la buena.
+    """
     orden = sorted(candidatas, key=lambda c: len(segmentos(c.get("Nombre", ""))))[:tope]
     descargadas = [(c["COD"], descarga_serie(c["COD"])) for c in orden]
     descargadas = [(codigo, valores) for codigo, valores in descargadas if valores]
+
+    if acepta is not None:
+        rechazadas = [codigo for codigo, valores in descargadas if not acepta(valores)]
+        descargadas = [(codigo, valores) for codigo, valores in descargadas
+                       if codigo not in rechazadas]
+        if rechazadas:
+            print(f"      {etiqueta}: descartadas por sus valores "
+                  f"{', '.join(rechazadas[:4])}")
     if not descargadas:
         print(f"      {etiqueta}: {len(candidatas)} candidatas, ninguna con datos")
         return {}, []
@@ -188,7 +203,7 @@ def candidatas_para(indice: dict[frozenset, list[dict]], obligatorio: set[str],
 
 def resuelve(indice: dict[frozenset, list[dict]], obligatorio: set[str],
              etiqueta: str, extras: set[str] | None = None,
-             avisar: bool = True) -> tuple[dict[str, float], list[str]]:
+             avisar: bool = True, acepta=None) -> tuple[dict[str, float], list[str]]:
     """Localiza y descarga la serie del total que encaja con lo pedido."""
     candidatas = candidatas_para(indice, obligatorio, extras)
     if not candidatas:
@@ -197,6 +212,9 @@ def resuelve(indice: dict[frozenset, list[dict]], obligatorio: set[str],
         return {}, []
     if len(candidatas) == 1:
         valores = descarga_serie(candidatas[0]["COD"])
+        if valores and acepta is not None and not acepta(valores):
+            print(f"      {etiqueta}: {candidatas[0]['COD']} descartada por sus valores")
+            return {}, []
         print(f"      {etiqueta}: {len(valores)} periodos ({candidatas[0]['COD']})")
         return valores, [candidatas[0]["COD"]]
-    return fusiona(candidatas, etiqueta)
+    return fusiona(candidatas, etiqueta, acepta=acepta)

@@ -329,6 +329,25 @@ def deflacta(series: dict, deflactor: dict[str, float], procedencia: dict) -> st
     return base if convertidas else None
 
 
+def filtro_de_rango(indicador):
+    """Convierte el rango declarado en un filtro de candidatas.
+
+    Aplicarlo durante la búsqueda, y no sólo al final, evita quedarse con una
+    serie del mismo indicador en otra base: el IPC de España llegaba con
+    valores de 8,18 porque el INE conserva el índice con bases viejas.
+    """
+    rango = indicador.get("rango")
+    if not rango:
+        return None
+    minimo, maximo = rango
+
+    def acepta(valores: dict) -> bool:
+        muestra = [v for _, v in sorted(valores.items())][-6:]
+        return all(minimo <= v <= maximo for v in muestra)
+
+    return acepta
+
+
 def en_rango(valores, indicador, etiqueta) -> bool:
     """¿La serie encontrada mide lo que creemos que mide?
 
@@ -358,11 +377,13 @@ def busca(indice, ambito, indicador, alias_sexo, etiqueta, avisar=True):
     """
     intentos = [{a} for a in sorted(alias_sexo)] + [set()]
     territorios = [ambito["segmento"]] + ambito.get("segmentos_alternativos", [])
+    acepta = filtro_de_rango(indicador)
     for busqueda in indicador["busquedas"]:
         for territorio in territorios:
             for alias in intentos:
                 obligatorio = set(busqueda) | {territorio} | alias
-                valores, usados = motor.resuelve(indice, obligatorio, etiqueta, avisar=False)
+                valores, usados = motor.resuelve(indice, obligatorio, etiqueta,
+                                                 avisar=False, acepta=acepta)
                 if valores:
                     return valores, usados
 

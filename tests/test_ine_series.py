@@ -146,6 +146,16 @@ class SeleccionEntreCandidatas(unittest.TestCase):
         self.assertEqual(usados, ["BASE"])
         self.assertNotIn("2022", valores)
 
+    def test_descarta_las_candidatas_cuyos_valores_no_cuadran(self):
+        # El INE conserva el IPC con bases antiguas: miden lo mismo pero en
+        # otra escala, y la más larga no es la buena.
+        vieja = self._candidata("VIEJA", "x.", {f"1993M{m:02d}": 8.0 for m in range(1, 13)})
+        actual = self._candidata("ACTUAL", "x. y.", {"2026M01": 118.0, "2026M02": 119.0})
+        acepta = lambda valores: all(50 <= v <= 200 for v in valores.values())
+        valores, usados = motor.fusiona([vieja, actual], "ipc", acepta=acepta)
+        self.assertEqual(usados, ["ACTUAL"])
+        self.assertNotIn("1993M01", valores)
+
     def test_sin_datos_no_devuelve_nada(self):
         vacia = self._candidata("VACIA", "a.", {})
         valores, usados = motor.fusiona([vacia], "prueba")
