@@ -46,15 +46,16 @@ DIRECCION = re.compile(rb"http://[A-Za-z0-9./_%:-]+\.(?:crt|cer|p7c|p7b)", re.I)
 
 
 def cadena_que_manda(maquina: str) -> tuple[list[bytes], list[str]]:
-    """La cadena tal y como la sirve el servidor. Mirar no es fiarse."""
-    contexto = ssl._create_unverified_context()  # noqa: SLF001
-    contexto.check_hostname = False
-    with socket.create_connection((maquina, 443), timeout=30) as crudo:
-        with contexto.wrap_socket(crudo, server_hostname=maquina) as tls:
-            certificados = list(tls.get_unverified_chain() or [])
-            notas = [f"- TLS {tls.version()}, {len(certificados)} certificados "
-                     f"en la cadena"]
-    return certificados, notas
+    """El certificado del sitio, tal y como lo sirve. Mirar no es fiarse.
+
+    Leer la cadena entera hace falta Python 3.13; con 3.12 sólo se puede coger
+    el del sitio, que es de donde hay que sacar la dirección del intermedio,
+    así que da igual. Por esta conexión no se descarga ningún dato.
+    """
+    pem = ssl.get_server_certificate((maquina, 443), timeout=30)
+    notas = [f"- el servidor entrega {pem.count('BEGIN CERTIFICATE')} "
+             f"certificado(s) al pedirlo suelto"]
+    return [ssl.PEM_cert_to_DER_cert(pem)], notas
 
 
 def describe(der: bytes) -> str:
