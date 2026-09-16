@@ -74,17 +74,23 @@ def resume(lineas: list[str], datos: bytes, etiqueta: str) -> None:
     except Exception as exc:  # noqa: BLE001
         lineas.append(f"- no se ha podido abrir: {type(exc).__name__}: {exc}")
         return
-    lineas.append(f"- {len(libro.hojas)} hojas: {', '.join(list(libro.hojas)[:12])}")
+    lineas.append(f"- {len(libro.hojas)} hojas:")
+    for nombre in libro.hojas:
+        lineas.append(f"    - «{nombre}»")
 
     for nombre in libro.hojas:
         filas = libro.filas(nombre)
         texto = " ".join(str(c) for fila in filas[:40] for c in fila if c)
-        if "lanzamiento" not in texto.lower():
+        # La palabra puede estar sólo en el nombre de la hoja: en el fichero
+        # por provincias, las hojas de lanzamientos no la repiten dentro.
+        if "lanz" not in nombre.lower() and "lanzamiento" not in texto.lower():
+            continue
+        if "definicion" in nombre.lower() or "introducc" in nombre.lower():
             continue
         lineas += ["", f"#### Hoja «{nombre}» de {etiqueta}",
                    f"- {len(filas)} filas"]
-        for i, fila in enumerate(filas[:28]):
-            celdas = [str(c) for c in fila[:9] if c is not None]
+        for i, fila in enumerate(filas[:10]):
+            celdas = [str(c)[:40] for c in fila[:12] if c is not None]
             if celdas:
                 lineas.append(f"    {i:>3} | " + " | ".join(celdas))
         # ¿Aparece Castellón por algún lado? Eso decide si sirve para el panel.
@@ -93,7 +99,16 @@ def resume(lineas: list[str], datos: bytes, etiqueta: str) -> None:
         lineas.append(f"- «Castellón» aparece en {len(donde)} filas: {donde[:8]}")
         for i in donde[:3]:
             lineas.append(f"    {i:>3} | " + " | ".join(
-                str(c) for c in filas[i][:9] if c is not None))
+                str(c)[:40] for c in filas[i][:14] if c is not None))
+        # Y el total nacional, que es la otra fila que el panel necesita.
+        total = [i for i, fila in enumerate(filas)
+                 if any(str(c).strip().lower() in ("total", "total nacional", "españa",
+                                                   "total españa")
+                        for c in fila[:2] if c)]
+        lineas.append(f"- filas de total: {total[:5]}")
+        for i in total[:2]:
+            lineas.append(f"    {i:>3} | " + " | ".join(
+                str(c)[:40] for c in filas[i][:14] if c is not None))
 
 
 def main() -> int:
@@ -134,7 +149,7 @@ def main() -> int:
     interesantes = sorted(ficheros, key=prioridad)
     interesantes = [u for u in interesantes if prioridad(u) < 9]
     lineas += ["", f"## Dentro de los ficheros ({len(interesantes)} sin contar los mercantiles)", ""]
-    for url in interesantes[:3]:
+    for url in interesantes[:2]:
         etiqueta = nombre_de(url)
         codigo, tipo, datos = descarga(url)
         lineas += [f"### {etiqueta}", f"- `{codigo}` · {tipo} · {len(datos)} bytes", f"- {url}"]
