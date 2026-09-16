@@ -19,24 +19,11 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import bloques_ine as bloques  # noqa: E402
 import ine_series as motor  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parents[1]
-DATOS = RAIZ / "data"
 CONFIG = RAIZ / "config"
-
-VAR_NACIONAL, VAR_CCAA, VAR_PROVINCIAS = 349, 70, 115
-
-AMBITOS = [
-    {"id": "espana", "nombre": "España", "tipo": "Nacional",
-     "filtro": f"{VAR_NACIONAL}:16473", "segmento": "total nacional",
-     # El IPC nombra el ámbito nacional «Nacional» a secas.
-     "segmentos_alternativos": ["nacional"]},
-    {"id": "comunitat-valenciana", "nombre": "Comunitat Valenciana", "tipo": "Comunidad autónoma",
-     "filtro": f"{VAR_CCAA}:9006", "segmento": "comunitat valenciana"},
-    {"id": "castellon", "nombre": "Castellón", "tipo": "Provincia",
-     "filtro": f"{VAR_PROVINCIAS}:13", "segmento": "castellon/castello"},
-]
 
 # Un indicador: cómo se llama en el panel, qué unidad tiene y por qué
 # combinaciones de segmentos buscarlo (la primera que dé datos, gana).
@@ -256,15 +243,6 @@ BLOQUES = {
     },
 }
 
-# Cómo se llama cada sexo en cada operación: el INE alterna «Total» y
-# «Ambos sexos» según la estadística.
-SEXOS = {
-    "ambos": {"total", "ambos sexos"},
-    "hombres": {"hombres", "varones"},
-    "mujeres": {"mujeres"},
-}
-
-
 # Indicadores de renta que tienen versión en euros constantes.
 DEFLACTABLES = ("renta_persona", "renta_hogar", "renta_uc")
 
@@ -322,106 +300,59 @@ def deflacta(series: dict, deflactor: dict[str, float], procedencia: dict) -> st
     return base if convertidas else None
 
 
-def filtro_de_rango(indicador):
-    """Convierte el rango declarado en un filtro de candidatas.
+def fichas_derivadas(por_ambito: dict, bloque: dict) -> dict:
+    """Ficha de las series que no se descargan sino que se calculan.
 
-    Aplicarlo durante la búsqueda, y no sólo al final, evita quedarse con una
-    serie del mismo indicador en otra base: el IPC de España llegaba con
-    valores de 8,18 porque el INE conserva el índice con bases viejas.
+    Las de euros constantes se componen a partir de la del indicador nominal
+    del que salen, para que digan lo mismo salvo la unidad.
     """
-    rango = indicador.get("rango")
-    if not rango:
-        return None
-    minimo, maximo = rango
-
-    def acepta(valores: dict) -> bool:
-        # Toda la serie, no sólo la cola: el índice de España terminaba en
-        # valores correctos y arrancaba en otra escala.
-        return all(minimo <= v <= maximo for v in valores.values())
-
-    return acepta
-
-
-def en_rango(valores, indicador, etiqueta) -> bool:
-    """¿La serie encontrada mide lo que creemos que mide?
-
-    Los nombres del INE se parecen entre sí y una búsqueda laxa puede acabar
-    en otra cosa -la esperanza de vida al nacer y la mortalidad infantil se
-    confundían así-. Un rango plausible lo detecta antes de publicarlo.
-    """
-    rango = indicador.get("rango")
-    if not rango:
-        return True
-    minimo, maximo = rango
-    ultimos = [v for _, v in sorted(valores.items())][-3:]
-    fuera = [v for v in ultimos if not (minimo <= v <= maximo)]
-    if fuera:
-        print(f"      {etiqueta}: descartada, los valores {fuera} quedan fuera "
-              f"del rango esperado {rango}")
-        return False
-    return True
-
-
-def busca(indice, ambito, indicador, alias_sexo, etiqueta, avisar=True):
-    """Primera formulación que dé datos, de entre las declaradas.
-
-    Se prueban los alias del sexo y, al final, la variante sin sexo: hay
-    operaciones (el Atlas de renta, por ejemplo) cuyas series no llevan esa
-    variable en el nombre.
-    """
-    intentos = [{a} for a in sorted(alias_sexo)] + [set()]
-    territorios = [ambito["segmento"]] + ambito.get("segmentos_alternativos", [])
-    acepta = filtro_de_rango(indicador)
-    for busqueda in indicador["busquedas"]:
-        for territorio in territorios:
-            for alias in intentos:
-                obligatorio = set(busqueda) | {territorio} | alias
-                valores, usados = motor.resuelve(indice, obligatorio, etiqueta,
-                                                 avisar=False, acepta=acepta)
-                if valores:
-                    return valores, usados
-
-    # Nada ha encajado: mostrar los conjuntos de segmentos más parecidos, que
-    # es lo único que permite corregir la declaración sin adivinar.
-    if not avisar:
-        return {}, []
-    buscado = set(indicador["busquedas"][0]) | {ambito["segmento"]}
-    parecidos = sorted(
-        ((len(buscado & segs), segs) for segs in indice),
-        key=lambda t: -t[0],
-    )[:4]
-    print(f"      sin serie para {etiqueta}; lo más parecido:")
-    for comunes, segs in parecidos:
-        print(f"        ({comunes} coinciden) {sorted(segs)}")
-    return {}, []
-
-
-def describe_indicadores(bloque: dict, por_ambito: dict) -> dict:
-    """Metadatos de cada indicador, incluidos los derivados al vuelo."""
-    descripcion = {
-        clave: {"titulo": ind["titulo"], "unidad": ind["unidad"],
-                "unidad_texto": ind.get("unidad_texto"),
-                "decimales": ind["decimales"], "por_sexo": ind["por_sexo"]}
-        for clave, ind in bloque["indicadores"].items()
-    }
-
-    # Las series en euros constantes se generan durante la descarga, así que
-    # su ficha se compone a partir de la del indicador nominal.
+    fichas = {}
     publicados = {clave for series in por_ambito.values()
                   for magnitudes in series.values() for clave in magnitudes}
-    for clave in sorted(publicados - set(descripcion)):
+    for clave in sorted(publicados):
         if not clave.endswith("_real"):
             continue
-        origen = descripcion.get(clave[: -len("_real")])
+        origen = bloque["indicadores"].get(clave[: -len("_real")])
         if not origen:
             continue
-        descripcion[clave] = dict(
-            origen,
-            titulo=origen["titulo"] + " (euros constantes)",
-            unidad_texto="euros del último año disponible, descontada la inflación",
-            nominal=clave[: -len("_real")],
-        )
-    return descripcion
+        fichas[clave] = {
+            "titulo": origen["titulo"] + " (euros constantes)",
+            "unidad": origen["unidad"],
+            "unidad_texto": "euros del último año disponible, descontada la inflación",
+            "decimales": origen["decimales"],
+            "por_sexo": origen["por_sexo"],
+            "nominal": clave[: -len("_real")],
+        }
+    return fichas
+
+
+def posproceso_renta(ambito, series, origen):
+    base = deflacta(series, descarga_deflactor(ambito), origen)
+    if base:
+        print(f"      renta en euros constantes de {base}")
+
+
+def posproceso_poblacion(ambito, series, origen):
+    """La población total es la suma de los dos sexos.
+
+    Si el INE no publica la serie agregada para un ámbito, se compone en vez
+    de dejar el hueco.
+    """
+    hombres = series.get("hombres", {}).get("poblacion")
+    mujeres = series.get("mujeres", {}).get("poblacion")
+    if not hombres or not mujeres:
+        return
+    if series.setdefault("ambos", {}).get("poblacion"):
+        return
+    compuesta = {periodo: hombres[periodo] + mujeres[periodo]
+                 for periodo in hombres if periodo in mujeres}
+    if compuesta:
+        series["ambos"]["poblacion"] = compuesta
+        origen.setdefault("ambos", {})["poblacion"] = ["derivado:hombres+mujeres"]
+        print(f"      poblacion/ambos: {len(compuesta)} periodos sumando hombres y mujeres")
+
+
+POSPROCESOS = {"renta": posproceso_renta, "poblacion": posproceso_poblacion}
 
 
 def main() -> int:
@@ -430,134 +361,14 @@ def main() -> int:
     procedencias: dict[str, dict] = {}
     faltantes: list[str] = []
 
-    for nombre_bloque, bloque in BLOQUES.items():
+    for nombre, bloque in BLOQUES.items():
         print(f"\n=== {bloque['titulo']} ===")
-        destino = DATOS / nombre_bloque
-        destino.mkdir(parents=True, exist_ok=True)
-        procedencias[nombre_bloque] = {}
-        por_ambito: dict[str, dict] = {}
-        periodos_vistos: set[str] = set()
-
-        for ambito in AMBITOS:
-            print(f"  · {ambito['nombre']}")
-            indices = {}
-            for operacion in bloque["operaciones"]:
-                indices[operacion] = motor.indexa_por_segmentos(operacion, ambito["filtro"])
-                print(f"      ({operacion}: {sum(len(v) for v in indices[operacion].values())} series)")
-
-            series: dict[str, dict[str, dict[str, float]]] = {}
-            origen: dict[str, dict[str, list[str]]] = {}
-
-            for clave, indicador in bloque["indicadores"].items():
-                operaciones = indicador["operacion"]
-                if isinstance(operaciones, str):
-                    operaciones = [operaciones]
-                sexos = SEXOS if indicador["por_sexo"] else {"ambos": SEXOS["ambos"]}
-                for sexo, alias in sexos.items():
-                    etiqueta = f"{clave}/{sexo}"
-                    # Se juntan las operaciones: la Estadística Continua de
-                    # Población arranca en 2021 y Cifras de Población viene de
-                    # 1971, así que por separado ninguna da la serie entera.
-                    valores, usados = {}, []
-                    for operacion in operaciones:
-                        parciales, procedencia = busca(
-                            indices[operacion], ambito, indicador, alias, etiqueta,
-                            avisar=(operacion == operaciones[-1] and not valores))
-                        if not parciales:
-                            continue
-                        if not valores:
-                            valores, usados = dict(parciales), list(procedencia)
-                        elif motor.concuerdan(valores, parciales):
-                            nuevos = {p: v for p, v in parciales.items() if p not in valores}
-                            if nuevos:
-                                valores.update(nuevos)
-                                usados += procedencia
-
-                    desde = bloque.get("desde")
-                    if valores and desde:
-                        recortada = {p: v for p, v in valores.items()
-                                     if motor.orden_periodo(p)[0] >= desde}
-                        if len(recortada) != len(valores):
-                            print(f"      {etiqueta}: recortada a {len(recortada)} periodos "
-                                  f"desde {desde}")
-                        valores = recortada
-
-                    if valores and not en_rango(valores, indicador, etiqueta):
-                        valores, usados = {}, []
-                    if not valores:
-                        faltantes.append(f"{nombre_bloque}/{ambito['id']}/{etiqueta}")
-                        continue
-                    series.setdefault(sexo, {})[clave] = valores
-                    origen.setdefault(sexo, {})[clave] = usados
-                    periodos_vistos.update(valores)
-
-            if nombre_bloque == "renta":
-                base = deflacta(series, descarga_deflactor(ambito), origen)
-                if base:
-                    print(f"      renta en euros constantes de {base}")
-                    for clave in DEFLACTABLES:
-                        for magnitudes in series.values():
-                            valores_reales = magnitudes.get(clave + "_real")
-                            if valores_reales:
-                                periodos_vistos.update(valores_reales)
-
-            # La población total es la suma de los dos sexos: si el INE no
-            # publica la serie agregada para un ámbito, se compone.
-            if "poblacion" in bloque["indicadores"]:
-                hombres = series.get("hombres", {}).get("poblacion")
-                mujeres = series.get("mujeres", {}).get("poblacion")
-                ambos = series.setdefault("ambos", {}).get("poblacion")
-                if hombres and mujeres and not ambos:
-                    compuesta = {
-                        periodo: hombres[periodo] + mujeres[periodo]
-                        for periodo in hombres if periodo in mujeres
-                    }
-                    if compuesta:
-                        series["ambos"]["poblacion"] = compuesta
-                        origen.setdefault("ambos", {})["poblacion"] = ["derivado:hombres+mujeres"]
-                        periodos_vistos.update(compuesta)
-                        print(f"      poblacion/ambos: {len(compuesta)} periodos "
-                              f"sumando hombres y mujeres")
-
-            por_ambito[ambito["id"]] = series
-            procedencias[nombre_bloque][ambito["id"]] = origen
-
-        if not periodos_vistos:
-            print(f"  sin datos para {nombre_bloque}; se salta")
-            continue
-
-        periodos = sorted(periodos_vistos, key=motor.orden_periodo)
-        indice_bloque = {
-            "actualizado": ahora,
-            "titulo": bloque["titulo"],
-            "ultimo_periodo": periodos[-1],
-            "primer_periodo": periodos[0],
-            "indicadores": describe_indicadores(bloque, por_ambito),
-            "ambitos": [],
-        }
-
-        for ambito in AMBITOS:
-            series = por_ambito[ambito["id"]]
-            contenido = {
-                "ambito": {"id": ambito["id"], "nombre": ambito["nombre"], "tipo": ambito["tipo"]},
-                "actualizado": ahora,
-                "periodos": periodos,
-                "series": {
-                    sexo: {clave: [valores.get(p) for p in periodos]
-                           for clave, valores in magnitudes.items()}
-                    for sexo, magnitudes in series.items()
-                },
-            }
-            fichero = f"{ambito['id']}.json"
-            (destino / fichero).write_text(json.dumps(contenido, ensure_ascii=False),
-                                          encoding="utf-8")
-            indice_bloque["ambitos"].append(
-                {"id": ambito["id"], "nombre": ambito["nombre"], "fichero": fichero})
-            print(f"    escrito data/{nombre_bloque}/{fichero}")
-
-        (destino / "index.json").write_text(
-            json.dumps(indice_bloque, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print(f"  {len(periodos)} periodos: {periodos[0]} … {periodos[-1]}")
+        por_ambito, procedencia, sin_serie = bloques.descarga_bloque(
+            nombre, bloque, POSPROCESOS.get(nombre))
+        procedencias[nombre] = procedencia
+        faltantes += sin_serie
+        bloques.escribe_bloque(nombre, bloque, por_ambito, ahora, RAIZ,
+                               fichas_derivadas(por_ambito, bloque))
 
     (CONFIG / "series-sociodemografia.json").write_text(
         json.dumps(procedencias, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

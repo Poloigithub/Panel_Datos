@@ -77,6 +77,20 @@ RANGOS = {
     "contratos_industria": (0, 3_000_000),
     "contratos_construccion": (0, 3_000_000),
     "contratos_servicios": (0, 3_000_000),
+    # vivienda
+    "compraventas": (0, 300_000),
+    "compraventas_nueva": (0, 300_000),
+    "compraventas_usada": (0, 300_000),
+    "compraventas_protegida": (0, 300_000),
+    "hipotecas": (0, 300_000),
+    "importe_hipotecas": (0, 50_000_000),
+    "hipoteca_media": (20_000, 600_000),
+    "ejecuciones": (0, 100_000),
+    "ipv": (30, 400),
+    "ipv_variacion": (-40, 40),
+    "ipva": (30, 400),
+    "ipva_variacion": (-40, 40),
+    "esfuerzo": (0.5, 20),
     # precios
     "ipc_general": (50, 200),
     "ipc_variacion": (-30, 60),
@@ -99,6 +113,19 @@ IDENTIDADES = [
      ("tasa_empleo", "tasa_actividad", "tasa_paro"),
      lambda te, ta, tp: abs(te - ta * (1 - tp / 100)),
      0.15),
+    # Toda vivienda comprada es nueva o de segunda mano: si esto deja de
+    # cuadrar, alguna de las tres series ha dejado de ser la que creemos.
+    ("compraventas = nueva + segunda mano",
+     ("compraventas", "compraventas_nueva", "compraventas_usada"),
+     lambda t, n, u: abs(t - (n + u)),
+     0.5),
+    # El INE publica el importe en miles de euros, pero la media se calcula
+    # eligiendo la escala que da una cifra plausible, así que aquí vale
+    # cualquiera de las dos: lo que se comprueba es que sea ese cociente.
+    ("hipoteca media = importe / número",
+     ("hipoteca_media", "importe_hipotecas", "hipotecas"),
+     lambda m, i, n: min(abs(m - i * 1000 / n), abs(m - i / n)) if n else 0.0,
+     0.5),
 ]
 
 

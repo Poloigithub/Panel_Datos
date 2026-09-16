@@ -60,7 +60,15 @@ class LecturaDePeriodos(unittest.TestCase):
         )
 
     def test_un_periodo_ilegible_no_rompe_la_ordenacion(self):
-        self.assertEqual(motor.orden_periodo("vete a saber"), (0, 0))
+        self.assertEqual(motor.orden_periodo("vete a saber"), (0, 0, 0))
+
+    def test_meses_y_trimestres_del_mismo_bloque_no_empatan(self):
+        """Un bloque puede mezclar frecuencias y el orden ha de ser estable."""
+        mezcla = ["2024M01", "2024T1", "2024", "2024S1"]
+        self.assertEqual(
+            sorted(mezcla, key=motor.orden_periodo),
+            ["2024", "2024S1", "2024T1", "2024M01"],
+        )
 
 
 class SegmentosDelNombre(unittest.TestCase):

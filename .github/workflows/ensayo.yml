@@ -1,0 +1,45 @@
+name: Ensayar un descargador
+
+# Ensayo de un descargador nuevo: el entorno de desarrollo no tiene salida
+# hacia el INE, así que la primera ejecución se hace aquí. A diferencia de la
+# actualización de verdad, esto commitea los datos ANTES de validarlos y deja
+# la salida del script en `sondeos/`, que es lo que permite ver por qué no ha
+# encontrado una serie. La validación se ejecuta al final: si falla, el run
+# sale en rojo con los datos ya commiteados para poder mirarlos.
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: 'Descargador dentro de scripts/'
+        required: true
+        default: 'descargar_vivienda.py'
+
+permissions:
+  contents: write
+
+jobs:
+  ensayar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Ejecutar el descargador
+        run: |
+          mkdir -p sondeos
+          set -o pipefail
+          python -u scripts/${{ inputs.script }} 2>&1 | tee sondeos/${{ inputs.script }}.log
+
+      - name: Commitear lo descargado
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/ config/ sondeos/
+          git diff --staged --quiet || git commit -m "Ensayo de ${{ inputs.script }} [skip ci]"
+          git push
+
+      - name: Validar lo descargado
+        run: python scripts/validar_datos.py

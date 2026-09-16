@@ -98,6 +98,19 @@
     return null;
   }
 
+  /* Un bloque puede mezclar frecuencias: las compraventas son mensuales, las
+     ejecuciones trimestrales y el precio del alquiler anual. El eje común de
+     la página los reúne todos, así que cada gráfica se queda con los periodos
+     en los que su indicador tiene dato y no con el calendario de los demás. */
+  function periodosDe(clave, periodos) {
+    var activos = ambitosActivos();
+    var series = activos.map(function (a) { return serie(a.id, clave, periodos); });
+    var propios = periodos.filter(function (_, i) {
+      return series.some(function (valores) { return valores[i] !== null; });
+    });
+    return propios.length ? propios : periodos;
+  }
+
   /* Dos ámbitos son comparables en una misma gráfica cuando sus magnitudes
      tienen el mismo orden: si España multiplica por diez a Castellón, la línea
      pequeña queda aplastada contra el eje y hay que separar los paneles. */
@@ -182,7 +195,7 @@
 
   /* ------------------------------------------------------------ gráficas */
 
-  function tarjeta(titulo, subtitulo) {
+  function tarjeta(titulo, subtitulo, nota) {
     var figura = document.createElement('figure');
     figura.className = 'tarjeta p-5 m-0';
 
@@ -196,6 +209,16 @@
     p.style.color = P.color('--tinta-tenue');
     p.textContent = subtitulo;
     pie.appendChild(p);
+    // Lo que hay que saber para no leer mal la cifra -que el INE no publique
+    // el índice por provincia, que la hipoteca media no sea el precio- va
+    // pegado a la gráfica, no en una nota al pie de la página.
+    if (nota) {
+      var aclaracion = document.createElement('p');
+      aclaracion.className = 'mt-1.5 text-xs leading-relaxed';
+      aclaracion.style.color = P.color('--tinta-suave');
+      aclaracion.textContent = nota;
+      pie.appendChild(aclaracion);
+    }
     figura.appendChild(pie);
 
     return figura;
@@ -256,21 +279,22 @@
         return serie(a.id, clave, periodos).some(function (v) { return v !== null; });
       });
       if (!conDatos.length) return;
+      var propios = periodosDe(clave, periodos);
 
-      if (escalasComparables(clave, periodos)) {
-        var figura = tarjeta(meta.titulo, unidadLegible(meta));
+      if (escalasComparables(clave, propios)) {
+        var figura = tarjeta(meta.titulo, unidadLegible(meta), meta.nota);
         var canvas = lienzo(figura, '280px', 'Evolución de ' + meta.titulo + ' por ámbito territorial');
         var series = conDatos.map(function (a) {
           return { etiqueta: a.etiqueta, color: P.color(a.variable),
-                   valores: serieRelativa(a.id, clave, periodos) };
+                   valores: serieRelativa(a.id, clave, propios) };
         });
         var leyenda = document.createElement('div');
         leyenda.className = 'mt-3 flex flex-wrap gap-x-4 gap-y-1.5 text-xs';
         figura.appendChild(leyenda);
         contenedor.appendChild(figura);
-        P.dibuja(canvas, clave, periodos, series, unidadDe(meta), decimalesDe(meta));
+        P.dibuja(canvas, clave, propios, series, unidadDe(meta), decimalesDe(meta));
         if (series.length > 1) P.pintaLeyenda(leyenda, series);
-        detallesTabla(figura, periodos, series, meta);
+        detallesTabla(figura, propios, series, meta);
         return;
       }
 
@@ -287,13 +311,13 @@
       envoltorio.appendChild(rejilla);
 
       conDatos.forEach(function (a) {
-        var figura = tarjeta(a.etiqueta, meta.titulo + ', ' + unidadLegible(meta));
+        var figura = tarjeta(a.etiqueta, meta.titulo + ', ' + unidadLegible(meta), meta.nota);
         var canvas = lienzo(figura, '220px', meta.titulo + ' en ' + a.etiqueta);
         var series = [{ etiqueta: a.etiqueta, color: P.color(a.variable),
-                        valores: serieRelativa(a.id, clave, periodos) }];
+                        valores: serieRelativa(a.id, clave, propios) }];
         rejilla.appendChild(figura);
-        P.dibuja(canvas, clave + '-' + a.id, periodos, series, unidadDe(meta), decimalesDe(meta));
-        detallesTabla(figura, periodos, series, meta);
+        P.dibuja(canvas, clave + '-' + a.id, propios, series, unidadDe(meta), decimalesDe(meta));
+        detallesTabla(figura, propios, series, meta);
       });
 
       contenedor.appendChild(envoltorio);

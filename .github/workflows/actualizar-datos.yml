@@ -30,6 +30,11 @@ jobs:
       - name: Descargar los bloques sociodemográficos
         run: python scripts/descargar_sociodemografia.py
 
+      # Después de los sociodemográficos: el esfuerzo de acceso a la vivienda
+      # se calcula contra la renta por hogar que escribe ese descargador.
+      - name: Descargar el bloque de vivienda
+        run: python scripts/descargar_vivienda.py
+
       - name: Descargar el paro registrado del SEPE
         run: python scripts/descargar_paro.py
 

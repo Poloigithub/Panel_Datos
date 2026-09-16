@@ -84,12 +84,18 @@ def etiqueta_periodo(dato: dict) -> str | None:
     return str(anyo)
 
 
-def orden_periodo(periodo: str) -> tuple[int, int]:
+# Un bloque puede reunir series de frecuencias distintas -las compraventas son
+# mensuales y el precio del alquiler anual-, y entonces «2024T1» y «2024M01»
+# empatarían. El tercer componente rompe el empate siempre igual.
+FRECUENCIAS = {"": 0, "S": 1, "T": 2, "M": 3}
+
+
+def orden_periodo(periodo: str) -> tuple[int, int, int]:
     coincidencia = PERIODO.match(periodo or "")
     if not coincidencia:
-        return (0, 0)
-    anyo, _, numero = coincidencia.groups()
-    return (int(anyo), int(numero) if numero else 0)
+        return (0, 0, 0)
+    anyo, frecuencia, numero = coincidencia.groups()
+    return (int(anyo), int(numero) if numero else 0, FRECUENCIAS[frecuencia or ""])
 
 
 _descargadas: dict[str, dict[str, float]] = {}
