@@ -152,6 +152,10 @@ BLOQUES = {
     "precios": {
         "titulo": "Precios",
         "operaciones": ["IPC"],
+        # El IPC arrastra tramos anteriores al enlace de la base actual, con
+        # valores en otra escala que no son comparables con los de hoy. La
+        # serie enlazada vigente arranca en 2002.
+        "desde": 2002,
         "indicadores": {
             "ipc_general": {
                 "titulo": "IPC, índice general", "unidad": "índice", "decimales": 2,
@@ -478,6 +482,15 @@ def main() -> int:
                             if nuevos:
                                 valores.update(nuevos)
                                 usados += procedencia
+
+                    desde = bloque.get("desde")
+                    if valores and desde:
+                        recortada = {p: v for p, v in valores.items()
+                                     if motor.orden_periodo(p)[0] >= desde}
+                        if len(recortada) != len(valores):
+                            print(f"      {etiqueta}: recortada a {len(recortada)} periodos "
+                                  f"desde {desde}")
+                        valores = recortada
 
                     if valores and not en_rango(valores, indicador, etiqueta):
                         valores, usados = {}, []
