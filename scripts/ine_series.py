@@ -162,8 +162,22 @@ def fusiona(candidatas: list[dict], etiqueta: str, tope: int = 12,
         print(f"      {etiqueta}: {len(candidatas)} candidatas, ninguna con datos")
         return {}, []
 
-    descargadas.sort(key=lambda t: (len(t[1]), max(orden_periodo(p) for p in t[1])), reverse=True)
-    base_codigo, fusionada = descargadas[0]
+    # De entre las que pueden ser la base, gana la que llega más lejos en el
+    # tiempo, y a igualdad de fecha la más larga. Antes mandaba la longitud, y
+    # eso fallaba al rebasar un índice: la serie descatalogada en la base vieja
+    # es más larga que la vigente, así que se publicaba una serie muerta.
+    #
+    # Pero no vale cualquiera: el INE estrena a veces una serie con dos
+    # trimestres mientras la histórica sigue por su cuenta, y entonces «la más
+    # reciente» sería esa. Sólo compiten las que tienen cuerpo suficiente
+    # -un cuarto de la más larga-, que es lo que distingue una serie nueva de
+    # verdad de un estreno testimonial.
+    mas_larga = max(len(valores) for _, valores in descargadas)
+    con_cuerpo = [d for d in descargadas if len(d[1]) >= mas_larga / 4] or descargadas
+    con_cuerpo.sort(key=lambda t: (max(orden_periodo(p) for p in t[1]), len(t[1])),
+                    reverse=True)
+    base_codigo, fusionada = con_cuerpo[0]
+    descargadas = con_cuerpo + [d for d in descargadas if d not in con_cuerpo]
     fusionada = dict(fusionada)
     usados = [base_codigo]
 

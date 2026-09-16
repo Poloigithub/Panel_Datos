@@ -204,3 +204,39 @@ class BusquedaPorSegmentos(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+class QuiénManda(unittest.TestCase):
+    """Cuál de las candidatas es la base de la serie fusionada.
+
+    Dos casos reales tiran en direcciones opuestas: al rebasar un índice, la
+    serie vieja es más larga pero está muerta; y a veces el INE estrena una
+    serie con dos trimestres mientras la histórica sigue publicándose aparte.
+    """
+
+    def setUp(self):
+        motor._descargadas.clear()
+
+    def tearDown(self):
+        motor._descargadas.clear()
+
+    def candidata(self, cod, nombre="Serie. Nacional."):
+        return {"COD": cod, "Nombre": nombre}
+
+    def test_una_serie_muerta_no_gana_por_ser_mas_larga(self):
+        """El caso de la fruta: la base vieja llega más atrás y acaba antes."""
+        motor._descargadas["VIEJA"] = {f"20{a:02d}M01": 50.0 + a for a in range(5, 26)}
+        motor._descargadas["VIVA"] = {f"20{a:02d}M01": 70.0 + a for a in range(10, 27)}
+        fusionada, usados = motor.fusiona(
+            [self.candidata("VIEJA"), self.candidata("VIVA")], "fruta")
+        self.assertEqual(usados[0], "VIVA")
+        self.assertEqual(max(fusionada, key=motor.orden_periodo), "2026M01")
+
+    def test_un_estreno_testimonial_no_desbanca_a_la_historica(self):
+        """Dos trimestres recientes no pueden tirar noventa por la borda."""
+        motor._descargadas["HISTORICA"] = {f"20{a:02d}T1": 100.0 + a for a in range(0, 25)}
+        motor._descargadas["ESTRENO"] = {"2026T1": 130.0, "2026T2": 131.0}
+        fusionada, usados = motor.fusiona(
+            [self.candidata("HISTORICA"), self.candidata("ESTRENO")], "parados")
+        self.assertEqual(usados[0], "HISTORICA")
+        self.assertGreater(len(fusionada), 20)
