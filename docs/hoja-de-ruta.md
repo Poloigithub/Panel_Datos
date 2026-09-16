@@ -186,27 +186,55 @@ equirectangular corregida por la latitud media basta para una provincia.
    significa nada. Comparando medias de doce meses los extremos bajan a ±34 %
    y el mapa enseña la tendencia en vez del azar.
 
-**Queda pendiente** la renta por municipio del Atlas, que llega hasta sección
-censal y daría un segundo mapa.
+**El cabo suelto, ya cerrado.** La renta por municipio del Atlas entró después,
+junto con la fase 4: el mapa tiene un cuarto indicador -renta neta media por
+persona- y la ficha de cada municipio muestra además la renta por hogar. Como
+el Atlas es anual y llega con dos años de retraso frente al paro mensual, el
+mapa enseña el último año publicado hasta el mes elegido y lo rotula con ese
+año, no con el mes.
 
 ---
 
-## Fase 4 · Vivienda
+## Fase 4 · Vivienda ✅ hecha
 
-**Qué hay disponible**, que no es lo mismo que lo que uno querría:
+**Qué hay disponible**, que no es lo mismo que lo que uno querría. El sondeo
+previo (`sondeos/vivienda.md`) lo dejó claro antes de escribir nada:
 
-- **Transacciones inmobiliarias** e **hipotecas** (INE): provinciales. ✔
-- **Precio del alquiler** (sistema estatal de referencia, MIVAU): municipal y
-  anual. ✔
-- **Índice de precios de vivienda** (INE): solo autonómico. ✘ para Castellón.
+- **Compraventas** (ETDP), **hipotecas** (HPT) y **ejecuciones hipotecarias**
+  (EH), del INE: provinciales. ✔
+- **Índice de precios de vivienda en alquiler** (IPVA, INE): anual y
+  provincial. ✔ No estaba en el plan; apareció en el sondeo.
+- **Índice de precios de vivienda** (IPV, INE): solo autonómico. ✘ para
+  Castellón, y la página lo dice en la propia gráfica.
+- **Precio del alquiler** (sistema estatal de referencia, MIVAU): ✘. Responde
+  403 a cualquier descarga automática, así que no entra. El alquiler se sigue
+  por el índice del INE, que dice cuánto sube, no cuánto cuesta.
 
-**Qué se hace.** Sección **Vivienda** con lo provincial y municipal, diciendo
-en la propia página que el precio de compraventa solo existe por comunidad
-autónoma. Cruce con la renta: esfuerzo de acceso a la vivienda, alquiler medio
-sobre renta media por hogar.
+**Resultado.** Sección **Vivienda** con once indicadores y dos cálculos
+propios: la hipoteca media -importe entre número de hipotecas- y los años de
+renta del hogar que suma, que es el cruce con el Atlas de renta que pedía el
+plan, hecho con las dos cifras en euros que sí existen por provincia. En junio
+de 2026 la hipoteca media es de 178.365 € en España, 145.251 € en la Comunitat
+y 114.556 € en Castellón; en 2023 equivalían a 3,7 · 3,13 · 2,51 años de renta
+neta del hogar.
 
-**Coste**: una sesión, más si el portal del MIVAU no da los datos en un
-formato estable.
+**Lo que costó.** Tres cosas, todas del mismo género: el INE nombra las series
+con más precisión de la que uno supone.
+
+1. *Las hipotecas mensuales llevan «mensual» en el nombre*, y sin esa palabra
+   ninguna de las búsquedas las encontraba. El descargador enseñó los
+   conjuntos de segmentos reales y se vio de un vistazo.
+2. *Las ejecuciones vienen por trimestres para España y la Comunitat pero sólo
+   por años para Castellón.* Comparar un trimestre con un año no significa
+   nada, así que se bajan todas al año.
+3. *El bloque mezcla frecuencias* -mensual, trimestral y anual en la misma
+   página-, de modo que cada gráfica se pinta sobre el calendario de su propio
+   indicador en vez de sobre el común del bloque.
+
+De paso, la maquinaria de bloques salió del descargador sociodemográfico a
+`scripts/bloques_ine.py`, que es lo que usan ahora los dos. La comprobación de
+que el cambio no alteraba nada fue rehacer los cuatro bloques ya publicados a
+partir de sus propios datos: ficheros idénticos.
 
 ---
 

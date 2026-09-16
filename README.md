@@ -1,8 +1,12 @@
 # Panel de datos
 
 Panel web de acceso a series estadísticas de fuentes oficiales, publicado en
-GitHub Pages. La primera sección cubre el mercado laboral (EPA del INE) en tres
-ámbitos: España, la Comunitat Valenciana y la provincia de Castellón.
+GitHub Pages. Siempre en tres ámbitos -España, la Comunitat Valenciana y la
+provincia de Castellón- y, cuando la fuente llega, por municipio.
+
+Secciones: mercado laboral (EPA), población, natalidad y mortalidad, precios,
+renta, vivienda, paro registrado y contratación (SEPE), y el mapa municipal de
+la provincia.
 
 ## Cómo funciona
 
@@ -90,14 +94,40 @@ python3 scripts/descargar_epa.py
 | `scripts/descargar_epa.py` | Descargador de la EPA |
 | `scripts/ine_api.py` | Cliente mínimo de la API del INE |
 | `scripts/ine_series.py` | Motor de resolución y fusión de series |
-| `scripts/descargar_sociodemografia.py` | Descargador de población, demografía y renta |
+| `scripts/bloques_ine.py` | Motor de bloques: de la declaración de indicadores a su JSON |
+| `scripts/descargar_sociodemografia.py` | Población, demografía, precios y renta |
+| `scripts/descargar_vivienda.py` | Compraventas, hipotecas, ejecuciones y precios de vivienda |
+| `scripts/descargar_paro.py` | Paro registrado y contratación del SEPE |
+| `scripts/descargar_municipios.py` | Población de los municipios de Castellón |
+| `scripts/descargar_renta_municipal.py` | Renta municipal del Atlas del INE |
+| `scripts/descargar_geometrias.py` | Contornos municipales de GISCO, simplificados |
 | `scripts/validar_datos.py` | Validación de los datos antes de publicarlos |
-| `tests/` | Pruebas del motor de series |
+| `assets/js/bloque.js` | Página genérica de un bloque, gobernada por su índice |
+| `assets/js/mapa.js` | Mapa coroplético, sin librería de cartografía |
+| `tests/` | Pruebas del motor de series y de los cálculos propios |
 | `docs/hoja-de-ruta.md` | Plan de ampliación del panel |
-| `data/epa/` | Series descargadas, en JSON |
+| `sondeos/` | Volcados de los sondeos de fuentes, previos a cada descargador |
+| `data/` | Series descargadas, en JSON, una carpeta por bloque |
+
+## Añadir una fuente nueva
+
+El entorno de desarrollo no tiene salida hacia el INE ni hacia el SEPE, así que
+el trabajo con una fuente nueva pasa por dos workflows manuales:
+
+1. **Sondear una fuente** (`sondear.yml`) ejecuta un script de sondeo y
+   commitea su volcado en `sondeos/`. Sirve para saber qué publica la fuente,
+   con qué detalle territorial y cómo se llaman sus series antes de escribir
+   nada.
+2. **Ensayar un descargador** (`ensayo.yml`) ejecuta un descargador y commitea
+   lo que baje *antes* de validarlo, dejando su salida en `sondeos/`. Es lo
+   que permite ver por qué no ha encontrado una serie. La actualización de
+   verdad hace lo contrario: valida primero y sólo commitea si todo cuadra.
 
 ## Fuente de los datos
 
-Instituto Nacional de Estadística, Encuesta de Población Activa (EPA), a través
-de su API pública (`servicios.ine.es/wstempus`). Los valores absolutos van en
-miles de personas y las tasas en porcentaje, tal y como los publica el INE.
+Instituto Nacional de Estadística (EPA, IPC, Atlas de renta, indicadores
+demográficos, vivienda) a través de su API pública
+(`servicios.ine.es/wstempus`); Servicio Público de Empleo Estatal (paro
+registrado y contratos) desde sus ficheros abiertos; y Eurostat/GISCO para los
+contornos municipales. Los valores absolutos de la EPA van en miles de
+personas y las tasas en porcentaje, tal y como los publica el INE.

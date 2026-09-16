@@ -39,6 +39,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f data/ config/ sondeos/
           git diff --staged --quiet || git commit -m "Ensayo de ${{ inputs.script }} [skip ci]"
+          # Un ensayo tarda minutos y la rama puede haber avanzado mientras
+          # tanto: rebasar antes de empujar evita perder lo descargado.
+          git pull --rebase origin ${{ github.ref_name }}
           git push
 
       - name: Validar lo descargado
