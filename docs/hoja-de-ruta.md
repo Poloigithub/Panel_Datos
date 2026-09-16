@@ -209,6 +209,14 @@ previo (`sondeos/vivienda.md`) lo dejó claro antes de escribir nada:
 - **Precio del alquiler** (sistema estatal de referencia, MIVAU): ✘. Responde
   403 a cualquier descarga automática, así que no entra. El alquiler se sigue
   por el índice del INE, que dice cuánto sube, no cuánto cuesta.
+- **Lanzamientos practicados** (CGPJ): trimestrales y provinciales. ✔ Entraron
+  después, a petición: son los desahucios ya ejecutados y los únicos que
+  separan los que vienen de una ejecución hipotecaria de los derivados de la
+  Ley de Arrendamientos Urbanos, es decir, alquileres impagados. Esa
+  distinción no existe en la estadística del INE, que sólo cuenta ejecuciones
+  hipotecarias, y el contraste es lo que hacía falta ver: en el primer
+  trimestre de 2026 el 65 % de los lanzamientos de España fueron por alquiler,
+  mientras que en Castellón la mitad de los 24 fueron por hipoteca.
 
 **Resultado.** Sección **Vivienda** con once indicadores y dos cálculos
 propios: la hipoteca media -importe entre número de hipotecas- y los años de
@@ -218,8 +226,8 @@ de 2026 la hipoteca media es de 178.365 € en España, 145.251 € en la Comuni
 y 114.556 € en Castellón; en 2023 equivalían a 3,7 · 3,13 · 2,51 años de renta
 neta del hogar.
 
-**Lo que costó.** Tres cosas, todas del mismo género: el INE nombra las series
-con más precisión de la que uno supone.
+**Lo que costó.** Cuatro cosas, tres del mismo género -el INE nombra las series
+con más precisión de la que uno supone- y una del CGPJ.
 
 1. *Las hipotecas mensuales llevan «mensual» en el nombre*, y sin esa palabra
    ninguna de las búsquedas las encontraba. El descargador enseñó los
@@ -230,6 +238,13 @@ con más precisión de la que uno supone.
 3. *El bloque mezcla frecuencias* -mensual, trimestral y anual en la misma
    página-, de modo que cada gráfica se pinta sobre el calendario de su propio
    indicador en vez de sobre el común del bloque.
+
+4. *El CGPJ no publica API sino hojas de cálculo*, con el trimestre en el
+   nombre del fichero -que cambia cada vez-, el nombre de la provincia en la
+   segunda columna y, debajo de la tabla, un segundo cuadro de variaciones con
+   las mismas provincias repetidas. Hizo falta escribir un lector de XLSX con
+   la biblioteca estándar, porque el panel no usa dependencias, y volcar las
+   hojas tal cual para ver su formato en vez de suponerlo.
 
 De paso, la maquinaria de bloques salió del descargador sociodemográfico a
 `scripts/bloques_ine.py`, que es lo que usan ahora los dos. La comprobación de

@@ -97,6 +97,8 @@ python3 scripts/descargar_epa.py
 | `scripts/bloques_ine.py` | Motor de bloques: de la declaración de indicadores a su JSON |
 | `scripts/descargar_sociodemografia.py` | Población, demografía, precios y renta |
 | `scripts/descargar_vivienda.py` | Compraventas, hipotecas, ejecuciones y precios de vivienda |
+| `scripts/cgpj_lanzamientos.py` | Lanzamientos del CGPJ: por hipoteca, por alquiler y otros |
+| `scripts/xlsx.py` | Lector de XLSX con la biblioteca estándar |
 | `scripts/descargar_paro.py` | Paro registrado y contratación del SEPE |
 | `scripts/descargar_municipios.py` | Población de los municipios de Castellón |
 | `scripts/descargar_renta_municipal.py` | Renta municipal del Atlas del INE |
@@ -128,6 +130,7 @@ el trabajo con una fuente nueva pasa por dos workflows manuales:
 Instituto Nacional de Estadística (EPA, IPC, Atlas de renta, indicadores
 demográficos, vivienda) a través de su API pública
 (`servicios.ine.es/wstempus`); Servicio Público de Empleo Estatal (paro
-registrado y contratos) desde sus ficheros abiertos; y Eurostat/GISCO para los
-contornos municipales. Los valores absolutos de la EPA van en miles de
+registrado y contratos) desde sus ficheros abiertos; Consejo General del Poder
+Judicial (lanzamientos practicados) desde sus hojas de cálculo; y
+Eurostat/GISCO para los contornos municipales. Los valores absolutos de la EPA van en miles de
 personas y las tasas en porcentaje, tal y como los publica el INE.
