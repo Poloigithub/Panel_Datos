@@ -6,10 +6,12 @@ reparte entre una cosa y otra son los **lanzamientos practicados**, que publica
 el Consejo General del Poder Judicial separando los derivados de la Ley
 Hipotecaria de los derivados de la Ley de Arrendamientos Urbanos.
 
-La primera versión de este sondeo miró el catálogo de datos.gob.es, que no
-tiene nada con ese nombre, y las portadas del CGPJ, de las que sólo leyó los
-primeros kilobytes. Esta rastrea el portal de estadística judicial dos niveles
-en busca de hojas de cálculo, que es como el CGPJ publica sus datos.
+Dos sondeos anteriores descartaron el catálogo de datos.gob.es -no tiene nada
+con ese nombre- y un rastreo a ciegas del portal del CGPJ, que se fue por
+secciones que no eran. Pero enseñó la puerta buena: el CGPJ mantiene una base
+de datos de estadística judicial en PC-Axis, que es formato máquina. Esta
+versión mira esa página y las de datos civiles enteras, y apunta todo enlace
+que huela a fichero, venga con la extensión que venga.
 """
 
 from __future__ import annotations
@@ -28,26 +30,32 @@ sys.path.insert(0, str(RAIZ / "scripts"))
 SALIDA = RAIZ / "sondeos"
 CABECERAS = {"User-Agent": "Panel_Datos/1.0 (+https://github.com/Poloigithub/Panel_Datos)"}
 
-SEMILLAS = [
-    "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/",
-    "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/Estadistica-por-temas/",
-    "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/Datos-abiertos/",
+PAGINAS = [
+    ("PC-Axis", "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
+                "Base-de-datos-de-la-estadistica-judicial--PC-AXIS-/"),
+    ("Datos civiles", "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
+                      "Estadistica-por-temas/Datos-penales--civiles-y-laborales/"),
+    ("Justicia dato a dato", "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
+                             "Estudios-e-Informes/Justicia-Dato-a-Dato/Justicia-Dato-a-Dato"),
+    ("Buscador del sitio", "https://www.poderjudicial.es/search/indexAN.jsp?"
+                           "org=cgpj&tem=&loc=&query=lanzamientos"),
+    # El portal estadístico de la Generalitat republica datos del CGPJ para la
+    # Comunitat y sus provincias, y su pxweb sí es formato máquina.
+    ("PEGV", "https://pegv.gva.es/es/temas/sociedad/justicia"),
 ]
 
-# Qué se busca en el texto de un enlace para decidir si merece la pena seguirlo.
-INTERESANTES = ("lanzamiento", "crisis", "desahucio", "hipotecari", "arrendamiento",
-                "civil", "dato", "abierto", "efecto")
-FICHEROS = (".xlsx", ".xls", ".csv", ".zip", ".px")
-TOPE_PETICIONES = 30
-
+# Un fichero de datos puede colgar de cualquier ruta; lo que lo delata es la
+# extensión o el almacén de ficheros del CGPJ, que es /stfls/.
+FICHERO = re.compile(r'(?:href|src)="([^"]*(?:\.xlsx|\.xls|\.csv|\.zip|\.px|/stfls/)[^"]*)"', re.I)
 ENLACE = re.compile(r'<a\b[^>]*href="([^"]+)"[^>]*>(.*?)</a>', re.I | re.S)
 ETIQUETAS = re.compile(r"<[^>]+>")
+CLAVES = ("lanzamiento", "crisis", "hipotecari", "arrendamiento", "desahucio", "efecto")
 
 
-def descarga(url: str, limite: int = 600_000):
+def descarga(url: str, limite: int = 1_500_000):
     try:
         peticion = urllib.request.Request(url, headers=CABECERAS)
-        with urllib.request.urlopen(peticion, timeout=90) as respuesta:
+        with urllib.request.urlopen(peticion, timeout=120) as respuesta:
             bruto = respuesta.read(limite)
             tipo = respuesta.headers.get("Content-Type", "?")
             for codificacion in ("utf-8", "latin-1"):
@@ -62,67 +70,66 @@ def descarga(url: str, limite: int = 600_000):
         return 0, "-", f"{type(exc).__name__}: {exc}"
 
 
-def enlaces_de(base: str, cuerpo: str) -> list[tuple[str, str]]:
-    encontrados = []
-    for href, texto in ENLACE.findall(cuerpo):
-        limpio = html.unescape(ETIQUETAS.sub(" ", texto))
-        limpio = " ".join(limpio.split())
-        encontrados.append((urllib.parse.urljoin(base, html.unescape(href)), limpio))
-    return encontrados
+def texto_de(fragmento: str) -> str:
+    return " ".join(html.unescape(ETIQUETAS.sub(" ", fragmento)).split())
 
 
 def main() -> int:
     SALIDA.mkdir(parents=True, exist_ok=True)
     lineas = ["# Sondeo de lanzamientos (hipoteca y alquiler)", "",
-              "Rastreo del portal de estadística judicial del CGPJ en busca de los",
-              "ficheros de lanzamientos practicados, que separan los derivados de la Ley",
-              "Hipotecaria de los de la Ley de Arrendamientos Urbanos.", ""]
+              "Los lanzamientos practicados los publica el CGPJ separando los de la Ley",
+              "Hipotecaria de los de la Ley de Arrendamientos Urbanos. Aquí se busca en",
+              "qué formato y con qué detalle territorial.", ""]
 
-    por_visitar = [(u, "semilla", 0) for u in SEMILLAS]
-    vistos: set[str] = set()
-    ficheros: list[tuple[str, str, str]] = []
-    peticiones = 0
+    candidatos: list[str] = []
 
-    while por_visitar and peticiones < TOPE_PETICIONES:
-        url, etiqueta, nivel = por_visitar.pop(0)
-        if url in vistos:
-            continue
-        vistos.add(url)
-        peticiones += 1
+    for nombre, url in PAGINAS:
+        print(f"· {nombre}")
         codigo, tipo, cuerpo = descarga(url)
-        print(f"  [{peticiones}] {codigo} {url}")
-        lineas.append(f"- `{codigo}` nivel {nivel} · **{etiqueta}** · {url}")
-        if codigo != 200 or "html" not in tipo:
+        lineas += [f"## {nombre}", f"- `{codigo}` · {tipo} · {url}",
+                   f"- {len(cuerpo)} caracteres"]
+        if codigo != 200 or not cuerpo:
+            lineas += [f"- {cuerpo[:200]}", ""]
             continue
 
-        for destino, texto in enlaces_de(url, cuerpo):
-            bajo = (destino + " " + texto).lower()
-            if destino.lower().endswith(FICHEROS):
-                if destino not in [f[0] for f in ficheros]:
-                    ficheros.append((destino, texto, url))
-                continue
-            if nivel >= 1 or "poderjudicial.es" not in destino:
-                continue
-            if any(p in bajo for p in INTERESANTES):
-                por_visitar.append((destino, texto[:60], nivel + 1))
+        ficheros = {urllib.parse.urljoin(url, html.unescape(h)) for h in FICHERO.findall(cuerpo)}
+        lineas.append(f"- {len(ficheros)} enlaces a fichero de datos")
+        for destino in sorted(ficheros)[:25]:
+            lineas.append(f"    - {destino}")
+        candidatos += list(ficheros)
 
-    lineas += ["", f"## {len(ficheros)} ficheros descargables encontrados", ""]
-    for destino, texto, desde in ficheros:
-        lineas.append(f"- **{texto or '(sin texto)'}**")
-        lineas.append(f"    - {destino}")
-        lineas.append(f"    - enlazado desde {desde}")
+        # Enlaces cuyo texto menciona lo que se busca, sea cual sea su destino.
+        interesantes = [(urllib.parse.urljoin(url, html.unescape(href)), texto_de(texto))
+                        for href, texto in ENLACE.findall(cuerpo)
+                        if any(c in (href + texto).lower() for c in CLAVES)]
+        lineas.append(f"- {len(interesantes)} enlaces que mencionan lanzamientos o afines")
+        for destino, texto in interesantes[:20]:
+            lineas.append(f"    - **{texto[:80] or '(sin texto)'}** → {destino}")
+        candidatos += [d for d, _ in interesantes]
+        lineas.append("")
 
-    interesantes = [f for f in ficheros
-                    if any(p in (f[0] + " " + f[1]).lower()
-                           for p in ("lanzamiento", "crisis", "hipotecari", "arrendamiento"))]
-    lineas += ["", f"## De ésos, {len(interesantes)} suenan a lanzamientos", ""]
-    for destino, texto, _ in interesantes:
-        codigo, tipo, _ = descarga(destino, 2000)
-        lineas.append(f"- `{codigo}` {tipo} · {texto} · {destino}")
+    # Segundo nivel: se abre lo que ha salido, para ver si lleva a un fichero.
+    lineas += ["## Qué hay detrás de los candidatos", ""]
+    vistos: set[str] = set()
+    for destino in candidatos:
+        if destino in vistos or len(vistos) >= 12:
+            continue
+        vistos.add(destino)
+        codigo, tipo, cuerpo = descarga(destino, 400_000)
+        lineas.append(f"### `{codigo}` {tipo}")
+        lineas.append(f"- {destino}")
+        if codigo == 200 and "html" in tipo:
+            ficheros = {urllib.parse.urljoin(destino, html.unescape(h))
+                        for h in FICHERO.findall(cuerpo)}
+            lineas.append(f"- {len(ficheros)} ficheros de datos dentro")
+            for f in sorted(ficheros)[:15]:
+                lineas.append(f"    - {f}")
+        elif codigo == 200:
+            lineas.append(f"- descarga directa de {len(cuerpo)} caracteres")
+        lineas.append("")
 
     (SALIDA / "lanzamientos.md").write_text("\n".join(lineas) + "\n", encoding="utf-8")
-    print(f"escrito sondeos/lanzamientos.md ({len(lineas)} líneas, "
-          f"{peticiones} peticiones, {len(ficheros)} ficheros)")
+    print(f"escrito sondeos/lanzamientos.md ({len(lineas)} líneas)")
     return 0
 
 
