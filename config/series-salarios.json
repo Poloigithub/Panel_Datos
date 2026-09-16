@@ -1,0 +1,97 @@
+{
+  "espana": {
+    "ambos": {
+      "renta_salario": [
+        "ADRH10551441"
+      ],
+      "renta_pensiones": [
+        "ADRH10551440"
+      ],
+      "renta_desempleo": [
+        "ADRH10551439"
+      ],
+      "renta_otras_prestaciones": [
+        "ADRH10551438"
+      ],
+      "brecha_salarial": [
+        "EAES2686"
+      ],
+      "desigualdad_salarial": [
+        "EAES2690"
+      ],
+      "gini_salarial": [
+        "EAES2689"
+      ]
+    },
+    "hombres": {
+      "salario_bruto": [
+        "EAES33740"
+      ],
+      "salario_bruto_real": [
+        "deflactado con el IPC medio anual, base 2025"
+      ]
+    },
+    "mujeres": {
+      "salario_bruto": [
+        "EAES33816"
+      ],
+      "salario_bruto_real": [
+        "deflactado con el IPC medio anual, base 2025"
+      ]
+    }
+  },
+  "comunitat-valenciana": {
+    "ambos": {
+      "renta_salario": [
+        "ADRH10551391"
+      ],
+      "renta_pensiones": [
+        "ADRH10551390"
+      ],
+      "renta_desempleo": [
+        "ADRH10551389"
+      ],
+      "renta_otras_prestaciones": [
+        "ADRH10551388"
+      ],
+      "salario_bruto": [
+        "EAES33852"
+      ],
+      "salario_bruto_real": [
+        "deflactado con el IPC medio anual, base 2025"
+      ]
+    },
+    "hombres": {
+      "salario_bruto": [
+        "EAES33700"
+      ],
+      "salario_bruto_real": [
+        "deflactado con el IPC medio anual, base 2025"
+      ]
+    },
+    "mujeres": {
+      "salario_bruto": [
+        "EAES33776"
+      ],
+      "salario_bruto_real": [
+        "deflactado con el IPC medio anual, base 2025"
+      ]
+    }
+  },
+  "castellon": {
+    "ambos": {
+      "renta_salario": [
+        "ADRH10551166"
+      ],
+      "renta_pensiones": [
+        "ADRH10551165"
+      ],
+      "renta_desempleo": [
+        "ADRH10551164"
+      ],
+      "renta_otras_prestaciones": [
+        "ADRH10551163"
+      ]
+    }
+  }
+}

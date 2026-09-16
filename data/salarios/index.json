@@ -1,0 +1,106 @@
+{
+  "actualizado": "2026-09-16T15:00:43+00:00",
+  "titulo": "Salarios y rentas del trabajo",
+  "ultimo_periodo": "2023",
+  "primer_periodo": "2015",
+  "indicadores": {
+    "renta_salario": {
+      "titulo": "Renta que viene del salario",
+      "unidad": "%",
+      "unidad_texto": "porcentaje de la renta bruta del territorio",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "Del Atlas de renta, que sí llega a provincia. Dice qué parte de lo que entra en los hogares viene del trabajo, no cuánto se cobra.",
+      "sobre_total": null
+    },
+    "renta_pensiones": {
+      "titulo": "Renta que viene de pensiones",
+      "unidad": "%",
+      "unidad_texto": "porcentaje de la renta bruta del territorio",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
+    },
+    "renta_desempleo": {
+      "titulo": "Renta que viene de prestaciones por desempleo",
+      "unidad": "%",
+      "unidad_texto": "porcentaje de la renta bruta del territorio",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
+    },
+    "renta_otras_prestaciones": {
+      "titulo": "Renta que viene de otras prestaciones",
+      "unidad": "%",
+      "unidad_texto": "porcentaje de la renta bruta del territorio",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
+    },
+    "salario_bruto": {
+      "titulo": "Salario bruto anual",
+      "unidad": "euros",
+      "unidad_texto": "euros brutos al año por trabajador",
+      "decimales": 0,
+      "por_sexo": true,
+      "nota": "El INE no publica esta encuesta por provincia: sólo por comunidad autónoma y para el conjunto de España.",
+      "sobre_total": null
+    },
+    "brecha_salarial": {
+      "titulo": "Brecha salarial entre mujeres y hombres",
+      "unidad": "%",
+      "unidad_texto": "cuánto menos cobra una mujer por cada 100 € de un hombre",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "El INE no publica esta encuesta por provincia: sólo por comunidad autónoma y para el conjunto de España.",
+      "sobre_total": null
+    },
+    "desigualdad_salarial": {
+      "titulo": "Distancia entre los salarios altos y los bajos",
+      "unidad": "ratio",
+      "unidad_texto": "veces que la novena decila de la ganancia por hora supera a la primera",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "El INE no publica esta encuesta por provincia: sólo por comunidad autónoma y para el conjunto de España.",
+      "sobre_total": null
+    },
+    "gini_salarial": {
+      "titulo": "Índice de Gini de los salarios",
+      "unidad": "índice",
+      "unidad_texto": "a mayor valor, salarios más desiguales",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "El INE no publica esta encuesta por provincia: sólo por comunidad autónoma y para el conjunto de España.",
+      "sobre_total": null
+    },
+    "salario_bruto_real": {
+      "titulo": "Salario bruto anual (euros constantes)",
+      "unidad": "euros",
+      "decimales": 0,
+      "unidad_texto": "euros del último año disponible, descontada la inflación",
+      "por_sexo": true,
+      "nota": "El INE no publica esta encuesta por provincia: sólo por comunidad autónoma y para el conjunto de España.",
+      "nominal": "salario_bruto"
+    }
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ]
+}
