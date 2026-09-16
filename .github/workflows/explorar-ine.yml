@@ -1,0 +1,28 @@
+name: Explorar catálogo del INE
+
+# Diagnóstico manual: vuelca a data/_catalogo/ lo que ofrece la API del INE,
+# para escribir los descargadores con identificadores reales.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  explorar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Volcar el catálogo
+        run: python scripts/explorar_ipc.py
+      - name: Commitear el volcado
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/_catalogo/
+          git diff --staged --quiet || git commit -m "Volcado del catálogo del IPC [skip ci]"
+          git push
