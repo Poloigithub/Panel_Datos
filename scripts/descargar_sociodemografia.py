@@ -184,17 +184,6 @@ BLOQUES = {
                 ],
                 "por_sexo": False,
             },
-            "ipc_vivienda": {
-                "titulo": "Vivienda, agua y energía", "unidad": "%", "decimales": 2,
-                "unidad_texto": "variación interanual del grupo",
-                "rango": (-40, 80),
-                "operacion": "IPC",
-                "busquedas": [
-                    {"vivienda, agua, electricidad, gas y otros combustibles", "variacion anual"},
-                    {"vivienda", "variacion anual"},
-                ],
-                "por_sexo": False,
-            },
             "ipc_transporte": {
                 "titulo": "Transporte", "unidad": "%", "decimales": 2,
                 "unidad_texto": "variación interanual del grupo",
@@ -346,8 +335,9 @@ def filtro_de_rango(indicador):
     minimo, maximo = rango
 
     def acepta(valores: dict) -> bool:
-        muestra = [v for _, v in sorted(valores.items())][-6:]
-        return all(minimo <= v <= maximo for v in muestra)
+        # Toda la serie, no sólo la cola: el índice de España terminaba en
+        # valores correctos y arrancaba en otra escala.
+        return all(minimo <= v <= maximo for v in valores.values())
 
     return acepta
 

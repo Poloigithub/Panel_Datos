@@ -62,7 +62,6 @@ RANGOS = {
     "ipc_general": (50, 200),
     "ipc_variacion": (-30, 60),
     "ipc_alimentos": (-30, 60),
-    "ipc_vivienda": (-40, 80),
     "ipc_transporte": (-40, 60),
 }
 
