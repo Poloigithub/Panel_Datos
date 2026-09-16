@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T13:50:48+00:00",
+  "actualizado": "2026-09-16T13:57:40+00:00",
   "titulo": "Vivienda",
   "ultimo_periodo": "2026M06",
   "primer_periodo": "2003M01",
@@ -118,6 +118,37 @@
       "unidad_texto": "años de renta neta del hogar que suma la hipoteca media",
       "por_sexo": false,
       "nota": "Media anual de la hipoteca media dividida entre la renta neta media por hogar del Atlas del INE. Mide el endeudamiento de quien compra, no el precio de la vivienda."
+    },
+    "lanzamientos": {
+      "titulo": "Lanzamientos practicados",
+      "unidad": "lanzamientos",
+      "decimales": 0,
+      "unidad_texto": "desahucios ejecutados en el trimestre",
+      "por_sexo": false,
+      "nota": "Cuenta desahucios ejecutados, no procedimientos abiertos. Son los practicados por los juzgados de primera instancia, que son los completos; el CGPJ advierte de que no deben sumarse con los de los servicios comunes."
+    },
+    "lanzamientos_hipoteca": {
+      "titulo": "Lanzamientos por ejecución hipotecaria",
+      "unidad": "lanzamientos",
+      "decimales": 0,
+      "sobre_total": "lanzamientos",
+      "por_sexo": false
+    },
+    "lanzamientos_alquiler": {
+      "titulo": "Lanzamientos por impago de alquiler",
+      "unidad": "lanzamientos",
+      "decimales": 0,
+      "sobre_total": "lanzamientos",
+      "por_sexo": false,
+      "nota": "Derivados de procedimientos de la Ley de Arrendamientos Urbanos, que en la práctica son alquileres impagados."
+    },
+    "lanzamientos_otros": {
+      "titulo": "Lanzamientos por otras causas",
+      "unidad": "lanzamientos",
+      "decimales": 0,
+      "sobre_total": "lanzamientos",
+      "por_sexo": false,
+      "nota": "Laudos arbitrales, procesos de familia y demás: ni hipoteca ni alquiler."
     }
   },
   "ambitos": [

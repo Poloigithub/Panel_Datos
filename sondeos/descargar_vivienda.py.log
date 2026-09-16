@@ -62,10 +62,18 @@
       esfuerzo: 9 periodos, 2023 = 2.51 años de renta del hogar
   · Lanzamientos (CGPJ)
     fichero del CGPJ: Series - Efecto de la crisis en los organos judiciales por provincias 1T-2026_revisado.xlsx
-    ! sólo 0 de las 3 provincias valencianas en «Lanzamientos pract. Total prov»
-    ! sólo 0 de las 3 provincias valencianas en «Lanzamientos E.hipotecaria prov»
-    ! sólo 0 de las 3 provincias valencianas en «Lanzamientos L.A.U. prov»
-    ! sólo 0 de las 3 provincias valencianas en «Lanzamientos. Otros prov»
+      espana/lanzamientos: 53 trimestres, 2026T1 = 4,005
+      espana/lanzamientos_hipoteca: 53 trimestres, 2026T1 = 971
+      espana/lanzamientos_alquiler: 53 trimestres, 2026T1 = 2,600
+      espana/lanzamientos_otros: 53 trimestres, 2026T1 = 434
+      comunitat-valenciana/lanzamientos: 53 trimestres, 2026T1 = 741
+      comunitat-valenciana/lanzamientos_hipoteca: 53 trimestres, 2026T1 = 158
+      comunitat-valenciana/lanzamientos_alquiler: 53 trimestres, 2026T1 = 513
+      comunitat-valenciana/lanzamientos_otros: 53 trimestres, 2026T1 = 70
+      castellon/lanzamientos: 53 trimestres, 2026T1 = 24
+      castellon/lanzamientos_hipoteca: 53 trimestres, 2026T1 = 12
+      castellon/lanzamientos_alquiler: 53 trimestres, 2026T1 = 11
+      castellon/lanzamientos_otros: 53 trimestres, 2026T1 = 1
     escrito data/vivienda/espana.json
     escrito data/vivienda/comunitat-valenciana.json
     escrito data/vivienda/castellon.json
