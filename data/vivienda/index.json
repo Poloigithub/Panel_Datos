@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-16T13:04:54+00:00",
+  "actualizado": "2026-09-16T13:08:30+00:00",
   "titulo": "Vivienda",
   "ultimo_periodo": "2026M06",
-  "primer_periodo": "2007T1",
+  "primer_periodo": "2003M01",
   "indicadores": {
     "compraventas": {
       "titulo": "Compraventas de vivienda",
@@ -40,10 +40,28 @@
       "nota": null,
       "sobre_total": "compraventas"
     },
+    "hipotecas": {
+      "titulo": "Hipotecas sobre viviendas",
+      "unidad": "hipotecas",
+      "unidad_texto": "hipotecas constituidas en el mes",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
+    },
+    "importe_hipotecas": {
+      "titulo": "Importe de las hipotecas sobre viviendas",
+      "unidad": "miles de euros",
+      "unidad_texto": "miles de euros prestados en el mes",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
+    },
     "ejecuciones": {
       "titulo": "Ejecuciones hipotecarias sobre viviendas",
       "unidad": "ejecuciones",
-      "unidad_texto": "ejecuciones iniciadas en el trimestre",
+      "unidad_texto": "ejecuciones iniciadas en el año",
       "decimales": 0,
       "por_sexo": false,
       "nota": null,
@@ -84,6 +102,22 @@
       "por_sexo": false,
       "nota": null,
       "sobre_total": null
+    },
+    "hipoteca_media": {
+      "titulo": "Hipoteca media sobre vivienda",
+      "unidad": "euros",
+      "decimales": 0,
+      "unidad_texto": "euros prestados por hipoteca",
+      "por_sexo": false,
+      "nota": "Importe total entre número de hipotecas del mes. No es el precio de la vivienda: es lo que se pide prestado."
+    },
+    "esfuerzo": {
+      "titulo": "Hipoteca media en años de renta del hogar",
+      "unidad": "años",
+      "decimales": 2,
+      "unidad_texto": "años de renta neta del hogar que suma la hipoteca media",
+      "por_sexo": false,
+      "nota": "Media anual de la hipoteca media dividida entre la renta neta media por hogar del Atlas del INE. Mide el endeudamiento de quien compra, no el precio de la vivienda."
     }
   },
   "ambitos": [

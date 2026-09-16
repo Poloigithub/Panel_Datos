@@ -13,8 +13,15 @@
       "compraventas_protegida": [
         "ETDP1822"
       ],
+      "hipotecas": [
+        "HPT34618"
+      ],
+      "importe_hipotecas": [
+        "HPT34565"
+      ],
       "ejecuciones": [
-        "EH97"
+        "EH97",
+        "sumado por años"
       ],
       "ipv": [
         "IPV1209"
@@ -27,6 +34,12 @@
       ],
       "ipva_variacion": [
         "IPVA5016"
+      ],
+      "hipoteca_media": [
+        "derivado:importe_hipotecas/hipotecas (miles de euros)"
+      ],
+      "esfuerzo": [
+        "derivado:hipoteca_media anual / renta_hogar"
       ]
     }
   },
@@ -44,8 +57,15 @@
       "compraventas_protegida": [
         "ETDP1772"
       ],
+      "hipotecas": [
+        "HPT62863"
+      ],
+      "importe_hipotecas": [
+        "HPT62862"
+      ],
       "ejecuciones": [
-        "EH42"
+        "EH42",
+        "sumado por años"
       ],
       "ipv": [
         "IPV1392"
@@ -58,6 +78,12 @@
       ],
       "ipva_variacion": [
         "IPVA4986"
+      ],
+      "hipoteca_media": [
+        "derivado:importe_hipotecas/hipotecas (miles de euros)"
+      ],
+      "esfuerzo": [
+        "derivado:hipoteca_media anual / renta_hogar"
       ]
     }
   },
@@ -75,6 +101,12 @@
       "compraventas_protegida": [
         "ETDP1562"
       ],
+      "hipotecas": [
+        "HPT34603"
+      ],
+      "importe_hipotecas": [
+        "HPT34550"
+      ],
       "ejecuciones": [
         "EH567"
       ],
@@ -83,6 +115,12 @@
       ],
       "ipva_variacion": [
         "IPVA5490"
+      ],
+      "hipoteca_media": [
+        "derivado:importe_hipotecas/hipotecas (miles de euros)"
+      ],
+      "esfuerzo": [
+        "derivado:hipoteca_media anual / renta_hogar"
       ]
     }
   }
