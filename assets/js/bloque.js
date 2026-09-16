@@ -234,7 +234,7 @@
   function unidadLegible(meta) {
     if (meta.sobre_total) {
       var total = indice.indicadores[meta.sobre_total];
-      return 'porcentaje sobre el ' + (total ? total.titulo.toLowerCase() : 'total');
+      return 'porcentaje del total' + (total ? ' de ' + total.titulo.toLowerCase() : '');
     }
     if (meta.unidad_texto) return meta.unidad_texto;
     if (meta.unidad === '%') return 'porcentaje';

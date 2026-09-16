@@ -92,7 +92,7 @@ en un ámbito de tres y con serie corta.
 
 ---
 
-## Fase 2 · Paro registrado y afiliación
+## Fase 2 · Paro registrado y contratación ✅ hecha
 
 **Por qué.** Rompe de golpe los dos límites del panel actual: es **mensual**
 en vez de trimestral y llega a **municipio**. Poder ver el paro registrado en
@@ -111,13 +111,35 @@ puede contar.
    edad y sector, y comparación con el paro de la EPA (miden cosas distintas y
    la página debe decirlo).
 
-**Hecho cuando** el paro registrado provincial cuadra con la nota de prensa
-mensual del SEPE y la serie municipal carga sin penalizar la página.
+**Resultado.** Dos secciones nuevas, mensuales desde 2006 (238 meses):
 
-**Coste**: dos sesiones, la más cara del plan. **Riesgo alto**: los ficheros
-del SEPE cambian de formato entre años; hay que normalizar a un contrato
-propio y no depender de la posición de las columnas. Conviene fijar el
-contrato de datos antes de escribir el parser.
+- **Paro registrado**, con desglose por sexo, tramo de edad y sector.
+- **Contratación**, con el reparto entre indefinidos, temporales y convertidos.
+
+Los ficheros del SEPE resultaron mucho mejores de lo previsto: un CSV por año
+y estadística con todos los municipios de España, y la misma forma en los dos,
+así que los lee el mismo código parametrizado. Las cifras cuadran con las
+oficiales: máximo histórico en febrero de 2013 (5.040.222 parados) y pico de
+la pandemia en abril de 2020 (3.831.203). Los 135 municipios de Castellón
+suman exactamente el total provincial.
+
+**La afiliación se queda fuera**: no se publica por municipio en datos
+abiertos; sus conjuntos llegan a provincia y actividad. En su lugar entró la
+contratación, que sí es municipal y da la temporalidad que la EPA no ofrece
+para Castellón.
+
+**Dos decisiones que marcaron el resultado.** El secreto estadístico del SEPE
+(los valores menores de cinco se publican como «<5») impide sumar los
+desgloses: no son ceros, así que se descartan y quedan contados, y una
+comprobación vigila que la diferencia con el total no pase del 5 %. Y los
+desgloses se presentan como peso sobre el total en vez de en valores
+absolutos: comparar 20.000 parados en servicios de Castellón con 1,6 millones
+en España no dice nada, y así la página pasó de 27 paneles repetidos a 11
+gráficas legibles.
+
+**Queda pendiente** la parte municipal en la web: el dato ya está publicado
+(`municipios-castellon.json`, 135 municipios × 238 meses), pero su
+visualización es el mapa de la fase 3.
 
 ---
 
