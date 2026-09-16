@@ -122,6 +122,10 @@ RANGOS = {
     "hortalizas": (30, 400),
     "patatas": (30, 400),
     "cafe": (30, 400),
+    "azucar": (30, 400),
+    "preparados": (30, 400),
+    "agua": (30, 400),
+    "restaurantes": (30, 400),
     # precios
     "ipc_general": (50, 200),
     "ipc_variacion": (-30, 60),

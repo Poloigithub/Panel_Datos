@@ -56,12 +56,29 @@ PRODUCTOS = [
      {"legumbres y hortalizas frescas"}, False),
     ("patatas", "Patatas y sus preparados", {"patatas y sus preparados"}, False),
     ("cafe", "Café, cacao e infusiones", {"cafe", "cacao e infusiones"}, False),
+    ("azucar", "Azúcar, chocolate y confitería",
+     {"azucar", "chocolate y confiteria"}, False),
+    ("preparados", "Alimentos preparados", {"alimentos preparados"}, False),
+    ("agua", "Agua mineral", {"agua mineral"}, False),
+    # Comer fuera no es la cesta, pero es la otra mitad de lo que se gasta en
+    # comer, y es de lo poco de esta página que sí llega a Castellón.
+    ("restaurantes", "Comer fuera: restaurantes y bares",
+     {"restaurantes y bares"}, True),
 ]
 
 # Alguna categoría cambió de nombre al rebasar el índice, así que hay que
 # probar varias formulaciones: la fruta es «frescas o refrigeradas» en la base
 # nueva y «frescas» en la anterior.
 ALTERNATIVAS = {
+    "azucar": [{"azucar", "chocolate y confiteria"},
+               {"azucar", "confiteria y helados"},
+               {"azucar de cana y azucar de remolacha"}],
+    "preparados": [{"alimentos preparados"},
+                   {"alimentos preparados y otros productos alimenticios"}],
+    "agua": [{"agua mineral"}, {"agua mineral o de manantial"},
+             {"agua mineral", "refrescos y zumos"}],
+    "restaurantes": [{"restaurantes y bares"}, {"restaurantes, bares y cafeterias"},
+                     {"bares y cafeterias"}, {"cafes y restaurantes"}],
     "frutas": [{"frutas"}, {"frutas frescas o refrigeradas"}, {"frutas frescas"}],
     "hortalizas": [{"legumbres y hortalizas frescas"},
                    {"legumbres y hortalizas frescas o refrigeradas"}],
