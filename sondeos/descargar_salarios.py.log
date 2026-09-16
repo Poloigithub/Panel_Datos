@@ -2,29 +2,32 @@
 === Salarios y rentas del trabajo ===
   · España
       (ADRH: 188 series)
-      (EAES: 10000 series)
+      EAES: 10000 series es el tope del INE; acotando a datos base quedan 7627
+      (EAES: 7627 series)
       (ETCL: 7479 series)
       renta_salario/ambos: 3 periodos (ADRH10551441)
       renta_pensiones/ambos: 3 periodos (ADRH10551440)
       renta_desempleo/ambos: 3 periodos (ADRH10551439)
       renta_otras_prestaciones/ambos: 3 periodos (ADRH10551438)
       sin serie para salario_bruto/ambos; lo más parecido:
-        (3 coinciden) ['(incluidas avicolas', 'ambos sexos', 'apicolas y similares)', 'componente del salario bruto anual', 'salario bruto', 'total nacional', 'trabajadores cualificados en actividades ganaderas']
-        (3 coinciden) ['componente del salario bruto anual', 'excepto seguridad social obligatoria', 'mujeres', 'reaseguros y fondos de pensiones', 'salario bruto', 'seguros', 'total nacional']
-        (3 coinciden) ['actividades deportivas', 'componente del salario bruto anual', 'mujeres', 'recreativas y de entretenimiento', 'salario bruto', 'total nacional']
-        (3 coinciden) ['actividades de juegos de azar y apuestas', 'ambos sexos', 'componente del salario bruto anual', 'salario bruto', 'total nacional']
-      salario_bruto/hombres: 2 periodos (EAES33740)
-      salario_bruto/mujeres: 2 periodos (EAES33816)
+        (1 coinciden) ['dato base', 'mediana', 'mujeres', 'servicios a edificios y actividades de jardineria', 'total nacional']
+        (1 coinciden) ['dato base', 'hombres', 'ocupaciones militares', 'percentil 90', 'total nacional']
+        (1 coinciden) ['agentes comerciales y afines', 'dato base', 'hombres', 'percentil 90', 'representantes', 'total nacional']
+        (1 coinciden) ['ambos sexos', 'dato base', 'educacion primaria', 'media', 'total nacional']
+      sin serie para salario_bruto/hombres; lo más parecido:
+        (1 coinciden) ['dato base', 'mediana', 'mujeres', 'servicios a edificios y actividades de jardineria', 'total nacional']
+        (1 coinciden) ['dato base', 'hombres', 'ocupaciones militares', 'percentil 90', 'total nacional']
+        (1 coinciden) ['agentes comerciales y afines', 'dato base', 'hombres', 'percentil 90', 'representantes', 'total nacional']
+        (1 coinciden) ['ambos sexos', 'dato base', 'educacion primaria', 'media', 'total nacional']
+      sin serie para salario_bruto/mujeres; lo más parecido:
+        (1 coinciden) ['dato base', 'mediana', 'mujeres', 'servicios a edificios y actividades de jardineria', 'total nacional']
+        (1 coinciden) ['dato base', 'hombres', 'ocupaciones militares', 'percentil 90', 'total nacional']
+        (1 coinciden) ['agentes comerciales y afines', 'dato base', 'hombres', 'percentil 90', 'representantes', 'total nacional']
+        (1 coinciden) ['ambos sexos', 'dato base', 'educacion primaria', 'media', 'total nacional']
       brecha_salarial/ambos: 2 periodos (EAES2686)
-      desigualdad_salarial/ambos: 2 periodos (EAES2690)
-      gini_salarial/ambos: 2 periodos (EAES2689)
-      sin serie para coste_salarial/ambos; lo más parecido:
-        (4 coinciden) ['coste salarial total', 'costes laborales', 'euros', 'fabricacion de productos farmaceuticos', 'total', 'total nacional']
-        (4 coinciden) ['coste salarial total', 'costes laborales', 'euros', 'fabricacion de productos de caucho y materias plasticas', 'total', 'total nacional']
-        (4 coinciden) ['coste salarial total', 'costes laborales', 'euros', 'total', 'total nacional', 'transporte terrestre; transporte por tuberias']
-        (4 coinciden) ['coste salarial total', 'costes laborales', 'euros', 'otras actividades sociales y de servicios prestados a la comunidad; servicios personales', 'total', 'total nacional']
+      desigualdad_salarial/ambos: 17 periodos (EAES229)
+      gini_salarial/ambos: 17 periodos (EAES234)
       deflactor/espana: 24 periodos (IPC318623)
-      salarios en euros constantes de 2025
   · Comunitat Valenciana
       (ADRH: 188 series)
       (EAES: 4092 series)
@@ -40,26 +43,6 @@
       salario_bruto/ambos: 2 periodos (EAES33852)
       salario_bruto/hombres: 2 periodos (EAES33700)
       salario_bruto/mujeres: 2 periodos (EAES33776)
-      sin serie para brecha_salarial/ambos; lo más parecido:
-        (1 coinciden) ['30 y mas anos', 'comunitat valenciana', 'dato base', 'hombres', 'mediana']
-        (1 coinciden) ['comunitat valenciana', 'dato base', 'de 35 a 44 anos', 'hombres', 'salario medio bruto', 'total']
-        (1 coinciden) ['comunitat valenciana', 'dato base', 'menos de 1 ano', 'mujeres', 'personales', 'proteccion y vendedores', 'salario medio bruto', 'trabajadores de los servicios de restauracion']
-        (1 coinciden) ['ambos sexos', 'comunitat valenciana', 'dato base', 'ensenanzas de formacion profesional de grado superior y similares', 'percentil 90']
-      sin serie para desigualdad_salarial/ambos; lo más parecido:
-        (1 coinciden) ['30 y mas anos', 'comunitat valenciana', 'dato base', 'hombres', 'mediana']
-        (1 coinciden) ['comunitat valenciana', 'dato base', 'de 35 a 44 anos', 'hombres', 'salario medio bruto', 'total']
-        (1 coinciden) ['comunitat valenciana', 'dato base', 'menos de 1 ano', 'mujeres', 'personales', 'proteccion y vendedores', 'salario medio bruto', 'trabajadores de los servicios de restauracion']
-        (1 coinciden) ['ambos sexos', 'comunitat valenciana', 'dato base', 'ensenanzas de formacion profesional de grado superior y similares', 'percentil 90']
-      sin serie para gini_salarial/ambos; lo más parecido:
-        (1 coinciden) ['30 y mas anos', 'comunitat valenciana', 'dato base', 'hombres', 'mediana']
-        (1 coinciden) ['comunitat valenciana', 'dato base', 'de 35 a 44 anos', 'hombres', 'salario medio bruto', 'total']
-        (1 coinciden) ['comunitat valenciana', 'dato base', 'menos de 1 ano', 'mujeres', 'personales', 'proteccion y vendedores', 'salario medio bruto', 'trabajadores de los servicios de restauracion']
-        (1 coinciden) ['ambos sexos', 'comunitat valenciana', 'dato base', 'ensenanzas de formacion profesional de grado superior y similares', 'percentil 90']
-      sin serie para coste_salarial/ambos; lo más parecido:
-        (4 coinciden) ['b', 'comunitat valenciana', 'coste salarial total', 'costes laborales', 'euros', 'l', 'p y q', 'secciones excepto a']
-        (4 coinciden) ['comunitat valenciana', 'coste salarial total', 'costes laborales', 'euros', 'industria']
-        (4 coinciden) ['comunitat valenciana', 'coste salarial total', 'costes laborales', 'euros', 'servicios']
-        (4 coinciden) ['comunitat valenciana', 'construccion y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales)', 'coste salarial total', 'costes laborales', 'euros', 'industria']
       deflactor/comunitat-valenciana: 24 periodos (IPC319817)
       salarios en euros constantes de 2025
   · Castellón
@@ -78,12 +61,9 @@
     escrito data/salarios/espana.json
     escrito data/salarios/comunitat-valenciana.json
     escrito data/salarios/castellon.json
-  9 periodos: 2015 … 2023
+  17 periodos: 2008 … 2024
 
-No se ha encontrado serie para 6 combinaciones:
+No se ha encontrado serie para 3 combinaciones:
   - salarios/espana/salario_bruto/ambos
-  - salarios/espana/coste_salarial/ambos
-  - salarios/comunitat-valenciana/brecha_salarial/ambos
-  - salarios/comunitat-valenciana/desigualdad_salarial/ambos
-  - salarios/comunitat-valenciana/gini_salarial/ambos
-  - salarios/comunitat-valenciana/coste_salarial/ambos
+  - salarios/espana/salario_bruto/hombres
+  - salarios/espana/salario_bruto/mujeres

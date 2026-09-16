@@ -17,26 +17,10 @@
         "EAES2686"
       ],
       "desigualdad_salarial": [
-        "EAES2690"
+        "EAES229"
       ],
       "gini_salarial": [
-        "EAES2689"
-      ]
-    },
-    "hombres": {
-      "salario_bruto": [
-        "EAES33740"
-      ],
-      "salario_bruto_real": [
-        "deflactado con el IPC medio anual, base 2025"
-      ]
-    },
-    "mujeres": {
-      "salario_bruto": [
-        "EAES33816"
-      ],
-      "salario_bruto_real": [
-        "deflactado con el IPC medio anual, base 2025"
+        "EAES234"
       ]
     }
   },

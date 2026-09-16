@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-16T15:00:43+00:00",
+  "actualizado": "2026-09-16T15:06:47+00:00",
   "titulo": "Salarios y rentas del trabajo",
-  "ultimo_periodo": "2023",
-  "primer_periodo": "2015",
+  "ultimo_periodo": "2024",
+  "primer_periodo": "2008",
   "indicadores": {
     "renta_salario": {
       "titulo": "Renta que viene del salario",
@@ -55,7 +55,7 @@
       "unidad_texto": "cuánto menos cobra una mujer por cada 100 € de un hombre",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El INE no publica esta encuesta por provincia: sólo por comunidad autónoma y para el conjunto de España.",
+      "nota": "El INE sólo publica este resumen para el conjunto de España: ni por comunidad autónoma ni por provincia.",
       "sobre_total": null
     },
     "desigualdad_salarial": {
@@ -64,7 +64,7 @@
       "unidad_texto": "veces que la novena decila de la ganancia por hora supera a la primera",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El INE no publica esta encuesta por provincia: sólo por comunidad autónoma y para el conjunto de España.",
+      "nota": "El INE sólo publica este resumen para el conjunto de España: ni por comunidad autónoma ni por provincia.",
       "sobre_total": null
     },
     "gini_salarial": {
@@ -73,7 +73,7 @@
       "unidad_texto": "a mayor valor, salarios más desiguales",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El INE no publica esta encuesta por provincia: sólo por comunidad autónoma y para el conjunto de España.",
+      "nota": "El INE sólo publica este resumen para el conjunto de España: ni por comunidad autónoma ni por provincia.",
       "sobre_total": null
     },
     "salario_bruto_real": {
