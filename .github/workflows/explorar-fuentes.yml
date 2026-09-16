@@ -22,14 +22,14 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Descargar el histórico del SEPE
-        run: python scripts/descargar_paro.py --desde ${{ inputs.desde }}
+      - name: Sondear la afiliación
+        run: python scripts/explorar_afiliacion.py
 
       - name: Commitear
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f data/paro-registrado/
+          git add -f data/
           git diff --staged --quiet || git commit -m "Reconstruye el histórico de paro registrado [skip ci]"
           git push
