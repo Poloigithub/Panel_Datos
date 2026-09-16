@@ -9,13 +9,9 @@
       renta_pensiones/ambos: 3 periodos (ADRH10551440)
       renta_desempleo/ambos: 3 periodos (ADRH10551439)
       renta_otras_prestaciones/ambos: 3 periodos (ADRH10551438)
-      sin serie para salario_bruto/ambos; lo más parecido:
-        (3 coinciden) ['(incluidas avicolas', 'ambos sexos', 'apicolas y similares)', 'componente del salario bruto anual', 'salario bruto', 'total nacional', 'trabajadores cualificados en actividades ganaderas']
-        (3 coinciden) ['componente del salario bruto anual', 'excepto seguridad social obligatoria', 'mujeres', 'reaseguros y fondos de pensiones', 'salario bruto', 'seguros', 'total nacional']
-        (3 coinciden) ['actividades deportivas', 'componente del salario bruto anual', 'mujeres', 'recreativas y de entretenimiento', 'salario bruto', 'total nacional']
-        (3 coinciden) ['actividades de juegos de azar y apuestas', 'ambos sexos', 'componente del salario bruto anual', 'salario bruto', 'total nacional']
-      salario_bruto/hombres: 2 periodos (EAES33740)
-      salario_bruto/mujeres: 2 periodos (EAES33816)
+      salario_bruto/ambos: 17 periodos (EAES228)
+      salario_bruto/hombres: 17 periodos (EAES226)
+      salario_bruto/mujeres: 17 periodos (EAES227)
       brecha_salarial/ambos: 2 periodos (EAES2686)
       desigualdad_salarial/ambos: 17 periodos (EAES229)
       gini_salarial/ambos: 17 periodos (EAES234)
@@ -33,9 +29,9 @@
       renta_desempleo/ambos: 9 periodos (ADRH10551389)
       renta_otras_prestaciones/ambos: descartadas por sus valores ADRH9974747
       renta_otras_prestaciones/ambos: 9 periodos (ADRH10551388)
-      salario_bruto/ambos: 2 periodos (EAES33852)
-      salario_bruto/hombres: 2 periodos (EAES33700)
-      salario_bruto/mujeres: 2 periodos (EAES33776)
+      salario_bruto/ambos: 17 periodos (EAES168)
+      salario_bruto/hombres: 17 periodos (EAES166)
+      salario_bruto/mujeres: 17 periodos (EAES167)
       deflactor/comunitat-valenciana: 24 periodos (IPC319817)
       salarios en euros constantes de 2025
   · Castellón
@@ -55,6 +51,3 @@
     escrito data/salarios/comunitat-valenciana.json
     escrito data/salarios/castellon.json
   17 periodos: 2008 … 2024
-
-No se ha encontrado serie para 1 combinaciones:
-  - salarios/espana/salario_bruto/ambos
