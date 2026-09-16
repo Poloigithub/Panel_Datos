@@ -74,17 +74,23 @@ def main() -> int:
         indice = motor.indexa_por_segmentos(operacion, f"{VAR_MUNICIPIOS}:{municipio['id']}")
         etiqueta = f"{municipio['codigo']} {municipio['nombre']}"
 
-        # Se prueban varias formulaciones: el INE nombra estas series de
-        # maneras distintas según la operación.
+        # En el padrón la magnitud se llama «Total habitantes», no «Población»,
+        # y el nombre del municipio se parte en varios segmentos cuando lleva
+        # artículo pospuesto («Pobla de Benifassà, la»). Esos trozos del nombre
+        # se admiten como relleno junto a las muletillas de siempre.
+        del_nombre = motor.segmentos(municipio["nombre"])
+        extras = motor.EXTRAS_ADMITIDOS | del_nombre | {"personas", "habitantes"}
         intentos = [
-            {motor.normaliza(municipio["nombre"]), "poblacion"},
+            {"total habitantes", "total"},
+            {"total habitantes", "ambos sexos"},
+            {"total habitantes"},
+            {"poblacion", "total"},
             {"poblacion"},
-            {motor.normaliza(municipio["nombre"])},
-            {"total"},
         ]
         valores = {}
         for obligatorio in intentos:
-            valores, _ = motor.resuelve(indice, obligatorio, etiqueta, avisar=False)
+            valores, _ = motor.resuelve(indice, obligatorio, etiqueta,
+                                        extras=extras, avisar=False)
             if valores:
                 break
 
