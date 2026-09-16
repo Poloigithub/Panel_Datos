@@ -189,6 +189,9 @@
   "precios": {
     "espana": {
       "ambos": {
+        "ipc_general": [
+          "IPC290751"
+        ],
         "ipc_variacion": [
           "IPC290750"
         ],
@@ -210,9 +213,6 @@
         ],
         "ipc_alimentos": [
           "IPC294167"
-        ],
-        "ipc_vivienda": [
-          "IPC79242"
         ],
         "ipc_transporte": [
           "IPC294187"
