@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T19:42:23+00:00",
+  "actualizado": "2026-09-16T20:12:22+00:00",
   "titulo": "La cesta de la compra",
   "ultimo_periodo": "2026M08",
   "primer_periodo": "2002M01",
@@ -123,6 +123,33 @@
     },
     "cafe": {
       "titulo": "Café, cacao e infusiones",
+      "unidad": "índice",
+      "unidad_texto": "índice, base 2025 = 100",
+      "decimales": 3,
+      "por_sexo": false,
+      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "sobre_total": null
+    },
+    "azucar": {
+      "titulo": "Azúcar, chocolate y confitería",
+      "unidad": "índice",
+      "unidad_texto": "índice, base 2025 = 100",
+      "decimales": 3,
+      "por_sexo": false,
+      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "sobre_total": null
+    },
+    "preparados": {
+      "titulo": "Alimentos preparados",
+      "unidad": "índice",
+      "unidad_texto": "índice, base 2025 = 100",
+      "decimales": 3,
+      "por_sexo": false,
+      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "sobre_total": null
+    },
+    "agua": {
+      "titulo": "Agua mineral",
       "unidad": "índice",
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
