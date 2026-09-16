@@ -185,8 +185,13 @@ def fusiona(candidatas: list[dict], etiqueta: str, tope: int = 12,
 # El INE corta la lista de metadatos en diez mil series. Con operaciones
 # grandes -la encuesta de estructura salarial devuelve justo diez mil para
 # España- eso deja fuera series que sí existen, y el descargador concluye que no
-# están. Cuando se llega al tope se repite la petición quitando de en medio los
-# coeficientes de variación, que son error muestral y no datos.
+# están. Cuando se llega al tope se pide una segunda lista acotada a «dato
+# base», que deja fuera los coeficientes de variación -error muestral, no
+# datos- y por tanto alcanza series que la primera no incluía.
+#
+# Las dos listas se **juntan**, no se sustituyen: la acotada trae series que
+# faltaban, pero también se deja fuera algunas que sí venían en la primera, y
+# quedarse sólo con ella cambiaba un hueco por otro.
 TOPE_METADATOS = 10000
 _filtros_dato_base: dict[str, str | None] = {}
 
@@ -221,10 +226,11 @@ def indexa_por_segmentos(operacion: str, filtro: str) -> dict[frozenset, list[di
         if acotado:
             recorte = ine_api.get("SERIE_METADATAOPERACION", operacion,
                                   g1=filtro, g2=acotado)
+            conocidas = {s.get("COD") for s in series}
+            nuevas = [s for s in recorte if s.get("COD") not in conocidas]
             print(f"      {operacion}: {len(series)} series es el tope del INE; "
-                  f"acotando a datos base quedan {len(recorte)}")
-            if recorte:
-                series = recorte
+                  f"acotando a datos base aparecen {len(nuevas)} que faltaban")
+            series = series + nuevas
     indice: dict[frozenset, list[dict]] = {}
     for serie in series:
         indice.setdefault(frozenset(segmentos(serie.get("Nombre", ""))), []).append(serie)
