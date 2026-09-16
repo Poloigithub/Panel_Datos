@@ -60,6 +60,12 @@
       ipva_variacion/ambos: 13 periodos (IPVA5490)
       hipoteca_media: 282 periodos, 2026M06 = 114,556 € (importe en miles de euros)
       esfuerzo: 9 periodos, 2023 = 2.51 años de renta del hogar
+  · Lanzamientos (CGPJ)
+    fichero del CGPJ: Series - Efecto de la crisis en los organos judiciales por provincias 1T-2026_revisado.xlsx
+    ! sólo 0 de las 3 provincias valencianas en «Lanzamientos pract. Total prov»
+    ! sólo 0 de las 3 provincias valencianas en «Lanzamientos E.hipotecaria prov»
+    ! sólo 0 de las 3 provincias valencianas en «Lanzamientos L.A.U. prov»
+    ! sólo 0 de las 3 provincias valencianas en «Lanzamientos. Otros prov»
     escrito data/vivienda/espana.json
     escrito data/vivienda/comunitat-valenciana.json
     escrito data/vivienda/castellon.json
