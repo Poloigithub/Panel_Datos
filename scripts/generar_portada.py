@@ -92,6 +92,19 @@ SECCIONES = [
         ],
     },
     {
+        "bloque": "salarios", "enlace": "salarios.html",
+        "titulo": "Salarios y rentas del trabajo",
+        "fuente": "Atlas de renta y Encuesta de Estructura Salarial · INE",
+        "cadencia": "Anual. El salario, sólo por comunidad autónoma; el reparto "
+                    "de la renta, también por provincia.",
+        "destacados": [
+            {"clave": "renta_salario", "titulo": "Renta que viene del salario",
+             "unidad": "%", "decimales": 2},
+            {"clave": "salario_bruto", "titulo": "Salario medio anual",
+             "unidad": "euros", "decimales": 0},
+        ],
+    },
+    {
         "bloque": "poblacion", "enlace": "poblacion.html", "titulo": "Población",
         "fuente": "Estadística Continua de Población · INE",
         "cadencia": "Trimestral.",

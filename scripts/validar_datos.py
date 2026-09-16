@@ -162,7 +162,10 @@ IDENTIDADES = [
 # detecta no es que una fuente vaya lenta, sino que ha dejado de llegar.
 FRESCURA = {
     "epa": ("trimestral", 6),
-    "salarios": ("anual, con el coste laboral trimestral", 18),
+    # La encuesta de estructura salarial publica con año y medio de retraso
+    # y el Atlas con dos años, así que un dato de hace dos años y medio
+    # todavía es normal aquí.
+    "salarios": ("anual", 30),
     "paro-registrado": ("mensual", 3),
     "contratos": ("mensual", 3),
     "precios": ("mensual", 3),

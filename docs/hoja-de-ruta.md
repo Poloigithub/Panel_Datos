@@ -253,7 +253,7 @@ partir de sus propios datos: ficheros idénticos.
 
 ---
 
-## Fase 5 · Salarios y poder adquisitivo
+## Fase 5 · Salarios y poder adquisitivo ✅ hecha
 
 **Sondeada antes de empezar** (`sondeos/salarios.md`), y la respuesta obliga a
 reescribirla: de las seis operaciones salariales del INE -índice de coste
@@ -276,6 +276,32 @@ Lo que sí hay, y no estaba en el plan:
   las tablas se pueden leer sin manos.
 
 Con eso, la fase 5 pasa de «una página donde Castellón no aparece» a otra cosa.
+
+**Resultado.** Sección **Salarios y rentas del trabajo** con dos mitades bien
+separadas: lo que sí llega a Castellón -el 60,6 % de la renta de la provincia
+viene del salario, el 20,8 % de pensiones y el 2,4 % del paro, en 2023- y lo
+que sólo existe por comunidad o para España: salario medio anual por sexo
+desde 2008 (29.540 € en España y 26.817 € en la Comunitat en 2024), brecha
+salarial, Gini de los salarios y distancia entre decilas. El salario va también
+en euros constantes, que es la pregunta de verdad.
+
+**Lo que costó.** Cuatro ensayos, y de ellos salió un hallazgo que afecta a
+todo el panel: **el INE corta la lista de metadatos en diez mil series**. La
+encuesta de estructura salarial devuelve exactamente diez mil para España, así
+que series que existen quedaban fuera y el descargador concluía que no estaban.
+Se rodea pidiendo una segunda lista acotada a «dato base» y **juntando** las
+dos: la acotada trae lo que faltaba, pero también pierde algunas que sí venían
+en la primera, y quedarse sólo con ella cambiaba un hueco por otro.
+
+Además, la serie que había declarado -«componente del salario bruto anual»-
+resultó ser la mala: sólo tiene dos años y para España no publica el total de
+ambos sexos. La canónica se llama «salario medio anual» y viene de 2008.
+
+**Qué se quedó fuera, y por qué.** El salario medio provincial de la Agencia
+Tributaria, que sí existe: lo publica en páginas cuyos nombres de fichero son
+hashes que cambian cada año, y no hay forma de seguirlo sin que se rompa. Y el
+coste laboral de la ETCL, cuya serie del total de la economía se identifica por
+las secciones de la CNAE que incluye, partidas en trozos por las comas.
 
 ### Lo planeado originalmente
 

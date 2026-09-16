@@ -60,6 +60,8 @@ tarea diaria.
 | Población | ECP y Cifras de Población · INE | Trimestral y anual | ~2 meses |
 | Natalidad y mortalidad | Indicadores Demográficos Básicos · INE | Anual | ~1 año |
 | Renta | Atlas de Distribución de Renta · INE | Anual | ~2 años |
+| Salarios · reparto de la renta | Atlas · INE | Anual | ~2 años |
+| Salarios · salario medio y desigualdad | Encuesta de Estructura Salarial · INE | Anual | ~1 año y medio |
 | Vivienda · compraventas e hipotecas | ETDP y HPT · INE | Mensual | ~2 meses |
 | Vivienda · precio de compraventa | IPV · INE | Trimestral | ~2 meses |
 | Vivienda · precio del alquiler | IPVA · INE | Anual | ~1 año |

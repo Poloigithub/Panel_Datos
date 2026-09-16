@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-16T14:34:34+00:00",
+ "actualizado": "2026-09-16T18:07:36+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -239,6 +239,51 @@
       "espana": 14061.0,
       "comunitat-valenciana": 12720.0,
       "castellon": 13305.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "salarios",
+   "titulo": "Salarios y rentas del trabajo",
+   "enlace": "salarios.html",
+   "fuente": "Atlas de renta y Encuesta de Estructura Salarial · INE",
+   "cadencia": "Anual. El salario, sólo por comunidad autónoma; el reparto de la renta, también por provincia.",
+   "actualizado": "2026-09-16T18:05:29+00:00",
+   "ultimo_periodo": "2024",
+   "destacados": [
+    {
+     "clave": "renta_salario",
+     "titulo": "Renta que viene del salario",
+     "unidad": "%",
+     "decimales": 2,
+     "periodo": "2023",
+     "valores": {
+      "espana": 60.6,
+      "comunitat-valenciana": 60.1,
+      "castellon": 60.6
+     },
+     "hace_un_anyo": {
+      "espana": 60.4,
+      "comunitat-valenciana": 60.0,
+      "castellon": 61.1
+     }
+    },
+    {
+     "clave": "salario_bruto",
+     "titulo": "Salario medio anual",
+     "unidad": "euros",
+     "decimales": 0,
+     "periodo": "2024",
+     "valores": {
+      "espana": 29540.26,
+      "comunitat-valenciana": 26816.98,
+      "castellon": null
+     },
+     "hace_un_anyo": {
+      "espana": 28049.94,
+      "comunitat-valenciana": 25632.37,
+      "castellon": null
      }
     }
    ]

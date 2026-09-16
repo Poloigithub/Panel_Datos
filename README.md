@@ -5,8 +5,8 @@ GitHub Pages. Siempre en tres ámbitos -España, la Comunitat Valenciana y la
 provincia de Castellón- y, cuando la fuente llega, por municipio.
 
 Secciones: mercado laboral (EPA), población, natalidad y mortalidad, precios,
-renta, vivienda, paro registrado y contratación (SEPE), y el mapa municipal de
-la provincia.
+renta, salarios, vivienda, paro registrado y contratación (SEPE), y el mapa
+municipal de la provincia.
 
 ## Cómo funciona
 
@@ -126,6 +126,7 @@ python3 scripts/descargar_epa.py
 | `scripts/bloques_ine.py` | Motor de bloques: de la declaración de indicadores a su JSON |
 | `scripts/descargar_sociodemografia.py` | Población, demografía, precios y renta |
 | `scripts/descargar_vivienda.py` | Compraventas, hipotecas, ejecuciones y precios de vivienda |
+| `scripts/descargar_salarios.py` | Salario, brecha y de dónde viene la renta |
 | `scripts/cgpj_lanzamientos.py` | Lanzamientos del CGPJ: por hipoteca, por alquiler y otros |
 | `scripts/xlsx.py` | Lector de XLSX con la biblioteca estándar |
 | `scripts/descargar_paro.py` | Paro registrado y contratación del SEPE |
