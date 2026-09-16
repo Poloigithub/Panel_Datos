@@ -1,0 +1,383 @@
+# Sondeo de las fuentes de vivienda
+
+7 operaciones del INE mencionan vivienda o afines:
+- `ETDP` · Estadística de Transmisión de Derechos de la Propiedad
+- `IPV` · Índice de Precios de la Vivienda (IPV)
+- `HPT` · Estadística de Hipotecas
+- `EH` · Estadística sobre Ejecuciones Hipotecarias
+- `VTE` · Viviendas turísticas en España
+- `IPVA` · Índice de Precios de Vivienda en Alquiler
+- `IPCO` · Índice de Producción de la Construcción
+
+## Estadística de Transmisión de Derechos de la Propiedad
+- código: `ETDP` · id 7 · IOE 30168
+- variables territoriales: 70 Comunidades y Ciudades Autónomas, 115 Provincias, 349 Total Nacional
+- todas las variables: 3 Tipo de dato, 70 Comunidades y Ciudades Autónomas, 115 Provincias, 240 Naturaleza de la finca, 345 Estado de la vivienda, 349 Total Nacional, 503 Régimen de la vivienda, 505 Titular de la vivienda, 545 Tipo de vivienda, 567 Título de adquisición, 943 Tipo de transmitiente
+- **España**: 66 series, 32 combinaciones
+    - ['fincas rusticas', 'numero', 'total nacional'] → `ETDP376`
+    - ['fincas urbanas: otras urbanas', 'numero', 'total nacional'] → `ETDP372`
+    - ['fincas urbanas: solares', 'numero', 'total nacional'] → `ETDP373`
+    - ['fincas urbanas: total', 'numero', 'total nacional'] → `ETDP375`
+    - ['fincas urbanas: viviendas', 'numero', 'total nacional'] → `ETDP374`
+    - ['numero', 'total fincas', 'total nacional'] → `ETDP377`
+    - ['persona fisica', 'porcentaje', 'total nacional'] → `ETDP4333`
+    - ['persona juridica', 'porcentaje', 'total nacional'] → `ETDP4330`
+    - ['compraventa', 'fincas rusticas', 'numero', 'total nacional'] → `ETDP754`
+    - ['compraventa', 'fincas urbanas: total', 'numero', 'total nacional'] → `ETDP1132`
+    - ['compraventa', 'general', 'numero', 'total nacional'] → `ETDP1826`
+    - ['compraventa', 'numero', 'total nacional', 'total viviendas'] → `ETDP1510`
+    - ['compraventa', 'numero', 'total nacional', 'vivienda libre'] → `ETDP1823`
+    - ['compraventa', 'numero', 'total nacional', 'vivienda nueva'] → `ETDP1825`
+    - ['compraventa', 'numero', 'total nacional', 'vivienda protegida'] → `ETDP1822`
+    - ['compraventa', 'numero', 'total nacional', 'vivienda segunda mano'] → `ETDP1824`
+    - ['donacion', 'fincas rusticas', 'numero', 'total nacional'] → `ETDP753`
+    - ['donacion', 'fincas urbanas: total', 'numero', 'total nacional'] → `ETDP1131`
+- **Comunitat Valenciana**: 58 series, 29 combinaciones
+    - ['comunitat valenciana', 'fincas rusticas', 'numero'] → `ETDP316`
+    - ['comunitat valenciana', 'fincas urbanas: otras urbanas', 'numero'] → `ETDP312`
+    - ['comunitat valenciana', 'fincas urbanas: solares', 'numero'] → `ETDP313`
+    - ['comunitat valenciana', 'fincas urbanas: total', 'numero'] → `ETDP315`
+    - ['comunitat valenciana', 'fincas urbanas: viviendas', 'numero'] → `ETDP314`
+    - ['comunitat valenciana', 'numero', 'total fincas'] → `ETDP317`
+    - ['compraventa', 'comunitat valenciana', 'fincas rusticas', 'numero'] → `ETDP694`
+    - ['compraventa', 'comunitat valenciana', 'fincas urbanas: total', 'numero'] → `ETDP1072`
+    - ['compraventa', 'comunitat valenciana', 'general', 'numero'] → `ETDP1776`
+    - ['compraventa', 'comunitat valenciana', 'numero', 'total viviendas'] → `ETDP1450`
+    - ['compraventa', 'comunitat valenciana', 'numero', 'vivienda libre'] → `ETDP1773`
+    - ['compraventa', 'comunitat valenciana', 'numero', 'vivienda nueva'] → `ETDP1775`
+    - ['compraventa', 'comunitat valenciana', 'numero', 'vivienda protegida'] → `ETDP1772`
+    - ['compraventa', 'comunitat valenciana', 'numero', 'vivienda segunda mano'] → `ETDP1774`
+    - ['comunitat valenciana', 'donacion', 'fincas rusticas', 'numero'] → `ETDP693`
+    - ['comunitat valenciana', 'donacion', 'fincas urbanas: total', 'numero'] → `ETDP1071`
+    - ['comunitat valenciana', 'donacion', 'numero', 'total viviendas'] → `ETDP1449`
+    - ['comunitat valenciana', 'fincas rusticas', 'herencia', 'numero'] → `ETDP691`
+- **Castellón**: 58 series, 29 combinaciones
+    - ['castellon/castello', 'fincas rusticas', 'numero'] → `ETDP64`
+    - ['castellon/castello', 'fincas urbanas: otras urbanas', 'numero'] → `ETDP60`
+    - ['castellon/castello', 'fincas urbanas: solares', 'numero'] → `ETDP61`
+    - ['castellon/castello', 'fincas urbanas: total', 'numero'] → `ETDP63`
+    - ['castellon/castello', 'fincas urbanas: viviendas', 'numero'] → `ETDP62`
+    - ['castellon/castello', 'numero', 'total fincas'] → `ETDP65`
+    - ['castellon/castello', 'compraventa', 'fincas rusticas', 'numero'] → `ETDP442`
+    - ['castellon/castello', 'compraventa', 'fincas urbanas: total', 'numero'] → `ETDP820`
+    - ['castellon/castello', 'compraventa', 'general', 'numero'] → `ETDP1566`
+    - ['castellon/castello', 'compraventa', 'numero', 'total viviendas'] → `ETDP1198`
+    - ['castellon/castello', 'compraventa', 'numero', 'vivienda libre'] → `ETDP1563`
+    - ['castellon/castello', 'compraventa', 'numero', 'vivienda nueva'] → `ETDP1565`
+    - ['castellon/castello', 'compraventa', 'numero', 'vivienda protegida'] → `ETDP1562`
+    - ['castellon/castello', 'compraventa', 'numero', 'vivienda segunda mano'] → `ETDP1564`
+    - ['castellon/castello', 'donacion', 'fincas rusticas', 'numero'] → `ETDP441`
+    - ['castellon/castello', 'donacion', 'fincas urbanas: total', 'numero'] → `ETDP819`
+    - ['castellon/castello', 'donacion', 'numero', 'total viviendas'] → `ETDP1197`
+    - ['castellon/castello', 'fincas rusticas', 'herencia', 'numero'] → `ETDP439`
+
+## Índice de Precios de la Vivienda (IPV)
+- código: `IPV` · id 15 · IOE 30457
+- variables territoriales: 70 Comunidades y Ciudades Autónomas, 349 Total Nacional
+- todas las variables: 3 Tipo de dato, 70 Comunidades y Ciudades Autónomas, 345 Estado de la vivienda, 349 Total Nacional
+- **España**: 45 series, 42 combinaciones
+    - ['base 2007', 'general', 'nacional'] → `IPV241`
+    - ['base 2007', 'nacional', 'vivienda nueva'] → `IPV242`
+    - ['base 2007', 'nacional', 'vivienda segunda mano'] → `IPV243`
+    - ['dato base', 'indice de precios de vivienda', 'nacional'] → `IPV1611`
+    - ['dato base', 'indice de precios de vivienda de segunda mano', 'nacional'] → `IPV1621`
+    - ['dato base', 'indice de precios de vivienda nueva', 'nacional'] → `IPV1616`
+    - ['general', 'indice', 'nacional'] → `IPV1209`
+    - ['general', 'media anual', 'nacional'] → `IPV1276`
+    - ['general', 'nacional', 'ponderacion'] → `IPV1342`
+    - ['general', 'nacional', 'variacion anual'] → `IPV1376`
+    - ['general', 'nacional', 'variacion en lo que va de ano'] → `IPV1612`
+    - ['general', 'nacional', 'variacion trimestral'] → `IPV1522`
+    - ['indice', 'nacional', 'vivienda nueva'] → `IPV1613`
+    - ['indice', 'nacional', 'vivienda segunda mano'] → `IPV1618`
+    - ['media anual', 'nacional', 'vivienda nueva'] → `IPV1277`
+    - ['media anual', 'nacional', 'vivienda segunda mano'] → `IPV1278`
+    - ['nacional', 'ponderacion', 'vivienda nueva'] → `IPV1343`
+    - ['nacional', 'ponderacion', 'vivienda segunda mano'] → `IPV1344`
+- **Comunitat Valenciana**: 45 series, 42 combinaciones
+    - ['base 2007', 'comunitat valenciana', 'general'] → `IPV680`
+    - ['base 2007', 'comunitat valenciana', 'media anual'] → `IPV270`
+    - ['base 2007', 'comunitat valenciana', 'variacion de las medias anuales'] → `IPV271`
+    - ['base 2007', 'comunitat valenciana', 'vivienda nueva'] → `IPV681`
+    - ['base 2007', 'comunitat valenciana', 'vivienda segunda mano'] → `IPV682`
+    - ['comunitat valenciana', 'dato base', 'indice de precios de vivienda'] → `IPV1395`
+    - ['comunitat valenciana', 'dato base', 'indice de precios de vivienda de segunda mano'] → `IPV1405`
+    - ['comunitat valenciana', 'dato base', 'indice de precios de vivienda nueva'] → `IPV1400`
+    - ['comunitat valenciana', 'general', 'indice'] → `IPV1392`
+    - ['comunitat valenciana', 'general', 'media anual'] → `IPV1226`
+    - ['comunitat valenciana', 'general', 'ponderacion'] → `IPV1372`
+    - ['comunitat valenciana', 'general', 'variacion anual'] → `IPV1394`
+    - ['comunitat valenciana', 'general', 'variacion en lo que va de ano'] → `IPV1396`
+    - ['comunitat valenciana', 'general', 'variacion trimestral'] → `IPV1393`
+    - ['comunitat valenciana', 'indice', 'vivienda nueva'] → `IPV1397`
+    - ['comunitat valenciana', 'indice', 'vivienda segunda mano'] → `IPV1402`
+    - ['comunitat valenciana', 'media anual', 'vivienda nueva'] → `IPV1227`
+    - ['comunitat valenciana', 'media anual', 'vivienda segunda mano'] → `IPV1228`
+- **Castellón**: 0 series, 0 combinaciones
+
+## Estadística de Hipotecas
+- código: `HPT` · id 40 · IOE 30149
+- variables territoriales: 70 Comunidades y Ciudades Autónomas, 115 Provincias, 349 Total Nacional
+- todas las variables: 70 Comunidades y Ciudades Autónomas, 115 Provincias, 238 Tipo de cambio, 239 Cancelación hipoteca, 240 Naturaleza de la finca, 241 Capital prestado, 242 Intereses, 243 Tramos de extensión, 244 Entidad que concede el préstamo, 245 Duración en años de la hipoteca, 246 Bienes muebles, 247 Concepto financiero, 349 Total Nacional, 429 Cambios de conceptos, 794 Tipo de interés
+- **España**: 770 series, 650 combinaciones
+    - ['anual', 'base antigua', 'establecimientos mercantiles', 'importe de hipotecas', 'total nacional'] → `HPT32701`
+    - ['anual', 'base antigua', 'establecimientos mercantiles', 'numero de hipotecas', 'total nacional'] → `HPT32754`
+    - ['anual', 'base antigua', 'fincas rusticas: regadio', 'importe de hipotecas', 'total nacional'] → `HPT32277`
+    - ['anual', 'base antigua', 'fincas rusticas: regadio', 'numero de hipotecas', 'total nacional'] → `HPT32330`
+    - ['anual', 'base antigua', 'fincas rusticas: secano', 'importe de hipotecas', 'total nacional'] → `HPT32383`
+    - ['anual', 'base antigua', 'fincas rusticas: secano', 'numero de hipotecas', 'total nacional'] → `HPT32436`
+    - ['anual', 'base antigua', 'fincas urbanas: otros', 'importe de hipotecas', 'total nacional'] → `HPT31959`
+    - ['anual', 'base antigua', 'fincas urbanas: otros', 'numero de hipotecas', 'total nacional'] → `HPT32012`
+    - ['anual', 'base antigua', 'fincas urbanas: solares', 'importe de hipotecas', 'total nacional'] → `HPT32065`
+    - ['anual', 'base antigua', 'fincas urbanas: solares', 'numero de hipotecas', 'total nacional'] → `HPT32118`
+    - ['anual', 'base antigua', 'fincas urbanas: viviendas', 'importe de hipotecas', 'total nacional'] → `HPT32171`
+    - ['anual', 'base antigua', 'fincas urbanas: viviendas', 'numero de hipotecas', 'total nacional'] → `HPT32224`
+    - ['anual', 'base antigua', 'importe de hipotecas', 'total', 'total nacional'] → `HPT32807`
+    - ['anual', 'base antigua', 'importe de hipotecas', 'total fincas rusticas y urbanas', 'total nacional'] → `HPT32489`
+    - ['anual', 'base antigua', 'numero de hipotecas', 'total', 'total nacional'] → `HPT32860`
+    - ['anual', 'base antigua', 'numero de hipotecas', 'total fincas rusticas y urbanas', 'total nacional'] → `HPT32542`
+    - ['anual', 'base nueva', 'fincas urbanas: otros', 'hipoteca cancelada', 'total nacional'] → `HPT38911`
+    - ['anual', 'base nueva', 'hipoteca cancelada', 'solares', 'total nacional'] → `HPT38964`
+- **Comunitat Valenciana**: 190 series, 184 combinaciones
+    - ['anual', 'base nueva', 'comunitat valenciana', 'fincas urbanas: otros', 'hipoteca cancelada'] → `HPT40156`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'hipoteca cancelada', 'solares'] → `HPT40175`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'hipoteca cancelada', 'total fincas'] → `HPT40251`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'hipoteca cancelada', 'total fincas rusticas'] → `HPT40232`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'hipoteca cancelada', 'total fincas urbanas'] → `HPT40213`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'hipoteca cancelada', 'viviendas'] → `HPT40194`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'importe de hipotecas', 'otros'] → `HPT39663`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'importe de hipotecas', 'solares'] → `HPT39703`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'importe de hipotecas', 'total fincas'] → `HPT39823`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'importe de hipotecas', 'total fincas rusticas'] → `HPT39783`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'importe de hipotecas', 'viviendas'] → `HPT39743`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'novacion', 'total fincas'] → `HPT40137`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'numero de hipotecas', 'otros'] → `HPT39683`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'numero de hipotecas', 'solares'] → `HPT39723`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'numero de hipotecas', 'total fincas'] → `HPT39843`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'numero de hipotecas', 'total fincas rusticas'] → `HPT39803`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'numero de hipotecas', 'viviendas'] → `HPT39763`
+    - ['anual', 'base nueva', 'comunitat valenciana', 'subrogacion acreedor', 'total fincas'] → `HPT40099`
+- **Castellón**: 718 series, 612 combinaciones
+    - ['anual', 'base antigua', 'castellon/castello', 'establecimientos mercantiles', 'importe de hipotecas'] → `HPT32686`
+    - ['anual', 'base antigua', 'castellon/castello', 'establecimientos mercantiles', 'numero de hipotecas'] → `HPT32739`
+    - ['anual', 'base antigua', 'castellon/castello', 'fincas rusticas: regadio', 'importe de hipotecas'] → `HPT32262`
+    - ['anual', 'base antigua', 'castellon/castello', 'fincas rusticas: regadio', 'numero de hipotecas'] → `HPT32315`
+    - ['anual', 'base antigua', 'castellon/castello', 'fincas rusticas: secano', 'importe de hipotecas'] → `HPT32368`
+    - ['anual', 'base antigua', 'castellon/castello', 'fincas rusticas: secano', 'numero de hipotecas'] → `HPT32421`
+    - ['anual', 'base antigua', 'castellon/castello', 'fincas urbanas: otros', 'importe de hipotecas'] → `HPT31944`
+    - ['anual', 'base antigua', 'castellon/castello', 'fincas urbanas: otros', 'numero de hipotecas'] → `HPT31997`
+    - ['anual', 'base antigua', 'castellon/castello', 'fincas urbanas: solares', 'importe de hipotecas'] → `HPT32050`
+    - ['anual', 'base antigua', 'castellon/castello', 'fincas urbanas: solares', 'numero de hipotecas'] → `HPT32103`
+    - ['anual', 'base antigua', 'castellon/castello', 'fincas urbanas: viviendas', 'importe de hipotecas'] → `HPT32156`
+    - ['anual', 'base antigua', 'castellon/castello', 'fincas urbanas: viviendas', 'numero de hipotecas'] → `HPT32209`
+    - ['anual', 'base antigua', 'castellon/castello', 'importe de hipotecas', 'total'] → `HPT32792`
+    - ['anual', 'base antigua', 'castellon/castello', 'importe de hipotecas', 'total fincas rusticas y urbanas'] → `HPT32474`
+    - ['anual', 'base antigua', 'castellon/castello', 'numero de hipotecas', 'total'] → `HPT32845`
+    - ['anual', 'base antigua', 'castellon/castello', 'numero de hipotecas', 'total fincas rusticas y urbanas'] → `HPT32527`
+    - ['anual', 'base nueva', 'castellon/castello', 'fincas urbanas: otros', 'hipoteca cancelada'] → `HPT38896`
+    - ['anual', 'base nueva', 'castellon/castello', 'hipoteca cancelada', 'solares'] → `HPT38949`
+
+## Estadística sobre Ejecuciones Hipotecarias
+- código: `EH` · id 259 · IOE 30153
+- variables territoriales: 70 Comunidades y Ciudades Autónomas, 115 Provincias, 349 Total Nacional
+- todas las variables: 3 Tipo de dato, 70 Comunidades y Ciudades Autónomas, 115 Provincias, 240 Naturaleza de la finca, 345 Estado de la vivienda, 349 Total Nacional, 505 Titular de la vivienda, 545 Tipo de vivienda
+- **España**: 30 series, 14 combinaciones
+    - ['fincas urbanas: otros', 'numero', 'total nacional'] → `EH95`
+    - ['fincas urbanas: solares', 'numero', 'total nacional'] → `EH96`
+    - ['fincas urbanas: viviendas', 'numero', 'total nacional'] → `EH97`
+    - ['general', 'numero', 'total nacional'] → `EH219`
+    - ['numero', 'persona fisica', 'total nacional'] → `EH278`
+    - ['numero', 'persona juridica', 'total nacional'] → `EH277`
+    - ['numero', 'total', 'total nacional'] → `EH159`
+    - ['numero', 'total fincas', 'total nacional'] → `EH99`
+    - ['numero', 'total fincas rusticas', 'total nacional'] → `EH98`
+    - ['numero', 'total nacional', 'vivienda libre'] → `EH158`
+    - ['numero', 'total nacional', 'vivienda nueva'] → `EH218`
+    - ['numero', 'total nacional', 'vivienda principal'] → `EH1296`
+    - ['numero', 'total nacional', 'vivienda protegida'] → `EH157`
+    - ['numero', 'total nacional', 'vivienda segunda mano'] → `EH217`
+- **Comunitat Valenciana**: 28 series, 13 combinaciones
+    - ['comunitat valenciana', 'fincas urbanas: otros', 'numero'] → `EH40`
+    - ['comunitat valenciana', 'fincas urbanas: solares', 'numero'] → `EH41`
+    - ['comunitat valenciana', 'fincas urbanas: viviendas', 'numero'] → `EH42`
+    - ['comunitat valenciana', 'general', 'numero'] → `EH186`
+    - ['comunitat valenciana', 'numero', 'persona fisica'] → `EH245`
+    - ['comunitat valenciana', 'numero', 'persona juridica'] → `EH244`
+    - ['comunitat valenciana', 'numero', 'total'] → `EH246`
+    - ['comunitat valenciana', 'numero', 'total fincas'] → `EH44`
+    - ['comunitat valenciana', 'numero', 'total fincas rusticas'] → `EH43`
+    - ['comunitat valenciana', 'numero', 'vivienda libre'] → `EH125`
+    - ['comunitat valenciana', 'numero', 'vivienda nueva'] → `EH185`
+    - ['comunitat valenciana', 'numero', 'vivienda protegida'] → `EH124`
+    - ['comunitat valenciana', 'numero', 'vivienda segunda mano'] → `EH184`
+- **Castellón**: 14 series, 13 combinaciones
+    - ['castellon/castello', 'fincas urbanas: otros', 'numero'] → `EH565`
+    - ['castellon/castello', 'fincas urbanas: solares', 'numero'] → `EH566`
+    - ['castellon/castello', 'fincas urbanas: viviendas', 'numero'] → `EH567`
+    - ['castellon/castello', 'general', 'numero'] → `EH753`
+    - ['castellon/castello', 'numero', 'persona fisica'] → `EH971`
+    - ['castellon/castello', 'numero', 'persona juridica'] → `EH970`
+    - ['castellon/castello', 'numero', 'total'] → `EH972`
+    - ['castellon/castello', 'numero', 'total fincas'] → `EH569`
+    - ['castellon/castello', 'numero', 'total fincas rusticas'] → `EH568`
+    - ['castellon/castello', 'numero', 'vivienda libre'] → `EH1187`
+    - ['castellon/castello', 'numero', 'vivienda nueva'] → `EH752`
+    - ['castellon/castello', 'numero', 'vivienda protegida'] → `EH1186`
+    - ['castellon/castello', 'numero', 'vivienda segunda mano'] → `EH751`
+
+## Viviendas turísticas en España
+- código: `VTE` · id 410 · IOE 
+- variables territoriales: 19 Municipios, 70 Comunidades y Ciudades Autónomas, 115 Provincias, 349 Total Nacional
+- todas las variables: 3 Tipo de dato, 19 Municipios, 70 Comunidades y Ciudades Autónomas, 115 Provincias, 349 Total Nacional, 433 Concepto turístico
+- **España**: 4 series, 4 combinaciones
+    - ['dato base', 'plazas', 'total nacional'] → `VTE215`
+    - ['dato base', 'plazas por vivienda turistica', 'total nacional'] → `VTE214`
+    - ['dato base', 'porcentaje de viviendas turisticas sobre el total de viviendas censadas', 'total nacional'] → `VTE287`
+    - ['dato base', 'total nacional', 'viviendas turisticas'] → `VTE71`
+- **Comunitat Valenciana**: 4 series, 4 combinaciones
+    - ['comunitat valenciana', 'dato base', 'plazas'] → `VTE195`
+    - ['comunitat valenciana', 'dato base', 'plazas por vivienda turistica'] → `VTE194`
+    - ['comunitat valenciana', 'dato base', 'porcentaje de viviendas turisticas sobre el total de viviendas censadas'] → `VTE277`
+    - ['comunitat valenciana', 'dato base', 'viviendas turisticas'] → `VTE61`
+- **Castellón**: 4 series, 4 combinaciones
+    - ['castellon/castello', 'dato base', 'plazas'] → `VTE105`
+    - ['castellon/castello', 'dato base', 'plazas por vivienda turistica'] → `VTE104`
+    - ['castellon/castello', 'dato base', 'porcentaje de viviendas turisticas sobre el total de viviendas censadas'] → `VTE232`
+    - ['castellon/castello', 'dato base', 'viviendas turisticas'] → `VTE16`
+
+## Índice de Precios de Vivienda en Alquiler
+- código: `IPVA` · id 432 · IOE 
+- variables territoriales: 19 Municipios, 70 Comunidades y Ciudades Autónomas, 115 Provincias, 349 Total Nacional
+- todas las variables: 3 Tipo de dato, 19 Municipios, 70 Comunidades y Ciudades Autónomas, 115 Provincias, 349 Total Nacional, 545 Tipo de vivienda, 846 Distritos, 875 Zonas geográficas de España, 933 Tamaño de la vivienda, 1001 Antigüedad del contrato de arrendamiento
+- **España**: 61 series, 61 combinaciones
+    - ['ponderacion', 'total nacional'] → `IPVA3526`
+    - ['(120-150]', 'indice', 'total nacional'] → `IPVA5120`
+    - ['(120-150]', 'ponderacion', 'total nacional'] → `IPVA9163`
+    - ['(120-150]', 'total nacional', 'variacion anual'] → `IPVA5228`
+    - ['(60-75]', 'indice', 'total nacional'] → `IPVA5123`
+    - ['(60-75]', 'ponderacion', 'total nacional'] → `IPVA9166`
+    - ['(60-75]', 'total nacional', 'variacion anual'] → `IPVA5231`
+    - ['(75-90]', 'indice', 'total nacional'] → `IPVA5122`
+    - ['(75-90]', 'ponderacion', 'total nacional'] → `IPVA9165`
+    - ['(75-90]', 'total nacional', 'variacion anual'] → `IPVA5230`
+    - ['(90-120]', 'indice', 'total nacional'] → `IPVA5121`
+    - ['(90-120]', 'ponderacion', 'total nacional'] → `IPVA9164`
+    - ['(90-120]', 'total nacional', 'variacion anual'] → `IPVA5229`
+    - ['<=60', 'indice', 'total nacional'] → `IPVA5124`
+    - ['<=60', 'ponderacion', 'total nacional'] → `IPVA9167`
+    - ['<=60', 'total nacional', 'variacion anual'] → `IPVA5232`
+    - ['>150', 'indice', 'total nacional'] → `IPVA5119`
+    - ['>150', 'ponderacion', 'total nacional'] → `IPVA9162`
+- **Comunitat Valenciana**: 61 series, 61 combinaciones
+    - ['comunitat valenciana', 'ponderacion'] → `IPVA3516`
+    - ['(120-150]', 'comunitat valenciana', 'indice'] → `IPVA5060`
+    - ['(120-150]', 'comunitat valenciana', 'ponderacion'] → `IPVA9262`
+    - ['(120-150]', 'comunitat valenciana', 'variacion anual'] → `IPVA5168`
+    - ['(60-75]', 'comunitat valenciana', 'indice'] → `IPVA5063`
+    - ['(60-75]', 'comunitat valenciana', 'ponderacion'] → `IPVA9265`
+    - ['(60-75]', 'comunitat valenciana', 'variacion anual'] → `IPVA5171`
+    - ['(75-90]', 'comunitat valenciana', 'indice'] → `IPVA5062`
+    - ['(75-90]', 'comunitat valenciana', 'ponderacion'] → `IPVA9264`
+    - ['(75-90]', 'comunitat valenciana', 'variacion anual'] → `IPVA5170`
+    - ['(90-120]', 'comunitat valenciana', 'indice'] → `IPVA5061`
+    - ['(90-120]', 'comunitat valenciana', 'ponderacion'] → `IPVA9263`
+    - ['(90-120]', 'comunitat valenciana', 'variacion anual'] → `IPVA5169`
+    - ['<=60', 'comunitat valenciana', 'indice'] → `IPVA5064`
+    - ['<=60', 'comunitat valenciana', 'ponderacion'] → `IPVA9266`
+    - ['<=60', 'comunitat valenciana', 'variacion anual'] → `IPVA5172`
+    - ['>150', 'comunitat valenciana', 'indice'] → `IPVA5059`
+    - ['>150', 'comunitat valenciana', 'ponderacion'] → `IPVA9261`
+- **Castellón**: 61 series, 61 combinaciones
+    - ['castellon/castello', 'ponderacion'] → `IPVA3564`
+    - ['(120-150]', 'castellon/castello', 'indice'] → `IPVA5744`
+    - ['(120-150]', 'castellon/castello', 'ponderacion'] → `IPVA9688`
+    - ['(120-150]', 'castellon/castello', 'variacion anual'] → `IPVA6032`
+    - ['(60-75]', 'castellon/castello', 'indice'] → `IPVA5747`
+    - ['(60-75]', 'castellon/castello', 'ponderacion'] → `IPVA9691`
+    - ['(60-75]', 'castellon/castello', 'variacion anual'] → `IPVA6035`
+    - ['(75-90]', 'castellon/castello', 'indice'] → `IPVA5746`
+    - ['(75-90]', 'castellon/castello', 'ponderacion'] → `IPVA9690`
+    - ['(75-90]', 'castellon/castello', 'variacion anual'] → `IPVA6034`
+    - ['(90-120]', 'castellon/castello', 'indice'] → `IPVA5745`
+    - ['(90-120]', 'castellon/castello', 'ponderacion'] → `IPVA9689`
+    - ['(90-120]', 'castellon/castello', 'variacion anual'] → `IPVA6033`
+    - ['<=60', 'castellon/castello', 'indice'] → `IPVA5748`
+    - ['<=60', 'castellon/castello', 'ponderacion'] → `IPVA9692`
+    - ['<=60', 'castellon/castello', 'variacion anual'] → `IPVA6036`
+    - ['>150', 'castellon/castello', 'indice'] → `IPVA5743`
+    - ['>150', 'castellon/castello', 'ponderacion'] → `IPVA9687`
+
+## Índice de Producción de la Construcción
+- código: `IPCO` · id 486 · IOE 30293
+- variables territoriales: ninguna
+- todas las variables: 3 Tipo de dato, 387 DIVISIONES, 389 SECCIONES , 544 Corrección de efectos
+- **España**: 0 series, 0 combinaciones
+- **Comunitat Valenciana**: 0 series, 0 combinaciones
+- **Castellón**: 0 series, 0 combinaciones
+
+# Precio de referencia del alquiler (MIVAU)
+
+## https://www.mivau.gob.es/recursos_mvs/comun/archivos/serpavi/serpavi_municipios.csv
+- 403 · -
+- Forbidden
+
+## https://www.mivau.gob.es/vivienda/alquila-bien-es-tu-derecho/serpavi
+- 403 · -
+- Forbidden
+
+## https://apps.fomento.gob.es/CVP/handlers/serpavi.ashx
+- 404 · -
+- Not Found
+
+## https://www.mivau.gob.es/informacion-estadistica/vivienda-y-actuaciones-urbanas
+- 403 · -
+- Forbidden
+
+# Catálogo de datos.gob.es
+
+## «alquiler» → 200
+- **Clasificación de condiciones de alquiler de los programas del Gobierno de Canarias (ISTAC: CL_ENCUESTAS_CONDICIONES_PROGRAMA_ALQUILER)**
+    - https://datos.canarias.es/api/estadisticas/structural-resources/v1.0/codelists/ISTAC/CL_ENCUESTAS_CONDICIONES_PROGRAMA_ALQUILER/01.000/codes.xlsx?fields=+description
+    - https://datos.canarias.es/api/estadisticas/structural-resources/v1.0/codelists/ISTAC/CL_ENCUESTAS_CONDICIONES_PROGRAMA_ALQUILER/01.000/codes.tsv?fields=+description
+    - https://datos.canarias.es/api/estadisticas/structural-resources/v1.0/codelists/ISTAC/CL_ENCUESTAS_CONDICIONES_PROGRAMA_ALQUILER/01.000/codes.xml?fields=+description
+    - https://datos.canarias.es/api/estadisticas/structural-resources/v1.0/codelists/ISTAC/CL_ENCUESTAS_CONDICIONES_PROGRAMA_ALQUILER/01.000/codes.csv?fields=+description
+- **Clasificación de motivos por los que viven de alquiler (ISTAC: CL_ENCUESTAS_MOTIVOS_ALQUILER)**
+    - https://datos.canarias.es/api/estadisticas/structural-resources/v1.0/codelists/ISTAC/CL_ENCUESTAS_MOTIVOS_ALQUILER/01.000/codes.tsv?fields=+description
+    - https://datos.canarias.es/api/estadisticas/structural-resources/v1.0/codelists/ISTAC/CL_ENCUESTAS_MOTIVOS_ALQUILER/01.000/codes.json?fields=+description
+    - https://datos.canarias.es/api/estadisticas/structural-resources/v1.0/codelists/ISTAC/CL_ENCUESTAS_MOTIVOS_ALQUILER/01.000/codes.csv?fields=+description
+    - https://datos.canarias.es/api/estadisticas/structural-resources/v1.0/codelists/ISTAC/CL_ENCUESTAS_MOTIVOS_ALQUILER/01.000/codes.xml?fields=+description
+- **Población de 18 y más años con necesidad de cambio de vivienda según cantidad de dinero que podría destinar al mes a la compra o alquiler de la futura vivienda. Canarias. 2024 Cuarto trimestre**
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000344/1.0.xml
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000344/1.0.csv
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000344/1.0.jsonstat
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000344/1.0.tsv
+- **Población de 18 y más años con necesidad de cambio de vivienda según grado de dicha necesidad y grupos de edad de la persona titular de la propiedad o del contrato de alquiler de la vivienda. Canarias. 2024 Cuarto trimestre**
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000338/1.0.tsv
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000338/1.0.csv
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000338/1.0.jsonstat
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000338/1.0.json
+- **Población de 18 y más años con necesidad de cambio de vivienda según grado de dicha necesidad y sexos de la persona titular de la propiedad o del contrato de alquiler de la vivienda. Canarias. 2024 Cuarto trimestre**
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000337/1.0.jsonstat
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000337/1.0.json
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000337/1.0.xlsx
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000337/1.0.xml
+- **Población de 18 y más años con necesidad de cambio de vivienda según tiempo de dicha necesidad y grupos de edad de la persona titular de la propiedad o del contrato de alquiler de la vivienda. Canarias. 2024 Cuarto trimestre**
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000340/1.0.xml
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000340/1.0.tsv
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000340/1.0.json
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000340/1.0.csv
+- **Población de 18 y más años con necesidad de cambio de vivienda según tiempo de dicha necesidad y sexos de la persona titular de la propiedad o del contrato de alquiler de la vivienda. Canarias. 2024 Cuarto trimestre**
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000339/1.0.tsv
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000339/1.0.csv
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000339/1.0.jsonstat
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000339/1.0.xlsx
+- **Población de 18 y más años cuya vivienda actual tiene necesidad de rehabilitación según conocimiento de ayudas del Gobierno de Canarias para la rehabilitación de las viviendas, sexos y grupos de edad de la persona titular de la propiedad o del contrato de alquiler de la vivienda. Canarias. 2024 Cuarto trimestre**
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000329/1.0.xlsx
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000329/1.0.csv
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000329/1.0.xml
+    - https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/C00086A_000329/1.0.tsv
+
+## «precio de referencia del alquiler» → 200
+
+## «vivienda municipios» → 200
+
