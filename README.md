@@ -11,17 +11,25 @@ la provincia.
 ## Cómo funciona
 
 ```
-API del INE  ──(GitHub Action)──>  data/epa/*.json  ──>  páginas estáticas
+APIs y ficheros oficiales ──(GitHub Action diaria)──> data/*.json ──> páginas estáticas
 ```
 
-- **`scripts/descargar_epa.py`** consulta la API Tempus 3 del INE y escribe las
-  series en `data/epa/`. No usa dependencias externas: sólo la biblioteca
-  estándar de Python.
-- **`.github/workflows/actualizar-datos.yml`** ejecuta ese script en las fechas
-  en que el INE publica la EPA y commitea el resultado si ha cambiado algo. El
-  histórico de revisiones de cada cifra queda en el historial de git.
+- Los **descargadores** de `scripts/` consultan cada fuente y escriben las
+  series en `data/`. No usan dependencias externas: sólo la biblioteca estándar
+  de Python, incluido el lector de XLSX que hace falta para el CGPJ.
+- **`.github/workflows/actualizar-datos.yml`** los ejecuta **todos los días a
+  las 5:30 UTC**, valida lo descargado y commitea sólo si alguna cifra ha
+  cambiado. Así un dato aparece en la web como mucho un día después de que su
+  organismo lo publique, y si no hay nada nuevo no queda ni rastro.
+- **`.github/workflows/actualizar-municipios.yml`** hace lo propio con los
+  datos municipales una vez al mes: tardan diez minutos por descarga y sus
+  fuentes son anuales.
 - **`.github/workflows/publicar.yml`** compila la hoja de estilos y publica el
-  sitio en GitHub Pages.
+  sitio en GitHub Pages en cuanto hay un commit.
+
+El calendario completo —qué publica cada organismo, cada cuánto, con qué
+retraso y qué límites tiene— está en **[`docs/actualizacion.md`](docs/actualizacion.md)**
+y, para quien lea la web, en la página *Fuentes y calendario*.
 
 Las páginas son HTML estático: leen los JSON con `fetch` y pintan las gráficas
 con Chart.js, que se sirve desde el propio repositorio (`assets/vendor/`) para
@@ -49,8 +57,12 @@ python3 -m unittest discover -s tests   # pruebas del motor de series
 python3 scripts/validar_datos.py        # validación de los datos publicados
 ```
 
-Las dos se ejecutan en cada push, y la validación también después de cada
-descarga: si algo no cuadra, no se publica nada. Comprueba las identidades
+```bash
+python3 scripts/validar_datos.py --frescura   # ¿sigue llegando lo que se descarga?
+```
+
+Las dos primeras se ejecutan en cada push, y la validación también después de
+cada descarga: si algo no cuadra, no se publica nada. Comprueba las identidades
 contables (activos = ocupados + parados y compañía), que cada valor caiga en
 un rango plausible y que **ninguna serie pierda periodos** respecto a la
 descarga anterior, que es lo que delata que el INE ha renombrado una serie y
@@ -63,6 +75,13 @@ Al **retirar un indicador a propósito**, hay que quitar sus entradas de ese
 fichero en el mismo commit; si no, la validación lo dará por desaparecido y
 parará la publicación, que es justo lo que debe hacer cuando la desaparición
 no es intencionada.
+
+La comprobación de **frescura** es distinta y va aparte, al final de la tarea
+de actualización: mira que el último dato de cada fuente esté dentro del plazo
+que le toca por su cadencia. Detecta lo que la cobertura no puede detectar —que
+una fuente deje de publicar, o que el descargador deje de encontrarla— sin
+impedir que se publique lo que sí ha llegado. Los márgenes están en `FRESCURA`,
+dentro de `scripts/validar_datos.py`.
 
 ## Desarrollo en local
 
@@ -85,7 +104,11 @@ python3 scripts/descargar_epa.py
 
 | Ruta | Qué es |
 |---|---|
-| `index.html` | Portada del panel, con los enlaces a cada sección |
+| `index.html` | Portada: titulares de cada sección y enlaces |
+| `fuentes.html` | Fuentes, calendario de publicación y advertencias |
+| `assets/js/portada.js` | Titulares de la portada, desde `data/portada.json` |
+| `assets/js/enlace.js` | El estado de los filtros, en la URL |
+| `scripts/generar_portada.py` | Compone los titulares tras cada descarga |
 | `mercado-laboral.html` | Sección de mercado laboral (EPA) |
 | `assets/js/mercado-laboral.js` | Filtros, gráficas y tablas de esa sección |
 | `assets/js/tema.js` | Alternancia de tema claro/oscuro |
@@ -108,6 +131,7 @@ python3 scripts/descargar_epa.py
 | `assets/js/mapa.js` | Mapa coroplético, sin librería de cartografía |
 | `tests/` | Pruebas del motor de series y de los cálculos propios |
 | `docs/hoja-de-ruta.md` | Plan de ampliación del panel |
+| `docs/actualizacion.md` | Calendario de las fuentes y qué pasa si algo falla |
 | `sondeos/` | Volcados de los sondeos de fuentes, previos a cada descargador |
 | `data/` | Series descargadas, en JSON, una carpeta por bloque |
 

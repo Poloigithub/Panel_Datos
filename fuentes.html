@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="es" class="h-full">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuentes y calendario · Panel de datos</title>
+<meta name="description" content="De dónde sale cada cifra del panel, cada cuánto se actualiza y qué límites tiene cada fuente.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<script>
+  try {
+    const guardado = localStorage.getItem('panel-tema');
+    if (guardado) document.documentElement.dataset.theme = guardado;
+  } catch (_) {}
+</script>
+</head>
+<body class="min-h-full antialiased">
+
+<header class="border-b" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+    <a href="./" class="flex items-center gap-2.5 font-semibold tracking-tight">
+      <span aria-hidden="true" class="grid h-8 w-8 place-items-center rounded-lg text-white text-sm" style="background-color: var(--acento)">PD</span>
+      <span>Panel de datos</span>
+    </a>
+    <button type="button" data-tema class="control" aria-label="Cambiar entre tema claro y oscuro">
+      <span data-tema-texto>Tema</span>
+    </button>
+  </div>
+</header>
+
+<main class="mx-auto max-w-6xl px-4 sm:px-6 py-8 sm:py-10">
+
+  <nav aria-label="Ruta" class="text-xs" style="color: var(--tinta-tenue)">
+    <a class="enlace-sutil" href="./">Panel</a> <span aria-hidden="true">/</span> Fuentes y calendario
+  </nav>
+
+  <h1 class="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Fuentes y calendario</h1>
+  <p class="mt-3 max-w-3xl text-base leading-relaxed" style="color: var(--tinta-suave)">
+    De dónde sale cada cifra, cada cuánto la publica su organismo y qué límites
+    tiene. Si vas a citar un dato de aquí, esta es la página que conviene leer
+    antes.
+  </p>
+
+  <section class="mt-8 tarjeta p-5">
+    <h2 class="text-sm font-semibold">La respuesta corta</h2>
+    <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+      Una tarea automática revisa <strong>todos los días a las 5:30 de la
+      madrugada</strong> si alguna fuente ha publicado algo nuevo. Cuando lo
+      hay, lo descarga, lo valida y lo publica, de modo que <strong>un dato
+      aparece aquí como mucho un día después</strong> de que su organismo lo
+      saque. Cuando no lo hay, no se toca nada: no hay actualizaciones de
+      relleno. Lo municipal, que tarda bastante más en descargarse y viene de
+      fuentes anuales, se revisa una vez al mes.
+    </p>
+    <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+      Mirar a diario no hace que un dato anual cambie a diario: la renta de
+      2023 seguirá siendo la de 2023 hasta que el INE publique la de 2024.
+      Última revisión de los datos:
+      <span data-portada-actualizada class="font-medium"></span>.
+    </p>
+  </section>
+
+  <section class="mt-8" aria-labelledby="tabla-titulo">
+    <h2 id="tabla-titulo" class="text-lg font-semibold tracking-tight">Por sección</h2>
+    <div class="mt-3 tarjeta overflow-x-auto">
+      <table class="w-full text-sm">
+        <caption class="sr-only">Fuente, cadencia, último dato disponible y advertencias de cada sección</caption>
+        <thead>
+          <tr class="text-left" style="color: var(--tinta-tenue)">
+            <th scope="col" class="px-4 py-2.5 font-medium">Sección y fuente</th>
+            <th scope="col" class="px-4 py-2.5 font-medium">Cada cuánto</th>
+            <th scope="col" class="px-4 py-2.5 font-medium">Último dato</th>
+            <th scope="col" class="px-4 py-2.5 font-medium">Qué conviene saber</th>
+          </tr>
+        </thead>
+        <tbody class="align-top">
+          <tr style="border-top: 1px solid var(--borde)">
+            <th scope="row" class="px-4 py-3 text-left font-medium align-top">
+              <a class="enlace-sutil" href="mercado-laboral.html">Mercado laboral</a>
+              <p class="mt-1 text-xs font-normal" style="color: var(--tinta-tenue)">Encuesta de Población Activa (EPA) · INE</p>
+            </th>
+            <td class="px-4 py-3 align-top text-sm">Trimestral
+              <p class="mt-1 text-xs" style="color: var(--tinta-tenue)">Unas semanas después de cerrar el trimestre, a finales de enero, abril, julio y octubre.</p>
+            </td>
+            <td class="px-4 py-3 align-top text-sm whitespace-nowrap" data-ultimo="epa">…</td>
+            <td class="px-4 py-3 align-top text-sm" style="color: var(--tinta-suave)">Es una encuesta: mide quién busca empleo, lo esté o no apuntado en una oficina. Los valores absolutos van en miles de personas, como los publica el INE.</td>
+          </tr>
+          <tr style="border-top: 1px solid var(--borde)">
+            <th scope="row" class="px-4 py-3 text-left font-medium align-top">
+              <a class="enlace-sutil" href="paro-registrado.html">Paro registrado</a>
+              <p class="mt-1 text-xs font-normal" style="color: var(--tinta-tenue)">Servicio Público de Empleo Estatal (SEPE)</p>
+            </th>
+            <td class="px-4 py-3 align-top text-sm">Mensual
+              <p class="mt-1 text-xs" style="color: var(--tinta-tenue)">En los primeros días hábiles del mes siguiente.</p>
+            </td>
+            <td class="px-4 py-3 align-top text-sm whitespace-nowrap" data-ultimo="paro-registrado">…</td>
+            <td class="px-4 py-3 align-top text-sm" style="color: var(--tinta-suave)">Cuenta a quien se inscribe en una oficina de empleo, que no es lo mismo que la EPA. Los valores menores de cinco se publican como «&lt;5» por secreto estadístico, así que los desgloses se quedan algo por debajo del total.</td>
+          </tr>
+          <tr style="border-top: 1px solid var(--borde)">
+            <th scope="row" class="px-4 py-3 text-left font-medium align-top">
+              <a class="enlace-sutil" href="contratos.html">Contratación</a>
+              <p class="mt-1 text-xs font-normal" style="color: var(--tinta-tenue)">Servicio Público de Empleo Estatal (SEPE)</p>
+            </th>
+            <td class="px-4 py-3 align-top text-sm">Mensual
+              <p class="mt-1 text-xs" style="color: var(--tinta-tenue)">A la vez que el paro registrado.</p>
+            </td>
+            <td class="px-4 py-3 align-top text-sm whitespace-nowrap" data-ultimo="contratos">…</td>
+            <td class="px-4 py-3 align-top text-sm" style="color: var(--tinta-suave)">Cuenta contratos, no personas: una misma persona puede firmar varios en un mes.</td>
+          </tr>
+          <tr style="border-top: 1px solid var(--borde)">
+            <th scope="row" class="px-4 py-3 text-left font-medium align-top">
+              <a class="enlace-sutil" href="precios.html">Precios</a>
+              <p class="mt-1 text-xs font-normal" style="color: var(--tinta-tenue)">Índice de Precios de Consumo (IPC) · INE</p>
+            </th>
+            <td class="px-4 py-3 align-top text-sm">Mensual
+              <p class="mt-1 text-xs" style="color: var(--tinta-tenue)">Hacia el día 13 del mes siguiente.</p>
+            </td>
+            <td class="px-4 py-3 align-top text-sm whitespace-nowrap" data-ultimo="precios">…</td>
+            <td class="px-4 py-3 align-top text-sm" style="color: var(--tinta-suave)">Una de las pocas estadísticas con dato propio de provincia y frecuencia mensual. La serie se acota al enlace de la base vigente, que arranca en 2002, porque el INE conserva tramos anteriores en otra escala que no son comparables.</td>
+          </tr>
+          <tr style="border-top: 1px solid var(--borde)">
+            <th scope="row" class="px-4 py-3 text-left font-medium align-top">
+              <a class="enlace-sutil" href="poblacion.html">Población</a>
+              <p class="mt-1 text-xs font-normal" style="color: var(--tinta-tenue)">Estadística Continua de Población y Cifras de Población · INE</p>
+            </th>
+            <td class="px-4 py-3 align-top text-sm">Trimestral y anual
+              <p class="mt-1 text-xs" style="color: var(--tinta-tenue)">Unos dos meses después del periodo.</p>
+            </td>
+            <td class="px-4 py-3 align-top text-sm whitespace-nowrap" data-ultimo="poblacion">…</td>
+            <td class="px-4 py-3 align-top text-sm" style="color: var(--tinta-suave)">Se juntan dos operaciones porque por separado ninguna da la serie entera: la continua arranca en 2021 y las cifras de población vienen de 1971.</td>
+          </tr>
+          <tr style="border-top: 1px solid var(--borde)">
+            <th scope="row" class="px-4 py-3 text-left font-medium align-top">
+              <a class="enlace-sutil" href="demografia.html">Natalidad, mortalidad y migración</a>
+              <p class="mt-1 text-xs font-normal" style="color: var(--tinta-tenue)">Indicadores Demográficos Básicos · INE</p>
+            </th>
+            <td class="px-4 py-3 align-top text-sm">Anual
+              <p class="mt-1 text-xs" style="color: var(--tinta-tenue)">Con alrededor de un año de retraso.</p>
+            </td>
+            <td class="px-4 py-3 align-top text-sm whitespace-nowrap" data-ultimo="demografia">…</td>
+            <td class="px-4 py-3 align-top text-sm" style="color: var(--tinta-suave)">La esperanza de vida al nacer se dejó fuera a propósito: no se puede identificar sin ambigüedad por provincia y una búsqueda laxa acababa devolviendo la mortalidad infantil.</td>
+          </tr>
+          <tr style="border-top: 1px solid var(--borde)">
+            <th scope="row" class="px-4 py-3 text-left font-medium align-top">
+              <a class="enlace-sutil" href="renta.html">Renta y desigualdad</a>
+              <p class="mt-1 text-xs font-normal" style="color: var(--tinta-tenue)">Atlas de Distribución de Renta de los Hogares · INE</p>
+            </th>
+            <td class="px-4 py-3 align-top text-sm">Anual
+              <p class="mt-1 text-xs" style="color: var(--tinta-tenue)">Con unos dos años de retraso.</p>
+            </td>
+            <td class="px-4 py-3 align-top text-sm whitespace-nowrap" data-ultimo="renta">…</td>
+            <td class="px-4 py-3 align-top text-sm" style="color: var(--tinta-suave)">Es renta declarada, no encuestada. Las series en euros constantes son cálculo propio: renta nominal deflactada con el IPC medio anual del mismo ámbito.</td>
+          </tr>
+          <tr style="border-top: 1px solid var(--borde)">
+            <th scope="row" class="px-4 py-3 text-left font-medium align-top">
+              <a class="enlace-sutil" href="vivienda.html">Vivienda</a>
+              <p class="mt-1 text-xs font-normal" style="color: var(--tinta-tenue)">ETDP, HPT, EH, IPV e IPVA · INE, y lanzamientos del CGPJ</p>
+            </th>
+            <td class="px-4 py-3 align-top text-sm">Mensual, trimestral y anual según el indicador
+              <p class="mt-1 text-xs" style="color: var(--tinta-tenue)">Compraventas e hipotecas, unos dos meses; el precio de la vivienda, por trimestres; el del alquiler, anual; los lanzamientos, unos dos meses tras el trimestre.</p>
+            </td>
+            <td class="px-4 py-3 align-top text-sm whitespace-nowrap" data-ultimo="vivienda">…</td>
+            <td class="px-4 py-3 align-top text-sm" style="color: var(--tinta-suave)">Tres advertencias: el índice de precios de compraventa <strong>no existe por provincia</strong>, sólo por comunidad autónoma; los trimestres recientes de lanzamientos son <strong>provisionales</strong> y el CGPJ los revisa al alza; y la hipoteca media es cálculo propio (importe entre número), no el precio de la vivienda.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="mt-8" aria-labelledby="municipal-titulo">
+    <h2 id="municipal-titulo" class="text-lg font-semibold tracking-tight">Datos municipales</h2>
+    <p class="mt-2 max-w-3xl text-sm" style="color: var(--tinta-suave)">
+      Se revisan una vez al mes, el día 5, porque resolver las series de los 135
+      municipios uno a uno lleva unos diez minutos por descarga y sus fuentes
+      son anuales.
+    </p>
+    <div class="mt-3 tarjeta overflow-x-auto">
+      <table class="w-full text-sm">
+        <caption class="sr-only">Fuentes municipales y su cadencia</caption>
+        <thead>
+          <tr class="text-left" style="color: var(--tinta-tenue)">
+            <th scope="col" class="px-4 py-2.5 font-medium">Dato y fuente</th>
+            <th scope="col" class="px-4 py-2.5 font-medium">Cada cuánto</th>
+            <th scope="col" class="px-4 py-2.5 font-medium">Cuándo llega</th>
+          </tr>
+        </thead>
+        <tbody class="align-top">
+          <tr style="border-top: 1px solid var(--borde)">
+            <th scope="row" class="px-4 py-3 text-left font-medium align-top">Paro por municipio
+              <p class="mt-1 text-xs font-normal" style="color: var(--tinta-tenue)">SEPE</p>
+            </th>
+            <td class="px-4 py-3 align-top text-sm">Mensual</td>
+            <td class="px-4 py-3 align-top text-sm" style="color: var(--tinta-suave)">A la vez que el paro registrado provincial.</td>
+          </tr>
+          <tr style="border-top: 1px solid var(--borde)">
+            <th scope="row" class="px-4 py-3 text-left font-medium align-top">Población por municipio
+              <p class="mt-1 text-xs font-normal" style="color: var(--tinta-tenue)">Padrón · INE</p>
+            </th>
+            <td class="px-4 py-3 align-top text-sm">Anual</td>
+            <td class="px-4 py-3 align-top text-sm" style="color: var(--tinta-suave)">Alrededor de medio año después.</td>
+          </tr>
+          <tr style="border-top: 1px solid var(--borde)">
+            <th scope="row" class="px-4 py-3 text-left font-medium align-top">Renta por municipio
+              <p class="mt-1 text-xs font-normal" style="color: var(--tinta-tenue)">Atlas de Distribución de Renta · INE</p>
+            </th>
+            <td class="px-4 py-3 align-top text-sm">Anual</td>
+            <td class="px-4 py-3 align-top text-sm" style="color: var(--tinta-suave)">Con unos dos años de retraso.</td>
+          </tr>
+          <tr style="border-top: 1px solid var(--borde)">
+            <th scope="row" class="px-4 py-3 text-left font-medium align-top">Contornos municipales
+              <p class="mt-1 text-xs font-normal" style="color: var(--tinta-tenue)">GISCO · Eurostat</p>
+            </th>
+            <td class="px-4 py-3 align-top text-sm">Cuando cambian los términos</td>
+            <td class="px-4 py-3 align-top text-sm" style="color: var(--tinta-suave)">Se descargan a mano; no cambian solos.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="mt-10 grid gap-4 sm:grid-cols-2">
+    <div class="tarjeta p-5">
+      <h2 class="text-sm font-semibold">Qué pasa si una cifra no cuadra</h2>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Antes de publicar nada se comprueba que se cumplan las identidades que
+        tienen que cumplirse —activos = ocupados + parados, o lanzamientos =
+        hipoteca + alquiler + otros—, que cada valor caiga en un rango
+        plausible y que ninguna serie haya perdido periodos respecto a la
+        descarga anterior. Si algo falla, no se publica: se queda la versión
+        anterior, que es correcta.
+      </p>
+    </div>
+    <div class="tarjeta p-5">
+      <h2 class="text-sm font-semibold">Qué pasa si una fuente se apaga</h2>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Después de publicar se comprueba que el último dato de cada fuente esté
+        dentro del plazo que le toca por su cadencia. Una fuente que deja de
+        llegar no tumba el resto del panel —eso es deliberado— pero hace que la
+        tarea salga en rojo para que alguien se entere.
+      </p>
+    </div>
+  </section>
+
+  <section class="mt-8 tarjeta p-5">
+    <h2 class="text-sm font-semibold">Principios que no se negocian</h2>
+    <ul class="mt-2 space-y-1.5 text-sm leading-relaxed list-disc pl-5" style="color: var(--tinta-suave)">
+      <li><strong>Trazabilidad.</strong> Cada cifra viene de una API o un fichero oficial, y de qué serie exacta sale queda anotado en <code class="rounded px-1 py-0.5 text-[0.8em]" style="background-color: var(--superficie-2)">config/</code>. Nada escrito a mano.</li>
+      <li><strong>Los huecos se ven.</strong> Si un organismo no publica algo para un ámbito, la serie aparece cortada. Nunca se interpola para que quede bonito.</li>
+      <li><strong>Antes descartar que publicar mal.</strong> Un indicador que no se puede identificar con certeza se queda fuera, y la página dice por qué.</li>
+      <li><strong>El histórico vive en git.</strong> Cada actualización es un commit, así que se puede ver cuándo cambió una cifra y qué valor tenía antes, revisiones de los organismos incluidas.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="border-t mt-8" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-6 text-xs flex flex-wrap gap-x-6 gap-y-2 justify-between" style="color: var(--tinta-tenue)">
+    <p>Datos: <a class="enlace-sutil" href="https://www.ine.es/" rel="noopener">INE</a>, <a class="enlace-sutil" href="https://www.sepe.es/" rel="noopener">SEPE</a>, <a class="enlace-sutil" href="https://www.poderjudicial.es/" rel="noopener">CGPJ</a> y <a class="enlace-sutil" href="https://ec.europa.eu/eurostat/web/gisco" rel="noopener">GISCO</a>. Elaboración propia.</p>
+    <p><a class="enlace-sutil" href="https://github.com/Poloigithub/Panel_Datos" rel="noopener">Código en GitHub</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/tema.js"></script>
+<script src="assets/js/portada.js"></script>
+</body>
+</html>

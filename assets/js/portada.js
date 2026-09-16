@@ -163,13 +163,20 @@
     return caja;
   }
 
-  function pinta(portada) {
-    var contenedor = document.querySelector('[data-titulares]');
-    if (!contenedor) return;
-    contenedor.replaceChildren();
+  /* La página de fuentes cuenta el calendario de cada organismo; para que no
+     se quede en promesas, cada fila enseña el último dato que hay de verdad. */
+  function rellenaUltimos(portada) {
     portada.secciones.forEach(function (seccion) {
-      contenedor.appendChild(tarjeta(seccion, portada.ambitos));
+      document.querySelectorAll('[data-ultimo="' + seccion.id + '"]').forEach(function (nodo) {
+        nodo.textContent = etiquetaPeriodo(seccion.ultimo_periodo);
+      });
     });
+  }
+
+  function pinta(portada) {
+    // Lo que sirve en cualquier página va primero: la de fuentes usa la fecha
+    // y los últimos periodos, pero no tiene titulares que pintar.
+    rellenaUltimos(portada);
 
     var fecha = new Date(portada.actualizado);
     var nodo = document.querySelector('[data-portada-actualizada]');
@@ -180,6 +187,13 @@
     }
     var aviso = document.querySelector('[data-titulares-estado]');
     if (aviso) aviso.hidden = true;
+
+    var contenedor = document.querySelector('[data-titulares]');
+    if (!contenedor) return;
+    contenedor.replaceChildren();
+    portada.secciones.forEach(function (seccion) {
+      contenedor.appendChild(tarjeta(seccion, portada.ambitos));
+    });
   }
 
   async function arranca() {
