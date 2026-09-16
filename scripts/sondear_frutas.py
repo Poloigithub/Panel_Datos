@@ -26,7 +26,12 @@ def main() -> int:
         conjuntos = [segs for segs in indice if any("fruta" in s for s in segs)]
         lineas += [f"## {nombre}", f"- {len(conjuntos)} conjuntos con fruta", ""]
         for segs in sorted(conjuntos, key=lambda s: (len(s), sorted(s))):
-            lineas.append(f"- {sorted(segs)} → `{indice[segs][0]['COD']}`")
+            if "indice" not in segs:
+                continue
+            codigo = indice[segs][0]["COD"]
+            valores = motor.descarga_serie(codigo)
+            ultimo = max(valores, key=motor.orden_periodo) if valores else "sin datos"
+            lineas.append(f"- **hasta {ultimo}** · {sorted(segs)} → `{codigo}`")
         lineas.append("")
     (SALIDA / "frutas.md").write_text("\n".join(lineas) + "\n", encoding="utf-8")
     print("\n".join(lineas[:50]))
