@@ -1,0 +1,93 @@
+
+=== Vivienda ===
+  · España
+      (ETDP: 66 series)
+      (HPT: 770 series)
+      (EH: 30 series)
+      (IPV: 45 series)
+      (IPVA: 61 series)
+      compraventas/ambos: descartadas por sus valores ETDP3337
+      compraventas/ambos: 234 periodos (ETDP1510)
+      compraventas_nueva/ambos: descartadas por sus valores ETDP3652
+      compraventas_nueva/ambos: 234 periodos (ETDP1825)
+      compraventas_usada/ambos: descartadas por sus valores ETDP3651
+      compraventas_usada/ambos: 234 periodos (ETDP1824)
+      compraventas_protegida/ambos: 234 periodos (ETDP1822)
+      sin serie para hipotecas/ambos; lo más parecido:
+        (4 coinciden) ['base nueva', 'mensual', 'numero de hipotecas', 'total nacional', 'viviendas']
+        (4 coinciden) ['anual', 'base nueva', 'numero de hipotecas', 'total nacional', 'viviendas']
+        (3 coinciden) ['base nueva', 'mensual', 'numero de hipotecas', 'otros', 'total nacional']
+        (3 coinciden) ['base antigua', 'mensual', 'numero de hipotecas', 'total', 'total nacional', 'viviendas']
+      sin serie para importe_hipotecas/ambos; lo más parecido:
+        (4 coinciden) ['base nueva', 'importe de hipotecas', 'mensual', 'total nacional', 'viviendas']
+        (4 coinciden) ['anual', 'base nueva', 'importe de hipotecas', 'total nacional', 'viviendas']
+        (3 coinciden) ['200 euros', 'base antigua', 'importe de hipotecas', 'mayor de 90', 'mensual', 'total nacional', 'viviendas']
+        (3 coinciden) ['base antigua', 'importe de hipotecas', 'mensual', 'total', 'total nacional', 'viviendas']
+      ejecuciones/ambos: 50 periodos (EH97)
+      ipv/ambos: 78 periodos (IPV1209)
+      ipv_variacion/ambos: 78 periodos (IPV1376)
+      ipva/ambos: 14 periodos (IPVA4962)
+      ipva_variacion/ambos: 13 periodos (IPVA5016)
+      sin hipoteca media: falta el importe o el número
+  · Comunitat Valenciana
+      (ETDP: 58 series)
+      (HPT: 190 series)
+      (EH: 28 series)
+      (IPV: 45 series)
+      (IPVA: 61 series)
+      compraventas/ambos: 234 periodos (ETDP1450)
+      compraventas_nueva/ambos: 234 periodos (ETDP1775)
+      compraventas_usada/ambos: 234 periodos (ETDP1774)
+      compraventas_protegida/ambos: 234 periodos (ETDP1772)
+      sin serie para hipotecas/ambos; lo más parecido:
+        (4 coinciden) ['base nueva', 'comunitat valenciana', 'mensual', 'numero de hipotecas', 'viviendas']
+        (4 coinciden) ['anual', 'base nueva', 'comunitat valenciana', 'numero de hipotecas', 'viviendas']
+        (3 coinciden) ['base nueva', 'caja de ahorro', 'comunitat valenciana', 'mensual', 'numero de hipotecas', 'total fincas rusticas']
+        (3 coinciden) ['base nueva', 'comunitat valenciana', 'mensual', 'numero de hipotecas', 'total', 'total fincas rusticas']
+      sin serie para importe_hipotecas/ambos; lo más parecido:
+        (4 coinciden) ['base nueva', 'comunitat valenciana', 'importe de hipotecas', 'mensual', 'viviendas']
+        (4 coinciden) ['anual', 'base nueva', 'comunitat valenciana', 'importe de hipotecas', 'viviendas']
+        (3 coinciden) ['base nueva', 'comunitat valenciana', 'importe de hipotecas', 'mensual', 'total', 'total fincas rusticas']
+        (3 coinciden) ['base nueva', 'caja de ahorro', 'comunitat valenciana', 'importe de hipotecas', 'mensual', 'total fincas rusticas y urbanas']
+      ejecuciones/ambos: 50 periodos (EH42)
+      ipv/ambos: 78 periodos (IPV1392)
+      ipv_variacion/ambos: 78 periodos (IPV1394)
+      ipva/ambos: 14 periodos (IPVA4932)
+      ipva_variacion/ambos: 13 periodos (IPVA4986)
+      sin hipoteca media: falta el importe o el número
+  · Castellón
+      (ETDP: 58 series)
+      (HPT: 718 series)
+      (EH: 14 series)
+      (IPV: 0 series)
+      (IPVA: 61 series)
+      compraventas/ambos: 234 periodos (ETDP1198)
+      compraventas_nueva/ambos: 234 periodos (ETDP1565)
+      compraventas_usada/ambos: 234 periodos (ETDP1564)
+      compraventas_protegida/ambos: 234 periodos (ETDP1562)
+      sin serie para hipotecas/ambos; lo más parecido:
+        (4 coinciden) ['base nueva', 'castellon/castello', 'mensual', 'numero de hipotecas', 'viviendas']
+        (3 coinciden) ['001 a 90', '200 euros', 'base antigua', 'castellon/castello', 'de 30', 'mensual', 'numero de hipotecas', 'viviendas']
+        (3 coinciden) ['base nueva', 'caja de ahorro', 'castellon/castello', 'mensual', 'numero de hipotecas', 'total fincas rusticas']
+        (3 coinciden) ['base antigua', 'castellon/castello', 'mayor de 16 %', 'mensual', 'numero de hipotecas', 'viviendas']
+      sin serie para importe_hipotecas/ambos; lo más parecido:
+        (4 coinciden) ['base nueva', 'castellon/castello', 'importe de hipotecas', 'mensual', 'viviendas']
+        (3 coinciden) ['200 euros', 'base antigua', 'castellon/castello', 'importe de hipotecas', 'mayor de 90', 'mensual', 'viviendas']
+        (3 coinciden) ['base nueva', 'castellon/castello', 'importe de hipotecas', 'mensual', 'total fincas rusticas']
+        (3 coinciden) ['banco', 'base nueva', 'castellon/castello', 'importe de hipotecas', 'mensual', 'total fincas rusticas y urbanas']
+      ejecuciones/ambos: 12 periodos (EH567)
+      ipva/ambos: 14 periodos (IPVA5346)
+      ipva_variacion/ambos: 13 periodos (IPVA5490)
+      sin hipoteca media: falta el importe o el número
+    escrito data/vivienda/espana.json
+    escrito data/vivienda/comunitat-valenciana.json
+    escrito data/vivienda/castellon.json
+  327 periodos: 2007T1 … 2026M06
+
+No se ha encontrado serie para 6 combinaciones:
+  - vivienda/espana/hipotecas/ambos
+  - vivienda/espana/importe_hipotecas/ambos
+  - vivienda/comunitat-valenciana/hipotecas/ambos
+  - vivienda/comunitat-valenciana/importe_hipotecas/ambos
+  - vivienda/castellon/hipotecas/ambos
+  - vivienda/castellon/importe_hipotecas/ambos

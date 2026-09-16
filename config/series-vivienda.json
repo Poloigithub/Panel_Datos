@@ -1,0 +1,89 @@
+{
+  "espana": {
+    "ambos": {
+      "compraventas": [
+        "ETDP1510"
+      ],
+      "compraventas_nueva": [
+        "ETDP1825"
+      ],
+      "compraventas_usada": [
+        "ETDP1824"
+      ],
+      "compraventas_protegida": [
+        "ETDP1822"
+      ],
+      "ejecuciones": [
+        "EH97"
+      ],
+      "ipv": [
+        "IPV1209"
+      ],
+      "ipv_variacion": [
+        "IPV1376"
+      ],
+      "ipva": [
+        "IPVA4962"
+      ],
+      "ipva_variacion": [
+        "IPVA5016"
+      ]
+    }
+  },
+  "comunitat-valenciana": {
+    "ambos": {
+      "compraventas": [
+        "ETDP1450"
+      ],
+      "compraventas_nueva": [
+        "ETDP1775"
+      ],
+      "compraventas_usada": [
+        "ETDP1774"
+      ],
+      "compraventas_protegida": [
+        "ETDP1772"
+      ],
+      "ejecuciones": [
+        "EH42"
+      ],
+      "ipv": [
+        "IPV1392"
+      ],
+      "ipv_variacion": [
+        "IPV1394"
+      ],
+      "ipva": [
+        "IPVA4932"
+      ],
+      "ipva_variacion": [
+        "IPVA4986"
+      ]
+    }
+  },
+  "castellon": {
+    "ambos": {
+      "compraventas": [
+        "ETDP1198"
+      ],
+      "compraventas_nueva": [
+        "ETDP1565"
+      ],
+      "compraventas_usada": [
+        "ETDP1564"
+      ],
+      "compraventas_protegida": [
+        "ETDP1562"
+      ],
+      "ejecuciones": [
+        "EH567"
+      ],
+      "ipva": [
+        "IPVA5346"
+      ],
+      "ipva_variacion": [
+        "IPVA5490"
+      ]
+    }
+  }
+}
