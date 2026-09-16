@@ -1,0 +1,92 @@
+# La serie del salario en la encuesta de estructura salarial
+
+## España
+- 12940 combinaciones de segmentos
+
+- 4240 con salario o ganancia y hasta cinco segmentos:
+    - ['salario medio por hora'] → `EAES2013`
+    - ['salario medio por hora de hombres'] → `EAES223`
+    - ['salario medio por hora de mujeres'] → `EAES1941`
+    - ['d5/d1 (la mediana (3) dividida por la 1a decila de la ganancia por hora)', 'dato base', 'total nacional'] → `EAES2691`
+    - ['d9/d1 (9a decila dividida por la 1a decila de la ganancia por hora)', 'dato base', 'total nacional'] → `EAES2690`
+    - ['d9/d5 (9a decila (2) dividida por la mediana de la ganancia por hora)', 'dato base', 'total nacional'] → `EAES2692`
+    - ['dato base', 'proporcion (%) de mujeres en el total de asalariados con ganancia baja', 'total nacional'] → `EAES2687`
+    - ['dato base', 'proporcion (%) de trabajadores con ganancia baja (low pay rate)(1)', 'total nacional'] → `EAES2688`
+    - ['ambos sexos', 'complementos salariales', 'componente del salario bruto mensual', 'total nacional'] → `EAES33663`
+    - ['ambos sexos', 'componente del salario bruto anual', 'pagos extraordinarios', 'total nacional'] → `EAES33891`
+    - ['ambos sexos', 'componente del salario bruto anual', 'total nacional', 'valoracion en especie'] → `EAES33890`
+    - ['ambos sexos', 'componente del salario bruto mensual', 'contribuciones a la seguridad social a cargo del trabajador', 'total nacional'] → `EAES33657`
+    - ['ambos sexos', 'componente del salario bruto mensual', 'pagos por horas extraordinarias', 'total nacional'] → `EAES33661`
+    - ['ambos sexos', 'componente del salario bruto mensual', 'salario neto', 'total nacional'] → `EAES33655`
+    - ['ambos sexos', 'dato base', 'salario medio anual', 'total nacional'] → `EAES228`
+    - ['ambos sexos', 'dato base', 'salario medio por hora', 'total nacional'] → `EAES225`
+    - ['complementos salariales', 'componente del salario bruto mensual', 'mujeres', 'total nacional'] → `EAES33473`
+    - ['componente del salario bruto anual', 'hombres', 'pagos extraordinarios', 'total nacional'] → `EAES33739`
+    - ['componente del salario bruto anual', 'hombres', 'salario bruto', 'total nacional'] → `EAES33740`
+    - ['componente del salario bruto anual', 'hombres', 'salario ordinario', 'total nacional'] → `EAES33737`
+    - ['componente del salario bruto anual', 'mujeres', 'pagos extraordinarios', 'total nacional'] → `EAES33815`
+    - ['componente del salario bruto anual', 'mujeres', 'salario bruto', 'total nacional'] → `EAES33816`
+    - ['componente del salario bruto anual', 'mujeres', 'salario ordinario', 'total nacional'] → `EAES33813`
+    - ['componente del salario bruto mensual', 'contribuciones a la seguridad social a cargo del trabajador', 'hombres', 'total nacional'] → `EAES33277`
+    - ['componente del salario bruto mensual', 'hombres', 'pagas extraordinarias', 'total nacional'] → `EAES33279`
+    - ['componente del salario bruto mensual', 'hombres', 'salario base', 'total nacional'] → `EAES33284`
+    - ['componente del salario bruto mensual', 'hombres', 'salario bruto', 'total nacional'] → `EAES33278`
+    - ['componente del salario bruto mensual', 'hombres', 'salario ordinario', 'total nacional'] → `EAES33280`
+    - ['componente del salario bruto mensual', 'mujeres', 'pagas extraordinarias', 'total nacional'] → `EAES33469`
+    - ['componente del salario bruto mensual', 'mujeres', 'pagos por horas extraordinarias', 'total nacional'] → `EAES33471`
+    - ['componente del salario bruto mensual', 'mujeres', 'salario bruto', 'total nacional'] → `EAES33468`
+    - ['dato base', 'hombres', 'salario medio anual', 'total nacional'] → `EAES226`
+    - ['dato base', 'mujeres', 'salario medio anual', 'total nacional'] → `EAES227`
+    - ['55 y mas anos', 'ambos sexos', 'dato base', 'salario medio bruto', 'total nacional'] → `EAES1606`
+    - ['55 y mas anos', 'dato base', 'hombres', 'salario medio bruto', 'total nacional'] → `EAES1392`
+    - ['55 y mas anos', 'dato base', 'mujeres', 'salario medio bruto', 'total nacional'] → `EAES1499`
+    - ['65 y mas anos', 'ambos sexos', 'dato base', 'salario medio bruto', 'total nacional'] → `EAES397`
+    - ['65 y mas anos', 'dato base', 'hombres', 'salario medio bruto', 'total nacional'] → `EAES373`
+    - ['65 y mas anos', 'dato base', 'mujeres', 'salario medio bruto', 'total nacional'] → `EAES385`
+    - ['actividades administrativas de oficina y otras actividades auxiliares a las empresas', 'ambos sexos', 'complementos salariales', 'componente del salario bruto mensual', 'total nacional'] → `EAES8289`
+
+## Comunitat Valenciana
+- 3494 combinaciones de segmentos
+
+- 165 con salario o ganancia y hasta cinco segmentos:
+    - ['ambos sexos', 'complementos salariales', 'componente del salario bruto mensual', 'comunitat valenciana'] → `EAES33563`
+    - ['ambos sexos', 'componente del salario bruto anual', 'comunitat valenciana', 'pagos extraordinarios'] → `EAES33851`
+    - ['ambos sexos', 'componente del salario bruto anual', 'comunitat valenciana', 'salario bruto'] → `EAES33852`
+    - ['ambos sexos', 'componente del salario bruto anual', 'comunitat valenciana', 'salario ordinario'] → `EAES33849`
+    - ['ambos sexos', 'componente del salario bruto anual', 'comunitat valenciana', 'valoracion en especie'] → `EAES33850`
+    - ['ambos sexos', 'componente del salario bruto mensual', 'comunitat valenciana', 'contribuciones a la seguridad social a cargo del trabajador'] → `EAES33557`
+    - ['ambos sexos', 'componente del salario bruto mensual', 'comunitat valenciana', 'pagas extraordinarias'] → `EAES33559`
+    - ['ambos sexos', 'componente del salario bruto mensual', 'comunitat valenciana', 'pagos por horas extraordinarias'] → `EAES33561`
+    - ['ambos sexos', 'componente del salario bruto mensual', 'comunitat valenciana', 'retenciones irpf'] → `EAES33556`
+    - ['ambos sexos', 'componente del salario bruto mensual', 'comunitat valenciana', 'salario base'] → `EAES33564`
+    - ['ambos sexos', 'componente del salario bruto mensual', 'comunitat valenciana', 'salario bruto'] → `EAES33558`
+    - ['ambos sexos', 'componente del salario bruto mensual', 'comunitat valenciana', 'salario neto'] → `EAES33555`
+    - ['ambos sexos', 'componente del salario bruto mensual', 'comunitat valenciana', 'salario ordinario'] → `EAES33560`
+    - ['ambos sexos', 'comunitat valenciana', 'dato base', 'salario medio anual'] → `EAES168`
+    - ['ambos sexos', 'comunitat valenciana', 'dato base', 'salario medio por hora'] → `EAES165`
+    - ['complementos salariales', 'componente del salario bruto mensual', 'comunitat valenciana', 'hombres'] → `EAES33183`
+    - ['complementos salariales', 'componente del salario bruto mensual', 'comunitat valenciana', 'mujeres'] → `EAES33373`
+    - ['componente del salario bruto anual', 'comunitat valenciana', 'hombres', 'pagos extraordinarios'] → `EAES33699`
+    - ['componente del salario bruto anual', 'comunitat valenciana', 'hombres', 'salario bruto'] → `EAES33700`
+    - ['componente del salario bruto anual', 'comunitat valenciana', 'hombres', 'salario ordinario'] → `EAES33697`
+    - ['componente del salario bruto anual', 'comunitat valenciana', 'hombres', 'valoracion en especie'] → `EAES33698`
+    - ['componente del salario bruto anual', 'comunitat valenciana', 'mujeres', 'pagos extraordinarios'] → `EAES33775`
+    - ['componente del salario bruto anual', 'comunitat valenciana', 'mujeres', 'salario bruto'] → `EAES33776`
+    - ['componente del salario bruto anual', 'comunitat valenciana', 'mujeres', 'salario ordinario'] → `EAES33773`
+    - ['componente del salario bruto anual', 'comunitat valenciana', 'mujeres', 'valoracion en especie'] → `EAES33774`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'contribuciones a la seguridad social a cargo del trabajador', 'hombres'] → `EAES33177`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'contribuciones a la seguridad social a cargo del trabajador', 'mujeres'] → `EAES33367`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'hombres', 'pagas extraordinarias'] → `EAES33179`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'hombres', 'pagos por horas extraordinarias'] → `EAES33181`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'hombres', 'retenciones irpf'] → `EAES33176`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'hombres', 'salario base'] → `EAES33184`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'hombres', 'salario bruto'] → `EAES33178`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'hombres', 'salario neto'] → `EAES33175`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'hombres', 'salario ordinario'] → `EAES33180`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'mujeres', 'pagas extraordinarias'] → `EAES33369`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'mujeres', 'pagos por horas extraordinarias'] → `EAES33371`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'mujeres', 'retenciones irpf'] → `EAES33366`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'mujeres', 'salario base'] → `EAES33374`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'mujeres', 'salario bruto'] → `EAES33368`
+    - ['componente del salario bruto mensual', 'comunitat valenciana', 'mujeres', 'salario neto'] → `EAES33365`
+
