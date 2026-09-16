@@ -43,6 +43,19 @@ SEMILLAS = [
     ("índice", f"{BASE}/estadisticas/Index.htm"),
 ]
 
+# El ministerio ha cambiado de nombre y de dominio varias veces, y parte de sus
+# datos cuelgan de otras máquinas. Si la principal no contesta hay que saber si
+# es cosa del sitio o de la red, así que se prueban todas y se anota qué pasa
+# con cada una.
+PUERTAS = [
+    f"{BASE}/estadisticas/eat/welcome.htm",
+    "https://www.mitramiss.gob.es/estadisticas/eat/welcome.htm",
+    "https://expinterweb.mites.gob.es/",
+    "https://www.mites.gob.es/",
+    "https://www.ine.es/",
+    "https://datos.gob.es/",
+]
+
 ENLACE = re.compile(r'href="([^"#]+)"', re.I)
 DATOS = re.compile(r"\.(xlsx?|csv|ods)(\?|$)", re.I)
 # Andar por el sitio entero sería infinito; sólo interesa la parte de
@@ -105,8 +118,12 @@ def recorre() -> tuple[dict[str, set[str]], list[str]]:
             continue
         vistas.add(url)
         estado, tipo, datos = descarga(url)
-        bitacora.append(f"- `{url}` → {estado} ({tipo.split(';')[0]})")
-        print(f"    {estado} {url}")
+        # Cuando falla, el motivo va en el cuerpo: sin él no hay forma de saber
+        # si es que la máquina no llega, si el certificado no vale o si el
+        # ministerio devuelve un 403 a quien no parezca un navegador.
+        detalle = "" if estado == 200 else f" · {texto(datos)[:120]}"
+        bitacora.append(f"- `{url}` → {estado} ({tipo.split(';')[0]}){detalle}")
+        print(f"    {estado} {url}{detalle}")
         if estado != 200 or "html" not in tipo.lower():
             continue
 
@@ -138,15 +155,27 @@ def resume(lineas: list[str], datos: bytes) -> None:
                 lineas.append(f"        · {' | '.join(celdas)}")
 
 
+def puertas() -> list[str]:
+    """¿Contesta el ministerio? ¿Y los sitios que sí se sabe que contestan?"""
+    lineas = ["## Quién contesta y quién no", ""]
+    for url in PUERTAS:
+        estado, tipo, datos = descarga(url, limite=2000)
+        detalle = "" if estado == 200 else f" · {texto(datos)[:160]}"
+        lineas.append(f"- `{url}` → {estado} ({tipo.split(';')[0]}){detalle}")
+        print(f"  puerta {estado} {url}{detalle}")
+    return lineas + [""]
+
+
 def main() -> int:
     SALIDA.mkdir(parents=True, exist_ok=True)
     print("=== Ministerio de Trabajo: accidentes y convenios ===")
+    aduana = puertas()
     ficheros, bitacora = recorre()
 
     lineas = ["# Accidentes de trabajo y convenios colectivos: qué publica el "
               "Ministerio", "",
               "Lo que decide si entran en el panel es si hay fichero legible por",
-              "máquina y si el dato baja a provincia.", "",
+              "máquina y si el dato baja a provincia.", ""] + aduana + [
               "## Páginas recorridas", ""] + bitacora + [""]
 
     for tema in sorted(ficheros):
