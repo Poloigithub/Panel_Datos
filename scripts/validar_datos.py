@@ -68,6 +68,15 @@ RANGOS = {
     "paro_construccion": (0, 5_000_000),
     "paro_servicios": (0, 5_000_000),
     "paro_sin_empleo_anterior": (0, 5_000_000),
+    # contratos registrados
+    "contratos_total": (0, 5_000_000),
+    "contratos_indefinidos": (0, 3_000_000),
+    "contratos_temporales": (0, 3_000_000),
+    "contratos_convertidos": (0, 3_000_000),
+    "contratos_agricultura": (0, 3_000_000),
+    "contratos_industria": (0, 3_000_000),
+    "contratos_construccion": (0, 3_000_000),
+    "contratos_servicios": (0, 3_000_000),
     # precios
     "ipc_general": (50, 200),
     "ipc_variacion": (-30, 60),
@@ -194,11 +203,19 @@ def revisa_continuidad(bloque: str, ambito: str, contenido: dict, informe: Infor
                     )
 
 
-DESGLOSES = {
-    "por edad": ("paro_menores_25", "paro_25_44", "paro_45_mas"),
-    "por sector": ("paro_agricultura", "paro_industria", "paro_construccion",
-                   "paro_servicios", "paro_sin_empleo_anterior"),
-}
+# Desgloses que deberían sumar su total, con la holgura del secreto
+# estadístico: (nombre, total, partes).
+DESGLOSES = [
+    ("por edad", "paro_total", ("paro_menores_25", "paro_25_44", "paro_45_mas")),
+    ("por sector", "paro_total", ("paro_agricultura", "paro_industria",
+                                  "paro_construccion", "paro_servicios",
+                                  "paro_sin_empleo_anterior")),
+    ("por tipo de contrato", "contratos_total",
+     ("contratos_indefinidos", "contratos_temporales", "contratos_convertidos")),
+    ("por sector", "contratos_total",
+     ("contratos_agricultura", "contratos_industria", "contratos_construccion",
+      "contratos_servicios")),
+]
 
 
 def revisa_desgloses(bloque: str, ambito: str, contenido: dict, informe: Informe) -> None:
@@ -210,11 +227,9 @@ def revisa_desgloses(bloque: str, ambito: str, contenido: dict, informe: Informe
     """
     periodos = contenido["periodos"]
     for sexo, magnitudes in contenido.get("series", {}).items():
-        total = magnitudes.get("paro_total")
-        if not total:
-            continue
-        for nombre, claves in DESGLOSES.items():
-            if not all(c in magnitudes for c in claves):
+        for nombre, clave_total, claves in DESGLOSES:
+            total = magnitudes.get(clave_total)
+            if not total or not all(c in magnitudes for c in claves):
                 continue
             peor, cuando = 0.0, None
             for i in range(len(periodos)):

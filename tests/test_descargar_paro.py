@@ -40,8 +40,8 @@ class LecturaDelFichero(unittest.TestCase):
         self.acumulado = defaultdict(int)
         self.municipios = {}
         self.censura = defaultdict(int)
-        self.filas = sepe.lee_anyo(CABECERA + FILAS, self.acumulado,
-                                   self.municipios, self.censura)
+        self.filas = sepe.lee_anyo(sepe.FUENTES["paro-registrado"], CABECERA + FILAS,
+                                   self.acumulado, self.municipios, self.censura)
 
     def test_lee_todas_las_filas_saltando_el_titulo(self):
         self.assertEqual(self.filas, 3)
@@ -81,8 +81,36 @@ class TotalesPorSexo(unittest.TestCase):
         acumulado = defaultdict(int)
         for tramo, numero in (("paro_menores_25", 50), ("paro_25_44", 150), ("paro_45_mas", 200)):
             acumulado[("castellon", "hombres", tramo, "2026M01")] = numero
-        sepe.compone_totales(acumulado)
+        sepe.compone_totales(sepe.FUENTES["paro-registrado"], acumulado)
         self.assertEqual(acumulado[("castellon", "hombres", "paro_total", "2026M01")], 400)
+
+
+class Contratos(unittest.TestCase):
+    """El fichero de contratos tiene la misma forma y otras columnas, con
+    espacios irregulares en las cabeceras."""
+
+    CABECERA = (";;;;CONTRATOS POR MUNICIPIOS;;;;;;;;;;;;;;\n"
+                "Código mes ;mes;Código de CA;Comunidad Autónoma;Codigo Provincia;Provincia;"
+                "Codigo Municipio; Municipio;Total Contratos;"
+                "Contratos iniciales indefinidos hombres;Contratos iniciales temporales hombres;"
+                "Contratos convertidos en indefinidos hombres;"
+                "Contratos iniciales indefinidos mujeres;Contratos iniciales temporales mujeres;"
+                "Contratos convertidos en indefinidos mujeres;"
+                "Contratos  Agricultura;Contratos  Industria;Contratos Construcción;"
+                "Contratos  Servicios\n")
+    FILA = ("202601;Enero de 2026;10;Comunitat Valenciana;12;Castellón;12040;Castelló;"
+            "500;100;150;20;80;130;20;50;60;90;300\n")
+
+    def test_lee_los_contratos_pese_a_los_espacios_dobles(self):
+        acumulado, municipios, censura = defaultdict(int), {}, defaultdict(int)
+        filas = sepe.lee_anyo(sepe.FUENTES["contratos"], self.CABECERA + self.FILA,
+                              acumulado, municipios, censura)
+        self.assertEqual(filas, 1)
+        self.assertEqual(acumulado[("castellon", "ambos", "contratos_total", "2026M01")], 500)
+        # «Contratos  Agricultura» lleva dos espacios en el fichero real.
+        self.assertEqual(acumulado[("castellon", "ambos", "contratos_agricultura", "2026M01")], 50)
+        self.assertEqual(acumulado[("castellon", "ambos", "contratos_indefinidos", "2026M01")], 180)
+        self.assertEqual(acumulado[("castellon", "hombres", "contratos_temporales", "2026M01")], 150)
 
 
 class Celdas(unittest.TestCase):
