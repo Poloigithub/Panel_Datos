@@ -1,7 +1,7 @@
 name: Explorar fuentes externas
 
-# Reconstrucción completa del paro registrado: descarga todos los años del
-# SEPE, que es caro y sólo hace falta la primera vez o al cambiar el parser.
+# Reconstrucción completa de las estadísticas del SEPE: descarga todos los
+# años, que es caro y sólo hace falta la primera vez o al cambiar el parser.
 on:
   workflow_dispatch:
     inputs:
@@ -22,8 +22,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Sondear la afiliación
-        run: python scripts/explorar_afiliacion.py
+      - name: Descargar el histórico del SEPE
+        run: python scripts/descargar_paro.py --desde ${{ inputs.desde }}
 
       - name: Commitear
         if: always()
