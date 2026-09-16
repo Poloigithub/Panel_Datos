@@ -367,11 +367,11 @@ subido» y poco más.
 
 **Qué hay.** El sondeo marca el límite de un vistazo: España publica 125
 productos distintos, la Comunitat 73, y **Castellón sólo el grupo entero**. Por
-debajo del grupo no hay IPC provincial. Con eso se montan veinte categorías:
-aceite de oliva, leche, huevos, pan, cereales, tres carnes, pescado, fruta,
-hortalizas, patatas, café, azúcar, alimentos preparados, agua mineral y comer
-fuera, esto último en dos alturas porque el INE no lo publica a la misma en
-todas partes.
+debajo del grupo no hay IPC provincial. Con eso se montan diecinueve
+categorías, el grupo entero incluido: aceite de oliva, leche, huevos, pan,
+cereales, tres carnes, pescado, fruta, hortalizas, patatas, café, azúcar,
+alimentos preparados, agua mineral y comer fuera, esto último en dos alturas
+porque el INE no lo publica a la misma en todas partes.
 
 **Resultado.** Desde agosto de 2021: huevos +84 %, carne de vacuno +60 %, leche
 y café +46 %, patatas +41 %, hortalizas +40 %, el conjunto de los alimentos
