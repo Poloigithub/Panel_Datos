@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-16T19:43:56+00:00",
+ "actualizado": "2026-09-16T19:48:16+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -181,20 +181,18 @@
    "destacados": [
     {
      "clave": "alimentos",
-     "titulo": "Alimentos y bebidas no alcohólicas",
-     "unidad": "índice",
+     "titulo": "Lo que ha subido la comida",
+     "unidad": "%",
      "decimales": 1,
+     "comparar_con": "2021",
      "periodo": "2026M08",
      "valores": {
-      "espana": 101.71,
-      "comunitat-valenciana": 101.175,
-      "castellon": 101.766
+      "espana": 34.84,
+      "comunitat-valenciana": 34.75,
+      "castellon": 36.82
      },
-     "hace_un_anyo": {
-      "espana": 99.436,
-      "comunitat-valenciana": 99.518,
-      "castellon": 100.267
-     }
+     "hace_un_anyo": {},
+     "desde": "2021M08"
     }
    ]
   },

@@ -87,7 +87,10 @@
     valor.className = 'mt-0.5 text-lg font-semibold tracking-tight';
     valor.style.fontVariantNumeric = 'tabular-nums';
     var bruto = destacado.valores[ambito.id];
-    valor.textContent = formatea(bruto, destacado.decimales) + sufijo(destacado.unidad);
+    // Una variación se lee con su signo: «+34,8 %» dice más que «34,8 %».
+    var signo = destacado.desde && bruto > 0 ? '+' : '';
+    valor.textContent = signo + formatea(bruto, destacado.decimales) +
+      sufijo(destacado.unidad);
     caja.appendChild(valor);
 
     // Si el indicador es parte de un total, el porcentaje dice más que la
@@ -141,8 +144,11 @@
       nombre.style.color = color('--tinta-suave');
       var unidad = SOBREENTENDIDAS.indexOf(destacado.unidad) >= 0
         ? '' : ', ' + destacado.unidad;
-      nombre.textContent = destacado.titulo + unidad + ' · ' +
-        etiquetaPeriodo(destacado.periodo);
+      var cuando = destacado.desde
+        ? 'desde ' + etiquetaPeriodo(destacado.desde) + ', hasta ' +
+          etiquetaPeriodo(destacado.periodo)
+        : etiquetaPeriodo(destacado.periodo);
+      nombre.textContent = destacado.titulo + unidad + ' · ' + cuando;
       bloque.appendChild(nombre);
 
       var rejilla = document.createElement('div');

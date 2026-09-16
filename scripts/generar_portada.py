@@ -76,6 +76,19 @@ def compone(seccion: dict, ahora: str) -> dict | None:
         ficha["periodo"] = ultimo
         ficha["valores"] = {a: series[a].get(ultimo) for a in AMBITOS}
         ficha["hace_un_anyo"] = {a: series[a].get(previo) for a in AMBITOS} if previo else {}
+
+        # Un indicador puede pedir que lo que se enseñe no sea su valor sino
+        # cuánto ha cambiado desde un año concreto: un índice de precios en
+        # portada no dice nada, y «+34,8 % desde 2021» sí.
+        anyo = destacado.get("comparar_con")
+        if anyo:
+            partida = f"{anyo}{ultimo[4:]}"
+            ficha["valores"] = {
+                a: (round((series[a][ultimo] / series[a][partida] - 1) * 100, 2)
+                    if series[a].get(ultimo) and series[a].get(partida) else None)
+                for a in AMBITOS}
+            ficha["hace_un_anyo"] = {}
+            ficha["desde"] = partida
         if destacado.get("sobre"):
             totales = {a: valores_de(contenidos.get(a), destacado["sobre"]) for a in AMBITOS}
             ficha["sobre_valores"] = {a: totales[a].get(ultimo) for a in AMBITOS}

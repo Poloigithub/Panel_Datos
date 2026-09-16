@@ -57,8 +57,11 @@ SECCIONES = [
         "fuente": "IPC · INE",
         "cadencia": "Mensual, a la vez que el IPC.",
         "destacados": [
-            {"clave": "alimentos", "titulo": "Alimentos y bebidas no alcohólicas",
-             "unidad": "índice", "decimales": 1},
+            # Un índice en portada no dice nada -«101,7» no es una noticia-, así
+            # que lo que se enseña es cuánto ha subido desde 2021, que es la
+            # pregunta que trae a nadie a esta sección.
+            {"clave": "alimentos", "titulo": "Lo que ha subido la comida",
+             "unidad": "%", "decimales": 1, "comparar_con": "2021"},
         ],
     },
     {
