@@ -1,0 +1,1382 @@
+{
+ "actualizado": "2026-09-16T19:19:10+00:00",
+ "indicadores": [
+  {
+   "clave": "ocupados",
+   "titulo": "Ocupados",
+   "seccion": "Mercado laboral",
+   "seccion_id": "epa",
+   "enlace": "mercado-laboral.html",
+   "fuente": "EPA · INE",
+   "unidad": "miles de personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2002T1",
+   "hasta": "2026T2"
+  },
+  {
+   "clave": "parados",
+   "titulo": "Parados",
+   "seccion": "Mercado laboral",
+   "seccion_id": "epa",
+   "enlace": "mercado-laboral.html",
+   "fuente": "EPA · INE",
+   "unidad": "miles de personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2002T1",
+   "hasta": "2026T2"
+  },
+  {
+   "clave": "activos",
+   "titulo": "Activos",
+   "seccion": "Mercado laboral",
+   "seccion_id": "epa",
+   "enlace": "mercado-laboral.html",
+   "fuente": "EPA · INE",
+   "unidad": "miles de personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2002T1",
+   "hasta": "2026T2"
+  },
+  {
+   "clave": "tasa_actividad",
+   "titulo": "Tasa de actividad",
+   "seccion": "Mercado laboral",
+   "seccion_id": "epa",
+   "enlace": "mercado-laboral.html",
+   "fuente": "EPA · INE",
+   "unidad": "%",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2002T1",
+   "hasta": "2026T2"
+  },
+  {
+   "clave": "tasa_paro",
+   "titulo": "Tasa de paro",
+   "seccion": "Mercado laboral",
+   "seccion_id": "epa",
+   "enlace": "mercado-laboral.html",
+   "fuente": "EPA · INE",
+   "unidad": "%",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2002T1",
+   "hasta": "2026T2"
+  },
+  {
+   "clave": "tasa_empleo",
+   "titulo": "Tasa de empleo",
+   "seccion": "Mercado laboral",
+   "seccion_id": "epa",
+   "enlace": "mercado-laboral.html",
+   "fuente": "EPA · INE",
+   "unidad": "%",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2002T1",
+   "hasta": "2026T2"
+  },
+  {
+   "clave": "paro_total",
+   "titulo": "Paro registrado",
+   "seccion": "Paro registrado",
+   "seccion_id": "paro-registrado",
+   "enlace": "paro-registrado.html",
+   "fuente": "SEPE",
+   "unidad": "personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "paro_menores_25",
+   "titulo": "Menores de 25 años",
+   "seccion": "Paro registrado",
+   "seccion_id": "paro-registrado",
+   "enlace": "paro-registrado.html",
+   "fuente": "SEPE",
+   "unidad": "personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "paro_25_44",
+   "titulo": "De 25 a 44 años",
+   "seccion": "Paro registrado",
+   "seccion_id": "paro-registrado",
+   "enlace": "paro-registrado.html",
+   "fuente": "SEPE",
+   "unidad": "personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "paro_45_mas",
+   "titulo": "De 45 años o más",
+   "seccion": "Paro registrado",
+   "seccion_id": "paro-registrado",
+   "enlace": "paro-registrado.html",
+   "fuente": "SEPE",
+   "unidad": "personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "paro_agricultura",
+   "titulo": "Agricultura",
+   "seccion": "Paro registrado",
+   "seccion_id": "paro-registrado",
+   "enlace": "paro-registrado.html",
+   "fuente": "SEPE",
+   "unidad": "personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "paro_industria",
+   "titulo": "Industria",
+   "seccion": "Paro registrado",
+   "seccion_id": "paro-registrado",
+   "enlace": "paro-registrado.html",
+   "fuente": "SEPE",
+   "unidad": "personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "paro_construccion",
+   "titulo": "Construcción",
+   "seccion": "Paro registrado",
+   "seccion_id": "paro-registrado",
+   "enlace": "paro-registrado.html",
+   "fuente": "SEPE",
+   "unidad": "personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "paro_servicios",
+   "titulo": "Servicios",
+   "seccion": "Paro registrado",
+   "seccion_id": "paro-registrado",
+   "enlace": "paro-registrado.html",
+   "fuente": "SEPE",
+   "unidad": "personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "paro_sin_empleo_anterior",
+   "titulo": "Sin empleo anterior",
+   "seccion": "Paro registrado",
+   "seccion_id": "paro-registrado",
+   "enlace": "paro-registrado.html",
+   "fuente": "SEPE",
+   "unidad": "personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "contratos_total",
+   "titulo": "Contratos registrados",
+   "seccion": "Contratación",
+   "seccion_id": "contratos",
+   "enlace": "contratos.html",
+   "fuente": "SEPE",
+   "unidad": "contratos",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "contratos_indefinidos",
+   "titulo": "Indefinidos iniciales",
+   "seccion": "Contratación",
+   "seccion_id": "contratos",
+   "enlace": "contratos.html",
+   "fuente": "SEPE",
+   "unidad": "contratos",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "contratos_temporales",
+   "titulo": "Temporales",
+   "seccion": "Contratación",
+   "seccion_id": "contratos",
+   "enlace": "contratos.html",
+   "fuente": "SEPE",
+   "unidad": "contratos",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "contratos_convertidos",
+   "titulo": "Convertidos en indefinidos",
+   "seccion": "Contratación",
+   "seccion_id": "contratos",
+   "enlace": "contratos.html",
+   "fuente": "SEPE",
+   "unidad": "contratos",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "contratos_agricultura",
+   "titulo": "Agricultura",
+   "seccion": "Contratación",
+   "seccion_id": "contratos",
+   "enlace": "contratos.html",
+   "fuente": "SEPE",
+   "unidad": "contratos",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "contratos_industria",
+   "titulo": "Industria",
+   "seccion": "Contratación",
+   "seccion_id": "contratos",
+   "enlace": "contratos.html",
+   "fuente": "SEPE",
+   "unidad": "contratos",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "contratos_construccion",
+   "titulo": "Construcción",
+   "seccion": "Contratación",
+   "seccion_id": "contratos",
+   "enlace": "contratos.html",
+   "fuente": "SEPE",
+   "unidad": "contratos",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "contratos_servicios",
+   "titulo": "Servicios",
+   "seccion": "Contratación",
+   "seccion_id": "contratos",
+   "enlace": "contratos.html",
+   "fuente": "SEPE",
+   "unidad": "contratos",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2006M01",
+   "hasta": "2026M07"
+  },
+  {
+   "clave": "ipc_general",
+   "titulo": "IPC, índice general",
+   "seccion": "Precios",
+   "seccion_id": "precios",
+   "enlace": "precios.html",
+   "fuente": "IPC · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2021 = 100",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "ipc_variacion",
+   "titulo": "Inflación interanual",
+   "seccion": "Precios",
+   "seccion_id": "precios",
+   "enlace": "precios.html",
+   "fuente": "IPC · INE",
+   "unidad": "%",
+   "unidad_texto": "variación del IPC respecto al mismo mes del año anterior",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "ipc_alimentos",
+   "titulo": "Alimentos",
+   "seccion": "Precios",
+   "seccion_id": "precios",
+   "enlace": "precios.html",
+   "fuente": "IPC · INE",
+   "unidad": "%",
+   "unidad_texto": "variación interanual del grupo",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "ipc_transporte",
+   "titulo": "Transporte",
+   "seccion": "Precios",
+   "seccion_id": "precios",
+   "enlace": "precios.html",
+   "fuente": "IPC · INE",
+   "unidad": "%",
+   "unidad_texto": "variación interanual del grupo",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2002M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "compraventas",
+   "titulo": "Compraventas de vivienda",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "operaciones",
+   "unidad_texto": "compraventas inscritas en el mes",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2007M01",
+   "hasta": "2026M06"
+  },
+  {
+   "clave": "compraventas_nueva",
+   "titulo": "Compraventas de vivienda nueva",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "operaciones",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2007M01",
+   "hasta": "2026M06"
+  },
+  {
+   "clave": "compraventas_usada",
+   "titulo": "Compraventas de vivienda de segunda mano",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "operaciones",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2007M01",
+   "hasta": "2026M06"
+  },
+  {
+   "clave": "compraventas_protegida",
+   "titulo": "Compraventas de vivienda protegida",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "operaciones",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2007M01",
+   "hasta": "2026M06"
+  },
+  {
+   "clave": "hipotecas",
+   "titulo": "Hipotecas sobre viviendas",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "hipotecas",
+   "unidad_texto": "hipotecas constituidas en el mes",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2003M01",
+   "hasta": "2026M06"
+  },
+  {
+   "clave": "importe_hipotecas",
+   "titulo": "Importe de las hipotecas sobre viviendas",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "miles de euros",
+   "unidad_texto": "miles de euros prestados en el mes",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2003M01",
+   "hasta": "2026M06"
+  },
+  {
+   "clave": "ejecuciones",
+   "titulo": "Ejecuciones hipotecarias sobre viviendas",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "ejecuciones",
+   "unidad_texto": "ejecuciones iniciadas en el año",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2014",
+   "hasta": "2025"
+  },
+  {
+   "clave": "ipv",
+   "titulo": "Índice de precios de la vivienda",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "índice",
+   "unidad_texto": "índice, base 2015 = 100",
+   "nota": "El INE no publica este índice por provincia: sólo por comunidad autónoma y para el conjunto de España.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2007T1",
+   "hasta": "2026T2"
+  },
+  {
+   "clave": "ipv_variacion",
+   "titulo": "Variación anual del precio de la vivienda",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "%",
+   "unidad_texto": "variación respecto al mismo trimestre del año anterior",
+   "nota": "El INE no publica este índice por provincia: sólo por comunidad autónoma y para el conjunto de España.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2007T1",
+   "hasta": "2026T2"
+  },
+  {
+   "clave": "ipva",
+   "titulo": "Índice de precios de la vivienda en alquiler",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "índice",
+   "unidad_texto": "índice anual, base 2015 = 100",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2011",
+   "hasta": "2024"
+  },
+  {
+   "clave": "ipva_variacion",
+   "titulo": "Variación anual del precio del alquiler",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "%",
+   "unidad_texto": "variación respecto al año anterior",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2012",
+   "hasta": "2024"
+  },
+  {
+   "clave": "hipoteca_media",
+   "titulo": "Hipoteca media sobre vivienda",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "euros",
+   "unidad_texto": "euros prestados por hipoteca",
+   "nota": "Importe total entre número de hipotecas del mes. No es el precio de la vivienda: es lo que se pide prestado.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2003M01",
+   "hasta": "2026M06"
+  },
+  {
+   "clave": "esfuerzo",
+   "titulo": "Hipoteca media en años de renta del hogar",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "años",
+   "unidad_texto": "años de renta neta del hogar que suma la hipoteca media",
+   "nota": "Media anual de la hipoteca media dividida entre la renta neta media por hogar del Atlas del INE. Mide el endeudamiento de quien compra, no el precio de la vivienda.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "lanzamientos",
+   "titulo": "Lanzamientos practicados",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "lanzamientos",
+   "unidad_texto": "desahucios ejecutados en el trimestre",
+   "nota": "Cuenta desahucios ejecutados, no procedimientos abiertos. Son los practicados por los juzgados de primera instancia, que son los completos; el CGPJ advierte de que no deben sumarse con los de los servicios comunes. Los trimestres de 2025 en adelante son provisionales: sumados dan menos que el total anual que el propio CGPJ publica por partido judicial, y se revisan al alza.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2013T1",
+   "hasta": "2026T1"
+  },
+  {
+   "clave": "lanzamientos_hipoteca",
+   "titulo": "Lanzamientos por ejecución hipotecaria",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "lanzamientos",
+   "unidad_texto": null,
+   "nota": " Los trimestres de 2025 en adelante son provisionales: sumados dan menos que el total anual que el propio CGPJ publica por partido judicial, y se revisan al alza.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2013T1",
+   "hasta": "2026T1"
+  },
+  {
+   "clave": "lanzamientos_alquiler",
+   "titulo": "Lanzamientos por impago de alquiler",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "lanzamientos",
+   "unidad_texto": null,
+   "nota": "Derivados de procedimientos de la Ley de Arrendamientos Urbanos, que en la práctica son alquileres impagados. Los trimestres de 2025 en adelante son provisionales: sumados dan menos que el total anual que el propio CGPJ publica por partido judicial, y se revisan al alza.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2013T1",
+   "hasta": "2026T1"
+  },
+  {
+   "clave": "lanzamientos_otros",
+   "titulo": "Lanzamientos por otras causas",
+   "seccion": "Vivienda",
+   "seccion_id": "vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "unidad": "lanzamientos",
+   "unidad_texto": null,
+   "nota": "Laudos arbitrales, procesos de familia y demás: ni hipoteca ni alquiler. Los trimestres de 2025 en adelante son provisionales: sumados dan menos que el total anual que el propio CGPJ publica por partido judicial, y se revisan al alza.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2013T1",
+   "hasta": "2026T1"
+  },
+  {
+   "clave": "renta_persona",
+   "titulo": "Renta neta media por persona",
+   "seccion": "Renta y desigualdad",
+   "seccion_id": "renta",
+   "enlace": "renta.html",
+   "fuente": "Atlas de Distribución de Renta · INE",
+   "unidad": "euros",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "renta_hogar",
+   "titulo": "Renta neta media por hogar",
+   "seccion": "Renta y desigualdad",
+   "seccion_id": "renta",
+   "enlace": "renta.html",
+   "fuente": "Atlas de Distribución de Renta · INE",
+   "unidad": "euros",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "renta_uc",
+   "titulo": "Renta media por unidad de consumo",
+   "seccion": "Renta y desigualdad",
+   "seccion_id": "renta",
+   "enlace": "renta.html",
+   "fuente": "Atlas de Distribución de Renta · INE",
+   "unidad": "euros",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "gini",
+   "titulo": "Índice de Gini",
+   "seccion": "Renta y desigualdad",
+   "seccion_id": "renta",
+   "enlace": "renta.html",
+   "fuente": "Atlas de Distribución de Renta · INE",
+   "unidad": "índice",
+   "unidad_texto": "índice de 0 a 100; a mayor valor, más desigualdad",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "p80p20",
+   "titulo": "Distribución de la renta P80/P20",
+   "seccion": "Renta y desigualdad",
+   "seccion_id": "renta",
+   "enlace": "renta.html",
+   "fuente": "Atlas de Distribución de Renta · INE",
+   "unidad": "ratio",
+   "unidad_texto": "veces que la renta del 20 % más rico supera a la del 20 % más pobre",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "bajo_60",
+   "titulo": "Población bajo el 60 % de la renta mediana",
+   "seccion": "Renta y desigualdad",
+   "seccion_id": "renta",
+   "enlace": "renta.html",
+   "fuente": "Atlas de Distribución de Renta · INE",
+   "unidad": "%",
+   "unidad_texto": "porcentaje de la población",
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "tamano_hogar",
+   "titulo": "Tamaño medio del hogar",
+   "seccion": "Renta y desigualdad",
+   "seccion_id": "renta",
+   "enlace": "renta.html",
+   "fuente": "Atlas de Distribución de Renta · INE",
+   "unidad": "personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "hogares_unipersonales",
+   "titulo": "Hogares unipersonales",
+   "seccion": "Renta y desigualdad",
+   "seccion_id": "renta",
+   "enlace": "renta.html",
+   "fuente": "Atlas de Distribución de Renta · INE",
+   "unidad": "%",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "renta_hogar_real",
+   "titulo": "Renta neta media por hogar (euros constantes)",
+   "seccion": "Renta y desigualdad",
+   "seccion_id": "renta",
+   "enlace": "renta.html",
+   "fuente": "Atlas de Distribución de Renta · INE",
+   "unidad": "euros",
+   "unidad_texto": "euros del último año disponible, descontada la inflación",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "renta_persona_real",
+   "titulo": "Renta neta media por persona (euros constantes)",
+   "seccion": "Renta y desigualdad",
+   "seccion_id": "renta",
+   "enlace": "renta.html",
+   "fuente": "Atlas de Distribución de Renta · INE",
+   "unidad": "euros",
+   "unidad_texto": "euros del último año disponible, descontada la inflación",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "renta_uc_real",
+   "titulo": "Renta media por unidad de consumo (euros constantes)",
+   "seccion": "Renta y desigualdad",
+   "seccion_id": "renta",
+   "enlace": "renta.html",
+   "fuente": "Atlas de Distribución de Renta · INE",
+   "unidad": "euros",
+   "unidad_texto": "euros del último año disponible, descontada la inflación",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "renta_salario",
+   "titulo": "Renta que viene del salario",
+   "seccion": "Salarios y rentas del trabajo",
+   "seccion_id": "salarios",
+   "enlace": "salarios.html",
+   "fuente": "Atlas de renta y Encuesta de Estructura Salarial · INE",
+   "unidad": "%",
+   "unidad_texto": "porcentaje de la renta bruta del territorio",
+   "nota": "Del Atlas de renta, que sí llega a provincia. Dice qué parte de lo que entra en los hogares viene del trabajo, no cuánto se cobra.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "renta_pensiones",
+   "titulo": "Renta que viene de pensiones",
+   "seccion": "Salarios y rentas del trabajo",
+   "seccion_id": "salarios",
+   "enlace": "salarios.html",
+   "fuente": "Atlas de renta y Encuesta de Estructura Salarial · INE",
+   "unidad": "%",
+   "unidad_texto": "porcentaje de la renta bruta del territorio",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "renta_desempleo",
+   "titulo": "Renta que viene de prestaciones por desempleo",
+   "seccion": "Salarios y rentas del trabajo",
+   "seccion_id": "salarios",
+   "enlace": "salarios.html",
+   "fuente": "Atlas de renta y Encuesta de Estructura Salarial · INE",
+   "unidad": "%",
+   "unidad_texto": "porcentaje de la renta bruta del territorio",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "renta_otras_prestaciones",
+   "titulo": "Renta que viene de otras prestaciones",
+   "seccion": "Salarios y rentas del trabajo",
+   "seccion_id": "salarios",
+   "enlace": "salarios.html",
+   "fuente": "Atlas de renta y Encuesta de Estructura Salarial · INE",
+   "unidad": "%",
+   "unidad_texto": "porcentaje de la renta bruta del territorio",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "salario_bruto",
+   "titulo": "Salario bruto anual",
+   "seccion": "Salarios y rentas del trabajo",
+   "seccion_id": "salarios",
+   "enlace": "salarios.html",
+   "fuente": "Atlas de renta y Encuesta de Estructura Salarial · INE",
+   "unidad": "euros",
+   "unidad_texto": "euros brutos al año por trabajador",
+   "nota": "El INE no publica esta encuesta por provincia: sólo por comunidad autónoma y para el conjunto de España.",
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2008",
+   "hasta": "2024"
+  },
+  {
+   "clave": "brecha_salarial",
+   "titulo": "Brecha salarial entre mujeres y hombres",
+   "seccion": "Salarios y rentas del trabajo",
+   "seccion_id": "salarios",
+   "enlace": "salarios.html",
+   "fuente": "Atlas de renta y Encuesta de Estructura Salarial · INE",
+   "unidad": "%",
+   "unidad_texto": "cuánto menos cobra una mujer por cada 100 € de un hombre",
+   "nota": "El INE sólo publica este resumen para el conjunto de España: ni por comunidad autónoma ni por provincia.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2018",
+   "hasta": "2022"
+  },
+  {
+   "clave": "desigualdad_salarial",
+   "titulo": "Distancia entre los salarios altos y los bajos",
+   "seccion": "Salarios y rentas del trabajo",
+   "seccion_id": "salarios",
+   "enlace": "salarios.html",
+   "fuente": "Atlas de renta y Encuesta de Estructura Salarial · INE",
+   "unidad": "ratio",
+   "unidad_texto": "veces que la novena decila de la ganancia por hora supera a la primera",
+   "nota": "El INE sólo publica este resumen para el conjunto de España: ni por comunidad autónoma ni por provincia.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2008",
+   "hasta": "2024"
+  },
+  {
+   "clave": "gini_salarial",
+   "titulo": "Índice de Gini de los salarios",
+   "seccion": "Salarios y rentas del trabajo",
+   "seccion_id": "salarios",
+   "enlace": "salarios.html",
+   "fuente": "Atlas de renta y Encuesta de Estructura Salarial · INE",
+   "unidad": "índice",
+   "unidad_texto": "a mayor valor, salarios más desiguales",
+   "nota": "El INE sólo publica este resumen para el conjunto de España: ni por comunidad autónoma ni por provincia.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2008",
+   "hasta": "2024"
+  },
+  {
+   "clave": "salario_bruto_real",
+   "titulo": "Salario bruto anual (euros constantes)",
+   "seccion": "Salarios y rentas del trabajo",
+   "seccion_id": "salarios",
+   "enlace": "salarios.html",
+   "fuente": "Atlas de renta y Encuesta de Estructura Salarial · INE",
+   "unidad": "euros",
+   "unidad_texto": "euros del último año disponible, descontada la inflación",
+   "nota": "El INE no publica esta encuesta por provincia: sólo por comunidad autónoma y para el conjunto de España.",
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana"
+   ],
+   "desde": "2008",
+   "hasta": "2024"
+  },
+  {
+   "clave": "poblacion",
+   "titulo": "Población",
+   "seccion": "Población",
+   "seccion_id": "poblacion",
+   "enlace": "poblacion.html",
+   "fuente": "Estadística Continua de Población · INE",
+   "unidad": "personas",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "1971",
+   "hasta": "2026"
+  },
+  {
+   "clave": "edad_media",
+   "titulo": "Edad media",
+   "seccion": "Población",
+   "seccion_id": "poblacion",
+   "enlace": "poblacion.html",
+   "fuente": "Estadística Continua de Población · INE",
+   "unidad": "años",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "1975",
+   "hasta": "2025"
+  },
+  {
+   "clave": "mayores_70",
+   "titulo": "Población de 70 y más años",
+   "seccion": "Población",
+   "seccion_id": "poblacion",
+   "enlace": "poblacion.html",
+   "fuente": "Estadística Continua de Población · INE",
+   "unidad": "%",
+   "unidad_texto": "porcentaje de la población",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "1975",
+   "hasta": "2025"
+  },
+  {
+   "clave": "espanoles",
+   "titulo": "Población de nacionalidad española",
+   "seccion": "Población",
+   "seccion_id": "poblacion",
+   "enlace": "poblacion.html",
+   "fuente": "Estadística Continua de Población · INE",
+   "unidad": "%",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
+   "clave": "crecimiento",
+   "titulo": "Crecimiento de la población",
+   "seccion": "Población",
+   "seccion_id": "poblacion",
+   "enlace": "poblacion.html",
+   "fuente": "Estadística Continua de Población · INE",
+   "unidad": "por mil",
+   "unidad_texto": "por cada mil habitantes",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "1975",
+   "hasta": "2024"
+  },
+  {
+   "clave": "mortalidad_infantil",
+   "titulo": "Mortalidad infantil (menores de 5 años)",
+   "seccion": "Natalidad, mortalidad y migración",
+   "seccion_id": "demografia",
+   "enlace": "demografia.html",
+   "fuente": "Indicadores Demográficos Básicos · INE",
+   "unidad": "por mil",
+   "unidad_texto": "defunciones por cada mil nacidos",
+   "nota": null,
+   "por_sexo": true,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "1975",
+   "hasta": "2024"
+  },
+  {
+   "clave": "edad_maternidad",
+   "titulo": "Edad media al primer hijo",
+   "seccion": "Natalidad, mortalidad y migración",
+   "seccion_id": "demografia",
+   "enlace": "demografia.html",
+   "fuente": "Indicadores Demográficos Básicos · INE",
+   "unidad": "años",
+   "unidad_texto": null,
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "1975",
+   "hasta": "2024"
+  },
+  {
+   "clave": "saldo_migratorio",
+   "titulo": "Saldo migratorio",
+   "seccion": "Natalidad, mortalidad y migración",
+   "seccion_id": "demografia",
+   "enlace": "demografia.html",
+   "fuente": "Indicadores Demográficos Básicos · INE",
+   "unidad": "por mil",
+   "unidad_texto": "por cada mil habitantes",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2021",
+   "hasta": "2024"
+  },
+  {
+   "clave": "nacidos_por_defuncion",
+   "titulo": "Nacidos por cada 1.000 defunciones",
+   "seccion": "Natalidad, mortalidad y migración",
+   "seccion_id": "demografia",
+   "enlace": "demografia.html",
+   "fuente": "Indicadores Demográficos Básicos · INE",
+   "unidad": "por mil",
+   "unidad_texto": "nacidos por cada mil defunciones",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "1975",
+   "hasta": "2024"
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es" class="h-full">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Novedades · Panel de datos</title>
+<meta name="description" content="Qué datos han cambiado y cuándo, sacado del historial del repositorio.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<script>
+  try {
+    const guardado = localStorage.getItem('panel-tema');
+    if (guardado) document.documentElement.dataset.theme = guardado;
+  } catch (_) {}
+</script>
+</head>
+<body class="min-h-full antialiased">
+
+<header class="border-b" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+    <a href="./" class="flex items-center gap-2.5 font-semibold tracking-tight">
+      <span aria-hidden="true" class="grid h-8 w-8 place-items-center rounded-lg text-white text-sm" style="background-color: var(--acento)">PD</span>
+      <span>Panel de datos</span>
+    </a>
+    <button type="button" data-tema class="control" aria-label="Cambiar entre tema claro y oscuro">
+      <span data-tema-texto>Tema</span>
+    </button>
+  </div>
+</header>
+
+<main class="mx-auto max-w-5xl px-4 sm:px-6 py-8 sm:py-10">
+
+  <nav aria-label="Ruta" class="text-xs" style="color: var(--tinta-tenue)">
+    <a class="enlace-sutil" href="./">Panel</a> <span aria-hidden="true">/</span> Novedades
+  </nav>
+
+  <h1 class="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Novedades</h1>
+  <p class="mt-3 max-w-3xl text-base leading-relaxed" style="color: var(--tinta-suave)">
+    Cada actualización de datos es un commit, así que el repositorio ya guarda
+    cuándo cambió cada cifra. Esto es ese historial, leído al revés: qué
+    secciones se movieron y qué día. Incluye las revisiones que hacen los
+    propios organismos, que son frecuentes y no suelen verse en ningún sitio.
+  </p>
+  <p class="mt-3 max-w-3xl text-sm leading-relaxed" style="color: var(--tinta-tenue)">
+    No están los commits de desarrollo -probar un descargador nuevo contra la
+    fuente-, porque la cifra que dejan es la misma que traerá la actualización
+    siguiente. Cada fecha enlaza al cambio exacto, línea a línea.
+  </p>
+
+  <p data-estado role="status" class="mt-6 text-sm" style="color: var(--tinta-suave)">Cargando el historial…</p>
+  <ul data-novedades class="mt-4 grid gap-3 list-none p-0"></ul>
+
+</main>
+
+<footer class="border-t mt-8" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 py-6 text-xs flex flex-wrap gap-x-6 gap-y-2 justify-between" style="color: var(--tinta-tenue)">
+    <p>Datos: <a class="enlace-sutil" href="https://www.ine.es/" rel="noopener">INE</a>, <a class="enlace-sutil" href="https://www.sepe.es/" rel="noopener">SEPE</a>, <a class="enlace-sutil" href="https://www.poderjudicial.es/" rel="noopener">CGPJ</a> y <a class="enlace-sutil" href="https://ec.europa.eu/eurostat/web/gisco" rel="noopener">GISCO</a>. Elaboración propia.</p>
+    <p><a class="enlace-sutil" href="buscar.html">Buscar</a> · <a class="enlace-sutil" href="fuentes.html">Fuentes y calendario</a> · <a class="enlace-sutil" href="novedades.html">Novedades</a> · <a class="enlace-sutil" href="https://github.com/Poloigithub/Panel_Datos" rel="noopener">Código en GitHub</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/tema.js"></script>
+<script src="assets/js/buscar.js"></script>
+</body>
+</html>

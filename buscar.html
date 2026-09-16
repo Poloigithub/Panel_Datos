@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es" class="h-full">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buscar indicadores · Panel de datos</title>
+<meta name="description" content="Los indicadores publicados en el panel, con su sección, su unidad, sus ámbitos y desde cuándo hay datos.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<script>
+  try {
+    const guardado = localStorage.getItem('panel-tema');
+    if (guardado) document.documentElement.dataset.theme = guardado;
+  } catch (_) {}
+</script>
+</head>
+<body class="min-h-full antialiased">
+
+<header class="border-b" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+    <a href="./" class="flex items-center gap-2.5 font-semibold tracking-tight">
+      <span aria-hidden="true" class="grid h-8 w-8 place-items-center rounded-lg text-white text-sm" style="background-color: var(--acento)">PD</span>
+      <span>Panel de datos</span>
+    </a>
+    <button type="button" data-tema class="control" aria-label="Cambiar entre tema claro y oscuro">
+      <span data-tema-texto>Tema</span>
+    </button>
+  </div>
+</header>
+
+<main class="mx-auto max-w-5xl px-4 sm:px-6 py-8 sm:py-10">
+
+  <nav aria-label="Ruta" class="text-xs" style="color: var(--tinta-tenue)">
+    <a class="enlace-sutil" href="./">Panel</a> <span aria-hidden="true">/</span> Buscar
+  </nav>
+
+  <h1 class="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Buscar indicadores</h1>
+  <p class="mt-3 max-w-3xl text-base leading-relaxed" style="color: var(--tinta-suave)">
+    Todo lo que hay publicado, en una lista. Cada ficha dice en qué sección
+    vive, para qué ámbitos existe y desde cuándo, porque no todo llega a los
+    tres: eso es justo lo que suele costar averiguar.
+  </p>
+
+  <section class="mt-8 tarjeta p-4">
+    <label for="busqueda" class="text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Buscar</label>
+    <input id="busqueda" data-busqueda type="search" autocomplete="off"
+           placeholder="paro, alquiler, brecha salarial…"
+           class="mt-1.5 w-full rounded-lg px-3 py-2 text-base"
+           style="background-color: var(--superficie-2); color: var(--tinta); border: 1px solid var(--borde)">
+    <div class="mt-3 flex flex-wrap items-center justify-between gap-3">
+      <label class="inline-flex items-center gap-2 text-sm cursor-pointer">
+        <input type="checkbox" data-solo-provincia class="h-4 w-4 rounded">
+        <span>Sólo lo que tiene dato de Castellón</span>
+      </label>
+      <p data-cuenta class="text-xs" style="color: var(--tinta-tenue)"></p>
+    </div>
+  </section>
+
+  <p data-estado role="status" class="mt-6 text-sm" style="color: var(--tinta-suave)">Cargando el catálogo…</p>
+  <ul data-resultados class="mt-4 grid gap-3 sm:grid-cols-2 list-none p-0"></ul>
+
+  <section class="mt-10 tarjeta p-5">
+    <h2 class="text-sm font-semibold">Llevarse los datos</h2>
+    <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+      Cada gráfica tiene su tabla y su botón de CSV, pero si lo que quieres es
+      todo de una vez, aquí está el panel entero en un solo fichero: una fila
+      por cifra, con su sección, indicador, ámbito, sexo, periodo y unidad.
+    </p>
+    <p class="mt-3">
+      <a class="control inline-block" href="data/panel-completo.csv" download>Descargar todo en CSV</a>
+    </p>
+    <p class="mt-3 text-xs leading-relaxed" style="color: var(--tinta-tenue)">
+      Los ficheros por sección, el detalle municipal y los contornos del mapa
+      están en la carpeta <code class="rounded px-1 py-0.5" style="background-color: var(--superficie-2)">data/</code>
+      del repositorio, en JSON.
+    </p>
+  </section>
+
+</main>
+
+<footer class="border-t mt-8" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 py-6 text-xs flex flex-wrap gap-x-6 gap-y-2 justify-between" style="color: var(--tinta-tenue)">
+    <p>Datos: <a class="enlace-sutil" href="https://www.ine.es/" rel="noopener">INE</a>, <a class="enlace-sutil" href="https://www.sepe.es/" rel="noopener">SEPE</a>, <a class="enlace-sutil" href="https://www.poderjudicial.es/" rel="noopener">CGPJ</a> y <a class="enlace-sutil" href="https://ec.europa.eu/eurostat/web/gisco" rel="noopener">GISCO</a>. Elaboración propia.</p>
+    <p><a class="enlace-sutil" href="buscar.html">Buscar</a> · <a class="enlace-sutil" href="fuentes.html">Fuentes y calendario</a> · <a class="enlace-sutil" href="novedades.html">Novedades</a> · <a class="enlace-sutil" href="https://github.com/Poloigithub/Panel_Datos" rel="noopener">Código en GitHub</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/tema.js"></script>
+<script src="assets/js/buscar.js"></script>
+</body>
+</html>

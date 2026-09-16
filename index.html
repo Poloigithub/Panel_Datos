@@ -26,9 +26,12 @@
       <span aria-hidden="true" class="grid h-8 w-8 place-items-center rounded-lg text-white text-sm" style="background-color: var(--acento)">PD</span>
       <span>Panel de datos</span>
     </a>
-    <button type="button" data-tema class="control" aria-label="Cambiar entre tema claro y oscuro">
-      <span data-tema-texto>Tema</span>
-    </button>
+    <div class="flex items-center gap-2">
+      <a href="buscar.html" class="control">Buscar</a>
+      <button type="button" data-tema class="control" aria-label="Cambiar entre tema claro y oscuro">
+        <span data-tema-texto>Tema</span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -246,7 +249,8 @@
     <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
       Última revisión de los datos: <span data-portada-actualizada class="font-medium"></span>.
       El detalle de cada fuente y su calendario está en
-      <a class="enlace-sutil" href="fuentes.html">Fuentes y calendario</a>.
+      <a class="enlace-sutil" href="fuentes.html">Fuentes y calendario</a>, y lo
+      que ha cambiado cada día, en <a class="enlace-sutil" href="novedades.html">Novedades</a>.
       Cada actualización es un commit, así que el histórico de revisiones de
       cualquier cifra es consultable en
       <a class="enlace-sutil" href="https://github.com/Poloigithub/Panel_Datos/commits/" rel="noopener">el historial</a>.
@@ -258,7 +262,7 @@
 <footer class="border-t mt-8" style="border-color: var(--borde)">
   <div class="mx-auto max-w-5xl px-4 sm:px-6 py-6 text-xs flex flex-wrap gap-x-6 gap-y-2 justify-between" style="color: var(--tinta-tenue)">
     <p>Datos: <a class="enlace-sutil" href="https://www.ine.es/" rel="noopener">INE</a>, <a class="enlace-sutil" href="https://www.sepe.es/" rel="noopener">SEPE</a>, <a class="enlace-sutil" href="https://www.poderjudicial.es/" rel="noopener">CGPJ</a> y <a class="enlace-sutil" href="https://ec.europa.eu/eurostat/web/gisco" rel="noopener">GISCO</a>. Elaboración propia.</p>
-    <p><a class="enlace-sutil" href="https://github.com/Poloigithub/Panel_Datos" rel="noopener">Código en GitHub</a></p>
+    <p><a class="enlace-sutil" href="buscar.html">Buscar</a> · <a class="enlace-sutil" href="fuentes.html">Fuentes y calendario</a> · <a class="enlace-sutil" href="novedades.html">Novedades</a> · <a class="enlace-sutil" href="https://github.com/Poloigithub/Panel_Datos" rel="noopener">Código en GitHub</a></p>
   </div>
 </footer>
 

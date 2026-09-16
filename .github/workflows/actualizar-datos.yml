@@ -48,8 +48,10 @@ jobs:
       - name: Descargar el paro registrado y los contratos del SEPE
         run: python scripts/descargar_paro.py
 
-      - name: Componer los titulares de la portada
-        run: python scripts/generar_portada.py
+      - name: Componer los titulares, el catálogo y la descarga completa
+        run: |
+          python scripts/generar_portada.py
+          python scripts/generar_catalogo.py
 
       # Si algo no cuadra, el run se para aquí y no se publica nada.
       - name: Validar los datos descargados
@@ -66,6 +68,20 @@ jobs:
           fi
           ULTIMO=$(python -c "import json;print(json.load(open('data/epa/index.json'))['ultimo_periodo'])")
           git commit -m "Actualiza los datos (EPA: ${ULTIMO})"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push
+
+      # Va después de commitear porque lee el historial: si se generase antes,
+      # la actualización de hoy no aparecería en su propio registro.
+      - name: Anotar las novedades
+        run: |
+          python scripts/generar_novedades.py
+          git add data/novedades.json
+          if git diff --staged --quiet; then
+            echo "Sin novedades que anotar."
+            exit 0
+          fi
+          git commit -m "Anota las novedades [skip ci]"
           git pull --rebase origin ${{ github.ref_name }}
           git push
 
