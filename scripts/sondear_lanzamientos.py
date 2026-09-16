@@ -1,17 +1,15 @@
 """Sondeo de los lanzamientos: desahucios por hipoteca y por alquiler.
 
 La estadística de Ejecuciones Hipotecarias del INE, que ya está en el panel,
-sólo cuenta hipotecas: no existe en ella la variante de alquiler. Lo que sí se
-reparte entre una cosa y otra son los **lanzamientos practicados**, que publica
-el Consejo General del Poder Judicial separando los derivados de la Ley
-Hipotecaria de los derivados de la Ley de Arrendamientos Urbanos.
+sólo cuenta hipotecas. Quien separa los desahucios por impago de hipoteca de
+los de impago de alquiler es el CGPJ, en los ficheros de «Efecto de la crisis
+en los órganos judiciales»: lanzamientos derivados de la Ley Hipotecaria,
+lanzamientos derivados de la Ley de Arrendamientos Urbanos y el resto.
 
-Dos sondeos anteriores descartaron el catálogo de datos.gob.es -no tiene nada
-con ese nombre- y un rastreo a ciegas del portal del CGPJ, que se fue por
-secciones que no eran. Pero enseñó la puerta buena: el CGPJ mantiene una base
-de datos de estadística judicial en PC-Axis, que es formato máquina. Esta
-versión mira esa página y las de datos civiles enteras, y apunta todo enlace
-que huela a fichero, venga con la extensión que venga.
+Los sondeos anteriores localizaron dónde cuelgan esos ficheros. Éste los lista
+todos, se baja el más reciente y enseña por dentro qué hojas tiene, cómo se
+titulan sus columnas y si el dato llega a provincia, que es lo único que
+decide si esto puede entrar en el panel.
 """
 
 from __future__ import annotations
@@ -26,106 +24,95 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "scripts"))
+from xlsx import Libro  # noqa: E402
 
 SALIDA = RAIZ / "sondeos"
 CABECERAS = {"User-Agent": "Panel_Datos/1.0 (+https://github.com/Poloigithub/Panel_Datos)"}
 
-PAGINAS = [
-    ("PC-Axis", "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
-                "Base-de-datos-de-la-estadistica-judicial--PC-AXIS-/"),
-    ("Datos civiles", "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
-                      "Estadistica-por-temas/Datos-penales--civiles-y-laborales/"),
-    ("Justicia dato a dato", "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
-                             "Estudios-e-Informes/Justicia-Dato-a-Dato/Justicia-Dato-a-Dato"),
-    ("Buscador del sitio", "https://www.poderjudicial.es/search/indexAN.jsp?"
-                           "org=cgpj&tem=&loc=&query=lanzamientos"),
-    # El portal estadístico de la Generalitat republica datos del CGPJ para la
-    # Comunitat y sus provincias, y su pxweb sí es formato máquina.
-    ("PEGV", "https://pegv.gva.es/es/temas/sociedad/justicia"),
-]
+CRISIS = ("https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
+          "Estadistica-por-temas/Datos-penales--civiles-y-laborales/Civil-y-laboral/"
+          "Efecto-de-la-Crisis-en-los-organos-judiciales/")
 
-# Un fichero de datos puede colgar de cualquier ruta; lo que lo delata es la
-# extensión o el almacén de ficheros del CGPJ, que es /stfls/.
-FICHERO = re.compile(r'(?:href|src)="([^"]*(?:\.xlsx|\.xls|\.csv|\.zip|\.px|/stfls/)[^"]*)"', re.I)
-ENLACE = re.compile(r'<a\b[^>]*href="([^"]+)"[^>]*>(.*?)</a>', re.I | re.S)
-ETIQUETAS = re.compile(r"<[^>]+>")
-CLAVES = ("lanzamiento", "crisis", "hipotecari", "arrendamiento", "desahucio", "efecto")
+HOJA_CALCULO = re.compile(r'href="([^"]*\.xlsx?(?:\?[^"]*)?)"', re.I)
 
 
-def descarga(url: str, limite: int = 1_500_000):
+def descarga(url: str, limite: int = 8_000_000) -> tuple[int, str, bytes]:
     try:
         peticion = urllib.request.Request(url, headers=CABECERAS)
-        with urllib.request.urlopen(peticion, timeout=120) as respuesta:
-            bruto = respuesta.read(limite)
-            tipo = respuesta.headers.get("Content-Type", "?")
-            for codificacion in ("utf-8", "latin-1"):
-                try:
-                    return respuesta.status, tipo, bruto.decode(codificacion)
-                except UnicodeDecodeError:
-                    continue
-            return respuesta.status, tipo, ""
+        with urllib.request.urlopen(peticion, timeout=180) as respuesta:
+            return (respuesta.status, respuesta.headers.get("Content-Type", "?"),
+                    respuesta.read(limite))
     except urllib.error.HTTPError as exc:
-        return exc.code, "-", str(exc.reason)
+        return exc.code, "-", str(exc.reason).encode()
     except Exception as exc:  # noqa: BLE001
-        return 0, "-", f"{type(exc).__name__}: {exc}"
+        return 0, "-", f"{type(exc).__name__}: {exc}".encode()
 
 
-def texto_de(fragmento: str) -> str:
-    return " ".join(html.unescape(ETIQUETAS.sub(" ", fragmento)).split())
+def nombre_de(url: str) -> str:
+    return urllib.parse.unquote(url.split("/")[-1].split("?")[0])
+
+
+def resume(lineas: list[str], datos: bytes, etiqueta: str) -> None:
+    """Enseña la estructura de un libro: hojas, cabeceras y primeras filas."""
+    try:
+        libro = Libro(datos)
+    except Exception as exc:  # noqa: BLE001
+        lineas.append(f"- no se ha podido abrir: {type(exc).__name__}: {exc}")
+        return
+    lineas.append(f"- {len(libro.hojas)} hojas: {', '.join(list(libro.hojas)[:12])}")
+
+    for nombre in libro.hojas:
+        filas = libro.filas(nombre)
+        texto = " ".join(str(c) for fila in filas[:40] for c in fila if c)
+        if "lanzamiento" not in texto.lower():
+            continue
+        lineas += ["", f"#### Hoja «{nombre}» de {etiqueta}",
+                   f"- {len(filas)} filas"]
+        for i, fila in enumerate(filas[:28]):
+            celdas = [str(c) for c in fila[:9] if c is not None]
+            if celdas:
+                lineas.append(f"    {i:>3} | " + " | ".join(celdas))
+        # ¿Aparece Castellón por algún lado? Eso decide si sirve para el panel.
+        donde = [i for i, fila in enumerate(filas)
+                 if any("castell" in str(c).lower() for c in fila if c)]
+        lineas.append(f"- «Castellón» aparece en {len(donde)} filas: {donde[:8]}")
+        for i in donde[:3]:
+            lineas.append(f"    {i:>3} | " + " | ".join(
+                str(c) for c in filas[i][:9] if c is not None))
 
 
 def main() -> int:
     SALIDA.mkdir(parents=True, exist_ok=True)
     lineas = ["# Sondeo de lanzamientos (hipoteca y alquiler)", "",
-              "Los lanzamientos practicados los publica el CGPJ separando los de la Ley",
-              "Hipotecaria de los de la Ley de Arrendamientos Urbanos. Aquí se busca en",
-              "qué formato y con qué detalle territorial.", ""]
+              "Los lanzamientos por impago de hipoteca y por impago de alquiler los",
+              "publica el CGPJ en los ficheros de «Efecto de la crisis en los órganos",
+              "judiciales». Aquí se mira cuántos hay, cómo se llaman y qué tienen dentro.", ""]
 
-    candidatos: list[str] = []
+    codigo, tipo, bruto = descarga(CRISIS, 2_000_000)
+    cuerpo = bruto.decode("utf-8", errors="replace")
+    lineas += [f"## Página de «Efecto de la crisis»", f"- `{codigo}` · {tipo}"]
 
-    for nombre, url in PAGINAS:
-        print(f"· {nombre}")
-        codigo, tipo, cuerpo = descarga(url)
-        lineas += [f"## {nombre}", f"- `{codigo}` · {tipo} · {url}",
-                   f"- {len(cuerpo)} caracteres"]
-        if codigo != 200 or not cuerpo:
-            lineas += [f"- {cuerpo[:200]}", ""]
-            continue
+    ficheros = []
+    for href in HOJA_CALCULO.findall(cuerpo):
+        url = urllib.parse.urljoin(CRISIS, html.unescape(href))
+        if url not in ficheros:
+            ficheros.append(url)
+    lineas.append(f"- {len(ficheros)} hojas de cálculo enlazadas")
+    for url in ficheros:
+        lineas.append(f"    - {nombre_de(url)}")
 
-        ficheros = {urllib.parse.urljoin(url, html.unescape(h)) for h in FICHERO.findall(cuerpo)}
-        lineas.append(f"- {len(ficheros)} enlaces a fichero de datos")
-        for destino in sorted(ficheros)[:25]:
-            lineas.append(f"    - {destino}")
-        candidatos += list(ficheros)
-
-        # Enlaces cuyo texto menciona lo que se busca, sea cual sea su destino.
-        interesantes = [(urllib.parse.urljoin(url, html.unescape(href)), texto_de(texto))
-                        for href, texto in ENLACE.findall(cuerpo)
-                        if any(c in (href + texto).lower() for c in CLAVES)]
-        lineas.append(f"- {len(interesantes)} enlaces que mencionan lanzamientos o afines")
-        for destino, texto in interesantes[:20]:
-            lineas.append(f"    - **{texto[:80] or '(sin texto)'}** → {destino}")
-        candidatos += [d for d, _ in interesantes]
-        lineas.append("")
-
-    # Segundo nivel: se abre lo que ha salido, para ver si lleva a un fichero.
-    lineas += ["## Qué hay detrás de los candidatos", ""]
-    vistos: set[str] = set()
-    for destino in candidatos:
-        if destino in vistos or len(vistos) >= 12:
-            continue
-        vistos.add(destino)
-        codigo, tipo, cuerpo = descarga(destino, 400_000)
-        lineas.append(f"### `{codigo}` {tipo}")
-        lineas.append(f"- {destino}")
-        if codigo == 200 and "html" in tipo:
-            ficheros = {urllib.parse.urljoin(destino, html.unescape(h))
-                        for h in FICHERO.findall(cuerpo)}
-            lineas.append(f"- {len(ficheros)} ficheros de datos dentro")
-            for f in sorted(ficheros)[:15]:
-                lineas.append(f"    - {f}")
-        elif codigo == 200:
-            lineas.append(f"- descarga directa de {len(cuerpo)} caracteres")
+    # Se abren los más recientes que no sean los de juzgados de lo mercantil,
+    # que cuentan concursos, no desahucios.
+    interesantes = [u for u in ficheros if "mercantil" not in nombre_de(u).lower()]
+    lineas += ["", f"## Dentro de los ficheros ({len(interesantes)} sin contar los mercantiles)", ""]
+    for url in interesantes[:3]:
+        etiqueta = nombre_de(url)
+        codigo, tipo, datos = descarga(url)
+        lineas += [f"### {etiqueta}", f"- `{codigo}` · {tipo} · {len(datos)} bytes", f"- {url}"]
+        if codigo == 200 and len(datos) > 1000:
+            resume(lineas, datos, etiqueta)
+        else:
+            lineas.append(f"- {datos[:200]!r}")
         lineas.append("")
 
     (SALIDA / "lanzamientos.md").write_text("\n".join(lineas) + "\n", encoding="utf-8")
