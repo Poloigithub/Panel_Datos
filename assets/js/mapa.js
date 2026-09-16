@@ -17,18 +17,37 @@
   var RAMPA_CLARA = ['#cde2fb', '#9ec5f4', '#5598e7', '#2a78d6', '#184f95'];
   var RAMPA_OSCURA = ['#104281', '#1c5cab', '#2a78d6', '#5598e7', '#9ec5f4'];
 
+  /* Para magnitudes con signo -cuánto sube o baja- hacen falta dos tonos
+     opuestos y un gris en medio, para que el centro se lea como «nada». */
+  var DIVERGENTE_CLARA = ['#2a78d6', '#9ec5f4', '#f0efec', '#eba3a3', '#d03b3b'];
+  var DIVERGENTE_OSCURA = ['#5598e7', '#2a78d6', '#383835', '#b34545', '#e66767'];
+
   function esOscuro() {
     var raiz = document.documentElement;
     if (raiz.dataset.theme) return raiz.dataset.theme === 'dark';
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
   }
 
-  function rampa() {
+  function rampa(tipo) {
+    if (tipo === 'divergente') {
+      return esOscuro() ? DIVERGENTE_OSCURA : DIVERGENTE_CLARA;
+    }
     return esOscuro() ? RAMPA_OSCURA : RAMPA_CLARA;
   }
 
   /* Cortes por cuantiles: con datos muy asimétricos -una capital y decenas de
      pueblos- una escala lineal pintaría todo del mismo color. */
+  /* En una escala divergente los cortes se reparten alrededor del cero, para
+     que el color diga de qué lado está cada municipio y no sólo su orden. */
+  function cortesDivergentes(valores) {
+    var absolutos = valores.filter(function (v) { return v !== null && !isNaN(v); })
+                           .map(Math.abs).sort(function (a, b) { return a - b; });
+    if (!absolutos.length) return [];
+    var fuerte = absolutos[Math.floor(absolutos.length * 0.8)] || 1;
+    var suave = fuerte / 3;
+    return [-fuerte, -suave, suave, fuerte];
+  }
+
   function cortes(valores, clases) {
     var ordenados = valores.filter(function (v) { return v !== null && !isNaN(v); })
                            .sort(function (a, b) { return a - b; });
@@ -162,10 +181,13 @@
     var ancho = 640, alto = 460;
     var caja = encuadre(geojson);
     var proyecta = proyector(caja, ancho, alto, 8);
-    var limites = cortes(Object.keys(opciones.valores).map(function (c) {
+    var listaValores = Object.keys(opciones.valores).map(function (c) {
       return opciones.valores[c];
-    }), 5);
-    var colores = rampa();
+    });
+    var limites = opciones.tipo === 'divergente'
+      ? cortesDivergentes(listaValores)
+      : cortes(listaValores, 5);
+    var colores = rampa(opciones.tipo);
 
     var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('viewBox', '0 0 ' + ancho + ' ' + alto);

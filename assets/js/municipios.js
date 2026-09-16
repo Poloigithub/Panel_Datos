@@ -1,0 +1,296 @@
+/* Mapa y fichas de los municipios de la provincia de Castellón.
+ *
+ * Junta tres fuentes: los contornos de GISCO, el paro registrado del SEPE y la
+ * población del INE. El indicador que más dice es el derivado de los dos
+ * últimos -paro por cada cien habitantes-, porque es el único que permite
+ * comparar un pueblo de doscientos vecinos con la capital. */
+(function () {
+  'use strict';
+
+  var P = window.Panel;
+
+  var estado = { indicador: 'variacion', periodo: null, municipio: null };
+  var geo = null, paro = null;
+
+  var INDICADORES = {
+    variacion: {
+      titulo: 'Variación del paro en un año',
+      unidad: '%',
+      decimales: 1,
+      tipo: 'divergente',
+      explicacion: 'Media de los últimos doce meses frente a los doce anteriores. ' +
+                   'Azul, baja; rojo, sube. Se comparan medias anuales y no meses ' +
+                   'sueltos porque en pueblos pequeños unos pocos parados más darían ' +
+                   'saltos enormes que no significan nada.'
+    },
+    paro: {
+      titulo: 'Paro registrado',
+      unidad: 'personas',
+      decimales: 0,
+      explicacion: 'Personas apuntadas en las oficinas de empleo. En valores absolutos, ' +
+                   'el mapa señala sobre todo dónde vive más gente.'
+    },
+  };
+
+  /* Mismo mes del año anterior: '2026M07' -> '2025M07'. */
+  function haceUnAnyo(periodo) {
+    var m = /^(\d{4})M(\d{2})$/.exec(periodo || '');
+    return m ? (parseInt(m[1], 10) - 1) + 'M' + m[2] : null;
+  }
+
+  /* Media de los doce meses que terminan en `periodo`.
+     Comparar meses sueltos en pueblos de pocos cientos de habitantes es ruido:
+     siete parados más en Catí son un 70 % que no dice nada. La media anual
+     quita de en medio la estacionalidad y el azar de los números pequeños. */
+  function mediaAnual(codigo, periodo) {
+    var municipio = paro.municipios[codigo];
+    if (!municipio) return null;
+    var fin = paro.periodos.indexOf(periodo);
+    if (fin < 11) return null;
+    var suma = 0, cuantos = 0;
+    for (var i = fin - 11; i <= fin; i++) {
+      var valor = municipio.paro_total[i];
+      if (valor === null || valor === undefined) continue;
+      suma += valor;
+      cuantos++;
+    }
+    return cuantos >= 10 ? suma / cuantos : null;
+  }
+
+  function anyoDe(periodo) {
+    return parseInt((periodo || '').slice(0, 4), 10);
+  }
+
+  function paroDe(codigo, periodo) {
+    var municipio = paro.municipios[codigo];
+    if (!municipio) return null;
+    var i = paro.periodos.indexOf(periodo);
+    if (i < 0) return null;
+    var valor = municipio.paro_total[i];
+    return valor === undefined ? null : valor;
+  }
+
+  function valorDe(codigo, periodo) {
+    if (estado.indicador === 'paro') return paroDe(codigo, periodo);
+    var ahora = mediaAnual(codigo, periodo);
+    var antes = mediaAnual(codigo, haceUnAnyo(periodo));
+    if (ahora === null || !antes) return null;
+    return ((ahora - antes) / antes) * 100;
+  }
+
+  function valoresActuales() {
+    var mapa = {};
+    Object.keys(paro.municipios).forEach(function (codigo) {
+      var valor = valorDe(codigo, estado.periodo);
+      if (valor !== null) mapa[codigo] = valor;
+    });
+    return mapa;
+  }
+
+  function nombreDe(codigo) {
+    return (paro.municipios[codigo] || {}).nombre || codigo;
+  }
+
+  function textoDe(codigo) {
+    var meta = INDICADORES[estado.indicador];
+    var valor = valorDe(codigo, estado.periodo);
+    if (valor === null) return 'sin dato';
+    var texto = P.conUnidad(valor, meta.unidad, meta.decimales);
+    if (estado.indicador !== 'paro') {
+      var parados = paroDe(codigo, estado.periodo);
+      if (parados !== null) texto += ' · ' + P.formatea(parados, 0) + ' parados';
+    }
+    return texto;
+  }
+
+  /* ---------------------------------------------------------------- mapa */
+
+  function pintaMapa() {
+    var meta = INDICADORES[estado.indicador];
+    P.dibujaMapa(document.querySelector('[data-mapa]'), geo, {
+      valores: valoresActuales(),
+      etiqueta: textoDe,
+      titulo: meta.titulo + ' por municipio, ' + P.etiquetaPeriodo(estado.periodo),
+      tipo: meta.tipo,
+      rango: function (desde, hasta) {
+        var f = function (v) { return P.formatea(v, meta.decimales); };
+        if (desde === null) return 'menos de ' + f(hasta);
+        if (hasta === null) return f(desde) + ' o más';
+        return f(desde) + ' – ' + f(hasta);
+      },
+      alSeleccionar: function (codigo) {
+        estado.municipio = codigo;
+        pintaFicha();
+        document.querySelector('[data-ficha]').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+
+    document.querySelector('[data-explicacion]').textContent = meta.explicacion;
+  }
+
+  /* -------------------------------------------------------------- ranking */
+
+  function pintaRanking() {
+    var meta = INDICADORES[estado.indicador];
+    var cuerpo = document.querySelector('[data-ranking]');
+    cuerpo.replaceChildren();
+
+    var filas = Object.keys(paro.municipios).map(function (codigo) {
+      return { codigo: codigo, nombre: nombreDe(codigo), valor: valorDe(codigo, estado.periodo) };
+    }).filter(function (f) { return f.valor !== null; })
+      .sort(function (a, b) { return b.valor - a.valor; });
+
+    filas.forEach(function (fila, posicion) {
+      var tr = document.createElement('tr');
+      tr.style.borderTop = '1px solid ' + P.color('--borde');
+
+      var orden = document.createElement('td');
+      orden.className = 'px-3 py-1.5 text-right';
+      orden.style.color = P.color('--tinta-tenue');
+      orden.textContent = String(posicion + 1);
+      tr.appendChild(orden);
+
+      var nombre = document.createElement('th');
+      nombre.scope = 'row';
+      nombre.className = 'px-3 py-1.5 text-left font-normal';
+      var boton = document.createElement('button');
+      boton.type = 'button';
+      boton.className = 'enlace-sutil';
+      boton.textContent = fila.nombre;
+      boton.addEventListener('click', function () {
+        estado.municipio = fila.codigo;
+        pintaFicha();
+      });
+      nombre.appendChild(boton);
+      tr.appendChild(nombre);
+
+      var valor = document.createElement('td');
+      valor.className = 'px-3 py-1.5 text-right whitespace-nowrap';
+      valor.style.fontVariantNumeric = 'tabular-nums';
+      valor.textContent = P.conUnidad(fila.valor, meta.unidad, meta.decimales);
+      tr.appendChild(valor);
+
+      var tamanyo = document.createElement('td');
+      tamanyo.className = 'px-3 py-1.5 text-right text-xs';
+      tamanyo.style.color = P.color('--tinta-tenue');
+      tamanyo.style.fontVariantNumeric = 'tabular-nums';
+      var parados = paroDe(fila.codigo, estado.periodo);
+      tamanyo.textContent = parados === null ? '' : P.formatea(parados, 0);
+      tr.appendChild(tamanyo);
+
+      cuerpo.appendChild(tr);
+    });
+  }
+
+  /* ---------------------------------------------------------------- ficha */
+
+  function pintaFicha() {
+    var caja = document.querySelector('[data-ficha]');
+    caja.hidden = false;
+    var codigo = estado.municipio;
+    if (!codigo) {
+      caja.hidden = true;
+      return;
+    }
+
+    document.querySelector('[data-ficha-nombre]').textContent = nombreDe(codigo);
+
+    var resumen = document.querySelector('[data-ficha-datos]');
+    resumen.replaceChildren();
+    var media = mediaAnual(codigo, estado.periodo);
+    var mediaPrevia = mediaAnual(codigo, haceUnAnyo(estado.periodo));
+    [['Paro registrado', paroDe(codigo, estado.periodo), 'personas', 0],
+     ['Media de 12 meses', media, 'personas', 0],
+     ['Variación en un año',
+      media !== null && mediaPrevia ? ((media - mediaPrevia) / mediaPrevia) * 100 : null, '%', 1]
+    ].forEach(function (dato) {
+      var item = document.createElement('div');
+      var etiqueta = document.createElement('div');
+      etiqueta.className = 'text-xs';
+      etiqueta.style.color = P.color('--tinta-tenue');
+      etiqueta.textContent = dato[0];
+      item.appendChild(etiqueta);
+      var valor = document.createElement('div');
+      valor.className = 'text-lg font-semibold';
+      valor.style.fontVariantNumeric = 'tabular-nums';
+      valor.textContent = P.conUnidad(dato[1], dato[2], dato[3]);
+      item.appendChild(valor);
+      resumen.appendChild(item);
+    });
+
+    var serie = {
+      etiqueta: nombreDe(codigo),
+      color: P.color('--serie-3'),
+      valores: paro.periodos.map(function (p) { return paroDe(codigo, p); })
+    };
+    P.dibuja(document.querySelector('[data-ficha-grafica]'), 'ficha',
+             paro.periodos, [serie], 'personas', 0);
+    P.pintaTabla(document.querySelector('[data-ficha-tabla]'), paro.periodos, [serie],
+                 'Paro registrado en ' + nombreDe(codigo), 'personas', 0);
+  }
+
+  /* ----------------------------------------------------------- controles */
+
+  function conectaControles() {
+    document.querySelector('[data-grupo="indicador"]').addEventListener('click', function (evento) {
+      var boton = evento.target.closest('button[data-valor]');
+      if (!boton) return;
+      this.querySelectorAll('button').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b === boton));
+      });
+      estado.indicador = boton.dataset.valor;
+      render();
+    });
+
+    var selector = document.querySelector('[data-periodo]');
+    paro.periodos.slice().reverse().forEach(function (periodo) {
+      var opcion = document.createElement('option');
+      opcion.value = periodo;
+      opcion.textContent = P.etiquetaPeriodo(periodo);
+      selector.appendChild(opcion);
+    });
+    selector.value = estado.periodo;
+    selector.addEventListener('change', function () {
+      estado.periodo = selector.value;
+      render();
+    });
+  }
+
+  function render() {
+    pintaMapa();
+    pintaRanking();
+    if (estado.municipio) pintaFicha();
+    document.querySelector('[data-mes-actual]').textContent = P.etiquetaPeriodo(estado.periodo);
+  }
+
+  async function carga(ruta) {
+    var respuesta = await fetch(ruta, { cache: 'no-cache' });
+    if (!respuesta.ok) throw new Error('HTTP ' + respuesta.status + ' en ' + ruta);
+    return respuesta.json();
+  }
+
+  async function arranca() {
+    var estadoNodo = document.querySelector('[data-estado]');
+    try {
+      geo = await carga('data/geo/municipios-castellon.geojson');
+      paro = await carga('data/paro-registrado/municipios-castellon.json');
+
+      estado.periodo = paro.periodos[paro.periodos.length - 1];
+      estadoNodo.hidden = true;
+      document.querySelector('[data-panel]').hidden = false;
+
+      conectaControles();
+      render();
+      document.addEventListener('tema:cambio', render);
+    } catch (error) {
+      estadoNodo.textContent = 'No se han podido cargar los datos (' + error.message + ').';
+      estadoNodo.style.color = P.color('--tinta');
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', arranca);
+  } else {
+    arranca();
+  }
+})();
