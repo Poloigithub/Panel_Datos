@@ -150,6 +150,14 @@ En los tres primeros casos no se publica nada: los datos del panel siguen
 siendo los de la última actualización que sí funcionó. Un fallo deja el panel
 como estaba, nunca a medias.
 
+### Probar el aviso
+
+Un aviso sin probar no es un aviso. En *Actions* hay un workflow llamado
+**Probar el aviso de fallo** que falla adrede: lanzarlo abre una incidencia
+como lo haría un fallo de verdad, con el paso y el enlace al registro. Se probó
+así, dos veces seguidas, para comprobar también que la segunda comenta en la
+incidencia abierta en vez de abrir otra.
+
 ### Qué no se considera un fallo
 
 Que una fuente **no publique nada nuevo**. Es lo normal: la mayoría de los días
