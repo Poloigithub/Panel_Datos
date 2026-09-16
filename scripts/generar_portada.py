@@ -75,8 +75,11 @@ SECCIONES = [
         "destacados": [
             {"clave": "compraventas", "titulo": "Compraventas de vivienda",
              "unidad": "operaciones", "decimales": 0},
-            {"clave": "lanzamientos", "titulo": "Lanzamientos practicados",
-             "unidad": "lanzamientos", "decimales": 0},
+            # Los lanzamientos no entran aquí a propósito: sus últimos
+            # trimestres son provisionales y un titular de «−72 % en un año»
+            # sería, en parte, el retraso de los juzgados en informar.
+            {"clave": "hipoteca_media", "titulo": "Hipoteca media", "unidad": "euros",
+             "decimales": 0},
         ],
     },
     {

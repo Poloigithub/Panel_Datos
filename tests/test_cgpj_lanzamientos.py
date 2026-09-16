@@ -113,6 +113,37 @@ class LecturaDeLaHoja(unittest.TestCase):
             cgpj.lee_hoja(libro_de_prueba(filas), "Lanzamientos pract. Total prov")
 
 
+class Provisionales(unittest.TestCase):
+    """Los trimestres recientes llegan cortos y el CGPJ los revisa al alza."""
+
+    def trimestres(self, por_anyo):
+        valores = {}
+        for anyo, cuantos in por_anyo.items():
+            for trimestre in range(1, cuantos + 1):
+                valores[f"{anyo}T{trimestre}"] = 1000.0
+        return valores
+
+    def test_un_ano_que_cuadra_no_es_provisional(self):
+        trimestral = self.trimestres({"2023": 4})
+        self.assertEqual(cgpj.anyos_provisionales(trimestral, {"2023": 4000.0}), [])
+
+    def test_un_ano_al_que_le_faltan_trimestres_lo_es(self):
+        trimestral = self.trimestres({"2023": 4, "2026": 1})
+        self.assertEqual(
+            cgpj.anyos_provisionales(trimestral, {"2023": 4000.0, "2026": 4000.0}),
+            ["2026"])
+
+    def test_un_ano_completo_que_suma_de_menos_tambien(self):
+        """El caso real de 2025: cuatro trimestres, pero un 11 % corto."""
+        trimestral = self.trimestres({"2025": 4})
+        self.assertEqual(cgpj.anyos_provisionales(trimestral, {"2025": 4500.0}), ["2025"])
+
+    def test_sin_fichero_anual_no_se_marca_nada_por_las_buenas(self):
+        """Sin contraste, sólo es provisional lo que no tiene cuatro trimestres."""
+        trimestral = self.trimestres({"2024": 4, "2025": 3})
+        self.assertEqual(cgpj.anyos_provisionales(trimestral, {}), ["2025"])
+
+
 class EleccionDelFichero(unittest.TestCase):
     def test_gana_el_trimestre_mas_reciente(self):
         """Los enlaces no vienen ordenados: manda lo que dice el nombre."""

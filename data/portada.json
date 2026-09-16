@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-16T14:14:30+00:00",
+ "actualizado": "2026-09-16T14:19:44+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -197,20 +197,20 @@
      }
     },
     {
-     "clave": "lanzamientos",
-     "titulo": "Lanzamientos practicados",
-     "unidad": "lanzamientos",
+     "clave": "hipoteca_media",
+     "titulo": "Hipoteca media",
+     "unidad": "euros",
      "decimales": 0,
-     "periodo": "2026T1",
+     "periodo": "2026M06",
      "valores": {
-      "espana": 4005.0,
-      "comunitat-valenciana": 741.0,
-      "castellon": 24.0
+      "espana": 178365.35,
+      "comunitat-valenciana": 145251.28,
+      "castellon": 114555.56
      },
      "hace_un_anyo": {
-      "espana": 7334.0,
-      "comunitat-valenciana": 794.0,
-      "castellon": 86.0
+      "espana": 168231.69,
+      "comunitat-valenciana": 130429.04,
+      "castellon": 97183.91
      }
     }
    ]

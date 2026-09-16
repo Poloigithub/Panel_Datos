@@ -349,10 +349,21 @@ def anyade_lanzamientos(por_ambito: dict, procedencias: dict) -> dict:
     esta fuente.
     """
     try:
-        series, fichero = cgpj.descarga_lanzamientos()
+        series, fichero, provisionales = cgpj.descarga_lanzamientos()
     except Exception as exc:  # noqa: BLE001
         print(f"    sin lanzamientos del CGPJ: {type(exc).__name__}: {exc}")
         return {}
+
+    # Que los últimos trimestres estén incompletos no es un detalle: quien mire
+    # la gráfica verá una caída que en parte es el retraso de los juzgados en
+    # informar. Lo dice cada indicador en su propia tarjeta.
+    aviso = ""
+    if provisionales:
+        cuales = provisionales[0] if len(provisionales) == 1 else \
+            f"{provisionales[0]} en adelante"
+        aviso = (f" Los trimestres de {cuales} son provisionales: sumados dan menos "
+                 f"que el total anual que el propio CGPJ publica por partido judicial, "
+                 f"y se revisan al alza.")
 
     publicados = {}
     for ambito, indicadores in series.items():
@@ -363,7 +374,10 @@ def anyade_lanzamientos(por_ambito: dict, procedencias: dict) -> dict:
         for clave in indicadores:
             procedencias.setdefault(ambito, {}).setdefault("ambos", {})[clave] = [
                 f"CGPJ · {fichero}"]
-            publicados[clave] = LANZAMIENTOS[clave]
+            ficha = dict(LANZAMIENTOS[clave])
+            if aviso:
+                ficha["nota"] = (ficha.get("nota") or "").strip() + aviso
+            publicados[clave] = ficha
     return publicados
 
 

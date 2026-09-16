@@ -24,6 +24,11 @@ Dos avisos de la propia metodología del CGPJ que este módulo respeta:
 - El fichero trae, debajo de la tabla, un segundo bloque con variaciones en
   tanto por uno y las mismas provincias. Se corta en la fila del total para no
   mezclarlos.
+- Los trimestres más recientes llegan incompletos y se revisan al alza. Se
+  detecta comparando la suma de los cuatro trimestres de cada año con el total
+  anual que el propio CGPJ publica por partido judicial: 2023 y 2024 cuadran al
+  dato, pero 2025 se quedaba un 11 % corto. Los años que no cuadran se marcan
+  como provisionales para que la página lo diga.
 """
 
 from __future__ import annotations
@@ -222,8 +227,77 @@ def series_del_libro(libro: Libro) -> dict[str, dict[str, dict[str, float]]]:
     return por_ambito
 
 
-def descarga_lanzamientos() -> tuple[dict, str]:
-    """Baja el fichero vigente y devuelve las series y de dónde salen."""
+def fichero_por_partidos(pagina: str = PAGINA) -> tuple[str, str] | tuple[None, None]:
+    """El fichero anual por partido judicial, que sirve de contraste."""
+    cuerpo = descarga(pagina, 3_000_000).decode("utf-8", errors="replace")
+    for href in HOJA_CALCULO.findall(cuerpo):
+        url = urllib.parse.urljoin(pagina, html.unescape(href))
+        nombre = urllib.parse.unquote(url.split("/")[-1].split("?")[0])
+        if "lanzamientos por pj" in normaliza(nombre):
+            return url, nombre
+    return None, None
+
+
+def totales_anuales() -> dict[str, float]:
+    """Total nacional de lanzamientos por año, del fichero por partidos.
+
+    Se suman todos los partidos judiciales, que es como sale el total del país
+    en un fichero que no trae fila de total.
+    """
+    url, nombre = fichero_por_partidos()
+    if not url:
+        print("    ! no está el fichero por partidos; no se puede comprobar si "
+              "los trimestres están completos")
+        return {}
+
+    libro = Libro(descarga(url))
+    filas = libro.filas(list(libro.hojas)[0])
+    fila_anyos = next((f for f in filas[:8]
+                       if sum(1 for c in f
+                              if isinstance(c, (int, float)) and 2000 < c < 2100) >= 3), None)
+    if not fila_anyos:
+        print(f"    ! no se encuentra la fila de años en «{nombre}»")
+        return {}
+
+    columnas = {str(int(c)): j for j, c in enumerate(fila_anyos)
+                if isinstance(c, (int, float)) and 2000 < c < 2100}
+    cabecera = filas.index(fila_anyos)
+    totales: dict[str, float] = {}
+    for anyo, columna in columnas.items():
+        # La fila siguiente a la de años es la de conceptos; los datos empiezan
+        # después, y la primera columna de cada año es el total.
+        suma = sum(fila[columna] for fila in filas[cabecera + 2:]
+                   if columna < len(fila) and isinstance(fila[columna], (int, float)))
+        if suma:
+            totales[anyo] = suma
+    return totales
+
+
+def anyos_provisionales(trimestral: dict[str, float],
+                        anuales: dict[str, float]) -> list[str]:
+    """Años cuya serie trimestral no cuadra con el total anual del CGPJ.
+
+    Un año al que le faltan trimestres es provisional por definición; uno con
+    los cuatro pero que suma bastante menos que el total anual, también: es que
+    el CGPJ todavía no ha recibido todo.
+    """
+    por_anyo: dict[str, list[float]] = {}
+    for periodo, valor in trimestral.items():
+        por_anyo.setdefault(periodo[:4], []).append(valor)
+
+    provisionales = []
+    for anyo, valores in sorted(por_anyo.items()):
+        if len(valores) < 4:
+            provisionales.append(anyo)
+            continue
+        anual = anuales.get(anyo)
+        if anual and abs(sum(valores) - anual) / anual > 0.02:
+            provisionales.append(anyo)
+    return provisionales
+
+
+def descarga_lanzamientos() -> tuple[dict, str, list[str]]:
+    """Baja el fichero vigente: series, de dónde salen y qué años son provisionales."""
     url, nombre = localiza_fichero()
     print(f"    fichero del CGPJ: {nombre}")
     libro = Libro(descarga(url))
@@ -233,4 +307,9 @@ def descarga_lanzamientos() -> tuple[dict, str]:
             ultimo = max(valores, key=lambda p: (p[:4], p[5:]))
             print(f"      {ambito}/{clave}: {len(valores)} trimestres, "
                   f"{ultimo} = {valores[ultimo]:,.0f}")
-    return series, nombre
+
+    nacional = series.get("espana", {}).get("lanzamientos", {})
+    provisionales = anyos_provisionales(nacional, totales_anuales()) if nacional else []
+    if provisionales:
+        print(f"      provisionales: {', '.join(provisionales)}")
+    return series, nombre, provisionales
