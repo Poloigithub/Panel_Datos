@@ -86,11 +86,12 @@ def mira_operacion(operacion: dict) -> list[str]:
     lineas.append("- variables territoriales: " +
                   (", ".join(f"{v['Id']} {v['Nombre']}" for v in territoriales) or "**ninguna**"))
     if not any(v.get("Id") == 115 for v in territoriales):
-        lineas += ["- **no llega a provincia**", ""]
-        return lineas
+        lineas.append("- **no llega a provincia**")
 
-    # Tiene la variable de provincias; falta ver si devuelve series de verdad.
-    for nombre_ambito, filtro in AMBITOS:
+    # Aunque no baje de comunidad autónoma interesa ver qué publica: una
+    # sección de salarios puede darse por comunidad diciendo que es lo que hay.
+    ambitos = AMBITOS if any(v.get("Id") == 115 for v in territoriales) else AMBITOS[:2]
+    for nombre_ambito, filtro in ambitos:
         try:
             indice = motor.indexa_por_segmentos(str(codigo), filtro)
         except ine_api.INEError as exc:
@@ -98,7 +99,7 @@ def mira_operacion(operacion: dict) -> list[str]:
             continue
         total = sum(len(v) for v in indice.values())
         lineas.append(f"- **{nombre_ambito}**: {total} series, {len(indice)} combinaciones")
-        for segs in sorted(indice, key=lambda s: (len(s), sorted(s)))[:12]:
+        for segs in sorted(indice, key=lambda s: (len(s), sorted(s)))[:16]:
             lineas.append(f"    - {sorted(segs)} → `{indice[segs][0]['COD']}`")
     lineas.append("")
     return lineas
