@@ -56,29 +56,42 @@ PRODUCTOS = [
      {"legumbres y hortalizas frescas"}, False),
     ("patatas", "Patatas y sus preparados", {"patatas y sus preparados"}, False),
     ("cafe", "Café, cacao e infusiones", {"cafe", "cacao e infusiones"}, False),
-    ("azucar", "Azúcar, chocolate y confitería",
-     {"azucar", "chocolate y confiteria"}, False),
-    ("preparados", "Alimentos preparados", {"alimentos preparados"}, False),
+    ("azucar", "Azúcar", {"azucar"}, False),
+    ("preparados", "Alimentos preparados y otros",
+     {"alimentos preparados y otros productos alimenticios"}, False),
     ("agua", "Agua mineral", {"agua mineral"}, False),
     # Comer fuera no es la cesta, pero es la otra mitad de lo que se gasta en
-    # comer, y es de lo poco de esta página que sí llega a Castellón.
-    ("restaurantes", "Comer fuera: restaurantes y bares",
-     {"restaurantes y bares"}, True),
+    # comer. Va en dos alturas porque el INE no publica la misma: la clase de
+    # restaurantes y cafeterías sólo existe para España, mientras que el grupo
+    # entero -que mete dentro el alojamiento- sí baja a la provincia, y es de
+    # lo poco de esta página que llega a Castellón.
+    ("restaurantes", "Restaurantes, cafés y comida rápida",
+     {"restaurantes", "cafes", "establecimientos de comida rapida y similares"},
+     False),
+    ("restauracion", "Restaurantes y alojamiento",
+     {"restaurantes y servicios de alojamiento"}, True),
 ]
 
 # Alguna categoría cambió de nombre al rebasar el índice, así que hay que
 # probar varias formulaciones: la fruta es «frescas o refrigeradas» en la base
 # nueva y «frescas» en la anterior.
 ALTERNATIVAS = {
-    "azucar": [{"azucar", "chocolate y confiteria"},
-               {"azucar", "confiteria y helados"},
-               {"azucar de cana y azucar de remolacha"}],
-    "preparados": [{"alimentos preparados"},
-                   {"alimentos preparados y otros productos alimenticios"}],
+    # El azúcar se nombra distinto en cada ámbito: en la Comunitat es «azúcar»
+    # a secas y en España aparece como subclase -«azúcar de caña y de
+    # remolacha»- y dentro de la clase «azúcar, confitería y postres».
+    "azucar": [{"azucar"},
+               {"azucar de cana y azucar de remolacha"},
+               {"azucar", "confiteria y postres"},
+               {"azucar", "chocolate y confiteria"}],
+    "preparados": [{"alimentos preparados y otros productos alimenticios"},
+                   {"alimentos preparados"}],
     "agua": [{"agua mineral"}, {"agua mineral o de manantial"},
              {"agua mineral", "refrescos y zumos"}],
-    "restaurantes": [{"restaurantes y bares"}, {"restaurantes, bares y cafeterias"},
-                     {"bares y cafeterias"}, {"cafes y restaurantes"}],
+    "restaurantes": [{"restaurantes", "cafes",
+                      "establecimientos de comida rapida y similares"},
+                     {"restaurantes", "cafes y establecimientos similares"}],
+    "restauracion": [{"restaurantes y servicios de alojamiento"},
+                     {"restaurantes y hoteles"}],
     "frutas": [{"frutas"}, {"frutas frescas o refrigeradas"}, {"frutas frescas"}],
     "hortalizas": [{"legumbres y hortalizas frescas"},
                    {"legumbres y hortalizas frescas o refrigeradas"}],
@@ -87,6 +100,16 @@ ALTERNATIVAS = {
 AVISO_PROVINCIA = ("El INE no publica el IPC de productos sueltos por "
                    "provincia: de Castellón sólo existe el grupo entero de "
                    "alimentos.")
+
+# La Comunitat baja a 73 productos y España a 125, así que algo se queda por el
+# camino. Declararlo aquí evita que el aviso de fallos cante todos los días una
+# ausencia que no tiene arreglo.
+SOLO_ESPANA = {"preparados", "restaurantes"}
+AVISO_SOLO_ESPANA = ("De esta categoría el INE sólo publica índice nacional; "
+                     "el detalle autonómico no baja hasta ahí.")
+AVISO_ALOJAMIENTO = ("Es el grupo entero, así que dentro va también el "
+                     "alojamiento: hoteles, apartamentos y similares. Es el "
+                     "único de comer fuera que el INE publica por provincia.")
 
 
 def indicador(clave: str, titulo: str, segmentos: set[str], hay_provincia: bool) -> dict:
@@ -97,7 +120,12 @@ def indicador(clave: str, titulo: str, segmentos: set[str], hay_provincia: bool)
         "busquedas": [s | {"indice"} for s in ALTERNATIVAS.get(clave, [segmentos])],
         "por_sexo": False,
     }
-    if not hay_provincia:
+    if clave == "restauracion":
+        ficha["nota"] = AVISO_ALOJAMIENTO
+    elif clave in SOLO_ESPANA:
+        ficha["sin_ambitos"] = ("castellon", "comunitat-valenciana")
+        ficha["nota"] = AVISO_SOLO_ESPANA
+    elif not hay_provincia:
         ficha["sin_ambitos"] = ("castellon",)
         ficha["nota"] = AVISO_PROVINCIA
     return ficha
