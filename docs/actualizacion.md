@@ -114,6 +114,54 @@ fuente vaya lenta, sino que ha dejado de llegar. Están en `FRESCURA`, dentro de
 los cálculos propios, la validación de los datos ya publicados y la
 comprobación de que el CSS commiteado coincide con el compilado.
 
+## Cómo te enteras si algo falla
+
+Hay dos avisos, y llegan al correo por caminos distintos.
+
+**El de GitHub.** Cuando un workflow programado falla, GitHub manda un correo a
+la cuenta del repositorio. Viene de serie; se comprueba en *Settings →
+Notifications → Actions* de la cuenta (no del repositorio), donde debe estar
+marcado el envío por correo. Dice poco más que «ha fallado», pero llega
+siempre.
+
+**El del propio panel.** Cuando cualquiera de las dos tareas de actualización
+falla, se abre una **incidencia en el repositorio** con el paso concreto que ha
+fallado, el enlace al registro y una explicación de qué significa. Al abrirse,
+GitHub avisa por correo a quien sigue el repositorio, que es su dueño por
+defecto. No hacen falta contraseñas ni servidores de correo: usa el token que
+la propia Action ya tiene.
+
+Si la tarea vuelve a fallar al día siguiente, **comenta en la incidencia que ya
+está abierta** en lugar de abrir otra: una tarea que lleva una semana rota debe
+ser una incidencia con siete comentarios, no siete incidencias. La incidencia
+no se cierra sola; se cierra cuando alguien la arregla y la cierra.
+
+### Qué se considera un fallo
+
+- Una serie que **desaparece** o que **pierde periodos** respecto a la descarga
+  anterior. Es lo que delata que un organismo ha renombrado algo y el
+  descargador ha dejado de encontrarlo.
+- Un valor **fuera del rango** plausible del indicador, o una **identidad
+  contable** que no cuadra.
+- Una fuente que se ha **quedado atrás** más de lo que le toca por su cadencia.
+- Un error de red o de formato que impida terminar la descarga.
+
+En los tres primeros casos no se publica nada: los datos del panel siguen
+siendo los de la última actualización que sí funcionó. Un fallo deja el panel
+como estaba, nunca a medias.
+
+### Qué no se considera un fallo
+
+Que una fuente **no publique nada nuevo**. Es lo normal: la mayoría de los días
+no hay dato nuevo de casi nada, la tarea termina sin tocar el repositorio y no
+avisa a nadie. Un correo diario diciendo «hoy tampoco» no lo leería nadie a la
+semana.
+
+Tampoco lo es que un indicador concreto no se encuentre en una descarga suelta
+mientras el resto del bloque sí: eso queda anotado en el registro del run y, si
+persiste, acaba saltando como serie desaparecida en la comprobación de
+cobertura.
+
 ## Dónde queda el histórico
 
 Cada actualización es un commit, así que el histórico de revisiones de

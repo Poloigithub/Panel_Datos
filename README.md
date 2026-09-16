@@ -76,6 +76,12 @@ fichero en el mismo commit; si no, la validación lo dará por desaparecido y
 parará la publicación, que es justo lo que debe hacer cuando la desaparición
 no es intencionada.
 
+Si algo de esto falla, la tarea abre una **incidencia en el repositorio** con
+el paso que ha fallado y el enlace al registro (`scripts/avisar_fallo.py`), y
+GitHub avisa por correo a quien sigue el repositorio. Si vuelve a fallar,
+comenta en la misma incidencia en vez de abrir otra. El detalle de qué cuenta
+como fallo y qué no está en [`docs/actualizacion.md`](docs/actualizacion.md).
+
 La comprobación de **frescura** es distinta y va aparte, al final de la tarea
 de actualización: mira que el último dato de cada fuente esté dentro del plazo
 que le toca por su cadencia. Detecta lo que la cobertura no puede detectar —que
@@ -127,6 +133,7 @@ python3 scripts/descargar_epa.py
 | `scripts/descargar_renta_municipal.py` | Renta municipal del Atlas del INE |
 | `scripts/descargar_geometrias.py` | Contornos municipales de GISCO, simplificados |
 | `scripts/validar_datos.py` | Validación de los datos antes de publicarlos |
+| `scripts/avisar_fallo.py` | Abre una incidencia cuando la actualización falla |
 | `assets/js/bloque.js` | Página genérica de un bloque, gobernada por su índice |
 | `assets/js/mapa.js` | Mapa coroplético, sin librería de cartografía |
 | `tests/` | Pruebas del motor de series y de los cálculos propios |

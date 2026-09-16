@@ -13,6 +13,8 @@ on:
 
 permissions:
   contents: write
+  # Para poder abrir la incidencia de aviso cuando algo falle.
+  issues: write
 
 # Dos actualizaciones a la vez se pisarían al commitear.
 concurrency:
@@ -68,3 +70,15 @@ jobs:
       # impedir publicar lo que sí ha llegado, pero sí tiene que hacer ruido.
       - name: Comprobar que ninguna fuente se ha quedado atrás
         run: python scripts/validar_datos.py --frescura
+
+      # GitHub manda su propio correo cuando un workflow programado falla, pero
+      # dice poco más que «ha fallado». Esto abre una incidencia con el paso
+      # concreto y el enlace al registro, y al abrirse GitHub avisa por correo a
+      # quien sigue el repositorio. Sin contraseñas ni servidores de correo.
+      - name: Avisar si algo ha fallado
+        if: failure()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAREA: ${{ github.workflow }}
+        run: |
+          FECHA=$(date -u '+%d/%m/%Y a las %H:%M UTC') python scripts/avisar_fallo.py
