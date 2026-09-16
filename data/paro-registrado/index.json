@@ -1,0 +1,83 @@
+{
+  "actualizado": "2026-09-16T09:41:53+00:00",
+  "titulo": "Paro registrado",
+  "fuente": {
+    "organismo": "Servicio Público de Empleo Estatal (SEPE)",
+    "url": "https://sede.sepe.gob.es/es/portaltrabaja/resources/sede/datos_abiertos/datos/Paro_por_municipios_2026_csv.csv"
+  },
+  "indicadores": {
+    "paro_total": {
+      "titulo": "Paro registrado",
+      "unidad": "personas",
+      "decimales": 0,
+      "por_sexo": true
+    },
+    "paro_menores_25": {
+      "titulo": "Menores de 25 años",
+      "unidad": "personas",
+      "decimales": 0,
+      "por_sexo": true
+    },
+    "paro_25_44": {
+      "titulo": "De 25 a 44 años",
+      "unidad": "personas",
+      "decimales": 0,
+      "por_sexo": true
+    },
+    "paro_45_mas": {
+      "titulo": "De 45 años o más",
+      "unidad": "personas",
+      "decimales": 0,
+      "por_sexo": true
+    },
+    "paro_agricultura": {
+      "titulo": "Agricultura",
+      "unidad": "personas",
+      "decimales": 0,
+      "por_sexo": false
+    },
+    "paro_industria": {
+      "titulo": "Industria",
+      "unidad": "personas",
+      "decimales": 0,
+      "por_sexo": false
+    },
+    "paro_construccion": {
+      "titulo": "Construcción",
+      "unidad": "personas",
+      "decimales": 0,
+      "por_sexo": false
+    },
+    "paro_servicios": {
+      "titulo": "Servicios",
+      "unidad": "personas",
+      "decimales": 0,
+      "por_sexo": false
+    },
+    "paro_sin_empleo_anterior": {
+      "titulo": "Sin empleo anterior",
+      "unidad": "personas",
+      "decimales": 0,
+      "por_sexo": false
+    }
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ],
+  "ultimo_periodo": "2026M07",
+  "primer_periodo": "2006M01"
+}
