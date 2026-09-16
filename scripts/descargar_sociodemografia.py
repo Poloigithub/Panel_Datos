@@ -146,7 +146,7 @@ BLOQUES = {
         "indicadores": {
             "ipc_general": {
                 "titulo": "IPC, índice general", "unidad": "índice", "decimales": 2,
-                "unidad_texto": "índice, base 2021 = 100",
+                "unidad_texto": "índice",  # la base se deduce de los datos
                 "rango": (50, 200),
                 "operacion": "IPC",
                 "busquedas": [{"indice general", "indice"}],
@@ -314,6 +314,13 @@ def main() -> int:
             nombre, bloque, POSPROCESOS.get(nombre))
         procedencias[nombre] = procedencia
         faltantes += sin_serie
+        if nombre == "precios":
+            base = bloques.base_del_indice(
+                por_ambito.get("espana", {}).get("ambos", {}).get("ipc_general", {}))
+            if base:
+                print(f"  el IPC está en base {base} = 100")
+                bloque["indicadores"]["ipc_general"]["unidad_texto"] = (
+                    f"índice, base {base} = 100")
         bloques.escribe_bloque(nombre, bloque, por_ambito, ahora, RAIZ,
                                fichas_derivadas(por_ambito, bloque))
 

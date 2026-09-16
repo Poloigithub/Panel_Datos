@@ -53,6 +53,15 @@ SECCIONES = [
         ],
     },
     {
+        "bloque": "cesta", "enlace": "cesta.html", "titulo": "La cesta de la compra",
+        "fuente": "IPC · INE",
+        "cadencia": "Mensual, a la vez que el IPC.",
+        "destacados": [
+            {"clave": "alimentos", "titulo": "Alimentos y bebidas no alcohólicas",
+             "unidad": "índice", "decimales": 1},
+        ],
+    },
+    {
         "bloque": "vivienda", "enlace": "vivienda.html", "titulo": "Vivienda",
         "fuente": "INE y CGPJ",
         "cadencia": "Mensual las compraventas y las hipotecas; trimestral el precio "

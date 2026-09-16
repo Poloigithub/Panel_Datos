@@ -98,6 +98,24 @@ def deflacta(series: dict, deflactor: dict[str, float], procedencia: dict,
     return base if convertidas else None
 
 
+def base_del_indice(valores: dict[str, float]) -> str | None:
+    """El año en que el índice vale 100, deducido de la propia serie.
+
+    El INE rebasa el IPC cada pocos años y la etiqueta escrita a mano se queda
+    vieja sin que nadie lo note: el panel decía «base 2021 = 100» cuando el
+    índice ya estaba en base 2025. Como la base es, por definición, el año cuya
+    media vale 100, se puede leer de los datos en vez de mantenerla a mano.
+    """
+    por_anyo: dict[str, list[float]] = {}
+    for periodo, valor in valores.items():
+        por_anyo.setdefault(periodo[:4], []).append(valor)
+    medias = {anyo: sum(v) / len(v) for anyo, v in por_anyo.items() if len(v) >= 4}
+    if not medias:
+        return None
+    anyo = min(medias, key=lambda a: abs(medias[a] - 100))
+    return anyo if abs(medias[anyo] - 100) < 0.5 else None
+
+
 def filtro_de_rango(indicador):
     """Convierte el rango declarado en un filtro de candidatas.
 

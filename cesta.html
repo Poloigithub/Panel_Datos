@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es" class="h-full">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La cesta de la compra · Panel de datos</title>
+<meta name="description" content="Cuánto ha subido cada producto de la cesta de la compra desde 2021: aceite, huevos, leche, pan, carne, pescado, fruta y verdura.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<script>
+  try {
+    const guardado = localStorage.getItem('panel-tema');
+    if (guardado) document.documentElement.dataset.theme = guardado;
+  } catch (_) {}
+</script>
+</head>
+<body class="min-h-full antialiased">
+
+<header class="border-b" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+    <a href="./" class="flex items-center gap-2.5 font-semibold tracking-tight">
+      <span aria-hidden="true" class="grid h-8 w-8 place-items-center rounded-lg text-white text-sm" style="background-color: var(--acento)">PD</span>
+      <span>Panel de datos</span>
+    </a>
+    <div class="flex items-center gap-2">
+      <a href="buscar.html" class="control">Buscar</a>
+      <button type="button" data-tema class="control" aria-label="Cambiar entre tema claro y oscuro">
+        <span data-tema-texto>Tema</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="mx-auto max-w-6xl px-4 sm:px-6 py-8 sm:py-10">
+
+  <nav aria-label="Ruta" class="text-xs" style="color: var(--tinta-tenue)">
+    <a class="enlace-sutil" href="./">Panel</a> <span aria-hidden="true">/</span> La cesta de la compra
+  </nav>
+
+  <h1 class="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">La cesta de la compra</h1>
+  <p class="mt-3 max-w-3xl text-base leading-relaxed" style="color: var(--tinta-suave)">
+    Qué ha subido y cuánto, producto a producto, ordenado de lo que más ha
+    subido a lo que menos. Se compara el precio de hoy con el del mismo mes del
+    año que elijas, que es lo que contesta a «¿cuánto ha subido el aceite desde
+    antes de la pandemia?».
+  </p>
+
+  <p data-estado role="status" class="mt-6 text-sm" style="color: var(--tinta-suave)">Cargando datos…</p>
+
+  <div data-panel hidden>
+
+    <section aria-labelledby="filtros-titulo" class="mt-8 tarjeta p-4">
+      <h2 id="filtros-titulo" class="sr-only">Filtros</h2>
+      <div class="flex flex-wrap items-end gap-x-6 gap-y-4">
+        <fieldset>
+          <legend class="text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Ámbito</legend>
+          <div class="mt-1.5 segmento" data-grupo="ambito" role="group" aria-label="Ámbito territorial">
+            <button type="button" data-valor="espana" aria-pressed="true">España</button>
+            <button type="button" data-valor="comunitat-valenciana" aria-pressed="false">C. Valenciana</button>
+            <button type="button" data-valor="castellon" aria-pressed="false">Castellón</button>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Comparado con</legend>
+          <div class="mt-1.5 segmento" data-grupo="desde" role="group" aria-label="Punto de partida de la comparación">
+            <button type="button" data-valor="2021" aria-pressed="true">2021</button>
+            <button type="button" data-valor="2019" aria-pressed="false">2019, antes de la pandemia</button>
+            <button type="button" data-valor="1" aria-pressed="false">Hace un año</button>
+          </div>
+        </fieldset>
+        <div class="ml-auto">
+          <button type="button" data-csv class="control" title="Descargar los índices de este ámbito en CSV">Descargar CSV</button>
+        </div>
+      </div>
+      <p data-aviso-ambito hidden class="mt-3 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        <strong>De Castellón sólo existe el grupo entero de alimentos.</strong>
+        El INE no publica el IPC de productos sueltos por provincia, así que
+        aquí no hay aceite, huevos ni pan por separado. Para eso hay que mirar
+        España o la Comunitat.
+      </p>
+    </section>
+
+    <p data-titular class="mt-6 text-lg font-semibold tracking-tight"></p>
+
+    <section aria-labelledby="ranking-titulo" class="mt-4">
+      <h2 id="ranking-titulo" class="text-lg font-semibold tracking-tight sr-only">Qué ha subido más</h2>
+      <div class="tarjeta overflow-x-auto">
+        <table class="w-full text-sm">
+          <caption class="sr-only">Subida de cada producto, ordenada de mayor a menor</caption>
+          <thead>
+            <tr class="text-left" style="color: var(--tinta-tenue)">
+              <th scope="col" class="px-3 py-2.5 font-medium">Producto</th>
+              <th scope="col" class="px-3 py-2.5 font-medium">Cuánto ha subido</th>
+              <th scope="col" class="px-3 py-2.5 font-medium text-right">Variación</th>
+              <th scope="col" class="px-3 py-2.5 font-medium text-right">Desde</th>
+            </tr>
+          </thead>
+          <tbody data-ranking></tbody>
+        </table>
+      </div>
+    </section>
+
+    <h2 class="mt-10 text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Cómo ha ido cada uno</h2>
+    <section class="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-series></section>
+
+    <section class="mt-12 tarjeta p-5">
+      <h2 class="text-sm font-semibold">Fuente y método</h2>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Índice de Precios de Consumo del INE, mensual. Lo que se guarda es el
+        índice y no la variación, porque con él se puede comparar cualquier
+        fecha con cualquier otra: dividir el índice de hoy entre el de hace
+        cinco años es exactamente comparar los dos precios. Se compara siempre
+        contra el <strong>mismo mes</strong> del año elegido, porque la fruta y
+        la verdura tienen temporada y comparar agosto con enero movería la
+        cifra sin que hubiera subido nada.
+      </p>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        La base del índice es la que el INE tenga vigente -la rebasa cada pocos
+        años- y el panel la deduce de los propios datos, así que no hay ninguna
+        etiqueta escrita a mano que se pueda quedar vieja.
+      </p>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Es el precio medio de <em>una categoría</em>, no de una marca ni de un
+        supermercado concreto: «leche» es el conjunto de leches que el INE
+        recoge en sus establecimientos. Y mide precio, no gasto: si alguien
+        compra una marca más barata que antes, su ticket baja aunque el índice
+        suba.
+      </p>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        El detalle por producto existe para España y, casi entero, para la
+        Comunitat Valenciana. <strong>Por provincia no existe</strong>: de
+        Castellón el INE sólo publica el grupo de alimentos y bebidas no
+        alcohólicas.
+      </p>
+      <p class="mt-2 text-sm" style="color: var(--tinta-suave)">
+        Última actualización de los datos: <span data-actualizado class="font-medium"></span>.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="border-t mt-8" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-6 text-xs flex flex-wrap gap-x-6 gap-y-2 justify-between" style="color: var(--tinta-tenue)">
+    <p>Datos: <a class="enlace-sutil" href="https://www.ine.es/" rel="noopener">INE</a>. Elaboración propia.</p>
+    <p><a class="enlace-sutil" href="buscar.html">Buscar</a> · <a class="enlace-sutil" href="fuentes.html">Fuentes y calendario</a> · <a class="enlace-sutil" href="novedades.html">Novedades</a> · <a class="enlace-sutil" href="https://github.com/Poloigithub/Panel_Datos" rel="noopener">Código en GitHub</a></p>
+  </div>
+</footer>
+
+<script src="assets/vendor/chart.umd.js"></script>
+<script src="assets/js/tema.js"></script>
+<script src="assets/js/enlace.js"></script>
+<script src="assets/js/panel.js"></script>
+<script src="assets/js/cesta.js"></script>
+</body>
+</html>

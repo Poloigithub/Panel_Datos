@@ -11,9 +11,14 @@ Lo que hay, según el sondeo (`sondeos/cesta.md`):
 - **Castellón**: sólo el grupo «alimentos y bebidas no alcohólicas». Por debajo
   de eso, el INE no publica IPC provincial. La página lo dice.
 
-Se guarda el **índice**, no la variación, y por un motivo concreto: el IPC está
-en base 2021 = 100, así que el propio número responde a la pregunta. Un 143 en
-el aceite de oliva significa que cuesta un 43 % más que en 2021.
+Se guarda el **índice**, no la variación, porque con él se puede comparar
+cualquier fecha con cualquier otra: dividir el índice de hoy entre el de hace
+cinco años es exactamente comparar los dos precios.
+
+Y la base del índice se deduce de los propios datos en vez de escribirla a
+mano. El INE rebasa el IPC cada pocos años -mientras se escribía esto el panel
+decía «base 2021» cuando ya estaba en base 2025- y una etiqueta escrita a mano
+se queda vieja sin que nadie lo note.
 """
 
 from __future__ import annotations
@@ -51,8 +56,16 @@ PRODUCTOS = [
      {"legumbres y hortalizas frescas"}, False),
     ("patatas", "Patatas y sus preparados", {"patatas y sus preparados"}, False),
     ("cafe", "Café, cacao e infusiones", {"cafe", "cacao e infusiones"}, False),
-    ("agua", "Agua mineral", {"agua mineral"}, False),
 ]
+
+# Alguna categoría cambió de nombre al rebasar el índice, así que hay que
+# probar varias formulaciones: la fruta es «frescas o refrigeradas» en la base
+# nueva y «frescas» en la anterior.
+ALTERNATIVAS = {
+    "frutas": [{"frutas frescas o refrigeradas"}, {"frutas frescas"}],
+    "hortalizas": [{"legumbres y hortalizas frescas"},
+                   {"legumbres y hortalizas frescas o refrigeradas"}],
+}
 
 AVISO_PROVINCIA = ("El INE no publica el IPC de productos sueltos por "
                    "provincia: de Castellón sólo existe el grupo entero de "
@@ -64,7 +77,7 @@ def indicador(clave: str, titulo: str, segmentos: set[str], hay_provincia: bool)
         "titulo": titulo, "unidad": "índice", "decimales": 3,
         "unidad_texto": "índice, base 2021 = 100",
         "rango": RANGO, "operacion": "IPC",
-        "busquedas": [segmentos | {"indice"}],
+        "busquedas": [s | {"indice"} for s in ALTERNATIVAS.get(clave, [segmentos])],
         "por_sexo": False,
     }
     if not hay_provincia:
@@ -89,21 +102,31 @@ def main() -> int:
     CONFIG.mkdir(parents=True, exist_ok=True)
     print("\n=== La cesta de la compra ===")
     por_ambito, procedencias, faltantes = bloques.descarga_bloque("cesta", BLOQUE)
+
+    # La base se lee de la serie más completa, la de alimentos de España.
+    base = bloques.base_del_indice(
+        por_ambito.get("espana", {}).get("ambos", {}).get("alimentos", {}))
+    if base:
+        print(f"  el índice está en base {base} = 100")
+        for ficha in BLOQUE["indicadores"].values():
+            ficha["unidad_texto"] = f"índice, base {base} = 100"
     bloques.escribe_bloque("cesta", BLOQUE, por_ambito, ahora, RAIZ)
 
     (CONFIG / "series-cesta.json").write_text(
         json.dumps(procedencias, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     # Lo interesante en una línea: qué ha subido más desde la base.
-    base = por_ambito.get("espana", {}).get("ambos", {})
+    espana = por_ambito.get("espana", {}).get("ambos", {})
     subidas = []
-    for clave, valores in base.items():
+    for clave, valores in espana.items():
         if not valores:
             continue
         ultimo = max(valores, key=lambda p: (p[:4], p[5:]))
-        subidas.append((valores[ultimo] - 100, clave, ultimo))
-    for subida, clave, ultimo in sorted(subidas, reverse=True)[:6]:
-        print(f"  {clave}: {subida:+.1f} % desde 2021 ({ultimo})")
+        antes = f"2021{ultimo[4:]}"
+        if valores.get(antes):
+            subidas.append(((valores[ultimo] / valores[antes] - 1) * 100, clave, ultimo))
+    for subida, clave, ultimo in sorted(subidas, reverse=True)[:8]:
+        print(f"  {clave}: {subida:+.1f} % desde 2021 (último: {ultimo})")
 
     if faltantes:
         print(f"\nNo se ha encontrado serie para {len(faltantes)} combinaciones:")
