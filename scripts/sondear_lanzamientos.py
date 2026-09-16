@@ -36,9 +36,24 @@ CRISIS = ("https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
 HOJA_CALCULO = re.compile(r'href="([^"]*\.xlsx?(?:\?[^"]*)?)"', re.I)
 
 
+def codifica(url: str) -> str:
+    """Los nombres de fichero del CGPJ llevan espacios y acentos.
+
+    Tal cual, urllib los rechaza por «control characters», así que hay que
+    escapar la ruta antes de pedirla.
+    """
+    partes = urllib.parse.urlsplit(url)
+    return urllib.parse.urlunsplit((
+        partes.scheme, partes.netloc,
+        urllib.parse.quote(partes.path, safe="/%"),
+        urllib.parse.quote(partes.query, safe="=&%"),
+        partes.fragment,
+    ))
+
+
 def descarga(url: str, limite: int = 8_000_000) -> tuple[int, str, bytes]:
     try:
-        peticion = urllib.request.Request(url, headers=CABECERAS)
+        peticion = urllib.request.Request(codifica(url), headers=CABECERAS)
         with urllib.request.urlopen(peticion, timeout=180) as respuesta:
             return (respuesta.status, respuesta.headers.get("Content-Type", "?"),
                     respuesta.read(limite))
@@ -101,9 +116,23 @@ def main() -> int:
     for url in ficheros:
         lineas.append(f"    - {nombre_de(url)}")
 
-    # Se abren los más recientes que no sean los de juzgados de lo mercantil,
-    # que cuentan concursos, no desahucios.
-    interesantes = [u for u in ficheros if "mercantil" not in nombre_de(u).lower()]
+    # Primero los que traen series por provincia, que es el detalle que el
+    # panel necesita; después el más reciente de los trimestrales. Los de
+    # juzgados de lo mercantil cuentan concursos, no desahucios.
+    def prioridad(url: str) -> int:
+        nombre = nombre_de(url).lower()
+        if "mercantil" in nombre or "microempresa" in nombre:
+            return 9
+        if "provincia" in nombre:
+            return 0
+        if "lanzamientos por pj" in nombre:
+            return 1
+        if nombre.startswith("series"):
+            return 2
+        return 3
+
+    interesantes = sorted(ficheros, key=prioridad)
+    interesantes = [u for u in interesantes if prioridad(u) < 9]
     lineas += ["", f"## Dentro de los ficheros ({len(interesantes)} sin contar los mercantiles)", ""]
     for url in interesantes[:3]:
         etiqueta = nombre_de(url)
