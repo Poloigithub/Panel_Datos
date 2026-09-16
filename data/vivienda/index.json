@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T13:57:40+00:00",
+  "actualizado": "2026-09-16T14:31:42+00:00",
   "titulo": "Vivienda",
   "ultimo_periodo": "2026M06",
   "primer_periodo": "2003M01",
@@ -125,14 +125,15 @@
       "decimales": 0,
       "unidad_texto": "desahucios ejecutados en el trimestre",
       "por_sexo": false,
-      "nota": "Cuenta desahucios ejecutados, no procedimientos abiertos. Son los practicados por los juzgados de primera instancia, que son los completos; el CGPJ advierte de que no deben sumarse con los de los servicios comunes."
+      "nota": "Cuenta desahucios ejecutados, no procedimientos abiertos. Son los practicados por los juzgados de primera instancia, que son los completos; el CGPJ advierte de que no deben sumarse con los de los servicios comunes. Los trimestres de 2025 en adelante son provisionales: sumados dan menos que el total anual que el propio CGPJ publica por partido judicial, y se revisan al alza."
     },
     "lanzamientos_hipoteca": {
       "titulo": "Lanzamientos por ejecución hipotecaria",
       "unidad": "lanzamientos",
       "decimales": 0,
       "sobre_total": "lanzamientos",
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": " Los trimestres de 2025 en adelante son provisionales: sumados dan menos que el total anual que el propio CGPJ publica por partido judicial, y se revisan al alza."
     },
     "lanzamientos_alquiler": {
       "titulo": "Lanzamientos por impago de alquiler",
@@ -140,7 +141,7 @@
       "decimales": 0,
       "sobre_total": "lanzamientos",
       "por_sexo": false,
-      "nota": "Derivados de procedimientos de la Ley de Arrendamientos Urbanos, que en la práctica son alquileres impagados."
+      "nota": "Derivados de procedimientos de la Ley de Arrendamientos Urbanos, que en la práctica son alquileres impagados. Los trimestres de 2025 en adelante son provisionales: sumados dan menos que el total anual que el propio CGPJ publica por partido judicial, y se revisan al alza."
     },
     "lanzamientos_otros": {
       "titulo": "Lanzamientos por otras causas",
@@ -148,7 +149,7 @@
       "decimales": 0,
       "sobre_total": "lanzamientos",
       "por_sexo": false,
-      "nota": "Laudos arbitrales, procesos de familia y demás: ni hipoteca ni alquiler."
+      "nota": "Laudos arbitrales, procesos de familia y demás: ni hipoteca ni alquiler. Los trimestres de 2025 en adelante son provisionales: sumados dan menos que el total anual que el propio CGPJ publica por partido judicial, y se revisan al alza."
     }
   },
   "ambitos": [

@@ -74,6 +74,7 @@
       castellon/lanzamientos_hipoteca: 53 trimestres, 2026T1 = 12
       castellon/lanzamientos_alquiler: 53 trimestres, 2026T1 = 11
       castellon/lanzamientos_otros: 53 trimestres, 2026T1 = 1
+      provisionales: 2025, 2026
     escrito data/vivienda/espana.json
     escrito data/vivienda/comunitat-valenciana.json
     escrito data/vivienda/castellon.json
