@@ -139,11 +139,20 @@ def lee_hoja(libro: Libro, nombre_hoja: str) -> dict[str, dict[str, float]]:
     if cabecera is None:
         raise ValueError(f"la hoja {nombre_hoja!r} no tiene cabecera de trimestres")
 
+    # El nombre del territorio no siempre está en la primera columna: alguna
+    # hoja lleva delante la comunidad o un código. Se toma la primera celda de
+    # texto de la fila, que es la que lo nombra.
+    def nombre_de(fila) -> str:
+        for celda in fila[:3]:
+            if isinstance(celda, str) and normaliza(celda):
+                return normaliza(celda)
+        return ""
+
     territorios: dict[str, dict[str, float]] = {}
     for fila in filas[cabecera + 1:]:
         if not fila:
             continue
-        nombre = normaliza(fila[0] if fila else "")
+        nombre = nombre_de(fila)
         if not nombre:
             continue
         valores = {}
@@ -171,6 +180,11 @@ def series_del_libro(libro: Libro) -> dict[str, dict[str, dict[str, float]]]:
             print(f"    ! el fichero no trae la hoja «{buscada}»")
             continue
         territorios = lee_hoja(libro, hoja)
+        if not any(n.startswith(("total", "castellon")) for n in territorios):
+            # Sin esto no hay forma de saber por qué no encaja: el CGPJ no usa
+            # el mismo formato en todas las hojas del mismo fichero.
+            print(f"    ! en «{hoja}» no aparecen ni Castellón ni el total; "
+                  f"{len(territorios)} filas leídas: {list(territorios)[:8]}")
 
         nacional = next((v for n, v in territorios.items() if n.startswith("total")), None)
         if nacional:
