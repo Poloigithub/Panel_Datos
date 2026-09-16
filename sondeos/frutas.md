@@ -1,0 +1,200 @@
+# Las series de fruta del IPC
+
+## España
+- 140 conjuntos con fruta
+
+- ['frutas', 'indice', 'nacional'] → `IPC252518`
+- ['frutas', 'media anual', 'nacional'] → `IPC278406`
+- ['frutas', 'nacional', 'ponderacion'] → `IPC232888`
+- ['frutas', 'nacional', 'variacion anual'] → `IPC252520`
+- ['frutas', 'nacional', 'variacion en lo que va de ano'] → `IPC252521`
+- ['frutas', 'nacional', 'variacion mensual'] → `IPC252519`
+- ['frutas congeladas', 'indice', 'nacional'] → `IPC252766`
+- ['frutas congeladas', 'media anual', 'nacional'] → `IPC278688`
+- ['frutas congeladas', 'nacional', 'ponderacion'] → `IPC233155`
+- ['frutas congeladas', 'nacional', 'variacion anual'] → `IPC252770`
+- ['frutas congeladas', 'nacional', 'variacion en lo que va de ano'] → `IPC252771`
+- ['frutas congeladas', 'nacional', 'variacion mensual'] → `IPC252769`
+- ['frutas en conserva y frutos secos', 'indice', 'nacional'] → `IPC292371`
+- ['frutas en conserva y frutos secos', 'media anual', 'nacional'] → `IPC319433`
+- ['frutas en conserva y frutos secos', 'nacional', 'ponderacion'] → `IPC332341`
+- ['frutas en conserva y frutos secos', 'nacional', 'variacion anual'] → `IPC292370`
+- ['frutas en conserva y frutos secos', 'nacional', 'variacion en lo que va de ano'] → `IPC292373`
+- ['frutas en conserva y frutos secos', 'nacional', 'variacion mensual'] → `IPC292372`
+- ['frutas en conserva y productos a base de frutas', 'indice', 'nacional'] → `IPC252774`
+- ['frutas en conserva y productos a base de frutas', 'media anual', 'nacional'] → `IPC278692`
+- ['frutas en conserva y productos a base de frutas', 'nacional', 'ponderacion'] → `IPC233153`
+- ['frutas en conserva y productos a base de frutas', 'nacional', 'variacion anual'] → `IPC252776`
+- ['frutas en conserva y productos a base de frutas', 'nacional', 'variacion en lo que va de ano'] → `IPC252777`
+- ['frutas en conserva y productos a base de frutas', 'nacional', 'variacion mensual'] → `IPC252775`
+- ['frutas frescas', 'indice', 'nacional'] → `IPC292259`
+- ['frutas frescas', 'media anual', 'nacional'] → `IPC319377`
+- ['frutas frescas', 'nacional', 'ponderacion'] → `IPC332313`
+- ['frutas frescas', 'nacional', 'variacion anual'] → `IPC292258`
+- ['frutas frescas', 'nacional', 'variacion en lo que va de ano'] → `IPC292261`
+- ['frutas frescas', 'nacional', 'variacion mensual'] → `IPC292260`
+- ['frutas frescas o refrigeradas', 'indice', 'nacional'] → `IPC252762`
+- ['frutas frescas o refrigeradas', 'media anual', 'nacional'] → `IPC278686`
+- ['frutas frescas o refrigeradas', 'nacional', 'ponderacion'] → `IPC233156`
+- ['frutas frescas o refrigeradas', 'nacional', 'variacion anual'] → `IPC252764`
+- ['frutas frescas o refrigeradas', 'nacional', 'variacion en lo que va de ano'] → `IPC252765`
+- ['frutas frescas o refrigeradas', 'nacional', 'variacion mensual'] → `IPC252763`
+- ['frutas y frutos de cascara', 'indice', 'nacional'] → `IPC291131`
+- ['frutas y frutos de cascara', 'media anual', 'nacional'] → `IPC318813`
+- ['frutas y frutos de cascara', 'nacional', 'ponderacion'] → `IPC332031`
+- ['frutas y frutos de cascara', 'nacional', 'variacion anual'] → `IPC291130`
+- ['frutas y frutos de cascara', 'nacional', 'variacion en lo que va de ano'] → `IPC291133`
+- ['frutas y frutos de cascara', 'nacional', 'variacion mensual'] → `IPC291132`
+- ['indice', 'nacional', 'otras frutas frescas'] → `IPC291687`
+- ['indice', 'nacional', 'vino de otras frutas'] → `IPC252882`
+- ['indice', 'nacional', 'zumos de frutas y hortalizas'] → `IPC291147`
+- ['indice', 'nacional', 'zumos de frutas y vegetales'] → `IPC252866`
+- ['media anual', 'nacional', 'otras frutas frescas'] → `IPC319091`
+- ['media anual', 'nacional', 'vino de otras frutas'] → `IPC278746`
+- ['media anual', 'nacional', 'zumos de frutas y hortalizas'] → `IPC319129`
+- ['media anual', 'nacional', 'zumos de frutas y vegetales'] → `IPC278738`
+- ['nacional', 'otras frutas frescas', 'ponderacion'] → `IPC332170`
+- ['nacional', 'otras frutas frescas', 'variacion anual'] → `IPC291686`
+- ['nacional', 'otras frutas frescas', 'variacion en lo que va de ano'] → `IPC291689`
+- ['nacional', 'otras frutas frescas', 'variacion mensual'] → `IPC291688`
+- ['nacional', 'ponderacion', 'vino de otras frutas'] → `IPC233126`
+- ['nacional', 'ponderacion', 'zumos de frutas y hortalizas'] → `IPC332189`
+- ['nacional', 'ponderacion', 'zumos de frutas y vegetales'] → `IPC233130`
+- ['nacional', 'variacion anual', 'vino de otras frutas'] → `IPC252884`
+- ['nacional', 'variacion anual', 'zumos de frutas y hortalizas'] → `IPC291762`
+- ['nacional', 'variacion anual', 'zumos de frutas y vegetales'] → `IPC252868`
+- ['nacional', 'variacion en lo que va de ano', 'vino de otras frutas'] → `IPC252885`
+- ['nacional', 'variacion en lo que va de ano', 'zumos de frutas y hortalizas'] → `IPC291765`
+- ['nacional', 'variacion en lo que va de ano', 'zumos de frutas y vegetales'] → `IPC252869`
+- ['nacional', 'variacion mensual', 'vino de otras frutas'] → `IPC252883`
+- ['nacional', 'variacion mensual', 'zumos de frutas y hortalizas'] → `IPC291148`
+- ['nacional', 'variacion mensual', 'zumos de frutas y vegetales'] → `IPC252867`
+- ['datiles e higos', 'frutas tropicales', 'indice', 'nacional'] → `IPC291671`
+- ['datiles e higos', 'frutas tropicales', 'media anual', 'nacional'] → `IPC319083`
+- ['datiles e higos', 'frutas tropicales', 'nacional', 'ponderacion'] → `IPC332166`
+- ['datiles e higos', 'frutas tropicales', 'nacional', 'variacion anual'] → `IPC291670`
+- ['datiles e higos', 'frutas tropicales', 'nacional', 'variacion en lo que va de ano'] → `IPC291673`
+- ['datiles e higos', 'frutas tropicales', 'nacional', 'variacion mensual'] → `IPC291672`
+- ['frescas', 'frutas de hueso y frutas de pepita', 'indice', 'nacional'] → `IPC291679`
+- ['frescas', 'frutas de hueso y frutas de pepita', 'media anual', 'nacional'] → `IPC319087`
+- ['frescas', 'frutas de hueso y frutas de pepita', 'nacional', 'ponderacion'] → `IPC332168`
+- ['frescas', 'frutas de hueso y frutas de pepita', 'nacional', 'variacion anual'] → `IPC291678`
+- ['frescas', 'frutas de hueso y frutas de pepita', 'nacional', 'variacion en lo que va de ano'] → `IPC291681`
+- ['frescas', 'frutas de hueso y frutas de pepita', 'nacional', 'variacion mensual'] → `IPC291680`
+- ['frutas congeladas', 'impuestos constantes', 'indice', 'nacional'] → `IPC254213`
+- ['frutas congeladas', 'impuestos constantes', 'nacional', 'variacion anual'] → `IPC254215`
+- ['frutas congeladas', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano'] → `IPC254216`
+- ['frutas congeladas', 'impuestos constantes', 'nacional', 'variacion mensual'] → `IPC254214`
+- ['frutas en conserva y productos a base de frutas', 'impuestos constantes', 'indice', 'nacional'] → `IPC254221`
+- ['frutas en conserva y productos a base de frutas', 'impuestos constantes', 'nacional', 'variacion anual'] → `IPC254223`
+- ['frutas en conserva y productos a base de frutas', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano'] → `IPC254224`
+- ['frutas en conserva y productos a base de frutas', 'impuestos constantes', 'nacional', 'variacion mensual'] → `IPC254222`
+- ['frutas frescas o refrigeradas', 'impuestos constantes', 'indice', 'nacional'] → `IPC254209`
+- ['frutas frescas o refrigeradas', 'impuestos constantes', 'nacional', 'variacion anual'] → `IPC254211`
+- ['frutas frescas o refrigeradas', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano'] → `IPC254212`
+- ['frutas frescas o refrigeradas', 'impuestos constantes', 'nacional', 'variacion mensual'] → `IPC254210`
+- ['impuestos constantes', 'indice', 'nacional', 'otras frutas frescas'] → `IPC292895`
+- ['impuestos constantes', 'indice', 'nacional', 'vino de otras frutas'] → `IPC254738`
+- ['impuestos constantes', 'indice', 'nacional', 'zumos de frutas y hortalizas'] → `IPC292971`
+- ['impuestos constantes', 'indice', 'nacional', 'zumos de frutas y vegetales'] → `IPC254722`
+- ['impuestos constantes', 'nacional', 'otras frutas frescas', 'variacion anual'] → `IPC292894`
+- ['impuestos constantes', 'nacional', 'otras frutas frescas', 'variacion en lo que va de ano'] → `IPC292897`
+- ['impuestos constantes', 'nacional', 'otras frutas frescas', 'variacion mensual'] → `IPC292896`
+- ['impuestos constantes', 'nacional', 'variacion anual', 'vino de otras frutas'] → `IPC254740`
+- ['impuestos constantes', 'nacional', 'variacion anual', 'zumos de frutas y hortalizas'] → `IPC292970`
+- ['impuestos constantes', 'nacional', 'variacion anual', 'zumos de frutas y vegetales'] → `IPC254724`
+- ['impuestos constantes', 'nacional', 'variacion en lo que va de ano', 'vino de otras frutas'] → `IPC254741`
+- ['impuestos constantes', 'nacional', 'variacion en lo que va de ano', 'zumos de frutas y hortalizas'] → `IPC292973`
+- ['impuestos constantes', 'nacional', 'variacion en lo que va de ano', 'zumos de frutas y vegetales'] → `IPC254725`
+- ['impuestos constantes', 'nacional', 'variacion mensual', 'vino de otras frutas'] → `IPC254739`
+- ['impuestos constantes', 'nacional', 'variacion mensual', 'zumos de frutas y hortalizas'] → `IPC292972`
+- ['impuestos constantes', 'nacional', 'variacion mensual', 'zumos de frutas y vegetales'] → `IPC254723`
+- ['agua mineral', 'indice', 'nacional', 'refrescos', 'zumos de frutas y vegetales'] → `IPC252094`
+- ['agua mineral', 'media anual', 'nacional', 'refrescos', 'zumos de frutas y vegetales'] → `IPC278416`
+- ['agua mineral', 'nacional', 'ponderacion', 'refrescos', 'zumos de frutas y vegetales'] → `IPC232883`
+- ['agua mineral', 'nacional', 'refrescos', 'variacion anual', 'zumos de frutas y vegetales'] → `IPC252096`
+- ['agua mineral', 'nacional', 'refrescos', 'variacion en lo que va de ano', 'zumos de frutas y vegetales'] → `IPC252097`
+- ['agua mineral', 'nacional', 'refrescos', 'variacion mensual', 'zumos de frutas y vegetales'] → `IPC252095`
+- ['datiles e higos', 'frutas tropicales', 'impuestos constantes', 'indice', 'nacional'] → `IPC292879`
+- ['datiles e higos', 'frutas tropicales', 'impuestos constantes', 'nacional', 'variacion anual'] → `IPC292878`
+- ['datiles e higos', 'frutas tropicales', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano'] → `IPC292881`
+- ['datiles e higos', 'frutas tropicales', 'impuestos constantes', 'nacional', 'variacion mensual'] → `IPC292880`
+- ['frescas', 'frutas de hueso y frutas de pepita', 'impuestos constantes', 'indice', 'nacional'] → `IPC292887`
+- ['frescas', 'frutas de hueso y frutas de pepita', 'impuestos constantes', 'nacional', 'variacion anual'] → `IPC292886`
+- ['frescas', 'frutas de hueso y frutas de pepita', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano'] → `IPC292889`
+- ['frescas', 'frutas de hueso y frutas de pepita', 'impuestos constantes', 'nacional', 'variacion mensual'] → `IPC292888`
+- [')', 'etc', 'frutas y frutos secos procesados (en conserva', 'indice', 'molidos', 'nacional', 'tostados'] → `IPC291695`
+- [')', 'etc', 'frutas y frutos secos procesados (en conserva', 'media anual', 'molidos', 'nacional', 'tostados'] → `IPC319095`
+- [')', 'etc', 'frutas y frutos secos procesados (en conserva', 'molidos', 'nacional', 'ponderacion', 'tostados'] → `IPC332172`
+- [')', 'etc', 'frutas y frutos secos procesados (en conserva', 'molidos', 'nacional', 'tostados', 'variacion anual'] → `IPC291694`
+- [')', 'etc', 'frutas y frutos secos procesados (en conserva', 'molidos', 'nacional', 'tostados', 'variacion en lo que va de ano'] → `IPC291697`
+- [')', 'etc', 'frutas y frutos secos procesados (en conserva', 'molidos', 'nacional', 'tostados', 'variacion mensual'] → `IPC291696`
+- ['confituras', 'indice', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'y miel'] → `IPC291735`
+- ['confituras', 'jaleas', 'media anual', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'y miel'] → `IPC319115`
+- ['confituras', 'jaleas', 'mermeladas', 'nacional', 'ponderacion', 'pures y pastas de frutas', 'y miel'] → `IPC332182`
+- ['confituras', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'variacion anual', 'y miel'] → `IPC291734`
+- ['confituras', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'variacion en lo que va de ano', 'y miel'] → `IPC291737`
+- ['confituras', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'variacion mensual', 'y miel'] → `IPC291736`
+- [')', 'etc', 'frutas y frutos secos procesados (en conserva', 'impuestos constantes', 'indice', 'molidos', 'nacional', 'tostados'] → `IPC292903`
+- [')', 'etc', 'frutas y frutos secos procesados (en conserva', 'impuestos constantes', 'molidos', 'nacional', 'tostados', 'variacion anual'] → `IPC292902`
+- [')', 'etc', 'frutas y frutos secos procesados (en conserva', 'impuestos constantes', 'molidos', 'nacional', 'tostados', 'variacion en lo que va de ano'] → `IPC292905`
+- [')', 'etc', 'frutas y frutos secos procesados (en conserva', 'impuestos constantes', 'molidos', 'nacional', 'tostados', 'variacion mensual'] → `IPC292904`
+- ['confituras', 'impuestos constantes', 'indice', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'y miel'] → `IPC292943`
+- ['confituras', 'impuestos constantes', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'variacion anual', 'y miel'] → `IPC292942`
+- ['confituras', 'impuestos constantes', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'variacion en lo que va de ano', 'y miel'] → `IPC292945`
+- ['confituras', 'impuestos constantes', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'variacion mensual', 'y miel'] → `IPC292944`
+
+## Comunitat Valenciana
+- 50 conjuntos con fruta
+
+- ['comunitat valenciana', 'dato base', 'rubrica frutas frescas'] → `IPC63001`
+- ['comunitat valenciana', 'dato base', 'rubricas frutas en conserva y frutos secos'] → `IPC63008`
+- ['comunitat valenciana', 'frutas en conserva y frutos secos', 'indice'] → `IPC300840`
+- ['comunitat valenciana', 'frutas en conserva y frutos secos', 'media anual'] → `IPC109467`
+- ['comunitat valenciana', 'frutas en conserva y frutos secos', 'ponderacion'] → `IPC334192`
+- ['comunitat valenciana', 'frutas en conserva y frutos secos', 'variacion anual'] → `IPC85042`
+- ['comunitat valenciana', 'frutas en conserva y frutos secos', 'variacion de las medias anuales'] → `IPC109468`
+- ['comunitat valenciana', 'frutas en conserva y frutos secos', 'variacion en lo que va de ano'] → `IPC85043`
+- ['comunitat valenciana', 'frutas en conserva y frutos secos', 'variacion mensual'] → `IPC300841`
+- ['comunitat valenciana', 'frutas frescas', 'indice'] → `IPC300728`
+- ['comunitat valenciana', 'frutas frescas', 'media anual'] → `IPC109465`
+- ['comunitat valenciana', 'frutas frescas', 'ponderacion'] → `IPC334164`
+- ['comunitat valenciana', 'frutas frescas', 'variacion anual'] → `IPC85038`
+- ['comunitat valenciana', 'frutas frescas', 'variacion de las medias anuales'] → `IPC109466`
+- ['comunitat valenciana', 'frutas frescas', 'variacion en lo que va de ano'] → `IPC85039`
+- ['comunitat valenciana', 'frutas frescas', 'variacion mensual'] → `IPC300729`
+- ['comunitat valenciana', 'media anual', 'rubrica frutas frescas'] → `IPC63004`
+- ['comunitat valenciana', 'media anual', 'rubricas frutas en conserva y frutos secos'] → `IPC63011`
+- ['comunitat valenciana', 'rubrica frutas frescas', 'tasa de variacion anual'] → `IPC63003`
+- ['comunitat valenciana', 'rubrica frutas frescas', 'tasa de variacion de las medias anuales'] → `IPC63005`
+- ['comunitat valenciana', 'rubrica frutas frescas', 'tasa de variacion en lo que va de ano'] → `IPC63006`
+- ['comunitat valenciana', 'rubrica frutas frescas', 'tasa de variacion mensual'] → `IPC63002`
+- ['comunitat valenciana', 'rubricas frutas en conserva y frutos secos', 'tasa de variacion anual'] → `IPC63010`
+- ['comunitat valenciana', 'rubricas frutas en conserva y frutos secos', 'tasa de variacion de las medias anuales'] → `IPC63012`
+- ['comunitat valenciana', 'rubricas frutas en conserva y frutos secos', 'tasa de variacion en lo que va de ano'] → `IPC63013`
+- ['comunitat valenciana', 'rubricas frutas en conserva y frutos secos', 'tasa de variacion mensual'] → `IPC63009`
+- ['base 1992', 'comunitat valenciana', 'conservas y preparados de frutas', 'dato base', 'total'] → `IPC62305`
+- ['base 1992', 'comunitat valenciana', 'dato base', 'frutas frescas', 'total'] → `IPC62299`
+- ['base 2011', 'comunitat valenciana', 'frutas en conserva y frutos secos', 'indice', 'total'] → `IPC125418`
+- ['base 2011', 'comunitat valenciana', 'frutas en conserva y frutos secos', 'media anual', 'total'] → `IPC143718`
+- ['base 2011', 'comunitat valenciana', 'frutas en conserva y frutos secos', 'total', 'variacion anual (para series mensuales)'] → `IPC127612`
+- ['base 2011', 'comunitat valenciana', 'frutas en conserva y frutos secos', 'total', 'variacion de las medias anuales'] → `IPC144801`
+- ['base 2011', 'comunitat valenciana', 'frutas en conserva y frutos secos', 'total', 'variacion en lo que va de ano'] → `IPC127611`
+- ['base 2011', 'comunitat valenciana', 'frutas en conserva y frutos secos', 'total', 'variacion mensual'] → `IPC127613`
+- ['base 2011', 'comunitat valenciana', 'frutas frescas', 'indice', 'total'] → `IPC125419`
+- ['base 2011', 'comunitat valenciana', 'frutas frescas', 'media anual', 'total'] → `IPC143719`
+- ['base 2011', 'comunitat valenciana', 'frutas frescas', 'total', 'variacion anual (para series mensuales)'] → `IPC127615`
+- ['base 2011', 'comunitat valenciana', 'frutas frescas', 'total', 'variacion de las medias anuales'] → `IPC144802`
+- ['base 2011', 'comunitat valenciana', 'frutas frescas', 'total', 'variacion en lo que va de ano'] → `IPC127614`
+- ['base 2011', 'comunitat valenciana', 'frutas frescas', 'total', 'variacion mensual'] → `IPC127616`
+- ['base 1992', 'comunitat valenciana', 'conservas y preparados de frutas', 'dato base', 'media anual', 'total'] → `IPC62308`
+- ['base 1992', 'comunitat valenciana', 'conservas y preparados de frutas', 'dato base', 'tasa anual', 'total'] → `IPC62307`
+- ['base 1992', 'comunitat valenciana', 'conservas y preparados de frutas', 'dato base', 'tasa de la media anual', 'total'] → `IPC62309`
+- ['base 1992', 'comunitat valenciana', 'conservas y preparados de frutas', 'dato base', 'tasa mensual', 'total'] → `IPC62306`
+- ['base 1992', 'comunitat valenciana', 'conservas y preparados de frutas', 'dato base', 'total', 'variacion en el ano'] → `IPC62310`
+- ['base 1992', 'comunitat valenciana', 'dato base', 'frutas frescas', 'media anual', 'total'] → `IPC62302`
+- ['base 1992', 'comunitat valenciana', 'dato base', 'frutas frescas', 'tasa anual', 'total'] → `IPC62301`
+- ['base 1992', 'comunitat valenciana', 'dato base', 'frutas frescas', 'tasa de la media anual', 'total'] → `IPC62303`
+- ['base 1992', 'comunitat valenciana', 'dato base', 'frutas frescas', 'tasa mensual', 'total'] → `IPC62300`
+- ['base 1992', 'comunitat valenciana', 'dato base', 'frutas frescas', 'total', 'variacion en el ano'] → `IPC62304`
+
