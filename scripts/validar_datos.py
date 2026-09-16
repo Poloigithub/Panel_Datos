@@ -97,6 +97,18 @@ RANGOS = {
     "lanzamientos_hipoteca": (0, 50_000),
     "lanzamientos_alquiler": (0, 50_000),
     "lanzamientos_otros": (0, 50_000),
+    # salarios y rentas del trabajo
+    "renta_salario": (0, 100),
+    "renta_pensiones": (0, 100),
+    "renta_desempleo": (0, 100),
+    "renta_otras_prestaciones": (0, 100),
+    "salario_bruto": (5_000, 120_000),
+    "salario_bruto_real": (5_000, 200_000),
+    "brecha_salarial": (-50, 80),
+    "desigualdad_salarial": (1, 20),
+    "gini_salarial": (0, 100),
+    "coste_salarial": (500, 6_000),
+    "coste_salarial_real": (500, 10_000),
     # precios
     "ipc_general": (50, 200),
     "ipc_variacion": (-30, 60),
@@ -152,6 +164,7 @@ IDENTIDADES = [
 # detecta no es que una fuente vaya lenta, sino que ha dejado de llegar.
 FRESCURA = {
     "epa": ("trimestral", 6),
+    "salarios": ("anual, con el coste laboral trimestral", 18),
     "paro-registrado": ("mensual", 3),
     "contratos": ("mensual", 3),
     "precios": ("mensual", 3),

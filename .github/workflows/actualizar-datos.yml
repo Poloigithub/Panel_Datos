@@ -42,6 +42,9 @@ jobs:
       - name: Descargar el bloque de vivienda
         run: python scripts/descargar_vivienda.py
 
+      - name: Descargar salarios y rentas del trabajo
+        run: python scripts/descargar_salarios.py
+
       - name: Descargar el paro registrado y los contratos del SEPE
         run: python scripts/descargar_paro.py
 

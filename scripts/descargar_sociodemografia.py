@@ -247,59 +247,6 @@ BLOQUES = {
 DEFLACTABLES = ("renta_persona", "renta_hogar", "renta_uc")
 
 
-def descarga_deflactor(ambito: dict) -> dict[str, float]:
-    """Media anual del IPC del ámbito, que es lo que deflacta una serie anual.
-
-    No se publica como indicador: sólo sirve para convertir la renta a euros
-    constantes, y mezclar una serie anual con el IPC mensual llenaría el
-    bloque de precios de huecos.
-    """
-    indice = motor.indexa_por_segmentos("IPC", ambito["filtro"])
-    for territorio in [ambito["segmento"]] + ambito.get("segmentos_alternativos", []):
-        valores, _ = motor.resuelve(
-            indice, {territorio, "indice general", "media anual"},
-            f"deflactor/{ambito['id']}", avisar=False)
-        if valores:
-            # Sólo interesan los años completos, en formato «2023».
-            return {p: v for p, v in valores.items() if p.isdigit()}
-    print(f"      sin deflactor para {ambito['id']}: la renta se queda en euros corrientes")
-    return {}
-
-
-def deflacta(series: dict, deflactor: dict[str, float], procedencia: dict) -> str | None:
-    """Añade las series de renta en euros del último año disponible.
-
-    Renta real = renta nominal × (IPC del año base / IPC del año del dato). El
-    año base es el último con IPC, de modo que la serie se lee «en euros de
-    hoy», que es como la gente piensa el dinero.
-    """
-    if not deflactor:
-        return None
-    base = max(deflactor, key=lambda a: int(a))
-    if not deflactor.get(base):
-        return None
-
-    convertidas = 0
-    for sexo, magnitudes in list(series.items()):
-        for clave in DEFLACTABLES:
-            nominal = magnitudes.get(clave)
-            if not nominal:
-                continue
-            real = {
-                periodo: round(valor * deflactor[base] / deflactor[periodo], 2)
-                for periodo, valor in nominal.items()
-                if deflactor.get(periodo)
-            }
-            if not real:
-                continue
-            magnitudes[clave + "_real"] = real
-            procedencia.setdefault(sexo, {})[clave + "_real"] = [
-                f"deflactado con el IPC medio anual, base {base}"
-            ]
-            convertidas += 1
-    return base if convertidas else None
-
-
 def fichas_derivadas(por_ambito: dict, bloque: dict) -> dict:
     """Ficha de las series que no se descargan sino que se calculan.
 
