@@ -157,15 +157,23 @@ def en_rango(valores, indicador, etiqueta) -> bool:
 
 
 def busca(indice, ambito, indicador, alias_sexo, etiqueta, avisar=True):
-    """Primera formulación que dé datos, de entre las declaradas.
+    """La formulación que dé la serie más reciente, de entre las declaradas.
 
     Se prueban los alias del sexo y, al final, la variante sin sexo: hay
     operaciones (el Atlas de renta, por ejemplo) cuyas series no llevan esa
     variable en el nombre.
+
+    Cuando un indicador declara varias formulaciones no gana la primera sino la
+    que llega más lejos en el tiempo, y a igualdad de fecha la más larga. El
+    motivo es concreto: al rebasar el IPC, el INE renombró categorías y dejó de
+    actualizar las viejas, así que «la primera que dé datos» devolvía una serie
+    descatalogada -la fruta se quedaba en diciembre de 2025- mientras la vigente
+    estaba ahí al lado.
     """
     intentos = [{a} for a in sorted(alias_sexo)] + [set()]
     territorios = [ambito["segmento"]] + ambito.get("segmentos_alternativos", [])
     acepta = filtro_de_rango(indicador)
+    encontradas = []
     for busqueda in indicador["busquedas"]:
         for territorio in territorios:
             for alias in intentos:
@@ -174,7 +182,26 @@ def busca(indice, ambito, indicador, alias_sexo, etiqueta, avisar=True):
                                                  extras=indicador.get("extras"),
                                                  avisar=False, acepta=acepta)
                 if valores:
-                    return valores, usados
+                    encontradas.append((valores, usados))
+                    break
+            if encontradas and encontradas[-1][0]:
+                break
+        # Con una sola formulación no hay nada que comparar y se ahorra el resto.
+        if encontradas and len(indicador["busquedas"]) == 1:
+            break
+
+    if encontradas:
+        if len(encontradas) > 1:
+            def frescura(par):
+                return (max(motor.orden_periodo(p) for p in par[0]), len(par[0]))
+            mejor = max(encontradas, key=frescura)
+            descartadas = [e for e in encontradas if e is not mejor]
+            for valores, usados in descartadas:
+                ultimo = max(valores, key=motor.orden_periodo)
+                print(f"      {etiqueta}: descartada una serie que se queda en "
+                      f"{ultimo} ({', '.join(usados[:2])})")
+            return mejor
+        return encontradas[0]
 
     # Nada ha encajado: mostrar los conjuntos de segmentos más parecidos, que
     # es lo único que permite corregir la declaración sin adivinar.
