@@ -29,6 +29,19 @@
     modo: 'absoluto',
     ambitos: new Set(AMBITOS.map((a) => a.id))
   };
+  // Lo que viaja en la URL para que una vista se pueda compartir tal cual.
+  const DEFECTOS = {
+    periodo: 'todo',
+    sexo: 'ambos',
+    modo: 'absoluto',
+    ambitos: new Set(AMBITOS.map((a) => a.id))
+  };
+  const VALIDOS = {
+    periodo: ['todo', '20', '10'],
+    sexo: ['ambos', 'hombres', 'mujeres'],
+    modo: ['absoluto', 'tasas'],
+    ambitos: AMBITOS.map((a) => a.id)
+  };
 
   let datos = null;          // { indice, ambitos: { id: contenido } }
   const graficas = new Map(); // clave -> instancia de Chart
@@ -549,6 +562,8 @@
 
     pintaAbsolutos('ocupados', periodos);
     pintaAbsolutos('parados', periodos);
+
+    window.Enlace.escribe(estado, DEFECTOS);
   }
 
   /* ---------------------------------------------------------------- controles */
@@ -577,7 +592,7 @@
 
       const casilla = document.createElement('input');
       casilla.type = 'checkbox';
-      casilla.checked = true;
+      casilla.checked = estado.ambitos.has(ambito.id);
       casilla.className = 'h-4 w-4 rounded';
       casilla.style.accentColor = color(ambito.variable);
       casilla.addEventListener('change', function () {
@@ -700,9 +715,13 @@
       document.querySelector('[data-estado]').hidden = true;
       document.querySelector('[data-panel]').hidden = false;
 
+      window.Enlace.aplica(estado, DEFECTOS, VALIDOS);
       conectaSegmentos();
       conectaAmbitos();
-      document.querySelector('[data-csv]').addEventListener('click', descargaCsv);
+      window.Enlace.sincroniza(estado);
+      const botonCsv = document.querySelector('[data-csv]');
+      botonCsv.addEventListener('click', descargaCsv);
+      window.Enlace.botonCopiar(botonCsv.parentNode);
       pintaProcedencia();
       render();
 

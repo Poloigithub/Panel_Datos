@@ -14,6 +14,17 @@
     periodo: 'todo', sexo: 'ambos', euros: 'corrientes',
     ambitos: new Set(P.AMBITOS.map(function (a) { return a.id; }))
   };
+  // Lo que puede viajar en la URL, y con qué valores por defecto.
+  var DEFECTOS = {
+    periodo: 'todo', sexo: 'ambos', euros: 'corrientes',
+    ambitos: new Set(P.AMBITOS.map(function (a) { return a.id; }))
+  };
+  var VALIDOS = {
+    periodo: ['todo', '20', '10'],
+    sexo: ['ambos', 'hombres', 'mujeres'],
+    euros: ['corrientes', 'constantes'],
+    ambitos: P.AMBITOS.map(function (a) { return a.id; })
+  };
   var indice = null;
   var datos = {};
 
@@ -343,6 +354,7 @@
     var periodos = periodosVisibles();
     pintaResumen(periodos);
     pintaIndicadores(periodos);
+    window.Enlace.escribe(estado, DEFECTOS);
   }
 
   /* ----------------------------------------------------------- controles */
@@ -371,7 +383,7 @@
 
       var casilla = document.createElement('input');
       casilla.type = 'checkbox';
-      casilla.checked = true;
+      casilla.checked = estado.ambitos.has(ambito.id);
       casilla.className = 'h-4 w-4 rounded';
       casilla.style.accentColor = P.color(ambito.variable);
       casilla.addEventListener('change', function () {
@@ -450,10 +462,15 @@
           : fecha.toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'short' });
       }
 
+      // Antes de conectar nada: los controles tienen que nacer ya puestos en
+      // lo que diga la URL, no saltar a ello después del primer pintado.
+      window.Enlace.aplica(estado, DEFECTOS, VALIDOS);
       conectaSegmentos();
       conectaAmbitos();
+      window.Enlace.sincroniza(estado);
       var botonCsv = document.querySelector('[data-csv]');
       if (botonCsv) botonCsv.addEventListener('click', descarga);
+      window.Enlace.botonCopiar(botonCsv && botonCsv.parentNode);
 
       render();
       document.addEventListener('tema:cambio', render);

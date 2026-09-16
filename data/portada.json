@@ -1,0 +1,303 @@
+{
+ "actualizado": "2026-09-16T14:14:30+00:00",
+ "ambitos": [
+  {
+   "id": "espana",
+   "nombre": "España",
+   "etiqueta": "España"
+  },
+  {
+   "id": "comunitat-valenciana",
+   "nombre": "Comunitat Valenciana",
+   "etiqueta": "C. Valenciana"
+  },
+  {
+   "id": "castellon",
+   "nombre": "Castellón",
+   "etiqueta": "Castellón"
+  }
+ ],
+ "secciones": [
+  {
+   "id": "epa",
+   "titulo": "Mercado laboral",
+   "enlace": "mercado-laboral.html",
+   "fuente": "EPA · INE",
+   "cadencia": "Trimestral. El INE publica a finales de enero, abril, julio y octubre.",
+   "actualizado": "2026-09-16T07:48:30+00:00",
+   "ultimo_periodo": "2026T2",
+   "destacados": [
+    {
+     "clave": "tasa_paro",
+     "titulo": "Tasa de paro",
+     "unidad": "%",
+     "decimales": 2,
+     "periodo": "2026T2",
+     "valores": {
+      "espana": 9.87,
+      "comunitat-valenciana": 10.88,
+      "castellon": 10.01
+     },
+     "hace_un_anyo": {
+      "espana": 10.29,
+      "comunitat-valenciana": 11.52,
+      "castellon": 11.85
+     }
+    },
+    {
+     "clave": "ocupados",
+     "titulo": "Ocupados",
+     "unidad": "miles de personas",
+     "decimales": 1,
+     "periodo": "2026T2",
+     "valores": {
+      "espana": 22779.0,
+      "comunitat-valenciana": 2495.8,
+      "castellon": 291.4
+     },
+     "hace_un_anyo": {
+      "espana": 22268.7,
+      "comunitat-valenciana": 2413.6,
+      "castellon": 289.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "paro-registrado",
+   "titulo": "Paro registrado",
+   "enlace": "paro-registrado.html",
+   "fuente": "SEPE",
+   "cadencia": "Mensual. El SEPE publica en los primeros días de cada mes.",
+   "actualizado": "2026-09-16T10:00:17+00:00",
+   "ultimo_periodo": "2026M07",
+   "destacados": [
+    {
+     "clave": "paro_total",
+     "titulo": "Personas apuntadas al paro",
+     "unidad": "personas",
+     "decimales": 0,
+     "periodo": "2026M07",
+     "valores": {
+      "espana": 2307681,
+      "comunitat-valenciana": 288587,
+      "castellon": 31456
+     },
+     "hace_un_anyo": {
+      "espana": 2400870,
+      "comunitat-valenciana": 293880,
+      "castellon": 31578
+     }
+    }
+   ]
+  },
+  {
+   "id": "contratos",
+   "titulo": "Contratación",
+   "enlace": "contratos.html",
+   "fuente": "SEPE",
+   "cadencia": "Mensual, a la vez que el paro registrado.",
+   "actualizado": "2026-09-16T10:00:17+00:00",
+   "ultimo_periodo": "2026M07",
+   "destacados": [
+    {
+     "clave": "contratos_total",
+     "titulo": "Contratos del mes",
+     "unidad": "contratos",
+     "decimales": 0,
+     "periodo": "2026M07",
+     "valores": {
+      "espana": 1582684,
+      "comunitat-valenciana": 154418,
+      "castellon": 18263
+     },
+     "hace_un_anyo": {
+      "espana": 1584763,
+      "comunitat-valenciana": 151513,
+      "castellon": 17767
+     }
+    },
+    {
+     "clave": "contratos_indefinidos",
+     "titulo": "De ellos, indefinidos",
+     "unidad": "contratos",
+     "decimales": 0,
+     "sobre": "contratos_total",
+     "periodo": "2026M07",
+     "valores": {
+      "espana": 572685,
+      "comunitat-valenciana": 67036,
+      "castellon": 8314
+     },
+     "hace_un_anyo": {
+      "espana": 566937,
+      "comunitat-valenciana": 64996,
+      "castellon": 8249
+     },
+     "sobre_valores": {
+      "espana": 1582684,
+      "comunitat-valenciana": 154418,
+      "castellon": 18263
+     }
+    }
+   ]
+  },
+  {
+   "id": "precios",
+   "titulo": "Precios",
+   "enlace": "precios.html",
+   "fuente": "IPC · INE",
+   "cadencia": "Mensual. El INE publica hacia la mitad del mes siguiente.",
+   "actualizado": "2026-09-16T07:56:37+00:00",
+   "ultimo_periodo": "2026M08",
+   "destacados": [
+    {
+     "clave": "ipc_variacion",
+     "titulo": "Inflación interanual",
+     "unidad": "%",
+     "decimales": 2,
+     "periodo": "2026M08",
+     "valores": {
+      "espana": 4.3,
+      "comunitat-valenciana": 4.1,
+      "castellon": 4.5
+     },
+     "hace_un_anyo": {
+      "espana": 2.7,
+      "comunitat-valenciana": 3.2,
+      "castellon": 3.7
+     }
+    }
+   ]
+  },
+  {
+   "id": "vivienda",
+   "titulo": "Vivienda",
+   "enlace": "vivienda.html",
+   "fuente": "INE y CGPJ",
+   "cadencia": "Mensual las compraventas y las hipotecas; trimestral el precio y los lanzamientos; anual el alquiler.",
+   "actualizado": "2026-09-16T13:57:40+00:00",
+   "ultimo_periodo": "2026M06",
+   "destacados": [
+    {
+     "clave": "compraventas",
+     "titulo": "Compraventas de vivienda",
+     "unidad": "operaciones",
+     "decimales": 0,
+     "periodo": "2026M06",
+     "valores": {
+      "espana": 59288.0,
+      "comunitat-valenciana": 8558.0,
+      "castellon": 1041.0
+     },
+     "hace_un_anyo": {
+      "espana": 58369.0,
+      "comunitat-valenciana": 8559.0,
+      "castellon": 1130.0
+     }
+    },
+    {
+     "clave": "lanzamientos",
+     "titulo": "Lanzamientos practicados",
+     "unidad": "lanzamientos",
+     "decimales": 0,
+     "periodo": "2026T1",
+     "valores": {
+      "espana": 4005.0,
+      "comunitat-valenciana": 741.0,
+      "castellon": 24.0
+     },
+     "hace_un_anyo": {
+      "espana": 7334.0,
+      "comunitat-valenciana": 794.0,
+      "castellon": 86.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "renta",
+   "titulo": "Renta y desigualdad",
+   "enlace": "renta.html",
+   "fuente": "Atlas de Distribución de Renta · INE",
+   "cadencia": "Anual, con unos dos años de retraso.",
+   "actualizado": "2026-09-16T07:56:37+00:00",
+   "ultimo_periodo": "2023",
+   "destacados": [
+    {
+     "clave": "renta_persona",
+     "titulo": "Renta neta media por persona",
+     "unidad": "euros",
+     "decimales": 0,
+     "periodo": "2023",
+     "valores": {
+      "espana": 15036.0,
+      "comunitat-valenciana": 13612.0,
+      "castellon": 14029.0
+     },
+     "hace_un_anyo": {
+      "espana": 14061.0,
+      "comunitat-valenciana": 12720.0,
+      "castellon": 13305.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "poblacion",
+   "titulo": "Población",
+   "enlace": "poblacion.html",
+   "fuente": "Estadística Continua de Población · INE",
+   "cadencia": "Trimestral.",
+   "actualizado": "2026-09-16T07:56:37+00:00",
+   "ultimo_periodo": "2026",
+   "destacados": [
+    {
+     "clave": "poblacion",
+     "titulo": "Población",
+     "unidad": "personas",
+     "decimales": 0,
+     "periodo": "2026",
+     "valores": {
+      "espana": 49801559.0,
+      "comunitat-valenciana": 5574948.0,
+      "castellon": 647819.0
+     },
+     "hace_un_anyo": {
+      "espana": 49500617.0,
+      "comunitat-valenciana": 5505037.0,
+      "castellon": 637051.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "demografia",
+   "titulo": "Natalidad, mortalidad y migración",
+   "enlace": "demografia.html",
+   "fuente": "Indicadores Demográficos Básicos · INE",
+   "cadencia": "Anual.",
+   "actualizado": "2026-09-16T07:56:37+00:00",
+   "ultimo_periodo": "2024",
+   "destacados": [
+    {
+     "clave": "saldo_migratorio",
+     "titulo": "Saldo migratorio",
+     "unidad": "por mil",
+     "decimales": 2,
+     "periodo": "2024",
+     "valores": {
+      "espana": 12.81,
+      "comunitat-valenciana": 19.5,
+      "castellon": 17.26
+     },
+     "hace_un_anyo": {
+      "espana": 13.28,
+      "comunitat-valenciana": 19.42,
+      "castellon": 16.0
+     }
+    }
+   ]
+  }
+ ]
+}

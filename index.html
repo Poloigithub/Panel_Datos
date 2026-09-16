@@ -43,6 +43,15 @@
     </p>
   </section>
 
+  <section aria-labelledby="titulares-titulo" class="mt-12">
+    <div class="flex flex-wrap items-baseline justify-between gap-2">
+      <h2 id="titulares-titulo" class="text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Lo último</h2>
+      <p class="text-xs" style="color: var(--tinta-tenue)">Cada cifra lleva su periodo: las estadísticas no salen todas a la vez.</p>
+    </div>
+    <p data-titulares-estado role="status" class="mt-3 text-sm" style="color: var(--tinta-suave)">Cargando titulares…</p>
+    <div data-titulares class="mt-4 grid gap-4 sm:grid-cols-2"></div>
+  </section>
+
   <h2 class="mt-12 text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Secciones</h2>
 
   <div class="mt-4 grid gap-4 sm:grid-cols-2">
@@ -202,12 +211,25 @@
   </div>
 
   <section class="mt-14 tarjeta p-5">
-    <h2 class="text-sm font-semibold">Cómo se actualiza</h2>
+    <h2 class="text-sm font-semibold">Cómo y cada cuánto se actualiza</h2>
     <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
-      Una tarea programada consulta la API del INE, guarda las series en
-      <code class="rounded px-1 py-0.5 text-[0.8em]" style="background-color: var(--superficie-2)">data/</code>
-      y publica el panel. Si el INE no ha publicado nada nuevo, no se toca nada.
-      El histórico de cambios de cada cifra queda en el propio historial de git.
+      Una tarea programada <strong>mira todos los días</strong>, de madrugada,
+      si alguna de las fuentes ha publicado algo nuevo. Cuando lo hay, lo
+      descarga, lo valida y lo publica; cuando no, no toca nada y no queda ni
+      rastro. Por eso un dato aparece aquí como mucho un día después de que su
+      organismo lo saque, sin que nadie tenga que acordarse de nada.
+    </p>
+    <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+      Mirar a diario no hace que un dato anual cambie a diario: cada
+      estadística tiene su calendario y está escrito en su tarjeta, arriba. Las
+      series municipales, que son anuales y tardan un buen rato en bajarse, se
+      revisan una vez al mes.
+    </p>
+    <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+      Última revisión de los datos: <span data-portada-actualizada class="font-medium"></span>.
+      Cada actualización es un commit, así que el histórico de revisiones de
+      cualquier cifra es consultable en
+      <a class="enlace-sutil" href="https://github.com/Poloigithub/Panel_Datos/commits/" rel="noopener">el historial</a>.
     </p>
   </section>
 
@@ -221,5 +243,6 @@
 </footer>
 
 <script src="assets/js/tema.js"></script>
+<script src="assets/js/portada.js"></script>
 </body>
 </html>

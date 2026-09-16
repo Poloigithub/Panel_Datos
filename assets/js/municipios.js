@@ -11,6 +11,11 @@
   var P = window.Panel;
 
   var estado = { indicador: 'variacion', periodo: null, municipio: null };
+  // El mapa se comparte con su indicador, su mes y, si la hay, su ficha
+  // abierta. El mes por defecto es el último publicado, que cambia cada vez,
+  // así que se completa al arrancar.
+  var DEFECTOS = { indicador: 'variacion', periodo: null, municipio: null };
+  var VALIDOS = { indicador: ['variacion', 'tasa', 'paro', 'renta'] };
   var geo = null, paro = null, poblacion = null, renta = null;
 
   var INDICADORES = {
@@ -356,6 +361,7 @@
       selector.appendChild(opcion);
     });
     selector.value = estado.periodo;
+    window.Enlace.botonCopiar(selector.parentNode);
     selector.addEventListener('change', function () {
       estado.periodo = selector.value;
       render();
@@ -366,6 +372,7 @@
     pintaMapa();
     pintaRanking();
     if (estado.municipio) pintaFicha();
+    window.Enlace.escribe(estado, DEFECTOS);
     // El rótulo del mapa lleva el periodo del dato, no el del selector: la
     // renta es de hace dos años aunque se esté mirando el mes de este verano.
     document.querySelector('[data-mes-actual]').textContent = periodoDelIndicador();
@@ -399,10 +406,21 @@
       }
 
       estado.periodo = paro.periodos[paro.periodos.length - 1];
+      DEFECTOS.periodo = estado.periodo;
+      VALIDOS.periodo = paro.periodos;
+      VALIDOS.municipio = Object.keys(paro.municipios)
+        .concat(renta ? Object.keys(renta.municipios) : []);
+      window.Enlace.aplica(estado, DEFECTOS, VALIDOS);
+      // Un indicador pedido por URL cuya fuente no ha cargado no debe dejar el
+      // mapa en blanco: se vuelve al de partida.
+      if (estado.indicador === 'renta' && !renta) estado.indicador = DEFECTOS.indicador;
+      if (estado.indicador === 'tasa' && !poblacion) estado.indicador = DEFECTOS.indicador;
+
       estadoNodo.hidden = true;
       document.querySelector('[data-panel]').hidden = false;
 
       conectaControles();
+      window.Enlace.sincroniza(estado);
       render();
       document.addEventListener('tema:cambio', render);
     } catch (error) {
