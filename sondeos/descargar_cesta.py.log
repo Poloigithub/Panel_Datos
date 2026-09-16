@@ -16,11 +16,6 @@
       hortalizas/ambos: 296 periodos (IPC292263)
       patatas/ambos: 296 periodos (IPC292375)
       cafe/ambos: 296 periodos (IPC292275)
-      sin serie para agua/ambos; lo más parecido:
-        (2 coinciden) ['agua mineral', 'indice', 'nacional', 'refrescos', 'zumos de frutas y vegetales']
-        (2 coinciden) ['base 2011', 'general', 'indice', 'total', 'total nacional']
-        (2 coinciden) ['agua mineral', 'indice', 'nacional', 'refrescos y zumos']
-        (1 coinciden) ['educacion infantil y primaria', 'indice', 'nacional']
   · Comunitat Valenciana
       (IPC: 4450 series)
       alimentos/ambos: 296 periodos (IPC294168)
@@ -33,34 +28,23 @@
       carne_ave/ambos: 296 periodos (IPC300704)
       carne_porcino/ambos: 296 periodos (IPC300700)
       pescado/ambos: 296 periodos (IPC300832)
-      sin serie para frutas/ambos; lo más parecido:
-        (2 coinciden) ['base 2011', 'bienes industriales duraderos', 'comunitat valenciana', 'indice', 'total']
-        (2 coinciden) ['comunitat valenciana', 'herramientas y equipos para el hogar y el jardin', 'indice']
-        (2 coinciden) ['azucar', 'comunitat valenciana', 'indice']
-        (2 coinciden) ['base 2011', 'comunitat valenciana', 'general sin alimentos ni bebidas ni tabaco ni carburantes ni combustibles', 'indice', 'total']
+      frutas/ambos: 296 periodos (IPC300728)
       hortalizas/ambos: 296 periodos (IPC300732)
       patatas/ambos: 296 periodos (IPC300844)
       cafe/ambos: 296 periodos (IPC300744)
-      sin serie para agua/ambos; lo más parecido:
-        (3 coinciden) ['agua mineral', 'base 2011', 'comunitat valenciana', 'indice', 'refrescos y zumos', 'total']
-        (3 coinciden) ['agua mineral', 'comunitat valenciana', 'indice', 'refrescos y zumos']
-        (2 coinciden) ['base 2011', 'bienes industriales duraderos', 'comunitat valenciana', 'indice', 'total']
-        (2 coinciden) ['comunitat valenciana', 'herramientas y equipos para el hogar y el jardin', 'indice']
   · Castellón
       (IPC: 1865 series)
       alimentos/ambos: 296 periodos (IPC306364)
+  el índice está en base 2025 = 100
     escrito data/cesta/espana.json
     escrito data/cesta/comunitat-valenciana.json
     escrito data/cesta/castellon.json
   296 periodos: 2002M01 … 2026M08
-  frutas: +29.6 % desde 2021 (2025M12)
-  huevos: +12.6 % desde 2021 (2026M08)
-  carne_vacuno: +10.0 % desde 2021 (2026M08)
-  pescado: +5.5 % desde 2021 (2026M08)
-  carne_ave: +1.8 % desde 2021 (2026M08)
-  alimentos: +1.7 % desde 2021 (2026M08)
-
-No se ha encontrado serie para 3 combinaciones:
-  - cesta/espana/agua/ambos
-  - cesta/comunitat-valenciana/frutas/ambos
-  - cesta/comunitat-valenciana/agua/ambos
+  huevos: +84.0 % desde 2021 (último: 2026M08)
+  carne_vacuno: +60.1 % desde 2021 (último: 2026M08)
+  leche: +46.3 % desde 2021 (último: 2026M08)
+  cafe: +46.0 % desde 2021 (último: 2026M08)
+  patatas: +41.1 % desde 2021 (último: 2026M08)
+  hortalizas: +39.8 % desde 2021 (último: 2026M08)
+  pescado: +35.6 % desde 2021 (último: 2026M08)
+  alimentos: +34.8 % desde 2021 (último: 2026M08)
