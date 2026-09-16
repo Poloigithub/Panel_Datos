@@ -175,6 +175,11 @@ def busca(indice, ambito, indicador, alias_sexo, etiqueta, avisar=True):
     acepta = filtro_de_rango(indicador)
     encontradas = []
     for busqueda in indicador["busquedas"]:
+        # Cada formulación se resuelve por su cuenta: el primer territorio y
+        # alias que le den datos. Mezclar los bucles hacía que, en cuanto una
+        # formulación acertaba, la siguiente se quedara sin probar sus
+        # territorios alternativos.
+        resultado = None
         for territorio in territorios:
             for alias in intentos:
                 obligatorio = set(busqueda) | {territorio} | alias
@@ -182,13 +187,15 @@ def busca(indice, ambito, indicador, alias_sexo, etiqueta, avisar=True):
                                                  extras=indicador.get("extras"),
                                                  avisar=False, acepta=acepta)
                 if valores:
-                    encontradas.append((valores, usados))
+                    resultado = (valores, usados)
                     break
-            if encontradas and encontradas[-1][0]:
+            if resultado:
                 break
-        # Con una sola formulación no hay nada que comparar y se ahorra el resto.
-        if encontradas and len(indicador["busquedas"]) == 1:
-            break
+        if resultado:
+            encontradas.append(resultado)
+            # Con una sola formulación no hay nada que comparar.
+            if len(indicador["busquedas"]) == 1:
+                break
 
     if encontradas:
         if len(encontradas) > 1:
