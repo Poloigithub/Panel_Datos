@@ -1,0 +1,662 @@
+# Comer fuera, azúcar y preparados: cómo los nombra el INE
+
+Combinaciones completas, sin filtrar por palabras de comida y sin
+cortar la lista. Las de bases anteriores van aparte.
+
+## España
+- 6143 combinaciones
+
+### comer fuera · 145 en la base vigente de 145
+    - `['apartamentos y servicios de alojamiento similares', 'hoteles', 'impuestos constantes', 'indice', 'nacional']` → IPC292783
+    - `['apartamentos y servicios de alojamiento similares', 'hoteles', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC292782
+    - `['apartamentos y servicios de alojamiento similares', 'hoteles', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC292785
+    - `['apartamentos y servicios de alojamiento similares', 'hoteles', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC292784
+    - `['apartamentos y servicios de alojamiento similares', 'hoteles', 'indice', 'nacional']` → IPC291575
+    - `['apartamentos y servicios de alojamiento similares', 'hoteles', 'media anual', 'nacional']` → IPC319035
+    - `['apartamentos y servicios de alojamiento similares', 'hoteles', 'nacional', 'ponderacion']` → IPC332142
+    - `['apartamentos y servicios de alojamiento similares', 'hoteles', 'nacional', 'variacion anual']` → IPC291574
+    - `['apartamentos y servicios de alojamiento similares', 'hoteles', 'nacional', 'variacion en lo que va de ano']` → IPC291577
+    - `['apartamentos y servicios de alojamiento similares', 'hoteles', 'nacional', 'variacion mensual']` → IPC291576
+    - `['barcos', 'fuerabordas y equipamientos de barcos', 'impuestos constantes', 'indice', 'nacional']` → IPC254400
+    - `['barcos', 'fuerabordas y equipamientos de barcos', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC254402
+    - `['barcos', 'fuerabordas y equipamientos de barcos', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC254403
+    - `['barcos', 'fuerabordas y equipamientos de barcos', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC254401
+    - `['barcos', 'fuerabordas y equipamientos de barcos', 'indice', 'nacional']` → IPC253517
+    - `['barcos', 'fuerabordas y equipamientos de barcos', 'media anual', 'nacional']` → IPC279056
+    - `['barcos', 'fuerabordas y equipamientos de barcos', 'nacional', 'ponderacion']` → IPC232971
+    - `['barcos', 'fuerabordas y equipamientos de barcos', 'nacional', 'variacion anual']` → IPC253519
+    - `['barcos', 'fuerabordas y equipamientos de barcos', 'nacional', 'variacion en lo que va de ano']` → IPC253520
+    - `['barcos', 'fuerabordas y equipamientos de barcos', 'nacional', 'variacion mensual']` → IPC253518
+    - `['cafes', 'establecimientos de comida rapida y similares', 'indice', 'nacional', 'restaurantes']` → IPC291379
+    - `['cafes', 'establecimientos de comida rapida y similares', 'media anual', 'nacional', 'restaurantes']` → IPC318937
+    - `['cafes', 'establecimientos de comida rapida y similares', 'nacional', 'ponderacion', 'restaurantes']` → IPC332093
+    - `['cafes', 'establecimientos de comida rapida y similares', 'nacional', 'restaurantes', 'variacion anual']` → IPC291378
+    - `['cafes', 'establecimientos de comida rapida y similares', 'nacional', 'restaurantes', 'variacion en lo que va de ano']` → IPC291381
+    - `['cafes', 'establecimientos de comida rapida y similares', 'nacional', 'restaurantes', 'variacion mensual']` → IPC291380
+    - `['cafes y establecimientos similares', 'impuestos constantes', 'indice', 'nacional', 'restaurantes']` → IPC293351
+    - `['cafes y establecimientos similares', 'impuestos constantes', 'nacional', 'restaurantes', 'variacion anual']` → IPC293350
+    - `['cafes y establecimientos similares', 'impuestos constantes', 'nacional', 'restaurantes', 'variacion en lo que va de ano']` → IPC293353
+    - `['cafes y establecimientos similares', 'impuestos constantes', 'nacional', 'restaurantes', 'variacion mensual']` → IPC293352
+    - `['cafes y establecimientos similares', 'indice', 'nacional', 'restaurantes']` → IPC292143
+    - `['cafes y establecimientos similares', 'media anual', 'nacional', 'restaurantes']` → IPC319319
+    - `['cafes y establecimientos similares', 'nacional', 'ponderacion', 'restaurantes']` → IPC332284
+    - `['cafes y establecimientos similares', 'nacional', 'restaurantes', 'variacion anual']` → IPC292142
+    - `['cafes y establecimientos similares', 'nacional', 'restaurantes', 'variacion en lo que va de ano']` → IPC292145
+    - `['cafes y establecimientos similares', 'nacional', 'restaurantes', 'variacion mensual']` → IPC292144
+    - `['cafes y restaurantes', 'hoteles', 'indice', 'nacional']` → IPC200906
+    - `['cafes y salas de baile', 'impuestos constantes', 'indice', 'nacional', 'restaurantes']` → IPC254567
+    - `['cafes y salas de baile', 'impuestos constantes', 'nacional', 'restaurantes', 'variacion anual']` → IPC254569
+    - `['cafes y salas de baile', 'impuestos constantes', 'nacional', 'restaurantes', 'variacion en lo que va de ano']` → IPC254570
+    - `['cafes y salas de baile', 'impuestos constantes', 'nacional', 'restaurantes', 'variacion mensual']` → IPC254568
+    - `['cafes y salas de baile', 'indice', 'nacional', 'restaurantes']` → IPC253571
+    - `['cafes y salas de baile', 'media anual', 'nacional', 'restaurantes']` → IPC279140
+    - `['cafes y salas de baile', 'nacional', 'ponderacion', 'restaurantes']` → IPC232929
+    - `['cafes y salas de baile', 'nacional', 'restaurantes', 'variacion anual']` → IPC253573
+    - `['cafes y salas de baile', 'nacional', 'restaurantes', 'variacion en lo que va de ano']` → IPC253574
+    - `['cafes y salas de baile', 'nacional', 'restaurantes', 'variacion mensual']` → IPC253572
+    - `['comedores', 'impuestos constantes', 'indice', 'nacional']` → IPC254575
+    - `['comedores', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC254577
+    - `['comedores', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC254578
+    - `['comedores', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC254576
+    - `['comedores', 'indice', 'nacional']` → IPC253579
+    - `['comedores', 'media anual', 'nacional']` → IPC279144
+    - `['comedores', 'nacional', 'ponderacion']` → IPC232796
+    - `['comedores', 'nacional', 'variacion anual']` → IPC253581
+    - `['comedores', 'nacional', 'variacion en lo que va de ano']` → IPC253582
+    - `['comedores', 'nacional', 'variacion mensual']` → IPC253580
+    - `['comedores y cafeterias', 'indice', 'nacional']` → IPC291383
+    - `['comedores y cafeterias', 'media anual', 'nacional']` → IPC318939
+    - `['comedores y cafeterias', 'nacional', 'ponderacion']` → IPC332094
+    - `['comedores y cafeterias', 'nacional', 'variacion anual']` → IPC291382
+    - `['comedores y cafeterias', 'nacional', 'variacion en lo que va de ano']` → IPC291385
+    - `['comedores y cafeterias', 'nacional', 'variacion mensual']` → IPC291384
+    - `['comedores y cafeterias de universidades', 'escuelas y guarderias', 'impuestos constantes', 'indice', 'nacional']` → IPC293359
+    - `['comedores y cafeterias de universidades', 'escuelas y guarderias', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC293358
+    - `['comedores y cafeterias de universidades', 'escuelas y guarderias', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC293361
+    - `['comedores y cafeterias de universidades', 'escuelas y guarderias', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC293360
+    - `['comedores y cafeterias de universidades', 'escuelas y guarderias', 'indice', 'nacional']` → IPC292151
+    - `['comedores y cafeterias de universidades', 'escuelas y guarderias', 'media anual', 'nacional']` → IPC319323
+    - `['comedores y cafeterias de universidades', 'escuelas y guarderias', 'nacional', 'ponderacion']` → IPC332286
+    - `['comedores y cafeterias de universidades', 'escuelas y guarderias', 'nacional', 'variacion anual']` → IPC292150
+    - `['comedores y cafeterias de universidades', 'escuelas y guarderias', 'nacional', 'variacion en lo que va de ano']` → IPC292153
+    - `['comedores y cafeterias de universidades', 'escuelas y guarderias', 'nacional', 'variacion mensual']` → IPC292152
+    - `['establecimientos de comida rapida', 'impuestos constantes', 'indice', 'nacional']` → IPC293355
+    - `['establecimientos de comida rapida', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC293354
+    - `['establecimientos de comida rapida', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC293357
+    - `['establecimientos de comida rapida', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC293356
+    - `['establecimientos de comida rapida', 'indice', 'nacional']` → IPC292147
+    - `['establecimientos de comida rapida', 'media anual', 'nacional']` → IPC319321
+    - `['establecimientos de comida rapida', 'nacional', 'ponderacion']` → IPC332285
+    - `['establecimientos de comida rapida', 'nacional', 'variacion anual']` → IPC292146
+    - `['establecimientos de comida rapida', 'nacional', 'variacion en lo que va de ano']` → IPC292149
+    - `['establecimientos de comida rapida', 'nacional', 'variacion mensual']` → IPC292148
+    - `['hoteles', 'impuestos constantes', 'indice', 'nacional']` → IPC293547
+    - `['hoteles', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC293546
+    - `['hoteles', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC293549
+    - `['hoteles', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC293548
+    - `['hoteles', 'indice', 'nacional']` → IPC292567
+    - `['hoteles', 'media anual', 'nacional']` → IPC319531
+    - `['hoteles', 'nacional', 'ponderacion']` → IPC332390
+    - `['hoteles', 'nacional', 'variacion anual']` → IPC292566
+    - `['hoteles', 'nacional', 'variacion en lo que va de ano']` → IPC292569
+    - `['hoteles', 'nacional', 'variacion mensual']` → IPC292568
+    - `['impuestos constantes', 'indice', 'nacional', 'pruebas de embarazo y anticonceptivos no orales']` → IPC231568
+    - `['impuestos constantes', 'indice', 'nacional', 'restaurantes y hoteles']` → IPC254104
+    - `['impuestos constantes', 'indice', 'nacional', 'restaurantes y servicios de alojamiento']` → IPC292623
+    - `['impuestos constantes', 'indice', 'nacional', 'servicios de comida rapida y para llevar']` → IPC254571
+    - `['impuestos constantes', 'nacional', 'pruebas de embarazo y anticonceptivos no orales', 'variacion anual']` → IPC232158
+    - `['impuestos constantes', 'nacional', 'pruebas de embarazo y anticonceptivos no orales', 'variacion en lo que va de ano']` → IPC232157
+    - `['impuestos constantes', 'nacional', 'pruebas de embarazo y anticonceptivos no orales', 'variacion mensual']` → IPC232159
+    - `['impuestos constantes', 'nacional', 'restaurantes y hoteles', 'variacion anual']` → IPC254106
+    - `['impuestos constantes', 'nacional', 'restaurantes y hoteles', 'variacion en lo que va de ano']` → IPC254107
+    - `['impuestos constantes', 'nacional', 'restaurantes y hoteles', 'variacion mensual']` → IPC254105
+    - `['impuestos constantes', 'nacional', 'restaurantes y servicios de alojamiento', 'variacion anual']` → IPC292622
+    - `['impuestos constantes', 'nacional', 'restaurantes y servicios de alojamiento', 'variacion en lo que va de ano']` → IPC292625
+    - `['impuestos constantes', 'nacional', 'restaurantes y servicios de alojamiento', 'variacion mensual']` → IPC292624
+    - `['impuestos constantes', 'nacional', 'servicios de comida rapida y para llevar', 'variacion anual']` → IPC254573
+    - `['impuestos constantes', 'nacional', 'servicios de comida rapida y para llevar', 'variacion en lo que va de ano']` → IPC254574
+    - `['impuestos constantes', 'nacional', 'servicios de comida rapida y para llevar', 'variacion mensual']` → IPC254572
+    - `['indice', 'nacional', 'pruebas de embarazo y anticonceptivos no orales']` → IPC207252
+    - `['indice', 'nacional', 'restauracion']` → IPC252438
+    - `['indice', 'nacional', 'restauracion y comedores']` → IPC252051
+    - `['indice', 'nacional', 'restaurantes y hoteles']` → IPC251842
+    - `['indice', 'nacional', 'restaurantes y servicios de alojamiento']` → IPC290795
+    - `['indice', 'nacional', 'servicios de comida rapida y para llevar']` → IPC253575
+    - `['media anual', 'nacional', 'pruebas de embarazo y anticonceptivos no orales']` → IPC239453
+    - `['media anual', 'nacional', 'restauracion']` → IPC278588
+    - `['media anual', 'nacional', 'restauracion y comedores']` → IPC278380
+    - `['media anual', 'nacional', 'restaurantes y hoteles']` → IPC278288
+    - `['media anual', 'nacional', 'restaurantes y servicios de alojamiento']` → IPC318645
+    - `['media anual', 'nacional', 'servicios de comida rapida y para llevar']` → IPC279142
+    - `['nacional', 'ponderacion', 'pruebas de embarazo y anticonceptivos no orales']` → IPC233040
+    - `['nacional', 'ponderacion', 'restauracion']` → IPC232797
+    - `['nacional', 'ponderacion', 'restauracion y comedores']` → IPC232746
+    - `['nacional', 'ponderacion', 'restaurantes y hoteles']` → IPC232727
+    - `['nacional', 'ponderacion', 'restaurantes y servicios de alojamiento']` → IPC331947
+    - `['nacional', 'ponderacion', 'servicios de comida rapida y para llevar']` → IPC232928
+    - `['nacional', 'pruebas de embarazo y anticonceptivos no orales', 'variacion anual']` → IPC207842
+    - `['nacional', 'pruebas de embarazo y anticonceptivos no orales', 'variacion en lo que va de ano']` → IPC207841
+    - `['nacional', 'pruebas de embarazo y anticonceptivos no orales', 'variacion mensual']` → IPC207843
+    - `['nacional', 'restauracion', 'variacion anual']` → IPC252440
+    - `['nacional', 'restauracion', 'variacion en lo que va de ano']` → IPC252441
+    - `['nacional', 'restauracion', 'variacion mensual']` → IPC252439
+    - `['nacional', 'restauracion y comedores', 'variacion anual']` → IPC252053
+    - `['nacional', 'restauracion y comedores', 'variacion en lo que va de ano']` → IPC252054
+    - `['nacional', 'restauracion y comedores', 'variacion mensual']` → IPC252052
+    - `['nacional', 'restaurantes y hoteles', 'variacion anual']` → IPC251845
+    - `['nacional', 'restaurantes y hoteles', 'variacion en lo que va de ano']` → IPC251846
+    - `['nacional', 'restaurantes y hoteles', 'variacion mensual']` → IPC251844
+    - `['nacional', 'restaurantes y servicios de alojamiento', 'variacion anual']` → IPC290794
+    - `['nacional', 'restaurantes y servicios de alojamiento', 'variacion en lo que va de ano']` → IPC290797
+    - `['nacional', 'restaurantes y servicios de alojamiento', 'variacion mensual']` → IPC290796
+    - `['nacional', 'servicios de comida rapida y para llevar', 'variacion anual']` → IPC253577
+    - `['nacional', 'servicios de comida rapida y para llevar', 'variacion en lo que va de ano']` → IPC253578
+    - `['nacional', 'servicios de comida rapida y para llevar', 'variacion mensual']` → IPC253576
+
+### azúcar · 132 en la base vigente de 132
+    - `['azucar', 'chocolate y confiteria', 'confitura', 'indice', 'miel', 'nacional']` → IPC252526
+    - `['azucar', 'chocolate y confiteria', 'confitura', 'media anual', 'miel', 'nacional']` → IPC278410
+    - `['azucar', 'chocolate y confiteria', 'confitura', 'miel', 'nacional', 'ponderacion']` → IPC232886
+    - `['azucar', 'chocolate y confiteria', 'confitura', 'miel', 'nacional', 'variacion anual']` → IPC252084
+    - `['azucar', 'chocolate y confiteria', 'confitura', 'miel', 'nacional', 'variacion en lo que va de ano']` → IPC252085
+    - `['azucar', 'chocolate y confiteria', 'confitura', 'miel', 'nacional', 'variacion mensual']` → IPC252083
+    - `['azucar', 'confiteria y postres', 'indice', 'nacional']` → IPC291139
+    - `['azucar', 'confiteria y postres', 'media anual', 'nacional']` → IPC318817
+    - `['azucar', 'confiteria y postres', 'nacional', 'ponderacion']` → IPC332033
+    - `['azucar', 'confiteria y postres', 'nacional', 'variacion anual']` → IPC291138
+    - `['azucar', 'confiteria y postres', 'nacional', 'variacion en lo que va de ano']` → IPC291141
+    - `['azucar', 'confiteria y postres', 'nacional', 'variacion mensual']` → IPC291140
+    - `['azucar', 'impuestos constantes', 'indice', 'nacional']` → IPC254249
+    - `['azucar', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC254251
+    - `['azucar', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC254252
+    - `['azucar', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC254250
+    - `['azucar', 'indice', 'nacional']` → IPC252802
+    - `['azucar', 'media anual', 'nacional']` → IPC319383
+    - `['azucar', 'nacional', 'ponderacion']` → IPC332316
+    - `['azucar', 'nacional', 'variacion anual']` → IPC292270
+    - `['azucar', 'nacional', 'variacion en lo que va de ano']` → IPC252805
+    - `['azucar', 'nacional', 'variacion mensual']` → IPC252803
+    - `['azucar de cana y azucar de remolacha', 'impuestos constantes', 'indice', 'nacional']` → IPC292939
+    - `['azucar de cana y azucar de remolacha', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC292938
+    - `['azucar de cana y azucar de remolacha', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC292941
+    - `['azucar de cana y azucar de remolacha', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC292940
+    - `['azucar de cana y azucar de remolacha', 'indice', 'nacional']` → IPC291731
+    - `['azucar de cana y azucar de remolacha', 'media anual', 'nacional']` → IPC319113
+    - `['azucar de cana y azucar de remolacha', 'nacional', 'ponderacion']` → IPC332181
+    - `['azucar de cana y azucar de remolacha', 'nacional', 'variacion anual']` → IPC291730
+    - `['azucar de cana y azucar de remolacha', 'nacional', 'variacion en lo que va de ano']` → IPC291733
+    - `['azucar de cana y azucar de remolacha', 'nacional', 'variacion mensual']` → IPC291732
+    - `['c', 'impuestos constantes', 'indice', 'nacional', 'o', 'otros productos de confiteria y postres n', 'p']` → IPC292955
+    - `['c', 'impuestos constantes', 'nacional', 'o', 'otros productos de confiteria y postres n', 'p', 'variacion anual']` → IPC292954
+    - `['c', 'impuestos constantes', 'nacional', 'o', 'otros productos de confiteria y postres n', 'p', 'variacion en lo que va de ano']` → IPC292957
+    - `['c', 'impuestos constantes', 'nacional', 'o', 'otros productos de confiteria y postres n', 'p', 'variacion mensual']` → IPC292956
+    - `['c', 'indice', 'nacional', 'o', 'otros productos de confiteria y postres n', 'p']` → IPC291747
+    - `['c', 'media anual', 'nacional', 'o', 'otros productos de confiteria y postres n', 'p']` → IPC319121
+    - `['c', 'nacional', 'o', 'otros productos de confiteria y postres n', 'p', 'ponderacion']` → IPC332185
+    - `['c', 'nacional', 'o', 'otros productos de confiteria y postres n', 'p', 'variacion anual']` → IPC291746
+    - `['c', 'nacional', 'o', 'otros productos de confiteria y postres n', 'p', 'variacion en lo que va de ano']` → IPC291749
+    - `['c', 'nacional', 'o', 'otros productos de confiteria y postres n', 'p', 'variacion mensual']` → IPC291748
+    - `['cacao y chocolate en polvo', 'impuestos constantes', 'indice', 'nacional']` → IPC254301
+    - `['cacao y chocolate en polvo', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC254712
+    - `['cacao y chocolate en polvo', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC254713
+    - `['cacao y chocolate en polvo', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC254341
+    - `['cacao y chocolate en polvo', 'indice', 'nacional']` → IPC252854
+    - `['cacao y chocolate en polvo', 'media anual', 'nacional']` → IPC278732
+    - `['cacao y chocolate en polvo', 'nacional', 'ponderacion']` → IPC233133
+    - `['cacao y chocolate en polvo', 'nacional', 'variacion anual']` → IPC252856
+    - `['cacao y chocolate en polvo', 'nacional', 'variacion en lo que va de ano']` → IPC252857
+    - `['cacao y chocolate en polvo', 'nacional', 'variacion mensual']` → IPC252855
+    - `['cacao y productos alimenticios a base de cacao', 'chocolate', 'impuestos constantes', 'indice', 'nacional']` → IPC292947
+    - `['cacao y productos alimenticios a base de cacao', 'chocolate', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC292946
+    - `['cacao y productos alimenticios a base de cacao', 'chocolate', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC292949
+    - `['cacao y productos alimenticios a base de cacao', 'chocolate', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC292948
+    - `['cacao y productos alimenticios a base de cacao', 'chocolate', 'indice', 'nacional']` → IPC291739
+    - `['cacao y productos alimenticios a base de cacao', 'chocolate', 'media anual', 'nacional']` → IPC319117
+    - `['cacao y productos alimenticios a base de cacao', 'chocolate', 'nacional', 'ponderacion']` → IPC332183
+    - `['cacao y productos alimenticios a base de cacao', 'chocolate', 'nacional', 'variacion anual']` → IPC291738
+    - `['cacao y productos alimenticios a base de cacao', 'chocolate', 'nacional', 'variacion en lo que va de ano']` → IPC291741
+    - `['cacao y productos alimenticios a base de cacao', 'chocolate', 'nacional', 'variacion mensual']` → IPC291740
+    - `['chocolate', 'impuestos constantes', 'indice', 'nacional']` → IPC254257
+    - `['chocolate', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC254259
+    - `['chocolate', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC254260
+    - `['chocolate', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC254258
+    - `['chocolate', 'indice', 'nacional']` → IPC252810
+    - `['chocolate', 'media anual', 'nacional']` → IPC278710
+    - `['chocolate', 'nacional', 'ponderacion']` → IPC233144
+    - `['chocolate', 'nacional', 'variacion anual']` → IPC252812
+    - `['chocolate', 'nacional', 'variacion en lo que va de ano']` → IPC252813
+    - `['chocolate', 'nacional', 'variacion mensual']` → IPC252811
+    - `['confituras', 'impuestos constantes', 'indice', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'y miel']` → IPC292943
+    - `['confituras', 'impuestos constantes', 'indice', 'mermeladas y miel', 'nacional']` → IPC254253
+    - `['confituras', 'impuestos constantes', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'variacion anual', 'y miel']` → IPC292942
+    - `['confituras', 'impuestos constantes', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'variacion en lo que va de ano', 'y miel']` → IPC292945
+    - `['confituras', 'impuestos constantes', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'variacion mensual', 'y miel']` → IPC292944
+    - `['confituras', 'impuestos constantes', 'mermeladas y miel', 'nacional', 'variacion anual']` → IPC254255
+    - `['confituras', 'impuestos constantes', 'mermeladas y miel', 'nacional', 'variacion en lo que va de ano']` → IPC254256
+    - `['confituras', 'impuestos constantes', 'mermeladas y miel', 'nacional', 'variacion mensual']` → IPC254254
+    - `['confituras', 'indice', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'y miel']` → IPC291735
+    - `['confituras', 'indice', 'mermeladas y miel', 'nacional']` → IPC252806
+    - `['confituras', 'jaleas', 'media anual', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'y miel']` → IPC319115
+    - `['confituras', 'jaleas', 'mermeladas', 'nacional', 'ponderacion', 'pures y pastas de frutas', 'y miel']` → IPC332182
+    - `['confituras', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'variacion anual', 'y miel']` → IPC291734
+    - `['confituras', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'variacion en lo que va de ano', 'y miel']` → IPC291737
+    - `['confituras', 'jaleas', 'mermeladas', 'nacional', 'pures y pastas de frutas', 'variacion mensual', 'y miel']` → IPC291736
+    - `['confituras', 'media anual', 'mermeladas y miel', 'nacional']` → IPC278708
+    - `['confituras', 'mermeladas y miel', 'nacional', 'ponderacion']` → IPC233145
+    - `['confituras', 'mermeladas y miel', 'nacional', 'variacion anual']` → IPC252808
+    - `['confituras', 'mermeladas y miel', 'nacional', 'variacion en lo que va de ano']` → IPC252809
+    - `['confituras', 'mermeladas y miel', 'nacional', 'variacion mensual']` → IPC252807
+    - `['helados', 'impuestos constantes', 'indice', 'nacional']` → IPC254265
+    - `['helados', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC254267
+    - `['helados', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC254268
+    - `['helados', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC254266
+    - `['helados', 'indice', 'nacional']` → IPC252818
+    - `['helados', 'media anual', 'nacional']` → IPC278714
+    - `['helados', 'nacional', 'ponderacion']` → IPC233142
+    - `['helados', 'nacional', 'variacion anual']` → IPC252820
+    - `['helados', 'nacional', 'variacion en lo que va de ano']` → IPC252821
+    - `['helados', 'nacional', 'variacion mensual']` → IPC252819
+    - `['helados y sorbetes', 'hielo', 'impuestos constantes', 'indice', 'nacional']` → IPC292951
+    - `['helados y sorbetes', 'hielo', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC292950
+    - `['helados y sorbetes', 'hielo', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC292953
+    - `['helados y sorbetes', 'hielo', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC292952
+    - `['helados y sorbetes', 'hielo', 'indice', 'nacional']` → IPC291743
+    - `['helados y sorbetes', 'hielo', 'media anual', 'nacional']` → IPC319119
+    - `['helados y sorbetes', 'hielo', 'nacional', 'ponderacion']` → IPC332184
+    - `['helados y sorbetes', 'hielo', 'nacional', 'variacion anual']` → IPC291742
+    - `['helados y sorbetes', 'hielo', 'nacional', 'variacion en lo que va de ano']` → IPC291745
+    - `['helados y sorbetes', 'hielo', 'nacional', 'variacion mensual']` → IPC291744
+    - `['impuestos constantes', 'indice', 'nacional', 'productos de confiteria']` → IPC254261
+    - `['impuestos constantes', 'indice', 'nacional', 'sucedaneos artificiales del azucar']` → IPC254269
+    - `['impuestos constantes', 'nacional', 'productos de confiteria', 'variacion anual']` → IPC254263
+    - `['impuestos constantes', 'nacional', 'productos de confiteria', 'variacion en lo que va de ano']` → IPC254264
+    - `['impuestos constantes', 'nacional', 'productos de confiteria', 'variacion mensual']` → IPC254262
+    - `['impuestos constantes', 'nacional', 'sucedaneos artificiales del azucar', 'variacion anual']` → IPC254271
+    - `['impuestos constantes', 'nacional', 'sucedaneos artificiales del azucar', 'variacion en lo que va de ano']` → IPC254272
+    - `['impuestos constantes', 'nacional', 'sucedaneos artificiales del azucar', 'variacion mensual']` → IPC254270
+    - `['indice', 'nacional', 'productos de confiteria']` → IPC252814
+    - `['indice', 'nacional', 'sucedaneos artificiales del azucar']` → IPC252822
+    - `['media anual', 'nacional', 'productos de confiteria']` → IPC278712
+    - `['media anual', 'nacional', 'sucedaneos artificiales del azucar']` → IPC278716
+    - `['nacional', 'ponderacion', 'productos de confiteria']` → IPC233143
+    - `['nacional', 'ponderacion', 'sucedaneos artificiales del azucar']` → IPC233141
+    - `['nacional', 'productos de confiteria', 'variacion anual']` → IPC252816
+    - `['nacional', 'productos de confiteria', 'variacion en lo que va de ano']` → IPC252817
+    - `['nacional', 'productos de confiteria', 'variacion mensual']` → IPC252815
+    - `['nacional', 'sucedaneos artificiales del azucar', 'variacion anual']` → IPC252824
+    - `['nacional', 'sucedaneos artificiales del azucar', 'variacion en lo que va de ano']` → IPC252825
+    - `['nacional', 'sucedaneos artificiales del azucar', 'variacion mensual']` → IPC252823
+
+### preparados · 130 en la base vigente de 130
+    - `['alimentos elaborados', 'impuestos constantes', 'indice', 'nacional']` → IPC293507
+    - `['alimentos elaborados', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC293506
+    - `['alimentos elaborados', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC293509
+    - `['alimentos elaborados', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC293508
+    - `['alimentos elaborados', 'indice', 'nacional']` → IPC292527
+    - `['alimentos elaborados', 'media anual', 'nacional']` → IPC319511
+    - `['alimentos elaborados', 'nacional', 'ponderacion']` → IPC332380
+    - `['alimentos elaborados', 'nacional', 'variacion anual']` → IPC292526
+    - `['alimentos elaborados', 'nacional', 'variacion en lo que va de ano']` → IPC292529
+    - `['alimentos elaborados', 'nacional', 'variacion mensual']` → IPC292528
+    - `['alimentos no elaborados y productos energeticos', 'impuestos constantes', 'indice', 'nacional']` → IPC293479
+    - `['alimentos no elaborados y productos energeticos', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC293478
+    - `['alimentos no elaborados y productos energeticos', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC293481
+    - `['alimentos no elaborados y productos energeticos', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC293480
+    - `['alimentos no elaborados y productos energeticos', 'indice', 'nacional']` → IPC292499
+    - `['alimentos no elaborados y productos energeticos', 'media anual', 'nacional']` → IPC319497
+    - `['alimentos no elaborados y productos energeticos', 'nacional', 'ponderacion']` → IPC332373
+    - `['alimentos no elaborados y productos energeticos', 'nacional', 'variacion anual']` → IPC292498
+    - `['alimentos no elaborados y productos energeticos', 'nacional', 'variacion en lo que va de ano']` → IPC292501
+    - `['alimentos no elaborados y productos energeticos', 'nacional', 'variacion mensual']` → IPC292500
+    - `['alimentos preparados', 'impuestos constantes', 'indice', 'nacional']` → IPC292959
+    - `['alimentos preparados', 'impuestos constantes', 'nacional', 'variacion anual']` → IPC292958
+    - `['alimentos preparados', 'impuestos constantes', 'nacional', 'variacion en lo que va de ano']` → IPC292961
+    - `['alimentos preparados', 'impuestos constantes', 'nacional', 'variacion mensual']` → IPC292960
+    - `['alimentos preparados', 'indice', 'nacional']` → IPC291751
+    - `['alimentos preparados', 'media anual', 'nacional']` → IPC319123
+    - `['alimentos preparados', 'nacional', 'ponderacion']` → IPC332186
+    - `['alimentos preparados', 'nacional', 'variacion anual']` → IPC291750
+    - `['alimentos preparados', 'nacional', 'variacion en lo que va de ano']` → IPC291753
+    - `['alimentos preparados', 'nacional', 'variacion mensual']` → IPC291752
+    - `['alimentos preparados y otros productos alimenticios', 'indice', 'nacional']` → IPC291143
+    - `['alimentos preparados y otros productos alimenticios', 'media anual', 'nacional']` → IPC318819
+    - `['alimentos preparados y otros productos alimenticios', 'nacional', 'ponderacion']` → IPC332034
+    - `['alimentos preparados y otros productos alimenticios', 'nacional', 'variacion anual']` → IPC291142
+    - `['alimentos preparados y otros productos alimenticios', 'nacional', 'variacion en lo que va de ano']` → IPC291145
+    - `['alimentos preparados y otros productos alimenticios', 'nacional', 'variacion mensual']` → IPC291144
+    - `['crustaceos', 'indice', 'moluscos y preparados de pescado', 'nacional']` → IPC292367
+    - `['crustaceos', 'media anual', 'moluscos y preparados de pescado', 'nacional']` → IPC319431
+    - `['crustaceos', 'moluscos y preparados de pescado', 'nacional', 'ponderacion']` → IPC332340
+    - `['crustaceos', 'moluscos y preparados de pescado', 'nacional', 'variacion anual']` → IPC292366
+    - `['crustaceos', 'moluscos y preparados de pescado', 'nacional', 'variacion en lo que va de ano']` → IPC292369
+    - `['crustaceos', 'moluscos y preparados de pescado', 'nacional', 'variacion mensual']` → IPC292368
+    - `['impuestos constantes', 'indice', 'nacional', 'otros preparados de carne']` → IPC254133
+    - `['impuestos constantes', 'indice', 'nacional', 'otros preparados de pescado y marisco conservados o procesados']` → IPC254157
+    - `['impuestos constantes', 'indice', 'nacional', 'platos preparados']` → IPC254285
+    - `['impuestos constantes', 'indice', 'nacional', 'preparados de carne y despojos']` → IPC292827
+    - `['impuestos constantes', 'indice', 'nacional', 'preparados de marisco']` → IPC292847
+    - `['impuestos constantes', 'indice', 'nacional', 'preparados de pescado']` → IPC292839
+    - `['impuestos constantes', 'indice', 'nacional', 'subyacente: general sin alimentos no elaborados ni productos energeticos']` → IPC293491
+    - `['impuestos constantes', 'nacional', 'otros preparados de carne', 'variacion anual']` → IPC254135
+    - `['impuestos constantes', 'nacional', 'otros preparados de carne', 'variacion en lo que va de ano']` → IPC254136
+    - `['impuestos constantes', 'nacional', 'otros preparados de carne', 'variacion mensual']` → IPC254134
+    - `['impuestos constantes', 'nacional', 'otros preparados de pescado y marisco conservados o procesados', 'variacion anual']` → IPC254159
+    - `['impuestos constantes', 'nacional', 'otros preparados de pescado y marisco conservados o procesados', 'variacion en lo que va de ano']` → IPC254160
+    - `['impuestos constantes', 'nacional', 'otros preparados de pescado y marisco conservados o procesados', 'variacion mensual']` → IPC254158
+    - `['impuestos constantes', 'nacional', 'platos preparados', 'variacion anual']` → IPC254287
+    - `['impuestos constantes', 'nacional', 'platos preparados', 'variacion en lo que va de ano']` → IPC254288
+    - `['impuestos constantes', 'nacional', 'platos preparados', 'variacion mensual']` → IPC254286
+    - `['impuestos constantes', 'nacional', 'preparados de carne y despojos', 'variacion anual']` → IPC292826
+    - `['impuestos constantes', 'nacional', 'preparados de carne y despojos', 'variacion en lo que va de ano']` → IPC292829
+    - `['impuestos constantes', 'nacional', 'preparados de carne y despojos', 'variacion mensual']` → IPC292828
+    - `['impuestos constantes', 'nacional', 'preparados de marisco', 'variacion anual']` → IPC292846
+    - `['impuestos constantes', 'nacional', 'preparados de marisco', 'variacion en lo que va de ano']` → IPC292849
+    - `['impuestos constantes', 'nacional', 'preparados de marisco', 'variacion mensual']` → IPC292848
+    - `['impuestos constantes', 'nacional', 'preparados de pescado', 'variacion anual']` → IPC292838
+    - `['impuestos constantes', 'nacional', 'preparados de pescado', 'variacion en lo que va de ano']` → IPC292841
+    - `['impuestos constantes', 'nacional', 'preparados de pescado', 'variacion mensual']` → IPC292840
+    - `['impuestos constantes', 'nacional', 'subyacente: general sin alimentos no elaborados ni productos energeticos', 'variacion anual']` → IPC293490
+    - `['impuestos constantes', 'nacional', 'subyacente: general sin alimentos no elaborados ni productos energeticos', 'variacion en lo que va de ano']` → IPC293493
+    - `['impuestos constantes', 'nacional', 'subyacente: general sin alimentos no elaborados ni productos energeticos', 'variacion mensual']` → IPC293492
+    - `['indice', 'nacional', 'otros preparados alimenticios']` → IPC292379
+    - `['indice', 'nacional', 'otros preparados de carne']` → IPC252686
+    - `['indice', 'nacional', 'otros preparados de pescado y marisco conservados o procesados']` → IPC252710
+    - `['indice', 'nacional', 'patatas y sus preparados']` → IPC292375
+    - `['indice', 'nacional', 'platos preparados']` → IPC252838
+    - `['indice', 'nacional', 'preparados de carne y despojos']` → IPC291619
+    - `['indice', 'nacional', 'preparados de legumbres y hortalizas']` → IPC292267
+    - `['indice', 'nacional', 'preparados de marisco']` → IPC291639
+    - `['indice', 'nacional', 'preparados de pescado']` → IPC291631
+    - `['indice', 'nacional', 'subyacente: general sin alimentos no elaborados ni productos energeticos']` → IPC292511
+    - `['media anual', 'nacional', 'otros preparados alimenticios']` → IPC319437
+    - `['media anual', 'nacional', 'otros preparados de carne']` → IPC278648
+    - `['media anual', 'nacional', 'otros preparados de pescado y marisco conservados o procesados']` → IPC278660
+    - `['media anual', 'nacional', 'patatas y sus preparados']` → IPC319435
+    - `['media anual', 'nacional', 'platos preparados']` → IPC278724
+    - `['media anual', 'nacional', 'preparados de carne y despojos']` → IPC319057
+    - `['media anual', 'nacional', 'preparados de legumbres y hortalizas']` → IPC319381
+    - `['media anual', 'nacional', 'preparados de marisco']` → IPC319067
+    - `['media anual', 'nacional', 'preparados de pescado']` → IPC319063
+    - `['media anual', 'nacional', 'subyacente: general sin alimentos no elaborados ni productos energeticos']` → IPC319503
+    - `['nacional', 'otros preparados alimenticios', 'ponderacion']` → IPC332343
+    - `['nacional', 'otros preparados alimenticios', 'variacion anual']` → IPC292378
+    - `['nacional', 'otros preparados alimenticios', 'variacion en lo que va de ano']` → IPC292381
+    - `['nacional', 'otros preparados alimenticios', 'variacion mensual']` → IPC292380
+    - `['nacional', 'otros preparados de carne', 'ponderacion']` → IPC233175
+    - `['nacional', 'otros preparados de carne', 'variacion anual']` → IPC252688
+    - `['nacional', 'otros preparados de carne', 'variacion en lo que va de ano']` → IPC252689
+    - `['nacional', 'otros preparados de carne', 'variacion mensual']` → IPC252687
+    - `['nacional', 'otros preparados de pescado y marisco conservados o procesados', 'ponderacion']` → IPC233169
+    - `['nacional', 'otros preparados de pescado y marisco conservados o procesados', 'variacion anual']` → IPC252712
+    - `['nacional', 'otros preparados de pescado y marisco conservados o procesados', 'variacion en lo que va de ano']` → IPC252713
+    - `['nacional', 'otros preparados de pescado y marisco conservados o procesados', 'variacion mensual']` → IPC252711
+    - `['nacional', 'patatas y sus preparados', 'ponderacion']` → IPC332342
+    - `['nacional', 'patatas y sus preparados', 'variacion anual']` → IPC292374
+    - `['nacional', 'patatas y sus preparados', 'variacion en lo que va de ano']` → IPC292377
+    - `['nacional', 'patatas y sus preparados', 'variacion mensual']` → IPC292376
+    - `['nacional', 'platos preparados', 'ponderacion']` → IPC233137
+    - `['nacional', 'platos preparados', 'variacion anual']` → IPC252840
+    - `['nacional', 'platos preparados', 'variacion en lo que va de ano']` → IPC252841
+    - `['nacional', 'platos preparados', 'variacion mensual']` → IPC252839
+    - `['nacional', 'ponderacion', 'preparados de carne y despojos']` → IPC332153
+    - `['nacional', 'ponderacion', 'preparados de legumbres y hortalizas']` → IPC332315
+    - `['nacional', 'ponderacion', 'preparados de marisco']` → IPC332158
+    - `['nacional', 'ponderacion', 'preparados de pescado']` → IPC332156
+    - `['nacional', 'ponderacion', 'subyacente: general sin alimentos no elaborados ni productos energeticos']` → IPC332376
+    - `['nacional', 'preparados de carne y despojos', 'variacion anual']` → IPC291618
+    - `['nacional', 'preparados de carne y despojos', 'variacion en lo que va de ano']` → IPC291621
+    - `['nacional', 'preparados de carne y despojos', 'variacion mensual']` → IPC291620
+    - `['nacional', 'preparados de legumbres y hortalizas', 'variacion anual']` → IPC292266
+    - `['nacional', 'preparados de legumbres y hortalizas', 'variacion en lo que va de ano']` → IPC292269
+    - `['nacional', 'preparados de legumbres y hortalizas', 'variacion mensual']` → IPC292268
+    - `['nacional', 'preparados de marisco', 'variacion anual']` → IPC291638
+    - `['nacional', 'preparados de marisco', 'variacion en lo que va de ano']` → IPC291641
+    - `['nacional', 'preparados de marisco', 'variacion mensual']` → IPC291640
+    - `['nacional', 'preparados de pescado', 'variacion anual']` → IPC291630
+    - `['nacional', 'preparados de pescado', 'variacion en lo que va de ano']` → IPC291633
+    - `['nacional', 'preparados de pescado', 'variacion mensual']` → IPC291632
+    - `['nacional', 'subyacente: general sin alimentos no elaborados ni productos energeticos', 'variacion anual']` → IPC292510
+    - `['nacional', 'subyacente: general sin alimentos no elaborados ni productos energeticos', 'variacion en lo que va de ano']` → IPC292513
+    - `['nacional', 'subyacente: general sin alimentos no elaborados ni productos energeticos', 'variacion mensual']` → IPC292512
+
+## Comunitat Valenciana
+- 3529 combinaciones
+
+### comer fuera · 64 en la base vigente de 88
+    - `['bares', 'cafeterias', 'cantinas y comedores', 'comunitat valenciana', 'indice', 'restaurantes']` → IPC81340
+    - `['bares', 'cafeterias', 'cantinas y comedores', 'comunitat valenciana', 'media anual', 'restaurantes']` → IPC107617
+    - `['bares', 'cafeterias', 'cantinas y comedores', 'comunitat valenciana', 'restaurantes', 'variacion anual']` → IPC81342
+    - `['bares', 'cafeterias', 'cantinas y comedores', 'comunitat valenciana', 'restaurantes', 'variacion de las medias anuales']` → IPC107618
+    - `['bares', 'cafeterias', 'cantinas y comedores', 'comunitat valenciana', 'restaurantes', 'variacion en lo que va de ano']` → IPC81343
+    - `['bares', 'cafeterias', 'cantinas y comedores', 'comunitat valenciana', 'restaurantes', 'variacion mensual']` → IPC81341
+    - `['bares y cafeterias', 'comunitat valenciana', 'dato base', 'restaurantes']` → IPC63568
+    - `['bares y cafeterias', 'comunitat valenciana', 'media anual', 'restaurantes']` → IPC63571
+    - `['bares y cafeterias', 'comunitat valenciana', 'restaurantes', 'tasa de variacion anual']` → IPC63570
+    - `['bares y cafeterias', 'comunitat valenciana', 'restaurantes', 'tasa de variacion de las medias anuales']` → IPC63572
+    - `['bares y cafeterias', 'comunitat valenciana', 'restaurantes', 'tasa de variacion en lo que va de ano']` → IPC63573
+    - `['bares y cafeterias', 'comunitat valenciana', 'restaurantes', 'tasa de variacion mensual']` → IPC63569
+    - `['cafes y restaurantes', 'comunitat valenciana', 'dato base', 'hoteles']` → IPC63582
+    - `['cafes y restaurantes', 'comunitat valenciana', 'grupo: hoteles', 'indice']` → IPC62869
+    - `['cafes y restaurantes', 'comunitat valenciana', 'grupo: hoteles', 'media anual']` → IPC62872
+    - `['cafes y restaurantes', 'comunitat valenciana', 'grupo: hoteles', 'tasa de variacion anual']` → IPC62871
+    - `['cafes y restaurantes', 'comunitat valenciana', 'grupo: hoteles', 'tasa de variacion de las medias anuales']` → IPC62873
+    - `['cafes y restaurantes', 'comunitat valenciana', 'grupo: hoteles', 'tasa de variacion en lo que va de ano']` → IPC62874
+    - `['cafes y restaurantes', 'comunitat valenciana', 'grupo: hoteles', 'tasa de variacion mensual']` → IPC62870
+    - `['cafes y restaurantes', 'comunitat valenciana', 'hoteles', 'indice']` → IPC79268
+    - `['cafes y restaurantes', 'comunitat valenciana', 'hoteles', 'media anual']` → IPC106581
+    - `['cafes y restaurantes', 'comunitat valenciana', 'hoteles', 'tasa de variacion anual']` → IPC63584
+    - `['cafes y restaurantes', 'comunitat valenciana', 'hoteles', 'tasa de variacion de las medias anuales']` → IPC63586
+    - `['cafes y restaurantes', 'comunitat valenciana', 'hoteles', 'tasa de variacion mensual']` → IPC63583
+    - `['cafes y restaurantes', 'comunitat valenciana', 'hoteles', 'variacion anual']` → IPC79270
+    - `['cafes y restaurantes', 'comunitat valenciana', 'hoteles', 'variacion de las medias anuales']` → IPC106582
+    - `['cafes y restaurantes', 'comunitat valenciana', 'hoteles', 'variacion en lo que va de ano']` → IPC79271
+    - `['cafes y restaurantes', 'comunitat valenciana', 'hoteles', 'variacion mensual']` → IPC79269
+    - `['cafes y restaurantes', 'comunitat valenciana', 'tasa de variacion en lo que va de ano hoteles']` → IPC63587
+    - `['comunitat valenciana', 'dato base', 'hoteles y otros alojamientos']` → IPC63575
+    - `['comunitat valenciana', 'hoteles', 'indice']` → IPC304448
+    - `['comunitat valenciana', 'hoteles', 'media anual']` → IPC324959
+    - `['comunitat valenciana', 'hoteles', 'ponderacion']` → IPC335084
+    - `['comunitat valenciana', 'hoteles', 'variacion anual']` → IPC304447
+    - `['comunitat valenciana', 'hoteles', 'variacion en lo que va de ano']` → IPC304450
+    - `['comunitat valenciana', 'hoteles', 'variacion mensual']` → IPC304449
+    - `['comunitat valenciana', 'hoteles y otros alojamientos', 'indice']` → IPC81344
+    - `['comunitat valenciana', 'hoteles y otros alojamientos', 'media anual']` → IPC63578
+    - `['comunitat valenciana', 'hoteles y otros alojamientos', 'tasa de variacion anual']` → IPC63577
+    - `['comunitat valenciana', 'hoteles y otros alojamientos', 'tasa de variacion de las medias anuales']` → IPC63579
+    - `['comunitat valenciana', 'hoteles y otros alojamientos', 'tasa de variacion en lo que va de ano']` → IPC63580
+    - `['comunitat valenciana', 'hoteles y otros alojamientos', 'tasa de variacion mensual']` → IPC63576
+    - `['comunitat valenciana', 'hoteles y otros alojamientos', 'variacion anual']` → IPC81346
+    - `['comunitat valenciana', 'hoteles y otros alojamientos', 'variacion de las medias anuales']` → IPC107620
+    - `['comunitat valenciana', 'hoteles y otros alojamientos', 'variacion en lo que va de ano']` → IPC81347
+    - `['comunitat valenciana', 'hoteles y otros alojamientos', 'variacion mensual']` → IPC81345
+    - `['comunitat valenciana', 'indice', 'restauracion y comedores']` → IPC258314
+    - `['comunitat valenciana', 'indice', 'restaurantes y hoteles']` → IPC256209
+    - `['comunitat valenciana', 'indice', 'restaurantes y servicios de alojamiento']` → IPC294208
+    - `['comunitat valenciana', 'media anual', 'restauracion y comedores']` → IPC281350
+    - `['comunitat valenciana', 'media anual', 'restaurantes y hoteles']` → IPC279846
+    - `['comunitat valenciana', 'media anual', 'restaurantes y servicios de alojamiento']` → IPC319839
+    - `['comunitat valenciana', 'ponderacion', 'restauracion y comedores']` → IPC233927
+    - `['comunitat valenciana', 'ponderacion', 'restaurantes y hoteles']` → IPC233395
+    - `['comunitat valenciana', 'ponderacion', 'restaurantes y servicios de alojamiento']` → IPC332544
+    - `['comunitat valenciana', 'restauracion y comedores', 'variacion anual']` → IPC258316
+    - `['comunitat valenciana', 'restauracion y comedores', 'variacion en lo que va de ano']` → IPC258317
+    - `['comunitat valenciana', 'restauracion y comedores', 'variacion mensual']` → IPC258315
+    - `['comunitat valenciana', 'restaurantes y hoteles', 'variacion anual']` → IPC256211
+    - `['comunitat valenciana', 'restaurantes y hoteles', 'variacion en lo que va de ano']` → IPC256212
+    - `['comunitat valenciana', 'restaurantes y hoteles', 'variacion mensual']` → IPC256210
+    - `['comunitat valenciana', 'restaurantes y servicios de alojamiento', 'variacion anual']` → IPC294207
+    - `['comunitat valenciana', 'restaurantes y servicios de alojamiento', 'variacion en lo que va de ano']` → IPC294210
+    - `['comunitat valenciana', 'restaurantes y servicios de alojamiento', 'variacion mensual']` → IPC294209
+
+### azúcar · 13 en la base vigente de 25
+    - `['azucar', 'comunitat valenciana', 'indice']` → IPC300740
+    - `['azucar', 'comunitat valenciana', 'media anual']` → IPC323105
+    - `['azucar', 'comunitat valenciana', 'ponderacion']` → IPC334167
+    - `['azucar', 'comunitat valenciana', 'variacion anual']` → IPC300739
+    - `['azucar', 'comunitat valenciana', 'variacion de las medias anuales']` → IPC109478
+    - `['azucar', 'comunitat valenciana', 'variacion en lo que va de ano']` → IPC300742
+    - `['azucar', 'comunitat valenciana', 'variacion mensual']` → IPC85061
+    - `['comunitat valenciana', 'dato base', 'rubrica azucar']` → IPC63043
+    - `['comunitat valenciana', 'media anual', 'rubrica azucar']` → IPC63046
+    - `['comunitat valenciana', 'rubrica azucar', 'tasa de variacion anual']` → IPC63045
+    - `['comunitat valenciana', 'rubrica azucar', 'tasa de variacion de las medias anuales']` → IPC63047
+    - `['comunitat valenciana', 'rubrica azucar', 'tasa de variacion en lo que va de ano']` → IPC63048
+    - `['comunitat valenciana', 'rubrica azucar', 'tasa de variacion mensual']` → IPC63044
+
+### preparados · 88 en la base vigente de 154
+    - `['agrupacion funcional: general sin alimentos no elaborados ni productos energeticos', 'nivel geografico: comunidad valenciana']` → IPC62892
+    - `['alimentos elaborados', 'comunitat valenciana', 'dato base']` → IPC63806
+    - `['alimentos elaborados', 'comunitat valenciana', 'indice']` → IPC304408
+    - `['alimentos elaborados', 'comunitat valenciana', 'media anual']` → IPC63809
+    - `['alimentos elaborados', 'comunitat valenciana', 'ponderacion']` → IPC335074
+    - `['alimentos elaborados', 'comunitat valenciana', 'tasa de variacion anual']` → IPC63808
+    - `['alimentos elaborados', 'comunitat valenciana', 'tasa de variacion de las medias anuales']` → IPC63810
+    - `['alimentos elaborados', 'comunitat valenciana', 'tasa de variacion en lo que va de ano']` → IPC63811
+    - `['alimentos elaborados', 'comunitat valenciana', 'tasa de variacion mensual']` → IPC63807
+    - `['alimentos elaborados', 'comunitat valenciana', 'variacion anual']` → IPC304407
+    - `['alimentos elaborados', 'comunitat valenciana', 'variacion de las medias anuales']` → IPC111184
+    - `['alimentos elaborados', 'comunitat valenciana', 'variacion en lo que va de ano']` → IPC88475
+    - `['alimentos elaborados', 'comunitat valenciana', 'variacion mensual']` → IPC88473
+    - `['alimentos no elaborados y productos energeticos', 'comunitat valenciana', 'indice']` → IPC304380
+    - `['alimentos no elaborados y productos energeticos', 'comunitat valenciana', 'media anual']` → IPC324925
+    - `['alimentos no elaborados y productos energeticos', 'comunitat valenciana', 'ponderacion']` → IPC335067
+    - `['alimentos no elaborados y productos energeticos', 'comunitat valenciana', 'variacion anual']` → IPC304379
+    - `['alimentos no elaborados y productos energeticos', 'comunitat valenciana', 'variacion en lo que va de ano']` → IPC304382
+    - `['alimentos no elaborados y productos energeticos', 'comunitat valenciana', 'variacion mensual']` → IPC304381
+    - `['comunitat valenciana', 'crustaceos', 'indice', 'moluscos y preparados de pescado']` → IPC85016
+    - `['comunitat valenciana', 'crustaceos', 'media anual', 'moluscos y preparados de pescado']` → IPC323153
+    - `['comunitat valenciana', 'crustaceos', 'moluscos y preparados de pescado', 'ponderacion']` → IPC334191
+    - `['comunitat valenciana', 'crustaceos', 'moluscos y preparados de pescado', 'variacion anual']` → IPC300835
+    - `['comunitat valenciana', 'crustaceos', 'moluscos y preparados de pescado', 'variacion de las medias anuales']` → IPC109456
+    - `['comunitat valenciana', 'crustaceos', 'moluscos y preparados de pescado', 'variacion en lo que va de ano']` → IPC300838
+    - `['comunitat valenciana', 'crustaceos', 'moluscos y preparados de pescado', 'variacion mensual']` → IPC85017
+    - `['comunitat valenciana', 'dato base', 'general sin alimentos no elaborados ni productos energeticos']` → IPC63729
+    - `['comunitat valenciana', 'dato base', 'moluscos y preparados de pescado', 'rubrica crustaceos']` → IPC62966
+    - `['comunitat valenciana', 'dato base', 'rubrica otros preparados alimenticios']` → IPC63050
+    - `['comunitat valenciana', 'dato base', 'rubrica patatas y sus preparados']` → IPC63029
+    - `['comunitat valenciana', 'dato base', 'rubrica preparados de legumbres y hortalizas']` → IPC63022
+    - `['comunitat valenciana', 'general sin alimentos no elaborados ni productos energeticos', 'indice']` → IPC88428
+    - `['comunitat valenciana', 'general sin alimentos no elaborados ni productos energeticos', 'media anual']` → IPC111161
+    - `['comunitat valenciana', 'general sin alimentos no elaborados ni productos energeticos', 'tasa de variacion anual']` → IPC63731
+    - `['comunitat valenciana', 'general sin alimentos no elaborados ni productos energeticos', 'tasa de variacion de las medias anuales']` → IPC63733
+    - `['comunitat valenciana', 'general sin alimentos no elaborados ni productos energeticos', 'tasa de variacion en lo que va de ano']` → IPC63734
+    - `['comunitat valenciana', 'general sin alimentos no elaborados ni productos energeticos', 'tasa de variacion mensual']` → IPC63730
+    - `['comunitat valenciana', 'general sin alimentos no elaborados ni productos energeticos', 'variacion anual']` → IPC88430
+    - `['comunitat valenciana', 'general sin alimentos no elaborados ni productos energeticos', 'variacion de las medias anuales']` → IPC111162
+    - `['comunitat valenciana', 'general sin alimentos no elaborados ni productos energeticos', 'variacion en lo que va de ano']` → IPC88431
+    - `['comunitat valenciana', 'general sin alimentos no elaborados ni productos energeticos', 'variacion mensual']` → IPC88429
+    - `['comunitat valenciana', 'indice', 'otros preparados alimenticios']` → IPC300848
+    - `['comunitat valenciana', 'indice', 'patatas y sus preparados']` → IPC85052
+    - `['comunitat valenciana', 'indice', 'preparados de legumbres y hortalizas']` → IPC300736
+    - `['comunitat valenciana', 'indice', 'subyacente: general sin alimentos no elaborados ni productos energeticos']` → IPC304392
+    - `['comunitat valenciana', 'media anual', 'moluscos y preparados de pescado', 'rubrica crustaceos']` → IPC62969
+    - `['comunitat valenciana', 'media anual', 'otros preparados alimenticios']` → IPC109479
+    - `['comunitat valenciana', 'media anual', 'patatas y sus preparados']` → IPC109473
+    - `['comunitat valenciana', 'media anual', 'preparados de legumbres y hortalizas']` → IPC323103
+    - `['comunitat valenciana', 'media anual', 'rubrica otros preparados alimenticios']` → IPC63053
+    - `['comunitat valenciana', 'media anual', 'rubrica patatas y sus preparados']` → IPC63032
+    - `['comunitat valenciana', 'media anual', 'rubrica preparados de legumbres y hortalizas']` → IPC63025
+    - `['comunitat valenciana', 'media anual', 'subyacente: general sin alimentos no elaborados ni productos energeticos']` → IPC324931
+    - `['comunitat valenciana', 'moluscos y preparados de pescado', 'rubrica crustaceos', 'tasa de variacion anual']` → IPC62968
+    - `['comunitat valenciana', 'moluscos y preparados de pescado', 'rubrica crustaceos', 'tasa de variacion de las medias anuales']` → IPC62970
+    - `['comunitat valenciana', 'moluscos y preparados de pescado', 'rubrica crustaceos', 'tasa de variacion en lo que va de ano']` → IPC62971
+    - `['comunitat valenciana', 'moluscos y preparados de pescado', 'rubrica crustaceos', 'tasa de variacion mensual']` → IPC62967
+    - `['comunitat valenciana', 'otros preparados alimenticios', 'ponderacion']` → IPC334194
+    - `['comunitat valenciana', 'otros preparados alimenticios', 'variacion anual']` → IPC85066
+    - `['comunitat valenciana', 'otros preparados alimenticios', 'variacion de las medias anuales']` → IPC109480
+    - `['comunitat valenciana', 'otros preparados alimenticios', 'variacion en lo que va de ano']` → IPC85067
+    - `['comunitat valenciana', 'otros preparados alimenticios', 'variacion mensual']` → IPC300849
+    - `['comunitat valenciana', 'patatas y sus preparados', 'ponderacion']` → IPC334193
+    - `['comunitat valenciana', 'patatas y sus preparados', 'variacion anual']` → IPC85054
+    - `['comunitat valenciana', 'patatas y sus preparados', 'variacion de las medias anuales']` → IPC109474
+    - `['comunitat valenciana', 'patatas y sus preparados', 'variacion en lo que va de ano']` → IPC85055
+    - `['comunitat valenciana', 'patatas y sus preparados', 'variacion mensual']` → IPC85053
+    - `['comunitat valenciana', 'ponderacion', 'preparados de legumbres y hortalizas']` → IPC334166
+    - `['comunitat valenciana', 'ponderacion', 'subyacente: general sin alimentos no elaborados ni productos energeticos']` → IPC335070
+    - `['comunitat valenciana', 'preparados de legumbres y hortalizas', 'variacion anual']` → IPC85050
+    - `['comunitat valenciana', 'preparados de legumbres y hortalizas', 'variacion de las medias anuales']` → IPC109472
+    - `['comunitat valenciana', 'preparados de legumbres y hortalizas', 'variacion en lo que va de ano']` → IPC85051
+    - `['comunitat valenciana', 'preparados de legumbres y hortalizas', 'variacion mensual']` → IPC300737
+    - `['comunitat valenciana', 'rubrica otros preparados alimenticios', 'tasa de variacion anual']` → IPC63052
+    - `['comunitat valenciana', 'rubrica otros preparados alimenticios', 'tasa de variacion de las medias anuales']` → IPC63054
+    - `['comunitat valenciana', 'rubrica otros preparados alimenticios', 'tasa de variacion en lo que va de ano']` → IPC63055
+    - `['comunitat valenciana', 'rubrica otros preparados alimenticios', 'tasa de variacion mensual']` → IPC63051
+    - `['comunitat valenciana', 'rubrica patatas y sus preparados', 'tasa de variacion anual']` → IPC63031
+    - `['comunitat valenciana', 'rubrica patatas y sus preparados', 'tasa de variacion de las medias anuales']` → IPC63033
+    - `['comunitat valenciana', 'rubrica patatas y sus preparados', 'tasa de variacion en lo que va de ano']` → IPC63034
+    - `['comunitat valenciana', 'rubrica patatas y sus preparados', 'tasa de variacion mensual']` → IPC63030
+    - `['comunitat valenciana', 'rubrica preparados de legumbres y hortalizas', 'tasa de variacion anual']` → IPC63024
+    - `['comunitat valenciana', 'rubrica preparados de legumbres y hortalizas', 'tasa de variacion de las medias anuales']` → IPC63026
+    - `['comunitat valenciana', 'rubrica preparados de legumbres y hortalizas', 'tasa de variacion en lo que va de ano']` → IPC63027
+    - `['comunitat valenciana', 'rubrica preparados de legumbres y hortalizas', 'tasa de variacion mensual']` → IPC63023
+    - `['comunitat valenciana', 'subyacente: general sin alimentos no elaborados ni productos energeticos', 'variacion anual']` → IPC304391
+    - `['comunitat valenciana', 'subyacente: general sin alimentos no elaborados ni productos energeticos', 'variacion en lo que va de ano']` → IPC304394
+    - `['comunitat valenciana', 'subyacente: general sin alimentos no elaborados ni productos energeticos', 'variacion mensual']` → IPC304393
+
+## Castellón
+- 1664 combinaciones
+
+### comer fuera · 58 en la base vigente de 82
+    - `['bares', 'cafeterias', 'cantinas y comedores', 'castellon', 'indice', 'restaurantes']` → IPC94152
+    - `['bares', 'cafeterias', 'cantinas y comedores', 'castellon', 'media anual', 'restaurantes']` → IPC114023
+    - `['bares', 'cafeterias', 'cantinas y comedores', 'castellon', 'restaurantes', 'variacion anual']` → IPC94154
+    - `['bares', 'cafeterias', 'cantinas y comedores', 'castellon', 'restaurantes', 'variacion de las medias anuales']` → IPC114024
+    - `['bares', 'cafeterias', 'cantinas y comedores', 'castellon', 'restaurantes', 'variacion en lo que va de ano']` → IPC94155
+    - `['bares', 'cafeterias', 'cantinas y comedores', 'castellon', 'restaurantes', 'variacion mensual']` → IPC94153
+    - `['bares y cafeterias', 'castellon', 'dato base', 'restaurantes']` → IPC15868
+    - `['bares y cafeterias', 'castellon', 'media anual', 'restaurantes']` → IPC15871
+    - `['bares y cafeterias', 'castellon', 'restaurantes', 'tasa de variacion anual']` → IPC15870
+    - `['bares y cafeterias', 'castellon', 'restaurantes', 'tasa de variacion de las medias anuales']` → IPC15872
+    - `['bares y cafeterias', 'castellon', 'restaurantes', 'tasa de variacion en lo que va de ano']` → IPC15873
+    - `['bares y cafeterias', 'castellon', 'restaurantes', 'tasa de variacion mensual']` → IPC15869
+    - `['cafes y restaurantes', 'castellon', 'dato base', 'hoteles']` → IPC15882
+    - `['cafes y restaurantes', 'castellon', 'grupo: hoteles', 'indice']` → IPC15576
+    - `['cafes y restaurantes', 'castellon', 'grupo: hoteles', 'media anual']` → IPC15579
+    - `['cafes y restaurantes', 'castellon', 'grupo: hoteles', 'tasa de variacion anual']` → IPC15578
+    - `['cafes y restaurantes', 'castellon', 'grupo: hoteles', 'tasa de variacion de las medias anuales']` → IPC15580
+    - `['cafes y restaurantes', 'castellon', 'grupo: hoteles', 'tasa de variacion en lo que va de ano']` → IPC15581
+    - `['cafes y restaurantes', 'castellon', 'grupo: hoteles', 'tasa de variacion mensual']` → IPC15577
+    - `['cafes y restaurantes', 'castellon', 'hoteles', 'indice']` → IPC90172
+    - `['cafes y restaurantes', 'castellon', 'hoteles', 'media anual']` → IPC15885
+    - `['cafes y restaurantes', 'castellon', 'hoteles', 'tasa de variacion anual']` → IPC15884
+    - `['cafes y restaurantes', 'castellon', 'hoteles', 'tasa de variacion de las medias anuales']` → IPC15886
+    - `['cafes y restaurantes', 'castellon', 'hoteles', 'tasa de variacion en lo que va de ano']` → IPC15887
+    - `['cafes y restaurantes', 'castellon', 'hoteles', 'tasa de variacion mensual']` → IPC15883
+    - `['cafes y restaurantes', 'castellon', 'hoteles', 'variacion anual']` → IPC90174
+    - `['cafes y restaurantes', 'castellon', 'hoteles', 'variacion de las medias anuales']` → IPC112034
+    - `['cafes y restaurantes', 'castellon', 'hoteles', 'variacion en lo que va de ano']` → IPC90175
+    - `['cafes y restaurantes', 'castellon', 'hoteles', 'variacion mensual']` → IPC90173
+    - `['castellon', 'dato base', 'hoteles y otros alojamientos']` → IPC15875
+    - `['castellon', 'hoteles y otros alojamientos', 'indice']` → IPC94156
+    - `['castellon', 'hoteles y otros alojamientos', 'media anual']` → IPC15878
+    - `['castellon', 'hoteles y otros alojamientos', 'tasa de variacion anual']` → IPC15877
+    - `['castellon', 'hoteles y otros alojamientos', 'tasa de variacion de las medias anuales']` → IPC15879
+    - `['castellon', 'hoteles y otros alojamientos', 'tasa de variacion en lo que va de ano']` → IPC15880
+    - `['castellon', 'hoteles y otros alojamientos', 'tasa de variacion mensual']` → IPC15876
+    - `['castellon', 'hoteles y otros alojamientos', 'variacion anual']` → IPC94158
+    - `['castellon', 'hoteles y otros alojamientos', 'variacion de las medias anuales']` → IPC114026
+    - `['castellon', 'hoteles y otros alojamientos', 'variacion en lo que va de ano']` → IPC94159
+    - `['castellon', 'hoteles y otros alojamientos', 'variacion mensual']` → IPC94157
+    - `['castellon/castello', 'indice', 'restauracion y comedores']` → IPC275963
+    - `['castellon/castello', 'indice', 'restaurantes y hoteles']` → IPC266516
+    - `['castellon/castello', 'indice', 'restaurantes y servicios de alojamiento']` → IPC306404
+    - `['castellon/castello', 'media anual', 'restauracion y comedores']` → IPC289917
+    - `['castellon/castello', 'media anual', 'restaurantes y hoteles']` → IPC285314
+    - `['castellon/castello', 'media anual', 'restaurantes y servicios de alojamiento']` → IPC325907
+    - `['castellon/castello', 'ponderacion', 'restauracion y comedores']` → IPC238305
+    - `['castellon/castello', 'ponderacion', 'restaurantes y hoteles']` → IPC236476
+    - `['castellon/castello', 'ponderacion', 'restaurantes y servicios de alojamiento']` → IPC338578
+    - `['castellon/castello', 'restauracion y comedores', 'variacion anual']` → IPC275965
+    - `['castellon/castello', 'restauracion y comedores', 'variacion en lo que va de ano']` → IPC275966
+    - `['castellon/castello', 'restauracion y comedores', 'variacion mensual']` → IPC275964
+    - `['castellon/castello', 'restaurantes y hoteles', 'variacion anual']` → IPC266520
+    - `['castellon/castello', 'restaurantes y hoteles', 'variacion en lo que va de ano']` → IPC266521
+    - `['castellon/castello', 'restaurantes y hoteles', 'variacion mensual']` → IPC266519
+    - `['castellon/castello', 'restaurantes y servicios de alojamiento', 'variacion anual']` → IPC306403
+    - `['castellon/castello', 'restaurantes y servicios de alojamiento', 'variacion en lo que va de ano']` → IPC306406
+    - `['castellon/castello', 'restaurantes y servicios de alojamiento', 'variacion mensual']` → IPC306405
+
+### azúcar · 0 en la base vigente de 0
+
+### preparados · 0 en la base vigente de 0
+
