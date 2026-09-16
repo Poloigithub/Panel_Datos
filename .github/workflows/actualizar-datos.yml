@@ -41,6 +41,9 @@ jobs:
       - name: Actualizar la población municipal
         run: python scripts/descargar_municipios.py
 
+      - name: Actualizar la renta municipal del Atlas
+        run: python scripts/descargar_renta_municipal.py
+
       # Si algo no cuadra, el run se para aquí y no se publica nada.
       - name: Validar los datos descargados
         run: python scripts/validar_datos.py

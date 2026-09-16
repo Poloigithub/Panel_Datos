@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Municipios · Panel de datos</title>
-<meta name="description" content="Mapa del paro registrado y la población de los 135 municipios de la provincia de Castellón, con ficha y evolución de cada uno.">
+<meta name="description" content="Mapa del paro registrado, la población y la renta de los municipios de la provincia de Castellón, con ficha y evolución de cada uno.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,6 +57,7 @@
             <button type="button" data-valor="variacion" aria-pressed="true">Variación en un año</button>
             <button type="button" data-valor="tasa" aria-pressed="false">Paro por 100 hab.</button>
             <button type="button" data-valor="paro" aria-pressed="false">Paro registrado</button>
+            <button type="button" data-valor="renta" aria-pressed="false">Renta por persona</button>
           </div>
         </fieldset>
 
@@ -120,10 +121,17 @@
     <section class="mt-12 tarjeta p-5">
       <h2 class="text-sm font-semibold">Fuente y método</h2>
       <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
-        Paro registrado del SEPE y padrón del INE. Los contornos municipales
-        vienen de GISCO (Eurostat), que publica las unidades administrativas
-        locales de la UE con los códigos del INE; están simplificados para que
-        el fichero pese poco.
+        Paro registrado del SEPE, padrón del INE y Atlas de Distribución de
+        Renta de los Hogares, también del INE. Los contornos municipales vienen
+        de GISCO (Eurostat), que publica las unidades administrativas locales de
+        la UE con los códigos del INE; están simplificados para que el fichero
+        pese poco.
+      </p>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        La renta no va al mismo ritmo que el paro: el Atlas es anual y se
+        publica con un par de años de retraso, así que el mapa muestra el
+        último año disponible hasta el mes elegido y lo dice en el título y en
+        la ficha. Es renta declarada, no encuestada.
       </p>
       <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
         El «paro por cada 100 habitantes» divide entre la población total, no

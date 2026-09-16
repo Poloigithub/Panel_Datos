@@ -87,10 +87,10 @@ BLOQUE = {
             "unidad_texto": "hipotecas constituidas en el mes",
             "rango": (0, 300_000),
             "operacion": "HPT",
-            "busquedas": [
-                {"base nueva", "numero de hipotecas", "viviendas"},
-                {"numero de hipotecas", "fincas urbanas: viviendas"},
-            ],
+            # «mensual» y «base nueva» van en el nombre: sin el primero se
+            # cuela el acumulado del año, y sin el segundo, la serie con la
+            # metodología anterior, que no se puede encadenar con esta.
+            "busquedas": [{"base nueva", "mensual", "numero de hipotecas", "viviendas"}],
             "por_sexo": False,
         },
         "importe_hipotecas": {
@@ -98,16 +98,13 @@ BLOQUE = {
             "unidad": "miles de euros", "decimales": 0,
             "unidad_texto": "miles de euros prestados en el mes",
             "operacion": "HPT",
-            "busquedas": [
-                {"base nueva", "importe de hipotecas", "viviendas"},
-                {"importe de hipotecas", "fincas urbanas: viviendas"},
-            ],
+            "busquedas": [{"base nueva", "importe de hipotecas", "mensual", "viviendas"}],
             "por_sexo": False,
         },
         "ejecuciones": {
             "titulo": "Ejecuciones hipotecarias sobre viviendas",
             "unidad": "ejecuciones", "decimales": 0,
-            "unidad_texto": "ejecuciones iniciadas en el trimestre",
+            "unidad_texto": "ejecuciones iniciadas en el año",
             "rango": (0, 100_000),
             "operacion": "EH",
             "busquedas": [{"fincas urbanas: viviendas"}],
@@ -189,6 +186,27 @@ def hipoteca_media(importes: dict, numeros: dict) -> tuple[dict, str] | tuple[No
     return None, "el importe medio no cae en ningún rango plausible"
 
 
+def suma_anual(valores: dict, por_anyo: int) -> dict[str, float]:
+    """Suma los subperiodos de cada año, sólo para los años completos."""
+    agrupados: dict[str, list[float]] = {}
+    for periodo, valor in valores.items():
+        agrupados.setdefault(periodo[:4], []).append(valor)
+    return {anyo: sum(v) for anyo, v in agrupados.items() if len(v) == por_anyo}
+
+
+def a_anual(valores: dict) -> dict[str, float]:
+    """Deja una serie en años, venga en trimestres o ya en años.
+
+    El INE publica las ejecuciones hipotecarias por trimestres para España y
+    las comunidades, pero por provincia sólo el total del año. Comparar un
+    trimestre de España con un año de Castellón no significa nada, así que se
+    baja todo al denominador común, que es el año.
+    """
+    if all(len(p) == 4 for p in valores):
+        return dict(valores)
+    return suma_anual({p: v for p, v in valores.items() if "T" in p}, 4)
+
+
 def media_anual(valores: dict, minimo: int = 10) -> dict[str, float]:
     """Media de los meses de cada año, sólo para los años casi completos.
 
@@ -219,6 +237,17 @@ def renta_por_hogar(ambito_id: str) -> dict[str, float]:
 def posproceso(ambito, series, origen):
     """Añade la hipoteca media y los años de renta que cuesta."""
     magnitudes = series.setdefault("ambos", {})
+
+    ejecuciones = magnitudes.get("ejecuciones")
+    if ejecuciones:
+        anuales = a_anual(ejecuciones)
+        if len(anuales) != len(ejecuciones):
+            print(f"      ejecuciones: {len(ejecuciones)} trimestres → "
+                  f"{len(anuales)} años completos")
+            magnitudes["ejecuciones"] = anuales
+            origen.setdefault("ambos", {}).setdefault("ejecuciones", []).append(
+                "sumado por años")
+
     importes = magnitudes.get("importe_hipotecas")
     numeros = magnitudes.get("hipotecas")
     if not importes or not numeros:

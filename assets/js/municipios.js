@@ -1,8 +1,9 @@
 /* Mapa y fichas de los municipios de la provincia de Castellón.
  *
- * Junta tres fuentes: los contornos de GISCO, el paro registrado del SEPE y la
- * población del INE. El indicador que más dice es el derivado de los dos
- * últimos -paro por cada cien habitantes-, porque es el único que permite
+ * Junta cuatro fuentes: los contornos de GISCO, el paro registrado del SEPE, y
+ * del INE la población y la renta del Atlas, que es la única estadística que
+ * baja de la provincia. El indicador que más dice es el derivado del paro y la
+ * población -paro por cada cien habitantes-, porque es el único que permite
  * comparar un pueblo de doscientos vecinos con la capital. */
 (function () {
   'use strict';
@@ -10,7 +11,7 @@
   var P = window.Panel;
 
   var estado = { indicador: 'variacion', periodo: null, municipio: null };
-  var geo = null, paro = null, poblacion = null;
+  var geo = null, paro = null, poblacion = null, renta = null;
 
   var INDICADORES = {
     variacion: {
@@ -37,6 +38,16 @@
       explicacion: 'Personas apuntadas en las oficinas de empleo. En valores absolutos, ' +
                    'el mapa señala sobre todo dónde vive más gente.'
     },
+    renta: {
+      titulo: 'Renta neta media por persona',
+      unidad: 'euros',
+      decimales: 0,
+      anual: true,
+      explicacion: 'Renta neta media por persona del Atlas de Distribución de Renta del ' +
+                   'INE, única fuente que baja de la provincia. Es anual y va con un ' +
+                   'par de años de retraso respecto al paro, así que se muestra el ' +
+                   'último año publicado hasta el mes elegido.'
+    },
   };
 
   /* La población es anual y el paro mensual: para un mes dado se toma el dato
@@ -58,6 +69,28 @@
       }
     });
     return mejor !== null ? mejor : ultimo;
+  }
+
+  /* La renta es anual y llega con retraso: para un mes dado se coge el último
+     año publicado que no sea posterior. Devuelve también de qué año es, porque
+     rotular con el mes elegido una cifra de hace dos años sería mentir. */
+  function rentaDe(codigo, periodo, clave) {
+    if (!renta) return null;
+    var municipio = renta.municipios[codigo];
+    if (!municipio || !municipio[clave || 'renta_persona']) return null;
+    var valores = municipio[clave || 'renta_persona'];
+    var objetivo = parseInt((periodo || '').slice(0, 4), 10);
+    var mejor = null, mejorAnyo = -Infinity;
+    renta.periodos.forEach(function (p, i) {
+      var valor = valores[i];
+      if (valor === null || valor === undefined) return;
+      var anyo = parseInt(p.slice(0, 4), 10);
+      if (anyo <= objetivo && anyo > mejorAnyo) {
+        mejor = { valor: valor, anyo: p };
+        mejorAnyo = anyo;
+      }
+    });
+    return mejor;
   }
 
   /* Mismo mes del año anterior: '2026M07' -> '2025M07'. */
@@ -100,6 +133,10 @@
 
   function valorDe(codigo, periodo) {
     if (estado.indicador === 'paro') return paroDe(codigo, periodo);
+    if (estado.indicador === 'renta') {
+      var dato = rentaDe(codigo, periodo);
+      return dato ? dato.valor : null;
+    }
     if (estado.indicador === 'tasa') {
       var parados = paroDe(codigo, periodo);
       var habitantes = poblacionDe(codigo, periodo);
@@ -112,9 +149,16 @@
     return ((ahora - antes) / antes) * 100;
   }
 
+  /* Los códigos a pintar salen de la fuente del indicador: la renta y el paro
+     no tienen por qué cubrir exactamente los mismos municipios. */
+  function codigosDelIndicador() {
+    if (estado.indicador === 'renta' && renta) return Object.keys(renta.municipios);
+    return Object.keys(paro.municipios);
+  }
+
   function valoresActuales() {
     var mapa = {};
-    Object.keys(paro.municipios).forEach(function (codigo) {
+    codigosDelIndicador().forEach(function (codigo) {
       var valor = valorDe(codigo, estado.periodo);
       if (valor !== null) mapa[codigo] = valor;
     });
@@ -123,7 +167,17 @@
 
   function nombreDe(codigo) {
     return (paro.municipios[codigo] || {}).nombre ||
-           ((poblacion && poblacion.municipios[codigo]) || {}).nombre || codigo;
+           ((poblacion && poblacion.municipios[codigo]) || {}).nombre ||
+           ((renta && renta.municipios[codigo]) || {}).nombre || codigo;
+  }
+
+  /* El periodo al que corresponde de verdad lo que se está pintando. */
+  function periodoDelIndicador() {
+    if (estado.indicador !== 'renta') return P.etiquetaPeriodo(estado.periodo);
+    var alguno = codigosDelIndicador()
+      .map(function (codigo) { return rentaDe(codigo, estado.periodo); })
+      .filter(Boolean)[0];
+    return alguno ? alguno.anyo : 'sin dato';
   }
 
   function textoDe(codigo) {
@@ -131,6 +185,10 @@
     var valor = valorDe(codigo, estado.periodo);
     if (valor === null) return 'sin dato';
     var texto = P.conUnidad(valor, meta.unidad, meta.decimales);
+    if (estado.indicador === 'renta') {
+      var dato = rentaDe(codigo, estado.periodo);
+      return texto + (dato ? ' · ' + dato.anyo : '');
+    }
     if (estado.indicador !== 'paro') {
       var parados = paroDe(codigo, estado.periodo);
       if (parados !== null) texto += ' · ' + P.formatea(parados, 0) + ' parados';
@@ -145,7 +203,7 @@
     P.dibujaMapa(document.querySelector('[data-mapa]'), geo, {
       valores: valoresActuales(),
       etiqueta: textoDe,
-      titulo: meta.titulo + ' por municipio, ' + P.etiquetaPeriodo(estado.periodo),
+      titulo: meta.titulo + ' por municipio, ' + periodoDelIndicador(),
       tipo: meta.tipo,
       rango: function (desde, hasta) {
         var f = function (v) { return P.formatea(v, meta.decimales); };
@@ -170,7 +228,7 @@
     var cuerpo = document.querySelector('[data-ranking]');
     cuerpo.replaceChildren();
 
-    var filas = Object.keys(paro.municipios).map(function (codigo) {
+    var filas = codigosDelIndicador().map(function (codigo) {
       return { codigo: codigo, nombre: nombreDe(codigo), valor: valorDe(codigo, estado.periodo) };
     }).filter(function (f) { return f.valor !== null; })
       .sort(function (a, b) { return b.valor - a.valor; });
@@ -236,12 +294,19 @@
     var mediaPrevia = mediaAnual(codigo, haceUnAnyo(estado.periodo));
     var parados = paroDe(codigo, estado.periodo);
     var habitantes = poblacionDe(codigo, estado.periodo);
+    var porPersona = rentaDe(codigo, estado.periodo, 'renta_persona');
+    var porHogar = rentaDe(codigo, estado.periodo, 'renta_hogar');
     [['Paro registrado', parados, 'personas', 0],
      ['Habitantes', habitantes, 'personas', 0],
      ['Paro por 100 hab.', parados !== null && habitantes ? (parados / habitantes) * 100 : null, '%', 1],
      ['Media de 12 meses', media, 'personas', 0],
      ['Variación en un año',
-      media !== null && mediaPrevia ? ((media - mediaPrevia) / mediaPrevia) * 100 : null, '%', 1]
+      media !== null && mediaPrevia ? ((media - mediaPrevia) / mediaPrevia) * 100 : null, '%', 1],
+     // La renta lleva el año en la etiqueta: no es del mes que se está viendo.
+     ['Renta por persona' + (porPersona ? ' (' + porPersona.anyo + ')' : ''),
+      porPersona ? porPersona.valor : null, 'euros', 0],
+     ['Renta por hogar' + (porHogar ? ' (' + porHogar.anyo + ')' : ''),
+      porHogar ? porHogar.valor : null, 'euros', 0]
     ].forEach(function (dato) {
       var item = document.createElement('div');
       var etiqueta = document.createElement('div');
@@ -320,6 +385,13 @@
         poblacion = null;
         var boton = document.querySelector('button[data-valor="tasa"]');
         if (boton) boton.disabled = true;
+      }
+      try {
+        renta = await carga('data/municipios/renta-castellon.json');
+      } catch (_) {
+        renta = null;
+        var botonRenta = document.querySelector('button[data-valor="renta"]');
+        if (botonRenta) botonRenta.disabled = true;
       }
 
       estado.periodo = paro.periodos[paro.periodos.length - 1];

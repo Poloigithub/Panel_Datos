@@ -51,6 +51,24 @@ class HipotecaMedia(unittest.TestCase):
         self.assertEqual(media["2026M07"], 0.12)  # 1.000 € entre 8.000 hipotecas
 
 
+class Anualizar(unittest.TestCase):
+    """Las ejecuciones vienen por trimestres o por años según el ámbito."""
+
+    def test_los_trimestres_se_suman_por_ano(self):
+        trimestres = {"2024T1": 10.0, "2024T2": 20.0, "2024T3": 30.0, "2024T4": 40.0}
+        self.assertEqual(vivienda.a_anual(trimestres), {"2024": 100.0})
+
+    def test_un_ano_a_medias_no_se_publica(self):
+        """Tres trimestres de 2025 no son el año, y compararlos engañaría."""
+        trimestres = {"2024T1": 10.0, "2024T2": 20.0, "2024T3": 30.0, "2024T4": 40.0,
+                      "2025T1": 5.0, "2025T2": 5.0, "2025T3": 5.0}
+        self.assertEqual(vivienda.a_anual(trimestres), {"2024": 100.0})
+
+    def test_una_serie_ya_anual_se_deja_como_esta(self):
+        anual = {"2023": 300.0, "2024": 250.0}
+        self.assertEqual(vivienda.a_anual(anual), anual)
+
+
 class MediaAnual(unittest.TestCase):
     def test_un_ano_completo(self):
         valores = {f"2025M{mes:02d}": float(mes) for mes in range(1, 13)}

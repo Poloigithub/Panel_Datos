@@ -102,8 +102,8 @@
      ejecuciones trimestrales y el precio del alquiler anual. El eje común de
      la página los reúne todos, así que cada gráfica se queda con los periodos
      en los que su indicador tiene dato y no con el calendario de los demás. */
-  function periodosDe(clave, periodos) {
-    var activos = ambitosActivos();
+  function periodosDe(clave, periodos, ambitos) {
+    var activos = ambitos || ambitosActivos();
     var series = activos.map(function (a) { return serie(a.id, clave, periodos); });
     var propios = periodos.filter(function (_, i) {
       return series.some(function (valores) { return valores[i] !== null; });
@@ -313,11 +313,15 @@
       conDatos.forEach(function (a) {
         var figura = tarjeta(a.etiqueta, meta.titulo + ', ' + unidadLegible(meta), meta.nota);
         var canvas = lienzo(figura, '220px', meta.titulo + ' en ' + a.etiqueta);
+        // Cada panel es independiente, así que puede ceñirse a su propio
+        // calendario: el INE publica algunas series con menos detalle por
+        // provincia que por comunidad.
+        var suyos = periodosDe(clave, periodos, [a]);
         var series = [{ etiqueta: a.etiqueta, color: P.color(a.variable),
-                        valores: serieRelativa(a.id, clave, propios) }];
+                        valores: serieRelativa(a.id, clave, suyos) }];
         rejilla.appendChild(figura);
-        P.dibuja(canvas, clave + '-' + a.id, propios, series, unidadDe(meta), decimalesDe(meta));
-        detallesTabla(figura, propios, series, meta);
+        P.dibuja(canvas, clave + '-' + a.id, suyos, series, unidadDe(meta), decimalesDe(meta));
+        detallesTabla(figura, suyos, series, meta);
       });
 
       contenedor.appendChild(envoltorio);
