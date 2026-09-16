@@ -68,7 +68,11 @@ def main() -> int:
             titulo = (next((t.get("_value") for t in titulos if t.get("_lang") in (None, "es")),
                            titulos[0].get("_value")) if isinstance(titulos, list) else titulos)
             lineas.append(f"  - **{titulo}**")
-            for dist in (item.get("distribution") or [])[:4]:
+            # Con una sola distribución la API devuelve un objeto, no una lista.
+            distribuciones = item.get("distribution") or []
+            if isinstance(distribuciones, dict):
+                distribuciones = [distribuciones]
+            for dist in distribuciones[:4]:
                 if isinstance(dist, dict):
                     lineas.append(f"    - {dist.get('accessURL')}")
         lineas.append("")
