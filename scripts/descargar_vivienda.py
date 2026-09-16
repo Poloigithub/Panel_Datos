@@ -15,6 +15,12 @@ frecuencia, que es justo lo que hay que contar bien:
 - **IPVA** (Índice de Precios de Vivienda en Alquiler): anual, y este sí llega
   a provincia.
 
+A lo del INE se le suman los **lanzamientos practicados** del CGPJ, que son los
+desahucios de verdad y vienen repartidos según de dónde salen: de una ejecución
+hipotecaria, de la Ley de Arrendamientos Urbanos -alquiler impagado- o de otras
+causas. Esa distinción no existe en la estadística del INE, que sólo cuenta
+ejecuciones hipotecarias.
+
 El precio del alquiler en euros por metro cuadrado del sistema estatal de
 referencia (MIVAU) se sondeó y responde 403 a cualquier descarga automática,
 así que no entra: el alquiler se sigue por el índice del INE, que es una
@@ -34,6 +40,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bloques_ine as bloques  # noqa: E402
+import cgpj_lanzamientos as cgpj  # noqa: E402
 import ine_series as motor  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parents[1]
@@ -283,6 +290,37 @@ def posproceso(ambito, series, origen):
           f"años de renta del hogar")
 
 
+LANZAMIENTOS = {
+    "lanzamientos": {
+        "titulo": "Lanzamientos practicados", "unidad": "lanzamientos", "decimales": 0,
+        "unidad_texto": "desahucios ejecutados en el trimestre",
+        "por_sexo": False,
+        "nota": "Cuenta desahucios ejecutados, no procedimientos abiertos. Son los "
+                "practicados por los juzgados de primera instancia, que son los "
+                "completos; el CGPJ advierte de que no deben sumarse con los de los "
+                "servicios comunes.",
+    },
+    "lanzamientos_hipoteca": {
+        "titulo": "Lanzamientos por ejecución hipotecaria",
+        "unidad": "lanzamientos", "decimales": 0,
+        "sobre_total": "lanzamientos", "por_sexo": False,
+    },
+    "lanzamientos_alquiler": {
+        "titulo": "Lanzamientos por impago de alquiler",
+        "unidad": "lanzamientos", "decimales": 0,
+        "sobre_total": "lanzamientos", "por_sexo": False,
+        "nota": "Derivados de procedimientos de la Ley de Arrendamientos Urbanos, "
+                "que en la práctica son alquileres impagados.",
+    },
+    "lanzamientos_otros": {
+        "titulo": "Lanzamientos por otras causas",
+        "unidad": "lanzamientos", "decimales": 0,
+        "sobre_total": "lanzamientos", "por_sexo": False,
+        "nota": "Laudos arbitrales, procesos de familia y demás: ni hipoteca ni "
+                "alquiler.",
+    },
+}
+
 DERIVADOS = {
     "hipoteca_media": {
         "titulo": "Hipoteca media sobre vivienda", "unidad": "euros", "decimales": 0,
@@ -303,13 +341,42 @@ DERIVADOS = {
 }
 
 
+def anyade_lanzamientos(por_ambito: dict, procedencias: dict) -> dict:
+    """Mete en el bloque las series del CGPJ, que no vienen del INE.
+
+    Si el fichero del CGPJ no está donde debería, el bloque se publica sin
+    ellas en vez de quedarse sin bloque: el resto de la vivienda no depende de
+    esta fuente.
+    """
+    try:
+        series, fichero = cgpj.descarga_lanzamientos()
+    except Exception as exc:  # noqa: BLE001
+        print(f"    sin lanzamientos del CGPJ: {type(exc).__name__}: {exc}")
+        return {}
+
+    publicados = {}
+    for ambito, indicadores in series.items():
+        if not indicadores:
+            continue
+        magnitudes = por_ambito.setdefault(ambito, {}).setdefault("ambos", {})
+        magnitudes.update(indicadores)
+        for clave in indicadores:
+            procedencias.setdefault(ambito, {}).setdefault("ambos", {})[clave] = [
+                f"CGPJ · {fichero}"]
+            publicados[clave] = LANZAMIENTOS[clave]
+    return publicados
+
+
 def main() -> int:
     ahora = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     CONFIG.mkdir(parents=True, exist_ok=True)
     print("\n=== Vivienda ===")
     por_ambito, procedencias, faltantes = bloques.descarga_bloque(
         "vivienda", BLOQUE, posproceso)
-    bloques.escribe_bloque("vivienda", BLOQUE, por_ambito, ahora, RAIZ, DERIVADOS)
+
+    print("  · Lanzamientos (CGPJ)")
+    fichas = dict(DERIVADOS, **anyade_lanzamientos(por_ambito, procedencias))
+    bloques.escribe_bloque("vivienda", BLOQUE, por_ambito, ahora, RAIZ, fichas)
 
     (CONFIG / "series-vivienda.json").write_text(
         json.dumps(procedencias, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

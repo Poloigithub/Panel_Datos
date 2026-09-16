@@ -91,6 +91,10 @@ RANGOS = {
     "ipva": (30, 400),
     "ipva_variacion": (-40, 40),
     "esfuerzo": (0.5, 20),
+    "lanzamientos": (0, 50_000),
+    "lanzamientos_hipoteca": (0, 50_000),
+    "lanzamientos_alquiler": (0, 50_000),
+    "lanzamientos_otros": (0, 50_000),
     # precios
     "ipc_general": (50, 200),
     "ipc_variacion": (-30, 60),
@@ -122,6 +126,13 @@ IDENTIDADES = [
     # El INE publica el importe en miles de euros, pero la media se calcula
     # eligiendo la escala que da una cifra plausible, así que aquí vale
     # cualquiera de las dos: lo que se comprueba es que sea ese cociente.
+    # Todo lanzamiento sale de una hipoteca, de un alquiler o de otra cosa:
+    # si esto no cuadra, se ha leído mal alguna hoja del fichero del CGPJ.
+    ("lanzamientos = hipoteca + alquiler + otros",
+     ("lanzamientos", "lanzamientos_hipoteca", "lanzamientos_alquiler",
+      "lanzamientos_otros"),
+     lambda t, h, a, o: abs(t - (h + a + o)),
+     0.5),
     ("hipoteca media = importe / número",
      ("hipoteca_media", "importe_hipotecas", "hipotecas"),
      lambda m, i, n: min(abs(m - i * 1000 / n), abs(m - i / n)) if n else 0.0,
