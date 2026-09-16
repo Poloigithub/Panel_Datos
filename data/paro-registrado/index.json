@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T09:41:53+00:00",
+  "actualizado": "2026-09-16T09:48:00+00:00",
   "titulo": "Paro registrado",
   "fuente": {
     "organismo": "Servicio Público de Empleo Estatal (SEPE)",
@@ -86,6 +86,10 @@
       "fichero": "castellon.json"
     }
   ],
+  "municipios": {
+    "fichero": "municipios-castellon.json",
+    "cuantos": 135
+  },
   "ultimo_periodo": "2026M07",
   "primer_periodo": "2006M01"
 }
