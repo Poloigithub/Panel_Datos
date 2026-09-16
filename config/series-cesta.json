@@ -1,0 +1,98 @@
+{
+  "espana": {
+    "ambos": {
+      "alimentos": [
+        "IPC290755"
+      ],
+      "aceite_oliva": [
+        "IPC292563"
+      ],
+      "leche": [
+        "IPC292247"
+      ],
+      "huevos": [
+        "IPC291439"
+      ],
+      "pan": [
+        "IPC292219"
+      ],
+      "cereales": [
+        "IPC292215"
+      ],
+      "carne_vacuno": [
+        "IPC292223"
+      ],
+      "carne_ave": [
+        "IPC292235"
+      ],
+      "carne_porcino": [
+        "IPC292231"
+      ],
+      "pescado": [
+        "IPC292363"
+      ],
+      "frutas": [
+        "IPC252762"
+      ],
+      "hortalizas": [
+        "IPC292263"
+      ],
+      "patatas": [
+        "IPC292375"
+      ],
+      "cafe": [
+        "IPC292275"
+      ]
+    }
+  },
+  "comunitat-valenciana": {
+    "ambos": {
+      "alimentos": [
+        "IPC294168"
+      ],
+      "aceite_oliva": [
+        "IPC304444"
+      ],
+      "leche": [
+        "IPC300716"
+      ],
+      "huevos": [
+        "IPC300712"
+      ],
+      "pan": [
+        "IPC300688"
+      ],
+      "cereales": [
+        "IPC300684"
+      ],
+      "carne_vacuno": [
+        "IPC300692"
+      ],
+      "carne_ave": [
+        "IPC300704"
+      ],
+      "carne_porcino": [
+        "IPC300700"
+      ],
+      "pescado": [
+        "IPC300832"
+      ],
+      "hortalizas": [
+        "IPC300732"
+      ],
+      "patatas": [
+        "IPC300844"
+      ],
+      "cafe": [
+        "IPC300744"
+      ]
+    }
+  },
+  "castellon": {
+    "ambos": {
+      "alimentos": [
+        "IPC306364"
+      ]
+    }
+  }
+}
