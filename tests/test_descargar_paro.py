@@ -132,3 +132,33 @@ class Celdas(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+class Geometrias(unittest.TestCase):
+    """Simplificación de los contornos municipales para el mapa."""
+
+    def setUp(self):
+        sys.setrecursionlimit(10000)
+        import descargar_geometrias
+        self.geo = descargar_geometrias
+
+    def test_el_ruido_sobre_una_recta_desaparece(self):
+        recta = [(0, 0), (1, 0.0001), (2, -0.0002), (3, 0)]
+        self.assertEqual(self.geo.simplifica(recta, 0.01), [(0, 0), (3, 0)])
+
+    def test_un_vertice_real_se_conserva(self):
+        esquina = [(0, 0), (1, 0.0001), (2, 0), (2, 2)]
+        resultado = self.geo.simplifica(esquina, 0.01)
+        self.assertIn((2, 2), resultado)
+        self.assertNotIn((1, 0.0001), resultado)
+
+    def test_los_anillos_quedan_cerrados(self):
+        anillo = {"type": "Polygon", "coordinates": [[[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]]]}
+        resultado = self.geo.simplifica_geometria(anillo, 0.5)["coordinates"][0]
+        self.assertEqual(resultado[0], resultado[-1])
+        self.assertGreaterEqual(len(resultado), 4)
+
+    def test_codigos_de_municipio(self):
+        self.assertEqual(self.geo.codigo_municipio({"LAU_ID": "12040"}), "12040")
+        self.assertEqual(self.geo.codigo_municipio({"GISCO_ID": "ES_12135"}), "12135")
+        self.assertIsNone(self.geo.codigo_municipio({"LAU_ID": "ABC"}))
