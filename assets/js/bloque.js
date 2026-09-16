@@ -68,6 +68,29 @@
     });
   }
 
+  /* Los desgloses se publican en personas, pero comparar 20.000 parados en
+     servicios de Castellón con 1,6 millones en España no dice nada: lo que se
+     compara es el peso de cada uno sobre su total. El dato guardado sigue
+     siendo el absoluto; esto es sólo cómo se presenta. */
+  function serieRelativa(ambitoId, clave, periodos) {
+    var meta = indice.indicadores[clave];
+    var valores = serie(ambitoId, clave, periodos);
+    if (!meta.sobre_total) return valores;
+    var totales = serie(ambitoId, meta.sobre_total, periodos);
+    return valores.map(function (v, i) {
+      if (v === null || !totales[i]) return null;
+      return (v / totales[i]) * 100;
+    });
+  }
+
+  function unidadDe(meta) {
+    return meta.sobre_total ? '%' : meta.unidad;
+  }
+
+  function decimalesDe(meta) {
+    return meta.sobre_total ? 1 : meta.decimales;
+  }
+
   function ultimoConDato(valores, periodos) {
     for (var i = valores.length - 1; i >= 0; i--) {
       if (valores[i] !== null) return { valor: valores[i], periodo: periodos[i], indice: i };
@@ -80,7 +103,7 @@
      pequeña queda aplastada contra el eje y hay que separar los paneles. */
   function escalasComparables(clave, periodos) {
     var maximos = ambitosActivos().map(function (a) {
-      var valores = serie(a.id, clave, periodos).filter(function (v) { return v !== null; });
+      var valores = serieRelativa(a.id, clave, periodos).filter(function (v) { return v !== null; });
       return valores.length ? Math.max.apply(null, valores.map(Math.abs)) : 0;
     }).filter(function (v) { return v > 0; });
     if (maximos.length < 2) return true;
@@ -142,7 +165,12 @@
           var cuando = document.createElement('div');
           cuando.style.cssText = 'font-size:.75rem;margin-top:.1rem;';
           cuando.style.color = P.color('--tinta-tenue');
-          cuando.textContent = P.etiquetaPeriodo(ultimo.periodo);
+          var peso = '';
+          if (meta.sobre_total) {
+            var relativo = ultimoConDato(serieRelativa(a.id, clave, periodos), periodos);
+            if (relativo) peso = P.formatea(relativo.valor, 1) + ' % · ';
+          }
+          cuando.textContent = peso + P.etiquetaPeriodo(ultimo.periodo);
           td.appendChild(cuando);
         }
         fila.appendChild(td);
@@ -197,13 +225,17 @@
     caja.className = 'mt-2 max-h-72 overflow-auto';
     detalles.appendChild(caja);
     figura.appendChild(detalles);
-    P.pintaTabla(caja, periodos, series, meta.titulo, meta.unidad, meta.decimales);
+    P.pintaTabla(caja, periodos, series, meta.titulo, unidadDe(meta), decimalesDe(meta));
   }
 
   /* Cada indicador puede traer su propia leyenda de unidad: «por mil» no
      significa lo mismo en un saldo migratorio que en los nacidos por cada mil
      defunciones. */
   function unidadLegible(meta) {
+    if (meta.sobre_total) {
+      var total = indice.indicadores[meta.sobre_total];
+      return 'porcentaje sobre el ' + (total ? total.titulo.toLowerCase() : 'total');
+    }
     if (meta.unidad_texto) return meta.unidad_texto;
     if (meta.unidad === '%') return 'porcentaje';
     if (meta.unidad === 'por mil') return 'por cada mil habitantes';
@@ -229,13 +261,14 @@
         var figura = tarjeta(meta.titulo, unidadLegible(meta));
         var canvas = lienzo(figura, '280px', 'Evolución de ' + meta.titulo + ' por ámbito territorial');
         var series = conDatos.map(function (a) {
-          return { etiqueta: a.etiqueta, color: P.color(a.variable), valores: serie(a.id, clave, periodos) };
+          return { etiqueta: a.etiqueta, color: P.color(a.variable),
+                   valores: serieRelativa(a.id, clave, periodos) };
         });
         var leyenda = document.createElement('div');
         leyenda.className = 'mt-3 flex flex-wrap gap-x-4 gap-y-1.5 text-xs';
         figura.appendChild(leyenda);
         contenedor.appendChild(figura);
-        P.dibuja(canvas, clave, periodos, series, meta.unidad, meta.decimales);
+        P.dibuja(canvas, clave, periodos, series, unidadDe(meta), decimalesDe(meta));
         if (series.length > 1) P.pintaLeyenda(leyenda, series);
         detallesTabla(figura, periodos, series, meta);
         return;
@@ -256,9 +289,10 @@
       conDatos.forEach(function (a) {
         var figura = tarjeta(a.etiqueta, meta.titulo + ', ' + unidadLegible(meta));
         var canvas = lienzo(figura, '220px', meta.titulo + ' en ' + a.etiqueta);
-        var series = [{ etiqueta: a.etiqueta, color: P.color(a.variable), valores: serie(a.id, clave, periodos) }];
+        var series = [{ etiqueta: a.etiqueta, color: P.color(a.variable),
+                        valores: serieRelativa(a.id, clave, periodos) }];
         rejilla.appendChild(figura);
-        P.dibuja(canvas, clave + '-' + a.id, periodos, series, meta.unidad, meta.decimales);
+        P.dibuja(canvas, clave + '-' + a.id, periodos, series, unidadDe(meta), decimalesDe(meta));
         detallesTabla(figura, periodos, series, meta);
       });
 

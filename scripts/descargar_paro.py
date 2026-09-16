@@ -70,21 +70,21 @@ INDICADORES = {
     "paro_total": {"titulo": "Paro registrado", "unidad": "personas", "decimales": 0,
                    "por_sexo": True},
     "paro_menores_25": {"titulo": "Menores de 25 años", "unidad": "personas",
-                        "decimales": 0, "por_sexo": True},
+                        "decimales": 0, "por_sexo": True, "sobre_total": "paro_total"},
     "paro_25_44": {"titulo": "De 25 a 44 años", "unidad": "personas",
-                   "decimales": 0, "por_sexo": True},
+                   "decimales": 0, "por_sexo": True, "sobre_total": "paro_total"},
     "paro_45_mas": {"titulo": "De 45 años o más", "unidad": "personas",
-                    "decimales": 0, "por_sexo": True},
+                    "decimales": 0, "por_sexo": True, "sobre_total": "paro_total"},
     "paro_agricultura": {"titulo": "Agricultura", "unidad": "personas",
-                         "decimales": 0, "por_sexo": False},
+                         "decimales": 0, "por_sexo": False, "sobre_total": "paro_total"},
     "paro_industria": {"titulo": "Industria", "unidad": "personas",
-                       "decimales": 0, "por_sexo": False},
+                       "decimales": 0, "por_sexo": False, "sobre_total": "paro_total"},
     "paro_construccion": {"titulo": "Construcción", "unidad": "personas",
-                          "decimales": 0, "por_sexo": False},
+                          "decimales": 0, "por_sexo": False, "sobre_total": "paro_total"},
     "paro_servicios": {"titulo": "Servicios", "unidad": "personas",
-                       "decimales": 0, "por_sexo": False},
+                       "decimales": 0, "por_sexo": False, "sobre_total": "paro_total"},
     "paro_sin_empleo_anterior": {"titulo": "Sin empleo anterior", "unidad": "personas",
-                                 "decimales": 0, "por_sexo": False},
+                                 "decimales": 0, "por_sexo": False, "sobre_total": "paro_total"},
 }
 
 
@@ -210,6 +210,51 @@ def compone_totales(acumulado: dict) -> None:
             acumulado[(ambito, sexo, "paro_total", periodo)] = total
 
 
+def escribe_municipios(municipios: dict, ahora: str) -> int:
+    """Paro registrado de cada municipio de Castellón, mes a mes.
+
+    Se publica aparte de los ámbitos porque tiene otra forma -una serie por
+    municipio- y porque es la base del mapa provincial.
+    """
+    fichero = DESTINO / "municipios-castellon.json"
+    previo: dict = {}
+    if fichero.exists():
+        anterior = json.loads(fichero.read_text(encoding="utf-8"))
+        periodos_previos = anterior.get("periodos", [])
+        for codigo, municipio in anterior.get("municipios", {}).items():
+            for i, valor_previo in enumerate(municipio.get("paro_total", [])):
+                if valor_previo is not None and i < len(periodos_previos):
+                    previo[(codigo, municipio.get("nombre", ""), periodos_previos[i])] = valor_previo
+
+    previo.update(municipios)
+    if not previo:
+        return 0
+
+    periodos = sorted({clave[2] for clave in previo}, key=lambda p: (int(p[:4]), int(p[5:])))
+    nombres: dict[str, str] = {}
+    valores: dict[str, dict[str, int]] = defaultdict(dict)
+    for (codigo, nombre, periodo), numero in previo.items():
+        if nombre:
+            nombres[codigo] = nombre
+        valores[codigo][periodo] = numero
+
+    contenido = {
+        "ambito": {"id": "municipios-castellon", "nombre": "Municipios de Castellón",
+                   "tipo": "Municipios"},
+        "actualizado": ahora,
+        "periodos": periodos,
+        "municipios": {
+            codigo: {
+                "nombre": nombres.get(codigo, codigo),
+                "paro_total": [valores[codigo].get(p) for p in periodos],
+            }
+            for codigo in sorted(valores)
+        },
+    }
+    fichero.write_text(json.dumps(contenido, ensure_ascii=False), encoding="utf-8")
+    return len(valores)
+
+
 def carga_previo(fichero: Path) -> dict:
     if not fichero.exists():
         return {}
@@ -302,6 +347,11 @@ def main() -> int:
         indice["ambitos"].append({"id": ambito_id, "nombre": ambito["nombre"],
                                   "fichero": f"{ambito_id}.json"})
         print(f"  escrito data/paro-registrado/{ambito_id}.json ({len(periodos)} meses)")
+
+    cuantos = escribe_municipios(municipios, ahora)
+    if cuantos:
+        indice["municipios"] = {"fichero": "municipios-castellon.json", "cuantos": cuantos}
+        print(f"  escrito data/paro-registrado/municipios-castellon.json ({cuantos} municipios)")
 
     todos = sorted(periodos_nuevos, key=lambda p: (int(p[:4]), int(p[5:])))
     indice["ultimo_periodo"] = todos[-1]

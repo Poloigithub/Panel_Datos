@@ -58,6 +58,16 @@ RANGOS = {
     "renta_persona_real": (1_000, 200_000),
     "renta_hogar_real": (1_000, 400_000),
     "renta_uc_real": (1_000, 300_000),
+    # paro registrado (personas)
+    "paro_total": (0, 10_000_000),
+    "paro_menores_25": (0, 5_000_000),
+    "paro_25_44": (0, 5_000_000),
+    "paro_45_mas": (0, 5_000_000),
+    "paro_agricultura": (0, 5_000_000),
+    "paro_industria": (0, 5_000_000),
+    "paro_construccion": (0, 5_000_000),
+    "paro_servicios": (0, 5_000_000),
+    "paro_sin_empleo_anterior": (0, 5_000_000),
     # precios
     "ipc_general": (50, 200),
     "ipc_variacion": (-30, 60),
@@ -184,6 +194,51 @@ def revisa_continuidad(bloque: str, ambito: str, contenido: dict, informe: Infor
                     )
 
 
+DESGLOSES = {
+    "por edad": ("paro_menores_25", "paro_25_44", "paro_45_mas"),
+    "por sector": ("paro_agricultura", "paro_industria", "paro_construccion",
+                   "paro_servicios", "paro_sin_empleo_anterior"),
+}
+
+
+def revisa_desgloses(bloque: str, ambito: str, contenido: dict, informe: Informe) -> None:
+    """Los desgloses del paro registrado no suman el total, y es correcto.
+
+    El SEPE publica como «<5» los valores menores de cinco, que no se pueden
+    sumar, así que cada desglose se queda algo por debajo. Lo que sí sería
+    sospechoso es que la diferencia fuese grande.
+    """
+    periodos = contenido["periodos"]
+    for sexo, magnitudes in contenido.get("series", {}).items():
+        total = magnitudes.get("paro_total")
+        if not total:
+            continue
+        for nombre, claves in DESGLOSES.items():
+            if not all(c in magnitudes for c in claves):
+                continue
+            peor, cuando = 0.0, None
+            for i in range(len(periodos)):
+                if total[i] in (None, 0):
+                    continue
+                partes = [magnitudes[c][i] for c in claves]
+                if any(v is None for v in partes):
+                    continue
+                desvio = (total[i] - sum(partes)) / total[i]
+                if desvio > peor:
+                    peor, cuando = desvio, periodos[i]
+            if peor > 0.05:
+                informe.error(
+                    f"{bloque}/{ambito}/{sexo}: el desglose {nombre} se queda un "
+                    f"{peor:.1%} por debajo del total en {cuando}; el secreto "
+                    f"estadístico no explica tanto"
+                )
+            elif peor > 0.02:
+                informe.aviso(
+                    f"{bloque}/{ambito}/{sexo}: el desglose {nombre} se queda un "
+                    f"{peor:.1%} por debajo del total en {cuando} (valores ocultos)"
+                )
+
+
 def cobertura_actual(bloque: str, ambito: str, contenido: dict) -> dict[str, int]:
     """Cuántos periodos con dato tiene cada serie."""
     resultado = {}
@@ -236,6 +291,7 @@ def main() -> int:
             revisa_rangos(bloque.name, ambito_id, contenido, informe)
             revisa_identidades(bloque.name, ambito_id, contenido, informe)
             revisa_continuidad(bloque.name, ambito_id, contenido, informe)
+            revisa_desgloses(bloque.name, ambito_id, contenido, informe)
             cobertura.update(cobertura_actual(bloque.name, ambito_id, contenido))
         series = sum(1 for k in cobertura if k.startswith(bloque.name + "/"))
         print(f"  {len(contenidos)} ámbitos · {series} series")

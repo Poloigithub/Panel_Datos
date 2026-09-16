@@ -16,49 +16,57 @@
       "titulo": "Menores de 25 años",
       "unidad": "personas",
       "decimales": 0,
-      "por_sexo": true
+      "por_sexo": true,
+      "sobre_total": "paro_total"
     },
     "paro_25_44": {
       "titulo": "De 25 a 44 años",
       "unidad": "personas",
       "decimales": 0,
-      "por_sexo": true
+      "por_sexo": true,
+      "sobre_total": "paro_total"
     },
     "paro_45_mas": {
       "titulo": "De 45 años o más",
       "unidad": "personas",
       "decimales": 0,
-      "por_sexo": true
+      "por_sexo": true,
+      "sobre_total": "paro_total"
     },
     "paro_agricultura": {
       "titulo": "Agricultura",
       "unidad": "personas",
       "decimales": 0,
-      "por_sexo": false
+      "por_sexo": false,
+      "sobre_total": "paro_total"
     },
     "paro_industria": {
       "titulo": "Industria",
       "unidad": "personas",
       "decimales": 0,
-      "por_sexo": false
+      "por_sexo": false,
+      "sobre_total": "paro_total"
     },
     "paro_construccion": {
       "titulo": "Construcción",
       "unidad": "personas",
       "decimales": 0,
-      "por_sexo": false
+      "por_sexo": false,
+      "sobre_total": "paro_total"
     },
     "paro_servicios": {
       "titulo": "Servicios",
       "unidad": "personas",
       "decimales": 0,
-      "por_sexo": false
+      "por_sexo": false,
+      "sobre_total": "paro_total"
     },
     "paro_sin_empleo_anterior": {
       "titulo": "Sin empleo anterior",
       "unidad": "personas",
       "decimales": 0,
-      "por_sexo": false
+      "por_sexo": false,
+      "sobre_total": "paro_total"
     }
   },
   "ambitos": [
