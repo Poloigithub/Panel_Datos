@@ -182,9 +182,49 @@ def fusiona(candidatas: list[dict], etiqueta: str, tope: int = 12,
     return fusionada, usados
 
 
+# El INE corta la lista de metadatos en diez mil series. Con operaciones
+# grandes -la encuesta de estructura salarial devuelve justo diez mil para
+# España- eso deja fuera series que sí existen, y el descargador concluye que no
+# están. Cuando se llega al tope se repite la petición quitando de en medio los
+# coeficientes de variación, que son error muestral y no datos.
+TOPE_METADATOS = 10000
+_filtros_dato_base: dict[str, str | None] = {}
+
+
+def filtro_dato_base(operacion: str) -> str | None:
+    """El filtro «tipo de dato = dato base» de una operación, si lo tiene."""
+    if operacion in _filtros_dato_base:
+        return _filtros_dato_base[operacion]
+    filtro = None
+    try:
+        variables = ine_api.get("VARIABLES_OPERACION", operacion)
+        variable = next((v for v in variables
+                         if normaliza(v.get("Nombre", "")) == "tipo de dato"), None)
+        if variable:
+            valores = ine_api.get("VALORES_VARIABLEOPERACION",
+                                  f"{variable['Id']}/{operacion}")
+            valor = next((v for v in valores
+                          if normaliza(v.get("Nombre", "")) == "dato base"), None)
+            if valor:
+                filtro = f"{variable['Id']}:{valor['Id']}"
+    except ine_api.INEError as exc:
+        print(f"      ! no se ha podido acotar {operacion}: {exc}")
+    _filtros_dato_base[operacion] = filtro
+    return filtro
+
+
 def indexa_por_segmentos(operacion: str, filtro: str) -> dict[frozenset, list[dict]]:
     """Todas las series de una operación para un ámbito, por sus segmentos."""
     series = ine_api.get("SERIE_METADATAOPERACION", operacion, g1=filtro)
+    if len(series) >= TOPE_METADATOS:
+        acotado = filtro_dato_base(operacion)
+        if acotado:
+            recorte = ine_api.get("SERIE_METADATAOPERACION", operacion,
+                                  g1=filtro, g2=acotado)
+            print(f"      {operacion}: {len(series)} series es el tope del INE; "
+                  f"acotando a datos base quedan {len(recorte)}")
+            if recorte:
+                series = recorte
     indice: dict[frozenset, list[dict]] = {}
     for serie in series:
         indice.setdefault(frozenset(segmentos(serie.get("Nombre", ""))), []).append(serie)

@@ -107,8 +107,6 @@ RANGOS = {
     "brecha_salarial": (-50, 80),
     "desigualdad_salarial": (1, 20),
     "gini_salarial": (0, 100),
-    "coste_salarial": (500, 6_000),
-    "coste_salarial_real": (500, 10_000),
     # precios
     "ipc_general": (50, 200),
     "ipc_variacion": (-30, 60),

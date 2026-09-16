@@ -9,6 +9,10 @@ El sondeo previo (`sondeos/salarios.md`) dejó claro lo que hay y lo que no:
 - La Agencia Tributaria sí lo publica, pero en páginas HTML cuyos nombres de
   fichero son hashes que cambian cada año. No hay forma de atarse a eso sin
   atarse a que no lo toquen, así que queda fuera.
+- El coste laboral de la ETCL también queda fuera, pero por otro motivo: su
+  serie del total de la economía se llama por las secciones de la CNAE que
+  incluye -«secciones B a S excepto O»- partidas en trozos por las comas, y
+  atarse a esa cadena es atarse a que no la reescriban.
 - El **Atlas de renta** sí baja a provincia, y reparte la renta de cada
   territorio según de dónde viene: salario, pensiones, prestaciones por
   desempleo, otras prestaciones y otros ingresos. No es el salario medio, pero
@@ -38,6 +42,10 @@ CONFIG = RAIZ / "config"
 SOLO_COMUNIDAD = ("castellon",)
 AVISO_COMUNIDAD = ("El INE no publica esta encuesta por provincia: sólo por "
                    "comunidad autónoma y para el conjunto de España.")
+# Y hay resúmenes de la encuesta salarial que sólo existen para el país entero.
+SOLO_ESPANA = ("castellon", "comunitat-valenciana")
+AVISO_ESPANA = ("El INE sólo publica este resumen para el conjunto de España: "
+                "ni por comunidad autónoma ni por provincia.")
 
 BLOQUE = {
     "titulo": "Salarios y rentas del trabajo",
@@ -95,7 +103,7 @@ BLOQUE = {
             "unidad_texto": "cuánto menos cobra una mujer por cada 100 € de un hombre",
             "rango": (-50, 80), "operacion": "EAES",
             "busquedas": [{"brecha salarial entre mujeres y hombres"}],
-            "sin_ambitos": SOLO_COMUNIDAD, "nota": AVISO_COMUNIDAD,
+            "sin_ambitos": SOLO_ESPANA, "nota": AVISO_ESPANA,
             "por_sexo": False,
         },
         "desigualdad_salarial": {
@@ -108,7 +116,7 @@ BLOQUE = {
                 {"d9/d1 (9a decila dividida por la 1a decila de la ganancia por hora)"},
                 {"d9/d1"},
             ],
-            "sin_ambitos": SOLO_COMUNIDAD, "nota": AVISO_COMUNIDAD,
+            "sin_ambitos": SOLO_ESPANA, "nota": AVISO_ESPANA,
             "por_sexo": False,
         },
         "gini_salarial": {
@@ -117,20 +125,7 @@ BLOQUE = {
             "unidad_texto": "a mayor valor, salarios más desiguales",
             "rango": (0, 100), "operacion": "EAES",
             "busquedas": [{"indice de gini"}],
-            "sin_ambitos": SOLO_COMUNIDAD, "nota": AVISO_COMUNIDAD,
-            "por_sexo": False,
-        },
-        "coste_salarial": {
-            "titulo": "Coste salarial por trabajador y mes", "unidad": "euros",
-            "decimales": 2,
-            "unidad_texto": "euros al mes que le cuesta al empleador el salario",
-            "rango": (500, 6_000), "operacion": "ETCL",
-            "busquedas": [
-                {"coste salarial total", "costes laborales", "euros"},
-                {"coste salarial total", "euros"},
-                {"coste salarial total"},
-            ],
-            "sin_ambitos": SOLO_COMUNIDAD, "nota": AVISO_COMUNIDAD,
+            "sin_ambitos": SOLO_ESPANA, "nota": AVISO_ESPANA,
             "por_sexo": False,
         },
     },
@@ -138,7 +133,7 @@ BLOQUE = {
 
 # El salario en euros constantes, que es la pregunta de verdad: si sube un 3 %
 # con una inflación del 4 %, se cobra menos que antes.
-DEFLACTABLES = ("salario_bruto", "coste_salarial")
+DEFLACTABLES = ("salario_bruto",)
 
 
 def posproceso(ambito, series, origen):
