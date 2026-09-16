@@ -1,72 +1,65 @@
 {
   "actualizado": "2026-09-16T10:00:17+00:00",
-  "titulo": "Paro registrado",
+  "titulo": "Contratos registrados",
   "fuente": {
     "organismo": "Servicio Público de Empleo Estatal (SEPE)",
-    "url": "https://sede.sepe.gob.es/es/portaltrabaja/resources/sede/datos_abiertos/datos/Paro_por_municipios_2026_csv.csv"
+    "url": "https://sede.sepe.gob.es/es/portaltrabaja/resources/sede/datos_abiertos/datos/Contratos_por_municipios_2026_csv.csv"
   },
   "indicadores": {
-    "paro_total": {
-      "titulo": "Paro registrado",
-      "unidad": "personas",
+    "contratos_total": {
+      "titulo": "Contratos registrados",
+      "unidad": "contratos",
       "decimales": 0,
       "por_sexo": true
     },
-    "paro_menores_25": {
-      "titulo": "Menores de 25 años",
-      "unidad": "personas",
+    "contratos_indefinidos": {
+      "titulo": "Indefinidos iniciales",
+      "unidad": "contratos",
       "decimales": 0,
       "por_sexo": true,
-      "sobre_total": "paro_total"
+      "sobre_total": "contratos_total"
     },
-    "paro_25_44": {
-      "titulo": "De 25 a 44 años",
-      "unidad": "personas",
+    "contratos_temporales": {
+      "titulo": "Temporales",
+      "unidad": "contratos",
       "decimales": 0,
       "por_sexo": true,
-      "sobre_total": "paro_total"
+      "sobre_total": "contratos_total"
     },
-    "paro_45_mas": {
-      "titulo": "De 45 años o más",
-      "unidad": "personas",
+    "contratos_convertidos": {
+      "titulo": "Convertidos en indefinidos",
+      "unidad": "contratos",
       "decimales": 0,
       "por_sexo": true,
-      "sobre_total": "paro_total"
+      "sobre_total": "contratos_total"
     },
-    "paro_agricultura": {
+    "contratos_agricultura": {
       "titulo": "Agricultura",
-      "unidad": "personas",
+      "unidad": "contratos",
       "decimales": 0,
       "por_sexo": false,
-      "sobre_total": "paro_total"
+      "sobre_total": "contratos_total"
     },
-    "paro_industria": {
+    "contratos_industria": {
       "titulo": "Industria",
-      "unidad": "personas",
+      "unidad": "contratos",
       "decimales": 0,
       "por_sexo": false,
-      "sobre_total": "paro_total"
+      "sobre_total": "contratos_total"
     },
-    "paro_construccion": {
+    "contratos_construccion": {
       "titulo": "Construcción",
-      "unidad": "personas",
+      "unidad": "contratos",
       "decimales": 0,
       "por_sexo": false,
-      "sobre_total": "paro_total"
+      "sobre_total": "contratos_total"
     },
-    "paro_servicios": {
+    "contratos_servicios": {
       "titulo": "Servicios",
-      "unidad": "personas",
+      "unidad": "contratos",
       "decimales": 0,
       "por_sexo": false,
-      "sobre_total": "paro_total"
-    },
-    "paro_sin_empleo_anterior": {
-      "titulo": "Sin empleo anterior",
-      "unidad": "personas",
-      "decimales": 0,
-      "por_sexo": false,
-      "sobre_total": "paro_total"
+      "sobre_total": "contratos_total"
     }
   },
   "ambitos": [
