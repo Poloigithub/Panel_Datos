@@ -30,6 +30,10 @@ jobs:
       - name: Descargar los bloques sociodemográficos
         run: python scripts/descargar_sociodemografia.py
 
+      # Si algo no cuadra, el run se para aquí y no se publica nada.
+      - name: Validar los datos descargados
+        run: python scripts/validar_datos.py
+
       - name: Commitear si hay datos nuevos
         run: |
           git config user.name "github-actions[bot]"

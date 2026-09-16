@@ -38,6 +38,23 @@ Los datos ya están descargados y versionados, así que el panel funciona desde
 el primer despliegue. Para forzar una actualización, lanza *Actualizar datos
 del INE*.
 
+## Comprobaciones
+
+```bash
+python3 -m unittest discover -s tests   # pruebas del motor de series
+python3 scripts/validar_datos.py        # validación de los datos publicados
+```
+
+Las dos se ejecutan en cada push, y la validación también después de cada
+descarga: si algo no cuadra, no se publica nada. Comprueba las identidades
+contables (activos = ocupados + parados y compañía), que cada valor caiga en
+un rango plausible y que **ninguna serie pierda periodos** respecto a la
+descarga anterior, que es lo que delata que el INE ha renombrado una serie y
+el descargador ha dejado de encontrarla.
+
+`data/cobertura.json` guarda cuántos periodos tiene cada serie y es la
+referencia de esa última comprobación, así que se versiona con el resto.
+
 ## Desarrollo en local
 
 ```bash
@@ -67,6 +84,11 @@ python3 scripts/descargar_epa.py
 | `config/series-epa.json` | Procedencia de cada serie: de qué códigos del INE sale |
 | `scripts/descargar_epa.py` | Descargador de la EPA |
 | `scripts/ine_api.py` | Cliente mínimo de la API del INE |
+| `scripts/ine_series.py` | Motor de resolución y fusión de series |
+| `scripts/descargar_sociodemografia.py` | Descargador de población, demografía y renta |
+| `scripts/validar_datos.py` | Validación de los datos antes de publicarlos |
+| `tests/` | Pruebas del motor de series |
+| `docs/hoja-de-ruta.md` | Plan de ampliación del panel |
 | `data/epa/` | Series descargadas, en JSON |
 
 ## Fuente de los datos

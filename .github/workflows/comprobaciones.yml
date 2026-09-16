@@ -1,0 +1,51 @@
+name: Comprobaciones
+
+# Se ejecutan en cada push y en cada pull request: son rápidas y no tocan la
+# red, así que no hay motivo para no pasarlas siempre.
+on:
+  push:
+  pull_request:
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Pruebas del motor de series
+        run: python -m unittest discover -s tests -v
+
+      - name: Validar los datos publicados
+        run: python scripts/validar_datos.py
+
+      - name: Comprobar que la validación no ha cambiado la cobertura
+        run: |
+          if ! git diff --quiet -- data/cobertura.json; then
+            echo "::error::data/cobertura.json no está al día; ejecuta scripts/validar_datos.py y commitea el resultado."
+            git diff -- data/cobertura.json
+            exit 1
+          fi
+
+  estilos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Comprobar que el CSS commiteado está al día
+        run: |
+          npm run build:css
+          if ! git diff --quiet -- assets/css/app.css; then
+            echo "::error::assets/css/app.css no coincide con el compilado; ejecuta npm run build:css y commitea."
+            exit 1
+          fi
