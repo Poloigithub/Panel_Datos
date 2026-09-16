@@ -1,0 +1,36 @@
+name: Sondear una fuente
+
+# El entorno de desarrollo no tiene salida hacia el INE ni hacia el SEPE, así
+# que los sondeos previos a escribir un descargador se ejecutan aquí y dejan su
+# volcado commiteado en `sondeos/`, que es la forma de poder leerlo después.
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: 'Script de sondeo dentro de scripts/'
+        required: true
+        default: 'sondear_vivienda.py'
+
+permissions:
+  contents: write
+
+jobs:
+  sondear:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Sondear
+        run: python scripts/${{ inputs.script }}
+
+      - name: Commitear el volcado
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f sondeos/
+          git diff --staged --quiet || git commit -m "Volcado de ${{ inputs.script }} [skip ci]"
+          git push
