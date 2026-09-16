@@ -260,6 +260,10 @@
     "vivienda/castellon/ambos/importe_hipotecas": 282,
     "vivienda/castellon/ambos/ipva": 14,
     "vivienda/castellon/ambos/ipva_variacion": 13,
+    "vivienda/castellon/ambos/lanzamientos": 53,
+    "vivienda/castellon/ambos/lanzamientos_alquiler": 53,
+    "vivienda/castellon/ambos/lanzamientos_hipoteca": 53,
+    "vivienda/castellon/ambos/lanzamientos_otros": 53,
     "vivienda/comunitat-valenciana/ambos/compraventas": 234,
     "vivienda/comunitat-valenciana/ambos/compraventas_nueva": 234,
     "vivienda/comunitat-valenciana/ambos/compraventas_protegida": 234,
@@ -273,6 +277,10 @@
     "vivienda/comunitat-valenciana/ambos/ipv_variacion": 78,
     "vivienda/comunitat-valenciana/ambos/ipva": 14,
     "vivienda/comunitat-valenciana/ambos/ipva_variacion": 13,
+    "vivienda/comunitat-valenciana/ambos/lanzamientos": 53,
+    "vivienda/comunitat-valenciana/ambos/lanzamientos_alquiler": 53,
+    "vivienda/comunitat-valenciana/ambos/lanzamientos_hipoteca": 53,
+    "vivienda/comunitat-valenciana/ambos/lanzamientos_otros": 53,
     "vivienda/espana/ambos/compraventas": 234,
     "vivienda/espana/ambos/compraventas_nueva": 234,
     "vivienda/espana/ambos/compraventas_protegida": 234,
@@ -285,6 +293,10 @@
     "vivienda/espana/ambos/ipv": 78,
     "vivienda/espana/ambos/ipv_variacion": 78,
     "vivienda/espana/ambos/ipva": 14,
-    "vivienda/espana/ambos/ipva_variacion": 13
+    "vivienda/espana/ambos/ipva_variacion": 13,
+    "vivienda/espana/ambos/lanzamientos": 53,
+    "vivienda/espana/ambos/lanzamientos_alquiler": 53,
+    "vivienda/espana/ambos/lanzamientos_hipoteca": 53,
+    "vivienda/espana/ambos/lanzamientos_otros": 53
   }
 }

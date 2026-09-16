@@ -126,13 +126,17 @@ IDENTIDADES = [
     # El INE publica el importe en miles de euros, pero la media se calcula
     # eligiendo la escala que da una cifra plausible, así que aquí vale
     # cualquiera de las dos: lo que se comprueba es que sea ese cociente.
-    # Todo lanzamiento sale de una hipoteca, de un alquiler o de otra cosa:
-    # si esto no cuadra, se ha leído mal alguna hoja del fichero del CGPJ.
+    # Todo lanzamiento sale de una hipoteca, de un alquiler o de otra cosa: si
+    # esto no cuadra, se ha leído mal alguna hoja del fichero del CGPJ. La
+    # holgura es de un lanzamiento porque el propio CGPJ tiene un descuadre de
+    # uno en el total nacional del 4T de 2022 -publica 8.981 donde sus columnas
+    # suman 8.982-, y no es cosa de la lectura: los otros 52 trimestres y los
+    # tres ámbitos cuadran exactos.
     ("lanzamientos = hipoteca + alquiler + otros",
      ("lanzamientos", "lanzamientos_hipoteca", "lanzamientos_alquiler",
       "lanzamientos_otros"),
      lambda t, h, a, o: abs(t - (h + a + o)),
-     0.5),
+     1.5),
     ("hipoteca media = importe / número",
      ("hipoteca_media", "importe_hipotecas", "hipotecas"),
      lambda m, i, n: min(abs(m - i * 1000 / n), abs(m - i / n)) if n else 0.0,

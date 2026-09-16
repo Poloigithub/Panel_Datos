@@ -302,16 +302,27 @@
       var envoltorio = document.createElement('div');
       envoltorio.className = 'sm:col-span-2';
       var titulo = document.createElement('h3');
-      titulo.className = 'text-sm font-semibold uppercase tracking-widest mb-3';
+      titulo.className = 'text-sm font-semibold uppercase tracking-widest';
       titulo.style.color = P.color('--tinta-tenue');
       titulo.textContent = meta.titulo + ' · ' + unidadLegible(meta);
       envoltorio.appendChild(titulo);
+      // Una sola vez para todo el grupo: repetir la misma aclaración en cada
+      // uno de los tres paneles es ruido.
+      if (meta.nota) {
+        var comun = document.createElement('p');
+        comun.className = 'mt-1 mb-3 max-w-3xl text-xs leading-relaxed';
+        comun.style.color = P.color('--tinta-suave');
+        comun.textContent = meta.nota;
+        envoltorio.appendChild(comun);
+      } else {
+        titulo.className += ' mb-3';
+      }
       var rejilla = document.createElement('div');
       rejilla.className = 'grid gap-5 lg:grid-cols-' + Math.min(3, conDatos.length);
       envoltorio.appendChild(rejilla);
 
       conDatos.forEach(function (a) {
-        var figura = tarjeta(a.etiqueta, meta.titulo + ', ' + unidadLegible(meta), meta.nota);
+        var figura = tarjeta(a.etiqueta, meta.titulo + ', ' + unidadLegible(meta));
         var canvas = lienzo(figura, '220px', meta.titulo + ' en ' + a.etiqueta);
         // Cada panel es independiente, así que puede ceñirse a su propio
         // calendario: el INE publica algunas series con menos detalle por
