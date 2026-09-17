@@ -1,0 +1,61 @@
+{
+  "actualizado": "2026-09-17T10:43:20+00:00",
+  "titulo": "El precio de la luz",
+  "ultimo_periodo": "2026M08",
+  "primer_periodo": "2021M06",
+  "indicadores": {
+    "pvpc_medio": {
+      "titulo": "Precio medio de la luz",
+      "unidad": "c€/kWh",
+      "unidad_texto": "céntimos de euro por kilovatio hora, media del mes",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "El PVPC es el mismo en toda la península, así que esta serie no tiene desglose territorial: repetir la misma cifra para la Comunitat y para Castellón sería fingir un detalle que no existe.",
+      "sobre_total": null
+    },
+    "pvpc_barata": {
+      "titulo": "La hora más barata del día",
+      "unidad": "c€/kWh",
+      "unidad_texto": "media de la hora más barata de cada día del mes",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
+    },
+    "pvpc_cara": {
+      "titulo": "La hora más cara del día",
+      "unidad": "c€/kWh",
+      "unidad_texto": "media de la hora más cara de cada día del mes",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
+    },
+    "pvpc_brecha": {
+      "titulo": "Diferencia entre la hora cara y la barata",
+      "unidad": "c€/kWh",
+      "unidad_texto": "cuánto se ahorra al día quien puede elegir la hora",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "Es lo que separa a quien puede mover el consumo -poner la lavadora de madrugada- de quien no. Cuanto más alta, más premia el sistema tener esa flexibilidad.",
+      "sobre_total": null
+    }
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ]
+}
