@@ -1,0 +1,21 @@
+Carburantes
+    semilla: 172 días, 2026-03-30 … 2026-09-17
+    172 días de España vienen de la semilla
+  pidiendo todas las gasolineras de España
+      intento 1: URLError: <urlopen error [Errno 104] Connection reset by peer>
+      intento 2: URLError: <urlopen error [Errno 104] Connection reset by peer>
+      intento 3: URLError: <urlopen error [Errno 104] Connection reset by peer>
+      intento 4: URLError: <urlopen error [Errno 104] Connection reset by peer>
+      intento 5: URLError: <urlopen error [Errno 104] Connection reset by peer>
+Traceback (most recent call last):
+  File "/home/runner/work/Panel_Datos/Panel_Datos/scripts/descargar_carburantes.py", line 516, in <module>
+    main()
+  File "/home/runner/work/Panel_Datos/Panel_Datos/scripts/descargar_carburantes.py", line 467, in main
+    dia, medias, cuantas = medias_de_hoy()
+                           ^^^^^^^^^^^^^^^
+  File "/home/runner/work/Panel_Datos/Panel_Datos/scripts/descargar_carburantes.py", line 185, in medias_de_hoy
+    cuerpo = json.loads(pide(API).decode("utf-8-sig", "replace"))
+                        ^^^^^^^^^
+  File "/home/runner/work/Panel_Datos/Panel_Datos/scripts/descargar_carburantes.py", line 166, in pide
+    raise RuntimeError(f"no se pudo bajar {url[:80]}: {ultimo}")
+RuntimeError: no se pudo bajar https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburan: URLError: <urlopen error [Errno 104] Connection reset by peer>
