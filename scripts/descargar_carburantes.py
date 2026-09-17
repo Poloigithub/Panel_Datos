@@ -64,6 +64,16 @@ HOY = DESTINO / "hoy.json"
 
 API = ("https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/"
        "PreciosCarburantes/EstacionesTerrestres/")
+API_PROVINCIA = API + "FiltroProvincia/{id}"
+API_PROVINCIAS = ("https://sedeaplicaciones.minetur.gob.es/"
+                  "ServiciosRESTCarburantes/PreciosCarburantes/Listados/"
+                  "Provincias/")
+
+# Cuántas provincias tienen que contestar para que la media nacional valga.
+# No hacen falta las cincuenta y dos: la media de las estaciones de cuarenta y
+# cinco provincias sigue siendo una media nacional razonable, y perder el día
+# entero porque una falle sería peor. Menos de eso, no se publica.
+PROVINCIAS_MINIMAS = 45
 
 # La media nacional que ya estaba calculada, con esta misma fuente y este mismo
 # método, antes de que el panel tuviera sección de carburantes.
@@ -179,21 +189,92 @@ def precio(crudo) -> float | None:
     return valor if 0.1 <= valor <= 10 else None
 
 
+def _lista(cuerpo: dict) -> list[dict]:
+    return cuerpo.get("ListaEESSPrecio") or []
+
+
+def _todas_de_una(intentos: int) -> tuple[list[dict], str] | None:
+    """Plan A: las once mil gasolineras en una sola petición.
+
+    Son 12 MB y el servidor corta la conexión a menudo con esa carga. Cuando
+    sale, sale en veinte segundos; cuando no, es mejor no insistir mucho y
+    pasar al plan B que insistir diez veces en lo mismo.
+    """
+    try:
+        cuerpo = json.loads(pide(API, intentos=intentos).decode("utf-8-sig",
+                                                                "replace"))
+    except RuntimeError as exc:
+        print(f"    de una vez, no: {exc}")
+        return None
+    estaciones = _lista(cuerpo)
+    if not estaciones:
+        return None
+    print(f"    de una vez: {len(estaciones):,} gasolineras")
+    return estaciones, str(cuerpo.get("Fecha") or "")
+
+
+def _provincia_a_provincia() -> tuple[list[dict], str] | None:
+    """Plan B: una petición por provincia.
+
+    Cada una son 200 KB y contestan sin queja donde la grande se ahoga. Son
+    cincuenta y dos viajes en vez de uno, pero es la diferencia entre tener el
+    dato del día y no tenerlo.
+    """
+    try:
+        provincias = json.loads(
+            pide(API_PROVINCIAS, intentos=4, limite=400_000)
+            .decode("utf-8-sig", "replace"))
+    except RuntimeError as exc:
+        print(f"    tampoco se puede listar las provincias: {exc}")
+        return None
+
+    codigos = sorted({str(p.get("IDPovincia") or p.get("IDProvincia") or "").strip()
+                      for p in provincias} - {""})
+    print(f"    provincia a provincia: {len(codigos)} provincias que pedir")
+
+    estaciones: list[dict] = []
+    fecha, fallidas = "", []
+    for codigo in codigos:
+        try:
+            cuerpo = json.loads(
+                pide(API_PROVINCIA.format(id=codigo), intentos=3,
+                     limite=8_000_000).decode("utf-8-sig", "replace"))
+        except RuntimeError:
+            fallidas.append(codigo)
+            continue
+        estaciones.extend(_lista(cuerpo))
+        fecha = fecha or str(cuerpo.get("Fecha") or "")
+
+    conseguidas = len(codigos) - len(fallidas)
+    print(f"    {conseguidas} de {len(codigos)} provincias, "
+          f"{len(estaciones):,} gasolineras"
+          + (f"; fallaron {fallidas}" if fallidas else ""))
+
+    if CASTELLON in fallidas:
+        raise RuntimeError("no ha contestado Castellón, que es media sección")
+    if conseguidas < PROVINCIAS_MINIMAS:
+        raise RuntimeError(
+            f"sólo {conseguidas} provincias de {len(codigos)}: con eso la media "
+            f"nacional no es nacional")
+    return estaciones, fecha
+
+
 def medias_de_hoy() -> tuple[str, dict[str, dict[str, float]], dict[str, dict[str, int]]]:
     """Media por ámbito y carburante, y cuántas estaciones la sostienen."""
-    print("  pidiendo todas las gasolineras de España")
-    cuerpo = json.loads(pide(API).decode("utf-8-sig", "replace"))
-    estaciones = cuerpo.get("ListaEESSPrecio") or []
-    if not estaciones:
-        raise RuntimeError("la API ha contestado sin una sola gasolinera")
+    print("  pidiendo las gasolineras")
+    conseguido = _todas_de_una(intentos=2) or _provincia_a_provincia()
+    if not conseguido:
+        raise RuntimeError("el ministerio no ha contestado por ninguna de las "
+                           "dos vías")
+    estaciones, crudo_fecha = conseguido
 
     # La API declara la fecha con hora: «17/09/2026 17:06:18».
-    crudo = str(cuerpo.get("Fecha") or "")
     try:
-        dia = dt.datetime.strptime(crudo.split()[0], "%d/%m/%Y").date().isoformat()
+        dia = dt.datetime.strptime(crudo_fecha.split()[0],
+                                   "%d/%m/%Y").date().isoformat()
     except (ValueError, IndexError):
         dia = dt.date.today().isoformat()
-    print(f"  {len(estaciones):,} gasolineras, fecha declarada {crudo!r}")
+    print(f"  {len(estaciones):,} gasolineras, fecha declarada {crudo_fecha!r}")
 
     suma: dict[str, dict[str, list[float]]] = {
         ambito["id"]: {clave: [] for clave, *_ in CARBURANTES}
@@ -464,30 +545,41 @@ def main() -> None:
     if nuevos_semilla:
         print(f"    {nuevos_semilla} días de España vienen de la semilla")
 
-    dia, medias, cuantas = medias_de_hoy()
-    for ambito, valores in medias.items():
-        if valores:
-            # Lo que mide el panel manda sobre la semilla.
-            diario.setdefault(ambito, {})[dia] = valores
-    for ambito in bloques.AMBITOS:
-        detalle = ", ".join(
-            f"{clave}={medias[ambito['id']].get(clave, '—')}"
-            f" ({cuantas[ambito['id']].get(clave, 0)})"
-            for clave, *_ in CARBURANTES)
-        print(f"    {ambito['id']}: {detalle}")
+    # Las dos fuentes son independientes y se tratan como tales: que el
+    # ministerio esté caído no puede llevarse por delante el histórico europeo
+    # ni lo que ya se había recogido. Un día perdido es un hueco, y los huecos
+    # el panel los enseña.
+    try:
+        dia, medias, cuantas = medias_de_hoy()
+    except RuntimeError as exc:
+        print(f"  el ministerio no ha contestado hoy: {exc}")
+        print("  se sigue con lo ya recogido y con el boletín europeo")
+    else:
+        for ambito, valores in medias.items():
+            if valores:
+                # Lo que mide el panel manda sobre la semilla.
+                diario.setdefault(ambito, {})[dia] = valores
+        for ambito in bloques.AMBITOS:
+            detalle = ", ".join(
+                f"{clave}={medias[ambito['id']].get(clave, '—')}"
+                f" ({cuantas[ambito['id']].get(clave, 0)})"
+                for clave, *_ in CARBURANTES)
+            print(f"    {ambito['id']}: {detalle}")
+
+        # El detalle del último día, para el panel de arriba de la página.
+        HOY.write_text(json.dumps({
+            "fecha": dia,
+            "actualizado": ahora,
+            "ambitos": {a: medias.get(a, {})
+                        for a in (x["id"] for x in bloques.AMBITOS)},
+            "estaciones": {a: cuantas.get(a, {})
+                           for a in (x["id"] for x in bloques.AMBITOS)},
+        }, ensure_ascii=False), encoding="utf-8")
 
     DIARIO.write_text(json.dumps(diario, ensure_ascii=False, sort_keys=True),
                       encoding="utf-8")
     despues = sum(len(v) for v in diario.values())
     print(f"  diario.json: {antes} → {despues} días-ámbito")
-
-    # El detalle del último día, para el panel de arriba de la página.
-    HOY.write_text(json.dumps({
-        "fecha": dia,
-        "actualizado": ahora,
-        "ambitos": {a: medias.get(a, {}) for a in (x["id"] for x in bloques.AMBITOS)},
-        "estaciones": {a: cuantas.get(a, {}) for a in (x["id"] for x in bloques.AMBITOS)},
-    }, ensure_ascii=False), encoding="utf-8")
 
     por_ambito = {}
     for ambito in bloques.AMBITOS:
@@ -499,7 +591,11 @@ def main() -> None:
     # El histórico europeo, que es sólo España y va junto a lo anterior sin
     # mezclarse: son indicadores distintos porque miden de otra manera.
     print("  boletín petrolero de la Comisión Europea")
-    del_boletin = lee_boletin()
+    try:
+        del_boletin = lee_boletin()
+    except (RuntimeError, ValueError, KeyError) as exc:
+        print(f"    no se ha podido leer: {exc}")
+        del_boletin = {}
     if del_boletin:
         por_ambito.setdefault("espana", {}).setdefault("ambos", {}).update(del_boletin)
 
