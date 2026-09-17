@@ -21,8 +21,11 @@ participantes y jornadas, que es lo que de verdad mide el conflicto.
 from __future__ import annotations
 
 import datetime as dt
+import html
 import json
+import re
 import sys
+import urllib.parse
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
@@ -32,9 +35,15 @@ import red_ministerio as red  # noqa: E402
 import xls  # noqa: E402
 
 BASE = "https://www.mites.gob.es/estadisticas/hue"
+PORTADA = ("https://www.mites.gob.es/es/estadisticas/"
+           "condiciones_trabajo_relac_laborales/HUE/welcome.htm")
 MESES = ("ene", "feb", "mar", "abr", "may", "jun", "jul", "ago",
          "sep", "oct", "nov", "dic")
 FICHERO = "{base}/hue{aa}{mes}publicacion/hue_{mm:02d}_{aa}.xls"
+
+# El nombre del fichero lleva el mes y el año en dos cifras.
+NOMBRE = re.compile(r"hue_(\d{2})_(\d{2})\.xls", re.I)
+ENLACE = re.compile(r'href="([^"#]+\.xls)"', re.I)
 
 # Más margen que en las otras estadísticas, y por un motivo medido: las
 # huelgas salen con unos cuatro meses de retraso, así que rendirse a los
@@ -188,6 +197,40 @@ def lee_mes(datos: bytes) -> dict[str, dict[str, float]]:
     return salida
 
 
+def direcciones_publicadas() -> dict[str, str]:
+    """Las direcciones que la propia página del ministerio enlaza.
+
+    Construir la dirección a partir del mes funciona casi siempre y falla justo
+    en diciembre: su carpeta existe pero el fichero no se llama como los demás,
+    así que la serie perdía un mes cada año sin decir nada. Leer los enlaces de
+    la página es dejar de adivinar.
+    """
+    estado, tipo, datos = red.abre(PORTADA, limite=4_000_000)
+    if estado != 200 or "html" not in tipo.lower():
+        print("  no se ha podido leer la página del ministerio; "
+              "se tirará de direcciones construidas")
+        return {}
+    for codigo in ("utf-8", "iso-8859-15", "cp1252"):
+        try:
+            pagina = datos.decode(codigo)
+            break
+        except UnicodeDecodeError:
+            continue
+    else:
+        pagina = datos.decode("utf-8", "replace")
+
+    publicadas: dict[str, str] = {}
+    for bruto in ENLACE.findall(pagina):
+        destino = urllib.parse.urljoin(PORTADA, html.unescape(bruto))
+        coincide = NOMBRE.search(destino)
+        if not coincide:
+            continue
+        mes, anyo = int(coincide.group(1)), 2000 + int(coincide.group(2))
+        publicadas[f"{anyo}M{mes:02d}"] = destino
+    print(f"  la página enlaza {len(publicadas)} ficheros")
+    return publicadas
+
+
 def ya_bajados() -> dict[str, dict[str, dict[str, float]]]:
     """Lo que ya está en el repositorio, para no volver a pedirlo.
 
@@ -221,6 +264,7 @@ def main() -> int:
 
     guardado = ya_bajados()
     print(f"  {len(guardado)} meses ya guardados")
+    publicadas = direcciones_publicadas()
 
     anyo, mes = hoy.year, hoy.month
     fallos, pedidos = 0, 0
@@ -230,8 +274,8 @@ def main() -> int:
         if periodo in guardado and not reciente:
             fallos = 0
         else:
-            url = FICHERO.format(base=BASE, aa=f"{anyo % 100:02d}",
-                                 mes=MESES[mes - 1], mm=mes)
+            url = publicadas.get(periodo) or FICHERO.format(
+                base=BASE, aa=f"{anyo % 100:02d}", mes=MESES[mes - 1], mm=mes)
             estado, _, datos = red.abre(url)
             pedidos += 1
             if estado != 200 or datos[:8] != xls.FIRMA:
