@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-17T10:57:57+00:00",
+  "actualizado": "2026-09-17T11:00:29+00:00",
   "titulo": "Afiliación a la Seguridad Social",
-  "ultimo_periodo": "2025",
+  "ultimo_periodo": "2026M07",
   "primer_periodo": "2015",
   "indicadores": {
     "afiliados": {
@@ -11,6 +11,15 @@
       "decimales": 0,
       "por_sexo": false,
       "nota": "Media anual, no la foto de un día concreto: es lo que se puede comparar con una serie anual. La serie empieza en 2015 porque antes el anuario está en el formato binario antiguo de Excel, que el panel no lee.",
+      "sobre_total": null
+    },
+    "autonomos_mes": {
+      "titulo": "Personas por cuenta propia, mes a mes",
+      "unidad": "personas",
+      "unidad_texto": "personas trabajadoras por cuenta propia afiliadas",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": "De la estadística mensual del ministerio, que llega con dos meses de retraso. Cuenta un universo más amplio que la serie anual de aquí abajo -3,5 millones frente a 2,0-, así que son dos series distintas y no se pueden enlazar: ésta incluye colectivos que aquélla dejaba fuera.",
       "sobre_total": null
     },
     "autonomos": {

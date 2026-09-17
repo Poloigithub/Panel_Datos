@@ -52,10 +52,43 @@
   autónomos mes a mes: 0 meses ya guardados
     2026M09: sin fichero (200, 34531 bytes)
     2026M08: sin fichero (200, 34531 bytes)
-    2026M07: el fichero está pero no se encuentra la hoja provincial
-    2026M06: el fichero está pero no se encuentra la hoja provincial
-  autónomos mes a mes: 4 peticiones, 0 meses en total
+    2026M07: Castellón 44571.0
+    2026M06: Castellón 44499.0
+    2026M05: Castellón 44239.0
+    2026M04: Castellón 44059.0
+    2026M03: Castellón 43879.0
+    2026M02: Castellón 43539.0
+    2026M01: Castellón 43310.0
+    2025M12: Castellón 43378.0
+    2025M11: Castellón 43503.0
+    2025M10: Castellón 43485.0
+    2025M09: Castellón 43434.0
+    2025M08: Castellón 43335.0
+    2025M07: Castellón 43463.0
+    2025M06: Castellón 43479.0
+    2025M05: Castellón 43297.0
+    2025M04: Castellón 43184.0
+    2025M03: Castellón 42844.0
+    2025M02: Castellón 42698.0
+    2025M01: Castellón 42497.0
+    2024M12: Castellón 42539.0
+    2024M11: Castellón 42641.0
+    2024M10: Castellón 42636.0
+    2024M09: Castellón 42658.0
+    2024M08: Castellón 42622.0
+    2024M07: Castellón 42762.0
+    2024M06: Castellón 42771.0
+    2024M05: Castellón 42580.0
+    2024M04: Castellón 42388.0
+    2024M03: Castellón 42318.0
+    2024M02: Castellón 41876.0
+    2024M01: Castellón 41681.0
+    2023M12: sin fichero (200, 34531 bytes)
+    2023M11: sin fichero (200, 34531 bytes)
+    2023M10: sin fichero (200, 34531 bytes)
+    2023M09: sin fichero (200, 34531 bytes)
+  autónomos mes a mes: 37 peticiones, 31 meses en total
     escrito data/afiliacion/espana.json
     escrito data/afiliacion/comunitat-valenciana.json
     escrito data/afiliacion/castellon.json
-  10 periodos: 2015 … 2025
+  41 periodos: 2015 … 2026M07
