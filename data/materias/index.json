@@ -1,0 +1,160 @@
+{
+  "actualizado": "2026-09-17T14:50:19+00:00",
+  "titulo": "Materias primas",
+  "ultimo_periodo": "2026M08",
+  "primer_periodo": "1960M01",
+  "indicadores": {
+    "brent": {
+      "titulo": "Petróleo Brent",
+      "unidad": "$/barril",
+      "unidad_texto": "dólares por barril",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "sobre_total": null
+    },
+    "gas_europa": {
+      "titulo": "Gas natural en Europa",
+      "unidad": "$/mmbtu",
+      "unidad_texto": "dólares por millón de BTU",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "El precio de referencia del gas en Europa, que es lo que acaba marcando el precio de la luz en las horas en que la fija un ciclo combinado.",
+      "sobre_total": null
+    },
+    "carbon": {
+      "titulo": "Carbón",
+      "unidad": "$/t",
+      "unidad_texto": "dólares por tonelada",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "sobre_total": null
+    },
+    "trigo": {
+      "titulo": "Trigo",
+      "unidad": "$/t",
+      "unidad_texto": "dólares por tonelada",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "sobre_total": null
+    },
+    "maiz": {
+      "titulo": "Maíz",
+      "unidad": "$/t",
+      "unidad_texto": "dólares por tonelada",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "sobre_total": null
+    },
+    "aceite_girasol": {
+      "titulo": "Aceite de girasol",
+      "unidad": "$/t",
+      "unidad_texto": "dólares por tonelada",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "Ucrania y Rusia producían más de la mitad del aceite de girasol del mundo. Lo que pasó en 2022 se ve aquí antes que en el supermercado.",
+      "sobre_total": null
+    },
+    "azucar": {
+      "titulo": "Azúcar",
+      "unidad": "$/kg",
+      "unidad_texto": "dólares por kilo",
+      "decimales": 3,
+      "por_sexo": false,
+      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "sobre_total": null
+    },
+    "cafe": {
+      "titulo": "Café",
+      "unidad": "$/kg",
+      "unidad_texto": "dólares por kilo",
+      "decimales": 3,
+      "por_sexo": false,
+      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "sobre_total": null
+    },
+    "cacao": {
+      "titulo": "Cacao",
+      "unidad": "$/kg",
+      "unidad_texto": "dólares por kilo",
+      "decimales": 3,
+      "por_sexo": false,
+      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "sobre_total": null
+    },
+    "naranja": {
+      "titulo": "Naranja",
+      "unidad": "$/kg",
+      "unidad_texto": "dólares por kilo",
+      "decimales": 3,
+      "por_sexo": false,
+      "nota": "Está aquí por Castellón: el precio internacional de la naranja es el que marca lo que cobra quien la cultiva.",
+      "sobre_total": null
+    },
+    "urea": {
+      "titulo": "Urea",
+      "unidad": "$/t",
+      "unidad_texto": "dólares por tonelada",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "El abono nitrogenado más usado. Se fabrica con gas natural, así que su precio sigue al del gas: cuando se disparó en 2022, se disparó lo que costaba abonar un campo.",
+      "sobre_total": null
+    },
+    "cobre": {
+      "titulo": "Cobre",
+      "unidad": "$/t",
+      "unidad_texto": "dólares por tonelada",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "sobre_total": null
+    },
+    "aluminio": {
+      "titulo": "Aluminio",
+      "unidad": "$/t",
+      "unidad_texto": "dólares por tonelada",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "sobre_total": null
+    },
+    "oro": {
+      "titulo": "Oro",
+      "unidad": "$/onza",
+      "unidad_texto": "dólares por onza troy",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "sobre_total": null
+    },
+    "euro_dolar": {
+      "titulo": "Dólares por euro",
+      "unidad": "$/€",
+      "unidad_texto": "tipo de cambio oficial de referencia, media del mes",
+      "decimales": 4,
+      "por_sexo": false,
+      "nota": "Está aquí para que la conversión a euros del resto de la página se pueda rehacer a mano. Fuente: Banco Central Europeo.",
+      "sobre_total": null
+    }
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ]
+}

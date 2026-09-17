@@ -1,0 +1,23 @@
+Materias primas
+  el Banco Mundial publica hoy: https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx
+  586735 bytes
+    brent: 800 meses, 1960M01 … 2026M08
+    gas_europa: 800 meses, 1960M01 … 2026M08
+    carbon: 680 meses, 1970M01 … 2026M08
+    trigo: 800 meses, 1960M01 … 2026M08
+    maiz: 800 meses, 1960M01 … 2026M08
+    aceite_girasol: 290 meses, 2002M02 … 2026M08
+    azucar: 800 meses, 1960M01 … 2026M08
+    cafe: 800 meses, 1960M01 … 2026M08
+    cacao: 800 meses, 1960M01 … 2026M08
+    naranja: 800 meses, 1960M01 … 2026M08
+    urea: 800 meses, 1960M01 … 2026M08
+    cobre: 800 meses, 1960M01 … 2026M08
+    aluminio: 800 meses, 1960M01 … 2026M08
+    oro: 800 meses, 1960M01 … 2026M08
+  tipo de cambio del BCE
+    euro_dolar: 332 meses, 1999M01 … 2026M08
+    escrito data/materias/espana.json
+    escrito data/materias/comunitat-valenciana.json
+    escrito data/materias/castellon.json
+  800 periodos: 1960M01 … 2026M08
