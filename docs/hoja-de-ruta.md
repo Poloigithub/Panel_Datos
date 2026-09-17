@@ -423,6 +423,53 @@ cuántos píxeles había pintado el lienzo.
 
 ---
 
+## Fase 8 · Accidentes de trabajo ✅ hecha
+
+**De dónde sale.** El panel sabía cuánta gente trabaja y cuánto cobra, pero no
+en qué condiciones. Faltaba lo que le cuesta a la gente ir a trabajar.
+
+**Por qué ésta y no otra.** Se barajaron cinco: afiliación a la Seguridad
+Social, siniestralidad, elecciones sindicales, convenios colectivos y el precio
+horario de la luz. Ganó la siniestralidad por un motivo que no es temático:
+**baja a provincia**. Una sola hoja del ministerio, la `ATR-A1.1`, trae España,
+cada comunidad y cada provincia, cuando ninguna estadística salarial del INE
+llega a Castellón.
+
+**Qué hay.** Serie anual 2021-2025 de accidentes con baja en jornada, separados
+por gravedad, más los in itinere; y encima de todo el avance del año en curso
+contra el mismo periodo del año anterior. En lo que va de 2026: 4.737
+accidentes con baja en Castellón y seis muertes en el puesto; 310.977 y 349 en
+España.
+
+**Lo que costó.** Nada de esto tiene que ver con los datos:
+
+1. *El ministerio no contestaba.* `CERTIFICATE_VERIFY_FAILED`. No es que el
+   certificado sea malo -es de la FNMT, a nombre del Ministerio de Trabajo y
+   Economía Social-: es que el servidor **no manda el intermedio**, así que no
+   hay forma de enlazarlo con una raíz de confianza. La salida escrita por ahí
+   es desactivar la verificación, que dejaría al panel comiéndose lo que le
+   sirviera cualquiera. La salida buena es la del navegador: el certificado
+   lleva dentro la dirección de su emisor, se baja y se completa la cadena.
+2. *El ministerio no dice que no.* Para un fichero que no existe devuelve su
+   portada con un 200. El descargador se tragó una página HTML creyendo que era
+   una hoja de cálculo. Ahora no mira el estado sino lo que ha llegado: un XLSX
+   es un zip y empieza por «PK».
+3. *El rastreo se fue a pastar por el organigrama*, precisamente por lo
+   anterior: como todo devuelve 200, un rastreo amplio acaba en las notas de
+   prensa y en la biografía de la ministra.
+4. *La gráfica del cruce salía en blanco* en la cesta, y no por los datos:
+   pintar las evoluciones destruye todas las gráficas vivas, y el cruce se
+   dibujaba antes. Lo cazó la prueba de humo con navegador contando píxeles.
+
+**Qué se quedó fuera, y por qué.** Los **convenios colectivos**, que eran la
+otra mitad de la recomendación y que habrían dado la subida salarial pactada
+cada mes. Los 167 ficheros del ministerio, hasta el de agosto de 2026, siguen
+en el `.xls` binario anterior a 2007, y el lector del panel -sin dependencias-
+sólo abre XLSX. Entrarían escribiendo un lector de ese formato, que es trabajo
+de verdad y no un rato.
+
+---
+
 ## Orden y dependencias
 
 ```
