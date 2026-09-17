@@ -1,0 +1,496 @@
+{
+ "actualizado": "2026-09-17T03:02:29+00:00",
+ "repositorio": "https://github.com/Poloigithub/Panel_Datos",
+ "altas": [
+  {
+   "fecha": "2026-09-17",
+   "secciones": [
+    {
+     "id": "siniestralidad",
+     "titulo": "Accidentes de trabajo",
+     "estreno": true,
+     "commit": "bd5d3bb",
+     "indicadores": [
+      "Accidentes graves en jornada",
+      "Accidentes in itinere",
+      "Accidentes con baja en jornada de trabajo",
+      "Accidentes mortales en jornada",
+      "Muertes in itinere",
+      "Accidentes leves"
+     ]
+    }
+   ]
+  },
+  {
+   "fecha": "2026-09-16",
+   "secciones": [
+    {
+     "id": "contratos",
+     "titulo": "Contratación",
+     "estreno": true,
+     "commit": "3ea5504",
+     "indicadores": [
+      "Agricultura",
+      "Construcción",
+      "Convertidos en indefinidos",
+      "Indefinidos iniciales",
+      "Industria",
+      "Servicios",
+      "Temporales",
+      "Contratos registrados"
+     ]
+    },
+    {
+     "id": "cesta",
+     "titulo": "La cesta de la compra",
+     "estreno": true,
+     "commit": "98c1ebf",
+     "indicadores": [
+      "Aceite de oliva",
+      "Alimentos y bebidas no alcohólicas",
+      "Café, cacao e infusiones",
+      "Carne de ave",
+      "Carne de porcino",
+      "Carne de vacuno",
+      "Cereales y derivados",
+      "Frutas frescas",
+      "Legumbres y hortalizas frescas",
+      "Huevos",
+      "Leche",
+      "Pan",
+      "Patatas y sus preparados",
+      "Pescado fresco y congelado",
+      "Agua mineral",
+      "Azúcar, chocolate y confitería",
+      "Alimentos preparados",
+      "Restaurantes y alojamiento",
+      "Restaurantes, cafés y comida rápida"
+     ]
+    },
+    {
+     "id": "paro-registrado",
+     "titulo": "Paro registrado",
+     "estreno": true,
+     "commit": "de91b60",
+     "indicadores": [
+      "De 25 a 44 años",
+      "De 45 años o más",
+      "Agricultura",
+      "Construcción",
+      "Industria",
+      "Menores de 25 años",
+      "Servicios",
+      "Sin empleo anterior",
+      "Paro registrado"
+     ]
+    },
+    {
+     "id": "precios",
+     "titulo": "Precios",
+     "estreno": true,
+     "commit": "3f1c166",
+     "indicadores": [
+      "Alimentos",
+      "IPC, índice general",
+      "Transporte",
+      "Inflación interanual",
+      "Vivienda, agua y energía"
+     ]
+    },
+    {
+     "id": "salarios",
+     "titulo": "Salarios y rentas del trabajo",
+     "estreno": true,
+     "commit": "05beb3c",
+     "indicadores": [
+      "Brecha salarial entre mujeres y hombres",
+      "Distancia entre los salarios altos y los bajos",
+      "Índice de Gini de los salarios",
+      "Renta que viene de prestaciones por desempleo",
+      "Renta que viene de otras prestaciones",
+      "Renta que viene de pensiones",
+      "Renta que viene del salario",
+      "Salario bruto anual",
+      "Salario bruto anual (euros constantes)"
+     ]
+    },
+    {
+     "id": "vivienda",
+     "titulo": "Vivienda",
+     "estreno": true,
+     "commit": "1b70382",
+     "indicadores": [
+      "Compraventas de vivienda",
+      "Compraventas de vivienda nueva",
+      "Compraventas de vivienda protegida",
+      "Compraventas de vivienda de segunda mano",
+      "Ejecuciones hipotecarias sobre viviendas",
+      "Índice de precios de la vivienda",
+      "Variación anual del precio de la vivienda",
+      "Índice de precios de la vivienda en alquiler",
+      "Variación anual del precio del alquiler",
+      "Hipoteca media en años de renta del hogar",
+      "Hipoteca media sobre vivienda",
+      "Hipotecas sobre viviendas",
+      "Importe de las hipotecas sobre viviendas",
+      "Lanzamientos practicados",
+      "Lanzamientos por impago de alquiler",
+      "Lanzamientos por ejecución hipotecaria",
+      "Lanzamientos por otras causas"
+     ]
+    },
+    {
+     "id": "renta",
+     "titulo": "Renta y desigualdad",
+     "estreno": false,
+     "commit": "3f1c166",
+     "indicadores": [
+      "Renta neta media por hogar (euros constantes)",
+      "Renta neta media por persona (euros constantes)",
+      "Renta media por unidad de consumo (euros constantes)"
+     ]
+    }
+   ]
+  },
+  {
+   "fecha": "2026-09-15",
+   "secciones": [
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "estreno": true,
+     "commit": "6e1eafb",
+     "indicadores": [
+      "Activos",
+      "Ocupados",
+      "Parados",
+      "Tasa de actividad",
+      "Tasa de paro",
+      "Tasa de empleo"
+     ]
+    },
+    {
+     "id": "demografia",
+     "titulo": "Natalidad, mortalidad y migración",
+     "estreno": true,
+     "commit": "a030e4b",
+     "indicadores": [
+      "Edad media a la maternidad",
+      "Esperanza de vida al nacer",
+      "Número medio de hijos por mujer",
+      "Nacidos por cada 1.000 defunciones",
+      "Saldo migratorio",
+      "Tasa bruta de mortalidad",
+      "Tasa bruta de natalidad",
+      "Mortalidad infantil (menores de 5 años)"
+     ]
+    },
+    {
+     "id": "poblacion",
+     "titulo": "Población",
+     "estreno": true,
+     "commit": "a030e4b",
+     "indicadores": [
+      "Crecimiento de la población",
+      "Edad media",
+      "Población extranjera",
+      "Población de 65 y más años",
+      "Población",
+      "Población de nacionalidad española",
+      "Población de 70 y más años"
+     ]
+    },
+    {
+     "id": "renta",
+     "titulo": "Renta y desigualdad",
+     "estreno": true,
+     "commit": "a030e4b",
+     "indicadores": [
+      "Población bajo el 60 % de la renta mediana",
+      "Índice de Gini",
+      "Hogares unipersonales",
+      "Distribución de la renta P80/P20",
+      "Renta neta media por hogar",
+      "Renta mediana por hogar",
+      "Renta neta media por persona",
+      "Renta media por unidad de consumo",
+      "Tamaño medio del hogar"
+     ]
+    }
+   ]
+  }
+ ],
+ "novedades": [
+  {
+   "commit": "75c8ead",
+   "fecha": "2026-09-17T02:56:13+00:00",
+   "asunto": "Publica los accidentes de trabajo",
+   "secciones": [
+    {
+     "id": "siniestralidad",
+     "titulo": "Accidentes de trabajo",
+     "cambios": 6
+    }
+   ]
+  },
+  {
+   "commit": "f785832",
+   "fecha": "2026-09-16T12:18:38+00:00",
+   "asunto": "Geometrías municipales de Castellón [skip ci]",
+   "secciones": [
+    {
+     "id": "municipios",
+     "titulo": "Municipios de Castellón",
+     "cambios": 1
+    }
+   ]
+  },
+  {
+   "commit": "f72e69c",
+   "fecha": "2026-09-16T11:48:23+00:00",
+   "asunto": "Geometrías municipales de Castellón [skip ci]",
+   "secciones": [
+    {
+     "id": "geo",
+     "titulo": "Contornos municipales",
+     "cambios": 1
+    }
+   ]
+  },
+  {
+   "commit": "3ea5504",
+   "fecha": "2026-09-16T10:03:19+00:00",
+   "asunto": "Reconstruye el histórico de paro registrado [skip ci]",
+   "secciones": [
+    {
+     "id": "contratos",
+     "titulo": "Contratación",
+     "cambios": 92
+    },
+    {
+     "id": "paro-registrado",
+     "titulo": "Paro registrado",
+     "cambios": 14
+    }
+   ]
+  },
+  {
+   "commit": "5bfa2db",
+   "fecha": "2026-09-16T09:48:01+00:00",
+   "asunto": "Reconstruye el histórico de paro registrado [skip ci]",
+   "secciones": [
+    {
+     "id": "paro-registrado",
+     "titulo": "Paro registrado",
+     "cambios": 13
+    }
+   ]
+  },
+  {
+   "commit": "229ec9a",
+   "fecha": "2026-09-16T09:45:30+00:00",
+   "asunto": "Publica el paro registrado y su detalle municipal",
+   "secciones": [
+    {
+     "id": "paro-registrado",
+     "titulo": "Paro registrado",
+     "cambios": 24
+    }
+   ]
+  },
+  {
+   "commit": "de91b60",
+   "fecha": "2026-09-16T09:41:53+00:00",
+   "asunto": "Reconstruye el histórico de paro registrado [skip ci]",
+   "secciones": [
+    {
+     "id": "paro-registrado",
+     "titulo": "Paro registrado",
+     "cambios": 86
+    }
+   ]
+  },
+  {
+   "commit": "8861053",
+   "fecha": "2026-09-16T08:05:28+00:00",
+   "asunto": "Actualiza datos de la EPA (último periodo: 2026T2)",
+   "secciones": [
+    {
+     "id": "precios",
+     "titulo": "Precios",
+     "cambios": 15
+    },
+    {
+     "id": "demografia",
+     "titulo": "Natalidad, mortalidad y migración",
+     "cambios": 8
+    },
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "cambios": 8
+    },
+    {
+     "id": "poblacion",
+     "titulo": "Población",
+     "cambios": 8
+    },
+    {
+     "id": "renta",
+     "titulo": "Renta y desigualdad",
+     "cambios": 8
+    }
+   ]
+  },
+  {
+   "commit": "3f1c166",
+   "fecha": "2026-09-16T07:27:47+00:00",
+   "asunto": "Actualiza datos de la EPA (último periodo: 2026T2)",
+   "secciones": [
+    {
+     "id": "precios",
+     "titulo": "Precios",
+     "cambios": 63
+    },
+    {
+     "id": "renta",
+     "titulo": "Renta y desigualdad",
+     "cambios": 62
+    },
+    {
+     "id": "demografia",
+     "titulo": "Natalidad, mortalidad y migración",
+     "cambios": 28
+    },
+    {
+     "id": "poblacion",
+     "titulo": "Población",
+     "cambios": 28
+    },
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "cambios": 8
+    }
+   ]
+  },
+  {
+   "commit": "82a454f",
+   "fecha": "2026-09-15T22:11:40+00:00",
+   "asunto": "Añade las secciones de población, demografía y renta al panel",
+   "secciones": [
+    {
+     "id": "renta",
+     "titulo": "Renta y desigualdad",
+     "cambios": 24
+    },
+    {
+     "id": "demografia",
+     "titulo": "Natalidad, mortalidad y migración",
+     "cambios": 15
+    },
+    {
+     "id": "poblacion",
+     "titulo": "Población",
+     "cambios": 15
+    }
+   ]
+  },
+  {
+   "commit": "ceb3cc8",
+   "fecha": "2026-09-15T21:11:09+00:00",
+   "asunto": "Actualiza datos de la EPA (último periodo: 2026T2)",
+   "secciones": [
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "cambios": 8
+    }
+   ]
+  },
+  {
+   "commit": "a3a3224",
+   "fecha": "2026-09-15T21:06:04+00:00",
+   "asunto": "Actualiza datos de la EPA (último periodo: 2026T2)",
+   "secciones": [
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "cambios": 8
+    }
+   ]
+  },
+  {
+   "commit": "39ec8a4",
+   "fecha": "2026-09-15T20:52:54+00:00",
+   "asunto": "Actualiza datos de la EPA (último periodo: 2026T2)",
+   "secciones": [
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "cambios": 8
+    }
+   ]
+  },
+  {
+   "commit": "4161f69",
+   "fecha": "2026-09-15T20:47:25+00:00",
+   "asunto": "Actualiza datos de la EPA (último periodo: 2026T2)",
+   "secciones": [
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "cambios": 8
+    }
+   ]
+  },
+  {
+   "commit": "f0c67d9",
+   "fecha": "2026-09-15T20:42:27+00:00",
+   "asunto": "Actualiza datos de la EPA (último periodo: 2026T2)",
+   "secciones": [
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "cambios": 8
+    }
+   ]
+  },
+  {
+   "commit": "30d1b6d",
+   "fecha": "2026-09-15T20:36:38+00:00",
+   "asunto": "Actualiza datos de la EPA (último periodo: 2026T2)",
+   "secciones": [
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "cambios": 30
+    }
+   ]
+  },
+  {
+   "commit": "1489cb6",
+   "fecha": "2026-09-15T20:03:56+00:00",
+   "asunto": "Añade el descargador de la EPA y la documentación del proyecto",
+   "secciones": [
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "cambios": 24
+    }
+   ]
+  },
+  {
+   "commit": "6e1eafb",
+   "fecha": "2026-09-15T19:59:38+00:00",
+   "asunto": "Vuelca los códigos de serie EPA y añade los workflows de publicación",
+   "secciones": [
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "cambios": 24
+    }
+   ]
+  }
+ ]
+}

@@ -340,7 +340,7 @@ Cosas que no son datos nuevos pero multiplican lo que ya hay:
 - ✅ **Buscador de indicadores**: los 87 publicados, con la sección en que
   viven, los ámbitos para los que existen -66 de 87 tienen dato de Castellón- y
   desde cuándo. Arrastra consigo las advertencias de cada indicador.
-- ✅ **Página de novedades**: el historial de git leído al revés, con enlace al
+- ✅ **Página de cambios**: el historial de git leído al revés, con enlace al
   cambio exacto. Se genera después de commitear, porque si no la actualización
   de hoy no aparecería en su propio registro.
 - ✅ **Descarga completa**: el panel entero en un CSV en formato largo, 50.006

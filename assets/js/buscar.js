@@ -1,4 +1,4 @@
-/* Buscador de indicadores y registro de novedades.
+/* Buscador de indicadores y registro de cambios.
  *
  * Con setenta y tantos indicadores repartidos en nueve secciones, la pregunta
  * «¿tenéis el dato de X?» ya no se responde mirando la portada. Las dos páginas
@@ -152,6 +152,52 @@
     pinta();
   }
 
+  /* Las altas: qué dato es nuevo y desde cuándo. Es lo que contesta a «¿qué
+     ha crecido el panel este mes?», que no es lo mismo que «¿qué cifras se
+     han movido?», y por eso van en dos listas y no en una. */
+  function arrancaAltas(datos) {
+    var lista = document.querySelector('[data-altas]');
+    if (!lista || !datos.altas) return;
+    lista.replaceChildren();
+
+    datos.altas.forEach(function (entrada) {
+      var fila = document.createElement('li');
+      fila.className = 'tarjeta p-4';
+
+      var fecha = document.createElement('p');
+      fecha.className = 'text-xs font-semibold uppercase tracking-widest';
+      fecha.style.color = color('--tinta-tenue');
+      fecha.textContent = new Date(entrada.fecha + 'T12:00:00').toLocaleDateString(
+        'es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+      fila.appendChild(fecha);
+
+      entrada.secciones.forEach(function (seccion) {
+        var bloque = document.createElement('div');
+        bloque.className = 'mt-3';
+
+        var titulo = document.createElement('p');
+        titulo.className = 'font-medium';
+        var marca = document.createElement('span');
+        marca.className = 'mr-2 text-xs font-semibold uppercase tracking-widest';
+        marca.style.color = color(seccion.estreno ? '--serie-1' : '--tinta-tenue');
+        marca.textContent = seccion.estreno ? 'Sección nueva' : 'Ampliación';
+        titulo.appendChild(marca);
+        titulo.appendChild(document.createTextNode(seccion.titulo));
+        bloque.appendChild(titulo);
+
+        var cuales = document.createElement('p');
+        cuales.className = 'mt-1 text-sm leading-relaxed';
+        cuales.style.color = color('--tinta-suave');
+        cuales.textContent = seccion.indicadores.join(' · ');
+        bloque.appendChild(cuales);
+
+        fila.appendChild(bloque);
+      });
+
+      lista.appendChild(fila);
+    });
+  }
+
   function arrancaNovedades(datos) {
     var lista = document.querySelector('[data-novedades]');
     if (!lista) return;
@@ -201,8 +247,11 @@
       if (document.querySelector('[data-resultados]')) {
         arrancaBuscador(await carga('data/indicadores.json'));
       }
-      if (document.querySelector('[data-novedades]')) {
-        arrancaNovedades(await carga('data/novedades.json'));
+      if (document.querySelector('[data-novedades]') ||
+          document.querySelector('[data-altas]')) {
+        var cambios = await carga('data/cambios.json');
+        arrancaAltas(cambios);
+        arrancaNovedades(cambios);
       }
       if (aviso) aviso.hidden = true;
     } catch (error) {

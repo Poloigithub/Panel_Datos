@@ -131,7 +131,7 @@ python3 scripts/descargar_epa.py
 | `scripts/descargar_siniestralidad.py` | Accidentes de trabajo del Ministerio de Trabajo |
 | `scripts/red_ministerio.py` | Completa la cadena de certificados que el ministerio no manda |
 | `scripts/generar_catalogo.py` | Catálogo de indicadores y descarga completa |
-| `scripts/generar_novedades.py` | Qué cambió y cuándo, desde el historial de git |
+| `scripts/generar_cambios.py` | Qué se ha añadido y qué se ha actualizado, desde el historial de git |
 | `scripts/cgpj_lanzamientos.py` | Lanzamientos del CGPJ: por hipoteca, por alquiler y otros |
 | `scripts/xlsx.py` | Lector de XLSX con la biblioteca estándar |
 | `scripts/descargar_paro.py` | Paro registrado y contratación del SEPE |

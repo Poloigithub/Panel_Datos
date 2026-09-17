@@ -79,15 +79,15 @@ jobs:
 
       # Va después de commitear porque lee el historial: si se generase antes,
       # la actualización de hoy no aparecería en su propio registro.
-      - name: Anotar las novedades
+      - name: Anotar los cambios
         run: |
-          python scripts/generar_novedades.py
-          git add data/novedades.json
+          python scripts/generar_cambios.py
+          git add data/cambios.json
           if git diff --staged --quiet; then
-            echo "Sin novedades que anotar."
+            echo "Sin cambios que anotar."
             exit 0
           fi
-          git commit -m "Anota las novedades [skip ci]"
+          git commit -m "Anota los cambios [skip ci]"
           git pull --rebase origin ${{ github.ref_name }}
           git push
 
