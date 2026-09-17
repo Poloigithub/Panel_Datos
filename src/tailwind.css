@@ -1,4 +1,14 @@
-@import "tailwindcss";
+/* `source(none)` apaga la detección automática de Tailwind, que si no rastrea
+   **todo el proyecto**: la documentación, los scripts y los volcados de los
+   sondeos. Y eso no es inofensivo, porque muchas utilidades de Tailwind son
+   palabras corrientes en inglés y algunas lo son también en español. Escribir
+   «la caída era invisible por los dos lados» en un documento añadía una clase
+   `.invisible` a la hoja de estilos y tumbaba la comprobación de que el CSS
+   commiteado coincide con el compilado. Pasó de verdad.
+
+   Con esto, lo único que se escanea es lo que hay debajo: las páginas y el
+   JavaScript que de verdad pintan clases. */
+@import "tailwindcss" source(none);
 
 @source "../*.html";
 @source "../assets/js/*.js";
