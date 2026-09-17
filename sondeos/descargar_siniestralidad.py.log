@@ -10,21 +10,6 @@
     escrito data/siniestralidad/comunitat-valenciana.json
     escrito data/siniestralidad/castellon.json
   5 periodos: 2021 … 2025
-Traceback (most recent call last):
-  File "/home/runner/work/Panel_Datos/Panel_Datos/scripts/descargar_siniestralidad.py", line 239, in <module>
-    raise SystemExit(main())
-                     ^^^^^^
-  File "/home/runner/work/Panel_Datos/Panel_Datos/scripts/descargar_siniestralidad.py", line 214, in main
-    actual = lee_hoja(datos)
-             ^^^^^^^^^^^^^^^
-  File "/home/runner/work/Panel_Datos/Panel_Datos/scripts/descargar_siniestralidad.py", line 120, in lee_hoja
-    libro = Libro(datos)
-            ^^^^^^^^^^^^
-  File "/home/runner/work/Panel_Datos/Panel_Datos/scripts/xlsx.py", line 27, in __init__
-    self.zip = zipfile.ZipFile(io.BytesIO(datos))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/zipfile/__init__.py", line 1371, in __init__
-    self._RealGetContents()
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/zipfile/__init__.py", line 1438, in _RealGetContents
-    raise BadZipFile("File is not a zip file")
-zipfile.BadZipFile: File is not a zip file
+    2026-09: todavía no publicado (contestan 34531 bytes que no son una hoja)
+    2026-08: todavía no publicado (contestan 34531 bytes que no son una hoja)
+  escrito data/siniestralidad/avance.json (Avance enero - julio 2026)

@@ -1,0 +1,63 @@
+{
+  "actualizado": "2026-09-17T02:40:50+00:00",
+  "anyo": 2026,
+  "mes": 7,
+  "periodo_texto": "Avance enero - julio 2026",
+  "anyo_anterior": 2025,
+  "ambitos": {
+    "espana": {
+      "actual": {
+        "accidentes_jornada": 310977.0,
+        "accidentes_leves": 308576.0,
+        "accidentes_graves": 2052.0,
+        "accidentes_mortales": 349.0,
+        "accidentes_itinere": 52795.0,
+        "mortales_itinere": 83.0
+      },
+      "anterior": {
+        "accidentes_jornada": 306109.0,
+        "accidentes_leves": 303605.0,
+        "accidentes_graves": 2153.0,
+        "accidentes_mortales": 351.0,
+        "accidentes_itinere": 50559.0,
+        "mortales_itinere": 80.0
+      }
+    },
+    "comunitat-valenciana": {
+      "actual": {
+        "accidentes_jornada": 32289.0,
+        "accidentes_leves": 32021.0,
+        "accidentes_graves": 232.0,
+        "accidentes_mortales": 36.0,
+        "accidentes_itinere": 5917.0,
+        "mortales_itinere": 5.0
+      },
+      "anterior": {
+        "accidentes_jornada": 31524.0,
+        "accidentes_leves": 31257.0,
+        "accidentes_graves": 225.0,
+        "accidentes_mortales": 42.0,
+        "accidentes_itinere": 5707.0,
+        "mortales_itinere": 8.0
+      }
+    },
+    "castellon": {
+      "actual": {
+        "accidentes_jornada": 4737.0,
+        "accidentes_leves": 4706.0,
+        "accidentes_graves": 25.0,
+        "accidentes_mortales": 6.0,
+        "accidentes_itinere": 574.0,
+        "mortales_itinere": 0.0
+      },
+      "anterior": {
+        "accidentes_jornada": 4718.0,
+        "accidentes_leves": 4695.0,
+        "accidentes_graves": 18.0,
+        "accidentes_mortales": 5.0,
+        "accidentes_itinere": 560.0,
+        "mortales_itinere": 1.0
+      }
+    }
+  }
+}
