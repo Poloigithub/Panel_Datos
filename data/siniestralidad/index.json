@@ -1,0 +1,70 @@
+{
+  "actualizado": "2026-09-17T02:38:40+00:00",
+  "titulo": "Accidentes de trabajo",
+  "ultimo_periodo": "2025",
+  "primer_periodo": "2021",
+  "indicadores": {
+    "accidentes_jornada": {
+      "titulo": "Accidentes con baja en jornada de trabajo",
+      "unidad": "accidentes",
+      "unidad_texto": "accidentes con baja ocurridos en el puesto",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": "La serie empieza en 2021 porque antes el ministerio publicaba en el formato binario antiguo de Excel, que el panel no lee.",
+      "sobre_total": null
+    },
+    "accidentes_graves": {
+      "titulo": "Accidentes graves en jornada",
+      "unidad": "accidentes",
+      "unidad_texto": "accidentes calificados de graves",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": "La serie empieza en 2021 porque antes el ministerio publicaba en el formato binario antiguo de Excel, que el panel no lee.",
+      "sobre_total": null
+    },
+    "accidentes_mortales": {
+      "titulo": "Accidentes mortales en jornada",
+      "unidad": "accidentes",
+      "unidad_texto": "personas muertas en el puesto de trabajo",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": "La serie empieza en 2021 porque antes el ministerio publicaba en el formato binario antiguo de Excel, que el panel no lee.",
+      "sobre_total": null
+    },
+    "accidentes_itinere": {
+      "titulo": "Accidentes in itinere",
+      "unidad": "accidentes",
+      "unidad_texto": "accidentes de ida o vuelta al trabajo",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": "Los del camino al trabajo. Se cuentan aparte de los de jornada porque hablan de cosas distintas: uno de cómo es el puesto y el otro de cómo se llega a él.",
+      "sobre_total": null
+    },
+    "mortales_itinere": {
+      "titulo": "Muertes in itinere",
+      "unidad": "accidentes",
+      "unidad_texto": "personas muertas yendo o volviendo del trabajo",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": "La serie empieza en 2021 porque antes el ministerio publicaba en el formato binario antiguo de Excel, que el panel no lee.",
+      "sobre_total": null
+    }
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ]
+}
