@@ -69,6 +69,10 @@ AVISO_DOLARES = ("Publicado en dólares, que es la moneda en la que cotiza y en 
 # la izquierda es el del panel; el de la derecha, el literal de la hoja, que se
 # busca por texto y no por posición: el Banco Mundial ha añadido columnas entre
 # versiones y contarlas a mano sería empezar a publicar la de al lado.
+# La cebada estuvo aquí y se cayó al ensayarla: el Banco Mundial **dejó de
+# publicarla en agosto de 2020**. Una serie muerta en un tablero que se titula
+# «cómo está cada cosa» parece un fallo del panel aunque el dato sea correcto,
+# así que no entra. Si la reanudan, se vuelve a añadir y sola trae su historia.
 COLUMNAS = [
     ("brent", "Crude oil, Brent", "Petróleo Brent",
      "$/barril", "dólares por barril", 2),
@@ -110,8 +114,6 @@ COLUMNAS = [
     ("aceite_palma", "Palm oil", "Aceite de palma",
      "$/t", "dólares por tonelada", 2),
     ("arroz", "Rice, Thai 5%", "Arroz",
-     "$/t", "dólares por tonelada", 2),
-    ("cebada", "Barley", "Cebada",
      "$/t", "dólares por tonelada", 2),
     ("ternera", "Beef", "Carne de vacuno",
      "$/kg", "dólares por kilo", 3),

@@ -26,7 +26,7 @@
     { titulo: 'Energía',
       claves: ['brent', 'wti', 'gas_europa', 'gas_eeuu', 'carbon'] },
     { titulo: 'Cereales y aceites',
-      claves: ['trigo', 'maiz', 'cebada', 'arroz', 'aceite_girasol',
+      claves: ['trigo', 'maiz', 'arroz', 'aceite_girasol',
                'aceite_soja', 'aceite_palma'] },
     { titulo: 'Lo que acaba en la cesta de la compra',
       claves: ['azucar', 'azucar_mundial', 'cafe', 'cacao', 'naranja',

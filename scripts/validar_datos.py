@@ -190,7 +190,6 @@ RANGOS = {
     "materias/aceite_soja": (50, 5_000),
     "materias/aceite_palma": (50, 5_000),
     "materias/arroz": (10, 3_000),
-    "materias/cebada": (5, 2_000),
     "materias/ternera": (0.1, 30),
     "materias/pollo": (0.1, 20),
     "materias/platano": (0.05, 10),
