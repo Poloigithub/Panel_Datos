@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T15:17:41+00:00",
+ "actualizado": "2026-09-17T15:30:12+00:00",
  "repositorio": "https://github.com/Poloigithub/Panel_Datos",
  "altas": [
   {
@@ -426,70 +426,6 @@
      "id": "paro-registrado",
      "titulo": "Paro registrado",
      "cambios": 86
-    }
-   ]
-  },
-  {
-   "commit": "8861053",
-   "fecha": "2026-09-16T08:05:28+00:00",
-   "asunto": "Actualiza datos de la EPA (último periodo: 2026T2)",
-   "secciones": [
-    {
-     "id": "precios",
-     "titulo": "Precios",
-     "cambios": 15
-    },
-    {
-     "id": "demografia",
-     "titulo": "Natalidad, mortalidad y migración",
-     "cambios": 8
-    },
-    {
-     "id": "epa",
-     "titulo": "Mercado laboral",
-     "cambios": 8
-    },
-    {
-     "id": "poblacion",
-     "titulo": "Población",
-     "cambios": 8
-    },
-    {
-     "id": "renta",
-     "titulo": "Renta y desigualdad",
-     "cambios": 8
-    }
-   ]
-  },
-  {
-   "commit": "3f1c166",
-   "fecha": "2026-09-16T07:27:47+00:00",
-   "asunto": "Actualiza datos de la EPA (último periodo: 2026T2)",
-   "secciones": [
-    {
-     "id": "precios",
-     "titulo": "Precios",
-     "cambios": 63
-    },
-    {
-     "id": "renta",
-     "titulo": "Renta y desigualdad",
-     "cambios": 62
-    },
-    {
-     "id": "demografia",
-     "titulo": "Natalidad, mortalidad y migración",
-     "cambios": 28
-    },
-    {
-     "id": "poblacion",
-     "titulo": "Población",
-     "cambios": 28
-    },
-    {
-     "id": "epa",
-     "titulo": "Mercado laboral",
-     "cambios": 8
     }
    ]
   }

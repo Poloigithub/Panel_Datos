@@ -68,5 +68,83 @@ class RangosPorBloque(unittest.TestCase):
         self.assertEqual(informe.errores, [])
 
 
+class SeriesRetiradas(unittest.TestCase):
+    """Una serie sólo puede desaparecer si alguien lo ha escrito y explicado.
+
+    La comprobación de cobertura es la alarma que caza el fallo silencioso: el
+    INE renombra una serie, el descargador deja de encontrarla y el indicador
+    se esfuma sin que nada falle. Si se pudiera callar borrando el registro de
+    cobertura, dejaría de proteger. Por eso la retirada se declara.
+    """
+
+    def setUp(self) -> None:
+        self.retiradas = dict(validador.RETIRADAS)
+
+    def tearDown(self) -> None:
+        validador.RETIRADAS.clear()
+        validador.RETIRADAS.update(self.retiradas)
+
+    def _cobertura(self, antes: dict, ahora: dict, tmp) -> list[str]:
+        import json
+        fichero = tmp / "cobertura.json"
+        fichero.write_text(json.dumps({"series": antes}), encoding="utf-8")
+        original = validador.COBERTURA
+        validador.COBERTURA = fichero
+        try:
+            informe = validador.Informe()
+            validador.revisa_cobertura(ahora, informe)
+            return informe.errores
+        finally:
+            validador.COBERTURA = original
+
+    def test_una_serie_que_se_va_sin_declarar_es_un_error(self) -> None:
+        import tempfile
+        with tempfile.TemporaryDirectory() as carpeta:
+            validador.RETIRADAS.clear()
+            errores = self._cobertura({"epa/espana/ambos/ocupados": 90}, {},
+                                      Path(carpeta))
+        self.assertEqual(len(errores), 1)
+        self.assertIn("desaparecida", errores[0])
+
+    def test_una_serie_declarada_no_es_un_error(self) -> None:
+        import tempfile
+        with tempfile.TemporaryDirectory() as carpeta:
+            validador.RETIRADAS.clear()
+            validador.RETIRADAS["materias/espana/ambos/cebada"] = "porque sí"
+            errores = self._cobertura({"materias/espana/ambos/cebada": 728}, {},
+                                      Path(carpeta))
+        self.assertEqual(errores, [])
+
+    def test_declararla_no_perdona_que_encoja(self) -> None:
+        """Declarar una retirada permite que se vaya entera, no a medias.
+
+        Una serie que pierde periodos pero sigue estando es el otro fallo: el
+        descargador encuentra la serie pero lee de menos.
+        """
+        import tempfile
+        with tempfile.TemporaryDirectory() as carpeta:
+            validador.RETIRADAS.clear()
+            validador.RETIRADAS["materias/espana/ambos/cebada"] = "porque sí"
+            errores = self._cobertura({"materias/espana/ambos/cebada": 728},
+                                      {"materias/espana/ambos/cebada": 400},
+                                      Path(carpeta))
+        self.assertEqual(len(errores), 1)
+        self.assertIn("encogida", errores[0])
+
+    def test_lo_declarado_apunta_a_algo_que_existio(self) -> None:
+        """Cada retirada nombra un bloque real y trae fecha y motivo.
+
+        Es lo que evita que el registro se llene de entradas sueltas que nadie
+        puede comprobar.
+        """
+        bloques = {c.name for c in (RAIZ / "data").iterdir() if c.is_dir()}
+        for clave, motivo in validador.RETIRADAS.items():
+            trozos = clave.split("/")
+            self.assertEqual(len(trozos), 4, f"clave mal formada: {clave}")
+            self.assertIn(trozos[0], bloques, f"bloque inexistente en {clave}")
+            self.assertRegex(motivo, r"^\d{4}-\d{2}-\d{2} · .",
+                             f"la retirada de {clave} no dice cuándo ni por qué")
+
+
 if __name__ == "__main__":
     unittest.main()

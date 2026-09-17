@@ -316,6 +316,19 @@ FRESCURA = {
     "renta": ("anual", 36),
 }
 
+# Series retiradas a propósito, con el porqué. La comprobación de cobertura
+# existe para cazar el fallo silencioso -el INE renombra una serie, el
+# descargador deja de encontrarla y el indicador desaparece sin que nada
+# falle-, así que una serie que se va tiene que dar explicaciones. Borrarla del
+# registro de cobertura y ya está sería quitarle al panel justo la alarma que
+# lo protege; declararla aquí deja la retirada escrita y fechada.
+RETIRADAS = {
+    "materias/espana/ambos/cebada":
+        "2026-09-17 · el Banco Mundial dejó de publicar la cebada en agosto de "
+        "2020. Una serie muerta en un tablero que dice «cómo está cada cosa» "
+        "parece un fallo del panel aunque el dato sea correcto.",
+}
+
 # Los ficheros municipales no son bloques -no tienen índice- pero también
 # pueden quedarse atrás sin que nadie se entere.
 FRESCURA_MUNICIPAL = {
@@ -581,6 +594,9 @@ def revisa_cobertura(actual: dict[str, int], informe: Informe) -> None:
     for clave, periodos_antes in anterior.items():
         periodos_ahora = actual.get(clave)
         if periodos_ahora is None:
+            if clave in RETIRADAS:
+                print(f"  retirada a propósito: {clave} · {RETIRADAS[clave]}")
+                continue
             informe.error(f"desaparecida: {clave} tenía {periodos_antes} periodos y ya no está")
         elif periodos_ahora < periodos_antes:
             informe.error(
