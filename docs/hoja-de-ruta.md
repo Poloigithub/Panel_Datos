@@ -514,6 +514,44 @@ de estadística no las publica.
 
 ---
 
+## Fase 10 · El precio de la luz ✅ hecha
+
+**Por qué merece sección propia.** Porque la media mensual esconde lo
+interesante. El 17 de septiembre de 2026 la luz costaba 18,24 c€/kWh de media,
+que no dice nada; lo que dice algo es que la hora más barata valía 1,62 y la
+más cara 35,95, **veintidós veces más**. Ahí está la noticia, y sólo se ve hora
+a hora.
+
+**Lo que decidió el diseño.** Tres vueltas de sondeo contra la API de Red
+Eléctrica, y la tercera fue la que valió:
+
+1. La API **no agrega**: pedir medias diarias o mensuales devuelve error. Las
+   medias las calcula el panel.
+2. Pero **acepta rangos de hasta un mes** por horas. Noventa y dos días, no. Eso
+   convirtió un plan de «ir acumulando durante dos semanas» en una descarga de
+   sesenta y nueve peticiones que trae el histórico entero el primer día.
+3. El PVPC **empieza en junio de 2021**, y la fecha no es arbitraria: es cuando
+   entró la tarifa 2.0TD con tramos horarios.
+
+**Lo que obligó a decir en voz alta.** Es la primera sección del panel **sin los
+tres ámbitos**: el PVPC es el mismo en toda la península. Las columnas de la
+Comunitat y de Castellón se quedan vacías a la vista, en vez de repetir tres
+veces la cifra nacional, y el primer párrafo de la página lo explica.
+
+**Dos detalles de oficio.** Se guarda en céntimos por kWh y no en euros por
+megavatio hora, porque la primera es la unidad de una factura y la segunda
+obliga al lector a dividir de cabeza. Y un mes cerrado no se vuelve a pedir
+nunca: el histórico vive en el repositorio, así que la actualización diaria
+gasta una petición, no sesenta y nueve.
+
+**Un fallo que casi cuela.** La gráfica de horas salía en blanco en las
+capturas. No era de los datos: Chart.js reinicia su animación cuando el
+navegador redimensiona para capturar la página entera, y la foto salía en el
+primer fotograma, con las barras a cero. Se arregló quitando la animación,
+como ya hacía el resto del panel.
+
+---
+
 ## Orden y dependencias
 
 ```

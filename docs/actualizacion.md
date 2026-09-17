@@ -71,9 +71,18 @@ tarea diaria.
 | Accidentes de trabajo · avance | Ministerio de Trabajo | Mensual | ~2 meses |
 | Accidentes de trabajo · serie | Ministerio de Trabajo | Anual | el año se cierra en febrero o marzo |
 | Afiliación a la Seguridad Social | Anuario · Ministerio de Trabajo | Anual | el anuario sale a mediados del año siguiente |
+| Precio de la luz | PVPC · Red Eléctrica | Diaria | el precio de cada día sale la tarde anterior |
 | Municipios · paro | SEPE | Mensual | igual que el paro registrado |
 | Municipios · población | Padrón · INE | Anual | ~6 meses |
 | Municipios · renta | Atlas · INE | Anual | ~2 años |
+
+### La luz se guarda, no se vuelve a pedir
+
+La API de Red Eléctrica no da medias: sólo sirve horas, y en rangos de como
+mucho un mes. Así que el panel se baja un mes por petición, calcula él las
+medias y guarda el detalle diario en `data/luz/diario.json`. **Un mes cerrado y
+completo no se vuelve a pedir nunca**, porque ya está en git. La primera
+ejecución gastó sesenta y nueve peticiones; las siguientes gastan una.
 
 ### El ministerio no dice que no
 
