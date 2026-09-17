@@ -49,6 +49,15 @@
       ' de ' + partes[0];
   }
 
+  var MESES_CORTOS = ['ene', 'feb', 'mar', 'abr', 'may', 'jun',
+                      'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+
+  function fechaCorta(iso) {
+    var partes = String(iso || '').split('-');
+    if (partes.length !== 3) return iso || '';
+    return parseInt(partes[2], 10) + ' ' + MESES_CORTOS[parseInt(partes[1], 10) - 1];
+  }
+
   /* Una tarjeta por ámbito con los cinco precios, y al lado de cada uno cuánto
      se aparta de la media nacional. Esa comparación es la única forma de que
      «1,919 €» signifique algo. */
@@ -139,21 +148,28 @@
 
     var conjuntos = P.AMBITOS.map(function (ambito) {
       var porDia = diario[ambito.id] || {};
+      var datos = etiquetas.map(function (d) {
+        var v = porDia[d];
+        return v && v[estado.carburante] !== undefined ? v[estado.carburante] : null;
+      });
+      var cuantos = datos.filter(function (v) { return v !== null; }).length;
       return {
-        label: ambito.etiqueta,
-        data: etiquetas.map(function (d) {
-          var v = porDia[d];
-          return v && v[estado.carburante] !== undefined ? v[estado.carburante] : null;
-        }),
+        label: ambito.etiqueta + (cuantos === 1 ? ' (primer día)' : ''),
+        data: datos,
         borderColor: P.color(ambito.variable),
-        backgroundColor: 'transparent',
-        borderWidth: 1.8, pointRadius: 0, tension: 0.15, spanGaps: false
+        backgroundColor: P.color(ambito.variable),
+        borderWidth: 1.8,
+        /* Una serie de un solo día no dibuja línea, así que sin punto no se
+           vería nada y la leyenda mentiría: un color anunciado y nada en el
+           lienzo. Las que aún son cortas se pintan con punto. */
+        pointRadius: cuantos <= 3 ? 3.5 : 0,
+        tension: 0.15, spanGaps: false
       };
     }).filter(function (c) { return c.data.some(function (v) { return v !== null; }); });
 
     grafica = new Chart(lienzo.getContext('2d'), {
       type: 'line',
-      data: { labels: etiquetas.map(fechaLarga), datasets: conjuntos },
+      data: { labels: etiquetas.map(fechaCorta), datasets: conjuntos },
       options: {
         animation: false,
         responsive: true, maintainAspectRatio: false,
@@ -162,10 +178,15 @@
           legend: { position: 'top',
                     labels: { color: P.color('--tinta-suave'), boxWidth: 12,
                               usePointStyle: true, pointStyle: 'line' } },
-          tooltip: { callbacks: { label: function (punto) {
-            return punto.dataset.label + ': ' +
-              euros.format(punto.parsed.y) + ' €/l';
-          } } }
+          tooltip: { callbacks: {
+            // En el eje va «30 mar», que cabe; la fecha entera, aquí.
+            title: function (puntos) {
+              return fechaLarga(etiquetas[puntos[0].dataIndex]);
+            },
+            label: function (punto) {
+              return punto.dataset.label + ': ' +
+                euros.format(punto.parsed.y) + ' €/l';
+            } } }
         },
         scales: {
           x: { grid: { display: false },
