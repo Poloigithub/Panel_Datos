@@ -40,12 +40,33 @@ HACE_UN_ANYO = HOY - dt.timedelta(days=370)
 
 APIDATOS = "https://apidatos.ree.es/es/datos"
 
-# Segunda vuelta. La primera dejó claro que el PVPC por horas se baja sin
-# problema, que el spot viene cada quince minutos y que no hay desglose por
-# comunidad. Lo que falta: hasta dónde se puede pedir de una vez -un año por
-# días dio error- y hasta cuándo llega el histórico, que es lo que decide si
-# esto es una sección o una curiosidad del día.
+# Tercera vuelta, y es la que decide el diseño entero. Ya se sabe que por horas
+# y un día suelto funciona siempre, y que pedir medias diarias o mensuales
+# devuelve error. Falta lo único que importa ahora: **cuántos días se pueden
+# pedir de una vez por horas**. Si acepta un mes, el histórico entero se baja
+# en sesenta peticiones y se tiene el primer día; si sólo acepta un día, hay
+# que ir acumulándolo poco a poco durante dos semanas.
 PRUEBAS = [
+    ("por horas, 7 días seguidos",
+     f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
+     f"?start_date={HOY - dt.timedelta(days=8)}T00:00&end_date={AYER}T23:59"
+     f"&time_trunc=hour"),
+    ("por horas, 31 días seguidos",
+     f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
+     f"?start_date={HACE_UN_MES}T00:00&end_date={AYER}T23:59&time_trunc=hour"),
+    ("por horas, 92 días seguidos",
+     f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
+     f"?start_date={HOY - dt.timedelta(days=92)}T00:00&end_date={AYER}T23:59"
+     f"&time_trunc=hour"),
+    ("por horas, un año entero",
+     f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
+     f"?start_date={HACE_UN_ANYO}T00:00&end_date={AYER}T23:59&time_trunc=hour"),
+    ("¿desde cuándo hay PVPC? un día de 2021",
+     f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
+     f"?start_date=2021-06-15T00:00&end_date=2021-06-15T23:59&time_trunc=hour"),
+    ("¿y de 2022?",
+     f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
+     f"?start_date=2022-06-15T00:00&end_date=2022-06-15T23:59&time_trunc=hour"),
     ("medias diarias de un mes",
      f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
      f"?start_date={HACE_UN_MES}T00:00&end_date={AYER}T23:59&time_trunc=day"),
