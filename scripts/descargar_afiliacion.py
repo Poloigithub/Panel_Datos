@@ -273,18 +273,22 @@ def descarga_mensual(hoy: dt.date, por_ambito: dict) -> None:
         if periodo in guardado and not reciente:
             fallos = 0
         else:
-            estado, _, datos = red.abre(MENSUAL.format(anyo=anyo, mes=mes))
+            url = MENSUAL.format(anyo=anyo, mes=mes)
+            estado, _, datos = red.abre(url)
             pedidos += 1
-            if estado == 200 and datos[:2] == b"PK":
+            if estado != 200 or datos[:2] != b"PK":
+                print(f"    {periodo}: sin fichero ({estado}, {len(datos)} bytes)")
+                fallos += 1
+            else:
                 leido = lee_mes(datos)
                 if leido:
                     guardado[periodo] = leido
                     fallos = 0
                     print(f"    {periodo}: Castellón {leido.get('castellon')}")
                 else:
+                    print(f"    {periodo}: el fichero está pero no se encuentra "
+                          f"la hoja provincial")
                     fallos += 1
-            else:
-                fallos += 1
         anyo, mes = (anyo - 1, 12) if mes == 1 else (anyo, mes - 1)
 
     for periodo, ambitos in guardado.items():
