@@ -64,6 +64,9 @@ jobs:
       - name: Descargar el precio de la luz
         run: python scripts/descargar_luz.py
 
+      - name: Descargar los convenios colectivos
+        run: python scripts/descargar_convenios.py
+
       - name: Componer los titulares, el catálogo y la descarga completa
         run: |
           python scripts/generar_portada.py

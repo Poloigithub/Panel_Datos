@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T11:03:04+00:00",
+ "actualizado": "2026-09-17T11:17:28+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -1176,6 +1176,82 @@
    ],
    "desde": "2013T1",
    "hasta": "2026T1"
+  },
+  {
+   "clave": "subida_pactada",
+   "titulo": "Subida salarial pactada en convenio",
+   "seccion": "Convenios colectivos",
+   "seccion_id": "convenios",
+   "enlace": "convenios.html",
+   "fuente": "Convenios Colectivos · Ministerio de Trabajo",
+   "unidad": "%",
+   "unidad_texto": "variación salarial media pactada, en porcentaje",
+   "nota": "Acumulada dentro del año: el dato de agosto recoge todos los convenios con efectos económicos en ese año registrados hasta agosto, no lo firmado en agosto. Por eso la serie se mueve poco dentro de un año y da un salto en enero, cuando empieza a contar de cero.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2016M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "trabajadores_convenio",
+   "titulo": "Personas cubiertas por un convenio",
+   "seccion": "Convenios colectivos",
+   "seccion_id": "convenios",
+   "enlace": "convenios.html",
+   "fuente": "Convenios Colectivos · Ministerio de Trabajo",
+   "unidad": "personas",
+   "unidad_texto": "trabajadores afectados por convenios registrados",
+   "nota": "Sólo cuenta a quien tiene convenio y lo tiene ya registrado, así que no es toda la gente que trabaja.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2016M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "convenios",
+   "titulo": "Convenios registrados",
+   "seccion": "Convenios colectivos",
+   "seccion_id": "convenios",
+   "enlace": "convenios.html",
+   "fuente": "Convenios Colectivos · Ministerio de Trabajo",
+   "unidad": "convenios",
+   "unidad_texto": "convenios con efectos económicos en el año",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2016M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "jornada_pactada",
+   "titulo": "Jornada media pactada",
+   "seccion": "Convenios colectivos",
+   "seccion_id": "convenios",
+   "enlace": "convenios.html",
+   "fuente": "Convenios Colectivos · Ministerio de Trabajo",
+   "unidad": "horas al año",
+   "unidad_texto": "horas de trabajo al año pactadas en convenio",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2016M01",
+   "hasta": "2026M08"
   },
   {
    "clave": "pvpc_medio",

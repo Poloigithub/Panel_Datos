@@ -80,6 +80,18 @@ SECCIONES = [
         ],
     },
     {
+        "bloque": "convenios", "enlace": "convenios.html",
+        "titulo": "Convenios colectivos",
+        "fuente": "Convenios Colectivos · Ministerio de Trabajo",
+        "cadencia": "Mensual. El ministerio publica con unos dos meses de retraso.",
+        "destacados": [
+            {"clave": "subida_pactada", "titulo": "Subida salarial pactada",
+             "unidad": "%", "decimales": 2},
+            {"clave": "trabajadores_convenio", "titulo": "Personas con convenio",
+             "unidad": "personas", "decimales": 0},
+        ],
+    },
+    {
         "bloque": "luz", "enlace": "luz.html", "titulo": "El precio de la luz",
         "fuente": "PVPC · Red Eléctrica",
         "cadencia": "Diaria. El precio de cada día se publica la tarde anterior.",

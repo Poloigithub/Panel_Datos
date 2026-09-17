@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T11:03:04+00:00",
+ "actualizado": "2026-09-17T11:17:52+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -237,6 +237,51 @@
       "espana": 168231.69,
       "comunitat-valenciana": 130429.04,
       "castellon": 97183.91
+     }
+    }
+   ]
+  },
+  {
+   "id": "convenios",
+   "titulo": "Convenios colectivos",
+   "enlace": "convenios.html",
+   "fuente": "Convenios Colectivos · Ministerio de Trabajo",
+   "cadencia": "Mensual. El ministerio publica con unos dos meses de retraso.",
+   "actualizado": "2026-09-17T11:11:11+00:00",
+   "ultimo_periodo": "2026M08",
+   "destacados": [
+    {
+     "clave": "subida_pactada",
+     "titulo": "Subida salarial pactada",
+     "unidad": "%",
+     "decimales": 2,
+     "periodo": "2026M08",
+     "valores": {
+      "espana": 3.04,
+      "comunitat-valenciana": 2.86,
+      "castellon": 3.7
+     },
+     "hace_un_anyo": {
+      "espana": 3.5,
+      "comunitat-valenciana": 2.78,
+      "castellon": 2.83
+     }
+    },
+    {
+     "clave": "trabajadores_convenio",
+     "titulo": "Personas con convenio",
+     "unidad": "personas",
+     "decimales": 0,
+     "periodo": "2026M08",
+     "valores": {
+      "espana": 8844987.0,
+      "comunitat-valenciana": 815218.0,
+      "castellon": 81071.0
+     },
+     "hace_un_anyo": {
+      "espana": 8933478.0,
+      "comunitat-valenciana": 758202.0,
+      "castellon": 30285.0
      }
     }
    ]

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T11:03:37+00:00",
+ "actualizado": "2026-09-17T11:18:12+00:00",
  "repositorio": "https://github.com/Poloigithub/Panel_Datos",
  "altas": [
   {
@@ -30,6 +30,18 @@
       "Personas afiliadas a la Seguridad Social",
       "Personas afiliadas por cuenta propia",
       "Personas por cuenta propia, mes a mes"
+     ]
+    },
+    {
+     "id": "convenios",
+     "titulo": "Convenios colectivos",
+     "estreno": true,
+     "commit": "5a117a9",
+     "indicadores": [
+      "Convenios registrados",
+      "Jornada media pactada",
+      "Subida salarial pactada en convenio",
+      "Personas cubiertas por un convenio"
      ]
     },
     {
@@ -466,30 +478,6 @@
      "id": "epa",
      "titulo": "Mercado laboral",
      "cambios": 8
-    }
-   ]
-  },
-  {
-   "commit": "f0c67d9",
-   "fecha": "2026-09-15T20:42:27+00:00",
-   "asunto": "Actualiza datos de la EPA (último periodo: 2026T2)",
-   "secciones": [
-    {
-     "id": "epa",
-     "titulo": "Mercado laboral",
-     "cambios": 8
-    }
-   ]
-  },
-  {
-   "commit": "30d1b6d",
-   "fecha": "2026-09-15T20:36:38+00:00",
-   "asunto": "Actualiza datos de la EPA (último periodo: 2026T2)",
-   "secciones": [
-    {
-     "id": "epa",
-     "titulo": "Mercado laboral",
-     "cambios": 30
     }
    ]
   }

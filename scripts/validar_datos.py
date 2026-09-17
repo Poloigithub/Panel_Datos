@@ -127,6 +127,11 @@ RANGOS = {
     "agua": (30, 400),
     "restaurantes": (30, 400),
     "restauracion": (30, 400),
+    # convenios colectivos
+    "subida_pactada": (-5, 30),
+    "trabajadores_convenio": (0, 20_000_000),
+    "convenios": (0, 20_000),
+    "jornada_pactada": (1_000, 2_200),
     # el precio de la luz, en céntimos por kWh
     "pvpc_medio": (0, 100),
     "pvpc_barata": (-10, 100),
@@ -234,6 +239,7 @@ FRESCURA = {
     # La serie mensual se cierra cuando el mes termina, así que hasta que no
     # acaba el mes en curso el último dato es el del anterior.
     "luz": ("mensual", 2),
+    "convenios": ("mensual", 4),
     "poblacion": ("anual o trimestral, según el indicador", 15),
     "demografia": ("anual", 30),
     "renta": ("anual", 36),
