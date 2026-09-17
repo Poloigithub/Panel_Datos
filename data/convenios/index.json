@@ -1,0 +1,61 @@
+{
+  "actualizado": "2026-09-17T11:11:11+00:00",
+  "titulo": "Convenios colectivos",
+  "ultimo_periodo": "2026M08",
+  "primer_periodo": "2016M01",
+  "indicadores": {
+    "subida_pactada": {
+      "titulo": "Subida salarial pactada en convenio",
+      "unidad": "%",
+      "unidad_texto": "variación salarial media pactada, en porcentaje",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": "Acumulada dentro del año: el dato de agosto recoge todos los convenios con efectos económicos en ese año registrados hasta agosto, no lo firmado en agosto. Por eso la serie se mueve poco dentro de un año y da un salto en enero, cuando empieza a contar de cero.",
+      "sobre_total": null
+    },
+    "trabajadores_convenio": {
+      "titulo": "Personas cubiertas por un convenio",
+      "unidad": "personas",
+      "unidad_texto": "trabajadores afectados por convenios registrados",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": "Sólo cuenta a quien tiene convenio y lo tiene ya registrado, así que no es toda la gente que trabaja.",
+      "sobre_total": null
+    },
+    "convenios": {
+      "titulo": "Convenios registrados",
+      "unidad": "convenios",
+      "unidad_texto": "convenios con efectos económicos en el año",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
+    },
+    "jornada_pactada": {
+      "titulo": "Jornada media pactada",
+      "unidad": "horas al año",
+      "unidad_texto": "horas de trabajo al año pactadas en convenio",
+      "decimales": 2,
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
+    }
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ]
+}
