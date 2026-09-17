@@ -5,9 +5,9 @@ GitHub Pages. Siempre en tres ámbitos -España, la Comunitat Valenciana y la
 provincia de Castellón- y, cuando la fuente llega, por municipio.
 
 Secciones: mercado laboral (EPA), población, natalidad y mortalidad, precios,
-renta, salarios, la cesta de la compra, accidentes de trabajo, afiliación,
-vivienda,
-paro registrado y contratación (SEPE), y el mapa municipal de la provincia.
+renta, salarios, la cesta de la compra, accidentes de trabajo, afiliación a la
+Seguridad Social, vivienda, paro registrado y contratación (SEPE), y el mapa
+municipal de la provincia.
 
 ## Cómo funciona
 
