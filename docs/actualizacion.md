@@ -76,9 +76,26 @@ tarea diaria.
 | Regulación de empleo | Ministerio de Trabajo | Mensual | ~2 meses |
 | Despidos y su coste | Ministerio de Trabajo | Anual | ~1 año |
 | Huelgas | Ministerio de Trabajo | Mensual | **~4 meses**, el mayor del panel |
+| Materias primas | Pink Sheet · Banco Mundial | Mensual | el primer día hábil, con el mes anterior cerrado |
+| Tipo de cambio euro/dólar | BCE | Mensual | el mes cierra en los primeros días |
 | Municipios · paro | SEPE | Mensual | igual que el paro registrado |
 | Municipios · población | Padrón · INE | Anual | ~6 meses |
 | Municipios · renta | Atlas · INE | Anual | ~2 años |
+
+### La dirección del Pink Sheet se lee, no se escribe
+
+El fichero mensual de materias primas del Banco Mundial vive en una URL que
+lleva dentro un identificador de versión. Al sondear la fuente se comprobó lo
+que pasa cuando esa dirección se fija en el código: **la del año anterior sigue
+contestando correctamente y sirviendo un fichero congelado nueve meses atrás**.
+No hay error, no hay aviso, no hay nada en rojo; simplemente se publican datos
+viejos.
+
+Por eso `descargar_materias.py` entra cada vez por
+`worldbank.org/en/research/commodity-markets` y coge el enlace que la página
+publique ese día. Si el enlace desaparece, el descargador falla a propósito:
+más vale un run en rojo que una sección mintiendo en silencio. Es la misma
+decisión que se tomó con las huelgas y la página del ministerio.
 
 ### La luz se guarda, no se vuelve a pedir
 

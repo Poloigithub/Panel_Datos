@@ -127,6 +127,19 @@ SECCIONES = [
         ],
     },
     {
+        "bloque": "materias", "enlace": "materias.html",
+        "titulo": "Materias primas",
+        "fuente": "Pink Sheet · Banco Mundial",
+        "cadencia": "Mensual. El Banco Mundial publica el primer día hábil de "
+                    "cada mes, con el mes anterior cerrado.",
+        "destacados": [
+            {"clave": "brent", "titulo": "Petróleo Brent",
+             "unidad": "$/barril", "decimales": 2},
+            {"clave": "gas_europa", "titulo": "Gas natural en Europa",
+             "unidad": "$/mmbtu", "decimales": 2},
+        ],
+    },
+    {
         "bloque": "afiliacion", "enlace": "afiliacion.html",
         "titulo": "Afiliación a la Seguridad Social",
         "fuente": "Anuario de Estadísticas · Ministerio de Trabajo",

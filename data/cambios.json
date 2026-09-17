@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T13:04:33+00:00",
+ "actualizado": "2026-09-17T14:56:03+00:00",
  "repositorio": "https://github.com/Poloigithub/Panel_Datos",
  "altas": [
   {
@@ -77,6 +77,29 @@
       "Jornadas no trabajadas",
       "Personas que secundaron una huelga",
       "Huelgas con repercusión en el territorio"
+     ]
+    },
+    {
+     "id": "materias",
+     "titulo": "Materias primas",
+     "estreno": true,
+     "commit": "e269e61",
+     "indicadores": [
+      "Aceite de girasol",
+      "Aluminio",
+      "Azúcar",
+      "Petróleo Brent",
+      "Cacao",
+      "Café",
+      "Carbón",
+      "Cobre",
+      "Dólares por euro",
+      "Gas natural en Europa",
+      "Maíz",
+      "Naranja",
+      "Oro",
+      "Trigo",
+      "Urea"
      ]
     }
    ]

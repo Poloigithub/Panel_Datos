@@ -73,6 +73,9 @@ jobs:
       - name: Descargar las huelgas
         run: python scripts/descargar_huelgas.py
 
+      - name: Descargar las materias primas
+        run: python scripts/descargar_materias.py
+
       - name: Componer los titulares, el catálogo y la descarga completa
         run: |
           python scripts/generar_portada.py

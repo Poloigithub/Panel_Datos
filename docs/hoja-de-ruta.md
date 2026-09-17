@@ -704,6 +704,63 @@ sin ninguno.
 
 ---
 
+## Fase 14 · Materias primas ✅ hecha
+
+**De dónde, que era la pregunta de verdad.** La petición llegó con una fuente
+sugerida: Yahoo Finance. Yahoo contesta -se comprobó- pero lo que se usa es un
+endpoint interno de su web, sin documentar y sin compromiso de estabilidad, y
+eso choca con la regla de que toda cifra del panel venga de una fuente oficial
+y trazable. Así que antes de escribir nada se sondearon cuatro puertas a la
+vez. Ganó el **Pink Sheet del Banco Mundial**: ochenta y ocho series mensuales
+desde enero de 1960, publicadas el primer día hábil de cada mes, en una hoja de
+cálculo que el panel ya sabía leer.
+
+**El sondeo evitó publicar datos de hace nueve meses.** La primera dirección
+probada contestaba 200 y servía un XLSX correcto... cerrado en diciembre de
+2025. La URL del fichero lleva dentro un identificador de versión, y la del año
+anterior sigue viva sirviendo el fichero viejo. Si se hubiera fijado a mano, la
+sección habría nacido con nueve meses de retraso sin que nada fallara ni
+avisara. Ahora **la dirección se lee de la página del Banco Mundial en cada
+actualización**, como ya se hacía con las huelgas, y si el enlace desaparece el
+descargador revienta a propósito en vez de tirar de una copia guardada.
+
+**Catorce series, elegidas por lo que le dicen a quien vive aquí.** El Brent y
+el gas, que están detrás de la factura de la luz y del depósito. El trigo, el
+maíz, el aceite de girasol, el azúcar, el café y el cacao, que son lo que acaba
+en la cesta de la compra meses después. La urea, que es lo que cuesta abonar un
+campo y sigue al gas porque se fabrica con él. El cobre, el aluminio y el oro.
+Y la **naranja**, que en Castellón no es una materia prima cualquiera.
+
+**Los dólares se quedan en dólares.** Los precios se guardan exactamente como
+los publica la fuente, sin convertir. Lo que se descarga aparte es el tipo de
+cambio oficial del BCE, que se publica **como un indicador más**, y el botón
+«en euros» hace la división en el navegador. Así el dato publicado es el de la
+fuente y la cuenta queda a la vista de quien quiera rehacerla. El gráfico del
+Brent enseña las dos monedas juntas, que es la forma de ver cuánto de una
+subida es el petróleo y cuánto es el dólar.
+
+**Dos fallos de fondo que esto destapó**, los dos viejos y los dos en código
+compartido por todo el panel:
+
+- *Los rangos de validación eran globales por nombre.* La cesta de la compra ya
+  tenía un `azucar` y un `cafe` que son índices del IPC con base 100, y el
+  rango de aquéllos declaraba inválidos a éstos, que son dólares por kilo. Ahora
+  un rango puede declararse **por bloque** -`materias/azucar`- y ése manda sobre
+  el general. Va con pruebas.
+- *`P.formatea` sólo sabía de cero, uno y dos decimales.* Cualquier otra cosa
+  caía en el de un decimal sin avisar, así que el tipo de cambio del euro,
+  declarado con cuatro, salía en la tabla como «1,2». Ahora se construye un
+  formateador por cada número de decimales que se pida.
+
+**Lo que queda apuntado.** Los **carburantes del ministerio** tienen API
+oficial y, esto es lo importante para este panel, **dato por provincia**: lo que
+cuesta llenar el depósito en Castellón. Contestan bien -196 gasolineras sólo en
+la provincia- pero la API sirve **la foto de hoy, no el histórico**, así que la
+serie habría que acumularla día a día y empezaría el día que se enchufe. Entra
+cuando se decida asumir eso.
+
+---
+
 ## Orden y dependencias
 
 ```

@@ -162,6 +162,29 @@ RANGOS = {
     "ipc_variacion": (-30, 60),
     "ipc_alimentos": (-30, 60),
     "ipc_transporte": (-40, 60),
+    # materias primas, en la moneda y la unidad en que las publica el Banco
+    # Mundial. Los rangos son anchos a propósito: no están para vigilar el
+    # mercado -el oro ha pasado de 35 dólares a más de 5.000 sin que nada
+    # fallara- sino para cazar el día en que se lea la columna de al lado.
+    "materias/brent": (0.5, 500),
+    "materias/gas_europa": (0.1, 200),
+    "materias/carbon": (1, 1_000),
+    "materias/trigo": (10, 2_000),
+    "materias/maiz": (10, 2_000),
+    "materias/aceite_girasol": (100, 5_000),
+    # Estas dos van con el bloque por delante porque «azucar» y «cafe» ya
+    # existen en la cesta de la compra, donde son índices del IPC con base
+    # 100. Son cosas distintas con el mismo nombre, y sin el prefijo el
+    # rango de una tumbaba a la otra.
+    "materias/azucar": (0.01, 5),
+    "materias/cafe": (0.1, 30),
+    "materias/cacao": (0.1, 30),
+    "materias/naranja": (0.02, 10),
+    "materias/urea": (5, 2_000),
+    "materias/cobre": (100, 30_000),
+    "materias/aluminio": (100, 10_000),
+    "materias/oro": (20, 20_000),
+    "materias/euro_dolar": (0.5, 2),
 }
 
 # Relaciones que se cumplen por definición, con la holgura del redondeo del
@@ -248,6 +271,9 @@ FRESCURA = {
     # La serie mensual se cierra cuando el mes termina, así que hasta que no
     # acaba el mes en curso el último dato es el del anterior.
     "luz": ("mensual", 2),
+    # El Pink Sheet sale el primer día hábil del mes con el mes anterior
+    # cerrado, así que dos meses de margen ya es señal de que algo pasa.
+    "materias": ("mensual", 2),
     "convenios": ("mensual", 4),
     "despidos": ("mensual los expedientes, anual los despidos", 4),
     # El avance de huelgas sale con unos cuatro meses de retraso, más que
@@ -389,7 +415,12 @@ def revisa_estructura(bloque: Path, indice: dict, informe: Informe) -> dict:
 def revisa_rangos(bloque: str, ambito: str, contenido: dict, informe: Informe) -> None:
     for sexo, magnitudes in contenido.get("series", {}).items():
         for clave, valores in magnitudes.items():
-            rango = RANGOS.get(clave)
+            # Un rango puede declararse para todo el panel -«tasa_paro»- o
+            # sólo para un bloque -«materias/azucar»-, y el del bloque manda.
+            # Hace falta porque dos bloques pueden llamar igual a cosas
+            # distintas: el azúcar de la cesta es un índice del IPC y el de
+            # materias primas son dólares por kilo.
+            rango = RANGOS.get(f"{bloque}/{clave}") or RANGOS.get(clave)
             if not rango:
                 continue
             minimo, maximo = rango

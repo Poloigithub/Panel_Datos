@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T13:04:32+00:00",
+ "actualizado": "2026-09-17T14:56:02+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -415,6 +415,51 @@
      },
      "hace_un_anyo": {
       "espana": 16.51183870967742,
+      "comunitat-valenciana": null,
+      "castellon": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "materias",
+   "titulo": "Materias primas",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "cadencia": "Mensual. El Banco Mundial publica el primer día hábil de cada mes, con el mes anterior cerrado.",
+   "actualizado": "2026-09-17T14:50:19+00:00",
+   "ultimo_periodo": "2026M08",
+   "destacados": [
+    {
+     "clave": "brent",
+     "titulo": "Petróleo Brent",
+     "unidad": "$/barril",
+     "decimales": 2,
+     "periodo": "2026M08",
+     "valores": {
+      "espana": 90.9,
+      "comunitat-valenciana": null,
+      "castellon": null
+     },
+     "hace_un_anyo": {
+      "espana": 68.2,
+      "comunitat-valenciana": null,
+      "castellon": null
+     }
+    },
+    {
+     "clave": "gas_europa",
+     "titulo": "Gas natural en Europa",
+     "unidad": "$/mmbtu",
+     "decimales": 2,
+     "periodo": "2026M08",
+     "valores": {
+      "espana": 21.11,
+      "comunitat-valenciana": null,
+      "castellon": null
+     },
+     "hace_un_anyo": {
+      "espana": 11.15,
       "comunitat-valenciana": null,
       "castellon": null
      }

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es" class="h-full">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Materias primas · Panel de datos</title>
+<meta name="description" content="El precio del Brent, el gas, el trigo, el café o la naranja, mes a mes desde 1960, según el Pink Sheet del Banco Mundial. En dólares y en euros.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<script>
+  try {
+    const guardado = localStorage.getItem('panel-tema');
+    if (guardado) document.documentElement.dataset.theme = guardado;
+  } catch (_) {}
+</script>
+</head>
+<body class="min-h-full antialiased" data-bloque="materias">
+
+<header class="border-b" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+    <a href="./" class="flex items-center gap-2.5 font-semibold tracking-tight">
+      <span aria-hidden="true" class="grid h-8 w-8 place-items-center rounded-lg text-white text-sm" style="background-color: var(--acento)">PD</span>
+      <span>Panel de datos</span>
+    </a>
+    <button type="button" data-tema class="control" aria-label="Cambiar entre tema claro y oscuro">
+      <span data-tema-texto>Tema</span>
+    </button>
+  </div>
+</header>
+
+<main class="mx-auto max-w-6xl px-4 sm:px-6 py-8 sm:py-10">
+
+  <nav aria-label="Ruta" class="text-xs" style="color: var(--tinta-tenue)">
+    <a class="enlace-sutil" href="./">Panel</a> <span aria-hidden="true">/</span> Materias primas
+  </nav>
+
+  <h1 class="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Materias primas</h1>
+  <p class="mt-3 max-w-3xl text-base leading-relaxed" style="color: var(--tinta-suave)">
+    Lo que cuesta un barril de Brent, un millón de BTU de gas, una tonelada de
+    trigo o un kilo de naranjas en los mercados internacionales. Son los
+    precios que están detrás de la factura de la luz, del depósito lleno y de
+    buena parte de lo que sube en el supermercado, y se mueven meses antes de
+    que se noten allí. <strong>No tienen provincia</strong>: el Brent vale lo
+    mismo en Castellón que en Singapur, y la página lo dice en vez de repetir
+    tres veces la misma cifra.
+  </p>
+
+  <p data-estado role="status" class="mt-6 text-sm" style="color: var(--tinta-suave)">Cargando datos…</p>
+
+  <div data-panel hidden>
+
+    <section aria-labelledby="filtros-titulo" class="mt-8 tarjeta p-4">
+      <h2 id="filtros-titulo" class="sr-only">Filtros</h2>
+      <div class="flex flex-wrap items-end gap-x-6 gap-y-4">
+
+        <fieldset>
+          <legend class="text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Periodo</legend>
+          <div class="mt-1.5 segmento" data-grupo="periodo" role="group" aria-label="Periodo mostrado">
+            <button type="button" data-valor="todo" aria-pressed="true">Serie completa</button>
+            <button type="button" data-valor="10" aria-pressed="false">10 años</button>
+          </div>
+        </fieldset>
+
+        <fieldset hidden>
+          <legend class="sr-only">Ámbitos</legend>
+          <div data-grupo="ambitos"></div>
+        </fieldset>
+
+        <div class="ml-auto">
+          <button type="button" data-csv class="control" title="Descargar la selección actual en CSV">Descargar CSV</button>
+        </div>
+      </div>
+    </section>
+
+    <section data-tablero-seccion hidden aria-labelledby="tablero-titulo" class="mt-8">
+      <div class="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <h2 id="tablero-titulo" class="text-lg font-semibold tracking-tight">Cómo está cada cosa</h2>
+          <p class="mt-1 text-xs" style="color: var(--tinta-tenue)">
+            Último precio publicado y cuánto ha cambiado en un año y en cinco.
+          </p>
+        </div>
+        <fieldset>
+          <legend class="sr-only">Moneda</legend>
+          <div class="segmento" data-grupo="moneda" role="group" aria-label="Moneda del tablero">
+            <button type="button" data-valor="dolares" aria-pressed="true">En dólares</button>
+            <button type="button" data-valor="euros" aria-pressed="false">En euros</button>
+          </div>
+        </fieldset>
+      </div>
+      <div data-tablero class="mt-3 grid gap-4 lg:grid-cols-3"></div>
+      <p class="mt-3 text-xs leading-relaxed" style="color: var(--tinta-tenue)">
+        Todo esto cotiza en dólares, que es como lo publica el Banco Mundial y
+        como se guarda aquí. Al pulsar «en euros» la división la hace esta
+        página con el tipo de cambio oficial del Banco Central Europeo, que
+        está más abajo como un indicador más para que la cuenta se pueda
+        rehacer a mano.
+      </p>
+    </section>
+
+    <section data-brent-seccion hidden aria-labelledby="brent-titulo" class="mt-10">
+      <h2 id="brent-titulo" class="text-lg font-semibold tracking-tight">El Brent, en las dos monedas</h2>
+      <p class="mt-1 max-w-3xl text-xs leading-relaxed" style="color: var(--tinta-tenue)">
+        Un barril que sube un 10 % mientras el dólar se debilita otro 10 % no
+        ha subido nada para quien compra desde Europa. Las dos líneas juntas
+        enseñan cuánto de cada subida es el petróleo y cuánto es la moneda.
+        Empieza en 1999 porque antes no había euro con el que comparar.
+      </p>
+      <div class="mt-4 tarjeta p-4">
+        <div class="relative" style="height: 320px">
+          <canvas data-brent role="img" aria-label="Precio del barril de Brent en dólares y en euros, mes a mes desde 1999"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="resumen-titulo" class="mt-10">
+      <div class="flex flex-wrap items-baseline justify-between gap-2">
+        <h2 id="resumen-titulo" class="text-lg font-semibold tracking-tight">Último dato disponible</h2>
+        <p class="text-xs" style="color: var(--tinta-tenue)">Cada indicador tiene su propio calendario: se indica el periodo de cada cifra.</p>
+      </div>
+      <div class="mt-3 tarjeta overflow-x-auto">
+        <table class="w-full text-sm">
+          <caption class="sr-only">Último valor publicado de cada indicador, por ámbito territorial</caption>
+          <thead>
+            <tr class="text-left" data-resumen-cabecera style="color: var(--tinta-tenue)"></tr>
+          </thead>
+          <tbody data-resumen class="align-top"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mt-10 grid gap-5 sm:grid-cols-2" data-graficas></section>
+
+    <section class="mt-12 tarjeta p-5">
+      <h2 class="text-sm font-semibold">Fuente y método</h2>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        El <strong>Pink Sheet</strong> del Banco Mundial, que es la referencia
+        mundial de precios de materias primas: ochenta y ocho series mensuales
+        desde enero de 1960, publicadas el primer día hábil de cada mes con el
+        mes anterior cerrado. Aquí se recogen catorce, elegidas por lo que le
+        dicen a quien vive aquí.
+      </p>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        La dirección del fichero <strong>se lee de la página del Banco Mundial
+        en cada actualización</strong>, no está escrita en el código. Su URL
+        lleva dentro un identificador de versión, y al sondear la fuente se vio
+        lo que pasa si se fija a mano: la dirección del año anterior seguía
+        contestando correctamente y sirviendo un fichero congelado nueve meses
+        atrás. Habría sido publicar datos viejos sin que nadie lo notara.
+      </p>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Los precios se guardan <strong>en dólares y sin convertir</strong>, que
+        es exactamente como los da la fuente. El <strong>tipo de cambio del
+        Banco Central Europeo</strong> se descarga aparte y se publica como un
+        indicador más: el botón «en euros» divide una cosa por la otra en el
+        navegador, así que la cuenta está a la vista y se puede rehacer.
+      </p>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Son <strong>precios nominales</strong>: no están corregidos de
+        inflación. Comparar 1960 con hoy en dólares corrientes dice poco sobre
+        lo caro que era algo entonces; para eso está la sección de precios.
+      </p>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Cada serie empieza cuando el Banco Mundial empieza a publicarla, y eso
+        no es lo mismo para todas: el carbón arranca en 1970, el aceite de
+        girasol en 2002 y el tipo de cambio del euro en 1999, porque antes no
+        existía. Esos huecos se dejan a la vista.
+      </p>
+      <p class="mt-2 text-sm" style="color: var(--tinta-suave)">
+        Última actualización de los datos: <span data-actualizado class="font-medium"></span>.
+      </p>
+      <p class="mt-3 text-xs leading-relaxed" style="color: var(--tinta-tenue)">
+        Las columnas de la Comunitat y de Castellón aparecen vacías a
+        propósito: el precio de una materia prima se fija en mercados
+        internacionales y no tiene desglose territorial. Dejar el hueco es más
+        honesto que repetir tres veces la cifra mundial.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="border-t mt-8" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-6 text-xs flex flex-wrap gap-x-6 gap-y-2 justify-between" style="color: var(--tinta-tenue)">
+    <p>Datos: <a class="enlace-sutil" href="https://www.worldbank.org/en/research/commodity-markets" rel="noopener">Pink Sheet del Banco Mundial</a> y <a class="enlace-sutil" href="https://data.ecb.europa.eu/" rel="noopener">Banco Central Europeo</a>. Elaboración propia.</p>
+    <p><a class="enlace-sutil" href="buscar.html">Buscar</a> · <a class="enlace-sutil" href="fuentes.html">Fuentes y calendario</a> · <a class="enlace-sutil" href="cambios.html">Cambios</a> · <a class="enlace-sutil" href="https://github.com/Poloigithub/Panel_Datos" rel="noopener">Código en GitHub</a></p>
+  </div>
+</footer>
+
+<!-- Chart.js 4.5.1, servido desde el propio repositorio para no depender de un CDN -->
+<script src="assets/vendor/chart.umd.js"></script>
+<script src="assets/js/tema.js"></script>
+<script src="assets/js/enlace.js"></script>
+<script src="assets/js/panel.js"></script>
+<script src="assets/js/bloque.js"></script>
+<script src="assets/js/materias.js"></script>
+</body>
+</html>

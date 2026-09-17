@@ -16,15 +16,30 @@
     { id: 'castellon', etiqueta: 'Castellón', variable: '--serie-3' }
   ];
 
-  var enteros = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0, useGrouping: 'always' });
-  var unDecimal = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 1, useGrouping: 'always' });
-  var dosDecimales = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  /* Un formateador por número de decimales, creado la primera vez que hace
+     falta. Antes había tres fijos -cero, uno y dos- y cualquier otra cosa caía
+     en el de un decimal sin avisar: el tipo de cambio del euro, declarado con
+     cuatro, salía en la tabla como «1,2». Un indicador que dice cuántos
+     decimales tiene merece que se le haga caso. */
+  var formateadores = new Map();
+
+  function formateador(decimales) {
+    var clave = Math.max(0, Math.min(10, decimales | 0));
+    var guardado = formateadores.get(clave);
+    if (guardado) return guardado;
+    var nuevo = new Intl.NumberFormat('es-ES', {
+      minimumFractionDigits: clave >= 2 ? clave : 0,
+      maximumFractionDigits: clave,
+      useGrouping: 'always'
+    });
+    formateadores.set(clave, nuevo);
+    return nuevo;
+  }
 
   function formatea(valor, decimales) {
     if (valor === null || valor === undefined || Number.isNaN(valor)) return '—';
-    if (decimales === 0) return enteros.format(valor);
-    if (decimales === 2) return dosDecimales.format(valor);
-    return unDecimal.format(valor);
+    return formateador(decimales === undefined || decimales === null ? 1 : decimales)
+      .format(valor);
   }
 
   function conUnidad(valor, unidad, decimales) {

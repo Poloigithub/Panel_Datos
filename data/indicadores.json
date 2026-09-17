@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T13:04:32+00:00",
+ "actualizado": "2026-09-17T14:56:01+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -1451,6 +1451,261 @@
     "espana"
    ],
    "desde": "2021M06",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "brent",
+   "titulo": "Petróleo Brent",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/barril",
+   "unidad_texto": "dólares por barril",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "gas_europa",
+   "titulo": "Gas natural en Europa",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/mmbtu",
+   "unidad_texto": "dólares por millón de BTU",
+   "nota": "El precio de referencia del gas en Europa, que es lo que acaba marcando el precio de la luz en las horas en que la fija un ciclo combinado.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "carbon",
+   "titulo": "Carbón",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1970M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "trigo",
+   "titulo": "Trigo",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "maiz",
+   "titulo": "Maíz",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "aceite_girasol",
+   "titulo": "Aceite de girasol",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "Ucrania y Rusia producían más de la mitad del aceite de girasol del mundo. Lo que pasó en 2022 se ve aquí antes que en el supermercado.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2002M02",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "azucar",
+   "titulo": "Azúcar",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/kg",
+   "unidad_texto": "dólares por kilo",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "cafe",
+   "titulo": "Café",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/kg",
+   "unidad_texto": "dólares por kilo",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "cacao",
+   "titulo": "Cacao",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/kg",
+   "unidad_texto": "dólares por kilo",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "naranja",
+   "titulo": "Naranja",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/kg",
+   "unidad_texto": "dólares por kilo",
+   "nota": "Está aquí por Castellón: el precio internacional de la naranja es el que marca lo que cobra quien la cultiva.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "urea",
+   "titulo": "Urea",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El abono nitrogenado más usado. Se fabrica con gas natural, así que su precio sigue al del gas: cuando se disparó en 2022, se disparó lo que costaba abonar un campo.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "cobre",
+   "titulo": "Cobre",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "aluminio",
+   "titulo": "Aluminio",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "oro",
+   "titulo": "Oro",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/onza",
+   "unidad_texto": "dólares por onza troy",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "euro_dolar",
+   "titulo": "Dólares por euro",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/€",
+   "unidad_texto": "tipo de cambio oficial de referencia, media del mes",
+   "nota": "Está aquí para que la conversión a euros del resto de la página se pueda rehacer a mano. Fuente: Banco Central Europeo.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1999M01",
    "hasta": "2026M08"
   },
   {
