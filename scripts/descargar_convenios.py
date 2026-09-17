@@ -183,7 +183,12 @@ def ya_bajados() -> dict[str, dict[str, dict[str, float]]]:
             for periodo, valor in zip(contenido["periodos"], valores):
                 if valor is not None:
                     guardado.setdefault(periodo, {}).setdefault(ambito, {})[magnitud] = valor
-    return guardado
+
+    # Un mes sólo cuenta como bajado si trae todas las magnitudes que hoy se
+    # esperan; si no, añadir un indicador dejaría su serie vacía para siempre.
+    esperadas = set(BLOQUE["indicadores"])
+    return {periodo: ambitos for periodo, ambitos in guardado.items()
+            if all(esperadas <= set(magnitudes) for magnitudes in ambitos.values())}
 
 
 def main() -> int:

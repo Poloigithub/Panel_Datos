@@ -189,6 +189,14 @@ def lee_mes(datos: bytes) -> dict[str, dict[str, float]]:
 
 
 def ya_bajados() -> dict[str, dict[str, dict[str, float]]]:
+    """Lo que ya está en el repositorio, para no volver a pedirlo.
+
+    Un mes sólo cuenta como bajado si trae **todas** las magnitudes que hoy se
+    esperan. Sin esa condición, el día que se añade un indicador el caché
+    congela la forma vieja: los meses antiguos nunca se vuelven a pedir y la
+    serie nueva se queda vacía para siempre, que es exactamente lo que pasó con
+    el número de huelgas.
+    """
     guardado: dict[str, dict[str, dict[str, float]]] = {}
     for ambito in FILAS:
         fichero = RAIZ / "data" / "huelgas" / f"{ambito}.json"
@@ -200,7 +208,10 @@ def ya_bajados() -> dict[str, dict[str, dict[str, float]]]:
                 if valor is not None:
                     guardado.setdefault(periodo, {}) \
                         .setdefault(ambito, {})[magnitud] = valor
-    return guardado
+
+    esperadas = set(BLOQUE["indicadores"])
+    return {periodo: ambitos for periodo, ambitos in guardado.items()
+            if all(esperadas <= set(magnitudes) for magnitudes in ambitos.values())}
 
 
 def main() -> int:
