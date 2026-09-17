@@ -6,6 +6,7 @@
     2023: 7894.0 accidentes en jornada en Castellón, 2.0 mortales
     2024: 7918.0 accidentes en jornada en Castellón, 7.0 mortales
     2025: 8009.0 accidentes en jornada en Castellón, 8.0 mortales
+    calculadas las tasas por cada 100.000 afiliados
     escrito data/siniestralidad/espana.json
     escrito data/siniestralidad/comunitat-valenciana.json
     escrito data/siniestralidad/castellon.json

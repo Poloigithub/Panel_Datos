@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-17T02:40:50+00:00",
+  "actualizado": "2026-09-17T04:01:38+00:00",
   "titulo": "Accidentes de trabajo",
   "ultimo_periodo": "2025",
   "primer_periodo": "2021",
@@ -46,6 +46,24 @@
       "unidad_texto": "personas muertas yendo o volviendo del trabajo",
       "decimales": 0,
       "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
+    },
+    "tasa_accidentes": {
+      "titulo": "Accidentes por cada 100.000 afiliados",
+      "unidad": "accidentes",
+      "decimales": 1,
+      "por_sexo": false,
+      "unidad_texto": "accidentes con baja en jornada por cada 100.000 personas afiliadas",
+      "nota": "Cálculo propio: accidentes del año entre la media anual de personas afiliadas a la Seguridad Social. Es lo que separa «hay más accidentes» de «hay más gente trabajando». Falta 2016 porque falta su afiliación, y falta el año en curso porque su afiliación todavía no está publicada.",
+      "sobre_total": null
+    },
+    "tasa_mortales": {
+      "titulo": "Muertes por cada 100.000 afiliados",
+      "unidad": "muertes",
+      "decimales": 2,
+      "por_sexo": false,
+      "unidad_texto": "muertes en el puesto por cada 100.000 personas afiliadas",
       "nota": null,
       "sobre_total": null
     }
