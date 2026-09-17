@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es" class="h-full">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accidentes de trabajo · Panel de datos</title>
+<meta name="description" content="Accidentes de trabajo y muertes en el puesto en España, la Comunitat Valenciana y la provincia de Castellón, con el avance de lo que va de año.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<script>
+  try {
+    const guardado = localStorage.getItem('panel-tema');
+    if (guardado) document.documentElement.dataset.theme = guardado;
+  } catch (_) {}
+</script>
+</head>
+<body class="min-h-full antialiased" data-bloque="siniestralidad">
+
+<header class="border-b" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+    <a href="./" class="flex items-center gap-2.5 font-semibold tracking-tight">
+      <span aria-hidden="true" class="grid h-8 w-8 place-items-center rounded-lg text-white text-sm" style="background-color: var(--acento)">PD</span>
+      <span>Panel de datos</span>
+    </a>
+    <button type="button" data-tema class="control" aria-label="Cambiar entre tema claro y oscuro">
+      <span data-tema-texto>Tema</span>
+    </button>
+  </div>
+</header>
+
+<main class="mx-auto max-w-6xl px-4 sm:px-6 py-8 sm:py-10">
+
+  <nav aria-label="Ruta" class="text-xs" style="color: var(--tinta-tenue)">
+    <a class="enlace-sutil" href="./">Panel</a> <span aria-hidden="true">/</span> Accidentes de trabajo
+  </nav>
+
+  <h1 class="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Accidentes de trabajo</h1>
+  <p class="mt-3 max-w-3xl text-base leading-relaxed" style="color: var(--tinta-suave)">
+    Cuánta gente se hace daño trabajando y cuánta no vuelve a casa. Es de las
+    pocas cosas de este panel que <strong>sí baja a provincia</strong>: el
+    Ministerio de Trabajo publica España, cada comunidad y cada provincia en la
+    misma tabla, mientras que ninguna estadística salarial llega a Castellón.
+  </p>
+
+  <p data-estado role="status" class="mt-6 text-sm" style="color: var(--tinta-suave)">Cargando datos…</p>
+
+  <div data-panel hidden>
+
+    <section aria-labelledby="filtros-titulo" class="mt-8 tarjeta p-4">
+      <h2 id="filtros-titulo" class="sr-only">Filtros</h2>
+      <div class="flex flex-wrap items-end gap-x-6 gap-y-4">
+
+        <fieldset>
+          <legend class="text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Periodo</legend>
+          <div class="mt-1.5 segmento" data-grupo="periodo" role="group" aria-label="Periodo mostrado">
+            <button type="button" data-valor="todo" aria-pressed="true">Serie completa</button>
+            <button type="button" data-valor="10" aria-pressed="false">10 años</button>
+          </div>
+        </fieldset>
+
+
+
+        <fieldset>
+          <legend class="text-xs font-semibold uppercase tracking-widest" style="color: var(--tinta-tenue)">Ámbitos</legend>
+          <div class="mt-1.5 flex flex-wrap gap-x-4 gap-y-2" data-grupo="ambitos"></div>
+        </fieldset>
+
+        <div class="ml-auto">
+          <button type="button" data-csv class="control" title="Descargar la selección actual en CSV">Descargar CSV</button>
+        </div>
+      </div>
+    </section>
+
+    <section data-avance-seccion hidden aria-labelledby="avance-titulo" class="mt-8">
+      <h2 id="avance-titulo" class="text-lg font-semibold tracking-tight">Lo que va de año</h2>
+      <p data-avance-pie class="mt-1 text-xs" style="color: var(--tinta-tenue)"></p>
+      <div data-avance class="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+      <p class="mt-3 text-xs leading-relaxed" style="color: var(--tinta-tenue)">
+        Comparado siempre contra el <strong>mismo periodo</strong> del año
+        anterior, no contra el año entero: los ficheros del ministerio son
+        acumulados desde enero, y medir siete meses contra doce haría parecer
+        que los accidentes se han hundido.
+      </p>
+    </section>
+
+    <section aria-labelledby="resumen-titulo" class="mt-8">
+      <div class="flex flex-wrap items-baseline justify-between gap-2">
+        <h2 id="resumen-titulo" class="text-lg font-semibold tracking-tight">Último dato disponible</h2>
+        <p class="text-xs" style="color: var(--tinta-tenue)">Cada indicador tiene su propio calendario: se indica el periodo de cada cifra.</p>
+      </div>
+      <div class="mt-3 tarjeta overflow-x-auto">
+        <table class="w-full text-sm">
+          <caption class="sr-only">Último valor publicado de cada indicador, por ámbito territorial</caption>
+          <thead>
+            <tr class="text-left" data-resumen-cabecera style="color: var(--tinta-tenue)"></tr>
+          </thead>
+          <tbody data-resumen class="align-top"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mt-10 grid gap-5 sm:grid-cols-2" data-graficas></section>
+
+    <section class="mt-12 tarjeta p-5">
+      <h2 class="text-sm font-semibold">Fuente y método</h2>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Estadística de Accidentes de Trabajo del Ministerio de Trabajo y
+        Economía Social. De cada avance mensual se lee la tabla
+        <code>ATR-A1.1</code>, que reparte por comunidad autónoma y provincia
+        los accidentes con baja según su gravedad. Se cuentan sólo los
+        accidentes <strong>con baja</strong>: los que no la causan no entran en
+        la estadística.
+      </p>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Los ficheros son <strong>acumulados del año</strong>, así que la serie
+        se monta con el de diciembre de cada año, que es el año entero, y el
+        año en curso va aparte y comparado contra el mismo periodo del anterior.
+      </p>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        La serie empieza en <strong>2021</strong> y no antes porque hasta
+        febrero de ese año el ministerio publicaba en el formato binario
+        antiguo de Excel, que este panel no lee. No es una decisión editorial:
+        es hasta donde llega el formato.
+      </p>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Los accidentes <strong>in itinere</strong> -los de ida o vuelta al
+        trabajo- van contados aparte de los de jornada porque hablan de cosas
+        distintas: unos de cómo es el puesto y otros de cómo se llega a él.
+      </p>
+      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
+        Son cifras absolutas, no tasas: un aumento puede venir de que haya más
+        accidentes o de que haya más gente trabajando. Para separarlo haría
+        falta la afiliación media por provincia, que no está todavía en el
+        panel.
+      </p>
+      <p class="mt-2 text-sm" style="color: var(--tinta-suave)">
+        Última actualización de los datos: <span data-actualizado class="font-medium"></span>.
+      </p>
+      <p class="mt-3 text-xs leading-relaxed" style="color: var(--tinta-tenue)">
+        Cuando el ministerio no publica un dato para un ámbito y periodo, la
+        serie aparece cortada en lugar de interpolarse: el hueco es
+        información. Por eso las muertes in itinere de Castellón empiezan en
+        2022 y no en 2021: esa casilla viene vacía en el fichero, y una casilla
+        vacía no es lo mismo que un cero.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="border-t mt-8" style="border-color: var(--borde)">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-6 text-xs flex flex-wrap gap-x-6 gap-y-2 justify-between" style="color: var(--tinta-tenue)">
+    <p>Datos: <a class="enlace-sutil" href="https://www.mites.gob.es/estadisticas/eat/welcome.htm" rel="noopener">Ministerio de Trabajo</a>. Elaboración propia.</p>
+    <p><a class="enlace-sutil" href="buscar.html">Buscar</a> · <a class="enlace-sutil" href="fuentes.html">Fuentes y calendario</a> · <a class="enlace-sutil" href="novedades.html">Novedades</a> · <a class="enlace-sutil" href="https://github.com/Poloigithub/Panel_Datos" rel="noopener">Código en GitHub</a></p>
+  </div>
+</footer>
+
+<!-- Chart.js 4.5.1, servido desde el propio repositorio para no depender de un CDN -->
+<script src="assets/vendor/chart.umd.js"></script>
+<script src="assets/js/tema.js"></script>
+<script src="assets/js/enlace.js"></script>
+<script src="assets/js/panel.js"></script>
+<script src="assets/js/bloque.js"></script>
+<script src="assets/js/siniestralidad.js"></script>
+</body>
+</html>

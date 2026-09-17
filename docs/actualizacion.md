@@ -68,9 +68,26 @@ tarea diaria.
 | Vivienda · precio del alquiler | IPVA · INE | Anual | ~1 año |
 | Vivienda · ejecuciones hipotecarias | EH · INE | Anual por provincia | ~1 año |
 | Vivienda · lanzamientos | CGPJ | Trimestral | ~2 meses, **y se revisan** |
+| Accidentes de trabajo · avance | Ministerio de Trabajo | Mensual | ~2 meses |
+| Accidentes de trabajo · serie | Ministerio de Trabajo | Anual | el año se cierra en febrero o marzo |
 | Municipios · paro | SEPE | Mensual | igual que el paro registrado |
 | Municipios · población | Padrón · INE | Anual | ~6 meses |
 | Municipios · renta | Atlas · INE | Anual | ~2 años |
+
+### El ministerio no dice que no
+
+El Ministerio de Trabajo no devuelve un 404 cuando se le pide un fichero que
+todavía no ha publicado: devuelve su portada con un 200 y tan tranquilo. Por
+eso el descargador de accidentes no mira el código de respuesta sino lo que ha
+llegado -un XLSX es un zip y empieza por «PK»- y va probando hacia atrás desde
+el mes en curso hasta dar con el último avance publicado.
+
+Y su certificado está bien, pero el servidor se deja el intermedio, así que
+Python no puede enlazarlo con ninguna raíz de confianza. El panel hace lo
+mismo que un navegador: el propio certificado lleva escrita dentro la
+dirección de su emisor, se baja de ahí y se completa la cadena. Nunca se
+desactiva la verificación; si el ministerio cambiara de emisor, la descarga
+falla y avisa en vez de tragar lo que le sirvan.
 
 ### Los lanzamientos se revisan
 

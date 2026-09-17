@@ -51,6 +51,9 @@ jobs:
       - name: Descargar el paro registrado y los contratos del SEPE
         run: python scripts/descargar_paro.py
 
+      - name: Descargar los accidentes de trabajo
+        run: python scripts/descargar_siniestralidad.py
+
       - name: Componer los titulares, el catálogo y la descarga completa
         run: |
           python scripts/generar_portada.py

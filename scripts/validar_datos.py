@@ -126,6 +126,14 @@ RANGOS = {
     "preparados": (30, 400),
     "agua": (30, 400),
     "restaurantes": (30, 400),
+    "restauracion": (30, 400),
+    # accidentes de trabajo (cifras absolutas de un año entero)
+    "accidentes_jornada": (0, 2_000_000),
+    "accidentes_leves": (0, 2_000_000),
+    "accidentes_graves": (0, 50_000),
+    "accidentes_mortales": (0, 5_000),
+    "accidentes_itinere": (0, 500_000),
+    "mortales_itinere": (0, 2_000),
     # precios
     "ipc_general": (50, 200),
     "ipc_variacion": (-30, 60),
@@ -168,6 +176,14 @@ IDENTIDADES = [
       "lanzamientos_otros"),
      lambda t, h, a, o: abs(t - (h + a + o)),
      1.5),
+    # Todo accidente en jornada es leve, grave o mortal: si esto deja de
+    # cuadrar es que se ha leído mal alguna columna de la tabla del ministerio,
+    # que además cambia de sitio las columnas cada pocos años.
+    ("accidentes en jornada = leves + graves + mortales",
+     ("accidentes_jornada", "accidentes_leves", "accidentes_graves",
+      "accidentes_mortales"),
+     lambda t, l, g, m: abs(t - (l + g + m)),
+     0.5),
     ("hipoteca media = importe / número",
      ("hipoteca_media", "importe_hipotecas", "hipotecas"),
      lambda m, i, n: min(abs(m - i * 1000 / n), abs(m - i / n)) if n else 0.0,
@@ -190,6 +206,10 @@ FRESCURA = {
     "precios": ("mensual", 3),
     "cesta": ("mensual", 3),
     "vivienda": ("mensual", 6),
+    # La serie de accidentes es anual y se cierra con el fichero de diciembre,
+    # que el ministerio publica en febrero o marzo del año siguiente. Con menos
+    # de quince meses de margen saltaría la alarma todos los eneros.
+    "siniestralidad": ("anual", 15),
     "poblacion": ("anual o trimestral, según el indicador", 15),
     "demografia": ("anual", 30),
     "renta": ("anual", 36),

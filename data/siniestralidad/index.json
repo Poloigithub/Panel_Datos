@@ -19,7 +19,7 @@
       "unidad_texto": "accidentes calificados de graves",
       "decimales": 0,
       "por_sexo": false,
-      "nota": "La serie empieza en 2021 porque antes el ministerio publicaba en el formato binario antiguo de Excel, que el panel no lee.",
+      "nota": null,
       "sobre_total": null
     },
     "accidentes_mortales": {
@@ -28,7 +28,7 @@
       "unidad_texto": "personas muertas en el puesto de trabajo",
       "decimales": 0,
       "por_sexo": false,
-      "nota": "La serie empieza en 2021 porque antes el ministerio publicaba en el formato binario antiguo de Excel, que el panel no lee.",
+      "nota": null,
       "sobre_total": null
     },
     "accidentes_itinere": {
@@ -46,7 +46,7 @@
       "unidad_texto": "personas muertas yendo o volviendo del trabajo",
       "decimales": 0,
       "por_sexo": false,
-      "nota": "La serie empieza en 2021 porque antes el ministerio publicaba en el formato binario antiguo de Excel, que el panel no lee.",
+      "nota": null,
       "sobre_total": null
     }
   },

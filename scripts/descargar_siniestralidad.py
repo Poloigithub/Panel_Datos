@@ -60,6 +60,9 @@ COLUMNAS = {
     "mortales_itinere": 10,
 }
 
+# La advertencia del formato va sólo en el primer indicador. Repetirla debajo
+# de cada grupo de gráficas es ruido: se lee cinco veces la misma frase y deja
+# de leerse ninguna.
 NOTA_FORMATO = ("La serie empieza en 2021 porque antes el ministerio publicaba "
                 "en el formato binario antiguo de Excel, que el panel no lee.")
 
@@ -76,13 +79,11 @@ BLOQUE = {
             "titulo": "Accidentes graves en jornada",
             "unidad": "accidentes", "decimales": 0, "por_sexo": False,
             "unidad_texto": "accidentes calificados de graves",
-            "nota": NOTA_FORMATO,
         },
         "accidentes_mortales": {
             "titulo": "Accidentes mortales en jornada",
             "unidad": "accidentes", "decimales": 0, "por_sexo": False,
             "unidad_texto": "personas muertas en el puesto de trabajo",
-            "nota": NOTA_FORMATO,
         },
         "accidentes_itinere": {
             "titulo": "Accidentes in itinere",
@@ -96,7 +97,6 @@ BLOQUE = {
             "titulo": "Muertes in itinere",
             "unidad": "accidentes", "decimales": 0, "por_sexo": False,
             "unidad_texto": "personas muertas yendo o volviendo del trabajo",
-            "nota": NOTA_FORMATO,
         },
     },
 }

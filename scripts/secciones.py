@@ -80,6 +80,18 @@ SECCIONES = [
         ],
     },
     {
+        "bloque": "siniestralidad", "enlace": "siniestralidad.html",
+        "titulo": "Accidentes de trabajo", "fuente": "Ministerio de Trabajo",
+        "cadencia": "Mensual el avance del año en curso; la serie, anual. El "
+                    "ministerio publica con un par de meses de retraso.",
+        "destacados": [
+            {"clave": "accidentes_mortales", "titulo": "Muertes en el trabajo",
+             "unidad": "personas", "decimales": 0},
+            {"clave": "accidentes_jornada", "titulo": "Accidentes con baja",
+             "unidad": "accidentes", "decimales": 0},
+        ],
+    },
+    {
         "bloque": "renta", "enlace": "renta.html", "titulo": "Renta y desigualdad",
         "fuente": "Atlas de Distribución de Renta · INE",
         "cadencia": "Anual, con unos dos años de retraso.",

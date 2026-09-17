@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-16T20:22:15+00:00",
+ "actualizado": "2026-09-17T02:54:22+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -1176,6 +1176,101 @@
    ],
    "desde": "2013T1",
    "hasta": "2026T1"
+  },
+  {
+   "clave": "accidentes_jornada",
+   "titulo": "Accidentes con baja en jornada de trabajo",
+   "seccion": "Accidentes de trabajo",
+   "seccion_id": "siniestralidad",
+   "enlace": "siniestralidad.html",
+   "fuente": "Ministerio de Trabajo",
+   "unidad": "accidentes",
+   "unidad_texto": "accidentes con baja ocurridos en el puesto",
+   "nota": "La serie empieza en 2021 porque antes el ministerio publicaba en el formato binario antiguo de Excel, que el panel no lee.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2021",
+   "hasta": "2025"
+  },
+  {
+   "clave": "accidentes_graves",
+   "titulo": "Accidentes graves en jornada",
+   "seccion": "Accidentes de trabajo",
+   "seccion_id": "siniestralidad",
+   "enlace": "siniestralidad.html",
+   "fuente": "Ministerio de Trabajo",
+   "unidad": "accidentes",
+   "unidad_texto": "accidentes calificados de graves",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2021",
+   "hasta": "2025"
+  },
+  {
+   "clave": "accidentes_mortales",
+   "titulo": "Accidentes mortales en jornada",
+   "seccion": "Accidentes de trabajo",
+   "seccion_id": "siniestralidad",
+   "enlace": "siniestralidad.html",
+   "fuente": "Ministerio de Trabajo",
+   "unidad": "accidentes",
+   "unidad_texto": "personas muertas en el puesto de trabajo",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2021",
+   "hasta": "2025"
+  },
+  {
+   "clave": "accidentes_itinere",
+   "titulo": "Accidentes in itinere",
+   "seccion": "Accidentes de trabajo",
+   "seccion_id": "siniestralidad",
+   "enlace": "siniestralidad.html",
+   "fuente": "Ministerio de Trabajo",
+   "unidad": "accidentes",
+   "unidad_texto": "accidentes de ida o vuelta al trabajo",
+   "nota": "Los del camino al trabajo. Se cuentan aparte de los de jornada porque hablan de cosas distintas: uno de cómo es el puesto y el otro de cómo se llega a él.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2021",
+   "hasta": "2025"
+  },
+  {
+   "clave": "mortales_itinere",
+   "titulo": "Muertes in itinere",
+   "seccion": "Accidentes de trabajo",
+   "seccion_id": "siniestralidad",
+   "enlace": "siniestralidad.html",
+   "fuente": "Ministerio de Trabajo",
+   "unidad": "accidentes",
+   "unidad_texto": "personas muertas yendo o volviendo del trabajo",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2021",
+   "hasta": "2025"
   },
   {
    "clave": "renta_persona",

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-16T20:22:15+00:00",
+ "actualizado": "2026-09-17T02:54:58+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -237,6 +237,51 @@
       "espana": 168231.69,
       "comunitat-valenciana": 130429.04,
       "castellon": 97183.91
+     }
+    }
+   ]
+  },
+  {
+   "id": "siniestralidad",
+   "titulo": "Accidentes de trabajo",
+   "enlace": "siniestralidad.html",
+   "fuente": "Ministerio de Trabajo",
+   "cadencia": "Mensual el avance del año en curso; la serie, anual. El ministerio publica con un par de meses de retraso.",
+   "actualizado": "2026-09-17T02:40:50+00:00",
+   "ultimo_periodo": "2025",
+   "destacados": [
+    {
+     "clave": "accidentes_mortales",
+     "titulo": "Muertes en el trabajo",
+     "unidad": "personas",
+     "decimales": 0,
+     "periodo": "2025",
+     "valores": {
+      "espana": 584.0,
+      "comunitat-valenciana": 66.0,
+      "castellon": 8.0
+     },
+     "hace_un_anyo": {
+      "espana": 646.0,
+      "comunitat-valenciana": 81.0,
+      "castellon": 7.0
+     }
+    },
+    {
+     "clave": "accidentes_jornada",
+     "titulo": "Accidentes con baja",
+     "unidad": "accidentes",
+     "decimales": 0,
+     "periodo": "2025",
+     "valores": {
+      "espana": 529838.0,
+      "comunitat-valenciana": 53848.0,
+      "castellon": 8009.0
+     },
+     "hace_un_anyo": {
+      "espana": 540314.0,
+      "comunitat-valenciana": 53709.0,
+      "castellon": 7918.0
      }
     }
    ]

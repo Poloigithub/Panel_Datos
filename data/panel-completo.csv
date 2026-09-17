@@ -50025,6 +50025,80 @@ vivienda,lanzamientos_otros,Lanzamientos por otras causas,castellon,Ambos sexos,
 vivienda,lanzamientos_otros,Lanzamientos por otras causas,castellon,Ambos sexos,2025T3,1.0,lanzamientos
 vivienda,lanzamientos_otros,Lanzamientos por otras causas,castellon,Ambos sexos,2025T4,3.0,lanzamientos
 vivienda,lanzamientos_otros,Lanzamientos por otras causas,castellon,Ambos sexos,2026T1,1.0,lanzamientos
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,espana,Ambos sexos,2021,497735.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,espana,Ambos sexos,2022,552173.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,espana,Ambos sexos,2023,539584.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,espana,Ambos sexos,2024,540314.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,espana,Ambos sexos,2025,529838.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,comunitat-valenciana,Ambos sexos,2021,50447.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,comunitat-valenciana,Ambos sexos,2022,53069.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,comunitat-valenciana,Ambos sexos,2023,53201.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,comunitat-valenciana,Ambos sexos,2024,53709.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,comunitat-valenciana,Ambos sexos,2025,53848.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,castellon,Ambos sexos,2021,7734.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,castellon,Ambos sexos,2022,8220.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,castellon,Ambos sexos,2023,7894.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,castellon,Ambos sexos,2024,7918.0,accidentes
+siniestralidad,accidentes_jornada,Accidentes con baja en jornada de trabajo,castellon,Ambos sexos,2025,8009.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,espana,Ambos sexos,2021,3702.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,espana,Ambos sexos,2022,3801.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,espana,Ambos sexos,2023,3759.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,espana,Ambos sexos,2024,3766.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,espana,Ambos sexos,2025,3701.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,comunitat-valenciana,Ambos sexos,2021,334.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,comunitat-valenciana,Ambos sexos,2022,368.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,comunitat-valenciana,Ambos sexos,2023,383.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,comunitat-valenciana,Ambos sexos,2024,368.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,comunitat-valenciana,Ambos sexos,2025,373.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,castellon,Ambos sexos,2021,50.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,castellon,Ambos sexos,2022,25.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,castellon,Ambos sexos,2023,39.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,castellon,Ambos sexos,2024,36.0,accidentes
+siniestralidad,accidentes_graves,Accidentes graves en jornada,castellon,Ambos sexos,2025,26.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,espana,Ambos sexos,2021,575.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,espana,Ambos sexos,2022,679.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,espana,Ambos sexos,2023,581.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,espana,Ambos sexos,2024,646.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,espana,Ambos sexos,2025,584.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,comunitat-valenciana,Ambos sexos,2021,64.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,comunitat-valenciana,Ambos sexos,2022,76.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,comunitat-valenciana,Ambos sexos,2023,60.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,comunitat-valenciana,Ambos sexos,2024,81.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,comunitat-valenciana,Ambos sexos,2025,66.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,castellon,Ambos sexos,2021,17.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,castellon,Ambos sexos,2022,8.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,castellon,Ambos sexos,2023,2.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,castellon,Ambos sexos,2024,7.0,accidentes
+siniestralidad,accidentes_mortales,Accidentes mortales en jornada,castellon,Ambos sexos,2025,8.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,espana,Ambos sexos,2021,74713.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,espana,Ambos sexos,2022,79551.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,espana,Ambos sexos,2023,85327.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,espana,Ambos sexos,2024,87986.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,espana,Ambos sexos,2025,90548.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,comunitat-valenciana,Ambos sexos,2021,7405.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,comunitat-valenciana,Ambos sexos,2022,8460.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,comunitat-valenciana,Ambos sexos,2023,9073.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,comunitat-valenciana,Ambos sexos,2024,9862.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,comunitat-valenciana,Ambos sexos,2025,10087.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,castellon,Ambos sexos,2021,805.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,castellon,Ambos sexos,2022,859.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,castellon,Ambos sexos,2023,935.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,castellon,Ambos sexos,2024,964.0,accidentes
+siniestralidad,accidentes_itinere,Accidentes in itinere,castellon,Ambos sexos,2025,993.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,espana,Ambos sexos,2021,130.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,espana,Ambos sexos,2022,147.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,espana,Ambos sexos,2023,140.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,espana,Ambos sexos,2024,150.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,espana,Ambos sexos,2025,151.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,comunitat-valenciana,Ambos sexos,2021,7.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,comunitat-valenciana,Ambos sexos,2022,17.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,comunitat-valenciana,Ambos sexos,2023,12.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,comunitat-valenciana,Ambos sexos,2024,30.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,comunitat-valenciana,Ambos sexos,2025,14.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,castellon,Ambos sexos,2022,2.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,castellon,Ambos sexos,2023,0.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,castellon,Ambos sexos,2024,2.0,accidentes
+siniestralidad,mortales_itinere,Muertes in itinere,castellon,Ambos sexos,2025,1.0,accidentes
 renta,renta_persona,Renta neta media por persona,espana,Ambos sexos,2021,13268.0,euros
 renta,renta_persona,Renta neta media por persona,espana,Ambos sexos,2022,14061.0,euros
 renta,renta_persona,Renta neta media por persona,espana,Ambos sexos,2023,15036.0,euros
