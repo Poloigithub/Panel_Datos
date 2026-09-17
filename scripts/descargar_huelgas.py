@@ -36,7 +36,10 @@ MESES = ("ene", "feb", "mar", "abr", "may", "jun", "jul", "ago",
          "sep", "oct", "nov", "dic")
 FICHERO = "{base}/hue{aa}{mes}publicacion/hue_{mm:02d}_{aa}.xls"
 
-FALLOS_SEGUIDOS = 4
+# Más margen que en las otras estadísticas, y por un motivo medido: las
+# huelgas salen con unos cuatro meses de retraso, así que rendirse a los
+# cuatro meses vacíos es rendirse justo antes del primero que existe.
+FALLOS_SEGUIDOS = 8
 
 FILAS = {
     "espana": "total",
