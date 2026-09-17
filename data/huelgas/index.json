@@ -1,0 +1,43 @@
+{
+  "actualizado": "2026-09-17T11:57:01+00:00",
+  "titulo": "Huelgas",
+  "ultimo_periodo": "2026M05",
+  "primer_periodo": "2018M12",
+  "indicadores": {
+    "participantes": {
+      "titulo": "Personas que secundaron una huelga",
+      "unidad": "personas",
+      "unidad_texto": "trabajadores participantes en el mes",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": "Es la repercusión territorial: una huelga estatal aparece en todas las provincias donde tuvo seguimiento. Por eso la suma de provincias no da el total nacional de huelgas -una misma huelga se cuenta en varias- aunque sí el de participantes y jornadas.",
+      "sobre_total": null
+    },
+    "jornadas_perdidas": {
+      "titulo": "Jornadas no trabajadas",
+      "unidad": "jornadas",
+      "unidad_texto": "jornadas de trabajo perdidas por huelga en el mes",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": "Es la medida del tamaño de un conflicto: no es lo mismo que mil personas paren una hora que una semana.",
+      "sobre_total": null
+    }
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ]
+}
