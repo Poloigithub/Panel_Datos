@@ -752,12 +752,88 @@ compartido por todo el panel:
   declarado con cuatro, salía en la tabla como «1,2». Ahora se construye un
   formateador por cada número de decimales que se pida.
 
-**Lo que queda apuntado.** Los **carburantes del ministerio** tienen API
-oficial y, esto es lo importante para este panel, **dato por provincia**: lo que
-cuesta llenar el depósito en Castellón. Contestan bien -196 gasolineras sólo en
-la provincia- pero la API sirve **la foto de hoy, no el histórico**, así que la
-serie habría que acumularla día a día y empezaría el día que se enchufe. Entra
-cuando se decida asumir eso.
+**Lo que salió de aquí.** El sondeo de materias primas descubrió de paso que
+los **carburantes del ministerio** tienen API oficial y, esto es lo importante
+para este panel, **dato por provincia**. Se asumió que la serie provincial
+empezaría el día que se enchufara, y esa es la Fase 15.
+
+---
+
+## Fase 15 · Carburantes, y un punto ciego propio ✅ hecha
+
+**Dos fuentes, porque ninguna sola valía.** La API del Ministerio para la
+Transición Ecológica publica el precio de las once mil gasolineras del país en
+tiempo real y cada una dice de qué provincia es: es la única forma de saber lo
+que cuesta llenar el depósito **en Castellón**. Pero no guarda histórico. El
+**boletín petrolero semanal de la Comisión Europea** llega hasta enero de 2005
+y publica los precios **con impuestos y sin ellos** —de restar los dos sale qué
+parte de lo que se paga en el surtidor es impuesto, que hoy es el 40 % en la
+gasolina 95—, pero es sólo España.
+
+**No se empalman, y eso fue una decisión.** La Comisión publica el precio más
+frecuente comunicado por cada estado, ponderado; el ministerio, la media simple
+de las gasolineras. Miden lo mismo de dos maneras. Van como indicadores
+separados con nombres que lo dicen, igual que con los autónomos de la Fase 9.
+
+Lo llamativo es cuánto se parecen: en agosto de 2026 el boletín da **1,7103
+€/l** y la media de gasolineras **1,7107 €/l**. Los cinco meses que comparten
+coinciden dentro del 1,3 % y con la misma forma. Es la mejor validación cruzada
+que ha tenido ninguna sección de este panel.
+
+**Lo anterior a este panel viene de otro repositorio.** `preciodiariogasolina`
+ya calculaba la media nacional diaria desde el 30 de marzo de 2026, con esta
+misma fuente y este mismo método. Se lee su CSV para que España no empiece el
+día que se enchufó esto. Sólo rellena días que el panel no tenga: lo que mide
+el panel manda sobre lo que venga de fuera. La provincia sí empieza el primer
+día, y la página lo dice.
+
+**Tres cosas que el sondeo ahorró o evitó:**
+
+- *No hace falta apagar el TLS.* El script de aquel repositorio lo hace para
+  hablar con el ministerio. Se probó el contexto por defecto de Python y otro
+  con los cifrados rebajados, y las dos veces contestó a la primera, incluidos
+  los 12 MB de toda España. Aquí la verificación no se desactiva nunca.
+- *Una petición sirve los tres ámbitos*, porque cada estación trae su
+  `IDProvincia`. Provincia por provincia serían cincuenta y dos viajes.
+- *Pero esa petición no es de fiar.* En el sondeo salió a la primera en veinte
+  segundos; en el ensayo siguiente falló cinco veces seguidas. Hay plan B: si
+  falla dos veces, se pide provincia por provincia. Exige que conteste
+  Castellón y al menos cuarenta y cinco provincias.
+
+**Y el punto ciego que abrí yo.** Desacoplé las dos fuentes para que la caída
+de una no se llevara la otra: el descargador sigue adelante si el ministerio no
+contesta. Está bien, pero dejó la caída **invisible por los dos lados a la
+vez**. El run sale en verde, y el aviso por correo sólo salta con `failure()`.
+La frescura del bloque tampoco lo cazaba, porque su `ultimo_periodo` lo marca
+la serie europea, que es semanal y llega siempre: el ministerio podía llevar
+tres semanas caído y todo parecería correcto.
+
+No era hipotético. De tres ejecuciones, una funcionó a la primera, otra
+necesitó el plan B y en la tercera no contestó ni el listado de provincias.
+
+Ahora los ficheros que acumulan días se vigilan aparte, **por ámbito**, con un
+margen de tres: uno suelto es normal, tres seguidos es que algo está roto. Por
+ámbito y no en conjunto porque si el ministerio renumerase las provincias,
+España seguiría llegando y Castellón se quedaría vacío en silencio. Importa
+más aquí que en el resto del panel porque **el dato no se recupera**: esa API
+da la foto del momento y lo que no se recoja está perdido.
+
+**Y la limpieza de notas.** Al revisar la sección salió que veinte gráficas de
+materias primas repetían la misma frase y otras doce llevaban comentario de
+color. La propia `bloque.js` tenía escrito el criterio y yo lo había
+incumplido: la nota es «lo que hay que saber para no leer mal la cifra». De 91
+indicadores con nota se pasó a 54, y las que quedan explican columnas vacías,
+series que no se pueden enlazar, datos provisionales o cálculos propios.
+
+Al quitar la cebada —el Banco Mundial dejó de publicarla en agosto de 2020— la
+comprobación de cobertura saltó, que es exactamente su trabajo. Callarla
+borrando el registro habría sido quitarle al panel su alarma contra el fallo
+silencioso, así que ahora hay un **registro de retiradas declaradas** con fecha
+y motivo, y pruebas para que no se convierta en un coladero.
+
+**Lo que queda por delante.** La serie provincial de carburantes no tiene
+pasado y no hay forma de comprarlo: esa API no guarda histórico y nadie lo ha
+guardado por provincias. Crecerá un día por día.
 
 ---
 
@@ -771,8 +847,13 @@ Fase 0 ─┬─> Fase 1 ─┬─> Fase 5
         └─> Fase 4
 ```
 
-La 0 va antes que todo. La 1 antes que la 5. Las demás son independientes
-entre sí y se pueden reordenar según interese.
+La 0 va antes que todo. La 1 antes que la 5. Las demás fases se pueden
+reordenar según interese, con **una excepción que no es de orden de trabajo
+sino de orden de ejecución**: en la tarea diaria, `descargar_afiliacion.py`
+tiene que correr **antes** que `descargar_siniestralidad.py`, porque la tasa de
+accidentes divide entre las personas afiliadas y necesita que ese dato esté ya
+escrito. Está así en `actualizar-datos.yml` y conviene no reordenarlo sin
+saberlo.
 
 ## Criterios que se mantienen
 
