@@ -39,6 +39,14 @@ from xlsx import Libro  # noqa: E402
 ANUARIO = "https://www.mites.gob.es/ficheros/ministerio/estadisticas/anuarios"
 PRIMER_ANYO = 2015   # antes, el anuario está en el .xls binario que el panel no lee
 
+# Y aparte del anuario, el ministerio publica **cada mes** una estadística de
+# personas por cuenta propia con una hoja por provincia. No sustituye a la
+# anual: cuenta otro universo, más amplio. Va como serie propia.
+MENSUAL = "https://www.mites.gob.es/estadisticas/AUT/AUT_{mes:02d}_{anyo}.xlsx"
+HOJA_MENSUAL = ("autonomos", "comunidad autonoma y provincia")
+COLUMNA_MENSUAL = 4      # el total en valores absolutos
+FALLOS_SEGUIDOS = 4      # meses vacíos antes de dar por terminado el histórico
+
 FILAS = {
     "espana": "total",
     "comunitat-valenciana": "comunitat valenciana",
@@ -71,6 +79,16 @@ BLOQUE = {
                     "puede comparar con una serie anual. La serie empieza en "
                     "2015 porque antes el anuario está en el formato binario "
                     "antiguo de Excel, que el panel no lee.",
+        },
+        "autonomos_mes": {
+            "titulo": "Personas por cuenta propia, mes a mes",
+            "unidad": "personas", "decimales": 0, "por_sexo": False,
+            "unidad_texto": "personas trabajadoras por cuenta propia afiliadas",
+            "nota": "De la estadística mensual del ministerio, que llega con "
+                    "dos meses de retraso. Cuenta un universo más amplio que "
+                    "la serie anual de aquí abajo -3,5 millones frente a 2,0-, "
+                    "así que son dos series distintas y no se pueden enlazar: "
+                    "ésta incluye colectivos que aquélla dejaba fuera.",
         },
         "autonomos": {
             "titulo": "Personas afiliadas por cuenta propia",
@@ -196,6 +214,86 @@ def lee_anyo(datos: bytes, anyo: int) -> dict[str, dict[str, float]]:
     return salida
 
 
+def lee_mes(datos: bytes) -> dict[str, float]:
+    """Los tres ámbitos, de la hoja provincial del fichero mensual.
+
+    Aquí el nombre del territorio no está siempre en la primera columna: la
+    comunidad va en la segunda y la provincia en la tercera, que es como el
+    ministerio distingue un nivel de otro. Se mira en las tres primeras.
+    """
+    libro = Libro(datos)
+    hoja = hoja_por_descripcion(libro, HOJA_MENSUAL)
+    if not hoja:
+        return {}
+    buscados = {nombre: clave for clave, nombre in FILAS.items()}
+    salida: dict[str, float] = {}
+    for fila in libro.filas(hoja):
+        etiqueta = next((normaliza(str(c)) for c in fila[:3]
+                         if isinstance(c, str) and c.strip()), "")
+        clave = buscados.get(etiqueta)
+        if not clave or clave in salida:
+            continue
+        valor = fila[COLUMNA_MENSUAL] if COLUMNA_MENSUAL < len(fila) else None
+        if isinstance(valor, (int, float)):
+            salida[clave] = float(valor)
+    return salida
+
+
+def meses_ya_bajados() -> dict[str, dict[str, float]]:
+    """Lo que ya está en el repositorio, para no volver a pedirlo.
+
+    El histórico mensual son más de cien ficheros de medio mega. Bajarlos
+    todos los días sería maltratar al ministerio para llegar al mismo sitio:
+    una vez guardado un mes, no cambia.
+    """
+    guardado: dict[str, dict[str, float]] = {}
+    for ambito in FILAS:
+        fichero = RAIZ / "data" / "afiliacion" / f"{ambito}.json"
+        if not fichero.exists():
+            continue
+        contenido = json.loads(fichero.read_text(encoding="utf-8"))
+        valores = contenido["series"]["ambos"].get("autonomos_mes") or []
+        for periodo, valor in zip(contenido["periodos"], valores):
+            if valor is not None and "M" in periodo:
+                guardado.setdefault(periodo, {})[ambito] = valor
+    return guardado
+
+
+def descarga_mensual(hoy: dt.date, por_ambito: dict) -> None:
+    """La serie mensual de autónomos, hacia atrás hasta donde el ministerio llegue."""
+    guardado = meses_ya_bajados()
+    print(f"  autónomos mes a mes: {len(guardado)} meses ya guardados")
+
+    anyo, mes = hoy.year, hoy.month
+    fallos, pedidos = 0, 0
+    while fallos < FALLOS_SEGUIDOS:
+        periodo = f"{anyo}M{mes:02d}"
+        # Los dos últimos meses se vuelven a pedir: el ministerio los revisa.
+        reciente = (hoy.year * 12 + hoy.month) - (anyo * 12 + mes) < 2
+        if periodo in guardado and not reciente:
+            fallos = 0
+        else:
+            estado, _, datos = red.abre(MENSUAL.format(anyo=anyo, mes=mes))
+            pedidos += 1
+            if estado == 200 and datos[:2] == b"PK":
+                leido = lee_mes(datos)
+                if leido:
+                    guardado[periodo] = leido
+                    fallos = 0
+                    print(f"    {periodo}: Castellón {leido.get('castellon')}")
+                else:
+                    fallos += 1
+            else:
+                fallos += 1
+        anyo, mes = (anyo - 1, 12) if mes == 1 else (anyo, mes - 1)
+
+    for periodo, ambitos in guardado.items():
+        for ambito, valor in ambitos.items():
+            por_ambito[ambito]["ambos"].setdefault("autonomos_mes", {})[periodo] = valor
+    print(f"  autónomos mes a mes: {pedidos} peticiones, "
+          f"{len(guardado)} meses en total")
+
+
 def main() -> int:
     ahora = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     hoy = dt.date.today()
@@ -216,6 +314,8 @@ def main() -> int:
         for ambito, magnitudes in filas.items():
             for magnitud, valor in magnitudes.items():
                 por_ambito[ambito]["ambos"].setdefault(magnitud, {})[str(anyo)] = valor
+
+    descarga_mensual(hoy, por_ambito)
 
     periodos = bloques.escribe_bloque("afiliacion", BLOQUE, por_ambito, ahora, RAIZ)
     return 0 if periodos else 1
