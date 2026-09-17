@@ -96,9 +96,20 @@ def hoja_por_descripcion(libro: Libro, palabras: tuple[str, ...]) -> str | None:
         if not all(p in " ".join(celdas) for p in palabras):
             continue
         codigo = celdas[0].rstrip(". ").replace(" ", "").replace("-0", "-")
-        for nombre in libro.hojas:
-            if normaliza(nombre).replace(" ", "").replace("-0", "-") == codigo:
-                return nombre
+        if not codigo:
+            continue
+        # Primero el nombre exacto y, si no, el que empiece por el código: hay
+        # años en que la tabla no cabe en una hoja y el ministerio la parte en
+        # «AFI-27A» y «AFI-27B». La primera mitad es la que trae el principio
+        # de la lista de provincias, que es donde está lo que se busca.
+        candidatas = [n for n in libro.hojas
+                      if normaliza(n).replace(" ", "").replace("-0", "-").startswith(codigo)]
+        exacta = [n for n in candidatas
+                  if normaliza(n).replace(" ", "").replace("-0", "-") == codigo]
+        if exacta:
+            return exacta[0]
+        if candidatas:
+            return sorted(candidatas)[0]
     return None
 
 
