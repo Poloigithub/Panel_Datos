@@ -98,6 +98,45 @@ COLUMNAS = [
      "$/t", "dólares por tonelada", 2),
     ("oro", "Gold", "Oro",
      "$/onza", "dólares por onza troy", 2),
+    # --- ampliación: el Pink Sheet trae ochenta y ocho series y quedarse en
+    # catorce era dejar fuera cosas que se preguntan solas. Las que siguen
+    # están por lo mismo que las de arriba: porque explican algo de aquí.
+    ("wti", "Crude oil, WTI", "Petróleo WTI",
+     "$/barril", "dólares por barril", 2),
+    ("gas_eeuu", "Natural gas, US", "Gas natural en Estados Unidos",
+     "$/mmbtu", "dólares por millón de BTU", 2),
+    ("aceite_soja", "Soybean oil", "Aceite de soja",
+     "$/t", "dólares por tonelada", 2),
+    ("aceite_palma", "Palm oil", "Aceite de palma",
+     "$/t", "dólares por tonelada", 2),
+    ("arroz", "Rice, Thai 5%", "Arroz",
+     "$/t", "dólares por tonelada", 2),
+    ("cebada", "Barley", "Cebada",
+     "$/t", "dólares por tonelada", 2),
+    ("ternera", "Beef", "Carne de vacuno",
+     "$/kg", "dólares por kilo", 3),
+    ("pollo", "Chicken", "Pollo",
+     "$/kg", "dólares por kilo", 3),
+    ("platano", "Banana, Europe", "Plátano",
+     "$/kg", "dólares por kilo", 3),
+    ("azucar_mundial", "Sugar, world", "Azúcar en el mercado mundial",
+     "$/kg", "dólares por kilo", 3),
+    ("dap", "DAP", "Fosfato diamónico (DAP)",
+     "$/t", "dólares por tonelada", 2),
+    ("potasa", "Potassium chloride", "Cloruro potásico",
+     "$/t", "dólares por tonelada", 2),
+    ("algodon", "Cotton, A Index", "Algodón",
+     "$/kg", "dólares por kilo", 3),
+    ("caucho", "Rubber, TSR20", "Caucho",
+     "$/kg", "dólares por kilo", 3),
+    ("hierro", "Iron ore, cfr spot", "Mineral de hierro",
+     "$/dmtu", "dólares por unidad de tonelada métrica seca", 2),
+    ("niquel", "Nickel", "Níquel",
+     "$/t", "dólares por tonelada", 2),
+    ("zinc", "Zinc", "Zinc",
+     "$/t", "dólares por tonelada", 2),
+    ("plata", "Silver", "Plata",
+     "$/onza", "dólares por onza troy", 2),
 ]
 
 NOTAS = {
@@ -112,6 +151,28 @@ NOTAS = {
     "gas_europa": "El precio de referencia del gas en Europa, que es lo que "
                   "acaba marcando el precio de la luz en las horas en que la "
                   "fija un ciclo combinado.",
+    "gas_eeuu": "Puesto al lado del europeo dice de un vistazo lo que paga de "
+                "más la industria de aquí por la misma energía. La distancia "
+                "entre los dos se abrió en 2021 y no se ha cerrado.",
+    "wti": "El otro petróleo de referencia, el estadounidense. Va casi pegado "
+           "al Brent, y cuando se separan suele ser porque algo pasa con el "
+           "transporte o con las existencias de Estados Unidos.",
+    "azucar_mundial": "El azúcar de la Unión Europea tiene su propio precio, "
+                      "más estable, porque el mercado está regulado. Comparar "
+                      "los dos enseña cuánto amortigua esa regulación.",
+    "dap": "El otro gran abono, de fósforo y nitrógeno. Junto con la urea y el "
+           "cloruro potásico marca lo que cuesta una campaña.",
+    "potasa": "El abono de potasio. Se extrae de mina, y en España hay minas: "
+              "es de los pocos de esta lista que también se produce aquí.",
+    "hierro": "Se cotiza por «unidad de tonelada métrica seca», que es el 1 % "
+              "de hierro contenido en una tonelada. Es la unidad del sector, "
+              "no un error.",
+    "platano": "Es el precio de importación en Europa, así que incluye traerlo "
+               "hasta aquí. Puesto junto a la naranja compara una fruta que "
+               "viaja con otra que se cultiva al lado.",
+    "ternera": "Precio internacional de referencia. La carne de vacuno lleva "
+               "años subiendo por el lado de la oferta -menos cabezas- y eso "
+               "llega al mostrador con retraso.",
 }
 
 
