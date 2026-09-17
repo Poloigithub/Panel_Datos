@@ -75,6 +75,36 @@
     </section>
 
 
+    <section data-anual-seccion hidden aria-labelledby="anual-titulo" class="mt-8">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <h2 id="anual-titulo" class="text-lg font-semibold tracking-tight">El total de cada año</h2>
+          <p class="mt-1 max-w-2xl text-sm leading-relaxed" style="color: var(--tinta-suave)">
+            La serie mensual es muy dentada -un mes con una huelga grande
+            dispara la gráfica y el siguiente vuelve a cero-, así que de un
+            vistazo no se sabe si el conflicto sube o baja. Sumando el año, sí.
+          </p>
+        </div>
+        <fieldset>
+          <legend class="sr-only">Qué se suma</legend>
+          <div class="segmento" data-grupo="magnitud" role="group" aria-label="Magnitud que se suma">
+            <button type="button" data-valor="participantes" aria-pressed="true">Personas</button>
+            <button type="button" data-valor="jornadas_perdidas" aria-pressed="false">Jornadas</button>
+            <button type="button" data-valor="huelgas" aria-pressed="false">Huelgas</button>
+          </div>
+        </fieldset>
+      </div>
+      <div data-anual class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+      <p class="mt-3 text-xs leading-relaxed" style="color: var(--tinta-tenue)">
+        Las barras apagadas son años a los que les faltan meses por publicar, y
+        la etiqueta dice cuántos tienen: comparar cinco meses con doce sin
+        avisar sería mentir con una barra. Y ojo con el total de
+        <strong>huelgas</strong>: es la suma de los meses, así que una huelga
+        que se alargue de un mes al siguiente cuenta dos veces. Para comparar
+        años, las jornadas no trabajadas son la cifra buena.
+      </p>
+    </section>
+
     <section aria-labelledby="resumen-titulo" class="mt-8">
       <div class="flex flex-wrap items-baseline justify-between gap-2">
         <h2 id="resumen-titulo" class="text-lg font-semibold tracking-tight">Último dato disponible</h2>
@@ -150,5 +180,6 @@
 <script src="assets/js/enlace.js"></script>
 <script src="assets/js/panel.js"></script>
 <script src="assets/js/bloque.js"></script>
+<script src="assets/js/huelgas.js"></script>
 </body>
 </html>
