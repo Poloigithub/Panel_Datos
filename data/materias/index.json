@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-17T15:06:25+00:00",
+  "actualizado": "2026-09-17T15:25:18+00:00",
   "titulo": "Materias primas",
   "ultimo_periodo": "2026M08",
   "primer_periodo": "1960M01",
@@ -10,7 +10,7 @@
       "unidad_texto": "dólares por barril",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "gas_europa": {
@@ -19,7 +19,7 @@
       "unidad_texto": "dólares por millón de BTU",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de referencia del gas en Europa, que es lo que acaba marcando el precio de la luz en las horas en que la fija un ciclo combinado.",
+      "nota": null,
       "sobre_total": null
     },
     "carbon": {
@@ -28,7 +28,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "trigo": {
@@ -37,7 +37,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "maiz": {
@@ -46,7 +46,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "aceite_girasol": {
@@ -55,7 +55,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "Ucrania y Rusia producían más de la mitad del aceite de girasol del mundo. Lo que pasó en 2022 se ve aquí antes que en el supermercado.",
+      "nota": null,
       "sobre_total": null
     },
     "azucar": {
@@ -64,7 +64,7 @@
       "unidad_texto": "dólares por kilo",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "cafe": {
@@ -73,7 +73,7 @@
       "unidad_texto": "dólares por kilo",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "cacao": {
@@ -82,7 +82,7 @@
       "unidad_texto": "dólares por kilo",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "naranja": {
@@ -91,7 +91,7 @@
       "unidad_texto": "dólares por kilo",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "Está aquí por Castellón: el precio internacional de la naranja es el que marca lo que cobra quien la cultiva.",
+      "nota": null,
       "sobre_total": null
     },
     "urea": {
@@ -100,7 +100,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El abono nitrogenado más usado. Se fabrica con gas natural, así que su precio sigue al del gas: cuando se disparó en 2022, se disparó lo que costaba abonar un campo.",
+      "nota": null,
       "sobre_total": null
     },
     "cobre": {
@@ -109,7 +109,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "aluminio": {
@@ -118,7 +118,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "oro": {
@@ -127,7 +127,7 @@
       "unidad_texto": "dólares por onza troy",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "wti": {
@@ -136,7 +136,7 @@
       "unidad_texto": "dólares por barril",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El otro petróleo de referencia, el estadounidense. Va casi pegado al Brent, y cuando se separan suele ser porque algo pasa con el transporte o con las existencias de Estados Unidos.",
+      "nota": null,
       "sobre_total": null
     },
     "gas_eeuu": {
@@ -145,7 +145,7 @@
       "unidad_texto": "dólares por millón de BTU",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "Puesto al lado del europeo dice de un vistazo lo que paga de más la industria de aquí por la misma energía. La distancia entre los dos se abrió en 2021 y no se ha cerrado.",
+      "nota": null,
       "sobre_total": null
     },
     "aceite_soja": {
@@ -154,7 +154,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "aceite_palma": {
@@ -163,7 +163,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "arroz": {
@@ -172,16 +172,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
-      "sobre_total": null
-    },
-    "cebada": {
-      "titulo": "Cebada",
-      "unidad": "$/t",
-      "unidad_texto": "dólares por tonelada",
-      "decimales": 2,
-      "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "ternera": {
@@ -190,7 +181,7 @@
       "unidad_texto": "dólares por kilo",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "Precio internacional de referencia. La carne de vacuno lleva años subiendo por el lado de la oferta -menos cabezas- y eso llega al mostrador con retraso.",
+      "nota": null,
       "sobre_total": null
     },
     "pollo": {
@@ -199,7 +190,7 @@
       "unidad_texto": "dólares por kilo",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "platano": {
@@ -208,7 +199,7 @@
       "unidad_texto": "dólares por kilo",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "Es el precio de importación en Europa, así que incluye traerlo hasta aquí. Puesto junto a la naranja compara una fruta que viaja con otra que se cultiva al lado.",
+      "nota": null,
       "sobre_total": null
     },
     "azucar_mundial": {
@@ -217,7 +208,7 @@
       "unidad_texto": "dólares por kilo",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El azúcar de la Unión Europea tiene su propio precio, más estable, porque el mercado está regulado. Comparar los dos enseña cuánto amortigua esa regulación.",
+      "nota": null,
       "sobre_total": null
     },
     "dap": {
@@ -226,7 +217,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El otro gran abono, de fósforo y nitrógeno. Junto con la urea y el cloruro potásico marca lo que cuesta una campaña.",
+      "nota": null,
       "sobre_total": null
     },
     "potasa": {
@@ -235,7 +226,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El abono de potasio. Se extrae de mina, y en España hay minas: es de los pocos de esta lista que también se produce aquí.",
+      "nota": null,
       "sobre_total": null
     },
     "algodon": {
@@ -244,7 +235,7 @@
       "unidad_texto": "dólares por kilo",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "caucho": {
@@ -253,7 +244,7 @@
       "unidad_texto": "dólares por kilo",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "hierro": {
@@ -262,7 +253,7 @@
       "unidad_texto": "dólares por unidad de tonelada métrica seca",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "Se cotiza por «unidad de tonelada métrica seca», que es el 1 % de hierro contenido en una tonelada. Es la unidad del sector, no un error.",
+      "nota": "Se cotiza por «unidad de tonelada métrica seca»: el 1 % de hierro contenido en una tonelada. Es la unidad del sector, no un error.",
       "sobre_total": null
     },
     "niquel": {
@@ -271,7 +262,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "zinc": {
@@ -280,7 +271,7 @@
       "unidad_texto": "dólares por tonelada",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "plata": {
@@ -289,7 +280,7 @@
       "unidad_texto": "dólares por onza troy",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+      "nota": null,
       "sobre_total": null
     },
     "euro_dolar": {
@@ -298,7 +289,7 @@
       "unidad_texto": "tipo de cambio oficial de referencia, media del mes",
       "decimales": 4,
       "por_sexo": false,
-      "nota": "Está aquí para que la conversión a euros del resto de la página se pueda rehacer a mano. Fuente: Banco Central Europeo.",
+      "nota": "Está aquí para que la conversión a euros del resto de la página se pueda rehacer a mano.",
       "sobre_total": null
     }
   },
