@@ -552,6 +552,51 @@ como ya hacía el resto del panel.
 
 ---
 
+## Fase 11 · El lector de `.xls`, y lo que abrió ✅ hecha
+
+**El problema.** Media administración española sigue publicando en el formato
+binario de Excel de 1997. Los convenios colectivos, las huelgas, los despidos y
+su coste, la regulación de empleo: todos con dato de provincia, todos
+mensuales, y todos inaccesibles para un panel cuyo lector sólo abría XLSX -que
+es un zip de XML y se lee en veinte líneas-.
+
+**Lo que se escribió.** `scripts/xls.py`, con la biblioteca estándar como todo
+lo demás. Son dos capas y las dos hay que hacerlas a mano: el envoltorio OLE2,
+que es un sistema de ficheros en miniatura dentro del fichero -tabla de
+sectores encadenados, directorio, y una segunda tabla en pequeño para lo que no
+llega a 4 KB-, y los registros BIFF8 que van dentro. No cubre el formato
+entero: cubre texto y números, que es lo que tiene una tabla de datos.
+
+**Lo que había que probar, y se probó.** Catorce pruebas sobre las dos piezas
+que se equivocan solas:
+
+- El **número comprimido** de cuatro bytes, con sus cuatro casos: entero,
+  entero en centésimas, decimal y decimal en centésimas.
+- Las **cadenas partidas por un empalme**. La tabla de textos no cabe en un
+  registro y se corta, y una palabra puede quedar cortada por la mitad. Al otro
+  lado del corte hay un byte nuevo que dice si el texto sigue en uno o en dos
+  bytes por letra, y hay ficheros que cambian de ancho justo ahí. Sin eso, los
+  acentos salen convertidos en jeroglíficos.
+
+Contra ficheros reales: dos de dos, con las 21 hojas y las 640 cadenas del
+fichero de convenios intactas.
+
+**Lo que abrió.** Los **convenios colectivos**: diez años de subida salarial
+pactada, mes a mes y por provincia, de enero de 2016 a agosto de 2026. Es el
+dato que va por delante de todo lo demás del panel -llega con dos meses de
+retraso, frente al año y medio de la encuesta salarial- y cierra el círculo de
+la cesta de la compra.
+
+**Y lo que eso arregló.** La comparación comida-salario de la página de la
+cesta no se podía hacer para Castellón, porque el INE no publica salario por
+provincia; la sección enseñaba un aviso y nada más. Ahora enseña lo que sí hay:
+entre 2021 y 2025 la comida subió en Castellón un **33,7 %** y lo pactado en
+convenio un **13,9 %**, casi veinte puntos de diferencia. Media respuesta, con
+su advertencia de que el convenio es el suelo y no lo que cada cual cobra, es
+mucho más que ninguna.
+
+---
+
 ## Orden y dependencias
 
 ```

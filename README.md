@@ -6,7 +6,8 @@ provincia de Castellón- y, cuando la fuente llega, por municipio.
 
 Secciones: mercado laboral (EPA), población, natalidad y mortalidad, precios,
 renta, salarios, la cesta de la compra, accidentes de trabajo, afiliación a la
-Seguridad Social, el precio de la luz, vivienda, paro registrado y contratación
+Seguridad Social, convenios colectivos, el precio de la luz, vivienda, paro
+registrado y contratación
 (SEPE), y el mapa municipal de la provincia.
 
 ## Cómo funciona
@@ -132,6 +133,7 @@ python3 scripts/descargar_epa.py
 | `scripts/descargar_siniestralidad.py` | Accidentes de trabajo del Ministerio de Trabajo |
 | `scripts/descargar_afiliacion.py` | Afiliación a la Seguridad Social, del anuario del ministerio |
 | `scripts/descargar_luz.py` | El PVPC hora a hora, de la API de Red Eléctrica |
+| `scripts/descargar_convenios.py` | La subida salarial pactada en convenio, mes a mes |
 | `scripts/red_ministerio.py` | Completa la cadena de certificados que el ministerio no manda |
 | `scripts/generar_catalogo.py` | Catálogo de indicadores y descarga completa |
 | `scripts/generar_cambios.py` | Qué se ha añadido y qué se ha actualizado, desde el historial de git |

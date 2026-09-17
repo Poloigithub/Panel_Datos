@@ -25,6 +25,7 @@
   var indice = null;
   var datos = {};
   var salarios = null;   // el bloque de salarios, para el cruce
+  var convenios = null;  // y el de convenios, que llega mucho más lejos
   var salarioIndice = null;
 
   // Un decimal siempre: «+84 %» al lado de «+60,1 %» parece otra precisión.
@@ -188,29 +189,94 @@
     return anual;
   }
 
-  /* Los dos en el mismo lenguaje: cuánto vale hoy lo que en el año de partida
+  /* Lo pactado en convenio, encadenado año a año.
+   *
+   * Los convenios no dan un nivel sino una subida: «este año se ha pactado un
+   * 3,04 %». Para poder ponerlo junto a un índice de precios hay que encadenar
+   * las subidas, que es lo que hace de verdad un salario de convenio: cada año
+   * sube sobre lo que ya había.
+   *
+   * De cada año se coge su último mes publicado, porque la cifra es acumulada
+   * dentro del año y el último mes es el año entero -o lo que va de él, en el
+   * año en curso-.
+   */
+  function seriePactado() {
+    if (!convenios || !convenios[estado.ambito]) return {};
+    var contenido = convenios[estado.ambito];
+    var valores = (contenido.series.ambos || {}).subida_pactada;
+    if (!valores) return {};
+
+    var ultimoDelAnyo = {};
+    contenido.periodos.forEach(function (periodo, i) {
+      if (valores[i] === null || valores[i] === undefined) return;
+      var anyo = periodo.slice(0, 4);
+      if (!ultimoDelAnyo[anyo] || periodo > ultimoDelAnyo[anyo].periodo) {
+        ultimoDelAnyo[anyo] = { periodo: periodo, subida: valores[i] };
+      }
+    });
+
+    var anyos = Object.keys(ultimoDelAnyo).sort();
+    var indice = {};
+    var acumulado = 100;
+    anyos.forEach(function (anyo, i) {
+      // El primer año es la base: su subida ya se dio antes de empezar a mirar.
+      if (i > 0) acumulado *= 1 + ultimoDelAnyo[anyo].subida / 100;
+      indice[anyo] = acumulado;
+    });
+    return indice;
+  }
+
+  /* Los tres en el mismo lenguaje: cuánto vale hoy lo que en el año de partida
      valía 100. Es la única forma honesta de comparar un índice de precios con
      unos euros al año. */
   function cruce() {
     var comida = mediaAnual(serie('alimentos'));
     var salario = serieSalario();
+    var pactado = seriePactado();
     var comunes = Object.keys(comida).filter(function (a) { return salario[a]; }).sort();
-    if (comunes.length < 2) return null;
+    // De Castellón no hay salario, pero sí lo pactado en convenio. Antes aquí
+    // no se enseñaba nada; ahora se enseña lo que hay, que es media respuesta y
+    // media respuesta es mucho más que ninguna.
+    var soloPactado = false;
+    if (comunes.length < 2) {
+      comunes = Object.keys(comida).filter(function (a) { return pactado[a]; }).sort();
+      soloPactado = true;
+      if (comunes.length < 2) return null;
+    }
 
     var pedido = parseInt(estado.desde, 10);
     var ultimo = comunes[comunes.length - 1];
     var partida = pedido > 1000 ? String(pedido) : String(parseInt(ultimo, 10) - pedido);
     if (comunes.indexOf(partida) < 0) partida = comunes[0];
 
-    return {
-      anyos: comunes.filter(function (a) { return a >= partida; }),
+    // Lo pactado llega dos años más lejos que la encuesta salarial, así que el
+    // eje se estira hasta donde llegue: es justo lo que aporta este dato.
+    var hasta = Object.keys(comida).filter(function (a) {
+      return a >= partida && (salario[a] || pactado[a]);
+    }).sort();
+
+    var datos = {
+      anyos: hasta,
       partida: partida,
       ultimo: ultimo,
       comida: comida,
       salario: salario,
+      pactado: pactado,
+      soloPactado: soloPactado,
       subidaComida: (comida[ultimo] / comida[partida] - 1) * 100,
-      subidaSalario: (salario[ultimo] / salario[partida] - 1) * 100
+      subidaSalario: soloPactado ? null
+        : (salario[ultimo] / salario[partida] - 1) * 100
     };
+
+    // Y la lectura fresca: qué se está pactando ahora y qué ha hecho la comida
+    // en ese mismo tramo, hasta donde llegan los dos.
+    var ultimoPactado = hasta.filter(function (a) { return pactado[a]; }).pop();
+    if (ultimoPactado && pactado[partida] && ultimoPactado !== partida) {
+      datos.ultimoPactado = ultimoPactado;
+      datos.subidaPactada = (pactado[ultimoPactado] / pactado[partida] - 1) * 100;
+      datos.comidaHastaPactado = (comida[ultimoPactado] / comida[partida] - 1) * 100;
+    }
+    return datos;
   }
 
   function pintaCruce() {
@@ -225,11 +291,8 @@
       seccion.hidden = false;
       if (aviso) {
         aviso.hidden = false;
-        aviso.textContent = estado.ambito === 'castellon'
-          ? 'El INE no publica ninguna estadística salarial por provincia, así que ' +
-            'esta comparación no se puede hacer para Castellón. En España y en la ' +
-            'Comunitat, sí.'
-          : 'Faltan años en común entre el salario y los precios para comparar.';
+        aviso.textContent = 'Faltan años en común entre los precios y lo que ' +
+          'se cobra para poder comparar.';
       }
       return;
     }
@@ -238,6 +301,27 @@
 
     var frase = document.createElement('p');
     frase.className = 'text-lg font-semibold tracking-tight';
+    if (datosCruce.soloPactado) {
+      var hueco = datosCruce.comidaHastaPactado - datosCruce.subidaPactada;
+      frase.textContent = 'Entre ' + datosCruce.partida + ' y ' +
+        datosCruce.ultimoPactado + ', la comida subió un ' +
+        porcentaje.format(datosCruce.comidaHastaPactado) +
+        ' % y lo pactado en convenio un ' +
+        porcentaje.format(datosCruce.subidaPactada) + ' %: ' +
+        (hueco >= 0 ? 'la comida se llevó ' : 'el convenio ganó ') +
+        porcentaje.format(Math.abs(hueco)) + ' puntos.';
+      caja.appendChild(frase);
+      var apunte = document.createElement('p');
+      apunte.className = 'mt-2 text-sm leading-relaxed';
+      apunte.style.color = P.color('--tinta-suave');
+      apunte.textContent = 'De Castellón no hay salario medio -el INE no lo ' +
+        'publica por provincia-, así que aquí la comparación se hace con lo ' +
+        'que se firma en convenio, que sí tiene dato provincial. No es lo ' +
+        'mismo: el convenio es el suelo, no lo que cada cual acaba cobrando.';
+      caja.appendChild(apunte);
+      pintaGrafica(caja, datosCruce);
+      return;
+    }
     var diferencia = datosCruce.subidaComida - datosCruce.subidaSalario;
     frase.textContent = 'Entre ' + datosCruce.partida + ' y ' + datosCruce.ultimo +
       ', la comida subió un ' + porcentaje.format(datosCruce.subidaComida) +
@@ -247,6 +331,28 @@
       (diferencia >= 0 ? 'de ventaja.' : 'de margen.');
     caja.appendChild(frase);
 
+    if (datosCruce.ultimoPactado) {
+      var fresca = document.createElement('p');
+      fresca.className = 'mt-2 text-sm leading-relaxed';
+      fresca.style.color = P.color('--tinta-suave');
+      var margen = datosCruce.comidaHastaPactado - datosCruce.subidaPactada;
+      fresca.textContent = 'Y con el dato que llega antes: lo pactado en ' +
+        'convenio acumula un ' + porcentaje.format(datosCruce.subidaPactada) +
+        ' % desde ' + datosCruce.partida + ' hasta ' + datosCruce.ultimoPactado +
+        ', mientras la comida subía un ' +
+        porcentaje.format(datosCruce.comidaHastaPactado) + ' %. ' +
+        (margen >= 0
+          ? 'La comida sigue por delante, ' + porcentaje.format(margen) +
+            ' puntos.'
+          : 'Ahí lo pactado va por delante, ' +
+            porcentaje.format(Math.abs(margen)) + ' puntos.');
+      caja.appendChild(fresca);
+    }
+
+    pintaGrafica(caja, datosCruce);
+  }
+
+  function pintaGrafica(caja, datosCruce) {
     var figura = document.createElement('figure');
     figura.className = 'tarjeta p-5 m-0 mt-4';
     var pie = document.createElement('figcaption');
@@ -257,8 +363,9 @@
     var nota = document.createElement('p');
     nota.className = 'mt-0.5 text-xs';
     nota.style.color = P.color('--tinta-tenue');
-    nota.textContent = 'Media anual del índice de alimentos y salario bruto medio ' +
-      'anual, puestos los dos a 100 en el año de partida';
+    nota.textContent = 'Índice de alimentos, salario bruto medio anual y ' +
+      'subida pactada en convenio encadenada, los tres a 100 en el año de ' +
+      'partida';
     pie.appendChild(nota);
     figura.appendChild(pie);
 
@@ -284,9 +391,21 @@
         }) },
       { etiqueta: 'Salario bruto medio', color: P.color('--serie-2'),
         valores: datosCruce.anyos.map(function (a) {
-          return datosCruce.salario[a] / datosCruce.salario[datosCruce.partida] * 100;
+          return datosCruce.salario[a]
+            ? datosCruce.salario[a] / datosCruce.salario[datosCruce.partida] * 100
+            : null;
         }) }
     ];
+    if (datosCruce.pactado && datosCruce.pactado[datosCruce.partida]) {
+      series.push({
+        etiqueta: 'Pactado en convenio', color: P.color('--serie-3'),
+        valores: datosCruce.anyos.map(function (a) {
+          return datosCruce.pactado[a]
+            ? datosCruce.pactado[a] / datosCruce.pactado[datosCruce.partida] * 100
+            : null;
+        })
+      });
+    }
     P.dibuja(lienzo, 'cruce', datosCruce.anyos, series, 'índice', 1);
     P.pintaLeyenda(leyenda, series);
 
@@ -431,6 +550,18 @@
       await Promise.all(indice.ambitos.map(async function (a) {
         datos[a.id] = await carga(RUTA + a.fichero);
       }));
+
+      // Lo pactado en convenio llega dos años más lejos que la encuesta
+      // salarial, que es precisamente lo que aporta.
+      try {
+        var indiceConvenios = await carga('data/convenios/index.json');
+        convenios = {};
+        for (const a of indiceConvenios.ambitos) {
+          convenios[a.id] = await carga('data/convenios/' + a.fichero);
+        }
+      } catch (_) {
+        convenios = null;
+      }
 
       // El cruce con el salario es un extra: si no está, la página sigue.
       try {
