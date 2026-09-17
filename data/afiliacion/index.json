@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-17T03:57:47+00:00",
+  "actualizado": "2026-09-17T03:59:30+00:00",
   "titulo": "Afiliación a la Seguridad Social",
   "ultimo_periodo": "2025",
   "primer_periodo": "2015",
@@ -19,7 +19,7 @@
       "unidad_texto": "media anual de autónomos en alta",
       "decimales": 0,
       "por_sexo": false,
-      "nota": "De Castellón la serie se corta en 2023: a partir de 2024 el ministerio publica los autónomos sólo por comunidad autónoma, no por provincia. El hueco es el dato que falta, no un error.",
+      "nota": "La serie se corta en 2023 porque el ministerio dejó de publicar esta tabla. Desde 2024 saca otra que suena parecida -autónomos por número de asalariados, y sólo por comunidad autónoma- que cuenta 3,4 millones donde ésta venía contando 2,0. Enlazarlas sería dar un cambio de definición por un crecimiento del 69 % en un año.",
       "sobre_total": null
     }
   },
