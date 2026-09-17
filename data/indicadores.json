@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T11:33:47+00:00",
+ "actualizado": "2026-09-17T12:09:02+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -1176,6 +1176,63 @@
    ],
    "desde": "2013T1",
    "hasta": "2026T1"
+  },
+  {
+   "clave": "participantes",
+   "titulo": "Personas que secundaron una huelga",
+   "seccion": "Huelgas",
+   "seccion_id": "huelgas",
+   "enlace": "huelgas.html",
+   "fuente": "Huelgas y Cierres Patronales · Ministerio de Trabajo",
+   "unidad": "personas",
+   "unidad_texto": "trabajadores participantes en el mes",
+   "nota": "Es la repercusión territorial: una huelga estatal aparece en todas las provincias donde tuvo seguimiento. Por eso la suma de provincias no da el total nacional de huelgas -una misma huelga se cuenta en varias- aunque sí el de participantes y jornadas.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2018M12",
+   "hasta": "2026M05"
+  },
+  {
+   "clave": "jornadas_perdidas",
+   "titulo": "Jornadas no trabajadas",
+   "seccion": "Huelgas",
+   "seccion_id": "huelgas",
+   "enlace": "huelgas.html",
+   "fuente": "Huelgas y Cierres Patronales · Ministerio de Trabajo",
+   "unidad": "jornadas",
+   "unidad_texto": "jornadas de trabajo perdidas por huelga en el mes",
+   "nota": "Es la medida del tamaño de un conflicto: no es lo mismo que mil personas paren una hora que una semana.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2018M12",
+   "hasta": "2026M05"
+  },
+  {
+   "clave": "huelgas",
+   "titulo": "Huelgas con repercusión en el territorio",
+   "seccion": "Huelgas",
+   "seccion_id": "huelgas",
+   "enlace": "huelgas.html",
+   "fuente": "Huelgas y Cierres Patronales · Ministerio de Trabajo",
+   "unidad": "huelgas",
+   "unidad_texto": "huelgas desarrolladas con seguimiento en el mes",
+   "nota": "Es la repercusión territorial: una huelga estatal aparece en todas las provincias donde tuvo seguimiento. Por eso la suma de provincias no da el total nacional de huelgas -una misma huelga se cuenta en varias- aunque sí el de participantes y jornadas.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2018M12",
+   "hasta": "2026M05"
   },
   {
    "clave": "ere_afectados",

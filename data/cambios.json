@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T11:35:10+00:00",
+ "actualizado": "2026-09-17T12:09:49+00:00",
  "repositorio": "https://github.com/Poloigithub/Panel_Datos",
  "altas": [
   {
@@ -66,6 +66,17 @@
       "Diferencia entre la hora cara y la barata",
       "La hora más cara del día",
       "Precio medio de la luz"
+     ]
+    },
+    {
+     "id": "huelgas",
+     "titulo": "Huelgas",
+     "estreno": true,
+     "commit": "1fc6674",
+     "indicadores": [
+      "Jornadas no trabajadas",
+      "Personas que secundaron una huelga",
+      "Huelgas con repercusión en el territorio"
      ]
     }
    ]

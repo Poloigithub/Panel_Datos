@@ -613,11 +613,14 @@ despido colectivo, suspensión de contrato y reducción de jornada. En julio de
 por provincia y sexo: **8.856 despidos en Castellón en 2024**, frente a 5.177 en
 2021.
 
-**Las huelgas no entran.** Su fichero se abre sin problema -el lector funciona-,
-pero ninguna de sus dieciséis hojas baja a provincia. Lo que el ministerio llama
-«ámbito territorial» de una huelga es su alcance -local, autonómica, estatal-,
-no dónde ocurre. Es una limitación de la fuente, no del panel, y queda escrita
-en la propia página para que nadie la busque dos veces.
+**Las huelgas parecía que no entraban, y era un error mío.** El sondeo buscó la
+palabra «provincia» en el índice del fichero, no la encontró, y di la
+estadística por nacional. La tabla provincial estaba ahí, a dos líneas de lo que
+se miró: se titula «según **repercusión territorial** de las huelgas», sin
+nombrar la provincia ni una vez. Se corrigió en la fase siguiente. La lección no
+es sobre huelgas: es que buscar por una palabra concreta en un índice escrito
+por personas falla en silencio, y un «no existe» hay que ganárselo mirando
+dentro.
 
 **Lo que costó, que fue poco y todo del mismo tipo.** Los títulos. La tabla
 provincial de regulación de empleo se llama «por comunidad autónoma, provincia
@@ -631,6 +634,53 @@ estos lectores en cuanto alguien añade una.
 afecta a gente que en su mayoría conserva el empleo, porque la suspensión de
 contrato lo para y no lo termina. Sumar expedientes y despidos daría una cifra
 que no significa nada.
+
+---
+
+## Fase 13 · Huelgas, y tres comprobaciones ✅ hecha
+
+**Las huelgas, que casi se quedan fuera por un error mío.** Un sondeo buscó la
+palabra «provincia» en el índice del fichero, no la encontró, y concluí que la
+estadística era nacional. Lo escribí en una página, en la hoja de ruta y en un
+mensaje. Estaba mal: la tabla provincial es la `HUE-3` y su título la llama
+«según **repercusión territorial** de las huelgas», sin nombrar la provincia ni
+una vez. Estaba a dos líneas de lo que se miró.
+
+Ahora hay 84 meses, de diciembre de 2018 a mayo de 2026, con las huelgas
+desarrolladas, los trabajadores participantes y las jornadas no trabajadas por
+provincia. En España, 367.074 personas secundaron una huelga en 2025.
+
+**Dos cosas que la página explica porque no son obvias.** «Repercusión
+territorial» significa que una huelga estatal aparece en todas las provincias
+donde tuvo seguimiento, así que la suma de provincias no da el total nacional de
+huelgas, aunque sí el de participantes y jornadas. Y las jornadas no trabajadas
+son la mejor cifra para comparar años, porque no es lo mismo que mil personas
+paren una hora que una semana.
+
+**Un fallo de diseño que salió a la luz aquí.** Tras arreglar la lectura, el
+número de huelgas seguía sin aparecer. No era la lectura: era el caché. Los 84
+meses ya guardados se daban por bajados y conservaban las dos series que tenían
+al guardarse. Ahora **un mes sólo cuenta como bajado si trae todas las
+magnitudes que hoy se esperan**, que es la diferencia entre «ya lo tengo» y «ya
+lo tengo entero». Sin eso, añadir un indicador a una serie con caché lo condena
+a estar vacío para siempre. El mismo arreglo se llevó a los convenios, que
+tenían el mismo fallo esperando.
+
+**Las tres comprobaciones que quedaban.**
+
+1. *Enfermedades profesionales*: su página del ministerio **no publica ningún
+   fichero**; remite a la Seguridad Social. No entra.
+2. *Mediación, arbitraje y conciliación*: sí hay ficheros, trimestrales y en
+   XLSX, con tabla provincial. Pero **los datos están incompletos por
+   comunidad**: Andalucía y Canarias aparecen a cero porque tienen la
+   competencia transferida y no reportan al registro estatal. Publicarlo tal
+   cual haría creer que allí no hay conciliaciones. Queda apuntado, no
+   descartado: entraría con un aviso muy claro o no entra.
+3. *Navegación y rendimiento*: medido, y no hay problema. La portada son 67 KB
+   en 5 peticiones y menos de un segundo. La página más pesada es la del mapa
+   municipal, 609 KB, por las geometrías. Ninguna pasa de 20 peticiones. Lo
+   único que crece de verdad es la descarga completa en CSV -4,9 MB- que no se
+   carga al abrir ninguna página. **No hacía falta tocar nada.**
 
 ---
 

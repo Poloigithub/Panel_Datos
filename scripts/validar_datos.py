@@ -127,6 +127,10 @@ RANGOS = {
     "agua": (30, 400),
     "restaurantes": (30, 400),
     "restauracion": (30, 400),
+    # huelgas
+    "huelgas": (0, 10_000),
+    "participantes": (0, 10_000_000),
+    "jornadas_perdidas": (0, 50_000_000),
     # despidos y regulación de empleo
     "ere_afectados": (0, 5_000_000),
     "ere_despido": (0, 1_000_000),
@@ -246,6 +250,9 @@ FRESCURA = {
     "luz": ("mensual", 2),
     "convenios": ("mensual", 4),
     "despidos": ("mensual los expedientes, anual los despidos", 4),
+    # El avance de huelgas sale con unos cuatro meses de retraso, más que
+    # ninguna otra fuente del panel, así que el margen tiene que ser mayor.
+    "huelgas": ("mensual", 7),
     "poblacion": ("anual o trimestral, según el indicador", 15),
     "demografia": ("anual", 30),
     "renta": ("anual", 36),

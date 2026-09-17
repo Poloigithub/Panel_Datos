@@ -80,6 +80,17 @@ SECCIONES = [
         ],
     },
     {
+        "bloque": "huelgas", "enlace": "huelgas.html", "titulo": "Huelgas",
+        "fuente": "Huelgas y Cierres Patronales · Ministerio de Trabajo",
+        "cadencia": "Mensual, con unos cuatro meses de retraso.",
+        "destacados": [
+            {"clave": "participantes", "titulo": "Personas en huelga",
+             "unidad": "personas", "decimales": 0},
+            {"clave": "jornadas_perdidas", "titulo": "Jornadas no trabajadas",
+             "unidad": "jornadas", "decimales": 0},
+        ],
+    },
+    {
         "bloque": "despidos", "enlace": "despidos.html",
         "titulo": "Despidos y regulación de empleo",
         "fuente": "Regulación de Empleo y Despidos · Ministerio de Trabajo",

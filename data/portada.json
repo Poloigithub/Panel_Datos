@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T11:34:13+00:00",
+ "actualizado": "2026-09-17T12:09:32+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -237,6 +237,51 @@
       "espana": 168231.69,
       "comunitat-valenciana": 130429.04,
       "castellon": 97183.91
+     }
+    }
+   ]
+  },
+  {
+   "id": "huelgas",
+   "titulo": "Huelgas",
+   "enlace": "huelgas.html",
+   "fuente": "Huelgas y Cierres Patronales · Ministerio de Trabajo",
+   "cadencia": "Mensual, con unos cuatro meses de retraso.",
+   "actualizado": "2026-09-17T12:04:36+00:00",
+   "ultimo_periodo": "2026M05",
+   "destacados": [
+    {
+     "clave": "participantes",
+     "titulo": "Personas en huelga",
+     "unidad": "personas",
+     "decimales": 0,
+     "periodo": "2026M05",
+     "valores": {
+      "espana": 14817.0,
+      "comunitat-valenciana": 219.0,
+      "castellon": 6.0
+     },
+     "hace_un_anyo": {
+      "espana": 17896.0,
+      "comunitat-valenciana": 408.0,
+      "castellon": 33.0
+     }
+    },
+    {
+     "clave": "jornadas_perdidas",
+     "titulo": "Jornadas no trabajadas",
+     "unidad": "jornadas",
+     "decimales": 0,
+     "periodo": "2026M05",
+     "valores": {
+      "espana": 65976.0,
+      "comunitat-valenciana": 219.0,
+      "castellon": 6.0
+     },
+     "hace_un_anyo": {
+      "espana": 38021.0,
+      "comunitat-valenciana": 347.0,
+      "castellon": 26.0
      }
     }
    ]

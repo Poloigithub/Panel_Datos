@@ -75,6 +75,7 @@ tarea diaria.
 | Convenios colectivos | Ministerio de Trabajo | Mensual | ~2 meses |
 | Regulación de empleo | Ministerio de Trabajo | Mensual | ~2 meses |
 | Despidos y su coste | Ministerio de Trabajo | Anual | ~1 año |
+| Huelgas | Ministerio de Trabajo | Mensual | **~4 meses**, el mayor del panel |
 | Municipios · paro | SEPE | Mensual | igual que el paro registrado |
 | Municipios · población | Padrón · INE | Anual | ~6 meses |
 | Municipios · renta | Atlas · INE | Anual | ~2 años |

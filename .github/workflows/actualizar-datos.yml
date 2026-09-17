@@ -70,6 +70,9 @@ jobs:
       - name: Descargar los despidos y la regulación de empleo
         run: python scripts/descargar_despidos.py
 
+      - name: Descargar las huelgas
+        run: python scripts/descargar_huelgas.py
+
       - name: Componer los titulares, el catálogo y la descarga completa
         run: |
           python scripts/generar_portada.py
