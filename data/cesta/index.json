@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T20:19:47+00:00",
+  "actualizado": "2026-09-17T15:28:12+00:00",
   "titulo": "La cesta de la compra",
   "ultimo_periodo": "2026M08",
   "primer_periodo": "2002M01",
@@ -19,7 +19,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "leche": {
@@ -28,7 +28,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "huevos": {
@@ -37,7 +37,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "pan": {
@@ -46,7 +46,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "cereales": {
@@ -55,7 +55,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "carne_vacuno": {
@@ -64,7 +64,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "carne_ave": {
@@ -73,7 +73,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "carne_porcino": {
@@ -82,7 +82,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "pescado": {
@@ -91,7 +91,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "frutas": {
@@ -100,7 +100,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "hortalizas": {
@@ -109,7 +109,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "patatas": {
@@ -118,7 +118,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "cafe": {
@@ -127,7 +127,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "azucar": {
@@ -136,7 +136,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "preparados": {
@@ -154,7 +154,7 @@
       "unidad_texto": "índice, base 2025 = 100",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "El INE no publica el IPC de productos sueltos por provincia: de Castellón sólo existe el grupo entero de alimentos.",
+      "nota": "El INE no publica este producto por provincia.",
       "sobre_total": null
     },
     "restaurantes": {
