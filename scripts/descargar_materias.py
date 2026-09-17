@@ -55,16 +55,6 @@ CABECERAS = {
     "Accept-Language": "es-ES,es;q=0.9",
 }
 
-AVISO_MUNDIAL = ("El precio de una materia prima es el mismo en todo el mundo: "
-                 "se fija en mercados internacionales, no en Castellón. Esta "
-                 "sección no tiene desglose territorial porque no existe.")
-
-AVISO_DOLARES = ("Publicado en dólares, que es la moneda en la que cotiza y en "
-                 "la que lo da el Banco Mundial. La página puede pasarlo a "
-                 "euros con el tipo de cambio oficial del BCE, que está aquí "
-                 "abajo como un indicador más para que la cuenta se pueda "
-                 "comprobar.")
-
 # Qué columnas del Pink Sheet se publican y cómo se llaman aquí. El nombre de
 # la izquierda es el del panel; el de la derecha, el literal de la hoja, que se
 # busca por texto y no por posición: el Banco Mundial ha añadido columnas entre
@@ -141,40 +131,16 @@ COLUMNAS = [
      "$/onza", "dólares por onza troy", 2),
 ]
 
+# Una nota va pegada a su gráfica, así que sólo se pone cuando hace falta para
+# **no leer mal la cifra**: una unidad rara, un indicador que no es lo que
+# parece. Lo que es contexto -que el girasol subió por Ucrania, que la naranja
+# importa en Castellón- no va aquí: se repetía debajo de cada gráfica, no se
+# podía leer de un vistazo y acababa siendo ruido. Eso se cuenta una vez, en el
+# texto de la página.
 NOTAS = {
-    "naranja": "Está aquí por Castellón: el precio internacional de la naranja "
-               "es el que marca lo que cobra quien la cultiva.",
-    "urea": "El abono nitrogenado más usado. Se fabrica con gas natural, así "
-            "que su precio sigue al del gas: cuando se disparó en 2022, se "
-            "disparó lo que costaba abonar un campo.",
-    "aceite_girasol": "Ucrania y Rusia producían más de la mitad del aceite de "
-                      "girasol del mundo. Lo que pasó en 2022 se ve aquí antes "
-                      "que en el supermercado.",
-    "gas_europa": "El precio de referencia del gas en Europa, que es lo que "
-                  "acaba marcando el precio de la luz en las horas en que la "
-                  "fija un ciclo combinado.",
-    "gas_eeuu": "Puesto al lado del europeo dice de un vistazo lo que paga de "
-                "más la industria de aquí por la misma energía. La distancia "
-                "entre los dos se abrió en 2021 y no se ha cerrado.",
-    "wti": "El otro petróleo de referencia, el estadounidense. Va casi pegado "
-           "al Brent, y cuando se separan suele ser porque algo pasa con el "
-           "transporte o con las existencias de Estados Unidos.",
-    "azucar_mundial": "El azúcar de la Unión Europea tiene su propio precio, "
-                      "más estable, porque el mercado está regulado. Comparar "
-                      "los dos enseña cuánto amortigua esa regulación.",
-    "dap": "El otro gran abono, de fósforo y nitrógeno. Junto con la urea y el "
-           "cloruro potásico marca lo que cuesta una campaña.",
-    "potasa": "El abono de potasio. Se extrae de mina, y en España hay minas: "
-              "es de los pocos de esta lista que también se produce aquí.",
-    "hierro": "Se cotiza por «unidad de tonelada métrica seca», que es el 1 % "
-              "de hierro contenido en una tonelada. Es la unidad del sector, "
-              "no un error.",
-    "platano": "Es el precio de importación en Europa, así que incluye traerlo "
-               "hasta aquí. Puesto junto a la naranja compara una fruta que "
-               "viaja con otra que se cultiva al lado.",
-    "ternera": "Precio internacional de referencia. La carne de vacuno lleva "
-               "años subiendo por el lado de la oferta -menos cabezas- y eso "
-               "llega al mostrador con retraso.",
+    "hierro": "Se cotiza por «unidad de tonelada métrica seca»: el 1 % de "
+              "hierro contenido en una tonelada. Es la unidad del sector, no "
+              "un error.",
 }
 
 
@@ -316,7 +282,7 @@ def construye_bloque() -> dict:
             "decimales": decimales,
             "por_sexo": False,
             "sin_ambitos": ("castellon", "comunitat-valenciana"),
-            "nota": NOTAS.get(clave, AVISO_MUNDIAL),
+            "nota": NOTAS.get(clave),
         }
     indicadores["euro_dolar"] = {
         "titulo": "Dólares por euro",
@@ -325,8 +291,8 @@ def construye_bloque() -> dict:
         "decimales": 4,
         "por_sexo": False,
         "sin_ambitos": ("castellon", "comunitat-valenciana"),
-        "nota": "Está aquí para que la conversión a euros del resto de la "
-                "página se pueda rehacer a mano. Fuente: Banco Central Europeo.",
+        "nota": "Está aquí para que la conversión a euros del resto de "
+                "la página se pueda rehacer a mano.",
     }
     return {"titulo": "Materias primas", "indicadores": indicadores}
 

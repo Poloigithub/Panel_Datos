@@ -144,18 +144,6 @@ CARBURANTES = [
 # Con menos, la media diría más de los días que faltan que del precio.
 DIAS_MINIMOS = 20
 
-AVISO_METODO = ("Media simple de las gasolineras que publican ese precio, sin "
-                "ponderar por cuánto vende cada una. Es el mismo método que "
-                "usa todo el mundo con este dato, pero conviene saberlo: una "
-                "gasolinera de pueblo pesa lo mismo que una de autopista.")
-
-AVISO_BOLETIN = ("Del boletín petrolero de la Comisión Europea, que publica el "
-                 "precio más frecuente comunicado por cada estado, ponderado. "
-                 "Es un método distinto del de la media de gasolineras del "
-                 "ministerio, así que las dos series no se empalman: miden lo "
-                 "mismo de dos maneras y se publican por separado. No tiene "
-                 "desglose provincial.")
-
 
 def pide(url: str, intentos: int = 5, limite: int = 60_000_000) -> bytes:
     """La API corta la conexión de vez en cuando; no es un no."""
@@ -479,15 +467,16 @@ def series_mensuales(dias: dict[str, dict[str, float]]) -> dict[str, dict[str, f
 def construye_bloque() -> dict:
     indicadores = {}
     for clave, _campo, _csv, titulo, coletilla in CARBURANTES:
-        nota = AVISO_METODO
+        # Sólo llevan nota los que tienen poca cobertura, porque eso sí cambia
+        # cómo hay que leer la cifra. El método -media simple de gasolineras-
+        # lo cuenta la página una vez, en vez de repetirlo bajo cada gráfica.
+        nota = None
         if clave == "glp":
-            nota = ("Sólo unas mil gasolineras de once mil venden GLP, así que "
-                    "esta media sale de una muestra pequeña y muy concreta. "
-                    "En Castellón puede haber pocas o ninguna. " + AVISO_METODO)
+            nota = ("Lo venden menos de mil gasolineras de once mil, así que "
+                    "la media sale de una muestra pequeña; en Castellón "
+                    "pueden ser una decena.")
         elif clave in ("gasolina_98", "gasoleo_premium"):
-            nota = ("Lo venden alrededor de la mitad de las gasolineras, así "
-                    "que la media cubre menos estaciones que la del 95 o la "
-                    "del gasóleo A. " + AVISO_METODO)
+            nota = "Lo vende alrededor de la mitad de las gasolineras."
         indicadores[clave] = {
             "titulo": titulo,
             "unidad": "€/l",
@@ -507,7 +496,7 @@ def construye_bloque() -> dict:
             "decimales": 3,
             "por_sexo": False,
             "sin_ambitos": ("castellon", "comunitat-valenciana"),
-            "nota": AVISO_BOLETIN,
+            "nota": None,
         }
     for clave, _precio, titulo in IMPUESTOS:
         indicadores[clave] = {
@@ -517,9 +506,8 @@ def construye_bloque() -> dict:
             "decimales": 2,
             "por_sexo": False,
             "sin_ambitos": ("castellon", "comunitat-valenciana"),
-            "nota": "Lo que separa al precio con impuestos del precio sin "
-                    "ellos, sobre el precio final. Incluye el impuesto de "
-                    "hidrocarburos y el IVA. " + AVISO_BOLETIN,
+            "nota": "Lo que separa el precio con impuestos del precio sin "
+                    "ellos, sobre el precio final: hidrocarburos más IVA.",
         }
 
     return {"titulo": "El precio de los carburantes", "indicadores": indicadores}
