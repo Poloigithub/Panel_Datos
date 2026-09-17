@@ -1,0 +1,29 @@
+
+=== Afiliación a la Seguridad Social ===
+      cadena completada con http://www.cert.fnmt.es/certs/ACCOMP.crt
+    2015: «Afi-07» col 3 → afiliados de Castellón: 206678.0
+    2015: «Afi-13» col 3 → autonomos de Castellón: 23405.0
+    2016: todavía no publicado
+    2017: «AFI-19» col 3 → afiliados de Castellón: 222721.168
+    2017: «AFI-27» col 3 → autonomos de Castellón: 22643.0
+    2018: «AFI-19» col 3 → afiliados de Castellón: 230251.284
+    2018: «AFI-27» col 3 → autonomos de Castellón: 22735.0
+    2019: «AFI-19» col 3 → afiliados de Castellón: 234887.116
+    2019: «AFI-27» col 3 → autonomos de Castellón: 22579.0
+    2020: «AFI-19» col 3 → afiliados de Castellón: 231472.13
+    2020: «AFI-27» col 3 → autonomos de Castellón: 22697.0
+    2021: «AFI-19» col 3 → afiliados de Castellón: 245826.613
+    2021: «AFI-27» col 3 → autonomos de Castellón: 23012.0
+    2022: «AFI-19» col 3 → afiliados de Castellón: 249768.384
+    2022: «AFI-27» col 3 → autonomos de Castellón: 23046.0
+    2023: «AFI-19» col 3 → afiliados de Castellón: 251304.811
+    2023: «AFI-27» col 3 → autonomos de Castellón: 23141.0
+    2024: «AFI-19» col 3 → afiliados de Castellón: 254840.514
+    2024: no se encuentra la hoja de autonomos
+    2025: «AFI-19» col 3 → afiliados de Castellón: 260143.836
+    2025: no se encuentra la hoja de autonomos
+    2026: todavía no publicado
+    escrito data/afiliacion/espana.json
+    escrito data/afiliacion/comunitat-valenciana.json
+    escrito data/afiliacion/castellon.json
+  10 periodos: 2015 … 2025

@@ -1,0 +1,43 @@
+{
+  "actualizado": "2026-09-17T03:53:31+00:00",
+  "titulo": "Afiliación a la Seguridad Social",
+  "ultimo_periodo": "2025",
+  "primer_periodo": "2015",
+  "indicadores": {
+    "afiliados": {
+      "titulo": "Personas afiliadas a la Seguridad Social",
+      "unidad": "personas",
+      "unidad_texto": "media anual de personas en alta laboral",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": "Media anual, no la foto de un día concreto: es lo que se puede comparar con una serie anual. La serie empieza en 2015 porque antes el anuario está en el formato binario antiguo de Excel, que el panel no lee.",
+      "sobre_total": null
+    },
+    "autonomos": {
+      "titulo": "Personas afiliadas por cuenta propia",
+      "unidad": "personas",
+      "unidad_texto": "media anual de autónomos en alta",
+      "decimales": 0,
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
+    }
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ]
+}
