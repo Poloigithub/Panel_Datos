@@ -470,6 +470,50 @@ de verdad y no un rato.
 
 ---
 
+## Fase 9 · Afiliación, y una página de Cambios ✅ hecha
+
+**Lo que se pidió.** Tres fuentes -afiliación a la Seguridad Social,
+elecciones sindicales y precio horario de la luz- y una página que llevara la
+cuenta de lo que se va añadiendo al panel y cuándo.
+
+**La página de Cambios.** Ya existía una de Novedades que sacaba del historial
+de git qué secciones se habían movido cada día. Faltaba la otra mitad: qué dato
+es nuevo. Son una sola página con dos listas, porque tener dos páginas parecidas
+confunde. Las altas no son una lista escrita a mano: se recorre el historial
+entero y se anota la primera vez que aparece cada indicador en el índice de su
+bloque, así que si mañana se añade uno, la página lo cuenta sola.
+
+**La afiliación.** Costó encontrarla: el árbol de ficheros del ministerio usa
+códigos -`eat`, `cct`, `hue`, `reg`, `Emp`, `Mac`- y ninguno se llama `afi`.
+Está en el Anuario de Estadísticas, un `AFI.xlsx` por año, y hubo que aprender
+dos cosas del fichero:
+
+- **La hoja no se puede llamar por su nombre**: en 2015 es `Afi-07` y en 2025
+  `AFI-19`, y el libro pasa de 22 hojas a 40. Se busca por lo que el índice
+  dice de ella.
+- **La columna tampoco**: cada fichero trae su año y el anterior, y no siempre
+  en el mismo sitio. Se localiza la cabecera con los años.
+
+**El hallazgo incómodo.** Al leer los autónomos de 2024 y 2025 salían 3,4
+millones donde la serie venía dando 2,0. No era un fallo de lectura: desde 2024
+el anuario publica otra tabla -autónomos según número de asalariados, y sólo por
+comunidad autónoma- que suena parecida y cuenta otra cosa. Enlazarlas habría
+convertido un cambio de definición en un crecimiento del 69 % en un año. La
+serie se corta donde el ministerio la cortó y la página explica por qué.
+
+**Lo que desbloquea.** Los accidentes de trabajo dejan de ser cifras absolutas:
+Castellón tiene **3.079 accidentes con baja por cada cien mil afiliados** frente
+a **2.449** en el conjunto de España. Eso no se veía antes, y es exactamente lo
+que la página de siniestralidad reconocía que le faltaba.
+
+**Las elecciones sindicales no entran, y no por falta de ganas.** El índice de
+«Condiciones de trabajo y relaciones laborales» del ministerio lo tiene todo
+-accidentes, convenios, huelgas, despidos, enfermedades profesionales,
+regulación de empleo, FOGASA, mediación y arbitraje- y ahí no están. Su portal
+de estadística no las publica.
+
+---
+
 ## Orden y dependencias
 
 ```
