@@ -23,12 +23,21 @@
 
   /* El orden es el del tablero, agrupado por lo que son. */
   var GRUPOS = [
-    { titulo: 'Energía', claves: ['brent', 'gas_europa', 'carbon'] },
+    { titulo: 'Energía',
+      claves: ['brent', 'wti', 'gas_europa', 'gas_eeuu', 'carbon'] },
+    { titulo: 'Cereales y aceites',
+      claves: ['trigo', 'maiz', 'cebada', 'arroz', 'aceite_girasol',
+               'aceite_soja', 'aceite_palma'] },
     { titulo: 'Lo que acaba en la cesta de la compra',
-      claves: ['trigo', 'maiz', 'aceite_girasol', 'azucar', 'cafe', 'cacao',
-               'naranja'] },
-    { titulo: 'Campo, metal e industria',
-      claves: ['urea', 'cobre', 'aluminio', 'oro'] }
+      claves: ['azucar', 'azucar_mundial', 'cafe', 'cacao', 'naranja',
+               'platano', 'ternera', 'pollo'] },
+    { titulo: 'Abonos, que es lo que cuesta una campaña',
+      claves: ['urea', 'dap', 'potasa'] },
+    { titulo: 'Metales',
+      claves: ['cobre', 'aluminio', 'niquel', 'zinc', 'hierro', 'oro',
+               'plata'] },
+    { titulo: 'Industria',
+      claves: ['algodon', 'caucho'] }
   ];
 
   var porcentaje = new Intl.NumberFormat('es-ES',
