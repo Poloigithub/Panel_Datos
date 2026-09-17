@@ -7,8 +7,9 @@ provincia de Castellón- y, cuando la fuente llega, por municipio.
 Secciones: mercado laboral (EPA), población, natalidad y mortalidad, precios,
 renta, salarios, la cesta de la compra, accidentes de trabajo, afiliación a la
 Seguridad Social, convenios colectivos, despidos y regulación de empleo,
-huelgas, el precio de la luz, materias primas, vivienda, paro registrado y
-contratación (SEPE), y el mapa municipal de la provincia.
+huelgas, el precio de la luz, materias primas, el precio de los carburantes,
+vivienda, paro registrado y contratación (SEPE), y el mapa municipal de la
+provincia.
 
 ## Cómo funciona
 
@@ -137,6 +138,7 @@ python3 scripts/descargar_epa.py
 | `scripts/descargar_despidos.py` | Despidos y expedientes de regulación de empleo |
 | `scripts/descargar_huelgas.py` | Huelgas, participantes y jornadas no trabajadas |
 | `scripts/descargar_materias.py` | Materias primas del Pink Sheet del Banco Mundial, y el tipo de cambio del BCE |
+| `scripts/descargar_carburantes.py` | Carburantes: la foto diaria del ministerio y la serie de la Comisión Europea |
 | `scripts/red_ministerio.py` | Completa la cadena de certificados que el ministerio no manda |
 | `scripts/generar_catalogo.py` | Catálogo de indicadores y descarga completa |
 | `scripts/generar_cambios.py` | Qué se ha añadido y qué se ha actualizado, desde el historial de git |

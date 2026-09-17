@@ -78,9 +78,42 @@ tarea diaria.
 | Huelgas | Ministerio de Trabajo | Mensual | **~4 meses**, el mayor del panel |
 | Materias primas | Pink Sheet · Banco Mundial | Mensual | el primer día hábil, con el mes anterior cerrado |
 | Tipo de cambio euro/dólar | BCE | Mensual | el mes cierra en los primeros días |
+| Carburantes · hoy y por provincia | MITECO | Diaria | en tiempo real, sin histórico |
+| Carburantes · serie de España | Boletín petrolero · Comisión Europea | Semanal | ~1 semana |
 | Municipios · paro | SEPE | Mensual | igual que el paro registrado |
 | Municipios · población | Padrón · INE | Anual | ~6 meses |
 | Municipios · renta | Atlas · INE | Anual | ~2 años |
+
+### Los carburantes: lo que se pierde si no se recoge
+
+La API del ministerio publica el precio de las once mil gasolineras **en
+tiempo real y sin histórico**: da la foto del momento y nada más. Lo que no se
+recoja un día no se puede recuperar nunca. Por eso `data/carburantes/diario.json`
+no es un caché sino **el dato**, y por eso la serie provincial empieza el día
+que el panel la empezó a medir y no antes.
+
+La de España arranca antes -el 30 de marzo de 2026- porque ese cálculo diario ya
+venía haciéndose en `preciodiariogasolina`, con esta misma fuente y este mismo
+método. Se lee de allí una vez y sólo rellena días que el panel no tenga: lo que
+mide el panel manda siempre sobre lo que venga de fuera.
+
+**El plan B.** La petición que trae las once mil gasolineras de una vez son 12 MB
+y el servidor corta la conexión a menudo con esa carga: en un sondeo salió a la
+primera en veinte segundos y en el ensayo siguiente falló cinco veces seguidas.
+Si falla dos veces, el descargador pasa a pedir **provincia por provincia**,
+cincuenta y dos peticiones de 200 KB que contestan sin queja. Exige que conteste
+Castellón y al menos cuarenta y cinco provincias; con menos, la media nacional
+deja de serlo y no se publica.
+
+**Las dos fuentes van desacopladas.** El histórico de la Comisión Europea y la
+foto del ministerio se leen por separado y un fallo de una no tira la otra. Un
+día perdido es un hueco, y los huecos se enseñan; lo que no se hace es tirar lo
+que sí se tiene.
+
+**Y no hace falta relajar el TLS.** Se probó el contexto por defecto de Python y
+uno con los cifrados rebajados, y las dos veces el ministerio contestó a la
+primera. Apagar la verificación del certificado, que es lo que hacen otros
+scripts con este servidor, no era necesario y aquí no se hace nunca.
 
 ### La dirección del Pink Sheet se lee, no se escribe
 

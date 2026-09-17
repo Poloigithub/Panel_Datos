@@ -27,7 +27,11 @@
 
   var euros = new Intl.NumberFormat('es-ES',
     { minimumFractionDigits: 3, maximumFractionDigits: 3 });
-  var entero = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0 });
+  // «always» y no «auto»: por defecto el español no separa los millares de
+  // un número de cuatro cifras, y en la misma columna quedaba «11.256» al
+  // lado de «5486» como si una de las dos estuviera mal.
+  var entero = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0,
+                                                useGrouping: 'always' });
   var diferencia = new Intl.NumberFormat('es-ES',
     { minimumFractionDigits: 1, maximumFractionDigits: 1, signDisplay: 'always' });
 
@@ -166,9 +170,13 @@
         scales: {
           x: { grid: { display: false },
                ticks: { color: P.color('--tinta-tenue'), maxTicksLimit: 8 } },
+          // Con el símbolo detrás, porque «1,900» a secas se lee como mil
+          // novecientos y no como un euro con noventa.
           y: { grid: { color: P.color('--rejilla') },
                ticks: { color: P.color('--tinta-tenue'),
-                        callback: function (v) { return euros.format(v); } } }
+                        callback: function (v) {
+                          return euros.format(v) + ' €';
+                        } } }
         }
       }
     });

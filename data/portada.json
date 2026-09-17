@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T14:56:02+00:00",
+ "actualizado": "2026-09-17T15:17:39+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -427,7 +427,7 @@
    "enlace": "materias.html",
    "fuente": "Pink Sheet · Banco Mundial",
    "cadencia": "Mensual. El Banco Mundial publica el primer día hábil de cada mes, con el mes anterior cerrado.",
-   "actualizado": "2026-09-17T14:50:19+00:00",
+   "actualizado": "2026-09-17T15:06:25+00:00",
    "ultimo_periodo": "2026M08",
    "destacados": [
     {
@@ -460,6 +460,51 @@
      },
      "hace_un_anyo": {
       "espana": 11.15,
+      "comunitat-valenciana": null,
+      "castellon": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "carburantes",
+   "titulo": "El precio de los carburantes",
+   "enlace": "carburantes.html",
+   "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",
+   "cadencia": "Diaria el detalle por provincia; semanal la serie larga de España.",
+   "actualizado": "2026-09-17T15:16:00+00:00",
+   "ultimo_periodo": "2026M09",
+   "destacados": [
+    {
+     "clave": "gasolina_95",
+     "titulo": "Gasolina 95",
+     "unidad": "€/l",
+     "decimales": 3,
+     "periodo": "2026M08",
+     "valores": {
+      "espana": 1.7107,
+      "comunitat-valenciana": null,
+      "castellon": null
+     },
+     "hace_un_anyo": {
+      "espana": null,
+      "comunitat-valenciana": null,
+      "castellon": null
+     }
+    },
+    {
+     "clave": "gasoleo_a",
+     "titulo": "Gasóleo A",
+     "unidad": "€/l",
+     "decimales": 3,
+     "periodo": "2026M08",
+     "valores": {
+      "espana": 1.8362,
+      "comunitat-valenciana": null,
+      "castellon": null
+     },
+     "hace_un_anyo": {
+      "espana": null,
       "comunitat-valenciana": null,
       "castellon": null
      }

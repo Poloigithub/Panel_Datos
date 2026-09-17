@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T14:56:01+00:00",
+ "actualizado": "2026-09-17T15:17:39+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -1692,6 +1692,312 @@
    "hasta": "2026M08"
   },
   {
+   "clave": "wti",
+   "titulo": "Petróleo WTI",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/barril",
+   "unidad_texto": "dólares por barril",
+   "nota": "El otro petróleo de referencia, el estadounidense. Va casi pegado al Brent, y cuando se separan suele ser porque algo pasa con el transporte o con las existencias de Estados Unidos.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1982M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "gas_eeuu",
+   "titulo": "Gas natural en Estados Unidos",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/mmbtu",
+   "unidad_texto": "dólares por millón de BTU",
+   "nota": "Puesto al lado del europeo dice de un vistazo lo que paga de más la industria de aquí por la misma energía. La distancia entre los dos se abrió en 2021 y no se ha cerrado.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "aceite_soja",
+   "titulo": "Aceite de soja",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "aceite_palma",
+   "titulo": "Aceite de palma",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "arroz",
+   "titulo": "Arroz",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "cebada",
+   "titulo": "Cebada",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2020M08"
+  },
+  {
+   "clave": "ternera",
+   "titulo": "Carne de vacuno",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/kg",
+   "unidad_texto": "dólares por kilo",
+   "nota": "Precio internacional de referencia. La carne de vacuno lleva años subiendo por el lado de la oferta -menos cabezas- y eso llega al mostrador con retraso.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "pollo",
+   "titulo": "Pollo",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/kg",
+   "unidad_texto": "dólares por kilo",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "platano",
+   "titulo": "Plátano",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/kg",
+   "unidad_texto": "dólares por kilo",
+   "nota": "Es el precio de importación en Europa, así que incluye traerlo hasta aquí. Puesto junto a la naranja compara una fruta que viaja con otra que se cultiva al lado.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1997M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "azucar_mundial",
+   "titulo": "Azúcar en el mercado mundial",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/kg",
+   "unidad_texto": "dólares por kilo",
+   "nota": "El azúcar de la Unión Europea tiene su propio precio, más estable, porque el mercado está regulado. Comparar los dos enseña cuánto amortigua esa regulación.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "dap",
+   "titulo": "Fosfato diamónico (DAP)",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El otro gran abono, de fósforo y nitrógeno. Junto con la urea y el cloruro potásico marca lo que cuesta una campaña.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1967M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "potasa",
+   "titulo": "Cloruro potásico",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El abono de potasio. Se extrae de mina, y en España hay minas: es de los pocos de esta lista que también se produce aquí.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "algodon",
+   "titulo": "Algodón",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/kg",
+   "unidad_texto": "dólares por kilo",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "caucho",
+   "titulo": "Caucho",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/kg",
+   "unidad_texto": "dólares por kilo",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1999M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "hierro",
+   "titulo": "Mineral de hierro",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/dmtu",
+   "unidad_texto": "dólares por unidad de tonelada métrica seca",
+   "nota": "Se cotiza por «unidad de tonelada métrica seca», que es el 1 % de hierro contenido en una tonelada. Es la unidad del sector, no un error.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "niquel",
+   "titulo": "Níquel",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "zinc",
+   "titulo": "Zinc",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/t",
+   "unidad_texto": "dólares por tonelada",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "plata",
+   "titulo": "Plata",
+   "seccion": "Materias primas",
+   "seccion_id": "materias",
+   "enlace": "materias.html",
+   "fuente": "Pink Sheet · Banco Mundial",
+   "unidad": "$/onza",
+   "unidad_texto": "dólares por onza troy",
+   "nota": "El precio de una materia prima es el mismo en todo el mundo: se fija en mercados internacionales, no en Castellón. Esta sección no tiene desglose territorial porque no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "1960M01",
+   "hasta": "2026M08"
+  },
+  {
    "clave": "euro_dolar",
    "titulo": "Dólares por euro",
    "seccion": "Materias primas",
@@ -1707,6 +2013,176 @@
    ],
    "desde": "1999M01",
    "hasta": "2026M08"
+  },
+  {
+   "clave": "gasolina_95",
+   "titulo": "Gasolina 95",
+   "seccion": "El precio de los carburantes",
+   "seccion_id": "carburantes",
+   "enlace": "carburantes.html",
+   "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",
+   "unidad": "€/l",
+   "unidad_texto": "euros por litro, media del mes · la más común",
+   "nota": "Media simple de las gasolineras que publican ese precio, sin ponderar por cuánto vende cada una. Es el mismo método que usa todo el mundo con este dato, pero conviene saberlo: una gasolinera de pueblo pesa lo mismo que una de autopista.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2026M04",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "gasoleo_a",
+   "titulo": "Gasóleo A (diésel)",
+   "seccion": "El precio de los carburantes",
+   "seccion_id": "carburantes",
+   "enlace": "carburantes.html",
+   "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",
+   "unidad": "€/l",
+   "unidad_texto": "euros por litro, media del mes · el diésel corriente",
+   "nota": "Media simple de las gasolineras que publican ese precio, sin ponderar por cuánto vende cada una. Es el mismo método que usa todo el mundo con este dato, pero conviene saberlo: una gasolinera de pueblo pesa lo mismo que una de autopista.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2026M04",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "gasolina_98",
+   "titulo": "Gasolina 98",
+   "seccion": "El precio de los carburantes",
+   "seccion_id": "carburantes",
+   "enlace": "carburantes.html",
+   "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",
+   "unidad": "€/l",
+   "unidad_texto": "euros por litro, media del mes",
+   "nota": "Lo venden alrededor de la mitad de las gasolineras, así que la media cubre menos estaciones que la del 95 o la del gasóleo A. Media simple de las gasolineras que publican ese precio, sin ponderar por cuánto vende cada una. Es el mismo método que usa todo el mundo con este dato, pero conviene saberlo: una gasolinera de pueblo pesa lo mismo que una de autopista.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2026M04",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "gasoleo_premium",
+   "titulo": "Gasóleo premium",
+   "seccion": "El precio de los carburantes",
+   "seccion_id": "carburantes",
+   "enlace": "carburantes.html",
+   "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",
+   "unidad": "€/l",
+   "unidad_texto": "euros por litro, media del mes",
+   "nota": "Lo venden alrededor de la mitad de las gasolineras, así que la media cubre menos estaciones que la del 95 o la del gasóleo A. Media simple de las gasolineras que publican ese precio, sin ponderar por cuánto vende cada una. Es el mismo método que usa todo el mundo con este dato, pero conviene saberlo: una gasolinera de pueblo pesa lo mismo que una de autopista.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2026M04",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "glp",
+   "titulo": "GLP (gas licuado)",
+   "seccion": "El precio de los carburantes",
+   "seccion_id": "carburantes",
+   "enlace": "carburantes.html",
+   "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",
+   "unidad": "€/l",
+   "unidad_texto": "euros por litro, media del mes",
+   "nota": "Sólo unas mil gasolineras de once mil venden GLP, así que esta media sale de una muestra pequeña y muy concreta. En Castellón puede haber pocas o ninguna. Media simple de las gasolineras que publican ese precio, sin ponderar por cuánto vende cada una. Es el mismo método que usa todo el mundo con este dato, pero conviene saberlo: una gasolinera de pueblo pesa lo mismo que una de autopista.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2026M04",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "gasolina_95_serie",
+   "titulo": "Gasolina 95 desde 2005",
+   "seccion": "El precio de los carburantes",
+   "seccion_id": "carburantes",
+   "enlace": "carburantes.html",
+   "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",
+   "unidad": "€/l",
+   "unidad_texto": "euros por litro con impuestos, media del mes",
+   "nota": "Del boletín petrolero de la Comisión Europea, que publica el precio más frecuente comunicado por cada estado, ponderado. Es un método distinto del de la media de gasolineras del ministerio, así que las dos series no se empalman: miden lo mismo de dos maneras y se publican por separado. No tiene desglose provincial.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2005M01",
+   "hasta": "2026M09"
+  },
+  {
+   "clave": "gasoleo_a_serie",
+   "titulo": "Gasóleo A desde 2005",
+   "seccion": "El precio de los carburantes",
+   "seccion_id": "carburantes",
+   "enlace": "carburantes.html",
+   "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",
+   "unidad": "€/l",
+   "unidad_texto": "euros por litro con impuestos, media del mes",
+   "nota": "Del boletín petrolero de la Comisión Europea, que publica el precio más frecuente comunicado por cada estado, ponderado. Es un método distinto del de la media de gasolineras del ministerio, así que las dos series no se empalman: miden lo mismo de dos maneras y se publican por separado. No tiene desglose provincial.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2005M01",
+   "hasta": "2026M09"
+  },
+  {
+   "clave": "glp_serie",
+   "titulo": "GLP desde 2005",
+   "seccion": "El precio de los carburantes",
+   "seccion_id": "carburantes",
+   "enlace": "carburantes.html",
+   "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",
+   "unidad": "€/l",
+   "unidad_texto": "euros por litro con impuestos, media del mes",
+   "nota": "Del boletín petrolero de la Comisión Europea, que publica el precio más frecuente comunicado por cada estado, ponderado. Es un método distinto del de la media de gasolineras del ministerio, así que las dos series no se empalman: miden lo mismo de dos maneras y se publican por separado. No tiene desglose provincial.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2005M01",
+   "hasta": "2026M09"
+  },
+  {
+   "clave": "gasolina_95_impuesto",
+   "titulo": "Impuestos en la gasolina 95",
+   "seccion": "El precio de los carburantes",
+   "seccion_id": "carburantes",
+   "enlace": "carburantes.html",
+   "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",
+   "unidad": "%",
+   "unidad_texto": "porcentaje del precio final que son impuestos",
+   "nota": "Lo que separa al precio con impuestos del precio sin ellos, sobre el precio final. Incluye el impuesto de hidrocarburos y el IVA. Del boletín petrolero de la Comisión Europea, que publica el precio más frecuente comunicado por cada estado, ponderado. Es un método distinto del de la media de gasolineras del ministerio, así que las dos series no se empalman: miden lo mismo de dos maneras y se publican por separado. No tiene desglose provincial.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2005M01",
+   "hasta": "2026M09"
+  },
+  {
+   "clave": "gasoleo_a_impuesto",
+   "titulo": "Impuestos en el gasóleo A",
+   "seccion": "El precio de los carburantes",
+   "seccion_id": "carburantes",
+   "enlace": "carburantes.html",
+   "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",
+   "unidad": "%",
+   "unidad_texto": "porcentaje del precio final que son impuestos",
+   "nota": "Lo que separa al precio con impuestos del precio sin ellos, sobre el precio final. Incluye el impuesto de hidrocarburos y el IVA. Del boletín petrolero de la Comisión Europea, que publica el precio más frecuente comunicado por cada estado, ponderado. Es un método distinto del de la media de gasolineras del ministerio, así que las dos series no se empalman: miden lo mismo de dos maneras y se publican por separado. No tiene desglose provincial.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2005M01",
+   "hasta": "2026M09"
   },
   {
    "clave": "afiliados",
