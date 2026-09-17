@@ -37,9 +37,16 @@ SALIDA = RAIZ / "sondeos"
 CABECERAS = {"User-Agent": "Panel_Datos/1.0 (+https://github.com/Poloigithub/Panel_Datos)"}
 
 BASE = "https://www.mites.gob.es"
+# Hay dos entradas para lo mismo: la corta, que casi no lleva enlaces, y la
+# larga dentro del sitio en castellano, que es la que tiene el índice de
+# verdad. Se prueban las dos.
 SEMILLAS = [
     ("accidentes", f"{BASE}/estadisticas/eat/welcome.htm"),
+    ("accidentes", f"{BASE}/es/estadisticas/condiciones_trabajo_relac_laborales/"
+                   f"EAT/welcome.htm"),
     ("convenios", f"{BASE}/estadisticas/cct/welcome.htm"),
+    ("convenios", f"{BASE}/es/estadisticas/condiciones_trabajo_relac_laborales/"
+                  f"CCT/welcome.htm"),
 ]
 
 # El ministerio ha cambiado de nombre y de dominio varias veces, y parte de sus
@@ -58,10 +65,17 @@ PUERTAS = [
 ENLACE = re.compile(r'href="([^"#]+)"', re.I)
 DATOS = re.compile(r"\.(xlsx?|csv|ods)(\?|$)", re.I)
 # Andar por el sitio entero sería infinito, y además el ministerio devuelve su
-# portada con un 200 para direcciones que no existen, así que un rastreo
-# amplio se va a pastar por el organigrama y las notas de prensa. Sólo estas
-# dos carpetas.
-DENTRO = re.compile(r"/estadisticas/(eat|cct)/", re.I)
+# portada con un 200 para direcciones que no existen, así que un rastreo amplio
+# se va a pastar por el organigrama y las notas de prensa. Pero ceñirse a
+# /estadisticas/eat/ tampoco vale: el índice bueno cuelga de una ruta larga
+# dentro del sitio en castellano. Así que se entra en todo lo que sea
+# estadística y se sale de lo que claramente no lo es.
+DENTRO = re.compile(r"/estadisticas/", re.I)
+FUERA = re.compile(
+    r"/(organizacion|mundo|plan_recuperacion|prensa|extras|sec_trabajo|"
+    r"portada|buzon\w*|img\d*|css|js)/"
+    r"|/(ca|eu|gl|en|fr)/"
+    r"|\.(css|js|ico|png|jpe?g|gif|svg|pdf)($|\?)", re.I)
 
 # Para quedarse con los ficheros recientes hay que saber de cuándo es cada uno,
 # y el nombre lo dice: ATR_09_2025.xlsx, CCT_04_2016.xls, CCT_2015_DEF.xls.
@@ -80,7 +94,7 @@ def cuando(url: str) -> tuple[int, int]:
         return int(anyo.group(1)), 13   # el definitivo va después de sus meses
     return 0, 0
 
-TOPE_PAGINAS = 70
+TOPE_PAGINAS = 120
 
 
 def codifica(url: str) -> str:
@@ -153,7 +167,8 @@ def recorre() -> tuple[dict[str, set[str]], list[str]]:
         for destino in enlaces_de(pagina, url):
             if DATOS.search(destino):
                 ficheros.setdefault(tema, set()).add(destino)
-            elif hondura < 2 and DENTRO.search(destino) and destino not in vistas:
+            elif (hondura < 2 and DENTRO.search(destino)
+                  and not FUERA.search(destino) and destino not in vistas):
                 pendientes.append((tema, destino, hondura + 1))
 
     return ficheros, bitacora
