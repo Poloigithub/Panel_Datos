@@ -97,9 +97,11 @@ ALTERNATIVAS = {
                    {"legumbres y hortalizas frescas o refrigeradas"}],
 }
 
-AVISO_PROVINCIA = ("El INE no publica el IPC de productos sueltos por "
-                   "provincia: de Castellón sólo existe el grupo entero de "
-                   "alimentos.")
+# Corta a propósito: va repetida debajo de quince gráficas, y dicha larga
+# quince veces deja de leerse. Lo que tiene que contestar es una sola pregunta
+# -por qué la columna de Castellón está vacía en esta gráfica- y con eso basta.
+# El porqué largo lo cuenta la página una vez.
+AVISO_PROVINCIA = "El INE no publica este producto por provincia."
 
 # La Comunitat baja a 73 productos y España a 125, así que algo se queda por el
 # camino. Declararlo aquí evita que el aviso de fallos cante todos los días una

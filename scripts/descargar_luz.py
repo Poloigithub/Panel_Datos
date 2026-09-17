@@ -85,9 +85,9 @@ BLOQUE = {
             "unidad": "c€/kWh", "decimales": 2, "por_sexo": False,
             "unidad_texto": "cuánto se ahorra al día quien puede elegir la hora",
             "sin_ambitos": ("castellon", "comunitat-valenciana"),
-            "nota": "Es lo que separa a quien puede mover el consumo -poner la "
-                    "lavadora de madrugada- de quien no. Cuanto más alta, más "
-                    "premia el sistema tener esa flexibilidad.",
+            # Sin nota: «cuánto se ahorra al día quien puede elegir la hora»
+            # ya está en la unidad, justo encima. Repetirlo debajo, más largo,
+            # no añadía nada.
         },
     },
 }
