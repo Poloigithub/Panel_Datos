@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-17T15:16:00+00:00",
+  "actualizado": "2026-09-17T15:26:36+00:00",
   "titulo": "El precio de los carburantes",
   "ultimo_periodo": "2026M09",
   "primer_periodo": "2005M01",
@@ -10,7 +10,7 @@
       "unidad_texto": "euros por litro, media del mes · la más común",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "Media simple de las gasolineras que publican ese precio, sin ponderar por cuánto vende cada una. Es el mismo método que usa todo el mundo con este dato, pero conviene saberlo: una gasolinera de pueblo pesa lo mismo que una de autopista.",
+      "nota": null,
       "sobre_total": null
     },
     "gasoleo_a": {
@@ -19,7 +19,7 @@
       "unidad_texto": "euros por litro, media del mes · el diésel corriente",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "Media simple de las gasolineras que publican ese precio, sin ponderar por cuánto vende cada una. Es el mismo método que usa todo el mundo con este dato, pero conviene saberlo: una gasolinera de pueblo pesa lo mismo que una de autopista.",
+      "nota": null,
       "sobre_total": null
     },
     "gasolina_98": {
@@ -28,7 +28,7 @@
       "unidad_texto": "euros por litro, media del mes",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "Lo venden alrededor de la mitad de las gasolineras, así que la media cubre menos estaciones que la del 95 o la del gasóleo A. Media simple de las gasolineras que publican ese precio, sin ponderar por cuánto vende cada una. Es el mismo método que usa todo el mundo con este dato, pero conviene saberlo: una gasolinera de pueblo pesa lo mismo que una de autopista.",
+      "nota": "Lo vende alrededor de la mitad de las gasolineras.",
       "sobre_total": null
     },
     "gasoleo_premium": {
@@ -37,7 +37,7 @@
       "unidad_texto": "euros por litro, media del mes",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "Lo venden alrededor de la mitad de las gasolineras, así que la media cubre menos estaciones que la del 95 o la del gasóleo A. Media simple de las gasolineras que publican ese precio, sin ponderar por cuánto vende cada una. Es el mismo método que usa todo el mundo con este dato, pero conviene saberlo: una gasolinera de pueblo pesa lo mismo que una de autopista.",
+      "nota": "Lo vende alrededor de la mitad de las gasolineras.",
       "sobre_total": null
     },
     "glp": {
@@ -46,7 +46,7 @@
       "unidad_texto": "euros por litro, media del mes",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "Sólo unas mil gasolineras de once mil venden GLP, así que esta media sale de una muestra pequeña y muy concreta. En Castellón puede haber pocas o ninguna. Media simple de las gasolineras que publican ese precio, sin ponderar por cuánto vende cada una. Es el mismo método que usa todo el mundo con este dato, pero conviene saberlo: una gasolinera de pueblo pesa lo mismo que una de autopista.",
+      "nota": "Lo venden menos de mil gasolineras de once mil, así que la media sale de una muestra pequeña; en Castellón pueden ser una decena.",
       "sobre_total": null
     },
     "gasolina_95_serie": {
@@ -55,7 +55,7 @@
       "unidad_texto": "euros por litro con impuestos, media del mes",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "Del boletín petrolero de la Comisión Europea, que publica el precio más frecuente comunicado por cada estado, ponderado. Es un método distinto del de la media de gasolineras del ministerio, así que las dos series no se empalman: miden lo mismo de dos maneras y se publican por separado. No tiene desglose provincial.",
+      "nota": null,
       "sobre_total": null
     },
     "gasoleo_a_serie": {
@@ -64,7 +64,7 @@
       "unidad_texto": "euros por litro con impuestos, media del mes",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "Del boletín petrolero de la Comisión Europea, que publica el precio más frecuente comunicado por cada estado, ponderado. Es un método distinto del de la media de gasolineras del ministerio, así que las dos series no se empalman: miden lo mismo de dos maneras y se publican por separado. No tiene desglose provincial.",
+      "nota": null,
       "sobre_total": null
     },
     "glp_serie": {
@@ -73,7 +73,7 @@
       "unidad_texto": "euros por litro con impuestos, media del mes",
       "decimales": 3,
       "por_sexo": false,
-      "nota": "Del boletín petrolero de la Comisión Europea, que publica el precio más frecuente comunicado por cada estado, ponderado. Es un método distinto del de la media de gasolineras del ministerio, así que las dos series no se empalman: miden lo mismo de dos maneras y se publican por separado. No tiene desglose provincial.",
+      "nota": null,
       "sobre_total": null
     },
     "gasolina_95_impuesto": {
@@ -82,7 +82,7 @@
       "unidad_texto": "porcentaje del precio final que son impuestos",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "Lo que separa al precio con impuestos del precio sin ellos, sobre el precio final. Incluye el impuesto de hidrocarburos y el IVA. Del boletín petrolero de la Comisión Europea, que publica el precio más frecuente comunicado por cada estado, ponderado. Es un método distinto del de la media de gasolineras del ministerio, así que las dos series no se empalman: miden lo mismo de dos maneras y se publican por separado. No tiene desglose provincial.",
+      "nota": "Lo que separa el precio con impuestos del precio sin ellos, sobre el precio final: hidrocarburos más IVA.",
       "sobre_total": null
     },
     "gasoleo_a_impuesto": {
@@ -91,7 +91,7 @@
       "unidad_texto": "porcentaje del precio final que son impuestos",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "Lo que separa al precio con impuestos del precio sin ellos, sobre el precio final. Incluye el impuesto de hidrocarburos y el IVA. Del boletín petrolero de la Comisión Europea, que publica el precio más frecuente comunicado por cada estado, ponderado. Es un método distinto del de la media de gasolineras del ministerio, así que las dos series no se empalman: miden lo mismo de dos maneras y se publican por separado. No tiene desglose provincial.",
+      "nota": "Lo que separa el precio con impuestos del precio sin ellos, sobre el precio final: hidrocarburos más IVA.",
       "sobre_total": null
     }
   },

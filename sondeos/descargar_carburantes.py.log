@@ -1,13 +1,17 @@
 Carburantes
     semilla: 172 días, 2026-03-30 … 2026-09-17
-    172 días de España vienen de la semilla
   pidiendo las gasolineras
-    de una vez: 11,471 gasolineras
-  11,471 gasolineras, fecha declarada '17/09/2026 17:16:01'
-    espana: gasolina_95=1.918 (10909), gasoleo_a=1.9138 (11256), gasolina_98=2.073 (5486), gasoleo_premium=2.0057 (5890), glp=1.0976 (997)
-    comunitat-valenciana: gasolina_95=1.9233 (1268), gasoleo_a=1.8963 (1288), gasolina_98=2.1192 (608), gasoleo_premium=2.0068 (675), glp=1.0851 (106)
-    castellon: gasolina_95=1.912 (188), gasoleo_a=1.9153 (190), gasolina_98=2.1019 (76), gasoleo_premium=2.0398 (96), glp=1.1747 (10)
-  diario.json: 0 → 174 días-ámbito
+      intento 1: URLError: <urlopen error [Errno 104] Connection reset by peer>
+      intento 2: URLError: <urlopen error [Errno 104] Connection reset by peer>
+    de una vez, no: no se pudo bajar https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburan: URLError: <urlopen error [Errno 104] Connection reset by peer>
+      intento 1: URLError: <urlopen error [Errno 104] Connection reset by peer>
+      intento 2: URLError: <urlopen error [Errno 104] Connection reset by peer>
+      intento 3: URLError: <urlopen error [Errno 104] Connection reset by peer>
+      intento 4: URLError: <urlopen error [Errno 104] Connection reset by peer>
+    tampoco se puede listar las provincias: no se pudo bajar https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburan: URLError: <urlopen error [Errno 104] Connection reset by peer>
+  el ministerio no ha contestado hoy: el ministerio no ha contestado por ninguna de las dos vías
+  se sigue con lo ya recogido y con el boletín europeo
+  diario.json: 174 → 174 días-ámbito
     espana: 5 indicadores con mes cerrado
     comunitat-valenciana: 0 indicadores con mes cerrado
     castellon: 0 indicadores con mes cerrado
