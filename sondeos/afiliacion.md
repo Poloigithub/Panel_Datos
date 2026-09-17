@@ -5,34 +5,60 @@ binario- y dato que baje a provincia.
 
 ## Páginas recorridas
 
-- `https://www.mites.gob.es/estadisticas/bel/welcome.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/welcome.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/welcome.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/condiciones_trabajo_relac_laborales/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/AFI/welcome.htm` → 200 (text/html)
 - `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/TAASS/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/EMP/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/bel/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/contenidos/anuario.htm` → 200 (text/html)
 - `https://www.mites.gob.es/es/estadisticas/Inmigracion_emigracion/index.htm` → 200 (text/html)
 - `https://www.mites.gob.es/es/estadisticas/FP_medidas_apoyo_empleo/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/condiciones_trabajo_relac_laborales/index.htm` → 200 (text/html)
 - `https://www.mites.gob.es/es/estadisticas/prestaciones_SS_otra_proteccion/index.htm` → 200 (text/html)
 - `https://www.mites.gob.es/es/estadisticas/Otra_informacion/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/EAL/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ECL/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/MLR/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/ETT/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/COO/index.html` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/LAB/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/EESSS/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/trabajoautonomo/es/Conocenos/estadisticas/index.html` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/calendario/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/novedades/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/anuarios/2025/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/anuarios/2024/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/anuarios/2023/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/anuarios/2022/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/anuarios/2021/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/anuarios/2020/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/anuarios/2019/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/anuarios/2018/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/anuarios/2017/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/anuarios/2016/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/anuarios/2015/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/anuarios/2014/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ANUARIO2013/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ANUARIO2012/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ANUARIO2011/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ANUARIO2010/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ANUARIO2009/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ANUARIO2008/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ANUARIO2007/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ANUARIO2006/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ANUARIO2005/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ANUARIO2004/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ANUARIO2003/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ANUARIO2002/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/ANUARIO2001/Welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/Inmigracion_emigracion/PTE/index.html` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/Inmigracion_emigracion/AEX/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/Inmigracion_emigracion/CEX/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/Inmigracion_emigracion/DEX/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/Inmigracion_emigracion/RER/index.html` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/FP_medidas_apoyo_empleo/EFPC/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/FP_medidas_apoyo_empleo/FPE/welcome.htm` → 200 (text/html)
 - `https://www.mites.gob.es/es/estadisticas/condiciones_trabajo_relac_laborales/EAT/welcome.htm` → 200 (text/html)
 - `https://www.mites.gob.es/es/estadisticas/condiciones_trabajo_relac_laborales/EPR/welcome.htm` → 200 (text/html)
 - `https://www.mites.gob.es/es/estadisticas/condiciones_trabajo_relac_laborales/ECVT/welcome.htm` → 200 (text/html)
@@ -43,95 +69,63 @@ binario- y dato que baje a provincia.
 - `https://www.mites.gob.es/es/estadisticas/condiciones_trabajo_relac_laborales/AJS/welcome.htm` → 200 (text/html)
 - `https://www.mites.gob.es/es/estadisticas/condiciones_trabajo_relac_laborales/FGS/welcome.htm` → 200 (text/html)
 - `https://www.mites.gob.es/es/estadisticas/condiciones_trabajo_relac_laborales/dec/welcome.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/estadisticas/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/estadisticas/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/estadisticas/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/estadisticas/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/estadisticas/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/servicio_hogar/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/servicio_hogar/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/servicio_hogar/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/servicio_hogar/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/servicio_hogar/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/sec_eco_social/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/sec_eco_social/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/sec_eco_social/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/sec_eco_social/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/sec_eco_social/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/sec_eco_social/perte_ESyEC/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/sec_eco_social/perte_ESyEC/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/sec_eco_social/perte_ESyEC/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/sec_eco_social/perte_ESyEC/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/tendencias_empleo/es/sec_eco_social/perte_ESyEC/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/estadisticas/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/estadisticas/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/estadisticas/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/estadisticas/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/estadisticas/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/servicio_hogar/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/servicio_hogar/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/servicio_hogar/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/servicio_hogar/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/servicio_hogar/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/sec_eco_social/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/sec_eco_social/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/sec_eco_social/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/sec_eco_social/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/sec_eco_social/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/sec_eco_social/perte_ESyEC/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/sec_eco_social/perte_ESyEC/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/sec_eco_social/perte_ESyEC/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/sec_eco_social/perte_ESyEC/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/anuario/es/sec_eco_social/perte_ESyEC/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/estadisticas/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/estadisticas/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/estadisticas/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/estadisticas/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/estadisticas/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/servicio_hogar/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/servicio_hogar/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/servicio_hogar/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/servicio_hogar/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/servicio_hogar/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/sec_eco_social/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/sec_eco_social/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/sec_eco_social/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/sec_eco_social/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/sec_eco_social/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/sec_eco_social/perte_ESyEC/es/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/sec_eco_social/perte_ESyEC/es/estadisticas/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/sec_eco_social/perte_ESyEC/es/servicio_hogar/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/sec_eco_social/perte_ESyEC/es/sec_eco_social/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ES/es/sec_eco_social/perte_ESyEC/es/sec_eco_social/perte_ESyEC/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/calendario/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/novedades/index.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/contenidos/anuario.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/EAL/welcome.htm` → 200 (text/html)
-- `https://www.mites.gob.es/estadisticas/ECL/welcome.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/AFI/welcome.htm` → 200 (text/html)
-- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/EMP/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/prestaciones_SS_otra_proteccion/SEEPROS/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/prestaciones_SS_otra_proteccion/PEN/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/prestaciones_SS_otra_proteccion/PRD/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/prestaciones_SS_otra_proteccion/PNC/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/prestaciones_SS_otra_proteccion/IT/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/prestaciones_SS_otra_proteccion/EPRN/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/prestaciones_SS_otra_proteccion/PRF/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/prestaciones_SS_otra_proteccion/PMA/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/estadisticas/FAN/welcome.htm` → 200 (text/html)
+- `https://www.mites.gob.es/itss/web/Que_hacemos/Estadisticas/index.html` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/impacto-covid19/index.htm` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/COO/publicacion/publicacion.html` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/COO/analisis/analisis.html` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/COO/descargar-datos/descargarDatos.html` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/COO/metodologia/metodologia.html` → 200 (text/html)
+- `https://www.mites.gob.es/es/estadisticas/mercado_trabajo/COO/enlaces/enlaces.html` → 200 (text/html)
+- `https://www.mites.gob.es/trabajoautonomo/es/Conocenos/estadisticas/datos-estadisticos-mensuales-desde-2024/index.html` → 200 (text/html)
+- `https://www.mites.gob.es/trabajoautonomo/es/Conocenos/estadisticas/datos-estadisticos-mensuales/index.html` → 200 (text/html)
+- `https://www.mites.gob.es/trabajoautonomo/es/Conocenos/estadisticas/datos-estadisticos-trimestrales/index.html` → 200 (text/html)
 
-## 741 ficheros en total
+## 1607 ficheros en total
 
-Por formato: xlsx: 280, xls: 461, csv: 0, ods: 0
+Por formato: xlsx: 717, xls: 890, csv: 0, ods: 0
 
 ## Carpetas y en qué formato publica cada una
 
+- `AUT/AUT_01_2024.xlsx` · xlsx: 1
+- `AUT/AUT_01_2025.xlsx` · xlsx: 1
+- `AUT/AUT_01_2026.xlsx` · xlsx: 1
+- `AUT/AUT_02_2024.xlsx` · xlsx: 1
+- `AUT/AUT_02_2025.xlsx` · xlsx: 1
+- `AUT/AUT_02_2026.xlsx` · xlsx: 1
+- `AUT/AUT_03_2024.xlsx` · xlsx: 1
+- `AUT/AUT_03_2025.xlsx` · xlsx: 1
+- `AUT/AUT_03_2026.xlsx` · xlsx: 1
+- `AUT/AUT_04_2024.xlsx` · xlsx: 1
+- `AUT/AUT_04_2025.xlsx` · xlsx: 1
+- `AUT/AUT_04_2026.xlsx` · xlsx: 1
+- `AUT/AUT_05_2024.xlsx` · xlsx: 1
+- `AUT/AUT_05_2025.xlsx` · xlsx: 1
+- `AUT/AUT_05_2026.xlsx` · xlsx: 1
+- `AUT/AUT_06_2024.xlsx` · xlsx: 1
+- `AUT/AUT_06_2025.xlsx` · xlsx: 1
+- `AUT/AUT_06_2026.xlsx` · xlsx: 1
+- `AUT/AUT_07_2024.xlsx` · xlsx: 1
+- `AUT/AUT_07_2025.xlsx` · xlsx: 1
+- `AUT/AUT_07_2026.xlsx` · xlsx: 1
+- `AUT/AUT_08_2024.xlsx` · xlsx: 1
+- `AUT/AUT_08_2025.xlsx` · xlsx: 1
+- `AUT/AUT_09_2024.xlsx` · xlsx: 1
+- `AUT/AUT_09_2025.xlsx` · xlsx: 1
+- `AUT/AUT_10_2024.xlsx` · xlsx: 1
+- `AUT/AUT_10_2025.xlsx` · xlsx: 1
+- `AUT/AUT_11_2024.xlsx` · xlsx: 1
+- `AUT/AUT_11_2025.xlsx` · xlsx: 1
+- `AUT/AUT_12_2024.xlsx` · xlsx: 1
+- `AUT/AUT_12_2025.xlsx` · xlsx: 1
 - `EAL/EAL2013` · xls: 1
 - `EAL/EAL2014` · xls: 1
 - `EAL/EAL2015` · xls: 1
@@ -144,6 +138,47 @@ Por formato: xlsx: 280, xls: 461, csv: 0, ods: 0
 - `EAL/EAL2022` · xlsx: 1
 - `EAL/EAL2023` · xlsx: 1
 - `EAL/EAL2024` · xlsx: 1
+- `ESI/ESI_01_2025.xlsx` · xlsx: 1
+- `ESI/ESI_01_2026.xlsx` · xlsx: 1
+- `ESI/ESI_02_2025.xlsx` · xlsx: 1
+- `ESI/ESI_02_2026.xlsx` · xlsx: 1
+- `ESI/ESI_03_2025.xlsx` · xlsx: 1
+- `ESI/ESI_03_2026.xlsx` · xlsx: 1
+- `ESI/ESI_04_2025.xlsx` · xlsx: 1
+- `ESI/ESI_04_2026.xlsx` · xlsx: 1
+- `ESI/ESI_05_2025.xlsx` · xlsx: 1
+- `ESI/ESI_05_2026.xlsx` · xlsx: 1
+- `ESI/ESI_06_2025.xlsx` · xlsx: 1
+- `ESI/ESI_06_2026.xlsx` · xlsx: 1
+- `ESI/ESI_07_2025.xlsx` · xlsx: 1
+- `ESI/ESI_07_2026.xlsx` · xlsx: 1
+- `ESI/ESI_08_2025.xlsx` · xlsx: 1
+- `ESI/ESI_09_2025.xlsx` · xlsx: 1
+- `ESI/ESI_10_2025.xlsx` · xlsx: 1
+- `ESI/ESI_11_2025.xlsx` · xlsx: 1
+- `ESI/ESI_12_2025.xlsx` · xlsx: 1
+- `ESI/ESI_1T_2020.xlsx` · xlsx: 1
+- `ESI/ESI_1T_2021.xlsx` · xlsx: 1
+- `ESI/ESI_1T_2022.xlsx` · xlsx: 1
+- `ESI/ESI_1T_2023.xlsx` · xlsx: 1
+- `ESI/ESI_1T_2024.xlsx` · xlsx: 1
+- `ESI/ESI_2T_2020.xlsx` · xlsx: 1
+- `ESI/ESI_2T_2021.xlsx` · xlsx: 1
+- `ESI/ESI_2T_2022.xlsx` · xlsx: 1
+- `ESI/ESI_2T_2023.xlsx` · xlsx: 1
+- `ESI/ESI_2T_2024.xlsx` · xlsx: 1
+- `ESI/ESI_3T_2020.xlsx` · xlsx: 1
+- `ESI/ESI_3T_2021.xlsx` · xlsx: 1
+- `ESI/ESI_3T_2022.xlsx` · xlsx: 1
+- `ESI/ESI_3T_2023.xlsx` · xlsx: 1
+- `ESI/ESI_3T_2024.xlsx` · xlsx: 1
+- `ESI/ESI_4T_2020.xlsx` · xlsx: 1
+- `ESI/ESI_4T_2021.xlsx` · xlsx: 1
+- `ESI/ESI_4T_2022.xlsx` · xlsx: 1
+- `ESI/ESI_4T_2023.xlsx` · xlsx: 1
+- `ESI/ESI_4T_2024.xlsx` · xlsx: 1
+- `Efpc/EFPEE2015` · xls: 1
+- `Efpc/EFPEE2020` · xlsx: 1
 - `Emp/Emp13-Dic` · xls: 1
 - `Emp/Emp14-Abr` · xls: 1
 - `Emp/Emp14-Ago` · xls: 1
@@ -297,6 +332,172 @@ Por formato: xlsx: 280, xls: 461, csv: 0, ods: 0
 - `Emp/Emp26-Jun` · xlsx: 1
 - `Emp/Emp26-Mar` · xlsx: 1
 - `Emp/Emp26-May` · xlsx: 1
+- `Ett/ett16Definitivo` · xls: 1
+- `Ett/ett17Definitivo` · xls: 1
+- `Ett/ett18Definitivo` · xls: 1
+- `Ett/ett19Definitivo` · xls: 1
+- `Ett/ett20Definitivo` · xls: 1
+- `Ett/ett21AbrAv` · xls: 1
+- `Ett/ett21AgoAv` · xls: 1
+- `Ett/ett21Definitivo` · xls: 1
+- `Ett/ett21DicAv` · xls: 1
+- `Ett/ett21FebAv` · xls: 1
+- `Ett/ett21JulAv` · xls: 1
+- `Ett/ett21JunAv` · xls: 1
+- `Ett/ett21MarAv` · xls: 1
+- `Ett/ett21MayAv` · xls: 1
+- `Ett/ett21OctAv` · xls: 1
+- `Ett/ett21SepAv` · xls: 1
+- `Ett/ett21eneAv` · xls: 1
+- `Ett/ett21novav` · xls: 1
+- `Ett/ett22AbrAv` · xls: 1
+- `Ett/ett22AgoAv` · xls: 1
+- `Ett/ett22Definitivo` · xls: 1
+- `Ett/ett22DicAv` · xls: 1
+- `Ett/ett22EneAv` · xls: 1
+- `Ett/ett22FebAv` · xls: 1
+- `Ett/ett22JulAv` · xls: 1
+- `Ett/ett22JunAv` · xls: 1
+- `Ett/ett22MarAv` · xls: 1
+- `Ett/ett22MayAv` · xls: 1
+- `Ett/ett22NovAv` · xls: 1
+- `Ett/ett22OctAv` · xls: 1
+- `Ett/ett22SepAv` · xls: 1
+- `Ett/ett23AbrAv` · xls: 1
+- `Ett/ett23AgoAv` · xls: 1
+- `Ett/ett23Definitivo` · xlsx: 1
+- `Ett/ett23DicAv` · xls: 1
+- `Ett/ett23EneAv` · xls: 1
+- `Ett/ett23FebAv` · xls: 1
+- `Ett/ett23JulAv` · xls: 1
+- `Ett/ett23JunAv` · xls: 1
+- `Ett/ett23MarAv` · xls: 1
+- `Ett/ett23MayAv` · xls: 1
+- `Ett/ett23NovAv` · xls: 1
+- `Ett/ett23OctAv` · xls: 1
+- `Ett/ett23SepAv` · xls: 1
+- `Ett/ett24AbrAv` · xlsx: 1
+- `Ett/ett24AgoAv` · xlsx: 1
+- `Ett/ett24Definitivo` · xlsx: 1
+- `Ett/ett24DicAv` · xlsx: 1
+- `Ett/ett24EneAv` · xls: 1
+- `Ett/ett24FebAv` · xls: 1
+- `Ett/ett24JulAv` · xlsx: 1
+- `Ett/ett24JunAv` · xlsx: 1
+- `Ett/ett24MarAv` · xlsx: 1
+- `Ett/ett24MayAv` · xlsx: 1
+- `Ett/ett24NovAv` · xlsx: 1
+- `Ett/ett24OctAv` · xlsx: 1
+- `Ett/ett24SepAv` · xlsx: 1
+- `Ett/ett25AbrAv` · xlsx: 1
+- `Ett/ett25AgoAv` · xlsx: 1
+- `Ett/ett25Definitivo` · xlsx: 1
+- `Ett/ett25DicAv` · xlsx: 1
+- `Ett/ett25EneAv` · xlsx: 1
+- `Ett/ett25FebAv` · xlsx: 1
+- `Ett/ett25JulAv` · xlsx: 1
+- `Ett/ett25JunAv` · xlsx: 1
+- `Ett/ett25MarAv` · xlsx: 1
+- `Ett/ett25MayAv` · xlsx: 1
+- `Ett/ett25NovAv` · xlsx: 1
+- `Ett/ett25OctAv` · xlsx: 1
+- `Ett/ett25SepAv` · xlsx: 1
+- `Ett/ett26AbrAv` · xlsx: 1
+- `Ett/ett26EneAv` · xlsx: 1
+- `Ett/ett26FebAv` · xlsx: 1
+- `Ett/ett26JunAv` · xlsx: 1
+- `Ett/ett26MarAv` · xlsx: 1
+- `Ett/ett26MayAv` · xlsx: 1
+- `LAB/dic2014` · xls: 1
+- `LAB/dic2015` · xls: 1
+- `LAB/dic2016` · xls: 1
+- `LAB/dic2017` · xls: 1
+- `LAB/dic2018` · xls: 1
+- `LAB/dic2019` · xls: 1
+- `LAB/dic2020` · xls: 1
+- `LAB/dic2021` · xls: 1
+- `LAB/dic2022` · xls: 1
+- `LAB/dic2023` · xls: 1
+- `LAB/dic2024` · xls: 1
+- `LAB/dic2025` · xls: 1
+- `LAB/jun2015` · xls: 1
+- `LAB/jun2016` · xls: 1
+- `LAB/jun2017` · xls: 1
+- `LAB/jun2018` · xls: 1
+- `LAB/jun2019` · xls: 1
+- `LAB/jun2020` · xls: 1
+- `LAB/jun2021` · xls: 1
+- `LAB/jun2022` · xls: 1
+- `LAB/jun2023` · xls: 1
+- `LAB/jun2024` · xls: 1
+- `LAB/jun2025` · xls: 1
+- `LAB/mar2015` · xls: 1
+- `LAB/mar2016` · xls: 1
+- `LAB/mar2017` · xls: 1
+- `LAB/mar2018` · xls: 1
+- `LAB/mar2019` · xls: 1
+- `LAB/mar2020` · xls: 1
+- `LAB/mar2021` · xls: 1
+- `LAB/mar2022` · xls: 1
+- `LAB/mar2023` · xls: 1
+- `LAB/mar2024` · xls: 1
+- `LAB/mar2025` · xls: 1
+- `LAB/mar2026` · xlsx: 1
+- `LAB/sep2015` · xls: 1
+- `LAB/sep2016` · xls: 1
+- `LAB/sep2017` · xls: 1
+- `LAB/sep2018` · xls: 1
+- `LAB/sep2019` · xls: 1
+- `LAB/sep2020` · xls: 1
+- `LAB/sep2021` · xls: 1
+- `LAB/sep2022` · xls: 1
+- `LAB/sep2023` · xls: 1
+- `LAB/sep2024` · xls: 1
+- `LAB/sep2025` · xls: 1
+- `MLR/MLR23_Abr` · xlsx: 1
+- `MLR/MLR23_Ago` · xlsx: 1
+- `MLR/MLR23_Dic` · xlsx: 1
+- `MLR/MLR23_Ene` · xlsx: 1
+- `MLR/MLR23_Feb` · xlsx: 1
+- `MLR/MLR23_Jul` · xlsx: 1
+- `MLR/MLR23_Jun` · xlsx: 1
+- `MLR/MLR23_Mar` · xlsx: 1
+- `MLR/MLR23_May` · xlsx: 1
+- `MLR/MLR23_Nov` · xlsx: 1
+- `MLR/MLR23_Oct` · xlsx: 1
+- `MLR/MLR23_Sep` · xlsx: 1
+- `MLR/MLR24_Abr` · xlsx: 1
+- `MLR/MLR24_Ago` · xlsx: 1
+- `MLR/MLR24_Dic` · xlsx: 1
+- `MLR/MLR24_Ene` · xlsx: 1
+- `MLR/MLR24_Feb` · xlsx: 1
+- `MLR/MLR24_Jul` · xlsx: 1
+- `MLR/MLR24_Jun` · xlsx: 1
+- `MLR/MLR24_Mar` · xlsx: 1
+- `MLR/MLR24_May` · xlsx: 1
+- `MLR/MLR24_Nov` · xlsx: 1
+- `MLR/MLR24_Oct` · xlsx: 1
+- `MLR/MLR24_Sep` · xlsx: 1
+- `MLR/MLR25_Abr` · xlsx: 1
+- `MLR/MLR25_Ago` · xlsx: 1
+- `MLR/MLR25_Dic` · xlsx: 1
+- `MLR/MLR25_Ene` · xlsx: 1
+- `MLR/MLR25_Feb` · xlsx: 1
+- `MLR/MLR25_Jul` · xlsx: 1
+- `MLR/MLR25_Jun` · xlsx: 1
+- `MLR/MLR25_Mar` · xlsx: 1
+- `MLR/MLR25_May` · xlsx: 1
+- `MLR/MLR25_Nov` · xlsx: 1
+- `MLR/MLR25_Oct` · xlsx: 1
+- `MLR/MLR25_Sep` · xlsx: 1
+- `MLR/MLR26_Abr` · xlsx: 1
+- `MLR/MLR26_Ago` · xlsx: 1
+- `MLR/MLR26_Ene` · xlsx: 1
+- `MLR/MLR26_Feb` · xlsx: 1
+- `MLR/MLR26_Jul` · xlsx: 1
+- `MLR/MLR26_Jun` · xlsx: 1
+- `MLR/MLR26_Mar` · xlsx: 1
+- `MLR/MLR26_May` · xlsx: 1
 - `Mac/Mac13` · xls: 1
 - `Mac/Mac14` · xls: 1
 - `Mac/Mac14Dicpublicacion` · xls: 1
@@ -337,6 +538,145 @@ Por formato: xlsx: 280, xls: 461, csv: 0, ods: 0
 - `Mac/mac25seppublicacion` · xlsx: 1
 - `Mac/mac26junpublicacion` · xlsx: 1
 - `Mac/mac26marpublicacion` · xlsx: 1
+- `PRD/Prd15-Abr` · xls: 1
+- `PRD/Prd15-Ago` · xls: 1
+- `PRD/Prd15-Dic` · xls: 1
+- `PRD/Prd15-Ene` · xls: 1
+- `PRD/Prd15-Feb` · xls: 1
+- `PRD/Prd15-Jul` · xls: 1
+- `PRD/Prd15-Jun` · xls: 1
+- `PRD/Prd15-Mar` · xls: 1
+- `PRD/Prd15-May` · xls: 1
+- `PRD/Prd15-Nov` · xls: 1
+- `PRD/Prd15-Oct` · xls: 1
+- `PRD/Prd15-Sep` · xls: 1
+- `PRD/Prd16-Abr` · xls: 1
+- `PRD/Prd16-Ago` · xls: 1
+- `PRD/Prd16-Dic` · xls: 1
+- `PRD/Prd16-Ene` · xls: 1
+- `PRD/Prd16-Feb` · xls: 1
+- `PRD/Prd16-Jul` · xls: 1
+- `PRD/Prd16-Jun` · xls: 1
+- `PRD/Prd16-Mar` · xls: 1
+- `PRD/Prd16-May` · xls: 1
+- `PRD/Prd16-Nov` · xls: 1
+- `PRD/Prd16-Oct` · xls: 1
+- `PRD/Prd16-Sep` · xls: 1
+- `PRD/Prd17-Abr` · xls: 1
+- `PRD/Prd17-Ago` · xls: 1
+- `PRD/Prd17-Dic` · xls: 1
+- `PRD/Prd17-Ene` · xls: 1
+- `PRD/Prd17-Feb` · xls: 1
+- `PRD/Prd17-Jul` · xls: 1
+- `PRD/Prd17-Jun` · xls: 1
+- `PRD/Prd17-Mar` · xls: 1
+- `PRD/Prd17-May` · xls: 1
+- `PRD/Prd17-Nov` · xls: 1
+- `PRD/Prd17-Oct` · xls: 1
+- `PRD/Prd17-Sep` · xls: 1
+- `PRD/Prd18-Ene` · xls: 1
+- `PRD/Prd18-Feb` · xls: 1
+- `PRD/Prd18-Mar` · xls: 1
+- `PRD/prd18-abr` · xls: 1
+- `PRD/prd18-jun` · xls: 1
+- `PRD/prd18-may` · xls: 1
+- `PRD/prd18_ago` · xls: 1
+- `PRD/prd18_dic` · xls: 1
+- `PRD/prd18_jul` · xls: 1
+- `PRD/prd18_nov` · xls: 1
+- `PRD/prd18_oct` · xls: 1
+- `PRD/prd18_sep` · xls: 1
+- `PRD/prd19_abr` · xls: 1
+- `PRD/prd19_ago` · xls: 1
+- `PRD/prd19_dic` · xls: 1
+- `PRD/prd19_ene` · xls: 1
+- `PRD/prd19_feb` · xls: 1
+- `PRD/prd19_jul` · xls: 1
+- `PRD/prd19_jun` · xls: 1
+- `PRD/prd19_mar` · xls: 1
+- `PRD/prd19_may` · xls: 1
+- `PRD/prd19_nov` · xls: 1
+- `PRD/prd19_oct` · xls: 1
+- `PRD/prd19_sep` · xls: 1
+- `PRD/prd20_abr` · xls: 1
+- `PRD/prd20_ago` · xls: 1
+- `PRD/prd20_dic` · xls: 1
+- `PRD/prd20_ene` · xls: 1
+- `PRD/prd20_feb` · xls: 1
+- `PRD/prd20_jul` · xls: 1
+- `PRD/prd20_jun` · xls: 1
+- `PRD/prd20_mar` · xls: 1
+- `PRD/prd20_may` · xls: 1
+- `PRD/prd20_nov` · xls: 1
+- `PRD/prd20_oct` · xls: 1
+- `PRD/prd20_sep` · xls: 1
+- `PRD/prd21_abr` · xlsx: 1
+- `PRD/prd21_ago` · xlsx: 1
+- `PRD/prd21_dic` · xlsx: 1
+- `PRD/prd21_ene` · xlsx: 1
+- `PRD/prd21_feb` · xlsx: 1
+- `PRD/prd21_jul` · xlsx: 1
+- `PRD/prd21_jun` · xlsx: 1
+- `PRD/prd21_mar` · xlsx: 1
+- `PRD/prd21_may` · xlsx: 1
+- `PRD/prd21_nov` · xlsx: 1
+- `PRD/prd21_oct` · xlsx: 1
+- `PRD/prd21_sep` · xlsx: 1
+- `PRD/prd22_abr` · xlsx: 1
+- `PRD/prd22_ago` · xlsx: 1
+- `PRD/prd22_dic` · xlsx: 1
+- `PRD/prd22_ene` · xlsx: 1
+- `PRD/prd22_feb` · xlsx: 1
+- `PRD/prd22_jul` · xlsx: 1
+- `PRD/prd22_jun` · xlsx: 1
+- `PRD/prd22_mar` · xlsx: 1
+- `PRD/prd22_may` · xlsx: 1
+- `PRD/prd22_nov` · xlsx: 1
+- `PRD/prd22_oct` · xlsx: 1
+- `PRD/prd22_sep` · xlsx: 1
+- `PRD/prd23_Ago` · xlsx: 1
+- `PRD/prd23_Jul` · xlsx: 1
+- `PRD/prd23_Mar` · xlsx: 1
+- `PRD/prd23_Sep` · xlsx: 1
+- `PRD/prd23_abr` · xlsx: 1
+- `PRD/prd23_dic` · xlsx: 1
+- `PRD/prd23_ene` · xlsx: 1
+- `PRD/prd23_feb` · xlsx: 1
+- `PRD/prd23_jun` · xlsx: 1
+- `PRD/prd23_may` · xlsx: 1
+- `PRD/prd23_nov` · xlsx: 1
+- `PRD/prd23_oct` · xlsx: 1
+- `PRD/prd24_abr` · xlsx: 1
+- `PRD/prd24_ago` · xlsx: 1
+- `PRD/prd24_dic` · xlsx: 2
+- `PRD/prd24_ene` · xlsx: 1
+- `PRD/prd24_feb` · xlsx: 1
+- `PRD/prd24_jul` · xlsx: 1
+- `PRD/prd24_jun` · xlsx: 1
+- `PRD/prd24_mar` · xlsx: 1
+- `PRD/prd24_may` · xlsx: 1
+- `PRD/prd24_nov` · xlsx: 2
+- `PRD/prd24_oct` · xlsx: 1
+- `PRD/prd24_sep` · xlsx: 1
+- `PRD/prd25_abr` · xlsx: 2
+- `PRD/prd25_ago` · xlsx: 1
+- `PRD/prd25_dic` · xlsx: 1
+- `PRD/prd25_ene` · xlsx: 2
+- `PRD/prd25_feb` · xlsx: 2
+- `PRD/prd25_jul` · xlsx: 1
+- `PRD/prd25_jun` · xlsx: 1
+- `PRD/prd25_mar` · xlsx: 2
+- `PRD/prd25_may` · xlsx: 1
+- `PRD/prd25_nov` · xlsx: 1
+- `PRD/prd25_oct` · xlsx: 1
+- `PRD/prd25_sep` · xlsx: 1
+- `PRD/prd26_abr` · xlsx: 1
+- `PRD/prd26_ene` · xlsx: 1
+- `PRD/prd26_feb` · xlsx: 1
+- `PRD/prd26_jul` · xlsx: 1
+- `PRD/prd26_jun` · xlsx: 1
+- `PRD/prd26_mar` · xlsx: 1
+- `PRD/prd26_may` · xlsx: 1
 - `ajs/ajs13` · xls: 1
 - `ajs/ajs14` · xls: 1
 - `ajs/ajs15` · xls: 1
@@ -721,6 +1061,7 @@ Por formato: xlsx: 280, xls: 461, csv: 0, ods: 0
 - `hue/hue26junpublicacion` · xls: 1
 - `hue/hue26marpublicacion` · xls: 2
 - `hue/hue26maypublicacion` · xls: 2
+- `ministerio/estadisticas` · xls: 259, xlsx: 214
 - `reg/Reg14` · xls: 1
 - `reg/Reg15` · xls: 1
 - `reg/Reg15Ene-Dic` · xls: 1
@@ -816,13 +1157,116 @@ Por formato: xlsx: 280, xls: 461, csv: 0, ods: 0
 - `reg/reg26jun` · xlsx: 1
 - `reg/reg26mar` · xlsx: 1
 - `reg/reg26may` · xlsx: 1
+- `seepros/datos` · xls: 7, xlsx: 3
 
-## afiliación · 0 ficheros
+## afiliación · 12 ficheros
 
+- `https://www.mites.gob.es/ficheros/ministerio/estadisticas/anuarios/2014/AFI/AFI.xls`
+- `https://www.mites.gob.es/ficheros/ministerio/estadisticas/anuarios/2015/AFI/AFI.xlsx`
+- `https://www.mites.gob.es/ficheros/ministerio/estadisticas/anuarios/2016/AFI/AFI.xls`
+- `https://www.mites.gob.es/ficheros/ministerio/estadisticas/anuarios/2017/AFI/AFI.xlsx`
+- `https://www.mites.gob.es/ficheros/ministerio/estadisticas/anuarios/2018/AFI/AFI.xlsx`
+- `https://www.mites.gob.es/ficheros/ministerio/estadisticas/anuarios/2019/AFI/AFI.xlsx`
+- `https://www.mites.gob.es/ficheros/ministerio/estadisticas/anuarios/2020/AFI/AFI.xlsx`
+- `https://www.mites.gob.es/ficheros/ministerio/estadisticas/anuarios/2021/AFI/AFI.xlsx`
+- `https://www.mites.gob.es/ficheros/ministerio/estadisticas/anuarios/2022/AFI/AFI.xlsx`
+- `https://www.mites.gob.es/ficheros/ministerio/estadisticas/anuarios/2023/AFI/AFI.xlsx`
+- `https://www.mites.gob.es/ficheros/ministerio/estadisticas/anuarios/2024/AFI/AFI.xlsx`
+- `https://www.mites.gob.es/ficheros/ministerio/estadisticas/anuarios/2025/AFI/AFI.xlsx`
 
-*No hay ningún XLSX que abrir en este tema: o no hay ficheros o están todos en el .xls binario.*
+### Por dentro: `AFI.xlsx`
+    - descarga: 200, 331448 bytes
+    - 22 hojas: «Indice», «Afi-01», «Afi-02», «Afi-03a», «Afi-03b», «Afi-04», «Afi-05», «AFI-06a», «Afi-06b», «Afi-06c», «Afi-07», «Afi-08a», «Afi-08b», «Afi-09a», «Afi-09b», «Afi-10», «Afi-11», «Afi-12», «Afi-13», «Afi-14», «Afi-15», «Fuentes y notas »
+    - hoja «Indice», 24 filas:
+        · Afiliación de Trabajadores al Sistema de la Seguridad Social (AFI)
+        · AFI-01. | Trabajadores afiliados en alta laboral, por sexo y edad, dependencia laboral y régimen 
+        · AFI-02. | Trabajadores afiliados en alta laboral, según dependencia laboral y sexo, por sector y división de actividad
+        · AFI-03A. | Trabajadores afiliados en alta laboral, según régimen y sexo, por sector  y división de actividad 
+        · AFI-03B.  | Trabajadores afiliados en alta laboral, según régimen y sexo, por sector y división de actividad (Concl.)
+        · AFI-04.  | Trabajadores afiliados en alta laboral según régimen, por sexo y edad 
+        · AFI-05. | Trabajadores afiliados en alta laboral con pluriactividad, por régimen (1) 
+        · AFI-06A.  | Trabajadores afiliados en alta laboral con pluriactividad, según actividad económica de cada empleo (1)
+        · AFI-06B.  | Trabajadores afiliados en alta laboral con pluriactividad, según actividad económica de cada empleo (Cont.).(1)
+        · AFI-06C.  | Trabajadores afiliados en alta laboral con pluriactividad, según actividad económica de cada empleo (Concl.). (1)
+        · AFI-07.  | Trabajadores afiliados en alta laboral, según régimen, por comunidad autónoma y provincia 
+        · AFI-08A.  | Trabajadores afiliados en alta laboral, según sector de actividad y dependencia laboral,  por comunidad autónoma y provincia 
+        · AFI-08B.  | Trabajadores afiliados en alta laboral, según sector de actividad y dependencia laboral,  por comunidad autónoma y provincia  (Concl.)
+        · AFI-09A. | Trabajadores afiliados en alta laboral, según comunidad autónoma, por sexo y edad 
+        · AFI-9B.  | Trabajadores afiliados en alta laboral, según comunidad autónoma, por sexo y edad (Concl.)
+        · AFI-10.  | Trabajadores afiliados en alta laboral por Cuenta Propia, según  régimen y  colectivo 
+        · AFI-11.  | Trabajadores Autónomos, personas físicas, en alta en la Seguridad Social, según sin y con asalariados, por sector y división de actividad 
+        · AFI-12.  | Trabajadores Autónomos, personas físicas, en alta en la Seguridad Social, según sin y con asalariados, por sexo y edad 
+        · AFI-13.  | Trabajadores Autónomos, personas físicas, en alta en la Seguridad Social, según sin y con asalariados, por comunidad autónoma y provincia 
+        · AFI-14.  | Trabajadores afiliados a la Seguridad Social en el Sector  Público,  según sexo y ámbiro terrirorial,  por comunidad autónoma y provincia 
+        · AFI-15.  | Trabajadores afiliados  a la Seguridad Social en el Sector  Público,  según ámbito territorial, por sector y sección de actividad. 
+        · Fuentes y notas explicativas
+    - hoja «Afi-01», 2184 filas:
+        · AFILIACIÓN DE TRABAJADORES  AL   |  |  |  |  |  |  | AFI-1.
+        ·  |  |  |  |  |  |  | Trabajadores afiliados en alta laboral, 
+        · SISTEMA DE LA SEGURIDAD SOCIAL   |  |  |  |  |  |  | por  sexo y edad, dependencia laboral 
+        ·  |  |  |  |  |  |  | y régimen
+        ·  | Media anual (1). En miles
+        ·  | VALORES ABSOLUTOS |  |  |  | VARIACIONES SOBRE AÑO ANTERIOR
+        ·  |  |  |  |  | Absolutas
+        ·  | 2014 |  | 2015 |  | 2013 |  | 2014
+        · AMBOS SEXOS (2) | 16555.98813545817 |  | 17087.348 |  | -553.6104163505975 |  | 256.47504780876625
+        · Menos de 25 años | 775.7964103585657 |  | 831.799 |  | -109.92744924302795 |  | 22.84109960159367
+        · De 25 a 34 años | 3719.0714302788847 |  | 3704.968 |  | -302.89237023107614 |  | -73.95912749003946
+        · De 35 a 44 años | 5192.476784860558 |  | 5343.897 |  | -92.64788086055778 |  | 100.72456972111559
+        · De 45 a 54 años | 4337.708577689244 |  | 4520.945 |  | -28.044362135457806 |  | 112.03504382470146
+        · De 55 y más años | 2530.9349322709168 |  | 2685.71 |  | -20.184258262948134 |  | 94.91936653386483
+        · Cuenta Ajena | 13447.435119521911 |  | 13918.817 |  | -500.41753303585574 |  | 190.4368605578111
+        · Cuenta Propia | 3108.553015936255 |  | 3168.531 |  | -53.27878769721091 |  | 66.02409163346647
+        · Régimen General
+        ·   R.General (3)  | 12211.958474103585 |  | 12681.646 |  | -538.6680520956181 |  | 184.14745019920156
+        ·   S.E. Agrario  | 754.5825019920319 |  | 754.589 |  | -63.4108644462151 |  | 1.0913904382470037
 
-## elecciones sindicales · 0 ficheros
+### Por dentro: `AFI.xlsx`
+    - descarga: 200, 479093 bytes
+    - 40 hojas: «INDICE», «AFI-1», «AFI-2», «AFI-3A», «AFI-3B», «AFI-4», «AFI-5», «AFI-6A», «AFI-6B», «AFI-6C», «AFI-7», «AFI-8A», «AFI-8B», «AFI-9», «AFI-10A», «AFI-10B», «AFI-11», «AFI-12A», «AFI-12B», «AFI-13», «AFI-14A», «AFI-14B», «AFI-15», «AFI-16», «AFI-17», «AFI-18», «AFI-19», «AFI-20A», «AFI-20B», «AFI-21A»
+    - hoja «INDICE», 43 filas:
+        · AFILIACIÓN DE TRABAJADORES AL SISTEMA DE LA SEGURIDAD SOCIAL (AFI)
+        · AFI-1. | Trabajadores afiliados en alta laboral, por sexo y edad, dependencia laboral y régimen 
+        · AFI-2. | Trabajadores afiliados en alta laboral, según dependencia laboral y sexo, por sector y división de actividad
+        · AFI-3A. | Trabajadores afiliados en alta laboral, según régimen y sexo, por sector  y división de actividad 
+        · AFI-3B.  | Trabajadores afiliados en alta laboral, según régimen y sexo, por sector y división de actividad (Concl.)
+        · AFI-4.  | Trabajadores afiliados en alta laboral, según régimen, por sexo y edad 
+        · AFI-5. | Trabajadores afiliados en alta laboral con pluriactividad, por régimen
+        · AFI-6A.  | Trabajadores afiliados en alta laboral con pluriactividad, según actividad económica de cada empleo
+        · AFI-6B.  | Trabajadores afiliados en alta laboral con pluriactividad, según actividad económica de cada empleo (Cont.).
+        · AFI-6C.  | Trabajadores afiliados en alta laboral con pluriactividad, según actividad económica de cada empleo (Concl.).
+        · AFI-7. | Altas y Bajas laborales de trabajadores, por sexo y edad, dependencia laboral y régimen
+        · AFI-8A. | Altas y Bajas laborales de trabajadores, según regímenes, por sector y división de actividad
+        · AFI-8B. | Altas y Bajas laborales de trabajadores, según regímenes, por sector y división de actividad (Concl.)
+        · AFI-9. | Altas laborales, según régimen, por sexo y edad
+        · AFI-10A. | Altas laborales del Régimen General y Minería del Carbón, según típo de cotización, por sexo y edad
+        · AFI-10B. | Altas laborales del Régimen General y Minería del Carbón, según típo de cotización, por sexo y edad (Concl.)
+        · AFI-11. | Altas laborales iniciales, según régimen, por sexo y edad.
+        · AFI-12A. | Altas laborales iniciales del Régimen General y Minería del Carbón, según grupo de cotización, por sexo y edad
+        · AFI-12B. | Altas laborales iniciales del Régimen General y Minería del Carbón, según grupo de cotización, por sexo y edad (Concl.)
+        · AFI-13. | Bajas laborales, según régimen, por sexo y edad.
+        · AFI-14A. | Bajas laborales del Régimen General y Minería del Carbón, según grupo de cotización, por sexo y edad
+        · AFI-14B. | Bajas laborales del Régimen General y Minería del Carbón, según grupo de cotización, por sexo y edad (Concl.)
+        · AFI-15. | Bajas laborales, según duración del último período en alta, por sexo y edad
+    - hoja «AFI-1», 2184 filas:
+        · AFILIACIÓN DE TRABAJADORES AL SISTEMA DE LA SEGURIDAD SOCIAL
+        ·  | Media anual (1). En miles
+        ·  | VALORES ABSOLUTOS |  |  |  | VARIACIONES SOBRE AÑO ANTERIOR
+        ·  |  |  |  |  | Absolutas
+        ·  | 2016 | 2017 | 2017 |  | 2015 |  | 2016
+        · AMBOS SEXOS (2) | 17600.801 |  | 18222.519 |  | 531.3598645418315 |  | 513.4529999999977
+        · Menos de 25 años | 890.328 |  | 968.618 |  | 56.00258964143427 |  | 58.528999999999996
+        · De 25 a 34 años | 3683.036 |  | 3709.177 |  | -14.103430278884844 |  | -21.93199999999979
+        · De 35 a 44 años | 5457.011 |  | 5555.451 |  | 151.420215139442 |  | 113.11400000000049
+        · De 45 a 54 años | 4719.605 |  | 4949.944 |  | 183.2364223107561 |  | 198.65999999999985
+        · De 55 y más años | 2850.792 |  | 3039.314 |  | 154.77506772908328 |  | 165.08199999999988
+        · Cuenta Ajena | 14399.907 |  | 14997.06 |  | 471.3818804780876 |  | 481.09000000000015
+        · Cuenta Propia | 3200.894 |  | 3225.459 |  | 59.97798406374477 |  | 32.36299999999983
+        · Régimen General
+        ·   R.General (3)  | 13152.784 |  | 13743.082 |  | 469.68752589641554 |  | 471.137999999999
+        ·   S.E. Agrario  | 765.193 |  | 776.58 |  | 0.006498007968161801 |  | 10.603999999999928
+
+## autónomos · 0 ficheros
 
 
 *No hay ningún XLSX que abrir en este tema: o no hay ficheros o están todos en el .xls binario.*
