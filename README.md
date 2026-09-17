@@ -7,10 +7,8 @@ provincia de Castellón- y, cuando la fuente llega, por municipio.
 Secciones: mercado laboral (EPA), población, natalidad y mortalidad, precios,
 renta, salarios, la cesta de la compra, accidentes de trabajo, afiliación a la
 Seguridad Social, convenios colectivos, despidos y regulación de empleo,
-huelgas, el
-precio de la luz, vivienda, paro
-registrado y contratación
-(SEPE), y el mapa municipal de la provincia.
+huelgas, el precio de la luz, vivienda, paro registrado y contratación (SEPE),
+y el mapa municipal de la provincia.
 
 ## Cómo funciona
 
