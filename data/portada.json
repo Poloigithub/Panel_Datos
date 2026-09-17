@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T02:54:58+00:00",
+ "actualizado": "2026-09-17T04:02:30+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -242,12 +242,40 @@
    ]
   },
   {
+   "id": "afiliacion",
+   "titulo": "Afiliación a la Seguridad Social",
+   "enlace": "afiliacion.html",
+   "fuente": "Anuario de Estadísticas · Ministerio de Trabajo",
+   "cadencia": "Anual. El anuario del año sale a mediados del siguiente.",
+   "actualizado": "2026-09-17T03:59:30+00:00",
+   "ultimo_periodo": "2025",
+   "destacados": [
+    {
+     "clave": "afiliados",
+     "titulo": "Personas afiliadas",
+     "unidad": "personas",
+     "decimales": 0,
+     "periodo": "2025",
+     "valores": {
+      "espana": 21635626.036,
+      "comunitat-valenciana": 2212285.899,
+      "castellon": 260143.836
+     },
+     "hace_un_anyo": {
+      "espana": 21146592.981,
+      "comunitat-valenciana": 2145645.137,
+      "castellon": 254840.514
+     }
+    }
+   ]
+  },
+  {
    "id": "siniestralidad",
    "titulo": "Accidentes de trabajo",
    "enlace": "siniestralidad.html",
    "fuente": "Ministerio de Trabajo",
    "cadencia": "Mensual el avance del año en curso; la serie, anual. El ministerio publica con un par de meses de retraso.",
-   "actualizado": "2026-09-17T02:40:50+00:00",
+   "actualizado": "2026-09-17T04:01:38+00:00",
    "ultimo_periodo": "2025",
    "destacados": [
     {

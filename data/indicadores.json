@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T03:02:49+00:00",
+ "actualizado": "2026-09-17T04:02:10+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -1178,6 +1178,44 @@
    "hasta": "2026T1"
   },
   {
+   "clave": "afiliados",
+   "titulo": "Personas afiliadas a la Seguridad Social",
+   "seccion": "Afiliación a la Seguridad Social",
+   "seccion_id": "afiliacion",
+   "enlace": "afiliacion.html",
+   "fuente": "Anuario de Estadísticas · Ministerio de Trabajo",
+   "unidad": "personas",
+   "unidad_texto": "media anual de personas en alta laboral",
+   "nota": "Media anual, no la foto de un día concreto: es lo que se puede comparar con una serie anual. La serie empieza en 2015 porque antes el anuario está en el formato binario antiguo de Excel, que el panel no lee.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2025"
+  },
+  {
+   "clave": "autonomos",
+   "titulo": "Personas afiliadas por cuenta propia",
+   "seccion": "Afiliación a la Seguridad Social",
+   "seccion_id": "afiliacion",
+   "enlace": "afiliacion.html",
+   "fuente": "Anuario de Estadísticas · Ministerio de Trabajo",
+   "unidad": "personas",
+   "unidad_texto": "media anual de autónomos en alta",
+   "nota": "La serie se corta en 2023 porque el ministerio dejó de publicar esta tabla. Desde 2024 saca otra que suena parecida -autónomos por número de asalariados, y sólo por comunidad autónoma- que cuenta 3,4 millones donde ésta venía contando 2,0. Enlazarlas sería dar un cambio de definición por un crecimiento del 69 % en un año.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2015",
+   "hasta": "2023"
+  },
+  {
    "clave": "accidentes_jornada",
    "titulo": "Accidentes con baja en jornada de trabajo",
    "seccion": "Accidentes de trabajo",
@@ -1262,6 +1300,44 @@
    "fuente": "Ministerio de Trabajo",
    "unidad": "accidentes",
    "unidad_texto": "personas muertas yendo o volviendo del trabajo",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2021",
+   "hasta": "2025"
+  },
+  {
+   "clave": "tasa_accidentes",
+   "titulo": "Accidentes por cada 100.000 afiliados",
+   "seccion": "Accidentes de trabajo",
+   "seccion_id": "siniestralidad",
+   "enlace": "siniestralidad.html",
+   "fuente": "Ministerio de Trabajo",
+   "unidad": "accidentes",
+   "unidad_texto": "accidentes con baja en jornada por cada 100.000 personas afiliadas",
+   "nota": "Cálculo propio: accidentes del año entre la media anual de personas afiliadas a la Seguridad Social. Es lo que separa «hay más accidentes» de «hay más gente trabajando». Falta 2016 porque falta su afiliación, y falta el año en curso porque su afiliación todavía no está publicada.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2021",
+   "hasta": "2025"
+  },
+  {
+   "clave": "tasa_mortales",
+   "titulo": "Muertes por cada 100.000 afiliados",
+   "seccion": "Accidentes de trabajo",
+   "seccion_id": "siniestralidad",
+   "enlace": "siniestralidad.html",
+   "fuente": "Ministerio de Trabajo",
+   "unidad": "muertes",
+   "unidad_texto": "muertes en el puesto por cada 100.000 personas afiliadas",
    "nota": null,
    "por_sexo": false,
    "ambitos": [

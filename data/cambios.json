@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T03:02:29+00:00",
+ "actualizado": "2026-09-17T04:02:11+00:00",
  "repositorio": "https://github.com/Poloigithub/Panel_Datos",
  "altas": [
   {
@@ -16,7 +16,19 @@
       "Accidentes con baja en jornada de trabajo",
       "Accidentes mortales en jornada",
       "Muertes in itinere",
-      "Accidentes leves"
+      "Accidentes leves",
+      "Accidentes por cada 100.000 afiliados",
+      "Muertes por cada 100.000 afiliados"
+     ]
+    },
+    {
+     "id": "afiliacion",
+     "titulo": "Afiliación a la Seguridad Social",
+     "estreno": true,
+     "commit": "3162007",
+     "indicadores": [
+      "Personas afiliadas a la Seguridad Social",
+      "Personas afiliadas por cuenta propia"
      ]
     }
    ]
