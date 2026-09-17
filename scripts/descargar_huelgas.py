@@ -65,6 +65,22 @@ CABECERAS = {
     "jornadas_perdidas": "jornadas no trabajadas",
 }
 
+# El fichero de diciembre no es un avance más: es el cierre del año y trae los
+# doce meses, uno por columna, repartidos en tres hojas -una por magnitud- en
+# vez de en una sola con tres bloques. Leerlo bien vale por doce: sus cifras
+# son las definitivas, mientras que las de los avances aún se revisan.
+NOMBRES_DE_MES = {
+    "enero": 1, "febrero": 2, "marzo": 3, "abril": 4, "mayo": 5, "junio": 6,
+    "julio": 7, "agosto": 8, "septiembre": 9, "octubre": 10, "noviembre": 11,
+    "diciembre": 12,
+}
+# Cómo se reconoce cada hoja del cierre, por lo que dice su propio título.
+TITULOS = {
+    "huelgas": "huelgas desarrolladas",
+    "participantes": "trabajadores participantes",
+    "jornadas_perdidas": "jornadas no trabajadas",
+}
+
 AVISO_REPERCUSION = (
     "Es la repercusión territorial: una huelga estatal aparece en todas las "
     "provincias donde tuvo seguimiento. Por eso la suma de provincias no da el "
@@ -231,6 +247,67 @@ def direcciones_publicadas() -> dict[str, str]:
     return publicadas
 
 
+def columnas_de_meses(filas: list[list]) -> dict[int, int]:
+    """Qué columna es cada mes, en las hojas del cierre de año.
+
+    La cabecera alterna meses y acumulados -«Enero, Febrero, Acumulado
+    Enero-Febrero, Marzo…»-, así que sólo valen las celdas cuyo texto es
+    exactamente un mes. Y la de julio viene con una errata, «Acumullado», que
+    da igual: no se parece a ningún mes y se descarta sola.
+    """
+    encontradas: dict[int, int] = {}
+    for fila in filas[:10]:
+        for columna, celda in enumerate(fila):
+            if columna == 0 or not isinstance(celda, str):
+                continue
+            mes = NOMBRES_DE_MES.get(suave(celda))
+            if mes and mes not in encontradas:
+                encontradas[mes] = columna
+        if len(encontradas) >= 12:
+            break
+    return encontradas
+
+
+def lee_cierre(datos: bytes, anyo: int) -> dict[str, dict[str, dict[str, float]]]:
+    """El año entero, sacado del fichero de diciembre."""
+    libro = xls.Libro(datos)
+    por_periodo: dict[str, dict[str, dict[str, float]]] = {}
+
+    for magnitud, titulo in TITULOS.items():
+        # La hoja se reconoce por su propio título, no por su código: en el
+        # cierre se llaman HUE-3-I, -II y -III, y ese orden no está garantizado.
+        hoja = None
+        for nombre in libro.hojas:
+            if not suave(nombre).startswith("hue-3"):
+                continue
+            cabecera = " ".join(
+                suave(str(c)) for fila in libro.filas(nombre)[:4]
+                for c in fila if c not in (None, ""))
+            if titulo in cabecera and "repercusion territorial" in cabecera:
+                hoja = nombre
+                break
+        if not hoja:
+            continue
+
+        filas = libro.filas(hoja)
+        meses = columnas_de_meses(filas)
+        if not meses:
+            continue
+        for fila in filas:
+            if not fila:
+                continue
+            clave = BUSCADOS.get(normaliza(str(fila[0] or "")))
+            if not clave:
+                continue
+            for mes, columna in meses.items():
+                valor = fila[columna] if columna < len(fila) else None
+                if isinstance(valor, (int, float)):
+                    periodo = f"{anyo}M{mes:02d}"
+                    por_periodo.setdefault(periodo, {}) \
+                        .setdefault(clave, {})[magnitud] = float(valor)
+    return por_periodo
+
+
 def ya_bajados() -> dict[str, dict[str, dict[str, float]]]:
     """Lo que ya está en el repositorio, para no volver a pedirlo.
 
@@ -281,6 +358,16 @@ def main() -> int:
             if estado != 200 or datos[:8] != xls.FIRMA:
                 print(f"    {periodo}: sin fichero")
                 fallos += 1
+            elif mes == 12:
+                # Diciembre cierra el año y trae los doce meses de una vez.
+                cierre = lee_cierre(datos, anyo)
+                if cierre:
+                    guardado.update(cierre)
+                    fallos = 0
+                    print(f"    {anyo}: cierre con {len(cierre)} meses")
+                else:
+                    print(f"    {periodo}: el cierre no trae tabla territorial")
+                    fallos += 1
             else:
                 leido = lee_mes(datos)
                 if leido:
