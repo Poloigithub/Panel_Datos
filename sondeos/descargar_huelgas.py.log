@@ -7,12 +7,12 @@
     2026M08: sin fichero
     2026M07: sin fichero
     2026M06: sin fichero
-    2024M12: sin tabla territorial
-    2023M12: sin tabla territorial
-    2022M12: sin tabla territorial
-    2021M12: sin tabla territorial
-    2020M12: sin tabla territorial
-    2019M12: sin tabla territorial
+    2024: cierre con 12 meses
+    2023: cierre con 12 meses
+    2022: cierre con 12 meses
+    2021: cierre con 12 meses
+    2020: cierre con 12 meses
+    2019: cierre con 12 meses
     2018M11: sin fichero
     2018M10: sin fichero
     2018M09: sin fichero
@@ -21,8 +21,8 @@
     2018M06: sin fichero
     2018M05: sin fichero
     2018M04: sin fichero
-  18 peticiones · 84 meses en total
+  18 peticiones · 90 meses en total
     escrito data/huelgas/espana.json
     escrito data/huelgas/comunitat-valenciana.json
     escrito data/huelgas/castellon.json
-  84 periodos: 2018M12 … 2026M05
+  90 periodos: 2018M12 … 2026M05
