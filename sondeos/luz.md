@@ -3,6 +3,64 @@
 Y sobre todo: con qué detalle territorial, que en este caso es
 la pregunta que decide cómo se presenta la sección.
 
+## por horas, 7 días seguidos
+
+`https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real?start_date=2026-09-09T00:00&end_date=2026-09-16T23:59&time_trunc=hour`
+
+- 200 (application/json), 77993 bytes
+    - 2 series
+        · **PVPC** (price): 192 puntos, de 2026-09-09T00:00:00.000+02:00 a 2026-09-16T23:00:00.000+02:00
+          primero: 207.07 · último: 211.82
+        · **Precio mercado spot** (price): 768 puntos, de 2026-09-09T00:00:00.000+02:00 a 2026-09-16T23:45:00.000+02:00
+          primero: 184.01 · último: 127.66
+
+## por horas, 31 días seguidos
+
+`https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real?start_date=2026-08-17T00:00&end_date=2026-09-16T23:59&time_trunc=hour`
+
+- 200 (application/json), 300190 bytes
+    - 2 series
+        · **PVPC** (price): 744 puntos, de 2026-08-17T00:00:00.000+02:00 a 2026-09-16T23:00:00.000+02:00
+          primero: 200.65 · último: 211.82
+        · **Precio mercado spot** (price): 2976 puntos, de 2026-08-17T00:00:00.000+02:00 a 2026-09-16T23:45:00.000+02:00
+          primero: 205 · último: 127.66
+
+## por horas, 92 días seguidos
+
+`https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real?start_date=2026-06-17T00:00&end_date=2026-09-16T23:59&time_trunc=hour`
+
+- 400 (-), 169 bytes
+    - {"errors":[{"status":"400","title":"Error Interno","detail":"Los datos solicitados no est\u00e1n disponibles en este momento. Int\u00e9ntelo de nuevo m\u00e1s tarde."}]}
+
+## por horas, un año entero
+
+`https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real?start_date=2025-09-12T00:00&end_date=2026-09-16T23:59&time_trunc=hour`
+
+- 400 (-), 169 bytes
+    - {"errors":[{"status":"400","title":"Error Interno","detail":"Los datos solicitados no est\u00e1n disponibles en este momento. Int\u00e9ntelo de nuevo m\u00e1s tarde."}]}
+
+## ¿desde cuándo hay PVPC? un día de 2021
+
+`https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real?start_date=2021-06-15T00:00&end_date=2021-06-15T23:59&time_trunc=hour`
+
+- 200 (application/json), 5111 bytes
+    - 2 series
+        · **PVPC** (price): 24 puntos, de 2021-06-15T00:00:00.000+02:00 a 2021-06-15T23:00:00.000+02:00
+          primero: 115.76 · último: 157.45
+        · **Precio mercado spot** (price): 24 puntos, de 2021-06-15T00:00:00.000+02:00 a 2021-06-15T23:00:00.000+02:00
+          primero: 90 · último: 92.74
+
+## ¿y de 2022?
+
+`https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real?start_date=2022-06-15T00:00&end_date=2022-06-15T23:59&time_trunc=hour`
+
+- 200 (application/json), 5153 bytes
+    - 2 series
+        · **PVPC** (price): 24 puntos, de 2022-06-15T00:00:00.000+02:00 a 2022-06-15T23:00:00.000+02:00
+          primero: 311.85 · último: 282.86
+        · **Precio mercado spot** (price): 24 puntos, de 2022-06-15T00:00:00.000+02:00 a 2022-06-15T23:00:00.000+02:00
+          primero: 194.07 · último: 148
+
 ## medias diarias de un mes
 
 `https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real?start_date=2026-08-17T00:00&end_date=2026-09-16T23:59&time_trunc=day`
