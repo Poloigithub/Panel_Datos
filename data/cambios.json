@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T04:02:11+00:00",
+ "actualizado": "2026-09-17T10:50:37+00:00",
  "repositorio": "https://github.com/Poloigithub/Panel_Datos",
  "altas": [
   {
@@ -29,6 +29,18 @@
      "indicadores": [
       "Personas afiliadas a la Seguridad Social",
       "Personas afiliadas por cuenta propia"
+     ]
+    },
+    {
+     "id": "luz",
+     "titulo": "El precio de la luz",
+     "estreno": true,
+     "commit": "8e6701c",
+     "indicadores": [
+      "La hora más barata del día",
+      "Diferencia entre la hora cara y la barata",
+      "La hora más cara del día",
+      "Precio medio de la luz"
      ]
     }
    ]

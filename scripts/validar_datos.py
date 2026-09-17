@@ -127,6 +127,11 @@ RANGOS = {
     "agua": (30, 400),
     "restaurantes": (30, 400),
     "restauracion": (30, 400),
+    # el precio de la luz, en céntimos por kWh
+    "pvpc_medio": (0, 100),
+    "pvpc_barata": (-10, 100),
+    "pvpc_cara": (0, 200),
+    "pvpc_brecha": (0, 150),
     # afiliación a la Seguridad Social (medias anuales de personas)
     "afiliados": (1_000, 50_000_000),
     "autonomos": (100, 10_000_000),
@@ -187,6 +192,12 @@ IDENTIDADES = [
       "accidentes_mortales"),
      lambda t, l, g, m: abs(t - (l + g + m)),
      0.5),
+    # La hora más cara nunca puede salir más barata que la más barata, y la
+    # diferencia es exactamente eso: si esto no cuadra, se han mezclado meses.
+    ("diferencia horaria = hora cara − hora barata",
+     ("pvpc_brecha", "pvpc_cara", "pvpc_barata"),
+     lambda b, c, m: abs(b - (c - m)),
+     0.01),
     ("hipoteca media = importe / número",
      ("hipoteca_media", "importe_hipotecas", "hipotecas"),
      lambda m, i, n: min(abs(m - i * 1000 / n), abs(m - i / n)) if n else 0.0,
@@ -216,6 +227,9 @@ FRESCURA = {
     # El anuario del año sale a mediados del siguiente, así que hasta bien
     # entrado el otoño el último dato es el del año anterior.
     "afiliacion": ("anual", 22),
+    # La serie mensual se cierra cuando el mes termina, así que hasta que no
+    # acaba el mes en curso el último dato es el del anterior.
+    "luz": ("mensual", 2),
     "poblacion": ("anual o trimestral, según el indicador", 15),
     "demografia": ("anual", 30),
     "renta": ("anual", 36),

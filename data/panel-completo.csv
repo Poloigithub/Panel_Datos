@@ -50025,6 +50025,258 @@ vivienda,lanzamientos_otros,Lanzamientos por otras causas,castellon,Ambos sexos,
 vivienda,lanzamientos_otros,Lanzamientos por otras causas,castellon,Ambos sexos,2025T3,1.0,lanzamientos
 vivienda,lanzamientos_otros,Lanzamientos por otras causas,castellon,Ambos sexos,2025T4,3.0,lanzamientos
 vivienda,lanzamientos_otros,Lanzamientos por otras causas,castellon,Ambos sexos,2026T1,1.0,lanzamientos
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2021M06,14.90996,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2021M07,15.774829032258065,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2021M08,17.56122258064516,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2021M09,21.790290000000002,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2021M10,25.849425806451613,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2021M11,25.160230000000002,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2021M12,31.229187096774194,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2022M01,28.586000000000002,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2022M02,28.630835714285716,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2022M03,38.760412903225806,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2022M04,26.863346666666665,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2022M05,25.993358064516126,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2022M06,29.090413333333334,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2022M07,33.135748387096776,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2022M08,39.523187096774194,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2022M09,31.628723333333333,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2022M10,22.679122580645164,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2022M11,18.943786666666664,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2022M12,20.644574193548387,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2023M01,13.156987096774193,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2023M02,20.044160714285713,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2023M03,15.382990322580646,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2023M04,13.452136666666666,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2023M05,13.287112903225808,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2023M06,15.184756666666667,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2023M07,14.816706451612903,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2023M08,15.279683870967743,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2023M09,16.10671,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2023M10,15.03951935483871,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2023M11,12.113776666666666,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2023M12,12.759603225806453,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2024M01,13.950709677419354,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2024M02,10.664379310344827,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2024M03,8.99256129032258,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2024M04,8.55825,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2024M05,9.966954838709677,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2024M06,11.7021,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2024M07,13.258261290322581,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2024M08,14.632900000000001,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2024M09,13.40756,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2024M10,13.622909677419354,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2024M11,16.772100000000002,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2024M12,17.647009677419355,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2025M01,15.843729032258064,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2025M02,16.806171428571428,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2025M03,12.32410322580645,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2025M04,10.846523333333334,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2025M05,11.297616129032257,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2025M06,13.380006666666667,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2025M07,13.701625806451613,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2025M08,13.327796774193548,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2025M09,13.437603333333334,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2025M10,14.6455,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2025M11,13.549566666666667,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2025M12,14.764838709677418,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2026M01,13.861451612903226,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2026M02,11.733575,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2026M03,13.784303225806452,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2026M04,12.293859999999999,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2026M05,12.127267741935484,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2026M06,12.928693333333333,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2026M07,16.058967741935483,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2026M08,16.646893548387098,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2021M06,9.730366666666667,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2021M07,10.510451612903227,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2021M08,12.363774193548387,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2021M09,16.473566666666667,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2021M10,20.480129032258066,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2021M11,20.16786666666667,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2021M12,24.285451612903227,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2022M01,21.926225806451612,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2022M02,21.40292857142857,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2022M03,30.554451612903225,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2022M04,17.8915,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2022M05,20.44058064516129,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2022M06,22.2109,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2022M07,27.04116129032258,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2022M08,29.618322580645163,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2022M09,21.746733333333335,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2022M10,15.913129032258064,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2022M11,13.167933333333334,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2022M12,15.332193548387098,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2023M01,7.646935483870968,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2023M02,15.124357142857145,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2023M03,10.299129032258065,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2023M04,6.986233333333333,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2023M05,8.28748387096774,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2023M06,10.635366666666666,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2023M07,10.080322580645161,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2023M08,10.710741935483872,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2023M09,11.020466666666666,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2023M10,9.758516129032259,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2023M11,7.7279333333333335,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2023M12,8.678032258064516,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2024M01,9.12958064516129,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2024M02,7.046931034482759,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2024M03,5.659290322580644,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2024M04,5.408533333333334,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2024M05,5.936677419354839,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2024M06,6.6126000000000005,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2024M07,8.027548387096775,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2024M08,9.459,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2024M09,6.699866666666667,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2024M10,7.855032258064516,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2024M11,11.290933333333333,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2024M12,12.408838709677418,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2025M01,9.370709677419356,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2025M02,9.339285714285714,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2025M03,6.760741935483871,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2025M04,5.8935,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2025M05,7.43258064516129,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2025M06,5.963166666666667,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2025M07,7.788483870967743,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2025M08,6.3306774193548385,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2025M09,6.356366666666667,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2025M10,7.914516129032258,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2025M11,7.657966666666667,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2025M12,9.696451612903225,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2026M01,8.622290322580644,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2026M02,7.153142857142858,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2026M03,7.982612903225807,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2026M04,5.929433333333334,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2026M05,4.7262903225806445,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2026M06,5.152166666666667,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2026M07,6.607741935483871,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2026M08,4.119645161290323,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2021M06,21.439966666666667,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2021M07,22.278129032258065,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2021M08,24.624032258064517,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2021M09,27.437333333333335,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2021M10,32.364064516129034,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2021M11,31.155700000000003,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2021M12,38.46535483870967,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2022M01,37.89370967741935,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2022M02,38.357214285714285,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2022M03,49.702451612903225,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2022M04,36.181000000000004,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2022M05,33.163387096774194,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2022M06,36.826366666666665,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2022M07,39.661096774193545,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2022M08,48.9111935483871,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2022M09,43.11966666666667,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2022M10,32.56041935483871,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2022M11,27.508866666666666,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2022M12,27.687548387096772,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2023M01,22.33951612903226,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2023M02,26.678321428571426,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2023M03,23.374806451612905,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2023M04,21.206866666666667,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2023M05,20.01041935483871,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2023M06,21.262533333333334,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2023M07,21.101064516129032,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2023M08,21.90883870967742,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2023M09,23.1692,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2023M10,22.382032258064516,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2023M11,18.633333333333333,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2023M12,18.489483870967742,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2024M01,20.74241935483871,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2024M02,16.943620689655173,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2024M03,15.90958064516129,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2024M04,14.3903,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2024M05,16.40909677419355,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2024M06,18.954766666666668,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2024M07,21.083612903225806,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2024M08,22.812096774193545,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2024M09,21.787733333333332,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2024M10,22.55035483870968,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2024M11,23.5309,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2024M12,24.24867741935484,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2025M01,24.822129032258065,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2025M02,28.384428571428572,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2025M03,23.216193548387096,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2025M04,20.332766666666664,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2025M05,19.458387096774196,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2025M06,24.064233333333334,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2025M07,23.443516129032258,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2025M08,22.84251612903226,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2025M09,24.7405,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2025M10,24.69658064516129,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2025M11,22.135233333333336,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2025M12,21.859645161290324,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2026M01,21.56693548387097,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2026M02,21.57464285714286,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2026M03,25.806354838709677,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2026M04,22.579433333333334,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2026M05,23.537032258064517,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2026M06,24.62496666666667,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2026M07,29.054225806451615,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2026M08,31.13235483870968,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2021M06,11.7096,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2021M07,11.767677419354838,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2021M08,12.260258064516128,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2021M09,10.963766666666666,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2021M10,11.883935483870967,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2021M11,10.987833333333333,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2021M12,14.179903225806452,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2022M01,15.967483870967742,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2022M02,16.954285714285714,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2022M03,19.148,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2022M04,18.289499999999997,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2022M05,12.722806451612902,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2022M06,14.615466666666666,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2022M07,12.619935483870968,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2022M08,19.292870967741937,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2022M09,21.372933333333332,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2022M10,16.647290322580645,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2022M11,14.340933333333334,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2022M12,12.355354838709678,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2023M01,14.692580645161291,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2023M02,11.553964285714285,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2023M03,13.07567741935484,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2023M04,14.220633333333332,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2023M05,11.722935483870968,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2023M06,10.627166666666666,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2023M07,11.020741935483871,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2023M08,11.19809677419355,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2023M09,12.148733333333332,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2023M10,12.623516129032259,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2023M11,10.905399999999998,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2023M12,9.811451612903225,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2024M01,11.612838709677419,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2024M02,9.896689655172414,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2024M03,10.250290322580646,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2024M04,8.981766666666665,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2024M05,10.47241935483871,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2024M06,12.342166666666666,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2024M07,13.056064516129032,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2024M08,13.353096774193547,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2024M09,15.087866666666665,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2024M10,14.695322580645161,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2024M11,12.239966666666668,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2024M12,11.83983870967742,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2025M01,15.45141935483871,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2025M02,19.045142857142856,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2025M03,16.455451612903225,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2025M04,14.439266666666667,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2025M05,12.025806451612903,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2025M06,18.101066666666668,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2025M07,15.655032258064516,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2025M08,16.51183870967742,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2025M09,18.384133333333335,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2025M10,16.782064516129033,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2025M11,14.477266666666667,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2025M12,12.163193548387097,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2026M01,12.944645161290323,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2026M02,14.421499999999998,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2026M03,17.82374193548387,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2026M04,16.65,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2026M05,18.810741935483872,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2026M06,19.4728,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2026M07,22.446483870967743,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2026M08,27.012709677419355,c€/kWh
 afiliacion,afiliados,Personas afiliadas a la Seguridad Social,espana,Ambos sexos,2015,17087350.0,personas
 afiliacion,afiliados,Personas afiliadas a la Seguridad Social,espana,Ambos sexos,2017,18222519.36,personas
 afiliacion,afiliados,Personas afiliadas a la Seguridad Social,espana,Ambos sexos,2018,18787377.476,personas

@@ -43,7 +43,10 @@ API = ("https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real"
 CABECERAS = {"User-Agent": "Panel_Datos/1.0 (+https://github.com/Poloigithub/Panel_Datos)",
              "Accept": "application/json"}
 
-PRIMER_MES = (2021, 1)   # antes de 2021 la API sólo devuelve el mercado spot
+# Junio de 2021, y no es una fecha arbitraria: es cuando entró la tarifa 2.0TD
+# con tramos horarios y la API deja de servir PVPC hacia atrás. Pedir los meses
+# anteriores era gastar cinco peticiones para que contestaran vacío.
+PRIMER_MES = (2021, 6)
 DE_MWH_A_KWH = 10        # 100 €/MWh son 10 céntimos por kWh
 
 # Un mes cuenta para la serie mensual cuando están casi todos sus días. Con

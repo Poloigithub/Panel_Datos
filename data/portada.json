@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T04:02:30+00:00",
+ "actualizado": "2026-09-17T10:50:20+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -237,6 +237,51 @@
       "espana": 168231.69,
       "comunitat-valenciana": 130429.04,
       "castellon": 97183.91
+     }
+    }
+   ]
+  },
+  {
+   "id": "luz",
+   "titulo": "El precio de la luz",
+   "enlace": "luz.html",
+   "fuente": "PVPC · Red Eléctrica",
+   "cadencia": "Diaria. El precio de cada día se publica la tarde anterior.",
+   "actualizado": "2026-09-17T10:43:20+00:00",
+   "ultimo_periodo": "2026M08",
+   "destacados": [
+    {
+     "clave": "pvpc_medio",
+     "titulo": "Precio medio de la luz",
+     "unidad": "c€/kWh",
+     "decimales": 2,
+     "periodo": "2026M08",
+     "valores": {
+      "espana": 16.646893548387098,
+      "comunitat-valenciana": null,
+      "castellon": null
+     },
+     "hace_un_anyo": {
+      "espana": 13.327796774193548,
+      "comunitat-valenciana": null,
+      "castellon": null
+     }
+    },
+    {
+     "clave": "pvpc_brecha",
+     "titulo": "Entre la hora cara y la barata",
+     "unidad": "c€/kWh",
+     "decimales": 2,
+     "periodo": "2026M08",
+     "valores": {
+      "espana": 27.012709677419355,
+      "comunitat-valenciana": null,
+      "castellon": null
+     },
+     "hace_un_anyo": {
+      "espana": 16.51183870967742,
+      "comunitat-valenciana": null,
+      "castellon": null
      }
     }
    ]

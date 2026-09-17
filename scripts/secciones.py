@@ -80,6 +80,17 @@ SECCIONES = [
         ],
     },
     {
+        "bloque": "luz", "enlace": "luz.html", "titulo": "El precio de la luz",
+        "fuente": "PVPC · Red Eléctrica",
+        "cadencia": "Diaria. El precio de cada día se publica la tarde anterior.",
+        "destacados": [
+            {"clave": "pvpc_medio", "titulo": "Precio medio de la luz",
+             "unidad": "c€/kWh", "decimales": 2},
+            {"clave": "pvpc_brecha", "titulo": "Entre la hora cara y la barata",
+             "unidad": "c€/kWh", "decimales": 2},
+        ],
+    },
+    {
         "bloque": "afiliacion", "enlace": "afiliacion.html",
         "titulo": "Afiliación a la Seguridad Social",
         "fuente": "Anuario de Estadísticas · Ministerio de Trabajo",

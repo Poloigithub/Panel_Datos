@@ -61,6 +61,9 @@ jobs:
       - name: Descargar los accidentes de trabajo
         run: python scripts/descargar_siniestralidad.py
 
+      - name: Descargar el precio de la luz
+        run: python scripts/descargar_luz.py
+
       - name: Componer los titulares, el catálogo y la descarga completa
         run: |
           python scripts/generar_portada.py

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T04:02:10+00:00",
+ "actualizado": "2026-09-17T10:50:20+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -1176,6 +1176,74 @@
    ],
    "desde": "2013T1",
    "hasta": "2026T1"
+  },
+  {
+   "clave": "pvpc_medio",
+   "titulo": "Precio medio de la luz",
+   "seccion": "El precio de la luz",
+   "seccion_id": "luz",
+   "enlace": "luz.html",
+   "fuente": "PVPC · Red Eléctrica",
+   "unidad": "c€/kWh",
+   "unidad_texto": "céntimos de euro por kilovatio hora, media del mes",
+   "nota": "El PVPC es el mismo en toda la península, así que esta serie no tiene desglose territorial: repetir la misma cifra para la Comunitat y para Castellón sería fingir un detalle que no existe.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2021M06",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "pvpc_barata",
+   "titulo": "La hora más barata del día",
+   "seccion": "El precio de la luz",
+   "seccion_id": "luz",
+   "enlace": "luz.html",
+   "fuente": "PVPC · Red Eléctrica",
+   "unidad": "c€/kWh",
+   "unidad_texto": "media de la hora más barata de cada día del mes",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2021M06",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "pvpc_cara",
+   "titulo": "La hora más cara del día",
+   "seccion": "El precio de la luz",
+   "seccion_id": "luz",
+   "enlace": "luz.html",
+   "fuente": "PVPC · Red Eléctrica",
+   "unidad": "c€/kWh",
+   "unidad_texto": "media de la hora más cara de cada día del mes",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2021M06",
+   "hasta": "2026M08"
+  },
+  {
+   "clave": "pvpc_brecha",
+   "titulo": "Diferencia entre la hora cara y la barata",
+   "seccion": "El precio de la luz",
+   "seccion_id": "luz",
+   "enlace": "luz.html",
+   "fuente": "PVPC · Red Eléctrica",
+   "unidad": "c€/kWh",
+   "unidad_texto": "cuánto se ahorra al día quien puede elegir la hora",
+   "nota": "Es lo que separa a quien puede mover el consumo -poner la lavadora de madrugada- de quien no. Cuanto más alta, más premia el sistema tener esa flexibilidad.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana"
+   ],
+   "desde": "2021M06",
+   "hasta": "2026M08"
   },
   {
    "clave": "afiliados",
