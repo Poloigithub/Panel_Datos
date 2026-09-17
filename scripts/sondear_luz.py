@@ -35,11 +35,37 @@ CABECERAS = {
 
 HOY = dt.date.today()
 AYER = HOY - dt.timedelta(days=1)
+HACE_UN_MES = HOY - dt.timedelta(days=31)
 HACE_UN_ANYO = HOY - dt.timedelta(days=370)
 
 APIDATOS = "https://apidatos.ree.es/es/datos"
 
+# Segunda vuelta. La primera dejó claro que el PVPC por horas se baja sin
+# problema, que el spot viene cada quince minutos y que no hay desglose por
+# comunidad. Lo que falta: hasta dónde se puede pedir de una vez -un año por
+# días dio error- y hasta cuándo llega el histórico, que es lo que decide si
+# esto es una sección o una curiosidad del día.
 PRUEBAS = [
+    ("medias diarias de un mes",
+     f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
+     f"?start_date={HACE_UN_MES}T00:00&end_date={AYER}T23:59&time_trunc=day"),
+    ("medias diarias de un año, acotado a la península",
+     f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
+     f"?start_date={HACE_UN_ANYO}T00:00&end_date={AYER}T23:59&time_trunc=day"
+     f"&geo_limit=peninsular&geo_ids=8741"),
+    ("medias mensuales de cinco años",
+     f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
+     f"?start_date={HOY.year - 5}-01-01T00:00&end_date={AYER}T23:59"
+     f"&time_trunc=month&geo_limit=peninsular&geo_ids=8741"),
+    ("¿hasta dónde llega el histórico? un día de 2015",
+     f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
+     f"?start_date=2015-06-15T00:00&end_date=2015-06-15T23:59&time_trunc=hour"),
+    ("¿y de 2019?",
+     f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
+     f"?start_date=2019-06-15T00:00&end_date=2019-06-15T23:59&time_trunc=hour"),
+    ("hoy, que es lo que se enseñaría arriba de la página",
+     f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
+     f"?start_date={HOY}T00:00&end_date={HOY}T23:59&time_trunc=hour"),
     ("precios en tiempo real, por horas de ayer",
      f"{APIDATOS}/mercados/precios-mercados-tiempo-real"
      f"?start_date={AYER}T00:00&end_date={AYER}T23:59&time_trunc=hour"),
@@ -88,6 +114,19 @@ def describe(lineas: list[str], datos: bytes) -> None:
         return
 
     incluidos = ficha.get("included") or []
+    if not incluidos:
+        # El fichero suelto de esios no tiene la forma de la API pública, así
+        # que hay que enseñar lo que sea que traiga.
+        lineas.append(f"    - claves: {list(ficha)[:10]}")
+        for clave in list(ficha)[:3]:
+            valor = ficha[clave]
+            if isinstance(valor, list) and valor:
+                lineas.append(f"        · `{clave}`: {len(valor)} elementos, "
+                              f"el primero `{json.dumps(valor[0], ensure_ascii=False)[:250]}`")
+            else:
+                lineas.append(f"        · `{clave}`: "
+                              f"`{json.dumps(valor, ensure_ascii=False)[:250]}`")
+        return
     lineas.append(f"    - {len(incluidos)} series")
     for serie in incluidos[:6]:
         atributos = serie.get("attributes", {})
