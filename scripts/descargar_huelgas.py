@@ -140,11 +140,17 @@ def hoja_provincial(libro) -> str | None:
 
 
 def columnas_del_mes(filas: list[list]) -> dict[str, int]:
-    """Dónde empieza cada bloque, por su cabecera. La primera columna es el mes."""
+    """Dónde empieza cada bloque, por su cabecera. La primera columna es el mes.
+
+    La columna cero no se mira, y es importante: ahí van el título del cuadro
+    -«HUELGAS Y CIERRES PATRONALES»- y el nombre del territorio. Sin saltarla,
+    el bloque de huelgas se situaba en la columna del nombre de la provincia y
+    la serie salía vacía.
+    """
     encontradas: dict[str, int] = {}
     for fila in filas[:10]:
         for columna, celda in enumerate(fila):
-            if not isinstance(celda, str):
+            if columna == 0 or not isinstance(celda, str):
                 continue
             plano = suave(celda)
             for clave, cabecera in CABECERAS.items():
