@@ -50,9 +50,14 @@ FILAS = {
 HOJAS = {
     "afiliados": [("afiliados", "comunidad autonoma y provincia"),
                   ("afiliados en alta laboral", "provincia")],
+    # Ojo con el orden: la de provincia va delante porque desde 2024 el
+    # ministerio publica los autónomos sólo por comunidad autónoma, y si la
+    # más general fuera primero se perdería el dato provincial de los años en
+    # que sí existía.
     "autonomos": [("autonomos", "comunidad autonoma y provincia"),
                   ("cuenta propia", "comunidad autonoma y provincia"),
-                  ("autonomos", "provincia")],
+                  ("autonomos", "comunidad autonoma"),
+                  ("cuenta propia", "comunidad autonoma")],
 }
 
 BLOQUE = {
@@ -71,6 +76,10 @@ BLOQUE = {
             "titulo": "Personas afiliadas por cuenta propia",
             "unidad": "personas", "decimales": 0, "por_sexo": False,
             "unidad_texto": "media anual de autónomos en alta",
+            "nota": "De Castellón la serie se corta en 2023: a partir de 2024 "
+                    "el ministerio publica los autónomos sólo por comunidad "
+                    "autónoma, no por provincia. El hueco es el dato que falta, "
+                    "no un error.",
         },
     },
 }
