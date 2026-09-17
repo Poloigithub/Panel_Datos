@@ -33,4 +33,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f sondeos/
           git diff --staged --quiet || git commit -m "Volcado de ${{ inputs.script }} [skip ci]"
+          # Un sondeo tarda minutos y mientras tanto la rama se mueve,
+          # así que hay que ponerse encima de lo que haya llegado o el
+          # volcado se pierde con un rechazo de fast-forward.
+          git pull --rebase origin ${{ github.ref_name }}
           git push

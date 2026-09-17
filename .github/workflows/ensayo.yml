@@ -42,6 +42,10 @@ jobs:
           # Un ensayo tarda minutos y la rama puede haber avanzado mientras
           # tanto: rebasar antes de empujar evita perder lo descargado.
           git pull --rebase origin ${{ github.ref_name }}
+          # Un sondeo tarda minutos y mientras tanto la rama se mueve,
+          # así que hay que ponerse encima de lo que haya llegado o el
+          # volcado se pierde con un rechazo de fast-forward.
+          git pull --rebase origin ${{ github.ref_name }}
           git push
 
       - name: Validar lo descargado
