@@ -666,6 +666,26 @@ lo tengo entero». Sin eso, añadir un indicador a una serie con caché lo conde
 a estar vacío para siempre. El mismo arreglo se llevó a los convenios, que
 tenían el mismo fallo esperando.
 
+**El total por año, y el diciembre que faltaba.** La serie mensual de huelgas
+es muy dentada -un mes con una huelga grande dispara la gráfica y el siguiente
+vuelve a cero-, así que la página suma cada año. Los totales se calculan en el
+navegador y no en el descargador: son la suma de unos datos que ya están
+descargados, y guardarlos otra vez sería tener la misma cifra en dos sitios
+pudiendo contradecirse.
+
+Al sumar salió el problema: a todos los años les faltaba **diciembre**. La
+dirección del fichero se construía a partir del mes y eso funciona once veces de
+doce, porque diciembre no es un avance sino el cierre del año y su fichero se
+llama de otra manera. Al leerlo apareció el segundo problema: dentro, la tabla
+territorial no es una con tres bloques de columnas sino **tres hojas**, una por
+magnitud.
+
+Arreglarlo salió a cuenta dos veces. Ahora las direcciones se leen de la propia
+página del ministerio en vez de adivinarse, y del fichero de diciembre se saca
+**el año entero**, que además trae las cifras definitivas mientras que las de
+los avances aún se revisan. La serie pasó de 84 meses con un agujero anual a 90
+sin ninguno.
+
 **Las tres comprobaciones que quedaban.**
 
 1. *Enfermedades profesionales*: su página del ministerio **no publica ningún
