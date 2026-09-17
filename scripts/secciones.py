@@ -80,6 +80,19 @@ SECCIONES = [
         ],
     },
     {
+        "bloque": "despidos", "enlace": "despidos.html",
+        "titulo": "Despidos y regulación de empleo",
+        "fuente": "Regulación de Empleo y Despidos · Ministerio de Trabajo",
+        "cadencia": "Mensual los expedientes de regulación; anual, los despidos.",
+        "destacados": [
+            {"clave": "ere_afectados",
+             "titulo": "Afectados por un expediente de regulación",
+             "unidad": "personas", "decimales": 0},
+            {"clave": "despidos", "titulo": "Despidos en el año",
+             "unidad": "despidos", "decimales": 0},
+        ],
+    },
+    {
         "bloque": "convenios", "enlace": "convenios.html",
         "titulo": "Convenios colectivos",
         "fuente": "Convenios Colectivos · Ministerio de Trabajo",

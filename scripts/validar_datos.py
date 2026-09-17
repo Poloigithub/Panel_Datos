@@ -127,6 +127,11 @@ RANGOS = {
     "agua": (30, 400),
     "restaurantes": (30, 400),
     "restauracion": (30, 400),
+    # despidos y regulación de empleo
+    "ere_afectados": (0, 5_000_000),
+    "ere_despido": (0, 1_000_000),
+    "ere_suspension": (0, 5_000_000),
+    "despidos": (0, 5_000_000),
     # convenios colectivos
     "subida_pactada": (-5, 30),
     "trabajadores_convenio": (0, 20_000_000),
@@ -240,6 +245,7 @@ FRESCURA = {
     # acaba el mes en curso el último dato es el del anterior.
     "luz": ("mensual", 2),
     "convenios": ("mensual", 4),
+    "despidos": ("mensual los expedientes, anual los despidos", 4),
     "poblacion": ("anual o trimestral, según el indicador", 15),
     "demografia": ("anual", 30),
     "renta": ("anual", 36),

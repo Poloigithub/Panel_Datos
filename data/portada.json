@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T11:17:52+00:00",
+ "actualizado": "2026-09-17T11:34:13+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -237,6 +237,51 @@
       "espana": 168231.69,
       "comunitat-valenciana": 130429.04,
       "castellon": 97183.91
+     }
+    }
+   ]
+  },
+  {
+   "id": "despidos",
+   "titulo": "Despidos y regulación de empleo",
+   "enlace": "despidos.html",
+   "fuente": "Regulación de Empleo y Despidos · Ministerio de Trabajo",
+   "cadencia": "Mensual los expedientes de regulación; anual, los despidos.",
+   "actualizado": "2026-09-17T11:30:59+00:00",
+   "ultimo_periodo": "2026M07",
+   "destacados": [
+    {
+     "clave": "ere_afectados",
+     "titulo": "Afectados por un expediente de regulación",
+     "unidad": "personas",
+     "decimales": 0,
+     "periodo": "2026M07",
+     "valores": {
+      "espana": 9292.0,
+      "comunitat-valenciana": 1064.0,
+      "castellon": 183.0
+     },
+     "hace_un_anyo": {
+      "espana": 11578.0,
+      "comunitat-valenciana": 1811.0,
+      "castellon": 922.0
+     }
+    },
+    {
+     "clave": "despidos",
+     "titulo": "Despidos en el año",
+     "unidad": "despidos",
+     "decimales": 0,
+     "periodo": "2024",
+     "valores": {
+      "espana": null,
+      "comunitat-valenciana": 73184.0,
+      "castellon": 8856.0
+     },
+     "hace_un_anyo": {
+      "espana": null,
+      "comunitat-valenciana": 70758.0,
+      "castellon": 9531.0
      }
     }
    ]

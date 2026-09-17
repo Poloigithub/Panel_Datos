@@ -73,6 +73,8 @@ tarea diaria.
 | Afiliación a la Seguridad Social | Anuario · Ministerio de Trabajo | Anual | el anuario sale a mediados del año siguiente |
 | Precio de la luz | PVPC · Red Eléctrica | Diaria | el precio de cada día sale la tarde anterior |
 | Convenios colectivos | Ministerio de Trabajo | Mensual | ~2 meses |
+| Regulación de empleo | Ministerio de Trabajo | Mensual | ~2 meses |
+| Despidos y su coste | Ministerio de Trabajo | Anual | ~1 año |
 | Municipios · paro | SEPE | Mensual | igual que el paro registrado |
 | Municipios · población | Padrón · INE | Anual | ~6 meses |
 | Municipios · renta | Atlas · INE | Anual | ~2 años |

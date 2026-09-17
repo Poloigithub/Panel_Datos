@@ -597,6 +597,43 @@ mucho más que ninguna.
 
 ---
 
+## Fase 12 · Despidos y regulación de empleo ✅ hecha
+
+**Lo que el lector de `.xls` dejó a tiro.** Tres estadísticas más del
+ministerio. Dos entraron y una no, y el porqué de la que no entró vale tanto
+como el de las que sí.
+
+**Regulación de empleo.** Mensual, y ya venía en XLSX desde 2023, así que ni
+siquiera hacía falta el lector nuevo: sólo saber que existía. Cuarenta y tres
+meses desde septiembre de 2022, con los trabajadores afectados repartidos entre
+despido colectivo, suspensión de contrato y reducción de jornada. En julio de
+2026, 183 personas en Castellón.
+
+**Despidos y su coste.** Anual y en `.xls` binario. Seis años, de 2019 a 2024,
+por provincia y sexo: **8.856 despidos en Castellón en 2024**, frente a 5.177 en
+2021.
+
+**Las huelgas no entran.** Su fichero se abre sin problema -el lector funciona-,
+pero ninguna de sus dieciséis hojas baja a provincia. Lo que el ministerio llama
+«ámbito territorial» de una huelga es su alcance -local, autonómica, estatal-,
+no dónde ocurre. Es una limitación de la fuente, no del panel, y queda escrita
+en la propia página para que nadie la busque dos veces.
+
+**Lo que costó, que fue poco y todo del mismo tipo.** Los títulos. La tabla
+provincial de regulación de empleo se llama «por comunidad autónoma, provincia
+y sexo», sin la «y» en medio que llevan las demás del ministerio, así que la
+frase entera no encajaba y hubo que pedir las dos palabras sueltas. Es la
+tercera vez que pasa algo así, y por eso las columnas de esta sección se buscan
+por su cabecera y no por su número: contar columnas a mano es lo que rompe
+estos lectores en cuanto alguien añade una.
+
+**Lo que no se suma.** La página lo dice en grande: un expediente de regulación
+afecta a gente que en su mayoría conserva el empleo, porque la suspensión de
+contrato lo para y no lo termina. Sumar expedientes y despidos daría una cifra
+que no significa nada.
+
+---
+
 ## Orden y dependencias
 
 ```
