@@ -61,6 +61,21 @@ def main() -> int:
                 if celdas:
                     lineas.append(" | ".join(celdas))
             lineas += ["```", ""]
+            # Y el volcado de las que reparten por territorio, que en el
+            # cierre de año van en tres hojas -una por magnitud- en vez de en
+            # una con tres bloques de columnas.
+            for hoja in hojas:
+                if not suave(hoja).startswith("hue-3"):
+                    continue
+                filas = libro.filas(hoja)
+                lineas += [f"#### Hoja «{hoja}» · {len(filas)} filas", "```"]
+                for i, fila in enumerate(filas[:22]):
+                    celdas = [("" if c is None else str(c)) for c in fila[:16]]
+                    while celdas and celdas[-1] == "":
+                        celdas.pop()
+                    if celdas:
+                        lineas.append(f"{i:>3} | " + " | ".join(celdas))
+                lineas += ["```", ""]
         else:
             lineas += ["", "**No tiene hoja de índice.**", ""]
             # Sin índice hay que mirar los títulos de las propias hojas.
