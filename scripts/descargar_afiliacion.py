@@ -43,8 +43,11 @@ PRIMER_ANYO = 2015   # antes, el anuario está en el .xls binario que el panel n
 # personas por cuenta propia con una hoja por provincia. No sustituye a la
 # anual: cuenta otro universo, más amplio. Va como serie propia.
 MENSUAL = "https://www.mites.gob.es/estadisticas/AUT/AUT_{mes:02d}_{anyo}.xlsx"
-HOJA_MENSUAL = ("autonomos", "comunidad autonoma y provincia")
-COLUMNA_MENSUAL = 4      # el total en valores absolutos
+# El fichero trae dos tablas provinciales -una por régimen y otra por
+# colectivo- con el mismo total y las columnas en sitios distintos: 5 en una y
+# 4 en la otra. Por eso la columna no va escrita aquí, se busca por su
+# cabecera, igual que se hace en el anuario con el año.
+HOJA_MENSUAL = ("autonomos por regimen", "comunidad autonoma y provincia")
 FALLOS_SEGUIDOS = 4      # meses vacíos antes de dar por terminado el histórico
 
 FILAS = {
@@ -214,26 +217,39 @@ def lee_anyo(datos: bytes, anyo: int) -> dict[str, dict[str, float]]:
     return salida
 
 
+def columna_de_absolutos(filas: list[list]) -> int | None:
+    """La columna del total, localizada por su cabecera «Valores Absolutos»."""
+    for fila in filas[:12]:
+        for columna, celda in enumerate(fila):
+            if isinstance(celda, str) and normaliza(celda).startswith("valores absolutos"):
+                return columna
+    return None
+
+
 def lee_mes(datos: bytes) -> dict[str, float]:
     """Los tres ámbitos, de la hoja provincial del fichero mensual.
 
-    Aquí el nombre del territorio no está siempre en la primera columna: la
-    comunidad va en la segunda y la provincia en la tercera, que es como el
-    ministerio distingue un nivel de otro. Se mira en las tres primeras.
+    Aquí el nombre del territorio no está en la primera columna: la comunidad
+    va en la segunda y la provincia en la tercera, que es como el ministerio
+    distingue un nivel de otro. Se mira en las cuatro primeras.
     """
     libro = Libro(datos)
     hoja = hoja_por_descripcion(libro, HOJA_MENSUAL)
     if not hoja:
         return {}
+    filas = libro.filas(hoja)
+    columna = columna_de_absolutos(filas)
+    if columna is None:
+        return {}
     buscados = {nombre: clave for clave, nombre in FILAS.items()}
     salida: dict[str, float] = {}
-    for fila in libro.filas(hoja):
-        etiqueta = next((normaliza(str(c)) for c in fila[:3]
+    for fila in filas:
+        etiqueta = next((normaliza(str(c)) for c in fila[:4]
                          if isinstance(c, str) and c.strip()), "")
         clave = buscados.get(etiqueta)
         if not clave or clave in salida:
             continue
-        valor = fila[COLUMNA_MENSUAL] if COLUMNA_MENSUAL < len(fila) else None
+        valor = fila[columna] if columna < len(fila) else None
         if isinstance(valor, (int, float)):
             salida[clave] = float(valor)
     return salida
