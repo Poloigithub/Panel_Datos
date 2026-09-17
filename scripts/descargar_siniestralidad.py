@@ -151,10 +151,20 @@ def periodo_del_fichero(datos: bytes) -> str | None:
 
 
 def baja(anyo: int, mes: int) -> bytes | None:
+    """El fichero de un mes, o nada si ese mes no está publicado.
+
+    El ministerio no devuelve 404 para un fichero que no existe: devuelve su
+    portada con un 200 y tan tranquilo. Así que no vale mirar el estado, hay
+    que mirar lo que ha llegado: un XLSX es un zip y empieza por «PK».
+    """
     url = url_mensual(anyo, mes)
     estado, _, datos = red.abre(url)
     if estado != 200:
         print(f"    {anyo}-{mes:02d}: {estado}")
+        return None
+    if datos[:2] != b"PK":
+        print(f"    {anyo}-{mes:02d}: todavía no publicado "
+              f"(contestan {len(datos)} bytes que no son una hoja)")
         return None
     return datos
 
