@@ -113,11 +113,26 @@ def hoja_por_descripcion(libro: Libro, palabras: tuple[str, ...]) -> str | None:
     return None
 
 
+# Con qué palabra reconocer, en el índice, de qué habla cada hoja. Sirve para
+# explicar por qué no se ha encontrado, que es lo único que permite corregir
+# la declaración sin adivinar.
+PISTAS = {"afiliados": ("afiliad",), "autonomos": ("autonom", "cuenta propia")}
+
+
 def busca_hoja(libro: Libro, cual: str) -> str | None:
     for palabras in HOJAS[cual]:
         nombre = hoja_por_descripcion(libro, palabras)
         if nombre:
             return nombre
+
+    # No ha encajado ninguna redacción: enseñar las del índice que hablan del
+    # tema, que es de donde sale la redacción nueva.
+    indice = next((h for h in libro.hojas if normaliza(h).startswith("indice")), None)
+    if indice:
+        for fila in libro.filas(indice):
+            texto = " ".join(normaliza(str(c)) for c in fila if c not in (None, ""))
+            if any(p in texto for p in PISTAS[cual]):
+                print(f"        el índice dice: {texto[:150]}")
     return None
 
 
