@@ -50,14 +50,14 @@ FILAS = {
 HOJAS = {
     "afiliados": [("afiliados", "comunidad autonoma y provincia"),
                   ("afiliados en alta laboral", "provincia")],
-    # Ojo con el orden: la de provincia va delante porque desde 2024 el
-    # ministerio publica los autónomos sólo por comunidad autónoma, y si la
-    # más general fuera primero se perdería el dato provincial de los años en
-    # que sí existía.
+    # Sólo la redacción con provincia, y es una decisión, no un descuido.
+    # Desde 2024 el ministerio publica en su lugar «trabajadores autónomos por
+    # asalariados según comunidad autónoma», que suena parecido y no lo es: da
+    # 3,4 millones donde la serie venía dando 2,0. Enlazar las dos sería
+    # publicar un cambio de definición como si fuera un crecimiento del 69 %
+    # en un año. Así que la serie se corta donde el ministerio la cortó.
     "autonomos": [("autonomos", "comunidad autonoma y provincia"),
-                  ("cuenta propia", "comunidad autonoma y provincia"),
-                  ("autonomos", "comunidad autonoma"),
-                  ("cuenta propia", "comunidad autonoma")],
+                  ("cuenta propia", "comunidad autonoma y provincia")],
 }
 
 BLOQUE = {
@@ -76,10 +76,12 @@ BLOQUE = {
             "titulo": "Personas afiliadas por cuenta propia",
             "unidad": "personas", "decimales": 0, "por_sexo": False,
             "unidad_texto": "media anual de autónomos en alta",
-            "nota": "De Castellón la serie se corta en 2023: a partir de 2024 "
-                    "el ministerio publica los autónomos sólo por comunidad "
-                    "autónoma, no por provincia. El hueco es el dato que falta, "
-                    "no un error.",
+            "nota": "La serie se corta en 2023 porque el ministerio dejó de "
+                    "publicar esta tabla. Desde 2024 saca otra que suena "
+                    "parecida -autónomos por número de asalariados, y sólo por "
+                    "comunidad autónoma- que cuenta 3,4 millones donde ésta "
+                    "venía contando 2,0. Enlazarlas sería dar un cambio de "
+                    "definición por un crecimiento del 69 % en un año.",
         },
     },
 }
