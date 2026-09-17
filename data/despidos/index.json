@@ -1,0 +1,34 @@
+{
+  "actualizado": "2026-09-17T11:29:05+00:00",
+  "titulo": "Despidos y regulación de empleo",
+  "ultimo_periodo": "2024",
+  "primer_periodo": "2019",
+  "indicadores": {
+    "despidos": {
+      "titulo": "Despidos en el año",
+      "unidad": "despidos",
+      "unidad_texto": "despidos registrados en el año",
+      "decimales": 0,
+      "por_sexo": true,
+      "nota": "De la Estadística de Despidos y su Coste, que es anual. Cuenta los despidos, no las personas: quien es despedido dos veces en un año cuenta dos veces.",
+      "sobre_total": null
+    }
+  },
+  "ambitos": [
+    {
+      "id": "espana",
+      "nombre": "España",
+      "fichero": "espana.json"
+    },
+    {
+      "id": "comunitat-valenciana",
+      "nombre": "Comunitat Valenciana",
+      "fichero": "comunitat-valenciana.json"
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "fichero": "castellon.json"
+    }
+  ]
+}

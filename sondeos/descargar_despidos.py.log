@@ -1,0 +1,22 @@
+
+=== Despidos y regulación de empleo ===
+  regulación de empleo: 0 meses ya guardados
+      cadena completada con http://www.cert.fnmt.es/certs/ACCOMP.crt
+    2026M09: sin fichero
+    2026M08: sin fichero
+    2026M07: sin tabla provincial
+    2026M06: sin tabla provincial
+  regulación de empleo: 4 peticiones, 0 meses en total
+  despidos y su coste:
+    2019: Castellón 5488.0
+    2020: Castellón 5451.0
+    2021: Castellón 5177.0
+    2022: Castellón 7429.0
+    2023: Castellón 9531.0
+    2024: Castellón 8856.0
+    2025: todavía no publicado
+    2026: todavía no publicado
+    escrito data/despidos/espana.json
+    escrito data/despidos/comunitat-valenciana.json
+    escrito data/despidos/castellon.json
+  6 periodos: 2019 … 2024
