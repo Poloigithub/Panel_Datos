@@ -51,10 +51,14 @@ FUERA = re.compile(
     r"|/(ca|eu|gl|en|fr)/"
     r"|\.(css|js|ico|png|jpe?g|gif|svg|pdf)($|\?)", re.I)
 
-# Lo que se busca dentro de la maraña de ficheros del boletín.
+# Lo que se busca dentro de la maraña de ficheros del boletín. Las palabras
+# van completas a propósito: la primera versión buscaba «afi» suelto y se
+# traía todas las monográficas, porque «monogr-afi-ca» lo contiene.
 TEMAS = {
-    "afiliación": ("afi", "afiliad", "afiliacion", "cotizant"),
-    "elecciones sindicales": ("eleccion", "delegad", "sindical", "_es_", "/es/"),
+    "afiliación": ("afiliad", "afiliacion", "cotizant", "/afi/", "_afi_",
+                   "seguridad social"),
+    "elecciones sindicales": ("eleccion", "delegad", "sindical", "/ele/",
+                              "_ele_"),
 }
 
 TOPE_PAGINAS = 120
@@ -147,6 +151,22 @@ def main() -> int:
     lineas += [f"## {len(ficheros)} ficheros en total", "",
                "Por formato: " + ", ".join(f"{k}: {v}" for k, v in cuantos.items()),
                ""]
+
+    # El mapa del terreno: qué carpetas hay y en qué formato publica cada una.
+    # Buscar por palabras a ciegas ya ha fallado una vez; con las carpetas
+    # delante se ve de un vistazo dónde está cada estadística.
+    carpetas: dict[str, dict[str, int]] = {}
+    for url in ficheros:
+        trozos = urllib.parse.urlsplit(url).path.strip("/").split("/")
+        carpeta = "/".join(trozos[1:3]) if len(trozos) > 2 else trozos[0]
+        extension = url.rsplit(".", 1)[-1].split("?")[0].lower()
+        carpetas.setdefault(carpeta, {}).setdefault(extension, 0)
+        carpetas[carpeta][extension] += 1
+    lineas += ["## Carpetas y en qué formato publica cada una", ""]
+    for carpeta in sorted(carpetas):
+        formatos = ", ".join(f"{k}: {v}" for k, v in sorted(carpetas[carpeta].items()))
+        lineas.append(f"- `{carpeta}` · {formatos}")
+    lineas.append("")
 
     for tema, palabras in TEMAS.items():
         tocan = sorted(u for u in ficheros
