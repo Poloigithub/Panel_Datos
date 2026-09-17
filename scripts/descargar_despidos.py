@@ -154,7 +154,11 @@ def columnas_de(filas: list[list], cabeceras: tuple[str, ...]) -> dict[str, int]
 
 def lee_regulacion(datos: bytes) -> dict[str, dict[str, float]]:
     libro = abre(datos)
-    hoja = hoja_por_descripcion(libro, ("comunidad autonoma y provincia",))
+    # Las dos palabras por separado y no la frase entera: el índice dice «por
+    # comunidad autónoma, provincia y sexo», sin la «y» en medio que llevan
+    # los demás ficheros del ministerio. Pedirlas sueltas encaja igual y
+    # descarta la tabla que sólo llega a comunidad autónoma.
+    hoja = hoja_por_descripcion(libro, ("comunidad autonoma", "provincia"))
     if not hoja:
         return {}
     filas = libro.filas(hoja)
