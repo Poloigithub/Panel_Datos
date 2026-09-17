@@ -181,13 +181,16 @@ def resume(lineas: list[str], datos: bytes) -> None:
     except Exception as exc:  # noqa: BLE001
         lineas.append(f"    - no se ha podido abrir: {type(exc).__name__}: {exc}")
         return
-    lineas.append(f"    - {len(libro.hojas)} hojas: "
-                  + ", ".join(f"«{h}»" for h in libro.hojas[:40]))
+    # `hojas` es un diccionario de nombre a ruta dentro del zip, así que hay
+    # que hacerlo lista antes de cortarlo.
+    nombres = list(libro.hojas)
+    lineas.append(f"    - {len(nombres)} hojas: "
+                  + ", ".join(f"«{h}»" for h in nombres[:40]))
     # Lo que decide si esto entra en el panel es si el dato baja a provincia,
     # así que se enseñan las hojas que nombran provincias y, si no hay ninguna,
     # las primeras para ver por dónde van los tiros.
-    provinciales = [h for h in libro.hojas if "provinc" in h.lower()]
-    for nombre in (provinciales or libro.hojas)[:3]:
+    provinciales = [h for h in nombres if "provinc" in h.lower()]
+    for nombre in (provinciales or nombres)[:3]:
         filas = libro.filas(nombre)
         lineas.append(f"    - hoja «{nombre}», {len(filas)} filas:")
         for fila in filas[:22]:
