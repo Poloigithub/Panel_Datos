@@ -32,139 +32,186 @@ CCT-3.3 | Inaplicaciones de convenios y trabajadores afectados, por condiciones 
 Fuentes y notas explicativas
 ```
 
-## 13 hojas que suenan a lo que se busca
+## 8 hojas que suenan a lo que se busca
 
-### Hoja «CCT-1.1» · 54 filas
+### Hoja «CCT-2.1» · 61 filas
 ```
-  0 | CCT-1.1                                          |  | REGISTRADOS HASTA AGOSTO DE 2026
-  3 | CONVENIOS Y TRABAJADORES AFECTADOS SEGÚN ÁMBITO FUNCIONAL, POR AÑO DE FIRMA Y PERÍODO DE REGISTRO. DATOS ACUMULADOS.
-  6 | AÑO DE FIRMA | CONVENIOS |  |  |  | TRABAJADORES
-  8 |  | TOTAL | EMPRESA | GRUPO DE EMPRESA | SECTOR | TOTAL | EMPRESA | GRUPO DE EMPRESA | SECTOR
-  9 |                                 |           |           |  |           |           |           |  |          
- 10 | 2013.0 | 2502.0 | 1897.0 | 55.0 | 550.0 | 5247575.0 | 376470.0 | 158815.0 | 4712290.0
- 11 | 2014.0 | 1859.0 | 1522.0 | 43.0 | 294.0 | 2169246.0 | 249303.0 | 57462.0 | 1862481.0
- 12 | 2015.0 | 1606.0 | 1277.0 | 37.0 | 292.0 | 3548975.0 | 172852.0 | 58646.0 | 3317477.0
- 13 | 2016.0 | 1866.0 | 1488.0 | 34.0 | 344.0 | 2832343.0 | 290427.0 | 103791.0 | 2438125.0
- 14 | 2017.0 | 1892.0 | 1465.0 | 36.0 | 391.0 | 3920950.0 | 277327.0 | 73411.0 | 3570212.0
- 15 | 2018 | 1907.0 | 1482.0 | 39.0 | 386.0 | 4635943.0 | 271723.0 | 131288.0 | 4232932.0
- 16 | 2019 | 1725.0 | 1355.0 | 38.0 | 332.0 | 3025979.0 | 263903.0 | 78383.0 | 2683693.0
- 17 | 2020(**) | 928.0 | 757.0 | 23.0 | 148.0 | 1607065.0 | 162778.0 | 56042.0 | 1388245.0
- 18 | 2021(**) | 1496.0 | 1160.0 | 34.0 | 302.0 | 4641611.0 | 282784.0 | 70563.0 | 4288264.0
- 19 | 2022(**) | 1584.0 | 1214.0 | 31.0 | 339.0 | 3966151.0 | 333137.0 | 69616.0 | 3563398.0
- 20 | 2023(**) | 1858.0 | 1406.0 | 37.0 | 415.0 | 4449744.0 | 401079.0 | 76232.0 | 3972433.0
- 21 | 2024(**) | 1448.0 | 1123.0 | 24.0 | 301.0 | 3574830.0 | 258740.0 | 64565.0 | 3251525.0
- 22 | 2025 (*)(**) | 1390.0 | 1081.0 | 30.0 | 279.0 | 3734284.0 | 210810.0 | 68456.0 | 3455018.0
- 24 | 2025(1)(2)(*)(**)
- 25 | Registrados hasta:
- 26 | Ene. | 11.0 | 10.0 | 0.0 | 1.0 | 12318.0 | 818.0 | 0.0 | 11500.0
- 27 | Feb. | 55.0 | 43.0 | 0.0 | 12.0 | 76088.0 | 5328.0 | 0.0 | 70760.0
- 28 | Mar. | 107.0 | 86.0 | 1.0 | 20.0 | 150647.0 | 19591.0 | 746.0 | 130310.0
- 29 | Abr. | 171.0 | 132.0 | 4.0 | 35.0 | 458638.0 | 26181.0 | 2065.0 | 430392.0
- 30 | May. | 259.0 | 196.0 | 6.0 | 57.0 | 783511.0 | 42176.0 | 3225.0 | 738110.0
- 31 | Jun. | 375.0 | 285.0 | 6.0 | 84.0 | 1092179.0 | 50362.0 | 3225.0 | 1038592.0
- 32 | Jul. | 500.0 | 370.0 | 15.0 | 115.0 | 1496939.0 | 74605.0 | 31921.0 | 1390413.0
- 33 | Ago. | 590.0 | 439.0 | 15.0 | 136.0 | 1866055.0 | 86697.0 | 31921.0 | 1747437.0
- 34 | Sep. | 704.0 | 524.0 | 18.0 | 162.0 | 2111050.0 | 101382.0 | 43063.0 | 1966605.0
- 35 | Oct. | 818.0 | 613.0 | 21.0 | 184.0 | 2359682.0 | 114566.0 | 60857.0 | 2184259.0
- 36 | Nov. | 917.0 | 692.0 | 23.0 | 202.0 | 2461149.0 | 134696.0 | 65401.0 | 2261052.0
- 37 | Dic. | 1390.0 | 1081.0 | 30.0 | 279.0 | 3734284.0 | 210810.0 | 68456.0 | 3455018.0
- 39 | 2026(1)(*)(**)
-```
-
-### Hoja «CCT-1.1 (b)» · 55 filas
-```
-  0 | CCT-1.1 (b)                                      |  | REGISTRADOS HASTA AGOSTO DE 2026
-  3 | CONVENIOS FIRMADOS EN LAS NUEVAS UNIDADES DE NEGOCIACION Y TRABAJADORES AFECTADOS SEGÚN ÁMBITO FUNCIONAL, POR AÑO DE FIRMA Y PERÍODO DE REGISTRO. DATOS ACUMULADOS (1).
-  6 | AÑO DE FIRMA | CONVENIOS |  |  |  | TRABAJADORES
-  8 |  | TOTAL | EMPRESA | GRUPO DE EMPRESA | SECTOR | TOTAL | EMPRESA | GRUPO DE EMPRESA | SECTOR
-  9 |                                 |           |           |  |  |           |           |  |          
- 10 | 2013.0 | 662.0 | 625.0 | 20.0 | 17.0 | 270280.0 | 55303.0 | 100776.0 | 114201.0
- 11 | 2014.0 | 608.0 | 575.0 | 17.0 | 16.0 | 144691.0 | 48696.0 | 8521.0 | 87474.0
- 12 | 2015.0 | 545.0 | 524.0 | 12.0 | 9.0 | 391741.0 | 32675.0 | 28651.0 | 330415.0
- 13 | 2016.0 | 506.0 | 480.0 | 10.0 | 16.0 | 122453.0 | 50560.0 | 36874.0 | 35019.0
- 14 | 2017.0 | 500.0 | 479.0 | 8.0 | 13.0 | 105789.0 | 46360.0 | 13932.0 | 45497.0
- 15 | 2018.0 | 499.0 | 471.0 | 7.0 | 21.0 | 77623.0 | 50163.0 | 8317.0 | 19143.0
- 16 | 2019.0 | 431.0 | 405.0 | 10.0 | 16.0 | 110683.0 | 38688.0 | 4432.0 | 67563.0
- 17 | 2020(**) | 197.0 | 183.0 | 3.0 | 11.0 | 101404.0 | 24710.0 | 11737.0 | 64957.0
- 18 | 2021(**) | 356.0 | 336.0 | 4.0 | 16.0 | 120974.0 | 31582.0 | 5017.0 | 84375.0
- 19 | 2022(**) | 382.0 | 358.0 | 2.0 | 22.0 | 278153.0 | 99416.0 | 765.0 | 177972.0
- 20 | 2023(**) | 362.0 | 341.0 | 7.0 | 14.0 | 252050.0 | 175139.0 | 6776.0 | 70135.0
- 21 | 2024(**) | 339.0 | 312.0 | 7.0 | 20.0 | 82742.0 | 36562.0 | 9922.0 | 36258.0
- 22 | 2025(*)(**) | 378.0 | 352.0 | 10.0 | 16.0 | 128373.0 | 57862.0 | 16106.0 | 54405.0
- 24 | 2025(2)(3)(*)(**)
- 25 | Registrados hasta:
- 26 | Ene. | 2.0 | 2.0 | 0.0 | 0.0 | 56.0 | 56.0 | 0.0 | 0.0
- 27 | Feb. | 13.0 | 10.0 | 0.0 | 3.0 | 14988.0 | 500.0 | 0.0 | 14488.0
- 28 | Mar. | 30.0 | 27.0 | 0.0 | 3.0 | 16094.0 | 1606.0 | 0.0 | 14488.0
- 29 | Abr. | 49.0 | 43.0 | 2.0 | 4.0 | 18868.0 | 2870.0 | 1060.0 | 14938.0
- 30 | May. | 61.0 | 54.0 | 3.0 | 4.0 | 20841.0 | 4493.0 | 1410.0 | 14938.0
- 31 | Jun. | 91.0 | 84.0 | 3.0 | 4.0 | 24060.0 | 7712.0 | 1410.0 | 14938.0
- 32 | Jul. | 119.0 | 108.0 | 5.0 | 6.0 | 33946.0 | 14654.0 | 1554.0 | 17738.0
- 33 | Ago. | 145.0 | 133.0 | 5.0 | 7.0 | 37558.0 | 17666.0 | 1554.0 | 18338.0
- 34 | Sep. | 170.0 | 157.0 | 6.0 | 7.0 | 43462.0 | 23277.0 | 1847.0 | 18338.0
- 35 | Oct. | 209.0 | 194.0 | 7.0 | 8.0 | 78605.0 | 29507.0 | 10760.0 | 38338.0
- 36 | Nov. | 234.0 | 217.0 | 8.0 | 9.0 | 90750.0 | 35845.0 | 15101.0 | 39804.0
- 37 | Dic. | 378.0 | 352.0 | 10.0 | 16.0 | 128373.0 | 57862.0 | 16106.0 | 54405.0
- 39 | 2026(2)(*)(**)
+  0 | CCT-2.1 
+  3 | CONVENIOS, EMPRESAS, TRABAJADORES AFECTADOS, VARIACIÓN SALARIAL MEDIA PACTADA Y REVISADA Y JORNADA MEDIA PACTADA, SEGÚN ÁMBITO FUNCIONAL, POR AÑO DE EFECTOS ECONÓMICOS Y PERÍODO DE REGISTRO. DATOS ACUMULADOS (1).
+  6 |   |  TOTAL CONVENIOS CON EFECTOS ECONÓMICOS CONOCIDOS Y REGISTRADOS  |  |  |  |  |  |  | CONVENIOS DE EMPRESA
+  7 |  
+  9 | Año |   |  |   | Variación Salarial |  |  |  |  |  
+ 10 | de efectos | Conve- | Empre- | Trabaja-  |  |  | Jornada |  | Conve- | Trabaja- 
+ 11 | económicos | nios | sas |  dores  |  |  | Media |  | nios |  dores 
+ 12 |  |  | (miles) | (miles) | Pactada | Revisada | (h/año) |  |  | (miles)
+ 13 |  |  |  |  |  (en %)  |  (en %) 
+ 14 |   |   |  |   |  | (2) |  |  |  |  
+ 15 |   |   |  |   |   |   |  |  |   |  
+ 16 | 2013.0 | 4589.0 | 1312906.0 | 10265402.0 | 0.53 | 0.53 | 1740.2 |  | 3395.0 | 932746.0
+ 17 | 2014.0 | 5185.0 | 1436946.0 | 10304700.0 | 0.5 | 0.5 | 1754.44 |  | 4004.0 | 867243.0
+ 18 | 2015.0 | 5642.0 | 1201862.0 | 10227278.0 | 0.69 | 0.71 | 1745.38 |  | 4493.0 | 846930.0
+ 19 | 2016.0 | 5640.0 | 1288679.0 | 10738608.0 | 0.99 | 1.01 | 1745.0 |  | 4471.0 | 804266.0
+ 20 | 2017.0 | 5741.0 | 1312135.0 | 10855280.0 | 1.44 | 1.46 | 1743.73 |  | 4555.0 | 822809.0
+ 21 | 2018.0 | 5589.0 | 1362645.0 | 11423657.0 | 1.72 | 1.73 | 1741.4 |  | 4413.0 | 857724.0
+ 22 | 2019.0 | 5539.0 | 1238411.0 | 11397608.0 | 2.24 | 2.24 | 1748.88 |  | 4384.0 | 921249.0
+ 23 | 2020.0 | 4915.0 | 1161164.0 | 10700757.0 | 1.73 | 1.74 | 1736.4 |  | 3849.0 | 787822.0
+ 24 | 2021.0 | 4727.0 | 1224343.0 | 11543242.0 | 1.45 | 1.61 | 1737.19 |  | 3640.0 | 806999.0
+ 25 | 2022.0 | 5045.0 | 1325039.0 | 12849558.0 | 3.02 | 3.21 | 1742.77 |  | 3867.0 | 850376.0
+ 26 | 2023.0 | 5162.0 | 1355799.0 | 12965321.0 | 3.61 | 3.69 | 1742.52 |  | 3943.0 | 905639.0
+ 27 | 2024.0 | 5119.0 | 1455539.0 | 13107252.0 | 3.25 | 3.3 | 1742.74 |  | 3900.0 | 896720.0
+ 28 | 2025 (3) (*) | 4207.0 | 1327141.0 | 12864327.0 | 3.51 | 3.54 | 1740.08 |  | 3102.0 | 769772.0
+ 30 | 2025 (4) (*)
+ 31 | Registrados hasta:
+ 32 | Ene. | 2067.0 | 664884.0 | 5938991.0 | 3.03 |  | 1753.09 |  | 1493.0 | 348165.0
+ 33 | Feb. | 2212.0 | 706016.0 | 6568533.0 | 3.03 |  | 1753.35 |  | 1595.0 | 364747.0
+ 34 | Mar. | 2312.0 | 741750.0 | 7062468.0 | 3.29 |  | 1749.59 |  | 1662.0 | 379400.0
+ 35 | Abr. | 2405.0 | 765303.0 | 7431244.0 | 3.35 |  | 1751.67 |  | 1726.0 | 391758.0
+ 36 | May. | 2517.0 | 803950.0 | 7931366.0 | 3.35 |  | 1752.17 |  | 1800.0 | 399986.0
+ 37 | Jun. | 2636.0 | 868377.0 | 8218679.0 | 3.39 |  | 1748.65 |  | 1893.0 | 410366.0
+ 38 | Jul. | 2753.0 | 925963.0 | 8623358.0 | 3.46 |  | 1749.48 |  | 1968.0 | 450667.0
+ 39 | Ago. | 2826.0 | 954176.0 | 8933478.0 | 3.5 |  | 1750.25 |  | 2027.0 | 462085.0
+ 40 | Sep. | 2930.0 | 984540.0 | 9202803.0 | 3.5 |  | 1750.71 |  | 2100.0 | 484113.0
+ 41 | Oct | 3033.0 | 1010046.0 | 9427072.0 | 3.5 |  | 1750.66 |  | 2173.0 | 499253.0
+ 42 | Nov | 3130.0 | 1036025.0 | 9652399.0 | 3.49 |  | 1751.03 |  | 2244.0 | 515731.0
+ 43 | Dic | 3366.0 | 1084129.0 | 10151064.0 | 3.53 |  | 1750.21 |  | 2441.0 | 555876.0
+ 45 | 2026 (4) (*)
+ 46 | Registrados hasta:
+ 47 | Ene. | 1948.0 | 641127.0 | 6311681.0 | 2.87 |  | 1737.97 |  | 1451.0 | 345547.0
+ 48 | Feb | 2098.0 | 688933.0 | 7155139.0 | 2.91 |  | 1738.45 |  | 1562.0 | 371985.0
+ 49 | Mar. | 2240.0 | 720991.0 | 7394685.0 | 2.92 |  | 1739.31 |  | 1676.0 | 397437.0
+ 50 | Abr | 2357.0 | 762181.0 | 7674340.0 | 2.94 |  | 1739.76 |  | 1766.0 | 412848.0
+ 51 | May | 2475.0 | 798322.0 | 7952102.0 | 3.0 |  | 1740.78 |  | 1849.0 | 434671.0
+ 52 | Jun | 2597.0 | 826725.0 | 8212326.0 | 3.01 |  | 1740.67 |  | 1932.0 | 459335.0
+ 53 | Jul | 2768.0 | 860076.0 | 8615197.0 | 3.02 |  | 1738.98 |  | 2042.0 | 491152.0
+ 54 | Ago | 2889.0 | 876454.0 | 8844987.0 | 3.04 |  | 1739.96 |  | 2137.0 | 515640.0
+ 56 | (1) Recoge información sólo de las variaciones salariales que pueden cuantificarse en los convenios con efectos económicos conocidos y registrados, que son un subconjunto del total de convenios aplicables o que pueden considerarse vigentes. 
+ 57 | (2) Las variaciones salariales revisadas tienen incorporadas las revisiones por "cláusula de garantía salarial" cuando éstas tienen caracter retroactivo y se expresan en el texto de los convenios y en las "hojas estadísticas", bien en función del comportamiento del Índice de Precios de Consumo (IPC) interanual, bien de otras circunstancias en la medida en que las mismas sean cuantificables. 
+ 58 | (3) En estos datos se han incorporado los convenios cuya información sobre efectos económicos conocidos se ha registrado hasta agosto 2026.
+ 59 | (4) Los datos se acumulan mes a mes dentro de cada año de efectos económicos.
 ```
 
-### Hoja «CCT-1.2» · 29 filas
+### Hoja «CCT-2.2» · 38 filas
 ```
-  0 | CCT-1.2 |  |  | REGISTRADOS HASTA AGOSTO DE 2026
-  1 |  |  |  | FIRMADOS EN 2026
-  2 | CONVENIOS, TRABAJADORES, DURACIÓN MEDIA Y TIEMPO DE NEGOCIACIÓN POR ÁMBITO FUNCIONAL Y SECTOR DE ACTIVIDAD (CNAE 2025)
-  4 | ÁMBITO FUNCIONAL Y SECTOR DE ACTIVIDAD | CONVENIOS | TRABAJADORES | DURACIÓN MEDIA
-(años)
-  6 | TOTAL                          | 686.0 | 1991951.0 | 3.33
-  7 |  Agrario | 16.0 | 40315.0 | 2.83
-  8 |  Industria | 290.0 | 278823.0 | 3.34
-  9 |  Construcción | 8.0 | 114148.0 | 3.43
- 10 |  Servicios | 372.0 | 1558665.0 | 3.35
- 11 |                                
- 12 | CONVENIOS DE EMPRESA           | 501.0 | 121164.0 | 3.31
- 13 |  Agrario | 5.0 | 554.0 | 3.8
- 14 |  Industria | 236.0 | 46412.0 | 3.34
- 15 |  Construcción | 3.0 | 123.0 | 3.47
- 16 |  Servicios | 257.0 | 74075.0 | 3.28
- 18 | CONVENIOS DE GRUPO DE EMPRESA | 8.0 | 7501.0 | 4.85
- 19 |  Agrario | 0.0 | 0.0 | 0.0
- 20 |  Industria | 1.0 | 564.0 | 5.0
- 21 |  Construcción | 0.0 | 0.0 | 0.0
- 22 |  Servicios | 7.0 | 6937.0 | 4.83
- 24 | CONVENIOS DE SECTOR | 177.0 | 1863286.0 | 3.33
- 25 |  Agrario | 11.0 | 39761.0 | 2.38
- 26 |  Industria | 53.0 | 231847.0 | 3.32
- 27 |  Construcción | 5.0 | 114025.0 | 3.4
- 28 |  Servicios | 108.0 | 1477653.0 | 3.43
+  0 | CCT-2.2 |  |  | REGISTRADOS HASTA AGOSTO DE 2026
+  2 | CONVENIOS, EMPRESAS Y TRABAJADORES AFECTADOS, VARIACIÓN SALARIAL Y JORNADA MEDIAS PACTADAS, POR ÁMBITO FUNCIONAL Y AÑO DE FIRMA (1).
+  4 | ÁMBITO FUNCIONAL | TOTAL | CONVENIOS FIRMADOS ANTES DE 2026 | CONVENIOS FIRMADOS EN 2026
+  6 |                                 |                     |                     |                    
+  7 | TOTAL                          |  |                     |                    
+  8 |                                 |                     |                     |                    
+  9 |    Convenios  | 2889.0 | 2322.0 | 567.0
+ 10 |    Empresas | 876454.0 | 747959.0 | 128495.0
+ 11 |    Trabajadores | 8844987.0 | 7510302.0 | 1334685.0
+ 12 |    Jornada media (horas/año) | 1739.96 | 1734.63 | 1769.96
+ 13 |    Variación salarial media en % | 3.04 | 2.91 | 3.76
+ 14 |                                
+ 15 | CONVENIOS DE EMPRESA          
+ 16 |                                
+ 17 |    Convenios | 2137.0 | 1733.0 | 404.0
+ 18 |    Trabajadores | 515640.0 | 419659.0 | 95981.0
+ 19 |    Jornada media (horas/año) | 1700.47 | 1701.93 | 1694.09
+ 20 |    Variación salarial media en % | 2.6 | 2.52 | 2.96
+ 22 | CONVENIOS DE GRUPO DE EMPRESA     
+ 23 |                                
+ 24 |    Convenios | 57.0 | 52.0 | 5.0
+ 25 |    Trabajadores | 145140.0 | 141641.0 | 3499.0
+ 26 |    Jornada media (horas/año) | 1749.24 | 1750.78 | 1686.84
+ 27 |    Variación salarial media en % | 2.26 | 2.25 | 2.89
+ 28 |                                 |  |  |  |                    
+ 29 | CONVENIOS DE SECTOR |  |  |  |                    
+ 30 |                                 |  |  |  |                    
+ 31 |    Convenios | 695.0 | 537.0 | 158.0
+ 32 |    Trabajadores | 8184207.0 | 6949002.0 | 1235205.0
+ 33 |    Jornada media (horas/año) | 1742.29 | 1736.28 | 1776.1
+ 34 |    Variación salarial media en % | 3.08 | 2.95 | 3.82
+ 35 |                                 |                     |                     |                    
+ 37 | (1) Los convenios que aparecen en la tabla son aquellos convenios que tienen efectos económicos conocidos y registrados para 2026 y que han sido firmados en el año 2026 o bien en años anteriores. La información que contenía esta tabla en publicaciones de años anteriores desglosaba los convenios en función de si el año de inicio de efectos económicos era el mismo que el de efectos económicos o anterior. 
 ```
 
-### Hoja «CCT-1.2 (b)» · 29 filas
+### Hoja «CCT-2.3» · 34 filas
 ```
-  0 | CCT-1.2 |  |  | REGISTRADOS HASTA AGOSTO DE 2026
-  1 |  |  |  | FIRMADOS EN 2026
-  2 | CONVENIOS FIRMADOS EN LAS NUEVAS UNIDADES DE NEGOCIACION, TRABAJADORES, DURACIÓN MEDIA Y TIEMPO DE NEGOCIACIÓN POR ÁMBITO FUNCIONAL Y SECTOR DE ACTIVIDAD (CNAE 2025)
-  4 | ÁMBITO FUNCIONAL Y SECTOR DE ACTIVIDAD | CONVENIOS | TRABAJADORES | DURACIÓN MEDIA
-(años)
-  6 | TOTAL                          | 138.0 | 157441.0 | 3.5
-  7 |  Agrario | 1.0 | 11.0 | 5.0
-  8 |  Industria | 56.0 | 12657.0 | 3.62
-  9 |  Construcción | 3.0 | 123.0 | 3.47
- 10 |  Servicios | 78.0 | 144650.0 | 3.4
- 11 |                                
- 12 | CONVENIOS DE EMPRESA           | 127.0 | 23224.0 | 3.37
- 13 |  Agrario | 1.0 | 11.0 | 5.0
- 14 |  Industria | 54.0 | 10447.0 | 3.61
- 15 |  Construcción | 3.0 | 123.0 | 3.47
- 16 |  Servicios | 69.0 | 12643.0 | 3.15
- 18 | CONVENIOS DE GRUPO DE EMPRESA | 3.0 | 266.0 | 6.28
- 19 |  Agrario | 0.0 | 0.0 | 0.0
- 20 |  Industria | 0.0 | 0.0 | 0.0
- 21 |  Construcción | 0.0 | 0.0 | 0.0
- 22 |  Servicios | 3.0 | 266.0 | 6.28
- 24 | CONVENIOS DE SECTOR | 8.0 | 133951.0 | 4.61
- 25 |  Agrario | 0.0 | 0.0 | 0.0
- 26 |  Industria | 2.0 | 2210.0 | 4.0
- 27 |  Construcción | 0.0 | 0.0 | 0.0
- 28 |  Servicios | 6.0 | 131741.0 | 4.81
+  0 | CCT-2.3 |  |  |  | REGISTRADOS HASTA AGOSTO 2026
+  1 |  |  |  |  | EFECTOS ECONÓMICOS EN 2026
+  2 | CONVENIOS, EMPRESAS Y TRABAJADORES AFECTADOS Y VARIACIÓN SALARIAL PACTADA, POR ÁMBITOS FUNCIONAL Y TERRITORIAL.
+  4 | ÁMBITOS FUNCIONAL
+Y DE REGISTRO | CONVENIOS | EMPRESAS | TRABAJADORES | VARIACIÓN SALARIAL
+(en %)
+  5 |                                          |                        |                        |                        |                       
+  6 | TOTAL | 2889.0 | 876454.0 | 8844987.0 | 3.04
+  7 |                                          |  |                        |                        |                       
+  8 | ÁMBITO FUNCIONAL                         |  |                        |                        |                       
+  9 |                                          |  |                        |                        |                       
+ 10 |  CONVENIOS DE EMPRESA | 2137.0 | 2137.0 | 515640.0 | 2.6
+ 12 |     Empresa privada | 1907.0 | 1907.0 | 427192.0 | 2.81
+ 13 |     Empresa pública | 190.0 | 190.0 | 73524.0 | 1.6
+ 14 |     Administración del Estado y la Seguridad Social | 1.0 | 1.0 | 38.0 | 2.9
+ 15 |     Administración autonómica y local | 39.0 | 39.0 | 14886.0 | 1.51
+ 16 |                                          |                        |                        |                        |                       
+ 17 |  CONVENIOS DE GRUPO DE EMPRESA | 57.0 | 337.0 | 145140.0 | 2.26
+ 19 |  CONVENIOS DE SECTOR | 695.0 | 873980.0 | 8184207.0 | 3.08
+ 20 |                                          |                        |                        |                        |                       
+ 21 |     Local-comarcal | 0.0 | - | - | -
+ 22 |     Provincial | 442.0 | 415839.0 | 2890236.0 | 3.1
+ 23 |     Autonómicos (1) | 199.0 | 183842.0 | 2159842.0 | 3.14
+ 24 |     Interautonómicos | 0.0 | - | - | -
+ 25 |     Nacional | 54.0 | 274299.0 | 3134129.0 | 3.02
+ 26 |                                          |                        |                        |                        |                       
+ 27 | ÁMBITO TERRITORIAL |                        |                        |                        |                       
+ 28 |                                          |                        |                        |                        |                       
+ 29 |   Convenios Provinciales  | 1971.0 | 417389.0 | 3116709.0 | 3.07
+ 30 |   Convenios Autonómicos (1) | 692.0 | 184371.0 | 2295129.0 | 3.09
+ 31 |   Convenios Estatales | 226.0 | 274694.0 | 3433149.0 | 2.97
+ 32 |                                          |                        |                        |                        |                       
+ 33 | (1) En los convenios autonómicos se han incluido aquellos convenios registrados en las Autoridades Laborales de las comunidades autónomas, incluidas también las uniprovinciales.
+```
+
+### Hoja «CCT-2.4» · 46 filas
+```
+  0 | CCT-2.4 |  |  |  | REGISTRADOS HASTA AGOSTO 2026
+  1 |  |  |  |  | EFECTOS ECONÓMICOS EN 2026
+  2 | CONVENIOS, EMPRESAS Y TRABAJADORES AFECTADOS Y VARIACIÓN SALARIAL MEDIA PACTADA, POR ÁMBITO FUNCIONAL Y TRAMOS DE VARIACIÓN SALARIAL.
+  4 | ÁMBITO FUNCIONAL Y TRAMOS DE
+VARIACIÓN SALARIAL | CONVENIOS | EMPRESAS | TRABAJADORES | VARIACIÓN SALARIAL
+(en %)
+  5 | TOTAL | 2889.0 | 876454.0 | 8844987.0 | 3.04
+  6 |    Inferior al 0,00 | 0.0 | - | 0.0 | 0.0
+  7 |    Igual al 0,00 | 24.0 | 427.0 | 4457.0 | 0.0
+  8 |    Del 0,01 al 0,49 | 5.0 | 29.0 | 1768.0 | 0.27
+  9 |    Del 0,50 al 0,99 | 23.0 | 1621.0 | 11270.0 | 0.64
+ 10 |    Del 1,00 al 1,50 | 421.0 | 16099.0 | 549787.0 | 1.46
+ 11 |    Del 1,51 al 2,00 | 342.0 | 76863.0 | 1187475.0 | 1.98
+ 12 |    Del 2,01 al 2,50 | 293.0 | 87595.0 | 653559.0 | 2.46
+ 13 |    Del 2,51 al 3,00 | 965.0 | 350467.0 | 3715107.0 | 2.96
+ 14 |    Superior al 3,00 | 816.0 | 343353.0 | 2721564.0 | 4.08
+ 15 | CONVENIOS DE EMPRESA | 2137.0 | 2137.0 | 515640.0 | 2.6
+ 16 |    Inferior al 0,00 | 0.0 | - | 0.0 | 0.0
+ 17 |    Igual al 0,00 | 21.0 | 21.0 | 3356.0 | 0.0
+ 18 |    Del 0,01 al 0,49 | 4.0 | 4.0 | 268.0 | 0.36
+ 19 |    Del 0,50 al 0,99 | 19.0 | 19.0 | 3493.0 | 0.55
+ 20 |    Del 1,00 al 1,50 | 389.0 | 389.0 | 117774.0 | 1.46
+ 21 |    Del 1,51 al 2,00 | 271.0 | 271.0 | 74850.0 | 1.94
+ 22 |    Del 2,01 al 2,50 | 208.0 | 208.0 | 52783.0 | 2.35
+ 23 |    Del 2,51 al 3,00 | 672.0 | 672.0 | 150875.0 | 2.92
+ 24 |    Superior al 3,00 | 553.0 | 553.0 | 112241.0 | 4.08
+ 25 | CONVENIOS DE GRUPO DE EMPRESA | 57.0 | 337.0 | 145140.0 | 2.26
+ 26 |    Inferior al 0,00 | 0.0 | - | 0.0 | 0.0
+ 27 |    Igual al 0,00 | 1.0 | 2.0 | 55.0 | 0.0
+ 28 |    Del 0,01 al 0,49 | 0.0 | - | 0.0 | 0.0
+ 29 |    Del 0,50 al 0,99 | 0.0 | - | 0.0 | 0.0
+ 30 |    Del 1,00 al 1,50 | 12.0 | 95.0 | 36545.0 | 1.35
+ 31 |    Del 1,51 al 2,00 | 10.0 | 63.0 | 52537.0 | 1.98
+ 32 |    Del 2,01 al 2,50 | 3.0 | 35.0 | 16148.0 | 2.48
+ 33 |    Del 2,51 al 3,00 | 21.0 | 92.0 | 24192.0 | 2.86
+ 34 |    Superior al 3,00 | 10.0 | 50.0 | 15663.0 | 4.22
+ 35 | CONVENIOS DE SECTOR | 695.0 | 873980.0 | 8184207.0 | 3.08
+ 36 |    Inferior al 0,00 | 0.0 | - | 0.0 | 0.0
+ 37 |    Igual al 0,00 | 2.0 | 404.0 | 1046.0 | 0.0
+ 38 |    Del 0,01 al 0,49 | 1.0 | 25.0 | 1500.0 | 0.25
+ 39 |    Del 0,50 al 0,99 | 4.0 | 1602.0 | 7777.0 | 0.69
+ 40 |    Del 1,00 al 1,50 | 20.0 | 15615.0 | 395468.0 | 1.47
+ 41 |    Del 1,51 al 2,00 | 61.0 | 76529.0 | 1060088.0 | 1.98
+ 42 |    Del 2,01 al 2,50 | 82.0 | 87352.0 | 584628.0 | 2.47
+ 43 |    Del 2,51 al 3,00 | 272.0 | 349703.0 | 3540040.0 | 2.96
+ 44 |    Superior al 3,00 | 253.0 | 342750.0 | 2593660.0 | 4.08
+ 45 |                                          |                        |                        |                        |                       
 ```
 
