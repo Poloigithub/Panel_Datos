@@ -49,6 +49,8 @@
         el índice dice: afi-28. trabajadores afiliados a la seguridad social en el sector publico, segun sexo y ambiro terrirorial, por comunidad autonoma y provincia.
     2025: no se encuentra la hoja de autonomos
     2026: todavía no publicado
+  autónomos mes a mes: 0 meses ya guardados
+  autónomos mes a mes: 4 peticiones, 0 meses en total
     escrito data/afiliacion/espana.json
     escrito data/afiliacion/comunitat-valenciana.json
     escrito data/afiliacion/castellon.json
