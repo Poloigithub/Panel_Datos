@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accidentes de trabajo · Panel de datos</title>
-<meta name="description" content="Accidentes de trabajo y muertes en el puesto en España, la Comunitat Valenciana y la provincia de Castellón, con el avance de lo que va de año.">
+<title>Afiliación a la Seguridad Social · Panel de datos</title>
+<meta name="description" content="Cuánta gente cotiza a la Seguridad Social en España, la Comunitat Valenciana y la provincia de Castellón, y cuánta lo hace por cuenta propia.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
   } catch (_) {}
 </script>
 </head>
-<body class="min-h-full antialiased" data-bloque="siniestralidad">
+<body class="min-h-full antialiased" data-bloque="afiliacion">
 
 <header class="border-b" style="border-color: var(--borde)">
   <div class="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
@@ -34,15 +34,14 @@
 <main class="mx-auto max-w-6xl px-4 sm:px-6 py-8 sm:py-10">
 
   <nav aria-label="Ruta" class="text-xs" style="color: var(--tinta-tenue)">
-    <a class="enlace-sutil" href="./">Panel</a> <span aria-hidden="true">/</span> Accidentes de trabajo
+    <a class="enlace-sutil" href="./">Panel</a> <span aria-hidden="true">/</span> Afiliación a la Seguridad Social
   </nav>
 
-  <h1 class="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Accidentes de trabajo</h1>
+  <h1 class="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Afiliación a la Seguridad Social</h1>
   <p class="mt-3 max-w-3xl text-base leading-relaxed" style="color: var(--tinta-suave)">
-    Cuánta gente se hace daño trabajando y cuánta no vuelve a casa. Es de las
-    pocas cosas de este panel que <strong>sí baja a provincia</strong>: el
-    Ministerio de Trabajo publica España, cada comunidad y cada provincia en la
-    misma tabla, mientras que ninguna estadística salarial llega a Castellón.
+    Cuánta gente cotiza, que es la medida del empleo que no depende de una
+    encuesta: no se pregunta a nadie, se cuenta quién está dado de alta. Es la
+    media del año, no la foto de un día, y baja a provincia.
   </p>
 
   <p data-estado role="status" class="mt-6 text-sm" style="color: var(--tinta-suave)">Cargando datos…</p>
@@ -74,17 +73,6 @@
       </div>
     </section>
 
-    <section data-avance-seccion hidden aria-labelledby="avance-titulo" class="mt-8">
-      <h2 id="avance-titulo" class="text-lg font-semibold tracking-tight">Lo que va de año</h2>
-      <p data-avance-pie class="mt-1 text-xs" style="color: var(--tinta-tenue)"></p>
-      <div data-avance class="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
-      <p class="mt-3 text-xs leading-relaxed" style="color: var(--tinta-tenue)">
-        Comparado siempre contra el <strong>mismo periodo</strong> del año
-        anterior, no contra el año entero: los ficheros del ministerio son
-        acumulados desde enero, y medir siete meses contra doce haría parecer
-        que los accidentes se han hundido.
-      </p>
-    </section>
 
     <section aria-labelledby="resumen-titulo" class="mt-8">
       <div class="flex flex-wrap items-baseline justify-between gap-2">
@@ -107,37 +95,35 @@
     <section class="mt-12 tarjeta p-5">
       <h2 class="text-sm font-semibold">Fuente y método</h2>
       <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
-        Estadística de Accidentes de Trabajo del Ministerio de Trabajo y
-        Economía Social. De cada avance mensual se lee la tabla
-        <code>ATR-A1.1</code>, que reparte por comunidad autónoma y provincia
-        los accidentes con baja según su gravedad. Se cuentan sólo los
-        accidentes <strong>con baja</strong>: los que no la causan no entran en
-        la estadística.
+        Anuario de Estadísticas del Ministerio de Trabajo y Economía Social,
+        que publica cada año un libro con una tabla de afiliados en alta
+        laboral repartidos por comunidad autónoma y provincia. La cifra es la
+        <strong>media anual</strong>, no el dato de un día concreto: es lo que
+        se puede comparar de un año con otro sin que el resultado dependa de si
+        se miró en agosto o en enero.
       </p>
       <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
-        Los ficheros son <strong>acumulados del año</strong>, así que la serie
-        se monta con el de diciembre de cada año, que es el año entero, y el
-        año en curso va aparte y comparado contra el mismo periodo del anterior.
+        La serie empieza en <strong>2015</strong> porque antes el anuario está
+        en el formato binario antiguo de Excel, que este panel no lee, y le
+        falta <strong>2016</strong> por lo mismo: ese año concreto se publicó
+        en el formato viejo. El hueco se ve en la gráfica en lugar de
+        rellenarse.
       </p>
       <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
-        La serie empieza en <strong>2021</strong> y no antes porque hasta
-        febrero de ese año el ministerio publicaba en el formato binario
-        antiguo de Excel, que este panel no lee. No es una decisión editorial:
-        es hasta donde llega el formato.
+        Los <strong>autónomos se cortan en 2023</strong>, y conviene explicar
+        por qué. Hasta ese año el anuario traía una tabla de trabajadores por
+        cuenta propia por comunidad y provincia. Desde 2024 publica en su lugar
+        otra que suena parecida -autónomos según número de asalariados, y sólo
+        por comunidad autónoma- que cuenta 3,4 millones donde la anterior
+        contaba 2,0. No han aparecido un millón y medio de autónomos en un año:
+        es otro universo, y enlazar las dos series habría convertido un cambio
+        de definición en un crecimiento del 69 %.
       </p>
       <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
-        Los accidentes <strong>in itinere</strong> -los de ida o vuelta al
-        trabajo- van contados aparte de los de jornada porque hablan de cosas
-        distintas: unos de cómo es el puesto y otros de cómo se llega a él.
-      </p>
-      <p class="mt-2 text-sm leading-relaxed" style="color: var(--tinta-suave)">
-        Junto a las cifras absolutas van las <strong>tasas por cada 100.000
-        personas afiliadas</strong>, que es lo que separa «hay más accidentes»
-        de «hay más gente trabajando». El denominador es la media anual de
-        afiliación a la Seguridad Social, que tiene
-        <a class="enlace-sutil" href="afiliacion.html">su propia sección</a>.
-        Falta la tasa de 2016 porque falta su afiliación, y falta la del año en
-        curso porque el anuario todavía no ha salido.
+        Afiliación no es lo mismo que empleo: una persona con dos trabajos
+        cuenta dos veces si cotiza por los dos, y quien trabaja sin estar dado
+        de alta no cuenta ninguna. Para la otra medida, la de la encuesta, está
+        <a class="enlace-sutil" href="mercado-laboral.html">Mercado laboral</a>.
       </p>
       <p class="mt-2 text-sm" style="color: var(--tinta-suave)">
         Última actualización de los datos: <span data-actualizado class="font-medium"></span>.
@@ -167,6 +153,5 @@
 <script src="assets/js/enlace.js"></script>
 <script src="assets/js/panel.js"></script>
 <script src="assets/js/bloque.js"></script>
-<script src="assets/js/siniestralidad.js"></script>
 </body>
 </html>

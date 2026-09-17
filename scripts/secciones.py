@@ -80,6 +80,16 @@ SECCIONES = [
         ],
     },
     {
+        "bloque": "afiliacion", "enlace": "afiliacion.html",
+        "titulo": "Afiliación a la Seguridad Social",
+        "fuente": "Anuario de Estadísticas · Ministerio de Trabajo",
+        "cadencia": "Anual. El anuario del año sale a mediados del siguiente.",
+        "destacados": [
+            {"clave": "afiliados", "titulo": "Personas afiliadas",
+             "unidad": "personas", "decimales": 0},
+        ],
+    },
+    {
         "bloque": "siniestralidad", "enlace": "siniestralidad.html",
         "titulo": "Accidentes de trabajo", "fuente": "Ministerio de Trabajo",
         "cadencia": "Mensual el avance del año en curso; la serie, anual. El "

@@ -127,6 +127,9 @@ RANGOS = {
     "agua": (30, 400),
     "restaurantes": (30, 400),
     "restauracion": (30, 400),
+    # afiliación a la Seguridad Social (medias anuales de personas)
+    "afiliados": (1_000, 50_000_000),
+    "autonomos": (100, 10_000_000),
     # accidentes de trabajo (cifras absolutas de un año entero)
     "accidentes_jornada": (0, 2_000_000),
     "accidentes_leves": (0, 2_000_000),
@@ -210,6 +213,9 @@ FRESCURA = {
     # que el ministerio publica en febrero o marzo del año siguiente. Con menos
     # de quince meses de margen saltaría la alarma todos los eneros.
     "siniestralidad": ("anual", 15),
+    # El anuario del año sale a mediados del siguiente, así que hasta bien
+    # entrado el otoño el último dato es el del año anterior.
+    "afiliacion": ("anual", 22),
     "poblacion": ("anual o trimestral, según el indicador", 15),
     "demografia": ("anual", 30),
     "renta": ("anual", 36),

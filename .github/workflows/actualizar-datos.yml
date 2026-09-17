@@ -51,6 +51,13 @@ jobs:
       - name: Descargar el paro registrado y los contratos del SEPE
         run: python scripts/descargar_paro.py
 
+      # La afiliación va antes que los accidentes, y no da igual: los
+      # accidentes se dividen entre ella para dar la tasa por cada cien mil
+      # afiliados, así que si llegara después la tasa saldría con el
+      # denominador del día anterior.
+      - name: Descargar la afiliación a la Seguridad Social
+        run: python scripts/descargar_afiliacion.py
+
       - name: Descargar los accidentes de trabajo
         run: python scripts/descargar_siniestralidad.py
 

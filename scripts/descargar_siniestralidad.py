@@ -37,6 +37,12 @@ import bloques_ine as bloques  # noqa: E402
 import red_ministerio as red  # noqa: E402
 from xlsx import Libro  # noqa: E402
 
+# La afiliación, para poder dar los accidentes por cada cien mil personas que
+# cotizan. Sin esto la sección sólo puede dar cifras absolutas, y una subida no
+# se distingue de que haya más gente trabajando.
+AFILIACION = RAIZ / "data" / "afiliacion"
+POR_CADA = 100_000
+
 BASE = "https://www.mites.gob.es/estadisticas/eat"
 HOJA = "ATR-A1.1"
 PRIMER_ANYO = 2021   # antes de marzo de 2021 los ficheros son .xls binario
@@ -185,6 +191,62 @@ def ultimo_avance(hoy: dt.date) -> tuple[int, int, bytes] | None:
     return None
 
 
+def tasas(por_ambito: dict) -> dict:
+    """Accidentes por cada cien mil afiliados, si la afiliación está bajada.
+
+    Es el indicador que la sección pedía a gritos: en cifras absolutas, una
+    subida puede venir de que haya más accidentes o de que haya más gente
+    trabajando, y no hay forma de saber cuál. La tasa separa las dos cosas.
+
+    Sólo se calcula donde hay los dos datos del mismo año. Un año con
+    accidentes y sin afiliación se queda sin tasa, que es preferible a
+    inventarse el denominador.
+    """
+    fichas = {}
+    for ambito in FILAS:
+        fichero = AFILIACION / f"{ambito}.json"
+        if not fichero.exists():
+            continue
+        contenido = json.loads(fichero.read_text(encoding="utf-8"))
+        afiliados = dict(zip(contenido["periodos"],
+                             contenido["series"]["ambos"].get("afiliados", [])))
+        series = por_ambito.get(ambito, {}).get("ambos", {})
+        for origen, destino in (("accidentes_jornada", "tasa_accidentes"),
+                                ("accidentes_mortales", "tasa_mortales")):
+            valores = series.get(origen, {})
+            calculada = {}
+            for periodo, valor in valores.items():
+                base = afiliados.get(periodo)
+                if base:
+                    calculada[periodo] = valor / base * POR_CADA
+            if calculada:
+                series[destino] = calculada
+        if series.get("tasa_accidentes"):
+            fichas = {
+                "tasa_accidentes": {
+                    "titulo": "Accidentes por cada 100.000 afiliados",
+                    "unidad": "accidentes", "decimales": 1, "por_sexo": False,
+                    "unidad_texto": "accidentes con baja en jornada por cada "
+                                    "100.000 personas afiliadas",
+                    "nota": "Cálculo propio: accidentes del año entre la media "
+                            "anual de personas afiliadas a la Seguridad Social. "
+                            "Es lo que separa «hay más accidentes» de «hay más "
+                            "gente trabajando». Falta 2016 porque falta su "
+                            "afiliación, y falta el año en curso porque su "
+                            "afiliación todavía no está publicada.",
+                    "sobre_total": None,
+                },
+                "tasa_mortales": {
+                    "titulo": "Muertes por cada 100.000 afiliados",
+                    "unidad": "muertes", "decimales": 2, "por_sexo": False,
+                    "unidad_texto": "muertes en el puesto por cada 100.000 "
+                                    "personas afiliadas",
+                    "nota": None, "sobre_total": None,
+                },
+            }
+    return fichas
+
+
 def main() -> int:
     ahora = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     hoy = dt.date.today()
@@ -208,7 +270,11 @@ def main() -> int:
               f"accidentes en jornada en Castellón, "
               f"{filas.get('castellon', {}).get('accidentes_mortales')} mortales")
 
-    periodos = bloques.escribe_bloque("siniestralidad", BLOQUE, por_ambito, ahora, RAIZ)
+    derivados = tasas(por_ambito)
+    if derivados:
+        print("    calculadas las tasas por cada 100.000 afiliados")
+    periodos = bloques.escribe_bloque("siniestralidad", BLOQUE, por_ambito, ahora,
+                                      RAIZ, derivados=derivados)
     if not periodos:
         print("  no se ha podido montar la serie")
         return 1
