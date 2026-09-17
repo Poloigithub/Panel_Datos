@@ -130,161 +130,697 @@ binario- y dato que baje a provincia.
 
 Por formato: xlsx: 280, xls: 461, csv: 0, ods: 0
 
-## afiliación · 37 ficheros
+## Carpetas y en qué formato publica cada una
 
-- `https://www.mites.gob.es/estadisticas/Mac/mac12/mac/MONOGRAFICA_2012_Corregida.xls`
-- `https://www.mites.gob.es/estadisticas/Mac/mac16/mac_monografica_2016.xls`
-- `https://www.mites.gob.es/estadisticas/Mac/mac17/mac_monografica_2017.xls`
-- `https://www.mites.gob.es/estadisticas/Mac/mac18/mac_monografica_2018.xls`
-- `https://www.mites.gob.es/estadisticas/Mac/mac19/mac_monografica_2019.xls`
-- `https://www.mites.gob.es/estadisticas/Mac/mac20/mac_monografica_2020.xls`
-- `https://www.mites.gob.es/estadisticas/Mac/mac21/mac_monografica_2021.xls`
-- `https://www.mites.gob.es/estadisticas/Mac/mac22/mac_monografica_2022.xls`
-- `https://www.mites.gob.es/estadisticas/Mac/mac23/mac_monografica_2023.xls`
-- `https://www.mites.gob.es/estadisticas/Mac/mac24/mac_monografica_2024.xls`
-- `https://www.mites.gob.es/estadisticas/Mac/mac25/mac_monografica_2025.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue00/hue_monografica_2000.xlsx`
-- `https://www.mites.gob.es/estadisticas/hue/hue01/hue_monografica_2001.xlsx`
-- `https://www.mites.gob.es/estadisticas/hue/hue02/hue_monografica_2002.xlsx`
-- `https://www.mites.gob.es/estadisticas/hue/hue03/hue_monografica_2003.xlsx`
-- `https://www.mites.gob.es/estadisticas/hue/hue04/hue_monografica_2004.xlsx`
-- `https://www.mites.gob.es/estadisticas/hue/hue05/hue_monografica_2005.xlsx`
-- `https://www.mites.gob.es/estadisticas/hue/hue06/hue_monografica_2006.xlsx`
-- `https://www.mites.gob.es/estadisticas/hue/hue07/hue_monografica_2007.xlsx`
-- `https://www.mites.gob.es/estadisticas/hue/hue08/hue_monografica_2008.xlsx`
-- `https://www.mites.gob.es/estadisticas/hue/hue09/hue_monografica_2009.xlsx`
-- `https://www.mites.gob.es/estadisticas/hue/hue10/hue_monografica_2010.xlsx`
-- `https://www.mites.gob.es/estadisticas/hue/hue11/hue_monografica_2011.xlsx`
-- `https://www.mites.gob.es/estadisticas/hue/hue12/hue_monografica_2012.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue13/hue_monografica_2013.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue14/hue_monografica_2014.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue15/hue_monografica_2015.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue16/hue_monografica_2016.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue17/hue_monografica_2017.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue18/hue_monografica_2018.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue19/hue_monografica_2019.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue20/hue_monografica_2020.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue21/hue_monografica_2021.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue22/hue_monografica_2022.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue23/hue_monografica_2023.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue24/hue_monografica_2024.xls`
-- `https://www.mites.gob.es/estadisticas/hue/hue25/hue_monografica_2025.xls`
+- `EAL/EAL2013` · xls: 1
+- `EAL/EAL2014` · xls: 1
+- `EAL/EAL2015` · xls: 1
+- `EAL/EAL2016` · xls: 1
+- `EAL/EAL2017` · xls: 1
+- `EAL/EAL2018` · xls: 1
+- `EAL/EAL2019` · xls: 1
+- `EAL/EAL2020` · xls: 1
+- `EAL/EAL2021` · xlsx: 1
+- `EAL/EAL2022` · xlsx: 1
+- `EAL/EAL2023` · xlsx: 1
+- `EAL/EAL2024` · xlsx: 1
+- `Emp/Emp13-Dic` · xls: 1
+- `Emp/Emp14-Abr` · xls: 1
+- `Emp/Emp14-Ago` · xls: 1
+- `Emp/Emp14-Dic` · xls: 1
+- `Emp/Emp14-Ene` · xls: 1
+- `Emp/Emp14-Feb` · xls: 1
+- `Emp/Emp14-Jul` · xls: 1
+- `Emp/Emp14-Jun` · xls: 1
+- `Emp/Emp14-Mar` · xls: 1
+- `Emp/Emp14-May` · xls: 1
+- `Emp/Emp14-Nov` · xls: 1
+- `Emp/Emp14-Oct` · xls: 1
+- `Emp/Emp14-Sep` · xls: 1
+- `Emp/Emp15-Abr` · xls: 1
+- `Emp/Emp15-Ago` · xls: 1
+- `Emp/Emp15-Dic` · xlsx: 1
+- `Emp/Emp15-Ene` · xls: 1
+- `Emp/Emp15-Feb` · xls: 1
+- `Emp/Emp15-Jul` · xls: 1
+- `Emp/Emp15-Jun` · xls: 1
+- `Emp/Emp15-Mar` · xls: 1
+- `Emp/Emp15-May` · xls: 1
+- `Emp/Emp15-Nov` · xls: 1
+- `Emp/Emp15-Oct` · xls: 1
+- `Emp/Emp15-Sep` · xls: 1
+- `Emp/Emp16-Abr` · xlsx: 1
+- `Emp/Emp16-Ago` · xlsx: 1
+- `Emp/Emp16-Dic` · xlsx: 1
+- `Emp/Emp16-Ene` · xlsx: 1
+- `Emp/Emp16-Feb` · xlsx: 1
+- `Emp/Emp16-Jul` · xlsx: 1
+- `Emp/Emp16-Jun` · xlsx: 1
+- `Emp/Emp16-Mar` · xlsx: 1
+- `Emp/Emp16-May` · xlsx: 1
+- `Emp/Emp16-Nov` · xlsx: 1
+- `Emp/Emp16-Oct` · xlsx: 1
+- `Emp/Emp16-Sep` · xlsx: 1
+- `Emp/Emp17-Abr` · xlsx: 1
+- `Emp/Emp17-Ago` · xlsx: 1
+- `Emp/Emp17-Dic` · xlsx: 1
+- `Emp/Emp17-Ene` · xlsx: 1
+- `Emp/Emp17-Feb` · xlsx: 1
+- `Emp/Emp17-Jul` · xlsx: 1
+- `Emp/Emp17-Jun` · xlsx: 1
+- `Emp/Emp17-Mar` · xlsx: 1
+- `Emp/Emp17-May` · xlsx: 1
+- `Emp/Emp17-Nov` · xlsx: 1
+- `Emp/Emp17-Oct` · xlsx: 1
+- `Emp/Emp17-Sep` · xlsx: 1
+- `Emp/Emp18-Abr` · xlsx: 1
+- `Emp/Emp18-Ago` · xlsx: 1
+- `Emp/Emp18-Dic` · xlsx: 1
+- `Emp/Emp18-Ene` · xlsx: 1
+- `Emp/Emp18-Feb` · xlsx: 1
+- `Emp/Emp18-Jul` · xlsx: 1
+- `Emp/Emp18-Jun` · xlsx: 1
+- `Emp/Emp18-Mar` · xlsx: 1
+- `Emp/Emp18-May` · xlsx: 1
+- `Emp/Emp18-Nov` · xlsx: 1
+- `Emp/Emp18-Oct` · xlsx: 1
+- `Emp/Emp18-Sep` · xlsx: 1
+- `Emp/Emp19-Abr` · xlsx: 1
+- `Emp/Emp19-Ago` · xlsx: 1
+- `Emp/Emp19-Dic` · xlsx: 1
+- `Emp/Emp19-Ene` · xlsx: 1
+- `Emp/Emp19-Feb` · xlsx: 1
+- `Emp/Emp19-Jul` · xlsx: 1
+- `Emp/Emp19-Jun` · xlsx: 1
+- `Emp/Emp19-Mar` · xlsx: 1
+- `Emp/Emp19-May` · xlsx: 1
+- `Emp/Emp19-Nov` · xlsx: 1
+- `Emp/Emp19-Oct` · xlsx: 1
+- `Emp/Emp19-Sep` · xlsx: 1
+- `Emp/Emp20-Abr` · xlsx: 1
+- `Emp/Emp20-Ago` · xlsx: 1
+- `Emp/Emp20-Dic` · xlsx: 1
+- `Emp/Emp20-Ene` · xlsx: 1
+- `Emp/Emp20-Feb` · xlsx: 1
+- `Emp/Emp20-Jul` · xlsx: 1
+- `Emp/Emp20-Jun` · xlsx: 1
+- `Emp/Emp20-Mar` · xlsx: 1
+- `Emp/Emp20-May` · xlsx: 1
+- `Emp/Emp20-Nov` · xlsx: 1
+- `Emp/Emp20-Oct` · xlsx: 1
+- `Emp/Emp20-Sep` · xlsx: 1
+- `Emp/Emp21-Abr` · xlsx: 1
+- `Emp/Emp21-Ago` · xlsx: 1
+- `Emp/Emp21-Dic` · xlsx: 1
+- `Emp/Emp21-Ene` · xlsx: 1
+- `Emp/Emp21-Feb` · xlsx: 1
+- `Emp/Emp21-Jul` · xlsx: 1
+- `Emp/Emp21-Jun` · xlsx: 1
+- `Emp/Emp21-Mar` · xlsx: 1
+- `Emp/Emp21-May` · xlsx: 1
+- `Emp/Emp21-Nov` · xlsx: 1
+- `Emp/Emp21-Oct` · xlsx: 1
+- `Emp/Emp21-Sep` · xlsx: 1
+- `Emp/Emp22-Abr` · xlsx: 1
+- `Emp/Emp22-Ago` · xlsx: 1
+- `Emp/Emp22-Dic` · xlsx: 1
+- `Emp/Emp22-Ene` · xlsx: 1
+- `Emp/Emp22-Feb` · xlsx: 1
+- `Emp/Emp22-Jul` · xlsx: 1
+- `Emp/Emp22-Jun` · xlsx: 1
+- `Emp/Emp22-Mar` · xlsx: 1
+- `Emp/Emp22-May` · xlsx: 1
+- `Emp/Emp22-Nov` · xlsx: 1
+- `Emp/Emp22-Oct` · xlsx: 1
+- `Emp/Emp22-Sep` · xlsx: 1
+- `Emp/Emp23-Abr` · xlsx: 1
+- `Emp/Emp23-Ago` · xlsx: 1
+- `Emp/Emp23-Dic` · xlsx: 1
+- `Emp/Emp23-Ene` · xlsx: 1
+- `Emp/Emp23-Feb` · xlsx: 1
+- `Emp/Emp23-Jul` · xlsx: 1
+- `Emp/Emp23-Jun` · xlsx: 1
+- `Emp/Emp23-Mar` · xlsx: 1
+- `Emp/Emp23-May` · xlsx: 1
+- `Emp/Emp23-Nov` · xlsx: 1
+- `Emp/Emp23-Oct` · xlsx: 1
+- `Emp/Emp23-Sep` · xlsx: 1
+- `Emp/Emp24-Abr` · xlsx: 1
+- `Emp/Emp24-Ago` · xlsx: 1
+- `Emp/Emp24-Dic` · xlsx: 1
+- `Emp/Emp24-Ene` · xlsx: 1
+- `Emp/Emp24-Feb` · xlsx: 1
+- `Emp/Emp24-Jul` · xlsx: 1
+- `Emp/Emp24-Jun` · xlsx: 1
+- `Emp/Emp24-Mar` · xlsx: 1
+- `Emp/Emp24-May` · xlsx: 1
+- `Emp/Emp24-Nov` · xlsx: 1
+- `Emp/Emp24-Oct` · xlsx: 1
+- `Emp/Emp24-Sep` · xlsx: 1
+- `Emp/Emp25-Abr` · xlsx: 1
+- `Emp/Emp25-Ago` · xlsx: 1
+- `Emp/Emp25-Dic` · xlsx: 1
+- `Emp/Emp25-Ene` · xlsx: 1
+- `Emp/Emp25-Feb` · xlsx: 1
+- `Emp/Emp25-Jul` · xlsx: 1
+- `Emp/Emp25-Jun` · xlsx: 1
+- `Emp/Emp25-Mar` · xlsx: 1
+- `Emp/Emp25-May` · xlsx: 1
+- `Emp/Emp25-Nov` · xlsx: 1
+- `Emp/Emp25-Oct` · xlsx: 1
+- `Emp/Emp25-Sep` · xlsx: 1
+- `Emp/Emp26-Abr` · xlsx: 1
+- `Emp/Emp26-Ago` · xlsx: 1
+- `Emp/Emp26-Ene` · xlsx: 1
+- `Emp/Emp26-Feb` · xlsx: 1
+- `Emp/Emp26-Jul` · xlsx: 1
+- `Emp/Emp26-Jun` · xlsx: 1
+- `Emp/Emp26-Mar` · xlsx: 1
+- `Emp/Emp26-May` · xlsx: 1
+- `Mac/Mac13` · xls: 1
+- `Mac/Mac14` · xls: 1
+- `Mac/Mac14Dicpublicacion` · xls: 1
+- `Mac/Mac15` · xls: 1
+- `Mac/Mac15DicPublicacion` · xls: 1
+- `Mac/Mac16Dicpublicacion` · xls: 1
+- `Mac/Mac17dicpublicacion` · xls: 1
+- `Mac/mac12` · xls: 1
+- `Mac/mac16` · xls: 1
+- `Mac/mac17` · xls: 1
+- `Mac/mac18` · xls: 1
+- `Mac/mac18dicpublicacion` · xls: 1
+- `Mac/mac19` · xls: 1
+- `Mac/mac19dicpublicacion` · xls: 1
+- `Mac/mac20` · xls: 1
+- `Mac/mac20dicpublicacion` · xlsx: 1
+- `Mac/mac21` · xls: 1
+- `Mac/mac21dicpublicacion` · xlsx: 1
+- `Mac/mac22` · xls: 1
+- `Mac/mac22dicpublicacion` · xlsx: 1
+- `Mac/mac22junpublicacion` · xlsx: 1
+- `Mac/mac22marpublicacion` · xlsx: 1
+- `Mac/mac22seppublicacion` · xlsx: 1
+- `Mac/mac23` · xls: 1
+- `Mac/mac23dicpublicacion` · xlsx: 1
+- `Mac/mac23junpublicacion` · xlsx: 1
+- `Mac/mac23marpublicacion` · xlsx: 1
+- `Mac/mac23seppublicacion` · xlsx: 1
+- `Mac/mac24` · xls: 1
+- `Mac/mac24dicpublicacion` · xlsx: 1
+- `Mac/mac24junpublicacion` · xlsx: 1
+- `Mac/mac24marpublicacion` · xlsx: 1
+- `Mac/mac24seppublicacion` · xlsx: 1
+- `Mac/mac25` · xls: 1
+- `Mac/mac25dicpublicacion` · xlsx: 1
+- `Mac/mac25junpublicacion` · xlsx: 1
+- `Mac/mac25marpublicacion` · xlsx: 1
+- `Mac/mac25seppublicacion` · xlsx: 1
+- `Mac/mac26junpublicacion` · xlsx: 1
+- `Mac/mac26marpublicacion` · xlsx: 1
+- `ajs/ajs13` · xls: 1
+- `ajs/ajs14` · xls: 1
+- `ajs/ajs15` · xls: 1
+- `ajs/ajs16` · xls: 1
+- `ajs/ajs17` · xls: 1
+- `ajs/ajs18` · xls: 1
+- `ajs/ajs19` · xls: 1
+- `ajs/ajs20` · xls: 1
+- `ajs/ajs21` · xls: 1
+- `ajs/ajs22` · xls: 1
+- `ajs/ajs23` · xls: 1
+- `ajs/ajs24` · xls: 1
+- `ajs/ajs25` · xls: 1
+- `ajs/ajs_141T` · xls: 1
+- `ajs/ajs_142T` · xls: 1
+- `ajs/ajs_143T` · xls: 1
+- `ajs/ajs_144T` · xls: 1
+- `ajs/ajs_151T` · xls: 1
+- `ajs/ajs_152T` · xls: 1
+- `ajs/ajs_153T` · xls: 1
+- `ajs/ajs_154T` · xls: 1
+- `ajs/ajs_161T` · xls: 1
+- `ajs/ajs_162T` · xls: 1
+- `ajs/ajs_163T` · xls: 1
+- `ajs/ajs_164T` · xls: 1
+- `ajs/ajs_171T` · xls: 1
+- `ajs/ajs_172T` · xls: 1
+- `ajs/ajs_173T` · xls: 1
+- `ajs/ajs_174T` · xls: 1
+- `ajs/ajs_181t` · xls: 1
+- `ajs/ajs_182t` · xls: 1
+- `ajs/ajs_183t` · xls: 1
+- `ajs/ajs_184t` · xls: 1
+- `ajs/ajs_191t` · xls: 1
+- `ajs/ajs_192t` · xls: 1
+- `ajs/ajs_193t` · xls: 1
+- `ajs/ajs_194t` · xls: 1
+- `ajs/ajs_201t` · xls: 1
+- `ajs/ajs_202t` · xls: 1
+- `ajs/ajs_203t` · xls: 1
+- `ajs/ajs_204t` · xls: 1
+- `ajs/ajs_211t` · xls: 1
+- `ajs/ajs_212t` · xls: 1
+- `ajs/ajs_213t` · xls: 1
+- `ajs/ajs_214t` · xls: 1
+- `ajs/ajs_221t` · xls: 1
+- `ajs/ajs_222t` · xls: 1
+- `ajs/ajs_223t` · xls: 1
+- `ajs/ajs_224t` · xls: 1
+- `ajs/ajs_231t` · xls: 1
+- `ajs/ajs_232t` · xls: 1
+- `ajs/ajs_233t` · xls: 1
+- `ajs/ajs_234t` · xls: 1
+- `ajs/ajs_241t` · xls: 1
+- `ajs/ajs_242t` · xls: 1
+- `ajs/ajs_243t` · xls: 1
+- `ajs/ajs_244t` · xls: 1
+- `ajs/ajs_251t` · xls: 1
+- `ajs/ajs_252t` · xls: 1
+- `ajs/ajs_253t` · xls: 1
+- `ajs/ajs_254t` · xls: 1
+- `ajs/ajs_261t` · xls: 1
+- `ajs/ajs_262t` · xls: 1
+- `cct/CCT12DEF` · xls: 1
+- `cct/CCT13DEF` · xls: 1
+- `cct/CCT14DEF` · xls: 1
+- `cct/CCT16AbrAv` · xls: 1
+- `cct/CCT16AgoAv` · xls: 1
+- `cct/CCT16DicAv` · xls: 1
+- `cct/CCT16EneAv` · xls: 1
+- `cct/CCT16FebAv` · xls: 1
+- `cct/CCT16JulAv` · xls: 1
+- `cct/CCT16JunAv` · xls: 1
+- `cct/CCT16MarAv` · xls: 1
+- `cct/CCT16MayAv` · xls: 1
+- `cct/CCT16NovAv` · xls: 1
+- `cct/CCT16OctAv` · xls: 1
+- `cct/CCT16SepAv` · xls: 1
+- `cct/CCT17AbrAv` · xls: 1
+- `cct/CCT17AgoAv` · xls: 1
+- `cct/CCT17DicAV` · xls: 1
+- `cct/CCT17EneAv` · xls: 1
+- `cct/CCT17FebAv` · xls: 1
+- `cct/CCT17JulAv` · xls: 1
+- `cct/CCT17JunAv` · xls: 1
+- `cct/CCT17MarAv` · xls: 1
+- `cct/CCT17MayAv` · xls: 1
+- `cct/CCT17NovAV` · xls: 1
+- `cct/CCT17OctAv` · xls: 1
+- `cct/CCT17SepAv` · xls: 1
+- `cct/cct14AbrAv` · xls: 1
+- `cct/cct14AgoAv` · xls: 1
+- `cct/cct14DicAv` · xls: 1
+- `cct/cct14EneAv` · xls: 1
+- `cct/cct14FebAv` · xls: 1
+- `cct/cct14JulAv` · xls: 1
+- `cct/cct14JunAv` · xls: 1
+- `cct/cct14MarAv` · xls: 1
+- `cct/cct14MayAv` · xls: 1
+- `cct/cct14NovAv` · xls: 1
+- `cct/cct14OctAv` · xls: 1
+- `cct/cct14SepAv` · xls: 1
+- `cct/cct15AbrAv` · xls: 1
+- `cct/cct15AgoAv` · xls: 1
+- `cct/cct15DEF` · xls: 1
+- `cct/cct15DicAv` · xls: 1
+- `cct/cct15EneAv` · xls: 1
+- `cct/cct15FebAv` · xls: 1
+- `cct/cct15JulAv` · xls: 1
+- `cct/cct15JunAv` · xls: 1
+- `cct/cct15MarAv` · xls: 1
+- `cct/cct15MayAv` · xls: 1
+- `cct/cct15NovAv` · xls: 1
+- `cct/cct15OctAv` · xls: 1
+- `cct/cct15SepAv` · xls: 1
+- `cct/cct18abrav` · xls: 1
+- `cct/cct18agoav` · xls: 1
+- `cct/cct18dicav` · xls: 1
+- `cct/cct18eneav` · xls: 1
+- `cct/cct18febav` · xls: 1
+- `cct/cct18julav` · xls: 1
+- `cct/cct18junav` · xls: 1
+- `cct/cct18marav` · xls: 1
+- `cct/cct18mayav` · xls: 1
+- `cct/cct18novav` · xls: 1
+- `cct/cct18octav` · xls: 1
+- `cct/cct18sepav` · xls: 1
+- `cct/cct19abrav` · xls: 1
+- `cct/cct19agoav` · xls: 1
+- `cct/cct19dicav` · xls: 1
+- `cct/cct19eneav` · xls: 1
+- `cct/cct19febav` · xls: 1
+- `cct/cct19julav` · xls: 1
+- `cct/cct19junav` · xls: 1
+- `cct/cct19marav` · xls: 1
+- `cct/cct19mayav` · xls: 1
+- `cct/cct19novav` · xls: 1
+- `cct/cct19octav` · xls: 1
+- `cct/cct19sepav` · xls: 1
+- `cct/cct20abrav` · xls: 1
+- `cct/cct20agoav` · xls: 1
+- `cct/cct20dicav` · xls: 1
+- `cct/cct20eneav` · xls: 1
+- `cct/cct20febav` · xls: 1
+- `cct/cct20julav` · xls: 1
+- `cct/cct20junav` · xls: 1
+- `cct/cct20marav` · xls: 1
+- `cct/cct20mayav` · xls: 1
+- `cct/cct20novav` · xls: 1
+- `cct/cct20octav` · xls: 1
+- `cct/cct20sepav` · xls: 1
+- `cct/cct21abrav` · xls: 1
+- `cct/cct21agoav` · xls: 1
+- `cct/cct21dicav` · xls: 1
+- `cct/cct21eneav` · xls: 1
+- `cct/cct21febav` · xls: 1
+- `cct/cct21julav` · xls: 1
+- `cct/cct21junav` · xls: 1
+- `cct/cct21marav` · xls: 1
+- `cct/cct21mayav` · xls: 1
+- `cct/cct21novav` · xls: 1
+- `cct/cct21octav` · xls: 1
+- `cct/cct21sepav` · xls: 1
+- `cct/cct22abrav` · xls: 1
+- `cct/cct22agoav` · xls: 1
+- `cct/cct22dicav` · xls: 1
+- `cct/cct22eneav` · xls: 1
+- `cct/cct22febav` · xls: 1
+- `cct/cct22julav` · xls: 1
+- `cct/cct22junav` · xls: 1
+- `cct/cct22marav` · xls: 1
+- `cct/cct22mayav` · xls: 1
+- `cct/cct22novav` · xls: 1
+- `cct/cct22octav` · xls: 1
+- `cct/cct22sepav` · xls: 1
+- `cct/cct23abrav` · xls: 1
+- `cct/cct23agoav` · xls: 1
+- `cct/cct23dicav` · xls: 1
+- `cct/cct23eneav` · xls: 2
+- `cct/cct23febav` · xls: 1
+- `cct/cct23julav` · xls: 1
+- `cct/cct23junav` · xls: 1
+- `cct/cct23marav` · xls: 1
+- `cct/cct23mayav` · xls: 1
+- `cct/cct23novav` · xls: 1
+- `cct/cct23octav` · xls: 1
+- `cct/cct23sepav` · xls: 1
+- `cct/cct24abrav` · xls: 1
+- `cct/cct24agoav` · xls: 1
+- `cct/cct24dicav` · xls: 1
+- `cct/cct24eneav` · xls: 1
+- `cct/cct24febav` · xls: 1
+- `cct/cct24julav` · xls: 1
+- `cct/cct24junav` · xls: 1
+- `cct/cct24marav` · xls: 1
+- `cct/cct24mayav` · xls: 1
+- `cct/cct24novav` · xls: 1
+- `cct/cct24octav` · xls: 1
+- `cct/cct24sepav` · xls: 1
+- `cct/cct25abrav` · xls: 1
+- `cct/cct25agoav` · xls: 1
+- `cct/cct25dicav` · xls: 1
+- `cct/cct25eneav` · xls: 1
+- `cct/cct25febav` · xls: 1
+- `cct/cct25julav` · xls: 1
+- `cct/cct25junav` · xls: 1
+- `cct/cct25marav` · xls: 1
+- `cct/cct25mayav` · xls: 1
+- `cct/cct25novav` · xls: 1
+- `cct/cct25octav` · xls: 1
+- `cct/cct25pro` · xls: 1
+- `cct/cct25sepav` · xls: 1
+- `cct/cct26abrav` · xls: 1
+- `cct/cct26agoav` · xls: 1
+- `cct/cct26eneav` · xls: 1
+- `cct/cct26febav` · xls: 1
+- `cct/cct26julav` · xls: 1
+- `cct/cct26junav` · xls: 1
+- `cct/cct26marav` · xls: 1
+- `cct/cct26mayav` · xls: 1
+- `dec/dec15_18` · xls: 1
+- `dec/dec19` · xls: 1
+- `dec/dec20` · xls: 1
+- `dec/dec21` · xls: 1
+- `dec/dec22` · xls: 1
+- `dec/dec23` · xls: 1
+- `dec/dec24` · xls: 1
+- `eat/eat20_12` · xls: 1
+- `eat/eat21_01` · xls: 1
+- `eat/eat21_02` · xls: 1
+- `eat/eat21_03` · xlsx: 1
+- `eat/eat21_04` · xlsx: 1
+- `eat/eat21_05` · xlsx: 1
+- `eat/eat21_06` · xlsx: 1
+- `eat/eat21_07` · xlsx: 1
+- `eat/eat21_08` · xlsx: 1
+- `eat/eat21_09` · xlsx: 1
+- `eat/eat21_10` · xlsx: 1
+- `eat/eat21_11` · xlsx: 1
+- `eat/eat21_12` · xlsx: 1
+- `eat/eat22_01` · xlsx: 1
+- `eat/eat22_02` · xlsx: 1
+- `eat/eat22_03` · xlsx: 1
+- `eat/eat22_04` · xlsx: 1
+- `eat/eat22_05` · xlsx: 1
+- `eat/eat22_06` · xlsx: 1
+- `eat/eat22_07` · xlsx: 1
+- `eat/eat22_08` · xlsx: 1
+- `eat/eat22_09` · xlsx: 1
+- `eat/eat22_10` · xlsx: 1
+- `eat/eat22_11` · xlsx: 1
+- `eat/eat22_12` · xlsx: 1
+- `eat/eat23_01` · xlsx: 1
+- `eat/eat23_02` · xlsx: 1
+- `eat/eat23_03` · xlsx: 1
+- `eat/eat23_04` · xlsx: 1
+- `eat/eat23_05` · xlsx: 1
+- `eat/eat23_06` · xlsx: 1
+- `eat/eat23_07` · xlsx: 1
+- `eat/eat23_08` · xlsx: 1
+- `eat/eat23_09` · xlsx: 1
+- `eat/eat23_10` · xlsx: 1
+- `eat/eat23_11` · xlsx: 1
+- `eat/eat23_12` · xlsx: 1
+- `eat/eat24_01` · xlsx: 1
+- `eat/eat24_02` · xlsx: 1
+- `eat/eat24_03` · xlsx: 1
+- `eat/eat24_04` · xlsx: 1
+- `eat/eat24_05` · xlsx: 1
+- `eat/eat24_06` · xlsx: 1
+- `eat/eat24_07` · xlsx: 1
+- `eat/eat24_08` · xlsx: 1
+- `eat/eat24_09` · xlsx: 1
+- `eat/eat24_10` · xlsx: 1
+- `eat/eat24_11` · xlsx: 1
+- `eat/eat24_12` · xlsx: 1
+- `eat/eat25_01` · xlsx: 1
+- `eat/eat25_02` · xlsx: 1
+- `eat/eat25_03` · xlsx: 1
+- `eat/eat25_04` · xlsx: 1
+- `eat/eat25_05` · xlsx: 1
+- `eat/eat25_06` · xlsx: 1
+- `eat/eat25_07` · xlsx: 1
+- `eat/eat25_08` · xlsx: 1
+- `eat/eat25_09` · xlsx: 1
+- `eat/eat25_10` · xlsx: 1
+- `eat/eat25_11` · xlsx: 1
+- `eat/eat25_12` · xlsx: 1
+- `eat/eat26_01` · xlsx: 1
+- `eat/eat26_02` · xlsx: 1
+- `eat/eat26_03` · xlsx: 1
+- `eat/eat26_04` · xlsx: 1
+- `eat/eat26_05` · xlsx: 1
+- `eat/eat26_06` · xlsx: 1
+- `eat/eat26_07` · xlsx: 1
+- `hue/hue00` · xlsx: 1
+- `hue/hue01` · xlsx: 1
+- `hue/hue02` · xlsx: 1
+- `hue/hue03` · xlsx: 1
+- `hue/hue04` · xlsx: 1
+- `hue/hue05` · xlsx: 1
+- `hue/hue06` · xlsx: 1
+- `hue/hue07` · xlsx: 1
+- `hue/hue08` · xlsx: 1
+- `hue/hue09` · xlsx: 1
+- `hue/hue10` · xlsx: 1
+- `hue/hue11` · xlsx: 1
+- `hue/hue12` · xls: 1
+- `hue/hue13` · xls: 1
+- `hue/hue14` · xls: 1
+- `hue/hue14dicpublicacion` · xls: 1
+- `hue/hue15` · xls: 1
+- `hue/hue15dicpublicacion` · xls: 1
+- `hue/hue16` · xls: 1
+- `hue/hue16dicpublicacion` · xls: 1
+- `hue/hue17` · xls: 1
+- `hue/hue17dicpublicacion` · xls: 1
+- `hue/hue18` · xls: 1
+- `hue/hue18dicpublicacion` · xls: 1
+- `hue/hue19` · xls: 1
+- `hue/hue19dicpublicacion` · xls: 2
+- `hue/hue20` · xls: 1
+- `hue/hue20dicpublicacion` · xls: 2
+- `hue/hue21` · xls: 1
+- `hue/hue21dicpublicacion` · xls: 2
+- `hue/hue22` · xls: 1
+- `hue/hue22abrpublicacion` · xls: 2
+- `hue/hue22agopublicacion` · xls: 2
+- `hue/hue22dicpublicacion` · xls: 2
+- `hue/hue22enepublicacion` · xls: 2
+- `hue/hue22febpublicacion` · xls: 2
+- `hue/hue22julpublicacion` · xls: 2
+- `hue/hue22junpublicacion` · xls: 2
+- `hue/hue22marpublicacion` · xls: 2
+- `hue/hue22maypublicacion` · xls: 2
+- `hue/hue22novpublicacion` · xls: 2
+- `hue/hue22octpublicacion` · xls: 2
+- `hue/hue22seppublicacion` · xls: 2
+- `hue/hue23` · xls: 1
+- `hue/hue23abrpublicacion` · xls: 2
+- `hue/hue23agopublicacion` · xls: 2
+- `hue/hue23dicpublicacion` · xls: 2
+- `hue/hue23enepublicacion` · xls: 2
+- `hue/hue23febpublicacion` · xls: 2
+- `hue/hue23julpublicacion` · xls: 2
+- `hue/hue23junpublicacion` · xls: 2
+- `hue/hue23marpublicacion` · xls: 2
+- `hue/hue23maypublicacion` · xls: 2
+- `hue/hue23novpublicacion` · xls: 2
+- `hue/hue23octpublicacion` · xls: 2
+- `hue/hue23seppublicacion` · xls: 2
+- `hue/hue24` · xls: 1
+- `hue/hue24abrpublicacion` · xls: 2
+- `hue/hue24agopublicacion` · xls: 2
+- `hue/hue24dicpublicacion` · xls: 2
+- `hue/hue24enepublicacion` · xls: 2
+- `hue/hue24febpublicacion` · xls: 2
+- `hue/hue24julpublicacion` · xls: 2
+- `hue/hue24junpublicacion` · xls: 2
+- `hue/hue24marpublicacion` · xls: 2
+- `hue/hue24maypublicacion` · xls: 2
+- `hue/hue24novpublicacion` · xls: 2
+- `hue/hue24octpublicacion` · xls: 2
+- `hue/hue24seppublicacion` · xls: 2
+- `hue/hue25` · xls: 1
+- `hue/hue25abrpublicacion` · xls: 2
+- `hue/hue25agopublicacion` · xls: 2
+- `hue/hue25dicpublicacion` · xls: 2
+- `hue/hue25enepublicacion` · xls: 2
+- `hue/hue25febpublicacion` · xls: 2
+- `hue/hue25julpublicacion` · xls: 2
+- `hue/hue25junpublicacion` · xls: 2
+- `hue/hue25marpublicacion` · xls: 2
+- `hue/hue25maypublicacion` · xls: 2
+- `hue/hue25novpublicacion` · xls: 2
+- `hue/hue25octpublicacion` · xls: 2
+- `hue/hue25seppublicacion` · xls: 2
+- `hue/hue26abrpublicacion` · xls: 2
+- `hue/hue26enepublicacion` · xls: 2
+- `hue/hue26febpublicacion` · xls: 2
+- `hue/hue26julpublicacion` · xls: 1
+- `hue/hue26junpublicacion` · xls: 1
+- `hue/hue26marpublicacion` · xls: 2
+- `hue/hue26maypublicacion` · xls: 2
+- `reg/Reg14` · xls: 1
+- `reg/Reg15` · xls: 1
+- `reg/Reg15Ene-Dic` · xls: 1
+- `reg/Reg16` · xls: 1
+- `reg/Reg16Ene-Dic` · xls: 1
+- `reg/Reg17Ene-Dic` · xls: 1
+- `reg/reg17` · xls: 1
+- `reg/reg18` · xls: 1
+- `reg/reg18ene_dic` · xls: 1
+- `reg/reg19` · xls: 1
+- `reg/reg19ene_dic` · xls: 1
+- `reg/reg20ene` · xls: 1
+- `reg/reg20ene_abr` · xls: 1
+- `reg/reg20ene_ago` · xls: 1
+- `reg/reg20ene_dic` · xls: 1
+- `reg/reg20ene_feb` · xls: 1
+- `reg/reg20ene_jul` · xls: 1
+- `reg/reg20ene_jun` · xls: 1
+- `reg/reg20ene_mar` · xls: 1
+- `reg/reg20ene_may` · xls: 1
+- `reg/reg20ene_nov` · xls: 1
+- `reg/reg20ene_oct` · xls: 1
+- `reg/reg20ene_sep` · xls: 1
+- `reg/reg21` · xls: 1
+- `reg/reg21ene` · xls: 1
+- `reg/reg21ene_abr` · xls: 1
+- `reg/reg21ene_ago` · xls: 1
+- `reg/reg21ene_dic` · xlsx: 1
+- `reg/reg21ene_feb` · xls: 1
+- `reg/reg21ene_jul` · xls: 1
+- `reg/reg21ene_jun` · xls: 1
+- `reg/reg21ene_mar` · xls: 1
+- `reg/reg21ene_may` · xls: 1
+- `reg/reg21ene_nov` · xls: 1
+- `reg/reg21ene_oct` · xls: 1
+- `reg/reg21ene_sep` · xls: 1
+- `reg/reg22` · xls: 1
+- `reg/reg22abr` · xls: 1
+- `reg/reg22ago` · xls: 1
+- `reg/reg22ene` · xls: 1
+- `reg/reg22ene_dic` · xlsx: 1
+- `reg/reg22feb` · xls: 1
+- `reg/reg22jul` · xls: 1
+- `reg/reg22jun` · xls: 1
+- `reg/reg22mar` · xls: 1
+- `reg/reg22may` · xls: 1
+- `reg/reg22nov` · xlsx: 1
+- `reg/reg22oct` · xlsx: 1
+- `reg/reg22sep` · xlsx: 1
+- `reg/reg23` · xls: 1
+- `reg/reg23abr` · xlsx: 1
+- `reg/reg23ago` · xlsx: 1
+- `reg/reg23ene` · xlsx: 1
+- `reg/reg23ene_dic` · xlsx: 1
+- `reg/reg23feb` · xlsx: 1
+- `reg/reg23jul` · xlsx: 1
+- `reg/reg23jun` · xlsx: 1
+- `reg/reg23mar` · xlsx: 1
+- `reg/reg23may` · xlsx: 1
+- `reg/reg23nov` · xlsx: 1
+- `reg/reg23oct` · xlsx: 1
+- `reg/reg23sep` · xlsx: 1
+- `reg/reg24` · xlsx: 1
+- `reg/reg24abr` · xlsx: 1
+- `reg/reg24ago` · xlsx: 1
+- `reg/reg24dic` · xlsx: 1
+- `reg/reg24ene` · xlsx: 1
+- `reg/reg24ene_dic` · xlsx: 1
+- `reg/reg24feb` · xlsx: 1
+- `reg/reg24jul` · xlsx: 1
+- `reg/reg24jun` · xlsx: 1
+- `reg/reg24mar` · xlsx: 1
+- `reg/reg24may` · xlsx: 1
+- `reg/reg24nov` · xlsx: 1
+- `reg/reg24oct` · xlsx: 1
+- `reg/reg24sep` · xlsx: 1
+- `reg/reg25` · xlsx: 1
+- `reg/reg25abr` · xlsx: 1
+- `reg/reg25ago` · xlsx: 1
+- `reg/reg25dic` · xlsx: 1
+- `reg/reg25ene` · xlsx: 1
+- `reg/reg25feb` · xlsx: 1
+- `reg/reg25jul` · xlsx: 1
+- `reg/reg25jun` · xlsx: 1
+- `reg/reg25mar` · xlsx: 1
+- `reg/reg25may` · xlsx: 1
+- `reg/reg25nov` · xlsx: 1
+- `reg/reg25oct` · xlsx: 1
+- `reg/reg25sep` · xlsx: 1
+- `reg/reg26abr` · xlsx: 1
+- `reg/reg26ene` · xlsx: 1
+- `reg/reg26feb` · xlsx: 1
+- `reg/reg26jun` · xlsx: 1
+- `reg/reg26mar` · xlsx: 1
+- `reg/reg26may` · xlsx: 1
 
-### Por dentro: `hue_monografica_2000.xlsx`
-    - descarga: 200, 502027 bytes
-    - 60 hojas: «Indice», «I.1», «I.2», «I.3», «I.4.1», «I.4.2», «I.4.3», «I.5», «I.6», «I.7», «I.8», «I.9», «I.10», «I.11», «I.12», «I.13», «II.1», «II.2», «Cont2.1», «Cont2.2», «Cont2.3», «Cont2.4», «Conclusión2», «II.3», «Cont3.1», «Cont3.2», «Cont3.3», «Cont3.4», «Cont3.5», «Cont3.6»
-    - hoja «Indice», 28 filas:
-        ·   | I. CONFLICTOS DESARROLLADOS EN 2000
-        · I.1. |  Conflictos desarrollados, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por tipo de conflicto, ámbitos territorial y sectorial y sector institucional .
-        · I.2.  | Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por ámbitos territorial y sectorial y sector institucional.
-        · I.3. |  Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por tipo de convenio.
-        · I.4.1. | Conflictos desarrollados, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por sector y rama de actividad.
-        · I.4.2. |  Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por sector y rama de actividad.
-        · I.4.3. |  Cierres patronales desarrollados, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por sector y rama de actividad.
-        · I.5. |  Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por ámbito territorial .
-        · I.6. |  Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por motivación.
-        · I.7. |  Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por organización convocante (en porcentaje) .
-        · I.8.  | Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por diversos indicadores del nivel de incidencia.
-        · I.9. |  Huelgas desarrolladas, según número de trabajadores participantes, por sector y rama de actividad.
-        · I.10.  | Huelgas desarrolladas, según días de duración, por sector y rama de actividad.
-        · I.11. |  Huelgas desarrolladas, según número de jornadas no trabajadas, por sector y rama de actividad.
-        · I.12. |  Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, según período de iniciación y terminación de las huelgas.
-        · I.13.  | Huelgas terminadas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, según forma de terminación y resultados.
-        ·   | II. REPERCUSIÓN TERRITORIAL DE LOS CONFLICTOS
-        · II.1. |  Repercusión territorial de las huelgas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por comunidad autónoma y provincia .
-        · II.2. | Repercusión territorial de las huelgas, trabajadores participantes y jornadas no trabajadas, según comunidad autónoma, por sector y rama de actividad .
-    - hoja «I.1», 34 filas:
-        ·  | CUADRO I.1. CONFLICTOS DESARROLLADOS, CENTROS DE TRABAJO CONVOCADOS E IMPLICADOS, TRABAJADORES PARTICIPANTES Y JORNADAS
-NO TRABAJADAS, POR TIPO DE CONFLICTO, AMBITOS TERRITORIAL Y SECTORIAL Y SECTOR INSTITUCIONAL
-        ·  | Año 2000
-        ·  | TIPO DE CONFLICTO, AMBITOS
-TERRITORIAL Y SECTORIAL
-Y SECTOR INSTITUCIONAL | CONFLICTOS | CENTROS DE TRABAJO
-CONVOCADOS |  | CENTROS DE TRABAJO
-IMPLICADOS |  | TRABAJADORES
-PARTICI-
-PANTES | JORNADAS NO
-TRABAJADAS
-        ·  |  |  | Centros | Plantilla | Centros | Plantilla
-        ·  | T O T A L | 750 | 723533 | 6112354 | 579633 | 5395013 | 2067287 | 3616907
-        ·  | HUELGAS | 727 | 722129 | 6096555 | 578672 | 5380646 | 2061349 | 3577301
-        ·  | 
-  Con preaviso | 618 | 448479 | 3059867 | 325885 | 2447820 | 1521181 | 2775169
-        ·  |   Sin preaviso | 109 | 273650 | 3036688 | 252787 | 2932826 | 540168 | 802132
-        ·  | CIERRES PATRONALES | 23 | 1404 | 15799 | 961 | 14367 | 5938 | 39606
-        ·  | 
-  Con comunicación | 14 | 722 | 12847 | 279 | 11415 | 3148 | 24294
-        ·  |   Sin comunicación | 9 | 682 | 2952 | 682 | 2952 | 2790 | 15312
-        ·  | 
-CONFLICTOS SEGUN AMBITO TERRITORIAL
-        ·  | 
-  Municipal | 286 | 787 | 83699 | 334 | 78898 | 40292 | 124234
-        ·  |   Comarcal | 17 | 68 | 29659 | 66 | 29459 | 9384 | 21024
-        ·  |   Provincial | 385 | 74884 | 1014545 | 69700 | 963545 | 151592 | 737623
-        ·  |   Autonómico | 27 | 101740 | 329674 | 87005 | 212047 | 99678 | 203270
-        ·  |   Nacional | 35 | 546054 | 4654777 | 422528 | 4111064 | 1766341 | 2530756
-        ·  | 
-CONFLICTOS SEGUN AMBITO SECTORIAL
-        ·  | 
-  Uno o varios centros de una empresa | 278 | 543 | 80176 | 532 | 79304 | 36370 | 111691
-        ·  |   Todos los centros de una empresa | 392 | 6311 | 448943 | 4178 | 370345 | 97556 | 264973
-        ·  |   Conjunto de empresas de un grupo | 5 | 213 | 1582 | 213 | 1582 | 1495 | 4855
-        ·  |   Sector | 69 | 663176 | 4932831 | 521440 | 4295030 | 1896296 | 3199318
-        ·  |   General | 6 | 53290 | 648822 | 53270 | 648752 | 35570 | 36070
-        ·  | 
-SECTOR INSTITUCIONAL
-        ·  | 
-  Sector privado: | 575 | 481645 | 1785514 | 382120 | 1440880 | 891670 | 1699346
+## afiliación · 0 ficheros
 
-### Por dentro: `hue_monografica_2001.xlsx`
-    - descarga: 200, 394137 bytes
-    - 62 hojas: «Indice», «I.1», «I.2», «I.3», «I4.1», «I4.2», «I4.3», «I5.1», «Cont5», «I.6», «I.7», «I.8», «I.9», «I.10», «I.11», «I.12», «I.13», «II.1», «cont1», «II.2», «Cont2.1», «Cont2.2», «Cont2.3», «Cont2.4», «conclusion2», «II.3», «Cont3.1», «Cont3.2», «Cont3.3», «Cont3.4 »
-    - hoja «Indice», 28 filas:
-        ·   | I. CONFLICTOS DESARROLLADOS EN 2001
-        · I.1. |  Conflictos desarrollados, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por tipo de conflicto, ámbitos territorial y sectorial y sector institucional .
-        · I.2.  | Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por ámbitos territorial y sectorial y sector institucional.
-        · I.3. |  Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por tipo de convenio.
-        · I.4.1. | Conflictos desarrollados, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por sector y rama de actividad.
-        · I.4.2. |  Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por sector y rama de actividad.
-        · I.4.3. |  Cierres patronales desarrollados, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por sector y rama de actividad.
-        · I.5. |  Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por ámbito territorial .
-        · I.6. |  Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por motivación.
-        · I.7. |  Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por organización convocante (en porcentaje) .
-        · I.8.  | Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por diversos indicadores del nivel de incidencia.
-        · I.9. |  Huelgas desarrolladas, según número de trabajadores participantes, por sector y rama de actividad.
-        · I.10.  | Huelgas desarrolladas, según días de duración, por sector y rama de actividad.
-        · I.11. |  Huelgas desarrolladas, según número de jornadas no trabajadas, por sector y rama de actividad.
-        · I.12. |  Huelgas desarrolladas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, según período de iniciación y terminación de las huelgas.
-        · I.13.  | Huelgas terminadas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, según forma de terminación y resultados.
-        ·   | II. REPERCUSIÓN TERRITORIAL DE LOS CONFLICTOS
-        · II.1. |  Repercusión territorial de las huelgas, centros de trabajo convocados e implicados, trabajadores participantes y jornadas no trabajadas, por comunidad autónoma y provincia .
-        · II.2. | Repercusión territorial de las huelgas, trabajadores participantes y jornadas no trabajadas, según comunidad autónoma, por sector y rama de actividad .
-    - hoja «I.1», 53 filas:
-        ·       CUADRO I.1. CONFLICTOS DESARROLLADOS, CENTROS DE TRABAJO CONVOCADOS E IMPLICADOS, TRABAJADORES PARTICIPANTES Y JORNADAS       
-        ·                    NO TRABAJADAS, POR TIPO DE CONFLICTO, AMBITOS TERRITORIAL Y SECTORIAL Y SECTOR INSTITUCIONAL                     
-        ·                                                                                                                   AÑO 2001          
-        ·                                          |              |                           |  |                           |  |              |              
-        ·                                          |              |    CENTROS DE TRABAJO     |  |    CENTROS DE TRABAJO     |  |              |              
-        ·        TIPO DE CONFLICTO, AMBITOS        |              |        CONVOCADOS         |  |        IMPLICADOS         |  | TRABAJADORES | JORNADAS NO  
-        ·         TERRITORIAL Y SECTORIAL          |  CONFLICTOS  |                           |  |                           |  |   PARTICI-   |  TRABAJADAS  
-        ·          Y SECTOR INSTITUCIONAL          |              |              |              |              |              |    PANTES    |              
-        ·                                          |              |   Centros    |  Plantilla   |   Centros    |  Plantilla   |              |              
-        ·                                          |              |              |              |              |              |              |              
-        ·                                          |              |              |              |              |              |              |              
-        · T O T A L............................... | 737 | 575201 | 5888163 | 293907 | 3290424 | 1244634 | 1923758
-        ·                                          |              |              |              |              |              |              |              
-        · HUELGAS................................. | 729 | 574648 | 5885927 | 293354 | 3288188 | 1242458 | 1916987
-        ·                                          |              |              |              |              |              |              |              
-        ·   Con preaviso.......................... | 691 | 571880 | 5829869 | 290611 | 3233047 | 1217078 | 1635228
-        ·   Sin preaviso.......................... | 38 | 2768 | 56058 | 2743 | 55141 | 25380 | 281759
-        ·                                          |              |              |              |              |              |              |              
-        · CIERRES PATRONALES...................... | 8 | 553 | 2236 | 553 | 2236 | 2176 | 6771
-        ·                                          |              |              |              |              |              |              |              
-        ·   Con comunicación...................... | 5 | 328 | 1741 | 328 | 1741 | 1681 | 6140
-        ·   Sin comunicación...................... | 3 | 225 | 495 | 225 | 495 | 495 | 631
-        ·                                          |              |              |              |              |              |              |              
-        · CONFLICTOS SEGUN AMBITO TERRITORIAL                                                                                                 
-        ·                                          |              |              |              |              |              |              |              
+
+*No hay ningún XLSX que abrir en este tema: o no hay ficheros o están todos en el .xls binario.*
 
 ## elecciones sindicales · 0 ficheros
 
