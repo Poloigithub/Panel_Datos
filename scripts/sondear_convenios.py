@@ -23,9 +23,10 @@ import xls  # noqa: E402
 SALIDA = RAIZ / "sondeos"
 CCT = "https://www.mites.gob.es/estadisticas/cct/cct26agoav/CCT_08_2026.xls"
 
-# Lo que se busca en el índice.
-INTERESA = ("provincia", "variacion salarial", "salarial", "ambito",
-            "comunidad autonoma")
+# Lo que se busca en el índice, y va ceñido a propósito: la primera vuelta
+# buscaba «ámbito» suelto y se traía media docena de tablas que hablan de
+# ámbito funcional, que no es el territorial. La que importa es una.
+INTERESA = ("variacion salarial", "comunidad autonoma y provincia")
 
 
 def normaliza(texto: str) -> str:
@@ -91,7 +92,7 @@ def main() -> int:
     print(f"  {len(interesantes)} hojas interesantes: {interesantes[:6]}")
     lineas += [f"## {len(interesantes)} hojas que suenan a lo que se busca", ""]
     for hoja in interesantes[:4]:
-        vuelca(lineas, libro, hoja)
+        vuelca(lineas, libro, hoja, tope=60)
 
     (SALIDA / "convenios.md").write_text("\n".join(lineas) + "\n", encoding="utf-8")
     print(f"escrito sondeos/convenios.md ({len(lineas)} líneas)")
