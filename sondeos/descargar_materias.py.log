@@ -15,6 +15,24 @@ Materias primas
     cobre: 800 meses, 1960M01 … 2026M08
     aluminio: 800 meses, 1960M01 … 2026M08
     oro: 800 meses, 1960M01 … 2026M08
+    wti: 536 meses, 1982M01 … 2026M08
+    gas_eeuu: 800 meses, 1960M01 … 2026M08
+    aceite_soja: 800 meses, 1960M01 … 2026M08
+    aceite_palma: 800 meses, 1960M01 … 2026M08
+    arroz: 800 meses, 1960M01 … 2026M08
+    cebada: 728 meses, 1960M01 … 2020M08
+    ternera: 800 meses, 1960M01 … 2026M08
+    pollo: 800 meses, 1960M01 … 2026M08
+    platano: 356 meses, 1997M01 … 2026M08
+    azucar_mundial: 800 meses, 1960M01 … 2026M08
+    dap: 716 meses, 1967M01 … 2026M08
+    potasa: 800 meses, 1960M01 … 2026M08
+    algodon: 800 meses, 1960M01 … 2026M08
+    caucho: 332 meses, 1999M01 … 2026M08
+    hierro: 800 meses, 1960M01 … 2026M08
+    niquel: 800 meses, 1960M01 … 2026M08
+    zinc: 800 meses, 1960M01 … 2026M08
+    plata: 800 meses, 1960M01 … 2026M08
   tipo de cambio del BCE
     euro_dolar: 332 meses, 1999M01 … 2026M08
     escrito data/materias/espana.json
