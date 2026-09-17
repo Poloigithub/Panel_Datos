@@ -137,6 +137,7 @@ python3 scripts/descargar_epa.py
 | `scripts/generar_cambios.py` | Qué se ha añadido y qué se ha actualizado, desde el historial de git |
 | `scripts/cgpj_lanzamientos.py` | Lanzamientos del CGPJ: por hipoteca, por alquiler y otros |
 | `scripts/xlsx.py` | Lector de XLSX con la biblioteca estándar |
+| `scripts/xls.py` | Lector del .xls binario de 1997, también sin dependencias |
 | `scripts/descargar_paro.py` | Paro registrado y contratación del SEPE |
 | `scripts/descargar_municipios.py` | Población de los municipios de Castellón |
 | `scripts/descargar_renta_municipal.py` | Renta municipal del Atlas del INE |
