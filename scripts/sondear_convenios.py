@@ -23,9 +23,9 @@ import xls  # noqa: E402
 SALIDA = RAIZ / "sondeos"
 CCT = "https://www.mites.gob.es/estadisticas/cct/cct26agoav/CCT_08_2026.xls"
 
-# Lo que se busca en el índice, y va ceñido a propósito: la primera vuelta
-# buscaba «ámbito» suelto y se traía media docena de tablas que hablan de
-# ámbito funcional, que no es el territorial. La que importa es una.
+# Lo que se busca en el índice, y hacen falta las dos cosas a la vez: media
+# docena de tablas hablan de variación salarial, y sólo una de ellas la reparte
+# por territorio. Pedir cualquiera de las dos palabras traía las seis.
 INTERESA = ("variacion salarial", "comunidad autonoma y provincia")
 
 
@@ -82,7 +82,7 @@ def main() -> int:
             texto = " | ".join(celdas)
             lineas.append(texto)
             plano = normaliza(" ".join(celdas))
-            if any(p in plano for p in INTERESA):
+            if all(p in plano for p in INTERESA):
                 codigo = normaliza(celdas[0]).rstrip(". ")
                 for nombre in nombres:
                     if normaliza(nombre).rstrip(". ") == codigo:
