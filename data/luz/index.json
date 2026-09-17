@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-17T10:43:20+00:00",
+  "actualizado": "2026-09-17T15:27:34+00:00",
   "titulo": "El precio de la luz",
   "ultimo_periodo": "2026M08",
   "primer_periodo": "2021M06",
@@ -37,7 +37,7 @@
       "unidad_texto": "cuánto se ahorra al día quien puede elegir la hora",
       "decimales": 2,
       "por_sexo": false,
-      "nota": "Es lo que separa a quien puede mover el consumo -poner la lavadora de madrugada- de quien no. Cuanto más alta, más premia el sistema tener esa flexibilidad.",
+      "nota": null,
       "sobre_total": null
     }
   },
