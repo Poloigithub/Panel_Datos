@@ -337,6 +337,36 @@ FRESCURA_MUNICIPAL = {
     "paro-registrado/municipios-castellon.json": ("mensual", 3),
 }
 
+# Ficheros diarios: los que acumulan algo que no se puede recuperar.
+#
+# Existen porque su fuente no guarda histórico -la API de carburantes del
+# ministerio da la foto del momento y nada más-, así que un día que no se
+# recoja está perdido para siempre. La frescura del bloque no sirve para
+# vigilarlos, y en carburantes eso es un punto ciego de verdad: su
+# `ultimo_periodo` lo marca la serie del boletín europeo, que es semanal y
+# llega siempre, de modo que el ministerio podría llevar tres semanas caído sin
+# que nada lo dijera. Y como el descargador sigue adelante a propósito cuando
+# una de sus dos fuentes no contesta, el run tampoco sale en rojo.
+#
+# Cada ámbito se mira por separado. Todos salen de la misma petición, así que
+# normalmente caen juntos, pero si el ministerio renumerase las provincias,
+# España seguiría llegando y Castellón se quedaría vacío en silencio, que es
+# justo la clase de fallo que esto tiene que cazar.
+FRESCURA_DIARIA = {
+    "carburantes/diario.json": {
+        "cadencia": "diaria",
+        "margen": 3,
+        "donde": ("espana", "comunitat-valenciana", "castellon"),
+    },
+    "luz/diario.json": {
+        "cadencia": "diaria",
+        "margen": 3,
+        "donde": ("dias",),
+    },
+}
+
+DIA = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
 PERIODO = re.compile(r"^(\d{4})(?:([TSM])(\d{1,2}))?$")
 
 
@@ -410,6 +440,36 @@ def revisa_frescura(informe: Informe, hoy: dt.date | None = None) -> None:
             informe.error(
                 f"{ruta}: el último dato es de {periodos[-1]}, hace {retraso:.0f} meses, "
                 f"y es una fuente {cadencia}")
+
+
+def revisa_frescura_diaria(informe: Informe, hoy: dt.date | None = None) -> None:
+    """Que los ficheros que acumulan días sigan acumulándolos."""
+    hoy = hoy or dt.date.today()
+    for ruta, ficha in sorted(FRESCURA_DIARIA.items()):
+        fichero = DATOS / ruta
+        if not fichero.exists():
+            informe.error(f"{ruta}: no está publicado")
+            continue
+        contenido = carga(fichero)
+        for donde in ficha["donde"]:
+            dias = contenido.get(donde)
+            if not isinstance(dias, dict):
+                informe.error(f"{ruta} · {donde}: no hay días recogidos")
+                continue
+            fechas = sorted(d for d in dias if DIA.match(str(d)))
+            if not fechas:
+                informe.error(f"{ruta} · {donde}: no hay días recogidos")
+                continue
+            retraso = (hoy - dt.date.fromisoformat(fechas[-1])).days
+            margen = ficha["margen"]
+            estado = "✓" if retraso <= margen else "✗"
+            print(f"  {estado} {ruta} · {donde}: {fechas[-1]} "
+                  f"({ficha['cadencia']}), {retraso} días del margen de {margen}")
+            if retraso > margen:
+                informe.error(
+                    f"{ruta} · {donde}: el último día recogido es {fechas[-1]}, "
+                    f"hace {retraso} días. Es una fuente {ficha['cadencia']} sin "
+                    f"histórico: lo que no se recoja no se recupera.")
 
 
 class Informe:
@@ -620,6 +680,7 @@ def main() -> int:
         informe = Informe()
         print("== frescura ==")
         revisa_frescura(informe)
+        revisa_frescura_diaria(informe)
         if informe.errores:
             print(f"\n{len(informe.errores)} fuentes se han quedado atrás:")
             for error in informe.errores:

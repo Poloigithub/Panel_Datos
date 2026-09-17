@@ -194,6 +194,28 @@ retraso normal del organismo— porque lo que tienen que detectar no es que una
 fuente vaya lenta, sino que ha dejado de llegar. Están en `FRESCURA`, dentro de
 `scripts/validar_datos.py`.
 
+**3. Y los ficheros diarios, aparte.** Los dos ficheros que acumulan días
+—`carburantes/diario.json` y `luz/diario.json`— no se pueden vigilar con lo
+anterior, y en carburantes eso llegó a ser un punto ciego de verdad. Su
+`ultimo_periodo` lo marca la serie del boletín petrolero europeo, que es
+semanal y llega siempre, de modo que el ministerio podía llevar tres semanas
+sin contestar y el bloque seguiría pareciendo fresco. Y como el descargador
+está escrito a propósito para seguir adelante cuando una de sus dos fuentes
+falla —para que la caída de una no se lleve la otra—, el run tampoco salía en
+rojo. La caída era invisible por los dos lados a la vez.
+
+Ahora se comprueba, **por ámbito**, cuántos días hace del último recogido, con
+un margen de tres días: uno suelto es normal, porque esa API se cae a ratos;
+tres seguidos es que algo está roto. Por ámbito y no en conjunto porque todos
+salen de la misma petición y normalmente caen juntos, pero si el ministerio
+renumerase las provincias, España seguiría llegando y Castellón se quedaría
+vacío en silencio. Está en `FRESCURA_DIARIA`.
+
+Esto importa más aquí que en el resto del panel porque **el dato no se puede
+recuperar**: la API del ministerio da la foto del momento y no guarda
+histórico, así que un día que no se recoja está perdido para siempre. En las
+demás fuentes, un fallo de tres días se arregla solo al cuarto.
+
 **3. En cada push: `comprobaciones.yml`.** Las pruebas del motor de series y de
 los cálculos propios, la validación de los datos ya publicados y la
 comprobación de que el CSS commiteado coincide con el compilado.

@@ -9,6 +9,7 @@ las materias primas.
 
 from __future__ import annotations
 
+import datetime as dt
 import sys
 import unittest
 from pathlib import Path
@@ -144,6 +145,95 @@ class SeriesRetiradas(unittest.TestCase):
             self.assertIn(trozos[0], bloques, f"bloque inexistente en {clave}")
             self.assertRegex(motivo, r"^\d{4}-\d{2}-\d{2} · .",
                              f"la retirada de {clave} no dice cuándo ni por qué")
+
+
+class FrescuraDeLosDiarios(unittest.TestCase):
+    """Que un fichero diario que deja de crecer haga ruido.
+
+    Es un punto ciego que existió de verdad: la frescura del bloque de
+    carburantes la marca la serie semanal del boletín europeo, que llega
+    siempre, así que el ministerio podía llevar semanas caído sin que nada lo
+    dijera. Y como el descargador sigue adelante a propósito cuando una de sus
+    dos fuentes falla, el run tampoco salía en rojo.
+    """
+
+    def setUp(self) -> None:
+        import json, tempfile
+        self.carpeta = tempfile.TemporaryDirectory()
+        self.raiz = Path(self.carpeta.name)
+        self.datos_original = validador.DATOS
+        self.ficha_original = dict(validador.FRESCURA_DIARIA)
+        validador.DATOS = self.raiz
+        validador.FRESCURA_DIARIA.clear()
+        validador.FRESCURA_DIARIA["carburantes/diario.json"] = {
+            "cadencia": "diaria", "margen": 3,
+            "donde": ("espana", "castellon"),
+        }
+        self._json = json
+
+    def tearDown(self) -> None:
+        validador.DATOS = self.datos_original
+        validador.FRESCURA_DIARIA.clear()
+        validador.FRESCURA_DIARIA.update(self.ficha_original)
+        self.carpeta.cleanup()
+
+    def _escribe(self, contenido) -> None:
+        destino = self.raiz / "carburantes"
+        destino.mkdir(parents=True, exist_ok=True)
+        (destino / "diario.json").write_text(self._json.dumps(contenido),
+                                             encoding="utf-8")
+
+    def _revisa(self, hoy) -> list[str]:
+        informe = validador.Informe()
+        validador.revisa_frescura_diaria(informe, hoy=hoy)
+        return informe.errores
+
+    def test_al_dia_no_da_error(self) -> None:
+        self._escribe({"espana": {"2026-09-17": {"gasolina_95": 1.9}},
+                       "castellon": {"2026-09-16": {"gasolina_95": 1.9}}})
+        self.assertEqual(self._revisa(dt.date(2026, 9, 17)), [])
+
+    def test_dentro_del_margen_tampoco(self) -> None:
+        """Un día suelto sin recoger es normal: la API se cae a ratos."""
+        self._escribe({"espana": {"2026-09-14": {}}, "castellon": {"2026-09-14": {}}})
+        self.assertEqual(self._revisa(dt.date(2026, 9, 17)), [])
+
+    def test_pasado_el_margen_salta(self) -> None:
+        self._escribe({"espana": {"2026-09-10": {}}, "castellon": {"2026-09-10": {}}})
+        errores = self._revisa(dt.date(2026, 9, 17))
+        self.assertEqual(len(errores), 2)
+        self.assertIn("hace 7 días", errores[0])
+
+    def test_un_ambito_puede_quedarse_atras_solo(self) -> None:
+        """El caso que de verdad preocupa: España llega y Castellón no.
+
+        Si el ministerio renumerase las provincias, la media nacional seguiría
+        saliendo y la provincial se quedaría vacía sin que nada fallara.
+        """
+        self._escribe({"espana": {"2026-09-17": {}}, "castellon": {"2026-08-01": {}}})
+        errores = self._revisa(dt.date(2026, 9, 17))
+        self.assertEqual(len(errores), 1)
+        self.assertIn("castellon", errores[0])
+
+    def test_un_ambito_vacio_es_error(self) -> None:
+        self._escribe({"espana": {"2026-09-17": {}}, "castellon": {}})
+        errores = self._revisa(dt.date(2026, 9, 17))
+        self.assertEqual(len(errores), 1)
+        self.assertIn("no hay días recogidos", errores[0])
+
+    def test_el_fichero_que_falta_es_error(self) -> None:
+        errores = self._revisa(dt.date(2026, 9, 17))
+        self.assertEqual(len(errores), 1)
+        self.assertIn("no está publicado", errores[0])
+
+    def test_las_claves_que_no_son_fechas_no_cuentan(self) -> None:
+        """`actualizado` y `unidad` viven junto a los días en algunos ficheros."""
+        self._escribe({"espana": {"actualizado": "2026-09-17T10:00:00+00:00",
+                                  "2026-09-10": {}},
+                       "castellon": {"2026-09-17": {}}})
+        errores = self._revisa(dt.date(2026, 9, 17))
+        self.assertEqual(len(errores), 1)
+        self.assertIn("2026-09-10", errores[0])
 
 
 if __name__ == "__main__":
