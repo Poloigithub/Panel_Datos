@@ -33,11 +33,15 @@ import xlsx  # noqa: E402
 SALIDA = RAIZ / "sondeos"
 BASE = "https://www.mites.gob.es/es/estadisticas/condiciones_trabajo_relac_laborales"
 
+# Las direcciones buenas, que las trajo el propio índice del ministerio. Las
+# primeras eran inventadas a partir del nombre de la estadística, y como el
+# sitio devuelve su portada con un 200 para lo que no existe, en vez de un 404
+# se recibía el organigrama entero.
 PAGINAS = [
-    ("huelgas", f"{BASE}/huelgas_cierres/welcome.htm"),
-    ("despidos", f"{BASE}/despidos/welcome.htm"),
-    ("regulacion", f"{BASE}/regulacion_empleo/welcome.htm"),
-    ("índice de todas", f"{BASE}/index.htm"),
+    ("huelgas", f"{BASE}/HUE/welcome.htm"),
+    ("despidos", f"{BASE}/dec/welcome.htm"),
+    ("regulación de empleo", f"{BASE}/REG/welcome.htm"),
+    ("enfermedades profesionales", f"{BASE}/EPR/welcome.htm"),
 ]
 
 ANCLA = re.compile(r'<a\s[^>]*href="([^"#]+)"[^>]*>(.*?)</a>', re.I | re.S)
