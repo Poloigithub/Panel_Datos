@@ -202,6 +202,18 @@ RANGOS = {
     "materias/niquel": (100, 100_000),
     "materias/zinc": (50, 20_000),
     "materias/plata": (0.1, 500),
+    # carburantes, en euros por litro. El GLP ronda un euro y la gasolina dos;
+    # el rango es ancho para no volver a tocarlo en la próxima crisis.
+    "gasolina_95": (0.3, 5),
+    "gasoleo_a": (0.3, 5),
+    "gasolina_98": (0.3, 5),
+    "gasoleo_premium": (0.3, 5),
+    "glp": (0.2, 5),
+    "gasolina_95_serie": (0.3, 5),
+    "gasoleo_a_serie": (0.3, 5),
+    "glp_serie": (0.2, 5),
+    "gasolina_95_impuesto": (0, 90),
+    "gasoleo_a_impuesto": (0, 90),
 }
 
 # Relaciones que se cumplen por definición, con la holgura del redondeo del
@@ -291,6 +303,9 @@ FRESCURA = {
     # El Pink Sheet sale el primer día hábil del mes con el mes anterior
     # cerrado, así que dos meses de margen ya es señal de que algo pasa.
     "materias": ("mensual", 2),
+    # El ministerio publica a diario y la Comisión cada semana, así que aquí un
+    # mes de retraso ya es mucho.
+    "carburantes": ("mensual", 2),
     "convenios": ("mensual", 4),
     "despidos": ("mensual los expedientes, anual los despidos", 4),
     # El avance de huelgas sale con unos cuatro meses de retraso, más que

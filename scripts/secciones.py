@@ -140,6 +140,19 @@ SECCIONES = [
         ],
     },
     {
+        "bloque": "carburantes", "enlace": "carburantes.html",
+        "titulo": "El precio de los carburantes",
+        "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",
+        "cadencia": "Diaria el detalle por provincia; semanal la serie larga "
+                    "de España.",
+        "destacados": [
+            {"clave": "gasolina_95", "titulo": "Gasolina 95",
+             "unidad": "€/l", "decimales": 3},
+            {"clave": "gasoleo_a", "titulo": "Gasóleo A",
+             "unidad": "€/l", "decimales": 3},
+        ],
+    },
+    {
         "bloque": "afiliacion", "enlace": "afiliacion.html",
         "titulo": "Afiliación a la Seguridad Social",
         "fuente": "Anuario de Estadísticas · Ministerio de Trabajo",
