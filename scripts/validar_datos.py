@@ -135,6 +135,7 @@ RANGOS = {
     # afiliación a la Seguridad Social (medias anuales de personas)
     "afiliados": (1_000, 50_000_000),
     "autonomos": (100, 10_000_000),
+    "autonomos_mes": (100, 10_000_000),
     # accidentes de trabajo (cifras absolutas de un año entero)
     "accidentes_jornada": (0, 2_000_000),
     "accidentes_leves": (0, 2_000_000),
@@ -226,7 +227,10 @@ FRESCURA = {
     "siniestralidad": ("anual", 15),
     # El anuario del año sale a mediados del siguiente, así que hasta bien
     # entrado el otoño el último dato es el del año anterior.
-    "afiliacion": ("anual", 22),
+    # El bloque mezcla cadencias: la afiliación total es anual y sale con el
+    # anuario, pero los autónomos son mensuales y llegan con dos meses de
+    # retraso. Manda el más rápido, que es el que primero delataría un corte.
+    "afiliacion": ("mensual los autónomos, anual el resto", 4),
     # La serie mensual se cierra cuando el mes termina, así que hasta que no
     # acaba el mes en curso el último dato es el del anterior.
     "luz": ("mensual", 2),

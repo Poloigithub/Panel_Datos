@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T10:50:37+00:00",
+ "actualizado": "2026-09-17T11:03:37+00:00",
  "repositorio": "https://github.com/Poloigithub/Panel_Datos",
  "altas": [
   {
@@ -28,7 +28,8 @@
      "commit": "3162007",
      "indicadores": [
       "Personas afiliadas a la Seguridad Social",
-      "Personas afiliadas por cuenta propia"
+      "Personas afiliadas por cuenta propia",
+      "Personas por cuenta propia, mes a mes"
      ]
     },
     {
@@ -489,30 +490,6 @@
      "id": "epa",
      "titulo": "Mercado laboral",
      "cambios": 30
-    }
-   ]
-  },
-  {
-   "commit": "1489cb6",
-   "fecha": "2026-09-15T20:03:56+00:00",
-   "asunto": "Añade el descargador de la EPA y la documentación del proyecto",
-   "secciones": [
-    {
-     "id": "epa",
-     "titulo": "Mercado laboral",
-     "cambios": 24
-    }
-   ]
-  },
-  {
-   "commit": "6e1eafb",
-   "fecha": "2026-09-15T19:59:38+00:00",
-   "asunto": "Vuelca los códigos de serie EPA y añade los workflows de publicación",
-   "secciones": [
-    {
-     "id": "epa",
-     "titulo": "Mercado laboral",
-     "cambios": 24
     }
    ]
   }

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T10:50:20+00:00",
+ "actualizado": "2026-09-17T11:03:04+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -1263,6 +1263,25 @@
    ],
    "desde": "2015",
    "hasta": "2025"
+  },
+  {
+   "clave": "autonomos_mes",
+   "titulo": "Personas por cuenta propia, mes a mes",
+   "seccion": "Afiliación a la Seguridad Social",
+   "seccion_id": "afiliacion",
+   "enlace": "afiliacion.html",
+   "fuente": "Anuario de Estadísticas · Ministerio de Trabajo",
+   "unidad": "personas",
+   "unidad_texto": "personas trabajadoras por cuenta propia afiliadas",
+   "nota": "De la estadística mensual del ministerio, que llega con dos meses de retraso. Cuenta un universo más amplio que la serie anual de aquí abajo -3,5 millones frente a 2,0-, así que son dos series distintas y no se pueden enlazar: ésta incluye colectivos que aquélla dejaba fuera.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2024M01",
+   "hasta": "2026M07"
   },
   {
    "clave": "autonomos",

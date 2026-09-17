@@ -2,10 +2,13 @@
   "series": {
     "afiliacion/castellon/ambos/afiliados": 10,
     "afiliacion/castellon/ambos/autonomos": 8,
+    "afiliacion/castellon/ambos/autonomos_mes": 31,
     "afiliacion/comunitat-valenciana/ambos/afiliados": 10,
     "afiliacion/comunitat-valenciana/ambos/autonomos": 8,
+    "afiliacion/comunitat-valenciana/ambos/autonomos_mes": 31,
     "afiliacion/espana/ambos/afiliados": 10,
     "afiliacion/espana/ambos/autonomos": 8,
+    "afiliacion/espana/ambos/autonomos_mes": 31,
     "cesta/castellon/ambos/alimentos": 296,
     "cesta/castellon/ambos/restauracion": 296,
     "cesta/comunitat-valenciana/ambos/aceite_oliva": 296,

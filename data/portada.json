@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T10:50:20+00:00",
+ "actualizado": "2026-09-17T11:03:04+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -292,8 +292,8 @@
    "enlace": "afiliacion.html",
    "fuente": "Anuario de Estadísticas · Ministerio de Trabajo",
    "cadencia": "Anual. El anuario del año sale a mediados del siguiente.",
-   "actualizado": "2026-09-17T03:59:30+00:00",
-   "ultimo_periodo": "2025",
+   "actualizado": "2026-09-17T11:00:29+00:00",
+   "ultimo_periodo": "2026M07",
    "destacados": [
     {
      "clave": "afiliados",
