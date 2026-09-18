@@ -1,0 +1,43 @@
+Bajas laborales · incapacidad temporal
+  la Seguridad Social publica 22 ejercicios: 2005 … 2026
+    2005: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2006: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2007: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2008: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2009: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2010: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2011: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2012: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2013: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2014: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2015: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2016: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2017: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2018: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1', 'Hoja2', 'Hoja3']
+    2019: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['INSS SIN SEXO']
+    2020: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1']
+    2021: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['Hoja1']
+    2022: no se pudo leer · RuntimeError: no hay hoja «Estadística»; hay ['datos IT cierre 22', 'Estadísticas', 'Indicadores', 'Mozart Reports']
+    2023: 12 meses · {'castellon': 7, 'comunitat-valenciana': 7}
+    2024: sólo 1 meses; se salta por incompleto
+    2025: 12 meses · {'castellon': 7, 'comunitat-valenciana': 7}
+    2026: sólo 6 meses; se salta por incompleto
+  2 ejercicios con datos
+    comunitat-valenciana/duracion_media: 2 años, 2023 … 2025
+    comunitat-valenciana/incidencia: 2 años, 2023 … 2025
+    comunitat-valenciana/prevalencia: 2 años, 2023 … 2025
+    comunitat-valenciana/procesos_finalizados: 2 años, 2023 … 2025
+    comunitat-valenciana/procesos_iniciados: 2 años, 2023 … 2025
+    comunitat-valenciana/procesos_vigor: 2 años, 2023 … 2025
+    comunitat-valenciana/trabajadores_protegidos: 2 años, 2023 … 2025
+    castellon/duracion_media: 2 años, 2023 … 2025
+    castellon/incidencia: 2 años, 2023 … 2025
+    castellon/prevalencia: 2 años, 2023 … 2025
+    castellon/procesos_finalizados: 2 años, 2023 … 2025
+    castellon/procesos_iniciados: 2 años, 2023 … 2025
+    castellon/procesos_vigor: 2 años, 2023 … 2025
+    castellon/trabajadores_protegidos: 2 años, 2023 … 2025
+    escrito data/bajas/espana.json
+    escrito data/bajas/comunitat-valenciana.json
+    escrito data/bajas/castellon.json
+  2 periodos: 2023 … 2025
