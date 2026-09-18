@@ -206,27 +206,59 @@ def hoja_del_ejercicio(url: str) -> bytes | None:
     return None
 
 
-def meses_del_ejercicio(libro) -> int:
-    """Cuántos meses trae el fichero. Un año a medias no es comparable."""
+def cobertura_del_ejercicio(libro) -> tuple[int, bool]:
+    """Cuántos meses trae el fichero y si es un cierre de año.
+
+    Un año a medias no se puede comparar con uno entero, pero hay dos formas de
+    traer el año entero. Los ficheros mensuales listan sus doce meses; los de
+    **cierre** ponen literalmente «Cierre» en la columna del mes, y eso también
+    es el año completo. Al no distinguirlos, el primer ensayo descartó 2024 por
+    «sólo 1 mes» siendo un año cerrado.
+    """
     if HOJA_MENSUAL not in libro.hojas:
-        return 0
+        return 0, False
     filas = list(libro.filas(HOJA_MENSUAL))
     if not filas:
-        return 0
+        return 0, False
     cabecera = [normaliza(c) for c in filas[0]]
     try:
         donde = cabecera.index("mes")
     except ValueError:
-        return 0
-    return len({str(f[donde]) for f in filas[1:]
-                if donde < len(f) and f[donde]})
+        return 0, False
+    valores = {normaliza(f[donde]) for f in filas[1:]
+               if donde < len(f) and f[donde]}
+    cierre = any("cierre" in v for v in valores)
+    meses = len({v for v in valores if "cierre" not in v})
+    return meses, cierre
+
+
+def hoja_anual(libro) -> tuple[str, list] | None:
+    """La hoja con la tabla provincial, buscada por lo que contiene.
+
+    El nombre no sirve: se llama «Estadística» en los últimos años, pero
+    «Hoja1», «INSS SIN SEXO» o «datos IT cierre 22» en los anteriores. Lo que
+    no cambia es que la tabla buena nombra la comunidad autónoma en su
+    cabecera, así que se busca eso.
+    """
+    for nombre in libro.hojas:
+        try:
+            filas = list(libro.filas(nombre))
+        except Exception:  # noqa: BLE001
+            continue
+        for fila in filas[:40]:
+            if any("comunidad autonoma" in normaliza(c) for c in fila):
+                return nombre, filas
+    return None
 
 
 def lee_tabla_anual(libro) -> dict[str, dict[str, float]]:
-    """Las ocho magnitudes de cada ámbito, buscadas por el texto de su columna."""
-    if HOJA_ANUAL not in libro.hojas:
-        raise RuntimeError(f"no hay hoja «{HOJA_ANUAL}»; hay {list(libro.hojas)}")
-    filas = list(libro.filas(HOJA_ANUAL))
+    """Las magnitudes de cada ámbito, buscadas por el texto de su columna."""
+    encontrada = hoja_anual(libro)
+    if not encontrada:
+        raise RuntimeError(
+            f"ninguna hoja trae una tabla por comunidad autónoma; "
+            f"hay {list(libro.hojas)}")
+    _nombre_hoja, filas = encontrada
 
     # La cabecera es la fila que nombra la comunidad autónoma, no la primera:
     # encima hay un rótulo de tabla dinámica y filas en blanco.
@@ -274,12 +306,23 @@ def lee_tabla_anual(libro) -> dict[str, dict[str, float]]:
         # El total de la Comunitat es la fila «Total» de su grupo.
         if normaliza(provincia) == "total" and COMUNITAT.search(ccaa_actual):
             por_ambito["comunitat-valenciana"] = valores(fila)
-        # Y el de España, el total general: una fila «Total» sin comunidad, o
-        # la que se llame «total general».
-        if (normaliza(provincia) in ("total general", "total")
-                and (not ccaa_actual or normaliza(ccaa_actual)
-                     in ("total", "total general"))):
+        # Y el de España, que en una tabla dinámica de Excel se llama «Total
+        # general» y puede estar en cualquiera de las dos columnas.
+        etiquetas = {normaliza(fila[i]) for i in (donde_ccaa, donde_prov)
+                     if i < len(fila) and fila[i]}
+        if "total general" in etiquetas:
             por_ambito["espana"] = valores(fila)
+
+    if "espana" not in por_ambito:
+        # Sin el total nacional no se inventa nada, pero sí se deja dicho qué
+        # había al final de la tabla: es lo que permite arreglarlo la próxima.
+        ultimas = [f for f in filas[cabecera_n + 1:]
+                   if any(c not in (None, "") for c in f)][-6:]
+        print("      sin fila de total nacional; las últimas filas con algo son:")
+        for fila in ultimas:
+            print("        " + " | ".join(
+                f"[{i}]{str(c)[:26]}" for i, c in enumerate(fila)
+                if c not in (None, "")))
 
     return por_ambito
 
@@ -322,7 +365,7 @@ def main() -> None:
 
         try:
             libro = xlsx.Libro(datos) if datos[:2] == b"PK" else xls.Libro(datos)
-            meses = meses_del_ejercicio(libro)
+            meses, cierre = cobertura_del_ejercicio(libro)
             valores = lee_tabla_anual(libro)
         except Exception as exc:  # noqa: BLE001
             print(f"    {anyo}: no se pudo leer · {type(exc).__name__}: {exc}")
@@ -330,14 +373,15 @@ def main() -> None:
             continue
 
         # Un año a medias no se publica: sus procesos iniciados serían los de
-        # medio año al lado de los de un año entero.
-        if meses and meses < 12:
-            print(f"    {anyo}: sólo {meses} meses; se salta por incompleto")
+        # medio año al lado de los de un año entero. Un cierre sí es entero.
+        if not cierre and meses and meses < 12:
+            print(f"    {anyo}: sólo {meses} meses y no es un cierre; se salta")
             saltados.append((anyo, f"sólo {meses} meses"))
             continue
 
         encontrados = {a: len(v) for a, v in valores.items() if v}
-        print(f"    {anyo}: {meses or '?'} meses · {encontrados}")
+        cobertura = "cierre" if cierre else f"{meses or '?'} meses"
+        print(f"    {anyo}: {cobertura} · {encontrados}")
         for ambito, magnitudes in valores.items():
             for clave, valor in magnitudes.items():
                 por_ambito.setdefault(ambito, {}).setdefault(clave, {})[str(anyo)] = valor
