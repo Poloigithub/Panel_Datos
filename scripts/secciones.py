@@ -140,6 +140,19 @@ SECCIONES = [
         ],
     },
     {
+        "bloque": "bajas", "enlace": "bajas.html",
+        "titulo": "Las bajas laborales",
+        "fuente": "Incapacidad temporal · Seguridad Social",
+        "cadencia": "Anual. Cada ejercicio se publica a lo largo del año "
+                    "siguiente y se revisa después.",
+        "destacados": [
+            {"clave": "procesos_iniciados", "titulo": "Bajas iniciadas",
+             "unidad": "procesos", "decimales": 0},
+            {"clave": "duracion_media", "titulo": "Duración media de una baja",
+             "unidad": "días", "decimales": 1},
+        ],
+    },
+    {
         "bloque": "carburantes", "enlace": "carburantes.html",
         "titulo": "El precio de los carburantes",
         "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",

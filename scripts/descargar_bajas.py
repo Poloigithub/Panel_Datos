@@ -386,8 +386,12 @@ def completa_espana(nacional: dict, por_ccaa: dict, por_provincia: dict) -> dict
     print(f"      la suma de {len(por_ccaa)} comunidades reproduce "
           f"{controles}: se acepta para las magnitudes que se pueden sumar")
 
+    # La media de trabajadores protegidos también se suma: la media de doce
+    # meses de cada provincia, sumadas, dan la media de doce meses del país.
+    # Sin ella España se quedaba sin incidencia aunque la fórmula estuviera
+    # demostrada en las cincuenta y dos provincias, que es lo que pasó.
     ABSOLUTAS = ("procesos_iniciados", "procesos_finalizados", "procesos_vigor",
-                 "trabajadores_protegidos")
+                 "trabajadores_protegidos", "_media_protegidos")
     for clave in ABSOLUTAS:
         if clave not in nacional and clave in sumas:
             nacional[clave] = sumas[clave]

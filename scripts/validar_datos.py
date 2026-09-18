@@ -214,6 +214,14 @@ RANGOS = {
     "glp_serie": (0.2, 5),
     "gasolina_95_impuesto": (0, 90),
     "gasoleo_a_impuesto": (0, 90),
+    # bajas laborales: procesos de incapacidad temporal
+    "procesos_iniciados": (0, 30_000_000),
+    "procesos_finalizados": (0, 30_000_000),
+    "procesos_vigor": (0, 10_000_000),
+    "duracion_media": (1, 400),
+    "incidencia": (0, 200),
+    "prevalencia": (0, 500),
+    "trabajadores_protegidos": (1_000, 40_000_000),
 }
 
 # Relaciones que se cumplen por definición, con la holgura del redondeo del
@@ -306,6 +314,9 @@ FRESCURA = {
     # El ministerio publica a diario y la Comisión cada semana, así que aquí un
     # mes de retraso ya es mucho.
     "carburantes": ("mensual", 2),
+    # Un ejercicio tarda en publicarse casi todo el año siguiente, así que aquí
+    # un dato de hace año y medio todavía es normal.
+    "bajas": ("anual", 20),
     "convenios": ("mensual", 4),
     "despidos": ("mensual los expedientes, anual los despidos", 4),
     # El avance de huelgas sale con unos cuatro meses de retraso, más que

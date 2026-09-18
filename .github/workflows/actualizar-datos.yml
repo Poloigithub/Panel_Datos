@@ -79,6 +79,9 @@ jobs:
       - name: Descargar el precio de los carburantes
         run: python scripts/descargar_carburantes.py
 
+      - name: Descargar las bajas laborales
+        run: python scripts/descargar_bajas.py
+
       - name: Componer los titulares, el catálogo y la descarga completa
         run: |
           python scripts/generar_portada.py
