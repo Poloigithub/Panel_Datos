@@ -1,1 +1,1 @@
-{"ambito": {"id": "espana", "nombre": "España", "tipo": "Nacional"}, "actualizado": "2026-09-18T09:32:57+00:00", "periodos": ["2023", "2024", "2025"], "series": {}}
+{"ambito": {"id": "espana", "nombre": "España", "tipo": "Nacional"}, "actualizado": "2026-09-18T09:36:30+00:00", "periodos": ["2023", "2024", "2025"], "series": {"ambos": {"procesos_iniciados": [8879929.0, 9262614.0, 9757650.0], "procesos_finalizados": [8640064.0, 9075461.0, 9590619.0], "procesos_vigor": [null, 1182236.0, null]}}}
