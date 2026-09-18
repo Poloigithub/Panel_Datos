@@ -41,24 +41,24 @@ Bajas laborales · incapacidad temporal
       tabla en la columna 81: demostradas ['procesos_vigor']
       sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos', '_media_protegidos']
       la suma de 19 comunidades reproduce ['procesos_iniciados', 'procesos_finalizados', 'procesos_vigor']: se acepta para las magnitudes que se pueden sumar
-      incidencia: la fórmula no se cumple (52 sí, 0 no); España se queda sin ella
+      incidencia: la fórmula se cumple en 52 provincias, así que se aplica a España
       prevalencia: la fórmula se cumple en 52 provincias, así que se aplica a España
-    2023: 12 meses · {'castellon': 8, 'comunitat-valenciana': 8, 'espana': 5}
+    2023: 12 meses · {'castellon': 8, 'comunitat-valenciana': 8, 'espana': 7}
       fichero: Publicación+IT+cierre+Sistema+2024_.xlsx?MOD=AJPERES&CONVERT_TO=linkte
       tabla en la columna 21: demostradas ['procesos_finalizados', 'procesos_iniciados', 'procesos_vigor']
       sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos', '_media_protegidos']
       la suma de 19 comunidades reproduce ['procesos_iniciados', 'procesos_finalizados', 'procesos_vigor']: se acepta para las magnitudes que se pueden sumar
-      incidencia: la fórmula no se cumple (52 sí, 0 no); España se queda sin ella
+      incidencia: la fórmula se cumple en 52 provincias, así que se aplica a España
       prevalencia: la fórmula se cumple en 52 provincias, así que se aplica a España
-    2024: cierre · {'castellon': 8, 'comunitat-valenciana': 8, 'espana': 5}
+    2024: cierre · {'castellon': 8, 'comunitat-valenciana': 8, 'espana': 7}
       fichero: Publicacion_IT_mcss+inss+ism+2025_.xlsx?MOD=AJPERES&CONVERT_TO=linktex
       tabla en la columna 21: demostradas ['procesos_finalizados', 'procesos_iniciados']
       tabla en la columna 81: demostradas ['procesos_vigor']
       sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos', '_media_protegidos']
       la suma de 19 comunidades reproduce ['procesos_iniciados', 'procesos_finalizados', 'procesos_vigor']: se acepta para las magnitudes que se pueden sumar
-      incidencia: la fórmula no se cumple (52 sí, 0 no); España se queda sin ella
+      incidencia: la fórmula se cumple en 52 provincias, así que se aplica a España
       prevalencia: la fórmula se cumple en 52 provincias, así que se aplica a España
-    2025: 12 meses · {'castellon': 8, 'comunitat-valenciana': 8, 'espana': 5}
+    2025: 12 meses · {'castellon': 8, 'comunitat-valenciana': 8, 'espana': 7}
       fichero: Publicacion_IT_SISTEMA_2026_Junio.xlsx?MOD=AJPERES&CONVERT_TO=linktext
       tabla en la columna 21: demostradas ['procesos_finalizados', 'procesos_iniciados']
       tabla en la columna 81: demostradas ['procesos_vigor']
@@ -68,6 +68,7 @@ Bajas laborales · incapacidad temporal
       prevalencia: la fórmula se cumple en 52 provincias, así que se aplica a España
     2026: sólo 6 meses y no es un cierre; se salta
   3 ejercicios con datos
+    espana/incidencia: 3 años, 2023 … 2025
     espana/prevalencia: 3 años, 2023 … 2025
     espana/procesos_finalizados: 3 años, 2023 … 2025
     espana/procesos_iniciados: 3 años, 2023 … 2025
