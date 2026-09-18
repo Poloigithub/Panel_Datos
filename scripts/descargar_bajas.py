@@ -92,7 +92,16 @@ COLUMNAS = [
     ("trabajadores_protegidos", "trabajadores protegidos al final",
      "Trabajadores protegidos", "personas",
      "personas cubiertas por la prestación al cerrar el año", 0),
+    # Las claves que empiezan por guion bajo se leen pero no se publican: están
+    # para hacer cuentas. Ésta es el denominador de la incidencia, que es una
+    # media mensual y por tanto no se calcula sobre la foto de fin de año.
+    ("_media_protegidos", "media de trabajadores protegidos",
+     "", "", "", 0),
 ]
+
+def se_publica(clave: str) -> bool:
+    return not clave.startswith("_")
+
 
 NOTAS = {
     "prevalencia": "Mide cuánta gente está de baja en un momento dado; la "
@@ -200,6 +209,7 @@ def hoja_del_ejercicio(url: str) -> bytes | None:
             print(f"      no se pudo bajar: {exc}")
             continue
         if datos[:2] == b"PK" or datos[:8] == xls.FIRMA:
+            print(f"      fichero: {urllib.parse.unquote(destino.rsplit('/', 1)[-1])[:70]}")
             return datos
         # La Seguridad Social contesta 200 con su portal cuando el fichero no
         # está: el código no basta, hay que mirar los primeros bytes.
@@ -384,7 +394,7 @@ def completa_espana(nacional: dict, por_ccaa: dict, por_provincia: dict) -> dict
 
     # Las tasas, con la fórmula demostrada en las provincias.
     FORMULAS = {
-        "incidencia": (("procesos_iniciados", "trabajadores_protegidos"),
+        "incidencia": (("procesos_iniciados", "_media_protegidos"),
                        lambda a, b: a / b * 1000 / 12),
         "prevalencia": (("procesos_vigor", "trabajadores_protegidos"),
                         lambda a, b: a / b * 1000),
@@ -506,6 +516,8 @@ def espana_por_calibracion(filas: list, por_provincia: dict) -> dict[str, float]
 def construye_bloque() -> dict:
     indicadores = {}
     for clave, _pista, titulo, unidad, unidad_texto, decimales in COLUMNAS:
+        if not se_publica(clave):
+            continue
         indicadores[clave] = {
             "titulo": titulo,
             "unidad": unidad,
@@ -560,6 +572,8 @@ def main() -> None:
         print(f"    {anyo}: {cobertura} · {encontrados}")
         for ambito, magnitudes in valores.items():
             for clave, valor in magnitudes.items():
+                if not se_publica(clave):
+                    continue
                 por_ambito.setdefault(ambito, {}).setdefault(clave, {})[str(anyo)] = valor
         if encontrados:
             completos += 1
