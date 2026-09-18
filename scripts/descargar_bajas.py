@@ -342,10 +342,76 @@ def lee_tabla_anual(libro) -> dict[str, dict[str, float]]:
     if "espana" not in por_ambito:
         nacional = espana_por_calibracion(filas, por_provincia)
         nacional = completa_espana(nacional, por_ccaa, por_provincia)
+        if "duracion_media" not in nacional:
+            derivada = duracion_nacional(libro, por_provincia)
+            if derivada is not None:
+                nacional["duracion_media"] = derivada
         if nacional:
             por_ambito["espana"] = nacional
 
     return por_ambito
+
+
+def duracion_nacional(libro, por_provincia: dict) -> float | None:
+    """La duración media de España, agregando la tabla mensual.
+
+    La tabla anual no trae fila de total nacional, así que España se quedaba
+    sin duración media mientras Castellón sí la tenía. Eso no es sólo un hueco:
+    hace que el único número visible sea el de una provincia, y una provincia
+    no es la referencia. Al leer la página parecía que una baja dura sesenta
+    días cuando en España dura cuarenta y dos.
+
+    Se puede calcular porque están demostrados los dos códigos que hacen falta:
+    el 20 son los días de baja y el 19 los procesos terminados. Aun así no se
+    da por bueno sin más: primero se comprueba que ese cálculo **reproduce la
+    tabla anual en las provincias**. Si cuadra en las cincuenta y dos, cuadra
+    también sumándolas.
+    """
+    if HOJA_MENSUAL not in libro.hojas or not por_provincia:
+        return None
+    filas = list(libro.filas(HOJA_MENSUAL))
+    if len(filas) < 2:
+        return None
+    cabecera = [str(c or "").strip() for c in filas[0]]
+    col = {nombre: i for i, nombre in enumerate(cabecera)}
+    if not {"Provincia", "Indicador", "Suma de Cantidad"} <= set(col):
+        return None
+
+    import collections
+    suma = collections.defaultdict(lambda: {"dias": 0.0, "fin": 0.0})
+    for fila in filas[1:]:
+        def celda(nombre):
+            i = col[nombre]
+            return fila[i] if i < len(fila) else None
+        codigo = str(celda("Indicador") or "")
+        cantidad = celda("Suma de Cantidad")
+        if codigo not in ("19", "20") or not isinstance(cantidad, (int, float)):
+            continue
+        suma[normaliza(celda("Provincia"))]["dias" if codigo == "20" else "fin"] += cantidad
+
+    # El control: ¿reproduce lo que la tabla anual dice de cada provincia?
+    casan = fallan = 0
+    for provincia, medidas in por_provincia.items():
+        publicada = medidas.get("duracion_media")
+        visto = suma.get(provincia)
+        if publicada is None or not visto or not visto["fin"]:
+            continue
+        if math.isclose(visto["dias"] / visto["fin"], publicada, rel_tol=1e-4):
+            casan += 1
+        else:
+            fallan += 1
+    if fallan or casan < 10:
+        print(f"      la duración calculada de la tabla mensual no reproduce "
+              f"la anual ({casan} sí, {fallan} no); España se queda sin ella")
+        return None
+
+    dias = sum(m["dias"] for m in suma.values())
+    finalizados = sum(m["fin"] for m in suma.values())
+    if not finalizados:
+        return None
+    print(f"      duración media de España: reproduce la tabla anual en "
+          f"{casan} provincias, así que se agrega")
+    return dias / finalizados
 
 
 def completa_espana(nacional: dict, por_ccaa: dict, por_provincia: dict) -> dict:
