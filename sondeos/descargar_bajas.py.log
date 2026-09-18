@@ -18,22 +18,39 @@ Bajas laborales · incapacidad temporal
     2020: no se pudo leer · RuntimeError: la tabla anual ya no trae estas columnas: ['procesos_finalizados']
     2021: no se pudo leer · RuntimeError: la tabla anual ya no trae estas columnas: ['procesos_finalizados']
     2022: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['datos IT cierre 22', 'Estadísticas', 'Indicadores', 'Mozart Reports']
-      total nacional de otra tabla de la hoja (columna 21, fila 161); demostradas 2 magnitudes de 7: ['procesos_finalizados', 'procesos_iniciados']
-      sin demostrar, y por eso sin publicar para España: ['procesos_vigor', 'duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos']
-    2023: 12 meses · {'castellon': 7, 'comunitat-valenciana': 7, 'espana': 2}
-      total nacional de otra tabla de la hoja (columna 21, fila 162); demostradas 3 magnitudes de 7: ['procesos_finalizados', 'procesos_iniciados', 'procesos_vigor']
-      sin demostrar, y por eso sin publicar para España: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos']
-    2024: cierre · {'castellon': 7, 'comunitat-valenciana': 7, 'espana': 3}
-      total nacional de otra tabla de la hoja (columna 21, fila 162); demostradas 2 magnitudes de 7: ['procesos_finalizados', 'procesos_iniciados']
-      sin demostrar, y por eso sin publicar para España: ['procesos_vigor', 'duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos']
-    2025: 12 meses · {'castellon': 7, 'comunitat-valenciana': 7, 'espana': 2}
-      total nacional de otra tabla de la hoja (columna 21, fila 142); demostradas 2 magnitudes de 7: ['procesos_finalizados', 'procesos_iniciados']
-      sin demostrar, y por eso sin publicar para España: ['procesos_vigor', 'duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos']
+      tabla en la columna 21: demostradas ['procesos_finalizados', 'procesos_iniciados']
+      tabla en la columna 81: demostradas ['procesos_vigor']
+      sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos']
+      la suma de 19 comunidades reproduce ['procesos_iniciados', 'procesos_finalizados', 'procesos_vigor']: se acepta para las magnitudes que se pueden sumar
+      incidencia: la fórmula no se cumple (41 sí, 11 no); España se queda sin ella
+      prevalencia: la fórmula se cumple en 52 provincias, así que se aplica a España
+    2023: 12 meses · {'castellon': 7, 'comunitat-valenciana': 7, 'espana': 5}
+      tabla en la columna 21: demostradas ['procesos_finalizados', 'procesos_iniciados', 'procesos_vigor']
+      sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos']
+      la suma de 19 comunidades reproduce ['procesos_iniciados', 'procesos_finalizados', 'procesos_vigor']: se acepta para las magnitudes que se pueden sumar
+      incidencia: la fórmula no se cumple (41 sí, 11 no); España se queda sin ella
+      prevalencia: la fórmula se cumple en 52 provincias, así que se aplica a España
+    2024: cierre · {'castellon': 7, 'comunitat-valenciana': 7, 'espana': 5}
+      tabla en la columna 21: demostradas ['procesos_finalizados', 'procesos_iniciados']
+      tabla en la columna 81: demostradas ['procesos_vigor']
+      sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos']
+      la suma de 19 comunidades reproduce ['procesos_iniciados', 'procesos_finalizados', 'procesos_vigor']: se acepta para las magnitudes que se pueden sumar
+      incidencia: la fórmula no se cumple (41 sí, 11 no); España se queda sin ella
+      prevalencia: la fórmula se cumple en 52 provincias, así que se aplica a España
+    2025: 12 meses · {'castellon': 7, 'comunitat-valenciana': 7, 'espana': 5}
+      tabla en la columna 21: demostradas ['procesos_finalizados', 'procesos_iniciados']
+      tabla en la columna 81: demostradas ['procesos_vigor']
+      sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos']
+      la suma de 19 comunidades reproduce ['procesos_iniciados', 'procesos_finalizados', 'procesos_vigor']: se acepta para las magnitudes que se pueden sumar
+      incidencia: la fórmula no se cumple (0 sí, 52 no); España se queda sin ella
+      prevalencia: la fórmula se cumple en 52 provincias, así que se aplica a España
     2026: sólo 6 meses y no es un cierre; se salta
   3 ejercicios con datos
+    espana/prevalencia: 3 años, 2023 … 2025
     espana/procesos_finalizados: 3 años, 2023 … 2025
     espana/procesos_iniciados: 3 años, 2023 … 2025
-    espana/procesos_vigor: 1 años, 2024 … 2024
+    espana/procesos_vigor: 3 años, 2023 … 2025
+    espana/trabajadores_protegidos: 3 años, 2023 … 2025
     comunitat-valenciana/duracion_media: 3 años, 2023 … 2025
     comunitat-valenciana/incidencia: 3 años, 2023 … 2025
     comunitat-valenciana/prevalencia: 3 años, 2023 … 2025
