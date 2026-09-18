@@ -297,6 +297,9 @@ def lee_tabla_anual(libro) -> dict[str, dict[str, float]]:
     # Todas las provincias, no sólo los tres ámbitos: son las que permiten
     # demostrar qué mide cada columna de la otra tabla de la hoja.
     por_provincia: dict[str, dict[str, float]] = {}
+    # Y el total de cada comunidad, que sumados son España por definición: las
+    # diecisiete comunidades más Ceuta y Melilla no dejan nada fuera.
+    por_ccaa: dict[str, dict[str, float]] = {}
     ccaa_actual = ""
     for fila in filas[cabecera_n + 1:]:
         if donde_ccaa < len(fila) and str(fila[donde_ccaa] or "").strip():
@@ -313,8 +316,12 @@ def lee_tabla_anual(libro) -> dict[str, dict[str, float]]:
         if CASTELLON.search(provincia):
             por_ambito["castellon"] = valores(fila)
         # El total de la Comunitat es la fila «Total» de su grupo.
-        if normaliza(provincia) == "total" and COMUNITAT.search(ccaa_actual):
-            por_ambito["comunitat-valenciana"] = valores(fila)
+        if normaliza(provincia) == "total" and ccaa_actual:
+            if COMUNITAT.search(ccaa_actual):
+                por_ambito["comunitat-valenciana"] = valores(fila)
+            medidas = valores(fila)
+            if medidas:
+                por_ccaa[normaliza(ccaa_actual)] = medidas
         # Y el de España, que en una tabla dinámica de Excel se llama «Total
         # general» y puede estar en cualquiera de las dos columnas.
         etiquetas = {normaliza(fila[i]) for i in (donde_ccaa, donde_prov)
@@ -324,10 +331,88 @@ def lee_tabla_anual(libro) -> dict[str, dict[str, float]]:
 
     if "espana" not in por_ambito:
         nacional = espana_por_calibracion(filas, por_provincia)
+        nacional = completa_espana(nacional, por_ccaa, por_provincia)
         if nacional:
             por_ambito["espana"] = nacional
 
     return por_ambito
+
+
+def completa_espana(nacional: dict, por_ccaa: dict, por_provincia: dict) -> dict:
+    """Rellenar España sumando comunidades, pero sólo tras comprobar que suma.
+
+    Las magnitudes absolutas -bajas iniciadas, terminadas, abiertas,
+    trabajadores protegidos- son sumables por definición: las comunidades
+    parten el país sin solaparse. Aun así no se suma a ciegas. Primero se
+    comprueba contra las magnitudes que la calibración **ya ha demostrado**: si
+    sumar las comunidades reproduce esos totales, el método vale para las
+    demás; si no los reproduce, es que falta o sobra alguna fila y no se suma
+    nada.
+
+    Las tasas -incidencia y prevalencia- no se suman. Se derivan, y sólo si la
+    fórmula se cumple en las provincias, donde sí están las tres cifras.
+    """
+    if not por_ccaa:
+        return nacional
+
+    sumas = {}
+    for clave, *_ in COLUMNAS:
+        trozos = [m[clave] for m in por_ccaa.values() if clave in m]
+        if len(trozos) == len(por_ccaa):
+            sumas[clave] = sum(trozos)
+
+    # El control: lo ya demostrado tiene que salir de la suma.
+    controles = [c for c in nacional if c in sumas]
+    if not controles:
+        print("      sin ninguna magnitud demostrada con la que contrastar la "
+              "suma de comunidades; no se suma nada")
+        return nacional
+    for clave in controles:
+        if not math.isclose(nacional[clave], sumas[clave], rel_tol=1e-4):
+            print(f"      sumar las comunidades no reproduce {clave} "
+                  f"({sumas[clave]:,.0f} frente a {nacional[clave]:,.0f}); "
+                  f"no se suma nada")
+            return nacional
+    print(f"      la suma de {len(por_ccaa)} comunidades reproduce "
+          f"{controles}: se acepta para las magnitudes que se pueden sumar")
+
+    ABSOLUTAS = ("procesos_iniciados", "procesos_finalizados", "procesos_vigor",
+                 "trabajadores_protegidos")
+    for clave in ABSOLUTAS:
+        if clave not in nacional and clave in sumas:
+            nacional[clave] = sumas[clave]
+
+    # Las tasas, con la fórmula demostrada en las provincias.
+    FORMULAS = {
+        "incidencia": (("procesos_iniciados", "trabajadores_protegidos"),
+                       lambda a, b: a / b * 1000 / 12),
+        "prevalencia": (("procesos_vigor", "trabajadores_protegidos"),
+                        lambda a, b: a / b * 1000),
+    }
+    for clave, (partes, formula) in FORMULAS.items():
+        if clave in nacional:
+            continue
+        casan = fallan = 0
+        for medidas in por_provincia.values():
+            if not all(p in medidas for p in partes) or clave not in medidas:
+                continue
+            try:
+                calculado = formula(*(medidas[p] for p in partes))
+            except ZeroDivisionError:
+                continue
+            if math.isclose(calculado, medidas[clave], rel_tol=2e-2):
+                casan += 1
+            else:
+                fallan += 1
+        if casan >= 10 and fallan == 0 and all(p in nacional for p in partes):
+            nacional[clave] = formula(*(nacional[p] for p in partes))
+            print(f"      {clave}: la fórmula se cumple en {casan} provincias, "
+                  f"así que se aplica a España")
+        else:
+            print(f"      {clave}: la fórmula no se cumple ({casan} sí, "
+                  f"{fallan} no); España se queda sin ella")
+
+    return nacional
 
 
 def espana_por_calibracion(filas: list, por_provincia: dict) -> dict[str, float]:
@@ -355,6 +440,7 @@ def espana_por_calibracion(filas: list, por_provincia: dict) -> dict[str, float]
             if normaliza(celda) == "total general":
                 candidatas[i] = numero
 
+    reunido: dict[str, float] = {}
     for columna_etiqueta, fila_total in sorted(candidatas.items()):
         # Las provincias de esta tabla, con lo que dice cada columna de valores.
         observado: dict[str, dict[int, float]] = {}
@@ -402,19 +488,19 @@ def espana_por_calibracion(filas: list, por_provincia: dict) -> dict[str, float]
             if columna < len(total) and isinstance(total[columna], (int, float)):
                 nacional[clave] = float(total[columna])
         if nacional:
-            print(f"      total nacional de otra tabla de la hoja "
-                  f"(columna {columna_etiqueta}, fila {fila_total}); "
-                  f"demostradas {len(nacional)} magnitudes de {len(COLUMNAS)}: "
-                  f"{sorted(nacional)}")
-            sin_probar = [c for c, *_ in COLUMNAS if c not in nacional]
-            if sin_probar:
-                print(f"      sin demostrar, y por eso sin publicar para "
-                      f"España: {sin_probar}")
-            return nacional
+            nuevas = [c for c in nacional if c not in reunido]
+            if nuevas:
+                print(f"      tabla en la columna {columna_etiqueta}: "
+                      f"demostradas {sorted(nuevas)}")
+            reunido.update(nacional)
 
-    print("      no hay ninguna tabla con total nacional que se pueda "
-          "identificar; España se queda sin dato y se verá el hueco")
-    return {}
+    if reunido:
+        sin_probar = [c for c, *_ in COLUMNAS if c not in reunido]
+        if sin_probar:
+            print(f"      sin demostrar por calibración: {sin_probar}")
+    else:
+        print("      ninguna tabla con total nacional se ha podido identificar")
+    return reunido
 
 
 def construye_bloque() -> dict:
