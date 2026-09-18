@@ -76315,6 +76315,9 @@ bajas,procesos_vigor,Bajas abiertas a fin de año,comunitat-valenciana,Ambos sex
 bajas,procesos_vigor,Bajas abiertas a fin de año,castellon,Ambos sexos,2023,12965.0,procesos
 bajas,procesos_vigor,Bajas abiertas a fin de año,castellon,Ambos sexos,2024,12771.0,procesos
 bajas,procesos_vigor,Bajas abiertas a fin de año,castellon,Ambos sexos,2025,13431.0,procesos
+bajas,duracion_media,Duración media de una baja,espana,Ambos sexos,2023,39.042040776549804,días
+bajas,duracion_media,Duración media de una baja,espana,Ambos sexos,2024,43.31446667006778,días
+bajas,duracion_media,Duración media de una baja,espana,Ambos sexos,2025,42.28973750286608,días
 bajas,duracion_media,Duración media de una baja,comunitat-valenciana,Ambos sexos,2023,49.26140764806537,días
 bajas,duracion_media,Duración media de una baja,comunitat-valenciana,Ambos sexos,2024,56.749997446928944,días
 bajas,duracion_media,Duración media de una baja,comunitat-valenciana,Ambos sexos,2025,53.95662068023494,días

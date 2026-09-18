@@ -877,11 +877,39 @@ Social quedan un 6 % por encima de los afiliados del anuario del ministerio, y
 el desfase es el mismo los tres años (1,059 · 1,065 · 1,065). Dos fuentes
 independientes que cuadran.
 
-**Queda apuntado**: dentro hay una segunda tabla, mensual y **con desglose por
-sexo**, que sería mejor. No entra porque de sus seis códigos sólo se ha podido
-confirmar uno con certeza —el 25, procesos iniciados, que al agregar sus meses
-da exactamente la cifra de la tabla nombrada—. Entra el día que aparezca la
-leyenda o se puedan demostrar los otros cinco.
+**Una duda del usuario acabó destapando un fallo de la página.** «Cincuenta y
+pico días de media parecen muchos» — y tenía razón en desconfiar, aunque no por
+lo que parecía. La cifra era correcta: se comprobó que la duración que publica
+la fuente es exactamente los días de baja entre los procesos terminados, con
+cero de diferencia, y eso identificó un quinto código (el 20, los días).
+
+El fallo era **qué dato estaba visible**. España aparecía con un guion porque la
+tabla anual no trae total nacional, así que el único número a la vista era el de
+Castellón: 59,8 días. Una provincia no es la referencia. **En España una baja
+dura 42,3 días**, y en contingencias comunes 41,3 en hombres y 42,2 en mujeres,
+que es justo la cifra que se cita habitualmente.
+
+Ahora se calcula agregando la tabla mensual con los dos códigos demostrados, y
+sólo después de verificar que ese cálculo **reproduce la tabla anual provincia a
+provincia**: en 2025 cuadró en las 52 de 52, cero discrepancias.
+
+**La dispersión entre provincias es enorme y la página ahora la cuenta**: de los
+90,8 días de Lugo a los 25,9 de Guadalajara. Las provincias con bajas largas son
+las pequeñas y las de bajas cortas las grandes, así que la media nacional queda
+muy por debajo de la provincia típica: promediar las 52 sin ponderar daría 53,4
+días, un número que no es el de nadie. Castellón está en el puesto 19 de 52.
+
+**No hay mediana, y no se puede calcular.** Sería mejor que la media, porque
+unas pocas bajas larguísimas tiran de ella. Pero la fuente publica totales, no
+la distribución, y de un total de días y un total de procesos sólo sale la
+media. Buscada en las cinco hojas de los dos ficheros: ni mediana, ni
+percentiles, ni tramos. Queda dicho en la página, con el porqué.
+
+**Queda apuntado**: la tabla mensual trae **sexo y contingencia**, y con los
+códigos 19 y 20 ya demostrados se puede dar la duración media separando
+contingencias comunes de profesionales y hombres de mujeres. De los seis
+códigos quedan dos sin identificar, el 22 y el 33, así que la tabla entera
+todavía no entra; lo que sí se puede ya es esa duración desglosada.
 
 ---
 

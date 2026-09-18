@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-18T09:46:07+00:00",
+ "actualizado": "2026-09-18T10:33:30+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -472,7 +472,7 @@
    "enlace": "bajas.html",
    "fuente": "Incapacidad temporal · Seguridad Social",
    "cadencia": "Anual. Cada ejercicio se publica a lo largo del año siguiente y se revisa después.",
-   "actualizado": "2026-09-18T09:43:31+00:00",
+   "actualizado": "2026-09-18T10:31:55+00:00",
    "ultimo_periodo": "2025",
    "destacados": [
     {
@@ -499,12 +499,12 @@
      "decimales": 1,
      "periodo": "2025",
      "valores": {
-      "espana": null,
+      "espana": 42.28973750286608,
       "comunitat-valenciana": 53.95662068023494,
       "castellon": 59.83842487486889
      },
      "hace_un_anyo": {
-      "espana": null,
+      "espana": 43.31446667006778,
       "comunitat-valenciana": 56.749997446928944,
       "castellon": 65.07124484885361
      }

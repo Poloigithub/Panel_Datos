@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-18T09:46:07+00:00",
+ "actualizado": "2026-09-18T10:33:30+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -2066,6 +2066,7 @@
    "nota": null,
    "por_sexo": false,
    "ambitos": [
+    "espana",
     "comunitat-valenciana",
     "castellon"
    ],
