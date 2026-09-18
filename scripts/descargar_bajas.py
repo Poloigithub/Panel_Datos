@@ -40,6 +40,7 @@ from __future__ import annotations
 
 import datetime as dt
 import html as htmllib
+import math
 import re
 import ssl
 import sys
@@ -293,6 +294,9 @@ def lee_tabla_anual(libro) -> dict[str, dict[str, float]]:
         return salida
 
     por_ambito: dict[str, dict[str, float]] = {}
+    # Todas las provincias, no sólo los tres ámbitos: son las que permiten
+    # demostrar qué mide cada columna de la otra tabla de la hoja.
+    por_provincia: dict[str, dict[str, float]] = {}
     ccaa_actual = ""
     for fila in filas[cabecera_n + 1:]:
         if donde_ccaa < len(fila) and str(fila[donde_ccaa] or "").strip():
@@ -300,6 +304,11 @@ def lee_tabla_anual(libro) -> dict[str, dict[str, float]]:
         provincia = str(fila[donde_prov] or "").strip() if donde_prov < len(fila) else ""
         if not provincia:
             continue
+
+        if normaliza(provincia) not in ("total", "total general"):
+            medidas = valores(fila)
+            if medidas:
+                por_provincia[normaliza(provincia)] = medidas
 
         if CASTELLON.search(provincia):
             por_ambito["castellon"] = valores(fila)
@@ -314,17 +323,98 @@ def lee_tabla_anual(libro) -> dict[str, dict[str, float]]:
             por_ambito["espana"] = valores(fila)
 
     if "espana" not in por_ambito:
-        # Sin el total nacional no se inventa nada, pero sí se deja dicho qué
-        # había al final de la tabla: es lo que permite arreglarlo la próxima.
-        ultimas = [f for f in filas[cabecera_n + 1:]
-                   if any(c not in (None, "") for c in f)][-6:]
-        print("      sin fila de total nacional; las últimas filas con algo son:")
-        for fila in ultimas:
-            print("        " + " | ".join(
-                f"[{i}]{str(c)[:26]}" for i, c in enumerate(fila)
-                if c not in (None, "")))
+        nacional = espana_por_calibracion(filas, por_provincia)
+        if nacional:
+            por_ambito["espana"] = nacional
 
     return por_ambito
+
+
+def espana_por_calibracion(filas: list, por_provincia: dict) -> dict[str, float]:
+    """El total nacional, demostrando antes qué mide cada columna.
+
+    La hoja no trae una tabla sino varias, en paralelo. La que tiene los
+    nombres escritos -comunidad, provincia, duración media...- **no lleva fila
+    de total nacional**. Otra de la misma hoja sí la lleva, pero identifica sus
+    columnas con el código numérico que ya dio guerra, sin leyenda.
+
+    En vez de suponer la correspondencia por el tamaño de las cifras, se
+    demuestra: una columna de la segunda tabla sólo se acepta como una magnitud
+    concreta cuando coincide con ella **en todas las provincias que están en
+    las dos tablas**. Con cincuenta provincias, que dos columnas cuadren en las
+    cincuenta por casualidad no pasa. Lo que no se pueda demostrar así, no se
+    publica: España se queda sin esa magnitud y se ve el hueco.
+    """
+    if not por_provincia:
+        return {}
+
+    # Dónde hay una fila «total general», y con qué columna de etiquetas.
+    candidatas: dict[int, int] = {}
+    for numero, fila in enumerate(filas):
+        for i, celda in enumerate(fila):
+            if normaliza(celda) == "total general":
+                candidatas[i] = numero
+
+    for columna_etiqueta, fila_total in sorted(candidatas.items()):
+        # Las provincias de esta tabla, con lo que dice cada columna de valores.
+        observado: dict[str, dict[int, float]] = {}
+        for fila in filas:
+            if columna_etiqueta >= len(fila):
+                continue
+            etiqueta = normaliza(fila[columna_etiqueta])
+            if not etiqueta or etiqueta not in por_provincia:
+                continue
+            fila_valores = {}
+            for i in range(columna_etiqueta + 1, min(len(fila), columna_etiqueta + 14)):
+                if isinstance(fila[i], (int, float)):
+                    fila_valores[i] = float(fila[i])
+            if fila_valores:
+                observado[etiqueta] = fila_valores
+
+        comunes = [p for p in observado if p in por_provincia]
+        if len(comunes) < 10:
+            continue
+
+        # Qué columna mide qué, demostrado provincia a provincia.
+        probado: dict[str, int] = {}
+        for clave, *_ in COLUMNAS:
+            for columna in sorted({c for p in comunes for c in observado[p]}):
+                casan = fallan = 0
+                for provincia in comunes:
+                    esperado = por_provincia[provincia].get(clave)
+                    visto = observado[provincia].get(columna)
+                    if esperado is None or visto is None:
+                        continue
+                    if math.isclose(esperado, visto, rel_tol=1e-6, abs_tol=1e-6):
+                        casan += 1
+                    else:
+                        fallan += 1
+                if fallan == 0 and casan >= 10:
+                    probado[clave] = columna
+                    break
+
+        if not probado:
+            continue
+
+        total = filas[fila_total]
+        nacional = {}
+        for clave, columna in probado.items():
+            if columna < len(total) and isinstance(total[columna], (int, float)):
+                nacional[clave] = float(total[columna])
+        if nacional:
+            print(f"      total nacional de otra tabla de la hoja "
+                  f"(columna {columna_etiqueta}, fila {fila_total}); "
+                  f"demostradas {len(nacional)} magnitudes de {len(COLUMNAS)}: "
+                  f"{sorted(nacional)}")
+            sin_probar = [c for c, *_ in COLUMNAS if c not in nacional]
+            if sin_probar:
+                print(f"      sin demostrar, y por eso sin publicar para "
+                      f"España: {sin_probar}")
+            return nacional
+
+    print("      no hay ninguna tabla con total nacional que se pueda "
+          "identificar; España se queda sin dato y se verá el hueco")
+    return {}
 
 
 def construye_bloque() -> dict:
