@@ -1,46 +1,68 @@
 Bajas laborales · incapacidad temporal
   la Seguridad Social publica 22 ejercicios: 2005 … 2026
+      fichero: 2005_INS_COMUNES_DUR.xls?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOTW
     2005: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 2006_INS_COMUNES_DUR.xls?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOTW
     2006: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 2007_SIS_COMUNES_DUR.xls?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOTW
     2007: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 2008_SIS_COMUNES_DUR.xls?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOTW
     2008: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 2009_SIS_COMUNES_DUR.xls?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOTW
     2009: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 2010_SIS_COMUNES_DUR.xls?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOTW
     2010: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 2011_SIS_COMUNES_DUR.xlsx?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOT
     2011: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 2012_SIS_COMUNES_DUR.xlsx?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOT
     2012: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 2013_SIS_COMUNES_DUR.xlsx?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOT
     2013: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 2014_SIS_COMUNES_DUR.xlsx?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOT
     2014: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 2015_SIS_COMUNES_DUR.xlsx?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOT
     2015: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 2016_SIS_COMUNES.DUR_1.xlsx?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=RO
     2016: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 2017_SIS_COMUNES.DUR_1.xlsx?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=RO
     2017: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 2018_SIS_COMUNES_DUR_1.xlsx?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=RO
     2018: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['Hoja1', 'Hoja2', 'Hoja3']
+      fichero: 19+INSS+CC+DM+PRE.xlsx?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOTWOR
     2019: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['INSS SIN SEXO']
-    2020: no se pudo leer · RuntimeError: la tabla anual ya no trae estas columnas: ['procesos_finalizados']
-    2021: no se pudo leer · RuntimeError: la tabla anual ya no trae estas columnas: ['procesos_finalizados']
+      fichero: 20+INSS+CC+DM+PRE.xlsx?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOTWOR
+    2020: no se pudo leer · RuntimeError: la tabla anual ya no trae estas columnas: ['procesos_finalizados', '_media_protegidos']
+      fichero: 21+INSS+CC+DM+PRE.xlsx?MOD=AJPERES&CONVERT_TO=linktext&CACHEID=ROOTWOR
+    2021: no se pudo leer · RuntimeError: la tabla anual ya no trae estas columnas: ['procesos_finalizados', '_media_protegidos']
+      fichero: Publicación+IT+cierre+22_MCSS.xlsx?MOD=AJPERES&CONVERT_TO=linktext&CAC
     2022: no se pudo leer · RuntimeError: ninguna hoja trae una tabla por comunidad autónoma; hay ['datos IT cierre 22', 'Estadísticas', 'Indicadores', 'Mozart Reports']
+      fichero: Public+IT+mcss+inss+ism_2023_.xlsx?MOD=AJPERES&CONVERT_TO=linktext&CAC
       tabla en la columna 21: demostradas ['procesos_finalizados', 'procesos_iniciados']
       tabla en la columna 81: demostradas ['procesos_vigor']
-      sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos']
+      sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos', '_media_protegidos']
       la suma de 19 comunidades reproduce ['procesos_iniciados', 'procesos_finalizados', 'procesos_vigor']: se acepta para las magnitudes que se pueden sumar
-      incidencia: la fórmula no se cumple (41 sí, 11 no); España se queda sin ella
+      incidencia: la fórmula no se cumple (52 sí, 0 no); España se queda sin ella
       prevalencia: la fórmula se cumple en 52 provincias, así que se aplica a España
-    2023: 12 meses · {'castellon': 7, 'comunitat-valenciana': 7, 'espana': 5}
+    2023: 12 meses · {'castellon': 8, 'comunitat-valenciana': 8, 'espana': 5}
+      fichero: Publicación+IT+cierre+Sistema+2024_.xlsx?MOD=AJPERES&CONVERT_TO=linkte
       tabla en la columna 21: demostradas ['procesos_finalizados', 'procesos_iniciados', 'procesos_vigor']
-      sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos']
+      sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos', '_media_protegidos']
       la suma de 19 comunidades reproduce ['procesos_iniciados', 'procesos_finalizados', 'procesos_vigor']: se acepta para las magnitudes que se pueden sumar
-      incidencia: la fórmula no se cumple (41 sí, 11 no); España se queda sin ella
+      incidencia: la fórmula no se cumple (52 sí, 0 no); España se queda sin ella
       prevalencia: la fórmula se cumple en 52 provincias, así que se aplica a España
-    2024: cierre · {'castellon': 7, 'comunitat-valenciana': 7, 'espana': 5}
+    2024: cierre · {'castellon': 8, 'comunitat-valenciana': 8, 'espana': 5}
+      fichero: Publicacion_IT_mcss+inss+ism+2025_.xlsx?MOD=AJPERES&CONVERT_TO=linktex
       tabla en la columna 21: demostradas ['procesos_finalizados', 'procesos_iniciados']
       tabla en la columna 81: demostradas ['procesos_vigor']
-      sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos']
+      sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos', '_media_protegidos']
       la suma de 19 comunidades reproduce ['procesos_iniciados', 'procesos_finalizados', 'procesos_vigor']: se acepta para las magnitudes que se pueden sumar
-      incidencia: la fórmula no se cumple (41 sí, 11 no); España se queda sin ella
+      incidencia: la fórmula no se cumple (52 sí, 0 no); España se queda sin ella
       prevalencia: la fórmula se cumple en 52 provincias, así que se aplica a España
-    2025: 12 meses · {'castellon': 7, 'comunitat-valenciana': 7, 'espana': 5}
+    2025: 12 meses · {'castellon': 8, 'comunitat-valenciana': 8, 'espana': 5}
+      fichero: Publicacion_IT_SISTEMA_2026_Junio.xlsx?MOD=AJPERES&CONVERT_TO=linktext
       tabla en la columna 21: demostradas ['procesos_finalizados', 'procesos_iniciados']
       tabla en la columna 81: demostradas ['procesos_vigor']
-      sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos']
+      sin demostrar por calibración: ['duracion_media', 'incidencia', 'prevalencia', 'trabajadores_protegidos', '_media_protegidos']
       la suma de 19 comunidades reproduce ['procesos_iniciados', 'procesos_finalizados', 'procesos_vigor']: se acepta para las magnitudes que se pueden sumar
       incidencia: la fórmula no se cumple (0 sí, 52 no); España se queda sin ella
       prevalencia: la fórmula se cumple en 52 provincias, así que se aplica a España
