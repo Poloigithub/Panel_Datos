@@ -80,6 +80,7 @@ tarea diaria.
 | Tipo de cambio euro/dólar | BCE | Mensual | el mes cierra en los primeros días |
 | Carburantes · hoy y por provincia | MITECO | Diaria | en tiempo real, sin histórico |
 | Carburantes · serie de España | Boletín petrolero · Comisión Europea | Semanal | ~1 semana |
+| Bajas laborales | Incapacidad temporal · Seguridad Social | Anual | el ejercicio sale a lo largo del año siguiente |
 | Municipios · paro | SEPE | Mensual | igual que el paro registrado |
 | Municipios · población | Padrón · INE | Anual | ~6 meses |
 | Municipios · renta | Atlas · INE | Anual | ~2 años |

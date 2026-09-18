@@ -76288,6 +76288,66 @@ materias,euro_dolar,Dólares por euro,espana,Ambos sexos,2026M05,1.16732,$/€
 materias,euro_dolar,Dólares por euro,espana,Ambos sexos,2026M06,1.1518,$/€
 materias,euro_dolar,Dólares por euro,espana,Ambos sexos,2026M07,1.1417478260869562,$/€
 materias,euro_dolar,Dólares por euro,espana,Ambos sexos,2026M08,1.1593095238095241,$/€
+bajas,procesos_iniciados,Bajas iniciadas,espana,Ambos sexos,2023,8879929.0,procesos
+bajas,procesos_iniciados,Bajas iniciadas,espana,Ambos sexos,2024,9262614.0,procesos
+bajas,procesos_iniciados,Bajas iniciadas,espana,Ambos sexos,2025,9757650.0,procesos
+bajas,procesos_iniciados,Bajas iniciadas,comunitat-valenciana,Ambos sexos,2023,682243.0,procesos
+bajas,procesos_iniciados,Bajas iniciadas,comunitat-valenciana,Ambos sexos,2024,704756.0,procesos
+bajas,procesos_iniciados,Bajas iniciadas,comunitat-valenciana,Ambos sexos,2025,748597.0,procesos
+bajas,procesos_iniciados,Bajas iniciadas,castellon,Ambos sexos,2023,72540.0,procesos
+bajas,procesos_iniciados,Bajas iniciadas,castellon,Ambos sexos,2024,73210.0,procesos
+bajas,procesos_iniciados,Bajas iniciadas,castellon,Ambos sexos,2025,76882.0,procesos
+bajas,procesos_finalizados,Bajas terminadas,espana,Ambos sexos,2023,8640064.0,procesos
+bajas,procesos_finalizados,Bajas terminadas,espana,Ambos sexos,2024,9075461.0,procesos
+bajas,procesos_finalizados,Bajas terminadas,espana,Ambos sexos,2025,9590619.0,procesos
+bajas,procesos_finalizados,Bajas terminadas,comunitat-valenciana,Ambos sexos,2023,663305.0,procesos
+bajas,procesos_finalizados,Bajas terminadas,comunitat-valenciana,Ambos sexos,2024,685449.0,procesos
+bajas,procesos_finalizados,Bajas terminadas,comunitat-valenciana,Ambos sexos,2025,732100.0,procesos
+bajas,procesos_finalizados,Bajas terminadas,castellon,Ambos sexos,2023,70230.0,procesos
+bajas,procesos_finalizados,Bajas terminadas,castellon,Ambos sexos,2024,72314.0,procesos
+bajas,procesos_finalizados,Bajas terminadas,castellon,Ambos sexos,2025,75321.0,procesos
+bajas,procesos_vigor,Bajas abiertas a fin de año,espana,Ambos sexos,2023,1110763.0,procesos
+bajas,procesos_vigor,Bajas abiertas a fin de año,espana,Ambos sexos,2024,1182236.0,procesos
+bajas,procesos_vigor,Bajas abiertas a fin de año,espana,Ambos sexos,2025,1248514.0,procesos
+bajas,procesos_vigor,Bajas abiertas a fin de año,comunitat-valenciana,Ambos sexos,2023,108585.0,procesos
+bajas,procesos_vigor,Bajas abiertas a fin de año,comunitat-valenciana,Ambos sexos,2024,118426.0,procesos
+bajas,procesos_vigor,Bajas abiertas a fin de año,comunitat-valenciana,Ambos sexos,2025,126812.0,procesos
+bajas,procesos_vigor,Bajas abiertas a fin de año,castellon,Ambos sexos,2023,12965.0,procesos
+bajas,procesos_vigor,Bajas abiertas a fin de año,castellon,Ambos sexos,2024,12771.0,procesos
+bajas,procesos_vigor,Bajas abiertas a fin de año,castellon,Ambos sexos,2025,13431.0,procesos
+bajas,duracion_media,Duración media de una baja,comunitat-valenciana,Ambos sexos,2023,49.26140764806537,días
+bajas,duracion_media,Duración media de una baja,comunitat-valenciana,Ambos sexos,2024,56.749997446928944,días
+bajas,duracion_media,Duración media de una baja,comunitat-valenciana,Ambos sexos,2025,53.95662068023494,días
+bajas,duracion_media,Duración media de una baja,castellon,Ambos sexos,2023,52.03807489676776,días
+bajas,duracion_media,Duración media de una baja,castellon,Ambos sexos,2024,65.07124484885361,días
+bajas,duracion_media,Duración media de una baja,castellon,Ambos sexos,2025,59.83842487486889,días
+bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,espana,Ambos sexos,2023,34.50840723428064,‰
+bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,espana,Ambos sexos,2024,34.974003781311715,‰
+bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,espana,Ambos sexos,2025,36.244678763634774,‰
+bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,comunitat-valenciana,Ambos sexos,2023,26.153172181372128,‰
+bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,comunitat-valenciana,Ambos sexos,2024,26.225819565408333,‰
+bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,comunitat-valenciana,Ambos sexos,2025,27.165242258070556,‰
+bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,castellon,Ambos sexos,2023,23.132373364287044,‰
+bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,castellon,Ambos sexos,2024,22.866848690110285,‰
+bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,castellon,Ambos sexos,2025,23.706946266697116,‰
+bajas,prevalencia,Trabajadores de baja por cada mil,espana,Ambos sexos,2023,51.26964921215753,‰
+bajas,prevalencia,Trabajadores de baja por cada mil,espana,Ambos sexos,2024,53.26482404010422,‰
+bajas,prevalencia,Trabajadores de baja por cada mil,espana,Ambos sexos,2025,55.1661701351951,‰
+bajas,prevalencia,Trabajadores de baja por cada mil,comunitat-valenciana,Ambos sexos,2023,49.151587960452396,‰
+bajas,prevalencia,Trabajadores de baja por cada mil,comunitat-valenciana,Ambos sexos,2024,52.21397002597312,‰
+bajas,prevalencia,Trabajadores de baja por cada mil,comunitat-valenciana,Ambos sexos,2025,54.26317178174613,‰
+bajas,prevalencia,Trabajadores de baja por cada mil,castellon,Ambos sexos,2023,48.7081904146489,‰
+bajas,prevalencia,Trabajadores de baja por cada mil,castellon,Ambos sexos,2024,47.05867674098463,‰
+bajas,prevalencia,Trabajadores de baja por cada mil,castellon,Ambos sexos,2025,48.47136572996741,‰
+bajas,trabajadores_protegidos,Trabajadores protegidos,espana,Ambos sexos,2023,21665118.0,personas
+bajas,trabajadores_protegidos,Trabajadores protegidos,espana,Ambos sexos,2024,22195436.130791858,personas
+bajas,trabajadores_protegidos,Trabajadores protegidos,espana,Ambos sexos,2025,22631877.415819895,personas
+bajas,trabajadores_protegidos,Trabajadores protegidos,comunitat-valenciana,Ambos sexos,2023,2209186.0,personas
+bajas,trabajadores_protegidos,Trabajadores protegidos,comunitat-valenciana,Ambos sexos,2024,2268090.3202934125,personas
+bajas,trabajadores_protegidos,Trabajadores protegidos,comunitat-valenciana,Ambos sexos,2025,2336980.973210618,personas
+bajas,trabajadores_protegidos,Trabajadores protegidos,castellon,Ambos sexos,2023,266177.0,personas
+bajas,trabajadores_protegidos,Trabajadores protegidos,castellon,Ambos sexos,2024,271384.596517509,personas
+bajas,trabajadores_protegidos,Trabajadores protegidos,castellon,Ambos sexos,2025,277091.4290887473,personas
 carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M04,1.5347,€/l
 carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M05,1.5538,€/l
 carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M06,1.4874,€/l

@@ -1,7 +1,27 @@
 {
- "actualizado": "2026-09-17T15:30:12+00:00",
+ "actualizado": "2026-09-18T09:46:09+00:00",
  "repositorio": "https://github.com/Poloigithub/Panel_Datos",
  "altas": [
+  {
+   "fecha": "2026-09-18",
+   "secciones": [
+    {
+     "id": "bajas",
+     "titulo": "Las bajas laborales",
+     "estreno": true,
+     "commit": "a8d3bf0",
+     "indicadores": [
+      "Duración media de una baja",
+      "Bajas nuevas al mes por cada mil trabajadores",
+      "Trabajadores de baja por cada mil",
+      "Bajas terminadas",
+      "Bajas iniciadas",
+      "Bajas abiertas a fin de año",
+      "Trabajadores protegidos"
+     ]
+    }
+   ]
+  },
   {
    "fecha": "2026-09-17",
    "secciones": [
@@ -373,59 +393,6 @@
      "id": "geo",
      "titulo": "Contornos municipales",
      "cambios": 1
-    }
-   ]
-  },
-  {
-   "commit": "3ea5504",
-   "fecha": "2026-09-16T10:03:19+00:00",
-   "asunto": "Reconstruye el histórico de paro registrado [skip ci]",
-   "secciones": [
-    {
-     "id": "contratos",
-     "titulo": "Contratación",
-     "cambios": 92
-    },
-    {
-     "id": "paro-registrado",
-     "titulo": "Paro registrado",
-     "cambios": 14
-    }
-   ]
-  },
-  {
-   "commit": "5bfa2db",
-   "fecha": "2026-09-16T09:48:01+00:00",
-   "asunto": "Reconstruye el histórico de paro registrado [skip ci]",
-   "secciones": [
-    {
-     "id": "paro-registrado",
-     "titulo": "Paro registrado",
-     "cambios": 13
-    }
-   ]
-  },
-  {
-   "commit": "229ec9a",
-   "fecha": "2026-09-16T09:45:30+00:00",
-   "asunto": "Publica el paro registrado y su detalle municipal",
-   "secciones": [
-    {
-     "id": "paro-registrado",
-     "titulo": "Paro registrado",
-     "cambios": 24
-    }
-   ]
-  },
-  {
-   "commit": "de91b60",
-   "fecha": "2026-09-16T09:41:53+00:00",
-   "asunto": "Reconstruye el histórico de paro registrado [skip ci]",
-   "secciones": [
-    {
-     "id": "paro-registrado",
-     "titulo": "Paro registrado",
-     "cambios": 86
     }
    ]
   }

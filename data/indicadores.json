@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T15:30:10+00:00",
+ "actualizado": "2026-09-18T09:46:07+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -1996,6 +1996,138 @@
    ],
    "desde": "1999M01",
    "hasta": "2026M08"
+  },
+  {
+   "clave": "procesos_iniciados",
+   "titulo": "Bajas iniciadas",
+   "seccion": "Las bajas laborales",
+   "seccion_id": "bajas",
+   "enlace": "bajas.html",
+   "fuente": "Incapacidad temporal · Seguridad Social",
+   "unidad": "procesos",
+   "unidad_texto": "procesos de baja iniciados en el año",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2023",
+   "hasta": "2025"
+  },
+  {
+   "clave": "procesos_finalizados",
+   "titulo": "Bajas terminadas",
+   "seccion": "Las bajas laborales",
+   "seccion_id": "bajas",
+   "enlace": "bajas.html",
+   "fuente": "Incapacidad temporal · Seguridad Social",
+   "unidad": "procesos",
+   "unidad_texto": "procesos de baja que acabaron en el año",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2023",
+   "hasta": "2025"
+  },
+  {
+   "clave": "procesos_vigor",
+   "titulo": "Bajas abiertas a fin de año",
+   "seccion": "Las bajas laborales",
+   "seccion_id": "bajas",
+   "enlace": "bajas.html",
+   "fuente": "Incapacidad temporal · Seguridad Social",
+   "unidad": "procesos",
+   "unidad_texto": "procesos todavía abiertos al cerrar el año",
+   "nota": "Es una foto del 31 de diciembre, no una suma del año: cuenta las bajas que seguían abiertas ese día.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2023",
+   "hasta": "2025"
+  },
+  {
+   "clave": "duracion_media",
+   "titulo": "Duración media de una baja",
+   "seccion": "Las bajas laborales",
+   "seccion_id": "bajas",
+   "enlace": "bajas.html",
+   "fuente": "Incapacidad temporal · Seguridad Social",
+   "unidad": "días",
+   "unidad_texto": "días que dura de media un proceso terminado",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2023",
+   "hasta": "2025"
+  },
+  {
+   "clave": "incidencia",
+   "titulo": "Bajas nuevas al mes por cada mil trabajadores",
+   "seccion": "Las bajas laborales",
+   "seccion_id": "bajas",
+   "enlace": "bajas.html",
+   "fuente": "Incapacidad temporal · Seguridad Social",
+   "unidad": "‰",
+   "unidad_texto": "procesos iniciados al mes por cada mil trabajadores protegidos",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2023",
+   "hasta": "2025"
+  },
+  {
+   "clave": "prevalencia",
+   "titulo": "Trabajadores de baja por cada mil",
+   "seccion": "Las bajas laborales",
+   "seccion_id": "bajas",
+   "enlace": "bajas.html",
+   "fuente": "Incapacidad temporal · Seguridad Social",
+   "unidad": "‰",
+   "unidad_texto": "procesos en vigor por cada mil trabajadores protegidos",
+   "nota": "Mide cuánta gente está de baja en un momento dado; la incidencia mide cuántas bajas empiezan. Una plantilla con pocas bajas pero muy largas tiene prevalencia alta e incidencia baja.",
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2023",
+   "hasta": "2025"
+  },
+  {
+   "clave": "trabajadores_protegidos",
+   "titulo": "Trabajadores protegidos",
+   "seccion": "Las bajas laborales",
+   "seccion_id": "bajas",
+   "enlace": "bajas.html",
+   "fuente": "Incapacidad temporal · Seguridad Social",
+   "unidad": "personas",
+   "unidad_texto": "personas cubiertas por la prestación al cerrar el año",
+   "nota": null,
+   "por_sexo": false,
+   "ambitos": [
+    "espana",
+    "comunitat-valenciana",
+    "castellon"
+   ],
+   "desde": "2023",
+   "hasta": "2025"
   },
   {
    "clave": "gasolina_95",

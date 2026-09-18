@@ -28,7 +28,10 @@
     var guardado = formateadores.get(clave);
     if (guardado) return guardado;
     var nuevo = new Intl.NumberFormat('es-ES', {
-      minimumFractionDigits: clave >= 2 ? clave : 0,
+      // Tantos decimales como diga el indicador, también el mínimo: si no,
+      // en una misma columna salía «54» al lado de «59,8» porque uno de los
+      // dos daba redondo, y parecía que se medían con distinta precisión.
+      minimumFractionDigits: clave,
       maximumFractionDigits: clave,
       useGrouping: 'always'
     });

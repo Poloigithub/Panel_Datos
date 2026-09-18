@@ -837,6 +837,54 @@ guardado por provincias. Crecerá un día por día.
 
 ---
 
+## Fase 16 · Las bajas laborales ✅ hecha
+
+**Siete sondeos, y dos de ellos para deshacer errores propios.** «Baja laboral»
+se llama incapacidad temporal en las estadísticas, y se probaron cuatro
+puertas: el INE, el anuario del ministerio, la Seguridad Social y el catálogo
+de datos.gob.es. Dos dieron «no hay nada» que no era verdad. El anuario devolvió
+`CERTIFICATE_VERIFY_FAILED` porque lo pedí con el contexto TLS por defecto,
+teniendo este panel escrito `red_ministerio.py` justo para ese servidor. Y de la
+Seguridad Social concluí que no publicaba ficheros porque busqué `href="…xlsx"`
+en un portal que los sirve **sin extensión**. Dar una fuente por vacía porque mi
+expresión regular no encuentra nada es el error que este panel dice no cometer.
+Al dejar de filtrar y volcar las páginas enteras, apareció todo.
+
+**La fuente buena es la Seguridad Social**, que es quien paga la prestación.
+Publica un fichero por ejercicio desde 2005 con una tabla **por provincia**:
+bajas iniciadas, terminadas y abiertas a fin de año, duración media, incidencia,
+prevalencia y trabajadores protegidos. Castellón viene como
+`CASTELLÓN/CASTELLÓ`. Se descartó la encuesta del INE, que medía horas no
+trabajadas y se quedaba en comunidad autónoma.
+
+**Lo que costó: identificar sin adivinar.** La hoja no trae una tabla sino
+varias en paralelo. La que tiene los nombres escritos no lleva total nacional;
+otra sí, pero nombra sus columnas con un código numérico sin leyenda. En vez de
+deducirlo por el tamaño de las cifras se demostró con aritmética: una columna
+sólo se acepta cuando coincide con una magnitud conocida **en todas las
+provincias**. Con cincuenta, la casualidad no existe. Lo demás se completó
+sumando comunidades —comprobando antes que la suma reproduce lo ya demostrado— y
+derivando las tasas con fórmulas verificadas provincia a provincia. La duración
+media de España no se puede deducir de nada publicado, así que **España no la
+tiene y se ve el hueco**.
+
+**La serie empieza en 2023**, no en 2005: los ficheros anteriores tienen otra
+estructura —`Hoja1`, `INSS SIN SEXO`, `Mozart Reports`— y algunos ni traen las
+bajas terminadas. Crecerá un año cada año.
+
+**Contraste que da confianza.** Los trabajadores protegidos de la Seguridad
+Social quedan un 6 % por encima de los afiliados del anuario del ministerio, y
+el desfase es el mismo los tres años (1,059 · 1,065 · 1,065). Dos fuentes
+independientes que cuadran.
+
+**Queda apuntado**: dentro hay una segunda tabla, mensual y **con desglose por
+sexo**, que sería mejor. No entra porque de sus seis códigos sólo se ha podido
+confirmar uno con certeza —el 25, procesos iniciados, que al agregar sus meses
+da exactamente la cifra de la tabla nombrada—. Entra el día que aparezca la
+leyenda o se puedan demostrar los otros cinco.
+
+---
+
 ## Orden y dependencias
 
 ```

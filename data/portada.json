@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-17T15:30:10+00:00",
+ "actualizado": "2026-09-18T09:46:07+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -462,6 +462,51 @@
       "espana": 11.15,
       "comunitat-valenciana": null,
       "castellon": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "bajas",
+   "titulo": "Las bajas laborales",
+   "enlace": "bajas.html",
+   "fuente": "Incapacidad temporal · Seguridad Social",
+   "cadencia": "Anual. Cada ejercicio se publica a lo largo del año siguiente y se revisa después.",
+   "actualizado": "2026-09-18T09:43:31+00:00",
+   "ultimo_periodo": "2025",
+   "destacados": [
+    {
+     "clave": "procesos_iniciados",
+     "titulo": "Bajas iniciadas",
+     "unidad": "procesos",
+     "decimales": 0,
+     "periodo": "2025",
+     "valores": {
+      "espana": 9757650.0,
+      "comunitat-valenciana": 748597.0,
+      "castellon": 76882.0
+     },
+     "hace_un_anyo": {
+      "espana": 9262614.0,
+      "comunitat-valenciana": 704756.0,
+      "castellon": 73210.0
+     }
+    },
+    {
+     "clave": "duracion_media",
+     "titulo": "Duración media de una baja",
+     "unidad": "días",
+     "decimales": 1,
+     "periodo": "2025",
+     "valores": {
+      "espana": null,
+      "comunitat-valenciana": 53.95662068023494,
+      "castellon": 59.83842487486889
+     },
+     "hace_un_anyo": {
+      "espana": null,
+      "comunitat-valenciana": 56.749997446928944,
+      "castellon": 65.07124484885361
      }
     }
    ]
