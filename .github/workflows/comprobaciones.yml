@@ -16,6 +16,12 @@ jobs:
         with:
           python-version: '3.12'
 
+      # Va antes que las pruebas porque es instantáneo y caza la clase de
+      # fallo que ninguna de ellas ve: un nombre que no existe en una rama por
+      # la que sólo se pasa al ejecutar la tarea diaria.
+      - name: Comprobar que no se usa ningún nombre inexistente
+        run: python scripts/revisar_nombres.py
+
       - name: Pruebas del motor de series
         run: python -m unittest discover -s tests -v
 

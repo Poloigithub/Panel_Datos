@@ -274,7 +274,11 @@ def fichas_derivadas(por_ambito: dict, bloque: dict) -> dict:
 
 
 def posproceso_renta(ambito, series, origen):
-    base = deflacta(series, descarga_deflactor(ambito), origen)
+    # Las dos funciones viven en el motor de bloques desde que se extrajo, así
+    # que van con su módulo delante; y `deflacta` necesita saber qué series
+    # deflactar, que es lo que dice DEFLACTABLES.
+    base = bloques.deflacta(series, bloques.descarga_deflactor(ambito), origen,
+                            DEFLACTABLES)
     if base:
         print(f"      renta en euros constantes de {base}")
 
