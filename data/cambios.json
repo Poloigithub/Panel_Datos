@@ -1,51 +1,31 @@
 {
- "actualizado": "2026-09-18T10:33:31+00:00",
+ "actualizado": "2026-09-19T20:16:04+00:00",
  "repositorio": "https://github.com/Poloigithub/Panel_Datos",
  "altas": [
   {
-   "fecha": "2026-09-18",
-   "secciones": [
-    {
-     "id": "bajas",
-     "titulo": "Las bajas laborales",
-     "estreno": true,
-     "commit": "a8d3bf0",
-     "indicadores": [
-      "Duración media de una baja",
-      "Bajas nuevas al mes por cada mil trabajadores",
-      "Trabajadores de baja por cada mil",
-      "Bajas terminadas",
-      "Bajas iniciadas",
-      "Bajas abiertas a fin de año",
-      "Trabajadores protegidos"
-     ]
-    }
-   ]
-  },
-  {
-   "fecha": "2026-09-17",
+   "fecha": "2026-09-19",
    "secciones": [
     {
      "id": "siniestralidad",
      "titulo": "Accidentes de trabajo",
      "estreno": true,
-     "commit": "bd5d3bb",
+     "commit": "406798d",
      "indicadores": [
       "Accidentes graves en jornada",
       "Accidentes in itinere",
       "Accidentes con baja en jornada de trabajo",
       "Accidentes mortales en jornada",
       "Muertes in itinere",
-      "Accidentes leves",
       "Accidentes por cada 100.000 afiliados",
-      "Muertes por cada 100.000 afiliados"
+      "Muertes por cada 100.000 afiliados",
+      "Accidentes leves"
      ]
     },
     {
      "id": "afiliacion",
      "titulo": "Afiliación a la Seguridad Social",
      "estreno": true,
-     "commit": "3162007",
+     "commit": "406798d",
      "indicadores": [
       "Personas afiliadas a la Seguridad Social",
       "Personas afiliadas por cuenta propia",
@@ -53,10 +33,26 @@
      ]
     },
     {
+     "id": "contratos",
+     "titulo": "Contratación",
+     "estreno": true,
+     "commit": "406798d",
+     "indicadores": [
+      "Agricultura",
+      "Construcción",
+      "Convertidos en indefinidos",
+      "Indefinidos iniciales",
+      "Industria",
+      "Servicios",
+      "Temporales",
+      "Contratos registrados"
+     ]
+    },
+    {
      "id": "convenios",
      "titulo": "Convenios colectivos",
      "estreno": true,
-     "commit": "5a117a9",
+     "commit": "406798d",
      "indicadores": [
       "Convenios registrados",
       "Jornada media pactada",
@@ -68,7 +64,7 @@
      "id": "despidos",
      "titulo": "Despidos y regulación de empleo",
      "estreno": true,
-     "commit": "12bf357",
+     "commit": "406798d",
      "indicadores": [
       "Despidos en el año",
       "Personas afectadas por un expediente de regulación",
@@ -80,7 +76,7 @@
      "id": "luz",
      "titulo": "El precio de la luz",
      "estreno": true,
-     "commit": "8e6701c",
+     "commit": "406798d",
      "indicadores": [
       "La hora más barata del día",
       "Diferencia entre la hora cara y la barata",
@@ -92,7 +88,7 @@
      "id": "carburantes",
      "titulo": "El precio de los carburantes",
      "estreno": true,
-     "commit": "6c37321",
+     "commit": "406798d",
      "indicadores": [
       "Gasóleo A (diésel)",
       "Impuestos en el gasóleo A",
@@ -110,83 +106,23 @@
      "id": "huelgas",
      "titulo": "Huelgas",
      "estreno": true,
-     "commit": "1fc6674",
+     "commit": "406798d",
      "indicadores": [
+      "Huelgas con repercusión en el territorio",
       "Jornadas no trabajadas",
-      "Personas que secundaron una huelga",
-      "Huelgas con repercusión en el territorio"
-     ]
-    },
-    {
-     "id": "materias",
-     "titulo": "Materias primas",
-     "estreno": true,
-     "commit": "e269e61",
-     "indicadores": [
-      "Aceite de girasol",
-      "Aluminio",
-      "Azúcar",
-      "Petróleo Brent",
-      "Cacao",
-      "Café",
-      "Carbón",
-      "Cobre",
-      "Dólares por euro",
-      "Gas natural en Europa",
-      "Maíz",
-      "Naranja",
-      "Oro",
-      "Trigo",
-      "Urea",
-      "Aceite de palma",
-      "Aceite de soja",
-      "Algodón",
-      "Arroz",
-      "Azúcar en el mercado mundial",
-      "Caucho",
-      "Cebada",
-      "Fosfato diamónico (DAP)",
-      "Gas natural en Estados Unidos",
-      "Mineral de hierro",
-      "Níquel",
-      "Plata",
-      "Plátano",
-      "Pollo",
-      "Cloruro potásico",
-      "Carne de vacuno",
-      "Petróleo WTI",
-      "Zinc"
-     ]
-    }
-   ]
-  },
-  {
-   "fecha": "2026-09-16",
-   "secciones": [
-    {
-     "id": "contratos",
-     "titulo": "Contratación",
-     "estreno": true,
-     "commit": "3ea5504",
-     "indicadores": [
-      "Agricultura",
-      "Construcción",
-      "Convertidos en indefinidos",
-      "Indefinidos iniciales",
-      "Industria",
-      "Servicios",
-      "Temporales",
-      "Contratos registrados"
+      "Personas que secundaron una huelga"
      ]
     },
     {
      "id": "cesta",
      "titulo": "La cesta de la compra",
      "estreno": true,
-     "commit": "98c1ebf",
+     "commit": "406798d",
      "indicadores": [
       "Aceite de oliva",
+      "Agua mineral",
       "Alimentos y bebidas no alcohólicas",
+      "Azúcar",
       "Café, cacao e infusiones",
       "Carne de ave",
       "Carne de porcino",
@@ -199,18 +135,98 @@
       "Pan",
       "Patatas y sus preparados",
       "Pescado fresco y congelado",
-      "Agua mineral",
-      "Azúcar, chocolate y confitería",
-      "Alimentos preparados",
+      "Alimentos preparados y otros",
       "Restaurantes y alojamiento",
       "Restaurantes, cafés y comida rápida"
+     ]
+    },
+    {
+     "id": "bajas",
+     "titulo": "Las bajas laborales",
+     "estreno": true,
+     "commit": "406798d",
+     "indicadores": [
+      "Duración media de una baja",
+      "Bajas nuevas al mes por cada mil trabajadores",
+      "Trabajadores de baja por cada mil",
+      "Bajas terminadas",
+      "Bajas iniciadas",
+      "Bajas abiertas a fin de año",
+      "Trabajadores protegidos"
+     ]
+    },
+    {
+     "id": "materias",
+     "titulo": "Materias primas",
+     "estreno": true,
+     "commit": "406798d",
+     "indicadores": [
+      "Aceite de girasol",
+      "Aceite de palma",
+      "Aceite de soja",
+      "Algodón",
+      "Aluminio",
+      "Arroz",
+      "Azúcar",
+      "Azúcar en el mercado mundial",
+      "Petróleo Brent",
+      "Cacao",
+      "Café",
+      "Carbón",
+      "Caucho",
+      "Cobre",
+      "Fosfato diamónico (DAP)",
+      "Dólares por euro",
+      "Gas natural en Estados Unidos",
+      "Gas natural en Europa",
+      "Mineral de hierro",
+      "Maíz",
+      "Naranja",
+      "Níquel",
+      "Oro",
+      "Plata",
+      "Plátano",
+      "Pollo",
+      "Cloruro potásico",
+      "Carne de vacuno",
+      "Trigo",
+      "Urea",
+      "Petróleo WTI",
+      "Zinc"
+     ]
+    },
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "estreno": true,
+     "commit": "406798d",
+     "indicadores": [
+      "Activos",
+      "Ocupados",
+      "Parados",
+      "Tasa de actividad",
+      "Tasa de empleo",
+      "Tasa de paro"
+     ]
+    },
+    {
+     "id": "demografia",
+     "titulo": "Natalidad, mortalidad y migración",
+     "estreno": true,
+     "commit": "406798d",
+     "indicadores": [
+      "Edad media al primer hijo",
+      "Esperanza de vida al nacer",
+      "Mortalidad infantil (menores de 5 años)",
+      "Nacidos por cada 1.000 defunciones",
+      "Saldo migratorio"
      ]
     },
     {
      "id": "paro-registrado",
      "titulo": "Paro registrado",
      "estreno": true,
-     "commit": "de91b60",
+     "commit": "406798d",
      "indicadores": [
       "De 25 a 44 años",
       "De 45 años o más",
@@ -224,23 +240,54 @@
      ]
     },
     {
+     "id": "poblacion",
+     "titulo": "Población",
+     "estreno": true,
+     "commit": "406798d",
+     "indicadores": [
+      "Crecimiento de la población",
+      "Edad media",
+      "Población de nacionalidad española",
+      "Población de 70 y más años",
+      "Población"
+     ]
+    },
+    {
      "id": "precios",
      "titulo": "Precios",
      "estreno": true,
-     "commit": "3f1c166",
+     "commit": "406798d",
      "indicadores": [
       "Alimentos",
       "IPC, índice general",
       "Transporte",
-      "Inflación interanual",
-      "Vivienda, agua y energía"
+      "Inflación interanual"
+     ]
+    },
+    {
+     "id": "renta",
+     "titulo": "Renta y desigualdad",
+     "estreno": true,
+     "commit": "406798d",
+     "indicadores": [
+      "Población bajo el 60 % de la renta mediana",
+      "Índice de Gini",
+      "Hogares unipersonales",
+      "Distribución de la renta P80/P20",
+      "Renta neta media por hogar",
+      "Renta neta media por hogar (euros constantes)",
+      "Renta neta media por persona",
+      "Renta neta media por persona (euros constantes)",
+      "Renta media por unidad de consumo",
+      "Renta media por unidad de consumo (euros constantes)",
+      "Tamaño medio del hogar"
      ]
     },
     {
      "id": "salarios",
      "titulo": "Salarios y rentas del trabajo",
      "estreno": true,
-     "commit": "05beb3c",
+     "commit": "406798d",
      "indicadores": [
       "Brecha salarial entre mujeres y hombres",
       "Distancia entre los salarios altos y los bajos",
@@ -257,103 +304,25 @@
      "id": "vivienda",
      "titulo": "Vivienda",
      "estreno": true,
-     "commit": "1b70382",
+     "commit": "406798d",
      "indicadores": [
       "Compraventas de vivienda",
       "Compraventas de vivienda nueva",
       "Compraventas de vivienda protegida",
       "Compraventas de vivienda de segunda mano",
       "Ejecuciones hipotecarias sobre viviendas",
-      "Índice de precios de la vivienda",
-      "Variación anual del precio de la vivienda",
-      "Índice de precios de la vivienda en alquiler",
-      "Variación anual del precio del alquiler",
       "Hipoteca media en años de renta del hogar",
       "Hipoteca media sobre vivienda",
       "Hipotecas sobre viviendas",
       "Importe de las hipotecas sobre viviendas",
+      "Índice de precios de la vivienda",
+      "Variación anual del precio de la vivienda",
+      "Índice de precios de la vivienda en alquiler",
+      "Variación anual del precio del alquiler",
       "Lanzamientos practicados",
       "Lanzamientos por impago de alquiler",
       "Lanzamientos por ejecución hipotecaria",
       "Lanzamientos por otras causas"
-     ]
-    },
-    {
-     "id": "renta",
-     "titulo": "Renta y desigualdad",
-     "estreno": false,
-     "commit": "3f1c166",
-     "indicadores": [
-      "Renta neta media por hogar (euros constantes)",
-      "Renta neta media por persona (euros constantes)",
-      "Renta media por unidad de consumo (euros constantes)"
-     ]
-    }
-   ]
-  },
-  {
-   "fecha": "2026-09-15",
-   "secciones": [
-    {
-     "id": "epa",
-     "titulo": "Mercado laboral",
-     "estreno": true,
-     "commit": "6e1eafb",
-     "indicadores": [
-      "Activos",
-      "Ocupados",
-      "Parados",
-      "Tasa de actividad",
-      "Tasa de paro",
-      "Tasa de empleo"
-     ]
-    },
-    {
-     "id": "demografia",
-     "titulo": "Natalidad, mortalidad y migración",
-     "estreno": true,
-     "commit": "a030e4b",
-     "indicadores": [
-      "Edad media a la maternidad",
-      "Esperanza de vida al nacer",
-      "Número medio de hijos por mujer",
-      "Nacidos por cada 1.000 defunciones",
-      "Saldo migratorio",
-      "Tasa bruta de mortalidad",
-      "Tasa bruta de natalidad",
-      "Mortalidad infantil (menores de 5 años)"
-     ]
-    },
-    {
-     "id": "poblacion",
-     "titulo": "Población",
-     "estreno": true,
-     "commit": "a030e4b",
-     "indicadores": [
-      "Crecimiento de la población",
-      "Edad media",
-      "Población extranjera",
-      "Población de 65 y más años",
-      "Población",
-      "Población de nacionalidad española",
-      "Población de 70 y más años"
-     ]
-    },
-    {
-     "id": "renta",
-     "titulo": "Renta y desigualdad",
-     "estreno": true,
-     "commit": "a030e4b",
-     "indicadores": [
-      "Población bajo el 60 % de la renta mediana",
-      "Índice de Gini",
-      "Hogares unipersonales",
-      "Distribución de la renta P80/P20",
-      "Renta neta media por hogar",
-      "Renta mediana por hogar",
-      "Renta neta media por persona",
-      "Renta media por unidad de consumo",
-      "Tamaño medio del hogar"
      ]
     }
    ]
@@ -361,26 +330,94 @@
  ],
  "novedades": [
   {
-   "commit": "75c8ead",
-   "fecha": "2026-09-17T02:56:13+00:00",
-   "asunto": "Publica los accidentes de trabajo",
+   "commit": "f442b80",
+   "fecha": "2026-09-19T20:16:02Z",
+   "asunto": "Actualiza los datos (EPA: 2026T2)",
    "secciones": [
+    {
+     "id": "luz",
+     "titulo": "El precio de la luz",
+     "cambios": 72
+    },
+    {
+     "id": "renta",
+     "titulo": "Renta y desigualdad",
+     "cambios": 40
+    },
+    {
+     "id": "demografia",
+     "titulo": "Natalidad, mortalidad y migración",
+     "cambios": 31
+    },
+    {
+     "id": "poblacion",
+     "titulo": "Población",
+     "cambios": 28
+    },
+    {
+     "id": "precios",
+     "titulo": "Precios",
+     "cambios": 26
+    },
+    {
+     "id": "carburantes",
+     "titulo": "El precio de los carburantes",
+     "cambios": 12
+    },
+    {
+     "id": "afiliacion",
+     "titulo": "Afiliación a la Seguridad Social",
+     "cambios": 10
+    },
     {
      "id": "siniestralidad",
      "titulo": "Accidentes de trabajo",
-     "cambios": 6
-    }
-   ]
-  },
-  {
-   "commit": "f785832",
-   "fecha": "2026-09-16T12:18:38+00:00",
-   "asunto": "Geometrías municipales de Castellón [skip ci]",
-   "secciones": [
+     "cambios": 10
+    },
     {
-     "id": "municipios",
-     "titulo": "Municipios de Castellón",
-     "cambios": 1
+     "id": "bajas",
+     "titulo": "Las bajas laborales",
+     "cambios": 8
+    },
+    {
+     "id": "cesta",
+     "titulo": "La cesta de la compra",
+     "cambios": 8
+    },
+    {
+     "id": "convenios",
+     "titulo": "Convenios colectivos",
+     "cambios": 8
+    },
+    {
+     "id": "despidos",
+     "titulo": "Despidos y regulación de empleo",
+     "cambios": 8
+    },
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "cambios": 8
+    },
+    {
+     "id": "huelgas",
+     "titulo": "Huelgas",
+     "cambios": 8
+    },
+    {
+     "id": "materias",
+     "titulo": "Materias primas",
+     "cambios": 8
+    },
+    {
+     "id": "salarios",
+     "titulo": "Salarios y rentas del trabajo",
+     "cambios": 8
+    },
+    {
+     "id": "vivienda",
+     "titulo": "Vivienda",
+     "cambios": 8
     }
    ]
   }
