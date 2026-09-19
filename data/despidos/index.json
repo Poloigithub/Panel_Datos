@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-17T11:30:59+00:00",
+  "actualizado": "2026-09-19T19:50:39+00:00",
   "titulo": "Despidos y regulación de empleo",
   "ultimo_periodo": "2026M07",
   "primer_periodo": "2019",
@@ -12,24 +12,6 @@
       "por_sexo": false,
       "nota": "Suma de los tres tipos de medida: despido colectivo, suspensión de contrato y reducción de jornada. Es lo que se conoce por ERE y ERTE.",
       "sobre_total": null
-    },
-    "ere_despido": {
-      "titulo": "De ellas, por despido colectivo",
-      "unidad": "personas",
-      "unidad_texto": "trabajadores que pierden el empleo",
-      "decimales": 0,
-      "por_sexo": false,
-      "nota": null,
-      "sobre_total": "ere_afectados"
-    },
-    "ere_suspension": {
-      "titulo": "De ellas, por suspensión de contrato",
-      "unidad": "personas",
-      "unidad_texto": "trabajadores con el contrato suspendido",
-      "decimales": 0,
-      "por_sexo": false,
-      "nota": "La suspensión no termina el contrato, lo para. Es la figura de los ERTE.",
-      "sobre_total": "ere_afectados"
     },
     "despidos": {
       "titulo": "Despidos en el año",
