@@ -176,9 +176,15 @@ def descarga_anyo(fuente: dict, anyo: int) -> str | None:
             print(f"  {anyo}: sin fichero publicado")
             return None
         print(f"  {anyo}: error {exc.code} {exc.reason}")
+        # Un 5xx es el servidor diciendo «ahora no puedo», no «esto ya no
+        # existe». Se apunta para poder distinguir después una caída pasajera
+        # de un cambio que deja el descargador inservible.
+        if 500 <= exc.code < 600:
+            CAIDAS_PASAJERAS.add(anyo)
         return None
     except Exception as exc:  # noqa: BLE001
         print(f"  {anyo}: {type(exc).__name__}: {exc}")
+        CAIDAS_PASAJERAS.add(anyo)
         return None
 
     for codificacion in ("utf-8-sig", "latin-1"):
@@ -422,6 +428,12 @@ def procesa(nombre: str, fuente: dict, anyos: list[int], ahora: str) -> bool:
     return True
 
 
+# Años en los que el SEPE no contestó por estar caído o incomunicado, frente a
+# los que contestaron algo que no se pudo usar. La diferencia decide si un día
+# sin datos es una molestia o una avería.
+CAIDAS_PASAJERAS: set[int] = set()
+
+
 def main() -> int:
     analizador = argparse.ArgumentParser(description=__doc__)
     analizador.add_argument("--desde", type=int, default=None,
@@ -439,7 +451,16 @@ def main() -> int:
     hechas = [nombre for nombre in nombres if procesa(nombre, FUENTES[nombre], anyos, ahora)]
 
     if not hechas:
-        print("\nNo se ha descargado nada.")
+        if CAIDAS_PASAJERAS:
+            # El SEPE no contestó. No se toca nada y la tarea sigue: tumbarla
+            # dejaría sin actualizar a los otros quince organismos, que no
+            # tienen la culpa. Si esto dura, lo caza la comprobación de
+            # frescura, que para eso está.
+            print(f"\nEl SEPE no ha contestado para {sorted(CAIDAS_PASAJERAS)}. "
+                  f"No se toca nada y se sigue; si dura, lo dirá la frescura.")
+            return 0
+        print("\nNo se ha descargado nada, y no por una caída del servidor: "
+              "el SEPE ha contestado algo que este descargador no sabe usar.")
         return 1
     print(f"\nListo: {', '.join(hechas)}.")
     return 0

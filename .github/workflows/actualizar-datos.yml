@@ -32,23 +32,35 @@ jobs:
           python-version: '3.12'
 
       - name: Descargar series de la EPA
+        id: series-de-la-epa
+        continue-on-error: true
         run: python scripts/descargar_epa.py
 
       - name: Descargar los bloques sociodemográficos
+        id: los-bloques-sociodemografico
+        continue-on-error: true
         run: python scripts/descargar_sociodemografia.py
 
       # Después de los sociodemográficos: el esfuerzo de acceso a la vivienda
       # se calcula contra la renta por hogar que escribe ese descargador.
       - name: Descargar el bloque de vivienda
+        id: el-bloque-de-vivienda
+        continue-on-error: true
         run: python scripts/descargar_vivienda.py
 
       - name: Descargar salarios y rentas del trabajo
+        id: salarios-y-rentas-del-trabaj
+        continue-on-error: true
         run: python scripts/descargar_salarios.py
 
       - name: Descargar la cesta de la compra
+        id: la-cesta-de-la-compra
+        continue-on-error: true
         run: python scripts/descargar_cesta.py
 
       - name: Descargar el paro registrado y los contratos del SEPE
+        id: el-paro-registrado-y-los-con
+        continue-on-error: true
         run: python scripts/descargar_paro.py
 
       # La afiliación va antes que los accidentes, y no da igual: los
@@ -56,31 +68,92 @@ jobs:
       # afiliados, así que si llegara después la tasa saldría con el
       # denominador del día anterior.
       - name: Descargar la afiliación a la Seguridad Social
+        id: la-afiliacion-a-la-seguridad
+        continue-on-error: true
         run: python scripts/descargar_afiliacion.py
 
       - name: Descargar los accidentes de trabajo
+        id: los-accidentes-de-trabajo
+        continue-on-error: true
         run: python scripts/descargar_siniestralidad.py
 
       - name: Descargar el precio de la luz
+        id: el-precio-de-la-luz
+        continue-on-error: true
         run: python scripts/descargar_luz.py
 
       - name: Descargar los convenios colectivos
+        id: los-convenios-colectivos
+        continue-on-error: true
         run: python scripts/descargar_convenios.py
 
       - name: Descargar los despidos y la regulación de empleo
+        id: los-despidos-y-la-regulacion
+        continue-on-error: true
         run: python scripts/descargar_despidos.py
 
       - name: Descargar las huelgas
+        id: las-huelgas
+        continue-on-error: true
         run: python scripts/descargar_huelgas.py
 
       - name: Descargar las materias primas
+        id: las-materias-primas
+        continue-on-error: true
         run: python scripts/descargar_materias.py
 
       - name: Descargar el precio de los carburantes
+        id: el-precio-de-los-carburantes
+        continue-on-error: true
         run: python scripts/descargar_carburantes.py
 
       - name: Descargar las bajas laborales
+        id: las-bajas-laborales
+        continue-on-error: true
         run: python scripts/descargar_bajas.py
+
+      # Cada fuente se intenta siempre, pase lo que pase con las demás. Son
+      # dieciséis organismos independientes y hasta hoy iban en cadena: el
+      # 17 de septiembre un fallo en el segundo paso dejó sin ejecutar los
+      # catorce siguientes, y el panel entero se quedó tres días congelado
+      # por un error que sólo afectaba a la renta. Ahora una caída no se
+      # lleva a nadie por delante, pero el run sale en rojo igual: lo que no
+      # puede pasar es que un fallo se quede sin avisar.
+      #
+      # Los pasos que dependen de otro -la vivienda de la renta, los accidentes
+      # de la afiliación- siguen en su orden, y si aquél se cae trabajan con lo
+      # último que se publicó, que es lo que ya hacían antes de esto.
+      - name: Ver qué fuentes se han caído
+        run: |
+          CAIDAS=""
+          mira() {
+            if [ "$2" = "failure" ]; then
+              echo "  ✗ $1"
+              CAIDAS="$CAIDAS$1, "
+            else
+              echo "  ✓ $1"
+            fi
+          }
+          mira "Descargar series de la EPA" "${{ steps.series-de-la-epa.outcome }}"
+          mira "Descargar los bloques sociodemográficos" "${{ steps.los-bloques-sociodemografico.outcome }}"
+          mira "Descargar el bloque de vivienda" "${{ steps.el-bloque-de-vivienda.outcome }}"
+          mira "Descargar salarios y rentas del trabajo" "${{ steps.salarios-y-rentas-del-trabaj.outcome }}"
+          mira "Descargar la cesta de la compra" "${{ steps.la-cesta-de-la-compra.outcome }}"
+          mira "Descargar el paro registrado y los contratos del SEPE" "${{ steps.el-paro-registrado-y-los-con.outcome }}"
+          mira "Descargar la afiliación a la Seguridad Social" "${{ steps.la-afiliacion-a-la-seguridad.outcome }}"
+          mira "Descargar los accidentes de trabajo" "${{ steps.los-accidentes-de-trabajo.outcome }}"
+          mira "Descargar el precio de la luz" "${{ steps.el-precio-de-la-luz.outcome }}"
+          mira "Descargar los convenios colectivos" "${{ steps.los-convenios-colectivos.outcome }}"
+          mira "Descargar los despidos y la regulación de empleo" "${{ steps.los-despidos-y-la-regulacion.outcome }}"
+          mira "Descargar las huelgas" "${{ steps.las-huelgas.outcome }}"
+          mira "Descargar las materias primas" "${{ steps.las-materias-primas.outcome }}"
+          mira "Descargar el precio de los carburantes" "${{ steps.el-precio-de-los-carburantes.outcome }}"
+          mira "Descargar las bajas laborales" "${{ steps.las-bajas-laborales.outcome }}"
+          if [ -n "$CAIDAS" ]; then
+            echo "::error::No se ha podido descargar: ${CAIDAS%, }"
+            exit 1
+          fi
+          echo "Las dieciséis fuentes han contestado."
 
       - name: Componer los titulares, el catálogo y la descarga completa
         run: |
