@@ -170,6 +170,12 @@ def lee_regulacion(datos: bytes) -> dict[str, dict[str, float]]:
     magnitudes = {"ere_afectados": columnas["total"],
                   "ere_despido": columnas.get("despidos colectivos"),
                   "ere_suspension": columnas.get("suspension de contrato")}
+    faltan = [m for m, c in magnitudes.items() if c is None]
+    if faltan:
+        # Que se vea en el registro: un mes escrito a medias en silencio es lo
+        # que dejó la serie sin despidos colectivos ni suspensiones.
+        print(f"      no se encuentran las columnas de {faltan}; "
+              f"cabeceras vistas: {sorted(columnas)}")
     salida: dict[str, dict[str, float]] = {}
     for fila in filas:
         if not fila:
@@ -221,23 +227,43 @@ def lee_despidos(datos: bytes) -> dict[str, dict[str, float]]:
     return salida
 
 
-def ya_bajados(magnitud: str) -> dict[str, dict[str, float]]:
-    """Lo que ya está en el repositorio, para no volver a pedirlo."""
-    guardado: dict[str, dict[str, float]] = {}
+# Las magnitudes que salen del fichero mensual de regulación de empleo. Un mes
+# sólo está bajado si las trae todas.
+DE_REGULACION = ("ere_afectados", "ere_despido", "ere_suspension")
+
+
+def ya_bajados() -> dict[str, dict[str, dict[str, float]]]:
+    """Lo que ya está en el repositorio, para no volver a pedirlo.
+
+    Un mes sólo cuenta como bajado si trae **todas** las magnitudes que se
+    esperan de ese fichero. Sin esa condición el caché congela la forma vieja:
+    bastó que un día no se encontraran las columnas de despidos colectivos y de
+    suspensión para que los cuarenta y tres meses quedaran marcados como
+    completos con una sola magnitud dentro, y no se volvieran a pedir nunca. Es
+    el mismo fallo que ya se arregló en huelgas y en convenios, y que aquí se
+    quedó sin arreglar.
+    """
+    guardado: dict[str, dict[str, dict[str, float]]] = {}
     for ambito in FILAS:
         fichero = RAIZ / "data" / "despidos" / f"{ambito}.json"
         if not fichero.exists():
             continue
         contenido = json.loads(fichero.read_text(encoding="utf-8"))
-        valores = (contenido["series"].get("ambos") or {}).get(magnitud) or []
-        for periodo, valor in zip(contenido["periodos"], valores):
-            if valor is not None:
-                guardado.setdefault(periodo, {})[ambito] = valor
-    return guardado
+        for magnitud, valores in (contenido["series"].get("ambos") or {}).items():
+            if magnitud not in DE_REGULACION:
+                continue
+            for periodo, valor in zip(contenido["periodos"], valores):
+                if valor is not None:
+                    guardado.setdefault(periodo, {}) \
+                        .setdefault(ambito, {})[magnitud] = valor
+
+    esperadas = set(DE_REGULACION)
+    return {periodo: ambitos for periodo, ambitos in guardado.items()
+            if all(esperadas <= set(magnitudes) for magnitudes in ambitos.values())}
 
 
 def descarga_regulacion(hoy: dt.date, por_ambito: dict) -> None:
-    guardado = ya_bajados("ere_afectados")
+    guardado = ya_bajados()
     completos: dict[str, dict[str, dict[str, float]]] = {}
     print(f"  regulación de empleo: {len(guardado)} meses ya guardados")
 
@@ -271,8 +297,9 @@ def descarga_regulacion(hoy: dt.date, por_ambito: dict) -> None:
     # Lo ya guardado se conserva tal cual; lo nuevo se añade encima.
     for periodo, ambitos in guardado.items():
         completos.setdefault(periodo, {})
-        for ambito, valor in ambitos.items():
-            completos[periodo].setdefault(ambito, {}).setdefault("ere_afectados", valor)
+        for ambito, valores in ambitos.items():
+            for magnitud, valor in valores.items():
+                completos[periodo].setdefault(ambito, {}).setdefault(magnitud, valor)
     for periodo, ambitos in completos.items():
         for ambito, valores in ambitos.items():
             for magnitud, valor in valores.items():
