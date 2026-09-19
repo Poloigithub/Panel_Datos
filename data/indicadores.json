@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-18T10:33:30+00:00",
+ "actualizado": "2026-09-19T20:16:01+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -446,7 +446,7 @@
    "enlace": "precios.html",
    "fuente": "IPC · INE",
    "unidad": "índice",
-   "unidad_texto": "índice, base 2021 = 100",
+   "unidad_texto": "índice, base 2025 = 100",
    "nota": null,
    "por_sexo": false,
    "ambitos": [
@@ -2336,7 +2336,7 @@
     "castellon"
    ],
    "desde": "2024M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "autonomos",

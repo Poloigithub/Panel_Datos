@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T07:56:37+00:00",
+  "actualizado": "2026-09-19T20:00:42+00:00",
   "titulo": "Población y estructura",
   "ultimo_periodo": "2026",
   "primer_periodo": "1971",
@@ -9,35 +9,45 @@
       "unidad": "personas",
       "unidad_texto": null,
       "decimales": 0,
-      "por_sexo": true
+      "por_sexo": true,
+      "nota": null,
+      "sobre_total": null
     },
     "edad_media": {
       "titulo": "Edad media",
       "unidad": "años",
       "unidad_texto": null,
       "decimales": 1,
-      "por_sexo": true
+      "por_sexo": true,
+      "nota": null,
+      "sobre_total": null
     },
     "mayores_70": {
       "titulo": "Población de 70 y más años",
       "unidad": "%",
       "unidad_texto": "porcentaje de la población",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     },
     "espanoles": {
       "titulo": "Población de nacionalidad española",
       "unidad": "%",
       "unidad_texto": null,
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     },
     "crecimiento": {
       "titulo": "Crecimiento de la población",
       "unidad": "por mil",
       "unidad_texto": "por cada mil habitantes",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     }
   },
   "ambitos": [

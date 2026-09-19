@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T07:56:37+00:00",
+  "actualizado": "2026-09-19T20:00:42+00:00",
   "titulo": "Renta y desigualdad",
   "ultimo_periodo": "2023",
   "primer_periodo": "2015",
@@ -9,56 +9,72 @@
       "unidad": "euros",
       "unidad_texto": null,
       "decimales": 0,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     },
     "renta_hogar": {
       "titulo": "Renta neta media por hogar",
       "unidad": "euros",
       "unidad_texto": null,
       "decimales": 0,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     },
     "renta_uc": {
       "titulo": "Renta media por unidad de consumo",
       "unidad": "euros",
       "unidad_texto": null,
       "decimales": 0,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     },
     "gini": {
       "titulo": "Índice de Gini",
       "unidad": "índice",
       "unidad_texto": "índice de 0 a 100; a mayor valor, más desigualdad",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     },
     "p80p20": {
       "titulo": "Distribución de la renta P80/P20",
       "unidad": "ratio",
       "unidad_texto": "veces que la renta del 20 % más rico supera a la del 20 % más pobre",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     },
     "bajo_60": {
       "titulo": "Población bajo el 60 % de la renta mediana",
       "unidad": "%",
       "unidad_texto": "porcentaje de la población",
       "decimales": 2,
-      "por_sexo": true
+      "por_sexo": true,
+      "nota": null,
+      "sobre_total": null
     },
     "tamano_hogar": {
       "titulo": "Tamaño medio del hogar",
       "unidad": "personas",
       "unidad_texto": null,
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     },
     "hogares_unipersonales": {
       "titulo": "Hogares unipersonales",
       "unidad": "%",
       "unidad_texto": null,
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     },
     "renta_hogar_real": {
       "titulo": "Renta neta media por hogar (euros constantes)",

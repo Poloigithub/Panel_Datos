@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T07:56:37+00:00",
+  "actualizado": "2026-09-19T20:00:42+00:00",
   "titulo": "Precios",
   "ultimo_periodo": "2026M08",
   "primer_periodo": "2002M01",
@@ -7,30 +7,38 @@
     "ipc_general": {
       "titulo": "IPC, índice general",
       "unidad": "índice",
-      "unidad_texto": "índice, base 2021 = 100",
+      "unidad_texto": "índice, base 2025 = 100",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     },
     "ipc_variacion": {
       "titulo": "Inflación interanual",
       "unidad": "%",
       "unidad_texto": "variación del IPC respecto al mismo mes del año anterior",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     },
     "ipc_alimentos": {
       "titulo": "Alimentos",
       "unidad": "%",
       "unidad_texto": "variación interanual del grupo",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     },
     "ipc_transporte": {
       "titulo": "Transporte",
       "unidad": "%",
       "unidad_texto": "variación interanual del grupo",
       "decimales": 2,
-      "por_sexo": false
+      "por_sexo": false,
+      "nota": null,
+      "sobre_total": null
     }
   },
   "ambitos": [
