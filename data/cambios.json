@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-19T20:16:04+00:00",
+ "actualizado": "2026-09-20T10:21:25+00:00",
  "repositorio": "https://github.com/Poloigithub/Panel_Datos",
  "altas": [
   {
@@ -9,7 +9,7 @@
      "id": "siniestralidad",
      "titulo": "Accidentes de trabajo",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Accidentes graves en jornada",
       "Accidentes in itinere",
@@ -25,7 +25,7 @@
      "id": "afiliacion",
      "titulo": "Afiliación a la Seguridad Social",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Personas afiliadas a la Seguridad Social",
       "Personas afiliadas por cuenta propia",
@@ -36,7 +36,7 @@
      "id": "contratos",
      "titulo": "Contratación",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Agricultura",
       "Construcción",
@@ -52,7 +52,7 @@
      "id": "convenios",
      "titulo": "Convenios colectivos",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Convenios registrados",
       "Jornada media pactada",
@@ -64,7 +64,7 @@
      "id": "despidos",
      "titulo": "Despidos y regulación de empleo",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Despidos en el año",
       "Personas afectadas por un expediente de regulación",
@@ -76,7 +76,7 @@
      "id": "luz",
      "titulo": "El precio de la luz",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "La hora más barata del día",
       "Diferencia entre la hora cara y la barata",
@@ -88,7 +88,7 @@
      "id": "carburantes",
      "titulo": "El precio de los carburantes",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Gasóleo A (diésel)",
       "Impuestos en el gasóleo A",
@@ -106,7 +106,7 @@
      "id": "huelgas",
      "titulo": "Huelgas",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Huelgas con repercusión en el territorio",
       "Jornadas no trabajadas",
@@ -117,7 +117,7 @@
      "id": "cesta",
      "titulo": "La cesta de la compra",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Aceite de oliva",
       "Agua mineral",
@@ -144,7 +144,7 @@
      "id": "bajas",
      "titulo": "Las bajas laborales",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Duración media de una baja",
       "Bajas nuevas al mes por cada mil trabajadores",
@@ -159,7 +159,7 @@
      "id": "materias",
      "titulo": "Materias primas",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Aceite de girasol",
       "Aceite de palma",
@@ -199,7 +199,7 @@
      "id": "epa",
      "titulo": "Mercado laboral",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Activos",
       "Ocupados",
@@ -213,10 +213,9 @@
      "id": "demografia",
      "titulo": "Natalidad, mortalidad y migración",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Edad media al primer hijo",
-      "Esperanza de vida al nacer",
       "Mortalidad infantil (menores de 5 años)",
       "Nacidos por cada 1.000 defunciones",
       "Saldo migratorio"
@@ -226,7 +225,7 @@
      "id": "paro-registrado",
      "titulo": "Paro registrado",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "De 25 a 44 años",
       "De 45 años o más",
@@ -243,7 +242,7 @@
      "id": "poblacion",
      "titulo": "Población",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Crecimiento de la población",
       "Edad media",
@@ -256,7 +255,7 @@
      "id": "precios",
      "titulo": "Precios",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Alimentos",
       "IPC, índice general",
@@ -268,7 +267,7 @@
      "id": "renta",
      "titulo": "Renta y desigualdad",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Población bajo el 60 % de la renta mediana",
       "Índice de Gini",
@@ -287,7 +286,7 @@
      "id": "salarios",
      "titulo": "Salarios y rentas del trabajo",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Brecha salarial entre mujeres y hombres",
       "Distancia entre los salarios altos y los bajos",
@@ -304,7 +303,7 @@
      "id": "vivienda",
      "titulo": "Vivienda",
      "estreno": true,
-     "commit": "406798d",
+     "commit": "4d3932c",
      "indicadores": [
       "Compraventas de vivienda",
       "Compraventas de vivienda nueva",
@@ -330,44 +329,14 @@
  ],
  "novedades": [
   {
-   "commit": "f442b80",
-   "fecha": "2026-09-19T20:16:02Z",
+   "commit": "9a9df59",
+   "fecha": "2026-09-20T10:21:23Z",
    "asunto": "Actualiza los datos (EPA: 2026T2)",
    "secciones": [
     {
      "id": "luz",
      "titulo": "El precio de la luz",
-     "cambios": 72
-    },
-    {
-     "id": "renta",
-     "titulo": "Renta y desigualdad",
-     "cambios": 40
-    },
-    {
-     "id": "demografia",
-     "titulo": "Natalidad, mortalidad y migración",
-     "cambios": 31
-    },
-    {
-     "id": "poblacion",
-     "titulo": "Población",
-     "cambios": 28
-    },
-    {
-     "id": "precios",
-     "titulo": "Precios",
-     "cambios": 26
-    },
-    {
-     "id": "carburantes",
-     "titulo": "El precio de los carburantes",
-     "cambios": 12
-    },
-    {
-     "id": "afiliacion",
-     "titulo": "Afiliación a la Seguridad Social",
-     "cambios": 10
+     "cambios": 70
     },
     {
      "id": "siniestralidad",
@@ -375,8 +344,18 @@
      "cambios": 10
     },
     {
+     "id": "afiliacion",
+     "titulo": "Afiliación a la Seguridad Social",
+     "cambios": 8
+    },
+    {
      "id": "bajas",
      "titulo": "Las bajas laborales",
+     "cambios": 8
+    },
+    {
+     "id": "carburantes",
+     "titulo": "El precio de los carburantes",
      "cambios": 8
     },
     {
@@ -387,6 +366,11 @@
     {
      "id": "convenios",
      "titulo": "Convenios colectivos",
+     "cambios": 8
+    },
+    {
+     "id": "demografia",
+     "titulo": "Natalidad, mortalidad y migración",
      "cambios": 8
     },
     {
@@ -410,6 +394,21 @@
      "cambios": 8
     },
     {
+     "id": "poblacion",
+     "titulo": "Población",
+     "cambios": 8
+    },
+    {
+     "id": "precios",
+     "titulo": "Precios",
+     "cambios": 8
+    },
+    {
+     "id": "renta",
+     "titulo": "Renta y desigualdad",
+     "cambios": 8
+    },
+    {
      "id": "salarios",
      "titulo": "Salarios y rentas del trabajo",
      "cambios": 8
@@ -418,6 +417,118 @@
      "id": "vivienda",
      "titulo": "Vivienda",
      "cambios": 8
+    }
+   ]
+  },
+  {
+   "commit": "4d3932c",
+   "fecha": "2026-09-19T20:16:04Z",
+   "asunto": "Anota los cambios [skip ci]",
+   "secciones": [
+    {
+     "id": "materias",
+     "titulo": "Materias primas",
+     "cambios": 316
+    },
+    {
+     "id": "cesta",
+     "titulo": "La cesta de la compra",
+     "cambios": 199
+    },
+    {
+     "id": "luz",
+     "titulo": "El precio de la luz",
+     "cambios": 176
+    },
+    {
+     "id": "vivienda",
+     "titulo": "Vivienda",
+     "cambios": 175
+    },
+    {
+     "id": "siniestralidad",
+     "titulo": "Accidentes de trabajo",
+     "cambios": 154
+    },
+    {
+     "id": "renta",
+     "titulo": "Renta y desigualdad",
+     "cambios": 124
+    },
+    {
+     "id": "carburantes",
+     "titulo": "El precio de los carburantes",
+     "cambios": 120
+    },
+    {
+     "id": "salarios",
+     "titulo": "Salarios y rentas del trabajo",
+     "cambios": 109
+    },
+    {
+     "id": "paro-registrado",
+     "titulo": "Paro registrado",
+     "cambios": 99
+    },
+    {
+     "id": "contratos",
+     "titulo": "Contratación",
+     "cambios": 92
+    },
+    {
+     "id": "bajas",
+     "titulo": "Las bajas laborales",
+     "cambios": 91
+    },
+    {
+     "id": "poblacion",
+     "titulo": "Población",
+     "cambios": 73
+    },
+    {
+     "id": "convenios",
+     "titulo": "Convenios colectivos",
+     "cambios": 64
+    },
+    {
+     "id": "demografia",
+     "titulo": "Natalidad, mortalidad y migración",
+     "cambios": 64
+    },
+    {
+     "id": "despidos",
+     "titulo": "Despidos y regulación de empleo",
+     "cambios": 64
+    },
+    {
+     "id": "precios",
+     "titulo": "Precios",
+     "cambios": 64
+    },
+    {
+     "id": "afiliacion",
+     "titulo": "Afiliación a la Seguridad Social",
+     "cambios": 55
+    },
+    {
+     "id": "huelgas",
+     "titulo": "Huelgas",
+     "cambios": 55
+    },
+    {
+     "id": "epa",
+     "titulo": "Mercado laboral",
+     "cambios": 30
+    },
+    {
+     "id": "municipios",
+     "titulo": "Municipios de Castellón",
+     "cambios": 2
+    },
+    {
+     "id": "geo",
+     "titulo": "Contornos municipales",
+     "cambios": 1
     }
    ]
   }
