@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-20T10:21:23+00:00",
+ "actualizado": "2026-09-21T11:26:06+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -2145,7 +2145,7 @@
     "espana"
    ],
    "desde": "2026M04",
-   "hasta": "2026M08"
+   "hasta": "2026M09"
   },
   {
    "clave": "gasoleo_a",
@@ -2162,7 +2162,7 @@
     "espana"
    ],
    "desde": "2026M04",
-   "hasta": "2026M08"
+   "hasta": "2026M09"
   },
   {
    "clave": "gasolina_98",
@@ -2179,7 +2179,7 @@
     "espana"
    ],
    "desde": "2026M04",
-   "hasta": "2026M08"
+   "hasta": "2026M09"
   },
   {
    "clave": "gasoleo_premium",
@@ -2196,7 +2196,7 @@
     "espana"
    ],
    "desde": "2026M04",
-   "hasta": "2026M08"
+   "hasta": "2026M09"
   },
   {
    "clave": "glp",
@@ -2213,7 +2213,7 @@
     "espana"
    ],
    "desde": "2026M04",
-   "hasta": "2026M08"
+   "hasta": "2026M09"
   },
   {
    "clave": "gasolina_95_serie",
