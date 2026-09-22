@@ -1,15 +1,15 @@
 {
- "actualizado": "2026-09-21T11:26:09+00:00",
+ "actualizado": "2026-09-22T10:40:44+00:00",
  "repositorio": "https://github.com/Poloigithub/Panel_Datos",
  "altas": [
   {
-   "fecha": "2026-09-20",
+   "fecha": "2026-09-21",
    "secciones": [
     {
      "id": "siniestralidad",
      "titulo": "Accidentes de trabajo",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Accidentes graves en jornada",
       "Accidentes in itinere",
@@ -25,7 +25,7 @@
      "id": "afiliacion",
      "titulo": "Afiliación a la Seguridad Social",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Personas afiliadas a la Seguridad Social",
       "Personas afiliadas por cuenta propia",
@@ -36,7 +36,7 @@
      "id": "contratos",
      "titulo": "Contratación",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Agricultura",
       "Construcción",
@@ -52,7 +52,7 @@
      "id": "convenios",
      "titulo": "Convenios colectivos",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Convenios registrados",
       "Jornada media pactada",
@@ -64,7 +64,7 @@
      "id": "despidos",
      "titulo": "Despidos y regulación de empleo",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Despidos en el año",
       "Personas afectadas por un expediente de regulación",
@@ -76,7 +76,7 @@
      "id": "luz",
      "titulo": "El precio de la luz",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "La hora más barata del día",
       "Diferencia entre la hora cara y la barata",
@@ -88,7 +88,7 @@
      "id": "carburantes",
      "titulo": "El precio de los carburantes",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Gasóleo A (diésel)",
       "Impuestos en el gasóleo A",
@@ -106,7 +106,7 @@
      "id": "huelgas",
      "titulo": "Huelgas",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Huelgas con repercusión en el territorio",
       "Jornadas no trabajadas",
@@ -117,7 +117,7 @@
      "id": "cesta",
      "titulo": "La cesta de la compra",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Aceite de oliva",
       "Agua mineral",
@@ -144,7 +144,7 @@
      "id": "bajas",
      "titulo": "Las bajas laborales",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Duración media de una baja",
       "Bajas nuevas al mes por cada mil trabajadores",
@@ -159,7 +159,7 @@
      "id": "materias",
      "titulo": "Materias primas",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Aceite de girasol",
       "Aceite de palma",
@@ -199,7 +199,7 @@
      "id": "epa",
      "titulo": "Mercado laboral",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Activos",
       "Ocupados",
@@ -213,7 +213,7 @@
      "id": "demografia",
      "titulo": "Natalidad, mortalidad y migración",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Edad media al primer hijo",
       "Mortalidad infantil (menores de 5 años)",
@@ -225,7 +225,7 @@
      "id": "paro-registrado",
      "titulo": "Paro registrado",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "De 25 a 44 años",
       "De 45 años o más",
@@ -242,7 +242,7 @@
      "id": "poblacion",
      "titulo": "Población",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Crecimiento de la población",
       "Edad media",
@@ -255,7 +255,7 @@
      "id": "precios",
      "titulo": "Precios",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Alimentos",
       "IPC, índice general",
@@ -267,7 +267,7 @@
      "id": "renta",
      "titulo": "Renta y desigualdad",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Población bajo el 60 % de la renta mediana",
       "Índice de Gini",
@@ -286,7 +286,7 @@
      "id": "salarios",
      "titulo": "Salarios y rentas del trabajo",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Brecha salarial entre mujeres y hombres",
       "Distancia entre los salarios altos y los bajos",
@@ -303,7 +303,7 @@
      "id": "vivienda",
      "titulo": "Vivienda",
      "estreno": true,
-     "commit": "433230d",
+     "commit": "0c7448c",
      "indicadores": [
       "Compraventas de vivienda",
       "Compraventas de vivienda nueva",
@@ -329,28 +329,28 @@
  ],
  "novedades": [
   {
-   "commit": "279c12b",
-   "fecha": "2026-09-21T11:26:06Z",
+   "commit": "6cad411",
+   "fecha": "2026-09-22T10:40:41Z",
    "asunto": "Actualiza los datos (EPA: 2026T2)",
    "secciones": [
     {
      "id": "luz",
      "titulo": "El precio de la luz",
-     "cambios": 72
-    },
-    {
-     "id": "contratos",
-     "titulo": "Contratación",
-     "cambios": 12
-    },
-    {
-     "id": "paro-registrado",
-     "titulo": "Paro registrado",
-     "cambios": 12
+     "cambios": 68
     },
     {
      "id": "carburantes",
      "titulo": "El precio de los carburantes",
+     "cambios": 12
+    },
+    {
+     "id": "contratos",
+     "titulo": "Contratación",
+     "cambios": 10
+    },
+    {
+     "id": "paro-registrado",
+     "titulo": "Paro registrado",
      "cambios": 10
     },
     {
@@ -431,8 +431,8 @@
    ]
   },
   {
-   "commit": "433230d",
-   "fecha": "2026-09-20T10:21:25Z",
+   "commit": "0c7448c",
+   "fecha": "2026-09-21T11:26:09Z",
    "asunto": "Anota los cambios [skip ci]",
    "secciones": [
     {
