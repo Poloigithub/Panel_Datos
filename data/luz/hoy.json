@@ -1,111 +1,111 @@
 {
- "actualizado": "2026-09-21T11:21:15+00:00",
- "dia": "2026-09-21",
+ "actualizado": "2026-09-22T10:35:48+00:00",
+ "dia": "2026-09-22",
  "unidad": "c€/kWh",
  "resumen": {
-  "media": 19.6647,
-  "minimo": 1.81,
+  "media": 19.8898,
+  "minimo": 1.913,
   "hora_minima": 14,
-  "maximo": 41.483,
+  "maximo": 41.104,
   "hora_maxima": 20,
   "horas": 24
  },
  "horas": [
   {
    "hora": 0,
-   "valor": 20.137
+   "valor": 18.834
   },
   {
    "hora": 1,
-   "valor": 19.111
+   "valor": 18.351
   },
   {
    "hora": 2,
-   "valor": 18.582
+   "valor": 18.229
   },
   {
    "hora": 3,
-   "valor": 18.326
+   "valor": 17.818
   },
   {
    "hora": 4,
-   "valor": 18.26
+   "valor": 17.963
   },
   {
    "hora": 5,
-   "valor": 19.226
+   "valor": 18.678
   },
   {
    "hora": 6,
-   "valor": 21.518
+   "valor": 21.09
   },
   {
    "hora": 7,
-   "valor": 29.122
+   "valor": 29.853
   },
   {
    "hora": 8,
-   "valor": 31.912
+   "valor": 33.35
   },
   {
    "hora": 9,
-   "valor": 21.401
+   "valor": 19.25
   },
   {
    "hora": 10,
-   "valor": 17.027
+   "valor": 16.532
   },
   {
    "hora": 11,
-   "valor": 9.2
+   "valor": 12.103
   },
   {
    "hora": 12,
-   "valor": 8.745
+   "valor": 9.229
   },
   {
    "hora": 13,
-   "valor": 8.731
+   "valor": 7.302
   },
   {
    "hora": 14,
-   "valor": 1.81
+   "valor": 1.913
   },
   {
    "hora": 15,
-   "valor": 2.289
+   "valor": 2.888
   },
   {
    "hora": 16,
-   "valor": 3.658
+   "valor": 5.421
   },
   {
    "hora": 17,
-   "valor": 8.578
+   "valor": 11.896
   },
   {
    "hora": 18,
-   "valor": 24.145
+   "valor": 25.294
   },
   {
    "hora": 19,
-   "valor": 36.774
+   "valor": 37.117
   },
   {
    "hora": 20,
-   "valor": 41.483
+   "valor": 41.104
   },
   {
    "hora": 21,
-   "valor": 39.611
+   "valor": 38.09
   },
   {
    "hora": 22,
-   "valor": 27.795
+   "valor": 29.183
   },
   {
    "hora": 23,
-   "valor": 24.512
+   "valor": 25.867
   }
  ]
 }
