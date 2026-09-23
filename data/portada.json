@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-22T10:40:41+00:00",
+ "actualizado": "2026-09-23T10:33:47+00:00",
  "ambitos": [
   {
    "id": "espana",
@@ -24,7 +24,7 @@
    "enlace": "mercado-laboral.html",
    "fuente": "EPA · INE",
    "cadencia": "Trimestral. El INE publica a finales de enero, abril, julio y octubre.",
-   "actualizado": "2026-09-22T10:14:49+00:00",
+   "actualizado": "2026-09-23T10:14:26+00:00",
    "ultimo_periodo": "2026T2",
    "destacados": [
     {
@@ -69,24 +69,24 @@
    "enlace": "paro-registrado.html",
    "fuente": "SEPE",
    "cadencia": "Mensual. El SEPE publica en los primeros días de cada mes.",
-   "actualizado": "2026-09-22T10:34:35+00:00",
-   "ultimo_periodo": "2026M07",
+   "actualizado": "2026-09-23T10:28:57+00:00",
+   "ultimo_periodo": "2026M08",
    "destacados": [
     {
      "clave": "paro_total",
      "titulo": "Personas apuntadas al paro",
      "unidad": "personas",
      "decimales": 0,
-     "periodo": "2026M07",
+     "periodo": "2026M08",
      "valores": {
-      "espana": 2307681,
-      "comunitat-valenciana": 288587,
-      "castellon": 31456
+      "espana": 2352221,
+      "comunitat-valenciana": 294445,
+      "castellon": 32364
      },
      "hace_un_anyo": {
-      "espana": 2400870,
-      "comunitat-valenciana": 293880,
-      "castellon": 31578
+      "espana": 2422833,
+      "comunitat-valenciana": 296669,
+      "castellon": 31925
      }
     }
    ]
@@ -97,24 +97,24 @@
    "enlace": "contratos.html",
    "fuente": "SEPE",
    "cadencia": "Mensual, a la vez que el paro registrado.",
-   "actualizado": "2026-09-22T10:34:35+00:00",
-   "ultimo_periodo": "2026M07",
+   "actualizado": "2026-09-23T10:28:57+00:00",
+   "ultimo_periodo": "2026M08",
    "destacados": [
     {
      "clave": "contratos_total",
      "titulo": "Contratos del mes",
      "unidad": "contratos",
      "decimales": 0,
-     "periodo": "2026M07",
+     "periodo": "2026M08",
      "valores": {
-      "espana": 1582684,
-      "comunitat-valenciana": 154418,
-      "castellon": 18263
+      "espana": 1140287,
+      "comunitat-valenciana": 97321,
+      "castellon": 11400
      },
      "hace_un_anyo": {
-      "espana": 1584763,
-      "comunitat-valenciana": 151513,
-      "castellon": 17767
+      "espana": 1035713,
+      "comunitat-valenciana": 90772,
+      "castellon": 11244
      }
     },
     {
@@ -123,21 +123,21 @@
      "unidad": "contratos",
      "decimales": 0,
      "sobre": "contratos_total",
-     "periodo": "2026M07",
+     "periodo": "2026M08",
      "valores": {
-      "espana": 572685,
-      "comunitat-valenciana": 67036,
-      "castellon": 8314
+      "espana": 404295,
+      "comunitat-valenciana": 43345,
+      "castellon": 5111
      },
      "hace_un_anyo": {
-      "espana": 566937,
-      "comunitat-valenciana": 64996,
-      "castellon": 8249
+      "espana": 351799,
+      "comunitat-valenciana": 38115,
+      "castellon": 5386
      },
      "sobre_valores": {
-      "espana": 1582684,
-      "comunitat-valenciana": 154418,
-      "castellon": 18263
+      "espana": 1140287,
+      "comunitat-valenciana": 97321,
+      "castellon": 11400
      }
     }
    ]
@@ -148,7 +148,7 @@
    "enlace": "precios.html",
    "fuente": "IPC · INE",
    "cadencia": "Mensual. El INE publica hacia la mitad del mes siguiente.",
-   "actualizado": "2026-09-22T10:20:03+00:00",
+   "actualizado": "2026-09-23T10:18:35+00:00",
    "ultimo_periodo": "2026M08",
    "destacados": [
     {
@@ -176,7 +176,7 @@
    "enlace": "cesta.html",
    "fuente": "IPC · INE",
    "cadencia": "Mensual, a la vez que el IPC.",
-   "actualizado": "2026-09-22T10:32:51+00:00",
+   "actualizado": "2026-09-23T10:27:29+00:00",
    "ultimo_periodo": "2026M08",
    "destacados": [
     {
@@ -202,7 +202,7 @@
    "enlace": "vivienda.html",
    "fuente": "INE y CGPJ",
    "cadencia": "Mensual las compraventas y las hipotecas; trimestral el precio y los lanzamientos; anual el alquiler.",
-   "actualizado": "2026-09-22T10:28:08+00:00",
+   "actualizado": "2026-09-23T10:24:39+00:00",
    "ultimo_periodo": "2026M06",
    "destacados": [
     {
@@ -247,7 +247,7 @@
    "enlace": "huelgas.html",
    "fuente": "Huelgas y Cierres Patronales · Ministerio de Trabajo",
    "cadencia": "Mensual, con unos cuatro meses de retraso.",
-   "actualizado": "2026-09-22T10:37:58+00:00",
+   "actualizado": "2026-09-23T10:31:53+00:00",
    "ultimo_periodo": "2026M05",
    "destacados": [
     {
@@ -292,7 +292,7 @@
    "enlace": "despidos.html",
    "fuente": "Regulación de Empleo y Despidos · Ministerio de Trabajo",
    "cadencia": "Mensual los expedientes de regulación; anual, los despidos.",
-   "actualizado": "2026-09-22T10:36:52+00:00",
+   "actualizado": "2026-09-23T10:30:55+00:00",
    "ultimo_periodo": "2026M07",
    "destacados": [
     {
@@ -337,7 +337,7 @@
    "enlace": "convenios.html",
    "fuente": "Convenios Colectivos · Ministerio de Trabajo",
    "cadencia": "Mensual. El ministerio publica con unos dos meses de retraso.",
-   "actualizado": "2026-09-22T10:35:50+00:00",
+   "actualizado": "2026-09-23T10:30:37+00:00",
    "ultimo_periodo": "2026M08",
    "destacados": [
     {
@@ -382,7 +382,7 @@
    "enlace": "luz.html",
    "fuente": "PVPC · Red Eléctrica",
    "cadencia": "Diaria. El precio de cada día se publica la tarde anterior.",
-   "actualizado": "2026-09-22T10:35:48+00:00",
+   "actualizado": "2026-09-23T10:30:35+00:00",
    "ultimo_periodo": "2026M08",
    "destacados": [
     {
@@ -427,7 +427,7 @@
    "enlace": "materias.html",
    "fuente": "Pink Sheet · Banco Mundial",
    "cadencia": "Mensual. El Banco Mundial publica el primer día hábil de cada mes, con el mes anterior cerrado.",
-   "actualizado": "2026-09-22T10:38:55+00:00",
+   "actualizado": "2026-09-23T10:32:07+00:00",
    "ultimo_periodo": "2026M08",
    "destacados": [
     {
@@ -472,7 +472,7 @@
    "enlace": "bajas.html",
    "fuente": "Incapacidad temporal · Seguridad Social",
    "cadencia": "Anual. Cada ejercicio se publica a lo largo del año siguiente y se revisa después.",
-   "actualizado": "2026-09-22T10:39:29+00:00",
+   "actualizado": "2026-09-23T10:32:37+00:00",
    "ultimo_periodo": "2025",
    "destacados": [
     {
@@ -517,7 +517,7 @@
    "enlace": "carburantes.html",
    "fuente": "Ministerio para la Transición Ecológica y Comisión Europea",
    "cadencia": "Diaria el detalle por provincia; semanal la serie larga de España.",
-   "actualizado": "2026-09-22T10:38:57+00:00",
+   "actualizado": "2026-09-23T10:32:09+00:00",
    "ultimo_periodo": "2026M09",
    "destacados": [
     {
@@ -527,7 +527,7 @@
      "decimales": 3,
      "periodo": "2026M09",
      "valores": {
-      "espana": 1.8614,
+      "espana": 1.8642,
       "comunitat-valenciana": null,
       "castellon": null
      },
@@ -544,7 +544,7 @@
      "decimales": 3,
      "periodo": "2026M09",
      "valores": {
-      "espana": 1.8487,
+      "espana": 1.8523,
       "comunitat-valenciana": null,
       "castellon": null
      },
@@ -562,7 +562,7 @@
    "enlace": "afiliacion.html",
    "fuente": "Anuario de Estadísticas · Ministerio de Trabajo",
    "cadencia": "Anual. El anuario del año sale a mediados del siguiente.",
-   "actualizado": "2026-09-22T10:35:01+00:00",
+   "actualizado": "2026-09-23T10:29:10+00:00",
    "ultimo_periodo": "2026M08",
    "destacados": [
     {
@@ -590,7 +590,7 @@
    "enlace": "siniestralidad.html",
    "fuente": "Ministerio de Trabajo",
    "cadencia": "Mensual el avance del año en curso; la serie, anual. El ministerio publica con un par de meses de retraso.",
-   "actualizado": "2026-09-22T10:35:33+00:00",
+   "actualizado": "2026-09-23T10:30:22+00:00",
    "ultimo_periodo": "2025",
    "destacados": [
     {
@@ -635,7 +635,7 @@
    "enlace": "renta.html",
    "fuente": "Atlas de Distribución de Renta · INE",
    "cadencia": "Anual, con unos dos años de retraso.",
-   "actualizado": "2026-09-22T10:20:03+00:00",
+   "actualizado": "2026-09-23T10:18:35+00:00",
    "ultimo_periodo": "2023",
    "destacados": [
     {
@@ -663,7 +663,7 @@
    "enlace": "salarios.html",
    "fuente": "Atlas de renta y Encuesta de Estructura Salarial · INE",
    "cadencia": "Anual. El salario, sólo por comunidad autónoma; el reparto de la renta, también por provincia.",
-   "actualizado": "2026-09-22T10:30:09+00:00",
+   "actualizado": "2026-09-23T10:25:39+00:00",
    "ultimo_periodo": "2024",
    "destacados": [
     {
@@ -708,7 +708,7 @@
    "enlace": "poblacion.html",
    "fuente": "Estadística Continua de Población · INE",
    "cadencia": "Trimestral.",
-   "actualizado": "2026-09-22T10:20:03+00:00",
+   "actualizado": "2026-09-23T10:18:35+00:00",
    "ultimo_periodo": "2026",
    "destacados": [
     {
@@ -736,7 +736,7 @@
    "enlace": "demografia.html",
    "fuente": "Indicadores Demográficos Básicos · INE",
    "cadencia": "Anual.",
-   "actualizado": "2026-09-22T10:20:03+00:00",
+   "actualizado": "2026-09-23T10:18:35+00:00",
    "ultimo_periodo": "2024",
    "destacados": [
     {

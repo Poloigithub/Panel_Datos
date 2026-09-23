@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-22T10:40:41+00:00",
+ "actualizado": "2026-09-23T10:33:47+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -132,7 +132,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "paro_menores_25",
@@ -151,7 +151,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "paro_25_44",
@@ -170,7 +170,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "paro_45_mas",
@@ -189,7 +189,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "paro_agricultura",
@@ -208,7 +208,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "paro_industria",
@@ -227,7 +227,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "paro_construccion",
@@ -246,7 +246,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "paro_servicios",
@@ -265,7 +265,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "paro_sin_empleo_anterior",
@@ -284,7 +284,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "contratos_total",
@@ -303,7 +303,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "contratos_indefinidos",
@@ -322,7 +322,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "contratos_temporales",
@@ -341,7 +341,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "contratos_convertidos",
@@ -360,7 +360,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "contratos_agricultura",
@@ -379,7 +379,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "contratos_industria",
@@ -398,7 +398,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "contratos_construccion",
@@ -417,7 +417,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "contratos_servicios",
@@ -436,7 +436,7 @@
     "castellon"
    ],
    "desde": "2006M01",
-   "hasta": "2026M07"
+   "hasta": "2026M08"
   },
   {
    "clave": "ipc_general",
