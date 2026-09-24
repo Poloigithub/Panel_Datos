@@ -76389,97 +76389,97 @@ materias,euro_dolar,Dólares por euro,espana,Ambos sexos,2026M07,1.1417478260869
 materias,euro_dolar,Dólares por euro,espana,Ambos sexos,2026M08,1.1593095238095241,$/€
 bajas,procesos_iniciados,Bajas iniciadas,espana,Ambos sexos,2023,8879929.0,procesos
 bajas,procesos_iniciados,Bajas iniciadas,espana,Ambos sexos,2024,9262614.0,procesos
-bajas,procesos_iniciados,Bajas iniciadas,espana,Ambos sexos,2025,9757650.0,procesos
+bajas,procesos_iniciados,Bajas iniciadas,espana,Ambos sexos,2025,9891078.0,procesos
 bajas,procesos_iniciados,Bajas iniciadas,comunitat-valenciana,Ambos sexos,2023,682243.0,procesos
 bajas,procesos_iniciados,Bajas iniciadas,comunitat-valenciana,Ambos sexos,2024,704756.0,procesos
-bajas,procesos_iniciados,Bajas iniciadas,comunitat-valenciana,Ambos sexos,2025,748597.0,procesos
+bajas,procesos_iniciados,Bajas iniciadas,comunitat-valenciana,Ambos sexos,2025,759791.0,procesos
 bajas,procesos_iniciados,Bajas iniciadas,castellon,Ambos sexos,2023,72540.0,procesos
 bajas,procesos_iniciados,Bajas iniciadas,castellon,Ambos sexos,2024,73210.0,procesos
-bajas,procesos_iniciados,Bajas iniciadas,castellon,Ambos sexos,2025,76882.0,procesos
+bajas,procesos_iniciados,Bajas iniciadas,castellon,Ambos sexos,2025,77673.0,procesos
 bajas,procesos_finalizados,Bajas terminadas,espana,Ambos sexos,2023,8640064.0,procesos
 bajas,procesos_finalizados,Bajas terminadas,espana,Ambos sexos,2024,9075461.0,procesos
-bajas,procesos_finalizados,Bajas terminadas,espana,Ambos sexos,2025,9590619.0,procesos
+bajas,procesos_finalizados,Bajas terminadas,espana,Ambos sexos,2025,9707467.0,procesos
 bajas,procesos_finalizados,Bajas terminadas,comunitat-valenciana,Ambos sexos,2023,663305.0,procesos
 bajas,procesos_finalizados,Bajas terminadas,comunitat-valenciana,Ambos sexos,2024,685449.0,procesos
-bajas,procesos_finalizados,Bajas terminadas,comunitat-valenciana,Ambos sexos,2025,732100.0,procesos
+bajas,procesos_finalizados,Bajas terminadas,comunitat-valenciana,Ambos sexos,2025,741045.0,procesos
 bajas,procesos_finalizados,Bajas terminadas,castellon,Ambos sexos,2023,70230.0,procesos
 bajas,procesos_finalizados,Bajas terminadas,castellon,Ambos sexos,2024,72314.0,procesos
-bajas,procesos_finalizados,Bajas terminadas,castellon,Ambos sexos,2025,75321.0,procesos
+bajas,procesos_finalizados,Bajas terminadas,castellon,Ambos sexos,2025,76078.0,procesos
 bajas,procesos_vigor,Bajas abiertas a fin de año,espana,Ambos sexos,2023,1110763.0,procesos
 bajas,procesos_vigor,Bajas abiertas a fin de año,espana,Ambos sexos,2024,1182236.0,procesos
-bajas,procesos_vigor,Bajas abiertas a fin de año,espana,Ambos sexos,2025,1248514.0,procesos
+bajas,procesos_vigor,Bajas abiertas a fin de año,espana,Ambos sexos,2025,1248260.0,procesos
 bajas,procesos_vigor,Bajas abiertas a fin de año,comunitat-valenciana,Ambos sexos,2023,108585.0,procesos
 bajas,procesos_vigor,Bajas abiertas a fin de año,comunitat-valenciana,Ambos sexos,2024,118426.0,procesos
-bajas,procesos_vigor,Bajas abiertas a fin de año,comunitat-valenciana,Ambos sexos,2025,126812.0,procesos
+bajas,procesos_vigor,Bajas abiertas a fin de año,comunitat-valenciana,Ambos sexos,2025,126861.0,procesos
 bajas,procesos_vigor,Bajas abiertas a fin de año,castellon,Ambos sexos,2023,12965.0,procesos
 bajas,procesos_vigor,Bajas abiertas a fin de año,castellon,Ambos sexos,2024,12771.0,procesos
-bajas,procesos_vigor,Bajas abiertas a fin de año,castellon,Ambos sexos,2025,13431.0,procesos
+bajas,procesos_vigor,Bajas abiertas a fin de año,castellon,Ambos sexos,2025,13419.0,procesos
 bajas,duracion_media,Duración media de una baja,espana,Ambos sexos,2023,39.042040776549804,días
 bajas,duracion_media,Duración media de una baja,espana,Ambos sexos,2024,43.31446667006778,días
-bajas,duracion_media,Duración media de una baja,espana,Ambos sexos,2025,42.28973750286608,días
+bajas,duracion_media,Duración media de una baja,espana,Ambos sexos,2025,42.678704753773566,días
 bajas,duracion_media,Duración media de una baja,comunitat-valenciana,Ambos sexos,2023,49.26140764806537,días
 bajas,duracion_media,Duración media de una baja,comunitat-valenciana,Ambos sexos,2024,56.749997446928944,días
-bajas,duracion_media,Duración media de una baja,comunitat-valenciana,Ambos sexos,2025,53.95662068023494,días
+bajas,duracion_media,Duración media de una baja,comunitat-valenciana,Ambos sexos,2025,54.42152096026557,días
 bajas,duracion_media,Duración media de una baja,castellon,Ambos sexos,2023,52.03807489676776,días
 bajas,duracion_media,Duración media de una baja,castellon,Ambos sexos,2024,65.07124484885361,días
-bajas,duracion_media,Duración media de una baja,castellon,Ambos sexos,2025,59.83842487486889,días
+bajas,duracion_media,Duración media de una baja,castellon,Ambos sexos,2025,60.73721706669471,días
 bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,espana,Ambos sexos,2023,34.50840723428064,‰
 bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,espana,Ambos sexos,2024,34.974003781311715,‰
-bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,espana,Ambos sexos,2025,36.244678763634774,‰
+bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,espana,Ambos sexos,2025,36.59800413840221,‰
 bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,comunitat-valenciana,Ambos sexos,2023,26.153172181372128,‰
 bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,comunitat-valenciana,Ambos sexos,2024,26.225819565408333,‰
-bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,comunitat-valenciana,Ambos sexos,2025,27.165242258070556,‰
+bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,comunitat-valenciana,Ambos sexos,2025,27.50924878014826,‰
 bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,castellon,Ambos sexos,2023,23.132373364287044,‰
 bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,castellon,Ambos sexos,2024,22.866848690110285,‰
-bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,castellon,Ambos sexos,2025,23.706946266697116,‰
+bajas,incidencia,Bajas nuevas al mes por cada mil trabajadores,castellon,Ambos sexos,2025,23.82423385799341,‰
 bajas,prevalencia,Trabajadores de baja por cada mil,espana,Ambos sexos,2023,51.26964921215753,‰
 bajas,prevalencia,Trabajadores de baja por cada mil,espana,Ambos sexos,2024,53.26482404010422,‰
-bajas,prevalencia,Trabajadores de baja por cada mil,espana,Ambos sexos,2025,55.1661701351951,‰
+bajas,prevalencia,Trabajadores de baja por cada mil,espana,Ambos sexos,2025,55.15357987796296,‰
 bajas,prevalencia,Trabajadores de baja por cada mil,comunitat-valenciana,Ambos sexos,2023,49.151587960452396,‰
 bajas,prevalencia,Trabajadores de baja por cada mil,comunitat-valenciana,Ambos sexos,2024,52.21397002597312,‰
-bajas,prevalencia,Trabajadores de baja por cada mil,comunitat-valenciana,Ambos sexos,2025,54.26317178174613,‰
+bajas,prevalencia,Trabajadores de baja por cada mil,comunitat-valenciana,Ambos sexos,2025,54.2832795700399,‰
 bajas,prevalencia,Trabajadores de baja por cada mil,castellon,Ambos sexos,2023,48.7081904146489,‰
 bajas,prevalencia,Trabajadores de baja por cada mil,castellon,Ambos sexos,2024,47.05867674098463,‰
-bajas,prevalencia,Trabajadores de baja por cada mil,castellon,Ambos sexos,2025,48.47136572996741,‰
+bajas,prevalencia,Trabajadores de baja por cada mil,castellon,Ambos sexos,2025,48.42718487614367,‰
 bajas,trabajadores_protegidos,Trabajadores protegidos,espana,Ambos sexos,2023,21665118.0,personas
 bajas,trabajadores_protegidos,Trabajadores protegidos,espana,Ambos sexos,2024,22195436.130791858,personas
-bajas,trabajadores_protegidos,Trabajadores protegidos,espana,Ambos sexos,2025,22631877.415819895,personas
+bajas,trabajadores_protegidos,Trabajadores protegidos,espana,Ambos sexos,2025,22632438.415819895,personas
 bajas,trabajadores_protegidos,Trabajadores protegidos,comunitat-valenciana,Ambos sexos,2023,2209186.0,personas
 bajas,trabajadores_protegidos,Trabajadores protegidos,comunitat-valenciana,Ambos sexos,2024,2268090.3202934125,personas
-bajas,trabajadores_protegidos,Trabajadores protegidos,comunitat-valenciana,Ambos sexos,2025,2336980.973210618,personas
+bajas,trabajadores_protegidos,Trabajadores protegidos,comunitat-valenciana,Ambos sexos,2025,2337017.973210618,personas
 bajas,trabajadores_protegidos,Trabajadores protegidos,castellon,Ambos sexos,2023,266177.0,personas
 bajas,trabajadores_protegidos,Trabajadores protegidos,castellon,Ambos sexos,2024,271384.596517509,personas
-bajas,trabajadores_protegidos,Trabajadores protegidos,castellon,Ambos sexos,2025,277091.4290887473,personas
+bajas,trabajadores_protegidos,Trabajadores protegidos,castellon,Ambos sexos,2025,277096.4290887473,personas
 carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M04,1.5347,€/l
 carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M05,1.5538,€/l
 carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M06,1.4874,€/l
 carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M07,1.5855,€/l
 carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M08,1.7107,€/l
-carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M09,1.8642,€/l
+carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M09,1.8667,€/l
 carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M04,1.7972,€/l
 carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M05,1.6978,€/l
 carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M06,1.5699,€/l
 carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M07,1.6283,€/l
 carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M08,1.8362,€/l
-carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M09,1.8523,€/l
+carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M09,1.8556,€/l
 carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M04,1.6832,€/l
 carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M05,1.7195,€/l
 carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M06,1.6537,€/l
 carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M07,1.7621,€/l
 carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M08,1.8781,€/l
-carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M09,2.0234,€/l
+carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M09,2.0258,€/l
 carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M04,1.8852,€/l
 carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M05,1.7877,€/l
 carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M06,1.6646,€/l
 carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M07,1.7269,€/l
 carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M08,1.9325,€/l
-carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M09,1.9431,€/l
+carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M09,1.9464,€/l
 carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M04,0.9908,€/l
 carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M05,1.0246,€/l
 carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M06,1.0112,€/l
 carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M07,1.0527,€/l
 carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M08,1.0704,€/l
-carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M09,1.0912,€/l
+carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M09,1.0913,€/l
 carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2005M01,0.848,€/l
 carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2005M02,0.8823,€/l
 carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2005M03,0.9025,€/l
@@ -76740,7 +76740,7 @@ carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2026M05,
 carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2026M06,1.4932,€/l
 carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2026M07,1.5714,€/l
 carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2026M08,1.7103,€/l
-carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2026M09,1.8414,€/l
+carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2026M09,1.8703,€/l
 carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2005M01,0.8089,€/l
 carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2005M02,0.8221,€/l
 carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2005M03,0.8617,€/l
@@ -77001,7 +77001,7 @@ carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2026M05,1.7
 carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2026M06,1.5797,€/l
 carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2026M07,1.6072,€/l
 carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2026M08,1.8341,€/l
-carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2026M09,1.8147,€/l
+carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2026M09,1.8492,€/l
 carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2005M01,0.53,€/l
 carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2005M02,0.53,€/l
 carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2005M03,0.53,€/l
@@ -77262,7 +77262,7 @@ carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2026M05,1.0272,€/l
 carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2026M06,1.0162,€/l
 carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2026M07,1.0556,€/l
 carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2026M08,1.0733,€/l
-carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2026M09,1.0932,€/l
+carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2026M09,1.0965,€/l
 carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2005M01,61.29,%
 carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2005M02,59.44,%
 carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2005M03,58.42,%
@@ -77523,7 +77523,7 @@ carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,
 carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2026M06,33.14,%
 carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2026M07,37.71,%
 carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2026M08,38.81,%
-carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2026M09,40.31,%
+carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2026M09,39.96,%
 carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2005M01,50.88,%
 carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2005M02,50.29,%
 carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2005M03,48.61,%
@@ -77784,7 +77784,7 @@ carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,202
 carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2026M06,29.98,%
 carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2026M07,31.55,%
 carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2026M08,32.26,%
-carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2026M09,27.22,%
+carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2026M09,27.04,%
 afiliacion,afiliados,Personas afiliadas a la Seguridad Social,espana,Ambos sexos,2015,17087350.0,personas
 afiliacion,afiliados,Personas afiliadas a la Seguridad Social,espana,Ambos sexos,2017,18222519.36,personas
 afiliacion,afiliados,Personas afiliadas a la Seguridad Social,espana,Ambos sexos,2018,18787377.476,personas
