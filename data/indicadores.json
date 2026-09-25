@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-24T10:43:59+00:00",
+ "actualizado": "2026-09-25T10:51:36+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -873,7 +873,7 @@
     "castellon"
    ],
    "desde": "2007M01",
-   "hasta": "2026M06"
+   "hasta": "2026M07"
   },
   {
    "clave": "compraventas_nueva",
@@ -892,7 +892,7 @@
     "castellon"
    ],
    "desde": "2007M01",
-   "hasta": "2026M06"
+   "hasta": "2026M07"
   },
   {
    "clave": "compraventas_usada",
@@ -911,7 +911,7 @@
     "castellon"
    ],
    "desde": "2007M01",
-   "hasta": "2026M06"
+   "hasta": "2026M07"
   },
   {
    "clave": "compraventas_protegida",
@@ -930,7 +930,7 @@
     "castellon"
    ],
    "desde": "2007M01",
-   "hasta": "2026M06"
+   "hasta": "2026M07"
   },
   {
    "clave": "hipotecas",
