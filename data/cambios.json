@@ -1,15 +1,15 @@
 {
- "actualizado": "2026-09-24T10:44:02+00:00",
+ "actualizado": "2026-09-25T10:51:39+00:00",
  "repositorio": "https://github.com/Poloigithub/Panel_Datos",
  "altas": [
   {
-   "fecha": "2026-09-23",
+   "fecha": "2026-09-24",
    "secciones": [
     {
      "id": "siniestralidad",
      "titulo": "Accidentes de trabajo",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Accidentes graves en jornada",
       "Accidentes in itinere",
@@ -25,7 +25,7 @@
      "id": "afiliacion",
      "titulo": "Afiliación a la Seguridad Social",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Personas afiliadas a la Seguridad Social",
       "Personas afiliadas por cuenta propia",
@@ -36,7 +36,7 @@
      "id": "contratos",
      "titulo": "Contratación",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Agricultura",
       "Construcción",
@@ -52,7 +52,7 @@
      "id": "convenios",
      "titulo": "Convenios colectivos",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Convenios registrados",
       "Jornada media pactada",
@@ -64,7 +64,7 @@
      "id": "despidos",
      "titulo": "Despidos y regulación de empleo",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Despidos en el año",
       "Personas afectadas por un expediente de regulación",
@@ -76,7 +76,7 @@
      "id": "luz",
      "titulo": "El precio de la luz",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "La hora más barata del día",
       "Diferencia entre la hora cara y la barata",
@@ -88,7 +88,7 @@
      "id": "carburantes",
      "titulo": "El precio de los carburantes",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Gasóleo A (diésel)",
       "Impuestos en el gasóleo A",
@@ -106,7 +106,7 @@
      "id": "huelgas",
      "titulo": "Huelgas",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Huelgas con repercusión en el territorio",
       "Jornadas no trabajadas",
@@ -117,7 +117,7 @@
      "id": "cesta",
      "titulo": "La cesta de la compra",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Aceite de oliva",
       "Agua mineral",
@@ -144,7 +144,7 @@
      "id": "bajas",
      "titulo": "Las bajas laborales",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Duración media de una baja",
       "Bajas nuevas al mes por cada mil trabajadores",
@@ -159,7 +159,7 @@
      "id": "materias",
      "titulo": "Materias primas",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Aceite de girasol",
       "Aceite de palma",
@@ -199,7 +199,7 @@
      "id": "epa",
      "titulo": "Mercado laboral",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Activos",
       "Ocupados",
@@ -213,7 +213,7 @@
      "id": "demografia",
      "titulo": "Natalidad, mortalidad y migración",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Edad media al primer hijo",
       "Mortalidad infantil (menores de 5 años)",
@@ -225,7 +225,7 @@
      "id": "paro-registrado",
      "titulo": "Paro registrado",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "De 25 a 44 años",
       "De 45 años o más",
@@ -242,7 +242,7 @@
      "id": "poblacion",
      "titulo": "Población",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Crecimiento de la población",
       "Edad media",
@@ -255,7 +255,7 @@
      "id": "precios",
      "titulo": "Precios",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Alimentos",
       "IPC, índice general",
@@ -267,7 +267,7 @@
      "id": "renta",
      "titulo": "Renta y desigualdad",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Población bajo el 60 % de la renta mediana",
       "Índice de Gini",
@@ -286,7 +286,7 @@
      "id": "salarios",
      "titulo": "Salarios y rentas del trabajo",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Brecha salarial entre mujeres y hombres",
       "Distancia entre los salarios altos y los bajos",
@@ -303,7 +303,7 @@
      "id": "vivienda",
      "titulo": "Vivienda",
      "estreno": true,
-     "commit": "76f3683",
+     "commit": "ebb483d",
      "indicadores": [
       "Compraventas de vivienda",
       "Compraventas de vivienda nueva",
@@ -329,19 +329,14 @@
  ],
  "novedades": [
   {
-   "commit": "a53ae2a",
-   "fecha": "2026-09-24T10:44:00Z",
+   "commit": "9a7051a",
+   "fecha": "2026-09-25T10:51:37Z",
    "asunto": "Actualiza los datos (EPA: 2026T2)",
    "secciones": [
     {
      "id": "luz",
      "titulo": "El precio de la luz",
      "cambios": 68
-    },
-    {
-     "id": "carburantes",
-     "titulo": "El precio de los carburantes",
-     "cambios": 12
     },
     {
      "id": "contratos",
@@ -359,6 +354,11 @@
      "cambios": 10
     },
     {
+     "id": "vivienda",
+     "titulo": "Vivienda",
+     "cambios": 10
+    },
+    {
      "id": "afiliacion",
      "titulo": "Afiliación a la Seguridad Social",
      "cambios": 8
@@ -366,6 +366,11 @@
     {
      "id": "bajas",
      "titulo": "Las bajas laborales",
+     "cambios": 8
+    },
+    {
+     "id": "carburantes",
+     "titulo": "El precio de los carburantes",
      "cambios": 8
     },
     {
@@ -422,17 +427,12 @@
      "id": "salarios",
      "titulo": "Salarios y rentas del trabajo",
      "cambios": 8
-    },
-    {
-     "id": "vivienda",
-     "titulo": "Vivienda",
-     "cambios": 8
     }
    ]
   },
   {
-   "commit": "76f3683",
-   "fecha": "2026-09-23T10:33:50Z",
+   "commit": "ebb483d",
+   "fecha": "2026-09-24T10:44:02Z",
    "asunto": "Anota los cambios [skip ci]",
    "secciones": [
     {
