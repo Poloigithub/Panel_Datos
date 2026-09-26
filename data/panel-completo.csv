@@ -52968,6 +52968,7 @@ luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2026M05,12.127267741935
 luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2026M06,12.928693333333333,c€/kWh
 luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2026M07,16.058967741935483,c€/kWh
 luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2026M08,16.646893548387098,c€/kWh
+luz,pvpc_medio,Precio medio de la luz,espana,Ambos sexos,2026M09,18.405096153846156,c€/kWh
 luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2021M06,9.730366666666667,c€/kWh
 luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2021M07,10.510451612903227,c€/kWh
 luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2021M08,12.363774193548387,c€/kWh
@@ -53031,6 +53032,7 @@ luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2026M05,4.726290
 luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2026M06,5.152166666666667,c€/kWh
 luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2026M07,6.607741935483871,c€/kWh
 luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2026M08,4.119645161290323,c€/kWh
+luz,pvpc_barata,La hora más barata del día,espana,Ambos sexos,2026M09,3.476730769230769,c€/kWh
 luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2021M06,21.439966666666667,c€/kWh
 luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2021M07,22.278129032258065,c€/kWh
 luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2021M08,24.624032258064517,c€/kWh
@@ -53094,6 +53096,7 @@ luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2026M05,23.537032258
 luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2026M06,24.62496666666667,c€/kWh
 luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2026M07,29.054225806451615,c€/kWh
 luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2026M08,31.13235483870968,c€/kWh
+luz,pvpc_cara,La hora más cara del día,espana,Ambos sexos,2026M09,35.04676923076923,c€/kWh
 luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2021M06,11.7096,c€/kWh
 luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2021M07,11.767677419354838,c€/kWh
 luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2021M08,12.260258064516128,c€/kWh
@@ -53157,6 +53160,7 @@ luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,202
 luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2026M06,19.4728,c€/kWh
 luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2026M07,22.446483870967743,c€/kWh
 luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2026M08,27.012709677419355,c€/kWh
+luz,pvpc_brecha,Diferencia entre la hora cara y la barata,espana,Ambos sexos,2026M09,31.570038461538463,c€/kWh
 materias,brent,Petróleo Brent,espana,Ambos sexos,1960M01,1.6,$/barril
 materias,brent,Petróleo Brent,espana,Ambos sexos,1960M02,1.6,$/barril
 materias,brent,Petróleo Brent,espana,Ambos sexos,1960M03,1.6,$/barril
@@ -76467,31 +76471,31 @@ carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M05,1.5538,€/l
 carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M06,1.4874,€/l
 carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M07,1.5855,€/l
 carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M08,1.7107,€/l
-carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M09,1.8667,€/l
+carburantes,gasolina_95,Gasolina 95,espana,Ambos sexos,2026M09,1.8691,€/l
 carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M04,1.7972,€/l
 carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M05,1.6978,€/l
 carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M06,1.5699,€/l
 carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M07,1.6283,€/l
 carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M08,1.8362,€/l
-carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M09,1.8556,€/l
+carburantes,gasoleo_a,Gasóleo A (diésel),espana,Ambos sexos,2026M09,1.8586,€/l
 carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M04,1.6832,€/l
 carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M05,1.7195,€/l
 carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M06,1.6537,€/l
 carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M07,1.7621,€/l
 carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M08,1.8781,€/l
-carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M09,2.0258,€/l
+carburantes,gasolina_98,Gasolina 98,espana,Ambos sexos,2026M09,2.0282,€/l
 carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M04,1.8852,€/l
 carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M05,1.7877,€/l
 carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M06,1.6646,€/l
 carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M07,1.7269,€/l
 carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M08,1.9325,€/l
-carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M09,1.9464,€/l
+carburantes,gasoleo_premium,Gasóleo premium,espana,Ambos sexos,2026M09,1.9495,€/l
 carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M04,0.9908,€/l
 carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M05,1.0246,€/l
 carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M06,1.0112,€/l
 carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M07,1.0527,€/l
 carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M08,1.0704,€/l
-carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M09,1.0913,€/l
+carburantes,glp,GLP (gas licuado),espana,Ambos sexos,2026M09,1.0915,€/l
 carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2005M01,0.848,€/l
 carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2005M02,0.8823,€/l
 carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2005M03,0.9025,€/l

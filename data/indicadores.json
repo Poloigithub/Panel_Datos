@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-25T10:51:36+00:00",
+ "actualizado": "2026-09-26T10:29:26+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -1400,7 +1400,7 @@
     "espana"
    ],
    "desde": "2021M06",
-   "hasta": "2026M08"
+   "hasta": "2026M09"
   },
   {
    "clave": "pvpc_barata",
@@ -1417,7 +1417,7 @@
     "espana"
    ],
    "desde": "2021M06",
-   "hasta": "2026M08"
+   "hasta": "2026M09"
   },
   {
    "clave": "pvpc_cara",
@@ -1434,7 +1434,7 @@
     "espana"
    ],
    "desde": "2021M06",
-   "hasta": "2026M08"
+   "hasta": "2026M09"
   },
   {
    "clave": "pvpc_brecha",
@@ -1451,7 +1451,7 @@
     "espana"
    ],
    "desde": "2021M06",
-   "hasta": "2026M08"
+   "hasta": "2026M09"
   },
   {
    "clave": "brent",
