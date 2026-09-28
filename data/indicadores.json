@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-27T11:01:22+00:00",
+ "actualizado": "2026-09-28T12:28:07+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -949,7 +949,7 @@
     "castellon"
    ],
    "desde": "2003M01",
-   "hasta": "2026M06"
+   "hasta": "2026M07"
   },
   {
    "clave": "importe_hipotecas",
@@ -968,7 +968,7 @@
     "castellon"
    ],
    "desde": "2003M01",
-   "hasta": "2026M06"
+   "hasta": "2026M07"
   },
   {
    "clave": "ejecuciones",
@@ -1080,7 +1080,7 @@
     "castellon"
    ],
    "desde": "2003M01",
-   "hasta": "2026M06"
+   "hasta": "2026M07"
   },
   {
    "clave": "esfuerzo",
