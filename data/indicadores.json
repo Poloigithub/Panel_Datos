@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-28T12:28:07+00:00",
+ "actualizado": "2026-09-29T11:51:58+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -474,7 +474,7 @@
     "castellon"
    ],
    "desde": "2002M01",
-   "hasta": "2026M08"
+   "hasta": "2026M09"
   },
   {
    "clave": "ipc_alimentos",
