@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-29T11:51:58+00:00",
+ "actualizado": "2026-09-30T11:45:01+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -1194,7 +1194,7 @@
     "castellon"
    ],
    "desde": "2018M12",
-   "hasta": "2026M05"
+   "hasta": "2026M06"
   },
   {
    "clave": "jornadas_perdidas",
@@ -1213,7 +1213,7 @@
     "castellon"
    ],
    "desde": "2018M12",
-   "hasta": "2026M05"
+   "hasta": "2026M06"
   },
   {
    "clave": "huelgas",
@@ -1232,7 +1232,7 @@
     "castellon"
    ],
    "desde": "2018M12",
-   "hasta": "2026M05"
+   "hasta": "2026M06"
   },
   {
    "clave": "ere_afectados",
