@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-30T11:45:01+00:00",
+ "actualizado": "2026-10-01T12:06:32+00:00",
  "indicadores": [
   {
    "clave": "ocupados",
@@ -1995,7 +1995,7 @@
     "espana"
    ],
    "desde": "1999M01",
-   "hasta": "2026M08"
+   "hasta": "2026M09"
   },
   {
    "clave": "procesos_iniciados",

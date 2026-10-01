@@ -76422,6 +76422,7 @@ materias,euro_dolar,Dólares por euro,espana,Ambos sexos,2026M05,1.16732,$/€
 materias,euro_dolar,Dólares por euro,espana,Ambos sexos,2026M06,1.1518,$/€
 materias,euro_dolar,Dólares por euro,espana,Ambos sexos,2026M07,1.1417478260869562,$/€
 materias,euro_dolar,Dólares por euro,espana,Ambos sexos,2026M08,1.1593095238095241,$/€
+materias,euro_dolar,Dólares por euro,espana,Ambos sexos,2026M09,1.1513227272727276,$/€
 bajas,procesos_iniciados,Bajas iniciadas,espana,Ambos sexos,2023,8879929.0,procesos
 bajas,procesos_iniciados,Bajas iniciadas,espana,Ambos sexos,2024,9262614.0,procesos
 bajas,procesos_iniciados,Bajas iniciadas,espana,Ambos sexos,2025,9891078.0,procesos
@@ -76775,7 +76776,7 @@ carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2026M05,
 carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2026M06,1.4932,€/l
 carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2026M07,1.5714,€/l
 carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2026M08,1.7103,€/l
-carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2026M09,1.8703,€/l
+carburantes,gasolina_95_serie,Gasolina 95 desde 2005,espana,Ambos sexos,2026M09,1.8876,€/l
 carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2005M01,0.8089,€/l
 carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2005M02,0.8221,€/l
 carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2005M03,0.8617,€/l
@@ -77036,7 +77037,7 @@ carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2026M05,1.7
 carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2026M06,1.5797,€/l
 carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2026M07,1.6072,€/l
 carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2026M08,1.8341,€/l
-carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2026M09,1.8492,€/l
+carburantes,gasoleo_a_serie,Gasóleo A desde 2005,espana,Ambos sexos,2026M09,1.8705,€/l
 carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2005M01,0.53,€/l
 carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2005M02,0.53,€/l
 carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2005M03,0.53,€/l
@@ -77297,7 +77298,7 @@ carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2026M05,1.0272,€/l
 carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2026M06,1.0162,€/l
 carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2026M07,1.0556,€/l
 carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2026M08,1.0733,€/l
-carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2026M09,1.0965,€/l
+carburantes,glp_serie,GLP desde 2005,espana,Ambos sexos,2026M09,1.0979,€/l
 carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2005M01,61.29,%
 carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2005M02,59.44,%
 carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2005M03,58.42,%
@@ -77558,7 +77559,7 @@ carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,
 carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2026M06,33.14,%
 carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2026M07,37.71,%
 carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2026M08,38.81,%
-carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2026M09,39.96,%
+carburantes,gasolina_95_impuesto,Impuestos en la gasolina 95,espana,Ambos sexos,2026M09,39.75,%
 carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2005M01,50.88,%
 carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2005M02,50.29,%
 carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2005M03,48.61,%
@@ -77819,7 +77820,7 @@ carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,202
 carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2026M06,29.98,%
 carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2026M07,31.55,%
 carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2026M08,32.26,%
-carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2026M09,27.04,%
+carburantes,gasoleo_a_impuesto,Impuestos en el gasóleo A,espana,Ambos sexos,2026M09,26.92,%
 afiliacion,afiliados,Personas afiliadas a la Seguridad Social,espana,Ambos sexos,2015,17087350.0,personas
 afiliacion,afiliados,Personas afiliadas a la Seguridad Social,espana,Ambos sexos,2017,18222519.36,personas
 afiliacion,afiliados,Personas afiliadas a la Seguridad Social,espana,Ambos sexos,2018,18787377.476,personas
